@@ -1,0 +1,8 @@
+uuid: 809ae4c0-e77a-4f1f-b5b5-52768ff5e363
+langcode: en
+status: true
+dependencies: {  }
+name: 'Nace Codes'
+vid: nace_codes
+description: 'The list of Nace Codes'
+weight: -10

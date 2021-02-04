@@ -1,0 +1,20 @@
+uuid: 93261fbb-db1f-410c-a396-5effc1b2f309
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_page_count
+field_name: field_page_count
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

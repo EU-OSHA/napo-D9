@@ -1,0 +1,35 @@
+uuid: f3049319-7659-494b-9991-c93873b7720c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.napo_friend.body
+    - field.field.node.napo_friend.field_image_media
+    - node.type.napo_friend
+  module:
+    - text
+    - user
+id: node.napo_friend.teaser
+targetEntityType: node
+bundle: napo_friend
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_image_media:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  links: true

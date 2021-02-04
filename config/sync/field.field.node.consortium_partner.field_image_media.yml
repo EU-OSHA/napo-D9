@@ -1,0 +1,29 @@
+uuid: ca177236-fd4f-43f9-95bc-5e593d0bd9c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_media
+    - media.type.image
+    - node.type.consortium_partner
+id: node.consortium_partner.field_image_media
+field_name: field_image_media
+entity_type: node
+bundle: consortium_partner
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: dfe8bacb-9fd3-4927-acbe-9a09684d4f74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_media
+    - media.type.video
+    - node.type.napo_video
+id: node.napo_video.field_video_media
+field_name: field_video_media
+entity_type: node
+bundle: napo_video
+label: Video
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

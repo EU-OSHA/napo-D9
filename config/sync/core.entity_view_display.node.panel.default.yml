@@ -1,0 +1,19 @@
+uuid: b11336ab-7ad4-4d70-b542-71a44c26985a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.panel
+  module:
+    - user
+id: node.panel.default
+targetEntityType: node
+bundle: panel
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 347f356c-3475-4f4b-ad98-9a12882a9762
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_resources
+id: node.lesson_resources.promote
+field_name: promote
+entity_type: node
+bundle: lesson_resources
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

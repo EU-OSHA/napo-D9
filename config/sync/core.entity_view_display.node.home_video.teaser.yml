@@ -1,0 +1,34 @@
+uuid: a40f5c04-58a1-4152-9ed0-2fa381ac9b1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.home_video.body
+    - field.field.node.home_video.field_image_media
+    - field.field.node.home_video.field_poster_image_media
+    - field.field.node.home_video.field_url
+    - field.field.node.home_video.field_video_media
+    - node.type.home_video
+  module:
+    - text
+    - user
+id: node.home_video.teaser
+targetEntityType: node
+bundle: home_video
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image_media: true
+  field_poster_image_media: true
+  field_url: true
+  field_video_media: true
+  links: true

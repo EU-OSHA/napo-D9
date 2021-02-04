@@ -1,0 +1,21 @@
+uuid: 6884007e-71a1-4f83-989d-95469115964f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assessment
+    - node.type.msds_activities
+  module:
+    - text
+id: node.msds_activities.field_assessment
+field_name: field_assessment
+entity_type: node
+bundle: msds_activities
+label: Assessment
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

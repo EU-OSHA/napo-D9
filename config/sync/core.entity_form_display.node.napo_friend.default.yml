@@ -1,0 +1,50 @@
+uuid: 66c04c72-a299-46a9-bdba-4386b68569f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.napo_friend.body
+    - field.field.node.napo_friend.field_image_media
+    - node.type.napo_friend
+  module:
+    - text
+id: node.napo_friend.default
+targetEntityType: node
+bundle: napo_friend
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_image_media:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

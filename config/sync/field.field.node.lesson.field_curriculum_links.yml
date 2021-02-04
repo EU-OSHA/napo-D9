@@ -1,0 +1,21 @@
+uuid: ad442b9d-bd82-4157-9dd1-cc14641e9f30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_curriculum_links
+    - node.type.lesson
+  module:
+    - text
+id: node.lesson.field_curriculum_links
+field_name: field_curriculum_links
+entity_type: node
+bundle: lesson
+label: 'Links to subject/curriculum'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

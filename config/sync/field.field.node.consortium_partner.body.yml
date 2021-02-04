@@ -1,0 +1,23 @@
+uuid: 574e8a81-b911-46f1-a88f-a9b47e6e8030
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.consortium_partner
+  module:
+    - text
+id: node.consortium_partner.body
+field_name: body
+entity_type: node
+bundle: consortium_partner
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

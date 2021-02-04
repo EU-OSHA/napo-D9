@@ -1,0 +1,21 @@
+uuid: bb19f1fb-4b65-44aa-87ec-463efe965784
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assessment
+    - node.type.lesson
+  module:
+    - text
+id: node.lesson.field_assessment
+field_name: field_assessment
+entity_type: node
+bundle: lesson
+label: Assessment
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

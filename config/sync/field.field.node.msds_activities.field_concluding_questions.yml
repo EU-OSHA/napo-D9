@@ -1,0 +1,21 @@
+uuid: 8a591fdb-952c-473a-88ae-082c261c89db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_concluding_questions
+    - node.type.msds_activities
+  module:
+    - text
+id: node.msds_activities.field_concluding_questions
+field_name: field_concluding_questions
+entity_type: node
+bundle: msds_activities
+label: 'Concluding questions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

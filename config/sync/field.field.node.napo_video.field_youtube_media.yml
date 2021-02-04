@@ -1,0 +1,29 @@
+uuid: d8f158b3-b9dd-4a9b-bd2c-77dbcec764a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youtube_media
+    - media.type.remote_video
+    - node.type.napo_video
+id: node.napo_video.field_youtube_media
+field_name: field_youtube_media
+entity_type: node
+bundle: napo_video
+label: Youtube
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

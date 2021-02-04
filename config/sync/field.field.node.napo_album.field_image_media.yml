@@ -1,0 +1,29 @@
+uuid: 79175668-bef6-44b8-9d2c-f94502383961
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_media
+    - media.type.image
+    - node.type.napo_album
+id: node.napo_album.field_image_media
+field_name: field_image_media
+entity_type: node
+bundle: napo_album
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

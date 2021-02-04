@@ -1,0 +1,31 @@
+uuid: 0744a31a-f7fb-43fc-a487-3c1922530e46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity
+    - media.type.document
+    - media.type.image
+    - node.type.msds_activities
+id: node.msds_activities.field_activity
+field_name: field_activity
+entity_type: node
+bundle: msds_activities
+label: Activity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: document
+field_type: entity_reference

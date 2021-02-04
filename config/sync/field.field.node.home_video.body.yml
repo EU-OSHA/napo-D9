@@ -1,0 +1,23 @@
+uuid: d1b4a9c7-f8c6-4f5c-bc44-f58a1c1f9b13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.home_video
+  module:
+    - text
+id: node.home_video.body
+field_name: body
+entity_type: node
+bundle: home_video
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

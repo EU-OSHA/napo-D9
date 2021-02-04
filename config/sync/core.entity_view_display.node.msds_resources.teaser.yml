@@ -1,0 +1,32 @@
+uuid: 23c59436-fa8e-4113-afd1-ae9b1c45ff50
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.msds_resources.body
+    - field.field.node.msds_resources.field_file_media
+    - node.type.msds_resources
+  module:
+    - text
+    - user
+id: node.msds_resources.teaser
+targetEntityType: node
+bundle: msds_resources
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_file_media: true

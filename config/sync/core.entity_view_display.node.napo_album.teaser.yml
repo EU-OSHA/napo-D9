@@ -1,0 +1,30 @@
+uuid: 9cb07311-8511-4a49-8d1f-be748534c44a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.napo_album.body
+    - field.field.node.napo_album.field_image_media
+    - field.field.node.napo_album.field_publication_date
+    - node.type.napo_album
+  module:
+    - text
+    - user
+id: node.napo_album.teaser
+targetEntityType: node
+bundle: napo_album
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image_media: true
+  field_publication_date: true
+  links: true

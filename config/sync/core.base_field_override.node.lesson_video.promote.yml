@@ -1,0 +1,22 @@
+uuid: d449d176-9f09-4e59-958a-165577c8ad28
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_video
+id: node.lesson_video.promote
+field_name: promote
+entity_type: node
+bundle: lesson_video
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

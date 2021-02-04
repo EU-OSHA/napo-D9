@@ -1,0 +1,37 @@
+uuid: 3947eda4-4a63-4c1f-8e78-917fa7ed5a1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.msds_resources.body
+    - field.field.node.msds_resources.field_file_media
+    - node.type.msds_resources
+  module:
+    - text
+    - user
+id: node.msds_resources.default
+targetEntityType: node
+bundle: msds_resources
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_file_media:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

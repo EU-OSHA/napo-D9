@@ -1,0 +1,44 @@
+uuid: e326ad24-780d-40e0-8576-109661b3c3e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.msds_activities.field_activities
+    - field.field.node.msds_activities.field_activity
+    - field.field.node.msds_activities.field_assessment
+    - field.field.node.msds_activities.field_concluding_questions
+    - field.field.node.msds_activities.field_conversation_started
+    - field.field.node.msds_activities.field_conversation_starters_cove
+    - field.field.node.msds_activities.field_introductory_text
+    - field.field.node.msds_activities.field_learning_objectives
+    - field.field.node.msds_activities.field_msds_video
+    - field.field.node.msds_activities.field_resources_related
+    - field.field.node.msds_activities.field_resources_required
+    - field.field.node.msds_activities.field_tags
+    - node.type.msds_activities
+  module:
+    - user
+id: node.msds_activities.teaser
+targetEntityType: node
+bundle: msds_activities
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_activities: true
+  field_activity: true
+  field_assessment: true
+  field_concluding_questions: true
+  field_conversation_started: true
+  field_conversation_starters_cove: true
+  field_introductory_text: true
+  field_learning_objectives: true
+  field_msds_video: true
+  field_resources_related: true
+  field_resources_required: true
+  field_tags: true

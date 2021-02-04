@@ -1,0 +1,21 @@
+uuid: 92cb2114-9ea8-4999-9743-9f7c0f8e8def
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activities
+    - node.type.msds_activities
+  module:
+    - text
+id: node.msds_activities.field_activities
+field_name: field_activities
+entity_type: node
+bundle: msds_activities
+label: Activities
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

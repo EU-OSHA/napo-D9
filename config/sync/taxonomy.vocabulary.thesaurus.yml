@@ -1,0 +1,8 @@
+uuid: c5dcaf0c-982c-43e7-a4cc-ab61a48121f0
+langcode: en
+status: true
+dependencies: {  }
+name: Thesaurus
+vid: thesaurus
+description: 'This taxonomy will be used to classify content by EU-OSHA’s controlled vocabulary'
+weight: -6

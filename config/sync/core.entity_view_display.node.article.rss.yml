@@ -1,0 +1,46 @@
+uuid: 54b415e4-fb99-40f5-9fa2-32e0f1b9855f
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.article.body
+    - field.field.node.article.field_activity_list_file
+    - field.field.node.article.field_character_count
+    - field.field.node.article.field_expiration_date
+    - field.field.node.article.field_guidance_file
+    - field.field.node.article.field_icon_media
+    - field.field.node.article.field_image_media
+    - field.field.node.article.field_menu
+    - field.field.node.article.field_nace
+    - field.field.node.article.field_page_count
+    - field.field.node.article.field_publication_date
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_thesaurus
+    - node.type.article
+  module:
+    - user
+_core:
+  default_config_hash: 2rIr6K5Q0UQ9khg0zE_CK-PtJH76UL-BDDZcZnZzwCc
+id: node.article.rss
+targetEntityType: node
+bundle: article
+mode: rss
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_activity_list_file: true
+  field_character_count: true
+  field_expiration_date: true
+  field_guidance_file: true
+  field_icon_media: true
+  field_image_media: true
+  field_menu: true
+  field_nace: true
+  field_page_count: true
+  field_publication_date: true
+  field_tags: true
+  field_thesaurus: true

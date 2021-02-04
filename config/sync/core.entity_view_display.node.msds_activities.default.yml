@@ -1,0 +1,126 @@
+uuid: ede3b338-9e0f-4ae1-9e46-f3e67c45e503
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.msds_activities.field_activities
+    - field.field.node.msds_activities.field_activity
+    - field.field.node.msds_activities.field_assessment
+    - field.field.node.msds_activities.field_concluding_questions
+    - field.field.node.msds_activities.field_conversation_started
+    - field.field.node.msds_activities.field_conversation_starters_cove
+    - field.field.node.msds_activities.field_introductory_text
+    - field.field.node.msds_activities.field_learning_objectives
+    - field.field.node.msds_activities.field_msds_video
+    - field.field.node.msds_activities.field_resources_related
+    - field.field.node.msds_activities.field_resources_required
+    - field.field.node.msds_activities.field_tags
+    - node.type.msds_activities
+  module:
+    - text
+    - user
+id: node.msds_activities.default
+targetEntityType: node
+bundle: msds_activities
+mode: default
+content:
+  field_activities:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_activity:
+    type: entity_reference_entity_view
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_assessment:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_concluding_questions:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_conversation_started:
+    type: entity_reference_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_conversation_starters_cove:
+    type: entity_reference_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_introductory_text:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_learning_objectives:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_msds_video:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_resources_related:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_resources_required:
+    weight: 112
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_tags:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

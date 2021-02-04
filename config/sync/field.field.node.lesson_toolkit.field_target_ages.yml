@@ -1,0 +1,29 @@
+uuid: 8c0bd42d-1d96-4f85-99d1-fc0ec116e9a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_target_ages
+    - node.type.lesson_toolkit
+    - taxonomy.vocabulary.target_ages
+id: node.lesson_toolkit.field_target_ages
+field_name: field_target_ages
+entity_type: node
+bundle: lesson_toolkit
+label: 'Target Ages'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      target_ages: target_ages
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

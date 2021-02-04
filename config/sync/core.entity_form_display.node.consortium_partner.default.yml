@@ -1,0 +1,60 @@
+uuid: 182cf21f-dc4d-4821-9cde-513be5ae6ac4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.consortium_partner.body
+    - field.field.node.consortium_partner.field_image_media
+    - field.field.node.consortium_partner.field_url
+    - node.type.consortium_partner
+  module:
+    - link
+    - text
+id: node.consortium_partner.default
+targetEntityType: node
+bundle: consortium_partner
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_image_media:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_url:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

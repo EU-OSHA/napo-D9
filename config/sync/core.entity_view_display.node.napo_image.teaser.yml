@@ -1,0 +1,28 @@
+uuid: f3b8d85f-2165-44e5-b3f4-f96a164c4a81
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.napo_image.body
+    - field.field.node.napo_image.field_image_media
+    - node.type.napo_image
+  module:
+    - text
+    - user
+id: node.napo_image.teaser
+targetEntityType: node
+bundle: napo_image
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image_media: true
+  links: true

@@ -1,0 +1,29 @@
+uuid: 0503e6cf-0005-4521-8ba5-b7494ccebfcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_napo_film
+    - node.type.article
+    - node.type.napo_video
+id: node.napo_video.field_napo_film
+field_name: field_napo_film
+entity_type: node
+bundle: napo_video
+label: 'Napo film'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

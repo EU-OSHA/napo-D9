@@ -1,0 +1,22 @@
+uuid: 0972dc4b-ae4c-4a22-80e3-c564a0d4a46c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_friend
+id: node.napo_friend.promote
+field_name: promote
+entity_type: node
+bundle: napo_friend
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
