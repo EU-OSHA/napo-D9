@@ -1,0 +1,19 @@
+uuid: 77a3df9e-fa3c-4014-8042-2b1aa9752c53
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_lesson_video
+field_name: field_lesson_video
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

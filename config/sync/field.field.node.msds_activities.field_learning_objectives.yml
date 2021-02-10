@@ -1,0 +1,21 @@
+uuid: beac5536-41b1-4f05-8da9-9993e1cbbe4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_learning_objectives
+    - node.type.msds_activities
+  module:
+    - text
+id: node.msds_activities.field_learning_objectives
+field_name: field_learning_objectives
+entity_type: node
+bundle: msds_activities
+label: 'Learning Objectives'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

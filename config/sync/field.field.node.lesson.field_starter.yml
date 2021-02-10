@@ -1,0 +1,21 @@
+uuid: ce39f629-3c5c-4a3e-8608-6f9259b2492d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_starter
+    - node.type.lesson
+  module:
+    - text
+id: node.lesson.field_starter
+field_name: field_starter
+entity_type: node
+bundle: lesson
+label: Starter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

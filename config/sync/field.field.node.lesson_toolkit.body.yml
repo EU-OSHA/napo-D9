@@ -1,0 +1,23 @@
+uuid: 510e7c13-5cda-4c0f-8866-38a3494c90b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.lesson_toolkit
+  module:
+    - text
+id: node.lesson_toolkit.body
+field_name: body
+entity_type: node
+bundle: lesson_toolkit
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,68 @@
+uuid: addc5eb3-6a12-4911-a168-60b5e13bbc7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.home_video.body
+    - field.field.node.home_video.field_image
+    - field.field.node.home_video.field_poster_image
+    - field.field.node.home_video.field_url
+    - field.field.node.home_video.field_video
+    - node.type.home_video
+  module:
+    - link
+    - text
+    - user
+id: node.home_video.default
+targetEntityType: node
+bundle: home_video
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_poster_image:
+    type: entity_reference_entity_view
+    weight: 8
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_url:
+    weight: 4
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_video:
+    type: entity_reference_entity_view
+    weight: 9
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  links: true

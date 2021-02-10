@@ -1,0 +1,23 @@
+uuid: 80adccf2-e7a5-4f50-bdfa-1f015d84fd9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.napo_video
+  module:
+    - text
+id: node.napo_video.body
+field_name: body
+entity_type: node
+bundle: napo_video
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

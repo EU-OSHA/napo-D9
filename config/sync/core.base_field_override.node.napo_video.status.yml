@@ -1,0 +1,22 @@
+uuid: f36cbd7e-d57f-4dff-81e6-bb364437193a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_video
+id: node.napo_video.status
+field_name: status
+entity_type: node
+bundle: napo_video
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

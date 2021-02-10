@@ -1,0 +1,22 @@
+uuid: 2783b2b2-2d68-4efb-b148-044262d9af18
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson
+id: node.lesson.status
+field_name: status
+entity_type: node
+bundle: lesson
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

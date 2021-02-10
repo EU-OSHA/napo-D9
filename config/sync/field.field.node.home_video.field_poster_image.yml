@@ -1,0 +1,29 @@
+uuid: 25e25eeb-ce99-4bb5-9f7a-631dfe8b96bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poster_image
+    - media.type.image
+    - node.type.home_video
+id: node.home_video.field_poster_image
+field_name: field_poster_image
+entity_type: node
+bundle: home_video
+label: 'Poster image (1280x720)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

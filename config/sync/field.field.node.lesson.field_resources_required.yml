@@ -1,0 +1,29 @@
+uuid: 602b76d3-3b7d-4ccb-878f-b6ebfdd4bd26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources_required
+    - node.type.lesson
+    - node.type.lesson_resources
+id: node.lesson.field_resources_required
+field_name: field_resources_required
+entity_type: node
+bundle: lesson
+label: 'Resources required'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lesson_resources: lesson_resources
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

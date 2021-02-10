@@ -1,0 +1,21 @@
+uuid: e1ee5a3e-60c5-4c15-ac7a-36c2418e3e87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activities
+    - node.type.lesson
+  module:
+    - text
+id: node.lesson.field_activities
+field_name: field_activities
+entity_type: node
+bundle: lesson
+label: Activities
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

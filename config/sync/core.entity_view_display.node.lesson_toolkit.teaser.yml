@@ -1,0 +1,32 @@
+uuid: 302f463c-b067-4e5f-b886-95cccffeacc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lesson_toolkit.body
+    - field.field.node.lesson_toolkit.field_target_ages
+    - node.type.lesson_toolkit
+  module:
+    - text
+    - user
+id: node.lesson_toolkit.teaser
+targetEntityType: node
+bundle: lesson_toolkit
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_target_ages: true
+  langcode: true

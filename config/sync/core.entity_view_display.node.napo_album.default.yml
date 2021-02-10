@@ -1,0 +1,37 @@
+uuid: 4f708909-daaa-4b2c-ac03-579c2c6d572a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.napo_album.body
+    - field.field.node.napo_album.field_images
+    - field.field.node.napo_album.field_publication_date
+    - node.type.napo_album
+  module:
+    - text
+    - user
+id: node.napo_album.default
+targetEntityType: node
+bundle: napo_album
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_images:
+    type: entity_reference_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_publication_date: true
+  langcode: true
+  links: true

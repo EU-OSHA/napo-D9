@@ -1,0 +1,38 @@
+uuid: ccce8b8f-99fd-415e-904d-11b83e2c239c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lesson_toolkit.body
+    - field.field.node.lesson_toolkit.field_target_ages
+    - node.type.lesson_toolkit
+  module:
+    - text
+    - user
+id: node.lesson_toolkit.default
+targetEntityType: node
+bundle: lesson_toolkit
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_target_ages:
+    weight: 102
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

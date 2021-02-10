@@ -1,0 +1,29 @@
+uuid: 59f19968-7d57-4f8e-88e5-5220531b0094
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.napo_video
+    - taxonomy.vocabulary.tags
+id: node.napo_video.field_tags
+field_name: field_tags
+entity_type: node
+bundle: napo_video
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

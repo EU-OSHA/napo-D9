@@ -1,0 +1,17 @@
+uuid: 74ada7f5-fa1e-4da5-9bdb-199277d5384f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  keywords: '[node:field_tags][node:field_main_tag][node:field_combined_tags]'
+  abstract: '[node:summary]'
+  content_language: en
+  shortlink: '[current-page:url:unaliased]'
+  title: '[node:title_field] | [site:name]'
+  image_src: '[node:field_image]'
+  canonical_url: '[current-page:url:absolute]'
+  description: '[node:summary][node:body]'

@@ -1,0 +1,23 @@
+uuid: c457ccab-202d-4ca9-8b95-16198dd36cf9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.consortium_partner
+  module:
+    - link
+id: node.consortium_partner.field_url
+field_name: field_url
+entity_type: node
+bundle: consortium_partner
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

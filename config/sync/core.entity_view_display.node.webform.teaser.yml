@@ -1,0 +1,23 @@
+uuid: 437fd059-a222-4e7b-9542-1d6d1e01704f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.webform.field_download
+    - node.type.webform
+  module:
+    - user
+id: node.webform.teaser
+targetEntityType: node
+bundle: webform
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_download: true
+  langcode: true

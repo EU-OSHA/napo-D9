@@ -1,0 +1,8 @@
+uuid: a5a702af-48a1-4425-82ae-27d7d93b6e40
+langcode: en
+status: true
+dependencies: {  }
+name: 'Main Category'
+vid: main_category
+description: ''
+weight: -9

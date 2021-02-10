@@ -1,0 +1,29 @@
+uuid: fcb9a08e-9f1e-4abd-872b-6a9ed9855d31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lesson_toolkit
+    - node.type.lesson
+    - node.type.lesson_toolkit
+id: node.lesson.field_lesson_toolkit
+field_name: field_lesson_toolkit
+entity_type: node
+bundle: lesson
+label: 'Lesson Toolkit'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lesson_toolkit: lesson_toolkit
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 0aab7454-3e99-40dd-a724-80228e580d28
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_album
+id: node.napo_album.promote
+field_name: promote
+entity_type: node
+bundle: napo_album
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

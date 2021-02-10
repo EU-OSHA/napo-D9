@@ -1,0 +1,28 @@
+uuid: d2d07879-d7d6-4619-a0cd-2693d1d8db60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources_related
+    - node.type.msds_activities
+id: node.msds_activities.field_resources_related
+field_name: field_resources_related
+entity_type: node
+bundle: msds_activities
+label: 'Related resources'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      msds_activities: msds_activities
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,48 @@
+uuid: 7b722d37-626c-453b-b97d-bb3483184d22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.consortium_partner.body
+    - field.field.node.consortium_partner.field_image
+    - field.field.node.consortium_partner.field_url
+    - node.type.consortium_partner
+  module:
+    - link
+    - text
+    - user
+id: node.consortium_partner.default
+targetEntityType: node
+bundle: consortium_partner
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_url:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  langcode: true
+  links: true

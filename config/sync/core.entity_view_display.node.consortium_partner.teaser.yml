@@ -1,0 +1,31 @@
+uuid: ebb4b071-fab3-4214-af97-9933b5dc911b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.consortium_partner.body
+    - field.field.node.consortium_partner.field_image
+    - field.field.node.consortium_partner.field_url
+    - node.type.consortium_partner
+  module:
+    - text
+    - user
+id: node.consortium_partner.teaser
+targetEntityType: node
+bundle: consortium_partner
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image: true
+  field_url: true
+  langcode: true
+  links: true

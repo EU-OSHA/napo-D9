@@ -1,0 +1,31 @@
+uuid: ade2bc56-5934-4960-b733-5c7af923e1b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_msds_video
+    - node.type.lesson_video
+    - node.type.msds_activities
+    - node.type.napo_video
+id: node.msds_activities.field_msds_video
+field_name: field_msds_video
+entity_type: node
+bundle: msds_activities
+label: 'MSDs Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lesson_video: lesson_video
+      napo_video: napo_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: lesson_video
+field_type: entity_reference

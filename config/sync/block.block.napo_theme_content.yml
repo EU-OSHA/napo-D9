@@ -1,0 +1,22 @@
+uuid: 482de3f3-0928-4faa-9f36-616d3b2de587
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - napo_theme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: napo_theme_content
+theme: napo_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: db97be29-02b3-4179-bd2c-fbf1ab8c4258
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_msds_resources_required
+    - node.type.msds_activities
+    - node.type.msds_resources
+id: node.msds_activities.field_msds_resources_required
+field_name: field_msds_resources_required
+entity_type: node
+bundle: msds_activities
+label: 'Resources required'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      msds_resources: msds_resources
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

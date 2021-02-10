@@ -1,0 +1,29 @@
+uuid: bb3bb808-85f8-4439-a7c9-4463ab99ff32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lesson_video
+    - node.type.lesson
+    - node.type.lesson_video
+id: node.lesson.field_lesson_video
+field_name: field_lesson_video
+entity_type: node
+bundle: lesson
+label: 'Lesson Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      lesson_video: lesson_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: lesson_toolkit
+field_type: entity_reference

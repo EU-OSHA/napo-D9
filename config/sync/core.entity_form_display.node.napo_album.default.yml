@@ -1,0 +1,65 @@
+uuid: 387ab104-ba82-4011-acd3-e37e6c3e366c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.napo_album.body
+    - field.field.node.napo_album.field_images
+    - field.field.node.napo_album.field_publication_date
+    - node.type.napo_album
+  module:
+    - datetime
+    - text
+id: node.napo_album.default
+targetEntityType: node
+bundle: napo_album
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_images:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_publication_date:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

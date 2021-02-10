@@ -1,0 +1,21 @@
+uuid: a067188d-c08d-4781-9408-aaad44c4a00f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lesson_intro_text
+    - node.type.lesson
+  module:
+    - text
+id: node.lesson.field_lesson_intro_text
+field_name: field_lesson_intro_text
+entity_type: node
+bundle: lesson
+label: 'Introductory text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,23 @@
+uuid: 6e141c39-5bc8-474a-9b52-a175c54aab9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.msds_resources
+  module:
+    - text
+id: node.msds_resources.body
+field_name: body
+entity_type: node
+bundle: msds_resources
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

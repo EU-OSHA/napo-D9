@@ -1,0 +1,21 @@
+uuid: 3c61e605-dd6b-46bd-b40a-6623d8c9c856
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_introductory_text
+    - node.type.msds_activities
+  module:
+    - text
+id: node.msds_activities.field_introductory_text
+field_name: field_introductory_text
+entity_type: node
+bundle: msds_activities
+label: 'Introductory text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 779e6813-7846-4125-aca1-0a7dc8f8fd60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_revamp
+    - node.type.lesson_video
+  module:
+    - text
+id: node.lesson_video.field_body_revamp
+field_name: field_body_revamp
+entity_type: node
+bundle: lesson_video
+label: Body-Revamp
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

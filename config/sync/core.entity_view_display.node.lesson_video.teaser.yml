@@ -1,0 +1,39 @@
+uuid: 75f8df6c-16c9-4363-98ff-9b73466a1180
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lesson_video.body
+    - field.field.node.lesson_video.field_body_revamp
+    - field.field.node.lesson_video.field_image
+    - field.field.node.lesson_video.field_poster_image
+    - field.field.node.lesson_video.field_tags
+    - field.field.node.lesson_video.field_video
+    - field.field.node.lesson_video.field_youtube
+    - node.type.lesson_video
+  module:
+    - text
+    - user
+id: node.lesson_video.teaser
+targetEntityType: node
+bundle: lesson_video
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_body_revamp: true
+  field_image: true
+  field_poster_image: true
+  field_tags: true
+  field_video: true
+  field_youtube: true
+  langcode: true
+  links: true

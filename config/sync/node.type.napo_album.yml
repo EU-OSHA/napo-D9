@@ -1,0 +1,18 @@
+uuid: 48f44a1a-fcf8-42be-8635-4ee291e2ec76
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Napo album'
+type: napo_album
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true
