@@ -1,4 +1,4 @@
-uuid: 7bf9ca53-f708-45ff-8ea8-5595ca88a7a5
+uuid: 10fbed4f-4624-4be8-9c61-ae789624c7d4
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,10 @@ dependencies:
     - field.field.node.webform.field_download
     - node.type.webform
   module:
+    - text
     - user
+_core:
+  default_config_hash: 3r1i0UMUbeNHhvmiqHDYznoS4G9XR1jq6lQ49r80lDE
 id: node.webform.default
 targetEntityType: node
 bundle: webform
@@ -15,14 +18,15 @@ content:
   field_download:
     weight: 101
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: text_default
     region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

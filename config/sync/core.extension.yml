@@ -1,6 +1,9 @@
 module:
+  action: 0
+  admin_toolbar: 0
   automated_cron: 0
   big_pipe: 0
+  blazy: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -8,24 +11,45 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_translation: 0
   contact: 0
   contextual: 0
+  csv_serialization: 0
+  ctools: 0
+  date_popup: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  draggableviews: 0
+  dynamic_entity_reference: 0
   dynamic_page_cache: 0
   editor: 0
+  entity: 0
+  entity_reference_views: 0
+  entityqueue: 0
+  facets: 0
   field: 0
   field_group: 0
+  field_permissions: 0
   field_ui: 0
   file: 0
   filter: 0
   help: 0
   history: 0
   image: 0
+  jquery_ui: 0
+  jquery_ui_accordion: 0
+  jquery_ui_slider: 0
+  language: 0
   link: 0
+  linkchecker: 0
+  locale: 0
   media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
+  metatag_views: 0
   node: 0
   options: 0
   page_cache: 0
@@ -33,16 +57,32 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
+  rest: 0
   search: 0
+  search_api: 0
+  search_api_solr: 0
+  serialization: 0
   shortcut: 0
+  slick: 0
+  slick_views: 0
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0
   user: 0
+  views_accordion: 0
+  views_bulk_operations: 0
+  views_data_export: 0
+  views_slideshow: 0
+  views_slideshow_cycle: 0
   views_ui: 0
+  webform: 0
+  webform_node: 0
+  pathauto: 1
+  content_translation: 10
   views: 10
   standard: 1000
 theme:

@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.napo_album.body
-    - field.field.node.napo_album.field_image_media
+    - field.field.node.napo_album.field_images
     - field.field.node.napo_album.field_publication_date
     - node.type.napo_album
   module:
@@ -25,12 +25,29 @@ content:
       show_summary: false
     third_party_settings: {  }
     region: content
+  field_images:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_publication_date:
     weight: 2
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -41,7 +58,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_image_media: true
   path: true
   promote: true
   status: true

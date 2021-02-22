@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.napo_album.body
-    - field.field.node.napo_album.field_image_media
+    - field.field.node.napo_album.field_images
     - field.field.node.napo_album.field_publication_date
     - node.type.napo_album
   module:
@@ -25,6 +25,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_image_media: true
+  field_images: true
   field_publication_date: true
+  langcode: true
   links: true

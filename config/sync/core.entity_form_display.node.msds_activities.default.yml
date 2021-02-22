@@ -11,9 +11,9 @@ dependencies:
     - field.field.node.msds_activities.field_conversation_starters_cove
     - field.field.node.msds_activities.field_introductory_text
     - field.field.node.msds_activities.field_learning_objectives
+    - field.field.node.msds_activities.field_msds_resources_required
     - field.field.node.msds_activities.field_msds_video
     - field.field.node.msds_activities.field_resources_related
-    - field.field.node.msds_activities.field_resources_required
     - field.field.node.msds_activities.field_tags
     - node.type.msds_activities
   module:
@@ -100,6 +100,16 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_msds_resources_required:
+    weight: 133
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_msds_video:
     weight: 125
     settings:
@@ -120,16 +130,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_resources_required:
-    weight: 132
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_tags:
     weight: 131
     settings:
@@ -140,6 +140,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 30

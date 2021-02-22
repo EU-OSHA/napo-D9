@@ -1,4 +1,4 @@
-uuid: 861877d8-7d22-4231-b199-7a00942ba0b1
+uuid: c2fa0d8c-81d4-4473-88fd-7900da6f640b
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,9 @@ dependencies:
     - node.type.webform
   module:
     - path
+    - text
+_core:
+  default_config_hash: A3evv2pt6d-bKCPcgjXA5VGTemXWOxG3lSXvWiRWcck
 id: node.webform.default
 targetEntityType: node
 bundle: webform
@@ -15,30 +18,37 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_download:
     weight: 121
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textfield
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
     weight: 15
-    region: content
     third_party_settings: {  }
+    region: content
   status:
     type: boolean_checkbox
     settings:
@@ -51,16 +61,16 @@ content:
     settings:
       display_label: true
     weight: 16
-    region: content
     third_party_settings: {  }
+    region: content
   title:
     type: string_textfield
     weight: -5
-    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5
@@ -68,7 +78,6 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
+    region: content
 hidden: {  }

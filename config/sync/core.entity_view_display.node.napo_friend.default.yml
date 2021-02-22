@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.napo_friend.body
-    - field.field.node.napo_friend.field_image_media
+    - field.field.node.napo_friend.field_image
     - node.type.napo_friend
   module:
     - text
@@ -21,8 +21,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_image_media:
-    weight: 0
+  field_image:
+    weight: 2
     label: above
     settings:
       link: true
@@ -30,4 +30,5 @@ content:
     type: entity_reference_label
     region: content
 hidden:
+  langcode: true
   links: true

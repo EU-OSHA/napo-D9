@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.lesson.field_activities
     - field.field.node.lesson.field_assessment
     - field.field.node.lesson.field_curriculum_links
-    - field.field.node.lesson.field_file_media
+    - field.field.node.lesson.field_file
     - field.field.node.lesson.field_learning_objectives
     - field.field.node.lesson.field_lesson_intro_text
     - field.field.node.lesson.field_lesson_toolkit
@@ -24,8 +24,7 @@ dependencies:
 third_party_settings:
   field_group:
     group_header:
-      children:
-        - field_lesson_video
+      children: {  }
       parent_name: ''
       weight: 0
       format_type: accordion
@@ -40,16 +39,9 @@ third_party_settings:
         effect: none
       label: Header
     group_left:
-      children:
-        - field_lesson_intro_text
-        - field_learning_objectives
-        - field_starter
-        - field_activities
-        - field_assessment
-        - field_curriculum_links
-        - field_resources_required
+      children: {  }
       parent_name: ''
-      weight: 1
+      weight: 2
       format_type: details
       region: content
       format_settings:
@@ -62,7 +54,7 @@ third_party_settings:
     group_right:
       children: {  }
       parent_name: ''
-      weight: 2
+      weight: 10
       format_type: details
       region: content
       format_settings:
@@ -78,42 +70,42 @@ bundle: lesson
 mode: full
 content:
   field_activities:
-    weight: 16
+    weight: 6
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_assessment:
-    weight: 17
+    weight: 7
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_curriculum_links:
-    weight: 18
+    weight: 8
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_learning_objectives:
-    weight: 14
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_lesson_intro_text:
-    weight: 13
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_lesson_video:
-    weight: 8
+    weight: 1
     label: hidden
     settings:
       link: true
@@ -122,14 +114,14 @@ content:
     region: content
   field_resources_required:
     type: entity_reference_label
-    weight: 19
+    weight: 9
     region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
   field_starter:
-    weight: 15
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -137,7 +129,9 @@ content:
     region: content
 hidden:
   body: true
-  field_file_media: true
+  field_file: true
   field_lesson_toolkit: true
   field_tags: true
+  langcode: true
   links: true
+  search_api_excerpt: true

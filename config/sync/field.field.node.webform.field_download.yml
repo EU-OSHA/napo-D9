@@ -1,10 +1,12 @@
-uuid: 0ccf8cda-b91a-4626-b149-d85ba604ad6e
+uuid: 30943e46-e22b-48f6-b0ce-95ae729484c1
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_download
     - node.type.webform
+  module:
+    - text
 id: node.webform.field_download
 field_name: field_download
 entity_type: node
@@ -16,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: text

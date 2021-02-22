@@ -12,9 +12,9 @@ dependencies:
     - field.field.node.msds_activities.field_conversation_starters_cove
     - field.field.node.msds_activities.field_introductory_text
     - field.field.node.msds_activities.field_learning_objectives
+    - field.field.node.msds_activities.field_msds_resources_required
     - field.field.node.msds_activities.field_msds_video
     - field.field.node.msds_activities.field_resources_related
-    - field.field.node.msds_activities.field_resources_required
     - field.field.node.msds_activities.field_tags
     - node.type.msds_activities
   module:
@@ -38,7 +38,8 @@ hidden:
   field_conversation_starters_cove: true
   field_introductory_text: true
   field_learning_objectives: true
+  field_msds_resources_required: true
   field_msds_video: true
   field_resources_related: true
-  field_resources_required: true
   field_tags: true
+  langcode: true

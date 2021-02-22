@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.consortium_partner.body
-    - field.field.node.consortium_partner.field_image_media
+    - field.field.node.consortium_partner.field_image
     - field.field.node.consortium_partner.field_url
     - node.type.consortium_partner
   module:
@@ -23,8 +23,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_image_media:
-    weight: 1
+  field_image:
+    weight: 3
     label: above
     settings:
       link: true
@@ -44,4 +44,5 @@ content:
     type: link
     region: content
 hidden:
+  langcode: true
   links: true

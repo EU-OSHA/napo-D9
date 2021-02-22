@@ -1,0 +1,15 @@
+uuid: 8bf8ff8e-7d3c-4586-b699-a9f715eb6a94
+langcode: en
+status: true
+dependencies: {  }
+name: lessons_grid_image
+label: 'lessons grid image'
+effects:
+  5e2c91d1-e73b-4584-8a92-545d9fd9cace:
+    uuid: 5e2c91d1-e73b-4584-8a92-545d9fd9cace
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 317
+      height: 177
+      anchor: center-center

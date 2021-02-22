@@ -9,10 +9,10 @@ dependencies:
     - field.field.node.article.field_character_count
     - field.field.node.article.field_expiration_date
     - field.field.node.article.field_guidance_file
-    - field.field.node.article.field_icon_media
-    - field.field.node.article.field_image_media
+    - field.field.node.article.field_icon
+    - field.field.node.article.field_image
     - field.field.node.article.field_menu
-    - field.field.node.article.field_nace
+    - field.field.node.article.field_nace_codes
     - field.field.node.article.field_page_count
     - field.field.node.article.field_publication_date
     - field.field.node.article.field_tags
@@ -36,11 +36,12 @@ hidden:
   field_character_count: true
   field_expiration_date: true
   field_guidance_file: true
-  field_icon_media: true
-  field_image_media: true
+  field_icon: true
+  field_image: true
   field_menu: true
-  field_nace: true
+  field_nace_codes: true
   field_page_count: true
   field_publication_date: true
   field_tags: true
   field_thesaurus: true
+  langcode: true

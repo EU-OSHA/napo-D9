@@ -1,0 +1,15 @@
+uuid: 20e77559-1f81-46d4-889d-948c48320e75
+langcode: en
+status: true
+dependencies: {  }
+name: mc_napo_thumbnail
+label: 'MC Napo Thumbnail (360x275) '
+effects:
+  65438204-73a3-4678-ab39-e37ca2ea6ff1:
+    uuid: 65438204-73a3-4678-ab39-e37ca2ea6ff1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 275
+      anchor: center-center

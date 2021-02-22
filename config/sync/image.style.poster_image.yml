@@ -1,0 +1,15 @@
+uuid: 0c83bba1-5ef7-4e3a-96de-86d621feebfd
+langcode: en
+status: true
+dependencies: {  }
+name: poster_image
+label: 'Poster image 1280x720'
+effects:
+  c1eb00ec-aba4-4158-a4ec-06e975c437f3:
+    uuid: c1eb00ec-aba4-4158-a4ec-06e975c437f3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1280
+      height: 720
+      anchor: center-center

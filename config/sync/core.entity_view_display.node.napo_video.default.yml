@@ -6,14 +6,14 @@ dependencies:
     - field.field.node.napo_video.body
     - field.field.node.napo_video.field_archived
     - field.field.node.napo_video.field_combined_tags
-    - field.field.node.napo_video.field_image_media
-    - field.field.node.napo_video.field_main_tags
+    - field.field.node.napo_video.field_image
+    - field.field.node.napo_video.field_main_tag
     - field.field.node.napo_video.field_napo_film
     - field.field.node.napo_video.field_publication_date
     - field.field.node.napo_video.field_tags
-    - field.field.node.napo_video.field_video_media
+    - field.field.node.napo_video.field_video
     - field.field.node.napo_video.field_video_type
-    - field.field.node.napo_video.field_youtube_media
+    - field.field.node.napo_video.field_youtube
     - node.type.napo_video
   module:
     - datetime
@@ -49,16 +49,16 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_image_media:
-    weight: 104
+  field_image:
+    weight: 112
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_main_tags:
-    weight: 108
+  field_main_tag:
+    weight: 115
     label: above
     settings:
       link: true
@@ -90,8 +90,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_video_media:
-    weight: 105
+  field_video:
+    weight: 113
     label: above
     settings:
       link: true
@@ -106,8 +106,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_youtube_media:
-    weight: 106
+  field_youtube:
+    weight: 114
     label: above
     settings:
       link: true
@@ -119,4 +119,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  langcode: true

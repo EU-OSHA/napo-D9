@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.lesson.field_activities
     - field.field.node.lesson.field_assessment
     - field.field.node.lesson.field_curriculum_links
-    - field.field.node.lesson.field_file_media
+    - field.field.node.lesson.field_file
     - field.field.node.lesson.field_learning_objectives
     - field.field.node.lesson.field_lesson_intro_text
     - field.field.node.lesson.field_lesson_toolkit
@@ -57,8 +57,8 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_file_media:
-    weight: 3
+  field_file:
+    weight: 26
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -130,6 +130,13 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
     third_party_settings: {  }
   title:
     type: string_textfield

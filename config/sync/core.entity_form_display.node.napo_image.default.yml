@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.napo_image.body
-    - field.field.node.napo_image.field_image_media
+    - field.field.node.napo_image.field_image
     - node.type.napo_image
   module:
     - path
@@ -30,8 +30,8 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image_media:
-    weight: 122
+  field_image:
+    weight: 123
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -40,6 +40,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 30

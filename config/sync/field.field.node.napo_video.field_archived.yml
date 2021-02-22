@@ -9,7 +9,7 @@ id: node.napo_video.field_archived
 field_name: field_archived
 entity_type: node
 bundle: napo_video
-label: 'MSDs Resources'
+label: 'Mark as outdated'
 description: ''
 required: false
 translatable: false

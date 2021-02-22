@@ -1,0 +1,29 @@
+uuid: 6b3476d5-fec5-4a66-b115-7c8ef465dbda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - media.type.video
+    - node.type.lesson_video
+id: node.lesson_video.field_video
+field_name: field_video
+entity_type: node
+bundle: lesson_video
+label: Video
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

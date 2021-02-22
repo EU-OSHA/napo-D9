@@ -1,0 +1,15 @@
+uuid: 69026b84-fa37-4d2b-8f89-ba2c255601f5
+langcode: en
+status: true
+dependencies: {  }
+name: napo_cover
+label: 'Napo Cover (1140x408)'
+effects:
+  314504bf-a87d-4f15-bf23-f380bbffcba6:
+    uuid: 314504bf-a87d-4f15-bf23-f380bbffcba6
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1140
+      height: 408
+      anchor: center-center

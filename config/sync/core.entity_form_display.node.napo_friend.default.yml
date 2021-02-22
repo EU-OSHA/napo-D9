@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.napo_friend.body
-    - field.field.node.napo_friend.field_image_media
+    - field.field.node.napo_friend.field_image
     - node.type.napo_friend
   module:
     - text
@@ -23,8 +23,8 @@ content:
       show_summary: false
     third_party_settings: {  }
     region: content
-  field_image_media:
-    weight: 1
+  field_image:
+    weight: 26
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -33,6 +33,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
