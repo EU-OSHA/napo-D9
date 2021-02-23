@@ -4,7 +4,10 @@ status: true
 dependencies:
   module:
     - node
+    - rest
+    - serialization
     - user
+    - views_data_export
 id: words_autocomplete
 label: words-autocomplete
 module: views
@@ -263,6 +266,61 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  data_export_1:
+    display_plugin: data_export
+    id: data_export_1
+    display_title: 'Data export'
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      style:
+        type: data_export
+        options:
+          formats:
+            json: json
+          csv_settings:
+            delimiter: ','
+            enclosure: '"'
+            escape_char: \
+            strip_tags: true
+            trim: true
+            encoding: utf8
+            utf8_bom: '0'
+            use_serializer_encode_only: false
+      path: words-autocomplete
+      filename: ''
+      automatic_download: false
+      store_in_public_file_directory: null
+      redirect_to_display: none
+      custom_redirect_path: false
+      include_query_params: false
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: true
+            view_node:
+              alias: ''
+              raw_output: true
+            operations:
+              alias: ''
+              raw_output: true
+      displays:
+        page: page
+        default: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   page:
     display_plugin: page
     id: page
@@ -272,6 +330,22 @@ display:
       display_extenders:
         metatag_display_extender: {  }
       path: words-autocomplete
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      defaults:
+        style: false
+        row: false
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
     cache_metadata:
       max-age: -1
       contexts:

@@ -10,7 +10,7 @@ id: node.napo_video.field_video_type
 field_name: field_video_type
 entity_type: node
 bundle: napo_video
-label: 'VIdeo Type'
+label: 'Video Type'
 description: ''
 required: true
 translatable: false

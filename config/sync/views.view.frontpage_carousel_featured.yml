@@ -394,6 +394,8 @@ display:
           offset: 0
       defaults:
         pager: false
+        title: false
+      title: 'Napo''s films'
     cache_metadata:
       max-age: -1
       contexts:
