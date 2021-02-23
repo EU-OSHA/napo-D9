@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.home_video.body
-    - field.field.node.home_video.field_image_media
-    - field.field.node.home_video.field_poster_image_media
+    - field.field.node.home_video.field_image
+    - field.field.node.home_video.field_poster_image
     - field.field.node.home_video.field_url
-    - field.field.node.home_video.field_video_media
+    - field.field.node.home_video.field_video
     - node.type.home_video
   module:
     - link
@@ -27,8 +27,8 @@ content:
       show_summary: false
     third_party_settings: {  }
     region: content
-  field_image_media:
-    weight: 2
+  field_image:
+    weight: 26
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -37,8 +37,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_poster_image_media:
-    weight: 3
+  field_poster_image:
+    weight: 27
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -55,8 +55,8 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
-  field_video_media:
-    weight: 4
+  field_video:
+    weight: 28
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -65,6 +65,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0

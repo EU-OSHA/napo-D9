@@ -8,10 +8,10 @@ dependencies:
     - field.field.node.article.field_character_count
     - field.field.node.article.field_expiration_date
     - field.field.node.article.field_guidance_file
-    - field.field.node.article.field_icon_media
-    - field.field.node.article.field_image_media
+    - field.field.node.article.field_icon
+    - field.field.node.article.field_image
     - field.field.node.article.field_menu
-    - field.field.node.article.field_nace
+    - field.field.node.article.field_nace_codes
     - field.field.node.article.field_page_count
     - field.field.node.article.field_publication_date
     - field.field.node.article.field_tags
@@ -58,8 +58,8 @@ content:
     third_party_settings: {  }
     type: file_generic
     region: content
-  field_icon_media:
-    weight: 2
+  field_icon:
+    weight: 27
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -68,8 +68,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_image_media:
-    weight: 1
+  field_image:
+    weight: 26
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -85,16 +85,16 @@ content:
     third_party_settings: {  }
     type: file_generic
     region: content
-  field_nace:
-    type: entity_reference_autocomplete
-    weight: 7
-    region: content
+  field_nace_codes:
+    weight: 28
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_publication_date:
     type: datetime_default
     weight: 3
@@ -120,6 +120,13 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
     third_party_settings: {  }
   title:
     type: string_textfield

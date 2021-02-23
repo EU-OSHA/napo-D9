@@ -1,0 +1,29 @@
+uuid: 23234414-5ce0-45e7-8341-806f11cf6086
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_tag
+    - node.type.napo_video
+    - taxonomy.vocabulary.main_category
+id: node.napo_video.field_main_tag
+field_name: field_main_tag
+entity_type: node
+bundle: napo_video
+label: 'Main Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      main_category: main_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

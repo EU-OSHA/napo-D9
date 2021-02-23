@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.home_video.body
-    - field.field.node.home_video.field_image_media
-    - field.field.node.home_video.field_poster_image_media
+    - field.field.node.home_video.field_image
+    - field.field.node.home_video.field_poster_image
     - field.field.node.home_video.field_url
-    - field.field.node.home_video.field_video_media
+    - field.field.node.home_video.field_video
     - node.type.home_video
   module:
     - link
@@ -25,17 +25,17 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_image_media:
-    weight: 3
+  field_image:
+    weight: 7
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_poster_image_media:
+  field_poster_image:
     type: entity_reference_entity_view
-    weight: 5
+    weight: 8
     label: above
     settings:
       view_mode: default
@@ -54,9 +54,9 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_video_media:
+  field_video:
     type: entity_reference_entity_view
-    weight: 6
+    weight: 9
     label: above
     settings:
       view_mode: default
@@ -64,4 +64,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  langcode: true
   links: true

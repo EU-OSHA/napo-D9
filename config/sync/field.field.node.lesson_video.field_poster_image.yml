@@ -1,0 +1,29 @@
+uuid: f0bbf2dc-87a2-4d2d-868b-e53c8ca8ac40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poster_image
+    - media.type.image
+    - node.type.lesson_video
+id: node.lesson_video.field_poster_image
+field_name: field_poster_image
+entity_type: node
+bundle: lesson_video
+label: 'Poster image (784x675)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

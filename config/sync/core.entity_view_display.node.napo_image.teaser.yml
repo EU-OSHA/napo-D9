@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.napo_image.body
-    - field.field.node.napo_image.field_image_media
+    - field.field.node.napo_image.field_image
     - node.type.napo_image
   module:
     - text
@@ -24,5 +24,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_image_media: true
+  field_image: true
+  langcode: true
   links: true

@@ -1,0 +1,15 @@
+uuid: a0305d66-14a7-4bc2-82e9-6cb994e1c958
+langcode: en
+status: true
+dependencies: {  }
+name: film_list
+label: 'FIlm List'
+effects:
+  6dd5a053-14d8-491a-80a3-549dd1e50cc8:
+    uuid: 6dd5a053-14d8-491a-80a3-549dd1e50cc8
+    id: image_scale
+    weight: 1
+    data:
+      width: 555
+      height: null
+      upscale: true

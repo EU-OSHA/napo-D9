@@ -1,0 +1,29 @@
+uuid: b8334102-464e-42cc-aed9-470757cd99c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - media.type.image
+    - node.type.consortium_partner
+id: node.consortium_partner.field_image
+field_name: field_image
+entity_type: node
+bundle: consortium_partner
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

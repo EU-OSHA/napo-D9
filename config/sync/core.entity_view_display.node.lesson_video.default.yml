@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.field.node.lesson_video.body
     - field.field.node.lesson_video.field_body_revamp
-    - field.field.node.lesson_video.field_image_media
-    - field.field.node.lesson_video.field_poster_image_media
+    - field.field.node.lesson_video.field_image
+    - field.field.node.lesson_video.field_poster_image
     - field.field.node.lesson_video.field_tags
-    - field.field.node.lesson_video.field_video_media
-    - field.field.node.lesson_video.field_youtube_media
+    - field.field.node.lesson_video.field_video
+    - field.field.node.lesson_video.field_youtube
     - node.type.lesson_video
   module:
     - text
@@ -33,33 +33,33 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_image_media:
-    weight: 4
+  field_image:
+    weight: 8
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_poster_image_media:
-    weight: 5
+  field_poster_image:
+    weight: 9
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_video_media:
-    weight: 6
+  field_video:
+    weight: 10
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_youtube_media:
+  field_youtube:
     type: entity_reference_entity_view
-    weight: 7
+    weight: 11
     label: above
     settings:
       view_mode: default
@@ -68,4 +68,5 @@ content:
     region: content
 hidden:
   field_tags: true
+  langcode: true
   links: true

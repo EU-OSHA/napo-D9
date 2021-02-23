@@ -1,0 +1,15 @@
+uuid: 777edd10-223b-4625-8c60-93fc0aed8c6d
+langcode: en
+status: true
+dependencies: {  }
+name: napo_logo
+label: 'Napo logo'
+effects:
+  b85954d5-e858-46e7-835b-12f5b0eb766d:
+    uuid: b85954d5-e858-46e7-835b-12f5b0eb766d
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 50
+      upscale: false

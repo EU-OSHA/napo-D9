@@ -1,0 +1,13 @@
+uuid: 9a097f9e-539f-44ee-8aea-34bba2fc2de6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: MvQPTbQx0Vxwy0ordSHyixdZmLCMpvMdLD69dlwkrKc
+id: user
+label: User
+tags:
+  shortlink: '[current-page:url:unaliased]'
+  title: '[user:name] | [site:name]'
+  image_src: '[user:picture:url]'
+  canonical_url: '[current-page:url:absolute]'

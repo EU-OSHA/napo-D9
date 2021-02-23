@@ -1,0 +1,15 @@
+uuid: c15dc1b0-2c7d-4de0-9d79-2b22edafa12f
+langcode: en
+status: true
+dependencies: {  }
+name: starters_cover
+label: 'Starters cover'
+effects:
+  5fe9b234-45c1-4df7-b05b-8891790f316c:
+    uuid: 5fe9b234-45c1-4df7-b05b-8891790f316c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 319
+      height: 180
+      anchor: center-center

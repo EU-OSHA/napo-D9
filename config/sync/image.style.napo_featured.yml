@@ -1,0 +1,15 @@
+uuid: 1c7e3524-ac06-4c43-8541-9379b9ed3c34
+langcode: en
+status: true
+dependencies: {  }
+name: napo_featured
+label: napo_featured
+effects:
+  a03bf768-c39e-4a5e-b20e-0ccf5d99a0ef:
+    uuid: a03bf768-c39e-4a5e-b20e-0ccf5d99a0ef
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 337
+      height: 190
+      anchor: center-center

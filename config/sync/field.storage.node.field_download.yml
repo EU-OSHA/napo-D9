@@ -1,18 +1,21 @@
-uuid: 0551d050-d4ac-430a-a8c1-2c145948e3d7
+uuid: 29151c15-8e64-4f59-b72d-38a90f1dc618
 langcode: en
 status: true
 dependencies:
   module:
+    - field_permissions
     - node
+    - text
+third_party_settings:
+  field_permissions:
+    permission_type: public
 id: node.field_download
 field_name: field_download
 entity_type: node
-type: string
+type: text
 settings:
   max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+module: text
 locked: false
 cardinality: 1
 translatable: true

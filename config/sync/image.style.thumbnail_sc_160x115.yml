@@ -1,0 +1,23 @@
+uuid: 47da7b85-49e6-4dbe-84ef-e92b1dbf5505
+langcode: en
+status: true
+dependencies: {  }
+name: thumbnail_sc_160x115
+label: 'Thumbnail S&C (160x115)'
+effects:
+  13221465-39fe-4fc8-9ef3-c42133e90dc3:
+    uuid: 13221465-39fe-4fc8-9ef3-c42133e90dc3
+    id: image_scale
+    weight: 1
+    data:
+      width: 160
+      height: null
+      upscale: true
+  3d57c0ec-67ca-4521-94c4-cbc022573c3f:
+    uuid: 3d57c0ec-67ca-4521-94c4-cbc022573c3f
+    id: image_crop
+    weight: 2
+    data:
+      width: 160
+      height: 115
+      anchor: center-top

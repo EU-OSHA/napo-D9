@@ -1,0 +1,15 @@
+uuid: 1690ed68-0cf3-4754-8c12-0c39bf9ce967
+langcode: en
+status: true
+dependencies: {  }
+name: medium2
+label: 'Medium 2 (320x320)'
+effects:
+  bf0f3776-32eb-40c4-81ae-4dd8b7a1774a:
+    uuid: bf0f3776-32eb-40c4-81ae-4dd8b7a1774a
+    id: image_scale
+    weight: 1
+    data:
+      width: 320
+      height: 320
+      upscale: false
