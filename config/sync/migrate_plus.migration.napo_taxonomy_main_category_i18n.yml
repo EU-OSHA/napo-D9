@@ -1,0 +1,43 @@
+uuid: e94bf30e-427c-405c-b8f0-d82fc9bd3821
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - custom_migrations
+id: napo_taxonomy_main_category_i18n
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: napo_migrate
+label: 'Terms: Main Category Translations'
+source:
+  plugin: d7_locale_terms
+  bundle: main_category
+  translations: true
+process:
+  tid:
+    plugin: migration_lookup
+    migration: napo_taxonomy_main_category
+    source: tid
+    langcode:
+      plugin: static_map
+      bypass: true
+      source: language
+      map:
+        pt: pt-pt
+  vid:
+    -
+      plugin: default_value
+      default_value: main_category
+  name: name_field_value
+  description/value: description
+  description/format: format
+  field_tags: field_tags
+destination:
+  plugin: 'entity:taxonomy_term'
+  translations: true
+migration_dependencies:
+  required:
+    - napo_taxonomy_main_category

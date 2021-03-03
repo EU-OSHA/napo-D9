@@ -1,0 +1,44 @@
+uuid: 2dad3b1d-d6e3-4609-b043-2417a8f1a6f2
+langcode: en
+status: true
+dependencies: {  }
+id: napo_taxonomy_video_type
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: napo_migrate
+label: 'Terms: Video Type'
+source:
+  plugin: d7_taxonomy_term
+  bundle: video_type
+process:
+  tid: tid
+  vid:
+    -
+      plugin: default_value
+      default_value: video_type
+  name: name
+  description/value: description
+  description/format: format
+  weight: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration: napo_taxonomy_video_type
+  parent:
+    plugin: default_value
+    default_value: 0
+    source: '@parent_id'
+  forum_container: is_container
+  changed: timestamp
+  langcode: language
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies:
+  optional:
+    - d7_field_instance
