@@ -1,0 +1,57 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Použiť
+          reset_button_label: Reset
+          exposed_sorts_label: 'Zoradiť podľa'
+          sort_asc_label: Vzostupne
+          sort_desc_label: Zostupne
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Prvý'
+            last: Koniec
+          expose:
+            items_per_page_label: 'Položiek na stránku'
+            items_per_page_options_all_label: '- Všetko -'
+            offset_label: 'Zobraziť od'
+      fields:
+        entity_field:
+          separator: ', '
+        entity_langcode:
+          separator: ', '
+        url:
+          label: URL
+          separator: ', '
+        last_check:
+          label: 'Posledné kontrolované'
+          separator: ', '
+        method:
+          label: Metóda
+          separator: ', '
+        code:
+          separator: ', '
+        error:
+          label: Chyba
+          separator: ', '
+        fail_count:
+          separator: ', '
+        status:
+          separator: ', '
+        operations:
+          label: Operácie
+      filters:
+        url:
+          expose:
+            label: URL
+        code_1:
+          group_info:
+            group_items:
+              1:
+                title: Neúspešné
+  page_1:
+    display_title: Stránka

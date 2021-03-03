@@ -1,0 +1,16 @@
+label: 'Jauni lietotāji'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apstiprināt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      title: 'Jauni lietotāji'
+  block_1:
+    display_title: 'Jauni lietotāji'
+    display_options:
+      block_description: 'Jauni lietotāji'
+      block_category: Lietotājs

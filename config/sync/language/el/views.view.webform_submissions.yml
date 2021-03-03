@@ -1,0 +1,139 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Εφαρμογή
+          reset_button_label: Επαναφορά
+          exposed_sorts_label: 'Ταξινόμηση κατά'
+          sort_asc_label: Αύξ
+          sort_desc_label: Φθί
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        created:
+          label: Δημιουργήθηκε
+          separator: ', '
+        remote_addr:
+          label: 'διεύθυνση IP'
+          separator: ', '
+        view_webform_submission:
+          label: Λειτουργίες
+          text: προβολή
+      arguments:
+        in_draft:
+          exception:
+            title: Όλες
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Ενέργεια
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: Καρφιτσωμένο
+          separator: ', '
+        locked:
+          label: Κλειδωμένο
+          separator: ', '
+        created:
+          label: Δημιουργήθηκε
+          separator: ', '
+        completed:
+          label: Ολοκληρώθηκε
+          separator: ', '
+        remote_addr:
+          label: 'διεύθυνση IP'
+          separator: ', '
+        operations:
+          label: Λειτουργίες
+      filters:
+        sticky:
+          expose:
+            label: Καρφιτσωμένο
+        locked:
+          expose:
+            label: Κλειδωμένο
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Ενέργεια
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: Καρφιτσωμένο
+          separator: ', '
+        locked:
+          label: Κλειδωμένο
+          separator: ', '
+        created:
+          label: Δημιουργήθηκε
+          separator: ', '
+        completed:
+          label: Ολοκληρώθηκε
+          separator: ', '
+        remote_addr:
+          label: 'διεύθυνση IP'
+          separator: ', '
+        view_webform_submission:
+          label: Λειτουργίες
+          text: προβολή
+        edit_webform_submission:
+          label: Λειτουργίες
+          text: επεξεργασία
+      filters:
+        sticky:
+          expose:
+            label: Καρφιτσωμένο
+        locked:
+          expose:
+            label: Κλειδωμένο
+  embed_review:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: Καρφιτσωμένο
+          separator: ', '
+        locked:
+          label: Κλειδωμένο
+          separator: ', '
+        created:
+          label: Δημιουργήθηκε
+          separator: ', '
+        completed:
+          label: Ολοκληρώθηκε
+          separator: ', '
+        remote_addr:
+          label: 'διεύθυνση IP'
+          separator: ', '
+        view_webform_submission:
+          label: Λειτουργίες
+          text: προβολή
+      filters:
+        sticky:
+          expose:
+            label: Καρφιτσωμένο
+        locked:
+          expose:
+            label: Κλειδωμένο

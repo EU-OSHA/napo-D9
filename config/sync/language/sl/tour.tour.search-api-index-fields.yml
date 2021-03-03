@@ -1,0 +1,9 @@
+tips:
+  search-api-index-fields-label:
+    label: Oznaka
+  search-api-index-fields-machine-name:
+    label: 'Strojno ime'
+  search-api-index-fields-type:
+    label: Tip
+  search-api-index-fields-edit:
+    label: 'uredi polje'

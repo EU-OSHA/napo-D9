@@ -1,0 +1,12 @@
+label: 'Nye kommentarar'
+display:
+  default:
+    display_options:
+      title: 'Nye kommentarar'
+      empty:
+        area_text_custom:
+          content: 'Ingen kommentarar er tilgjengelege'
+  block_1:
+    display_title: Blokk
+    display_options:
+      block_description: 'Nye kommentarar'

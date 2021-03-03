@@ -1,0 +1,66 @@
+display:
+  default:
+    display_title: Expert
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicare
+          reset_button_label: Resetează
+          exposed_sorts_label: 'Sortare după'
+          sort_asc_label: Ascendent
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Primul'
+            last: 'Ultimul »'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+      fields:
+        entity_field:
+          separator: ', '
+        entity_langcode:
+          label: 'Limba entității'
+          separator: ', '
+        url:
+          label: URL
+          separator: ', '
+        last_check:
+          label: 'Ultima verificare'
+          separator: ', '
+        method:
+          label: Metodă
+          separator: ', '
+        code:
+          separator: ', '
+        error:
+          label: Eroare
+          separator: ', '
+        fail_count:
+          separator: ', '
+        status:
+          separator: ', '
+        operations:
+          label: Operaţii
+      filters:
+        url:
+          expose:
+            label: URL
+        code_1:
+          group_info:
+            label: Rezultat
+            group_items:
+              1:
+                title: Eşuat
+        entity_langcode:
+          expose:
+            label: 'Limba entității'
+      footer:
+        result:
+          content: 'Afișare @start - @end din @total'
+  page_1:
+    display_title: Pagina

@@ -1,0 +1,15 @@
+label: 'Ostatnie komentarze'
+description: 'Ostatnie komentarze.'
+display:
+  default:
+    display_title: Główny
+    display_options:
+      title: 'Ostatnie komentarze'
+      empty:
+        area_text_custom:
+          content: 'Brak dostępnych komentarzy.'
+  block_1:
+    display_title: Blok
+    display_options:
+      block_description: 'Ostatnie komentarze'
+      block_category: 'Listy (Widoki)'

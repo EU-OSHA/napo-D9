@@ -1,0 +1,5 @@
+label: 'Noklusētā vērtība'
+options:
+  settings:
+    prevArrow: Iepriekšējais
+    nextArrow: Tālāk

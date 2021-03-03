@@ -1,0 +1,23 @@
+label: 'Contingut recent'
+description: 'Contingut recent.'
+display:
+  default:
+    display_title: Mestre
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplica
+          reset_button_label: Reinicialitza
+          exposed_sorts_label: 'Ordena per'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        changed:
+          separator: ', '
+      title: 'Contingut recent'
+      empty:
+        area_text_custom:
+          content: 'No hi ha contingut disponible.'
+      use_more_text: Més
+  block_1:
+    display_title: Bloc

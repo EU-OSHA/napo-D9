@@ -1,0 +1,12 @@
+label: 'Страница схемы блоков'
+tips:
+  block-layout:
+    label: 'Макет блоков'
+  place-block:
+    label: 'Разместить блоки'
+  block-region:
+    label: 'Регион Блока'
+  configure-block:
+    label: 'Настроить блок'
+  custom-block-library:
+    label: 'Библиотека Пользовательских блоков'

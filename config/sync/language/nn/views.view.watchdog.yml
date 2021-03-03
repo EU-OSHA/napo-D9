@@ -1,0 +1,41 @@
+description: 'Nyaste loggmeldingar'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        severity:
+          label: Alvorlighetsgrad
+        type:
+          label: Type
+        timestamp:
+          label: Dato
+        message:
+          label: Melding
+        name:
+          label: Brukar
+          separator: ', '
+        link:
+          label: Operasjonar
+      filters:
+        type:
+          expose:
+            label: Type
+        severity:
+          expose:
+            label: Alvorlighetsgrad
+      title: 'Nyaste loggmeldingar'
+      empty:
+        area:
+          admin_label: 'Ingen loggmeldingar er tilgjengelege.'
+          content: 'Ingen loggmeldingar er tilgjengelege.'
+  page:
+    display_title: Nettside

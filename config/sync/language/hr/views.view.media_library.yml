@@ -1,0 +1,84 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Poništi
+          exposed_sorts_label: 'Rasporedi po'
+          sort_asc_label: Uzlazno
+          sort_desc_label: Silazno
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        media_bulk_form:
+          action_title: Akcija
+      filters:
+        status:
+          group_info:
+            label: Objavljeno
+            group_items:
+              1:
+                title: Objavljeno
+        name:
+          expose:
+            label: Naziv
+        langcode:
+          expose:
+            label: Jezik
+      title: Mediji
+  page:
+    display_title: Stranica
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Akcija
+        name:
+          separator: ', '
+        edit_media:
+          text: Uredi
+        delete_media:
+          text: Ukloni
+  widget:
+    display_title: Cinculator
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Naziv
+      arguments:
+        bundle:
+          exception:
+            title: Svi
+      header:
+        display_link_grid:
+          label: Mreža
+        display_link_table:
+          label: Tablica
+  widget_table:
+    display_options:
+      fields:
+        thumbnail__target_id:
+          label: Thumbnail
+        name:
+          label: Naziv
+        uid:
+          label: Autor
+        changed:
+          label: Osvježeno
+      filters:
+        name:
+          expose:
+            label: Naziv
+      arguments:
+        bundle:
+          exception:
+            title: Svi
+      header:
+        display_link_grid:
+          label: Mreža
+        display_link_table:
+          label: Tablica

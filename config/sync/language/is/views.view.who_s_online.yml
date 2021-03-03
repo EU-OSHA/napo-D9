@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      title: 'Hverjir eru tengdir'
+  who_s_online_block:
+    display_title: 'Hverjir eru tengdir'
+    display_options:
+      block_description: 'Hverjir eru tengdir'

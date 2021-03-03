@@ -1,0 +1,79 @@
+label: Media
+description: 'Znajdź i zarządaj mediami.'
+display:
+  default:
+    display_title: Główny
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtr
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+          tags:
+            previous: '‹ Poprzednia'
+            next: 'Następna ›'
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
+      fields:
+        media_bulk_form:
+          action_title: Akcja
+        thumbnail__target_id:
+          label: Miniaturka
+          separator: ', '
+        name:
+          label: 'Nazwa mediów'
+          separator: ', '
+        bundle:
+          label: Typ
+          separator: ', '
+        uid:
+          label: Autor
+          separator: ', '
+        status:
+          label: Status
+          settings:
+            format_custom_true: Opublikowane
+            format_custom_false: Nieopublikowany
+          separator: ', '
+        changed:
+          label: Uaktualniono
+          separator: ', '
+        operations:
+          label: Operacje
+      filters:
+        name:
+          expose:
+            label: 'Nazwa mediów'
+        bundle:
+          expose:
+            label: Typ
+        status:
+          expose:
+            label: Prawda
+          group_info:
+            label: 'Status publikacji'
+            group_items:
+              1:
+                title: Opublikowane
+              2:
+                title: Nieopublikowany
+        langcode:
+          expose:
+            label: Język
+      title: Media
+      empty:
+        area_text_custom:
+          content: 'Brak mediów'
+  media_page_list:
+    display_title: Media
+    display_options:
+      menu:
+        title: Media

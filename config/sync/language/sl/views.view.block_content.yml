@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+      fields:
+        info:
+          label: 'Opis bloka'
+        changed:
+          label: Posodobljeno
+        operations:
+          label: Operacije
+      filters:
+        info:
+          expose:
+            label: 'Opis bloka'
+  page_1:
+    display_title: Stran

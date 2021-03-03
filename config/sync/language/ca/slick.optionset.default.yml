@@ -1,0 +1,5 @@
+label: 'Per defecte'
+options:
+  settings:
+    prevArrow: Anterior
+    nextArrow: Següent

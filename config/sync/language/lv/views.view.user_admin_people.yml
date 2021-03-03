@@ -1,0 +1,60 @@
+label: Cilvēki
+description: 'Atrast un pārvaldīt lietotājus, kas darbojas jūsu vietnē.'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrēt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      fields:
+        name:
+          label: Lietotājvārds
+        status:
+          label: Statuss
+          settings:
+            format_custom_true: Aktīvs
+            format_custom_false: Bloķēts
+        roles_target_id:
+          label: Lomas
+        created:
+          label: Dalībnieks
+        access:
+          label: 'Piedējās piekļuves laiks'
+        operations:
+          label: Darbības
+      filters:
+        status:
+          group_info:
+            label: Statuss
+            group_items:
+              1:
+                title: Aktīvs
+              2:
+                title: Bloķēts
+        roles_target_id:
+          expose:
+            label: Loma
+        permission:
+          expose:
+            label: Atļauja
+      title: Cilvēki
+      empty:
+        area_text_custom:
+          content: 'Nav pieejams neviens cilvēks.'
+      use_more_text: vairāk
+  page_1:
+    display_title: Lapa
+    display_options:
+      menu:
+        title: Saraksts
+        description: 'Atrast un pārvaldīt lietotājus, kas darbojas jūsu vietnē.'
+      tab_options:
+        title: Cilvēki
+        description: 'Pārvaldīt lietotāju kontus, lomas un atļaujas.'

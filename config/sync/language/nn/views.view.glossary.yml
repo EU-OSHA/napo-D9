@@ -1,0 +1,23 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        title:
+          label: Tittel
+        name:
+          label: Forfattar
+        changed:
+          label: 'Siste oppdatering'
+  attachment_1:
+    display_title: Vedlegg
+  page_1:
+    display_title: Nettside

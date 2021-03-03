@@ -1,0 +1,27 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apstiprināt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+          tags:
+            previous: '"'
+            next: '"'
+      fields:
+        title:
+          label: Virsraksts
+        name:
+          label: Autors
+        changed:
+          label: 'Pēdējais papildinājums'
+  attachment_1:
+    display_title: Pielikums
+  page_1:
+    display_title: Lapa

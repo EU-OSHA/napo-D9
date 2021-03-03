@@ -1,0 +1,100 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        created:
+          label: Sukurta
+        remote_addr:
+          label: 'IP adresas'
+        view_webform_submission:
+          label: Veiksmai
+          text: Peržiūrėti
+      arguments:
+        in_draft:
+          exception:
+            title: Visi
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Veiksmas
+        sticky:
+          label: 'Prikabintas viršuje'
+        locked:
+          label: Užrakinta
+        created:
+          label: Sukurta
+        completed:
+          label: Pabaigtas
+        remote_addr:
+          label: 'IP adresas'
+        operations:
+          label: Veiksmai
+      filters:
+        sticky:
+          expose:
+            label: 'Prikabintas viršuje'
+        locked:
+          expose:
+            label: Užrakinta
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Veiksmas
+        sticky:
+          label: 'Prikabintas viršuje'
+        locked:
+          label: Užrakinta
+        created:
+          label: Sukurta
+        completed:
+          label: Pabaigtas
+        remote_addr:
+          label: 'IP adresas'
+        view_webform_submission:
+          label: Veiksmai
+          text: Peržiūrėti
+        edit_webform_submission:
+          label: Veiksmai
+          text: redaguoti
+      filters:
+        sticky:
+          expose:
+            label: 'Prikabintas viršuje'
+        locked:
+          expose:
+            label: Užrakinta
+  embed_review:
+    display_options:
+      fields:
+        sticky:
+          label: 'Prikabintas viršuje'
+        locked:
+          label: Užrakinta
+        created:
+          label: Sukurta
+        completed:
+          label: Pabaigtas
+        remote_addr:
+          label: 'IP adresas'
+        view_webform_submission:
+          label: Veiksmai
+          text: Peržiūrėti
+      filters:
+        sticky:
+          expose:
+            label: 'Prikabintas viršuje'
+        locked:
+          expose:
+            label: Užrakinta

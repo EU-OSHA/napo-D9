@@ -1,0 +1,15 @@
+settings:
+  default_submit_button_label: Odeslat
+  default_reset_button_label: Reset
+  default_delete_button_label: Smazat
+  default_preview_next_button_label: Náhled
+  default_preview_label: Náhled
+  dialog_options:
+    narrow:
+      title: Úzký
+    normal:
+      title: Normální
+    wide:
+      title: Široký
+element:
+  default_more_title: Více

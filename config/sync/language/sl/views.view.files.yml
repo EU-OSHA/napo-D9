@@ -1,0 +1,34 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Ponastavi
+      fields:
+        filename:
+          label: Ime
+        filemime:
+          label: 'MIME type'
+        filesize:
+          label: Velikost
+        status:
+          label: Stanje
+        count:
+          label: 'Uporabljen v'
+      filters:
+        filename:
+          expose:
+            label: 'Ime datoteke'
+        filemime:
+          expose:
+            label: 'MIME type'
+        status:
+          expose:
+            label: Stanje
+  page_2:
+    display_options:
+      arguments:
+        fid:
+          exception:
+            title: Vsi

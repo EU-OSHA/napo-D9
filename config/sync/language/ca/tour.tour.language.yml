@@ -1,0 +1,14 @@
+label: Llengua
+tips:
+  language-overview:
+    label: Llengües
+    body: '<p>La pàgina de "Llengües" us permet afegir, editar, eliminar i reordenar llengües pel lloc.</p>'
+  language-add:
+    label: 'Afegint llengües'
+    body: '<p>Per afegir més llengües al vostre lloc, feu clic al botó "Afegeix una llengua".</p><p>Les llengües afegides es mostraran al llistat de llengües i a partir de llavors es poden editar o eliminar.</p>'
+  language-reorder:
+    label: 'Reordenament de les llengües'
+  language-default:
+    label: 'Estableix l''idioma per defecte'
+  language-operations:
+    label: 'Modificant les llengües'

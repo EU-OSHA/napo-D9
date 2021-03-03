@@ -1,0 +1,90 @@
+label: Fitxers
+description: 'Localitza i gestiona arxius.'
+display:
+  default:
+    display_title: Mestre
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtra
+          reset_button_label: Reinicialitza
+          exposed_sorts_label: 'Ordena per'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Següent ›'
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+      fields:
+        fid:
+          label: Fid
+        filename:
+          label: Nom
+          separator: ', '
+        filemime:
+          label: 'Tipus MIME'
+        filesize:
+          label: Mida
+        status:
+          label: Estat
+          settings:
+            format_custom_false: Temporal
+            format_custom_true: Permanent
+        created:
+          label: 'Data de càrrega'
+        changed:
+          label: 'Data de modificació'
+        count:
+          label: 'Usat a'
+      filters:
+        filename:
+          expose:
+            label: 'Nom de fitxer'
+        filemime:
+          expose:
+            label: 'Tipus MIME'
+        status:
+          expose:
+            label: Estat
+      title: Fitxers
+      empty:
+        area_text_custom:
+          content: 'No hi ha fitxers disponibles.'
+  page_1:
+    display_title: 'Visió generalt dels fitxers'
+    display_options:
+      menu:
+        title: Fitxers
+  page_2:
+    display_title: 'Utilització de fitxer'
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Següent ›'
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+      fields:
+        entity_label:
+          label: Entitat
+        type:
+          label: 'Tipus d''entitat'
+        module:
+          label: 'Mòdul de registre'
+        count:
+          label: 'Comptador d''ús'
+          format_plural_string: !!binary MQNAY291bnQ=
+      title: 'Utilització de fitxer'
+      arguments:
+        fid:
+          exception:
+            title: Tot
+          title: 'Informació d''ús del fitxer per {{ arguments.fid }}'

@@ -1,0 +1,105 @@
+label: Comentários
+description: 'Encontrar e gerir comentários.'
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ anterior'
+            next: 'seguinte ›'
+            first: '« primeira'
+            last: 'última »'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+      fields:
+        comment_bulk_form:
+          action_title: Ação
+        subject:
+          label: Assunto
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Autor
+          separator: ', '
+        entity_id:
+          label: 'Colocado em'
+          separator: ', '
+        changed:
+          label: Atualizado
+          separator: ', '
+        operations:
+          label: Operações
+        name_1:
+          separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Assunto
+        combine:
+          expose:
+            label: 'Nome do autor'
+        langcode:
+          expose:
+            label: Idioma
+      title: Comentários
+      empty:
+        area_text_custom:
+          content: 'Não existem comentários.'
+      use_more_text: mais
+  page_published:
+    display_title: 'Comentários publicados'
+    display_options:
+      menu:
+        title: Comentários
+        description: 'Comentários publicados'
+      display_description: 'A Lista de comentários aprovados.'
+  page_unapproved:
+    display_title: 'Comentários não aprovados'
+    display_options:
+      menu:
+        title: 'Comentários não aprovados'
+        description: 'Comentários não aprovados'
+      display_description: 'A lista de comentários não aprovados.'
+      filters:
+        subject:
+          expose:
+            label: Assunto
+        combine:
+          expose:
+            label: 'Nome do autor'
+        langcode:
+          expose:
+            label: Idioma
+      fields:
+        comment_bulk_form:
+          action_title: Ação
+        subject:
+          label: Assunto
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Autor
+          separator: ', '
+        entity_id:
+          label: 'Colocado em'
+          separator: ', '
+        changed:
+          label: Atualizado
+          separator: ', '
+        operations:
+          label: Operações
+        name_1:
+          separator: ', '

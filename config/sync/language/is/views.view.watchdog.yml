@@ -1,0 +1,46 @@
+label: Varðhundur
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        nothing:
+          admin_label: Táknmynd
+        severity:
+          label: Alvarleiki
+        type:
+          label: Gerð
+        timestamp:
+          label: Dagsetning
+        message:
+          label: Skilaboð
+        name:
+          label: Notandi
+          separator: ', '
+        link:
+          label: Aðgerðir
+      filters:
+        type:
+          expose:
+            label: Gerð
+        severity:
+          expose:
+            label: Alvarleiki
+      empty:
+        area:
+          admin_label: 'Engin kerfisskilaboð fáanleg.'
+          content: 'Engin kerfisskilaboð fáanleg.'
+  page:
+    display_title: Síða

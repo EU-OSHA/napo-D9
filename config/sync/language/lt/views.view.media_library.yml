@@ -1,0 +1,88 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        media_bulk_form:
+          action_title: Veiksmas
+      filters:
+        status:
+          group_info:
+            label: Paskelbtas
+            group_items:
+              1:
+                title: Paskelbtas
+              2:
+                title: Nepaskelbtas
+        name:
+          expose:
+            label: Pavadinimas
+        langcode:
+          expose:
+            label: Kalba
+      sorts:
+        created:
+          expose:
+            label: 'Nauji pradžioj'
+      title: Media
+      empty:
+        area_text_custom:
+          content: 'Nėra galimos media.'
+  page:
+    display_title: Puslapis
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Veiksmas
+        edit_media:
+          text: Redaguoti
+        delete_media:
+          text: Pašalinti
+  widget:
+    display_title: Valdiklis
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Pavadinimas
+      arguments:
+        bundle:
+          exception:
+            title: Visi
+      header:
+        display_link_grid:
+          label: Tinklelis
+        display_link_table:
+          label: Lentelė
+  widget_table:
+    display_options:
+      fields:
+        thumbnail__target_id:
+          label: Miniatūra
+        name:
+          label: Pavadinimas
+        uid:
+          label: Autorius
+        changed:
+          label: Atnaujinta
+      filters:
+        name:
+          expose:
+            label: Pavadinimas
+      arguments:
+        bundle:
+          exception:
+            title: Visi
+      header:
+        display_link_grid:
+          label: Tinklelis
+        display_link_table:
+          label: Lentelė

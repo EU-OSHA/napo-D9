@@ -1,0 +1,17 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Рестартирай
+      filters:
+        access:
+          expose:
+            label: 'Последен достъп'
+            description: 'Колко минути потребителят трябва да бъде смятан за онлайн, след като е напуснал сайта.'
+      title: 'Кой е онлайн'
+  who_s_online_block:
+    display_title: 'Кой е онлайн'
+    display_options:
+      block_description: 'Кой е онлайн'

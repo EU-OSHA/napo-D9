@@ -1,0 +1,53 @@
+label: Folk
+description: 'Finn og handsama folk som brukar nettstaden din.'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        name:
+          label: Brukarnamn
+        status:
+          label: Status
+          settings:
+            format_custom_true: Aktiv
+            format_custom_false: Blokkert
+        roles_target_id:
+          label: Roller
+        created:
+          label: 'Medlem i'
+        operations:
+          label: Operasjonar
+        mail:
+          separator: ', '
+      filters:
+        status:
+          group_info:
+            label: Status
+            group_items:
+              1:
+                title: Aktiv
+              2:
+                title: Blokkert
+        roles_target_id:
+          expose:
+            label: Rolle
+      title: Folk
+      use_more_text: meir
+  page_1:
+    display_title: Nettside
+    display_options:
+      menu:
+        title: Liste
+        description: 'Finn og handsama folk som brukar nettstaden din.'
+      tab_options:
+        title: Folk
+        description: 'Handsama brukarkontoar, roller og rettar.'

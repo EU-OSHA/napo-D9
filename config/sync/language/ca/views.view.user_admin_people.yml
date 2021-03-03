@@ -1,0 +1,76 @@
+label: Gent
+description: 'Trobeu i gestioneu la gent que interacciona amb el vostre lloc.'
+display:
+  default:
+    display_title: Mestre
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtra
+          reset_button_label: Reinicialitza
+          exposed_sorts_label: 'Ordena per'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Següent ›'
+            first: '« Primer'
+            last: 'Últim »'
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+      fields:
+        user_bulk_form:
+          label: 'Actualització massiva'
+        name:
+          label: 'Nom d''usuari'
+        status:
+          label: Estat
+          settings:
+            format_custom_true: Actiu
+            format_custom_false: Bloquejat
+        roles_target_id:
+          label: Rols
+        created:
+          label: 'Membre des de fa'
+        access:
+          label: 'Darrer accés'
+        operations:
+          label: Operacions
+        mail:
+          separator: ', '
+      filters:
+        combine:
+          expose:
+            label: 'Nom o correu electrònic conté'
+        status:
+          group_info:
+            label: Estat
+            group_items:
+              1:
+                title: Actiu
+              2:
+                title: Bloquejat
+        roles_target_id:
+          expose:
+            label: Rol
+        permission:
+          expose:
+            label: Permís
+      title: Gent
+      empty:
+        area_text_custom:
+          content: 'No hi ha gent disponible.'
+      use_more_text: més
+  page_1:
+    display_title: Pàgina
+    display_options:
+      menu:
+        title: Llistat
+        description: 'Trobeu i gestioneu la gent que interacciona amb el vostre lloc.'
+      tab_options:
+        title: Gent
+        description: 'Gestiona comptes d''usuari, rols i permisos.'

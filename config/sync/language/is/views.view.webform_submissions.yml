@@ -1,0 +1,109 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        created:
+          label: Stofnað
+          separator: ', '
+        remote_addr:
+          label: 'IP vistfang'
+          separator: ', '
+        view_webform_submission:
+          label: Aðgerðir
+          text: skoða
+      arguments:
+        in_draft:
+          exception:
+            title: Allt
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Aðgerð
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
+        created:
+          label: Stofnað
+          separator: ', '
+        completed:
+          label: Lokið
+          separator: ', '
+        remote_addr:
+          label: 'IP vistfang'
+          separator: ', '
+        operations:
+          label: Aðgerðir
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Aðgerð
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
+        created:
+          label: Stofnað
+          separator: ', '
+        completed:
+          label: Lokið
+          separator: ', '
+        remote_addr:
+          label: 'IP vistfang'
+          separator: ', '
+        view_webform_submission:
+          label: Aðgerðir
+          text: skoða
+        edit_webform_submission:
+          label: Aðgerðir
+          text: breyta
+  embed_review:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
+        created:
+          label: Stofnað
+          separator: ', '
+        completed:
+          label: Lokið
+          separator: ', '
+        remote_addr:
+          label: 'IP vistfang'
+          separator: ', '
+        view_webform_submission:
+          label: Aðgerðir
+          text: skoða

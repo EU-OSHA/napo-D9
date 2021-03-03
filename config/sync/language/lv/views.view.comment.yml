@@ -1,0 +1,77 @@
+label: Komentāri
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrēt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          tags:
+            previous: '‹ iepriekšējā'
+            next: 'nākamā ›'
+            first: '« pirmā'
+            last: 'pēdējā »'
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      fields:
+        comment_bulk_form:
+          action_title: Darbība
+        subject:
+          label: Temats
+        name:
+          label: Autors
+        entity_id:
+          label: Ievietots
+        changed:
+          label: Atjaunināts
+        operations:
+          label: Darbības
+      filters:
+        subject:
+          expose:
+            label: Temats
+        combine:
+          expose:
+            label: 'Autora vārds'
+        langcode:
+          expose:
+            label: Valoda
+      title: Komentāri
+      empty:
+        area_text_custom:
+          content: 'Nav pieejami komentāri.'
+      use_more_text: vairāk
+  page_published:
+    display_title: 'Publicētie komentāri'
+    display_options:
+      menu:
+        title: Komentāri
+  page_unapproved:
+    display_title: 'Neapstiprināti komentāri'
+    display_options:
+      menu:
+        title: 'Neapstiprināti komentāri'
+      filters:
+        subject:
+          expose:
+            label: Temats
+        langcode:
+          expose:
+            label: Valoda
+      fields:
+        comment_bulk_form:
+          action_title: Darbība
+        subject:
+          label: Temats
+        name:
+          label: Autors
+        entity_id:
+          label: Ievietots
+        changed:
+          label: Atjaunināts
+        operations:
+          label: Darbības

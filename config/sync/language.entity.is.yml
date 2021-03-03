@@ -1,0 +1,9 @@
+uuid: b5c50dc4-810e-466c-bdc6-2b022b31778d
+langcode: en
+status: true
+dependencies: {  }
+id: is
+label: Icelandic
+direction: ltr
+weight: 13
+locked: false

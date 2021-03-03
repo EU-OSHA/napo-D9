@@ -1,0 +1,7 @@
+tips:
+  search-api-index-status:
+    label: Статус
+  search-api-index-tracker:
+    label: Изменения
+  search-api-index-server:
+    label: Сервер

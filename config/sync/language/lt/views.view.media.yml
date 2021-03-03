@@ -1,0 +1,58 @@
+label: Media
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtruoti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        media_bulk_form:
+          action_title: Veiksmas
+        thumbnail__target_id:
+          label: Miniatūra
+        bundle:
+          label: Tipas
+        uid:
+          label: Autorius
+        status:
+          label: Būsena
+          settings:
+            format_custom_true: Paskelbtas
+            format_custom_false: Nepaskelbtas
+        changed:
+          label: Atnaujinta
+        operations:
+          label: Veiksmai
+      filters:
+        bundle:
+          expose:
+            label: Tipas
+        status:
+          expose:
+            label: 'True'
+          group_info:
+            label: 'Paskelbta statusas'
+            group_items:
+              1:
+                title: Paskelbtas
+              2:
+                title: Nepaskelbtas
+        langcode:
+          expose:
+            label: Kalba
+      title: Media
+      empty:
+        area_text_custom:
+          content: 'Nėra galimos media.'
+  media_page_list:
+    display_title: Media
+    display_options:
+      menu:
+        title: Media

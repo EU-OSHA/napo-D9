@@ -1,0 +1,36 @@
+label: Glossari
+description: 'Tot el contingut, per lletra.'
+display:
+  default:
+    display_title: Mestre
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplica
+          reset_button_label: Reinicialitza
+          exposed_sorts_label: 'Ordena per'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        title:
+          label: Títol
+        name:
+          label: Autor
+        changed:
+          label: 'Última actualització'
+  attachment_1:
+    display_title: Adjunt
+  page_1:
+    display_title: Pàgina
+    display_options:
+      menu:
+        title: Glossari

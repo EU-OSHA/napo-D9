@@ -4,8 +4,60 @@ url:
   source: path_prefix
   prefixes:
     en: ''
+    cs: cs
+    bg: bg
+    da: da
+    de: de
+    el: el
+    es: es
+    et: et
+    fi: fi
+    hr: hr
+    fr: fr
+    hu: hu
+    is: is
+    it: it
+    lv: lv
+    lt: lt
+    nl: nl
+    nn: nn
+    pl: pl
+    pt-pt: pt-pt
+    ro: ro
+    sk: sk
+    sl: sl
+    sv: sv
+    ca: ca
+    ru: ru
+    tr: tr
   domains:
     en: ''
+    cs: ''
+    bg: ''
+    da: ''
+    de: ''
+    el: ''
+    es: ''
+    et: ''
+    fi: ''
+    hr: ''
+    fr: ''
+    hu: ''
+    is: ''
+    it: ''
+    lv: ''
+    lt: ''
+    nl: ''
+    nn: ''
+    pl: ''
+    pt-pt: ''
+    ro: ''
+    sk: ''
+    sl: ''
+    sv: ''
+    ca: ''
+    ru: ''
+    tr: ''
 selected_langcode: site_default
 _core:
   default_config_hash: uEePITI9tV6WqzmsTb7MfPCi5yPWXSxAN1xeLcYFQbM

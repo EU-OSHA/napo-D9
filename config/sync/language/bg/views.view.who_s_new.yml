@@ -1,0 +1,14 @@
+label: 'Нови потребители'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Рестартирай
+      title: 'Нови потребители'
+  block_1:
+    display_title: 'Нови потребители'
+    display_options:
+      block_description: 'Нови потребители'
+      block_category: Потребител

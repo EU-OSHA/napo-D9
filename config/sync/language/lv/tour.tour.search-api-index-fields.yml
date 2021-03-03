@@ -1,0 +1,13 @@
+tips:
+  search-api-index-fields-label:
+    label: Etiķete
+  search-api-index-fields-machine-name:
+    label: Mašīnvārds
+  search-api-index-fields-type:
+    label: Veids
+  search-api-index-fields-edit:
+    label: 'Rediģēt lauku'
+  search-api-index-fields-remove:
+    label: 'Noņemt lauku'
+  search-api-index-fields-submit:
+    label: 'Saglabāt izmaiņas'

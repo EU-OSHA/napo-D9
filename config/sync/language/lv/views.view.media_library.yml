@@ -1,0 +1,88 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+          tags:
+            previous: '"'
+            next: '"'
+      fields:
+        media_bulk_form:
+          action_title: Darbība
+      filters:
+        status:
+          group_info:
+            label: Publicēts
+            group_items:
+              1:
+                title: Publicēts
+        name:
+          expose:
+            label: Nosaukums
+        langcode:
+          expose:
+            label: Valoda
+      sorts:
+        created:
+          expose:
+            label: 'Jaunākais vispirms'
+      title: Multivide
+      empty:
+        area_text_custom:
+          content: 'Nav neviens medijs pieejami.'
+  page:
+    display_title: Lapa
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Darbība
+        edit_media:
+          text: Rediģēt
+        delete_media:
+          text: Dzēst
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Nosaukums
+      arguments:
+        bundle:
+          exception:
+            title: Visi
+      header:
+        display_link_grid:
+          label: Grid
+        display_link_table:
+          label: Tabula
+  widget_table:
+    display_options:
+      fields:
+        thumbnail__target_id:
+          label: Sīktēls
+        name:
+          label: Nosaukums
+        uid:
+          label: Autors
+        changed:
+          label: Atjaunināts
+      filters:
+        name:
+          expose:
+            label: Nosaukums
+      arguments:
+        bundle:
+          exception:
+            title: Visi
+      header:
+        display_link_grid:
+          label: Grid
+        display_link_table:
+          label: Tabula

@@ -20,6 +20,7 @@ dependencies:
   module:
     - datetime
     - file
+    - shs_chosen
     - text
 _core:
   default_config_hash: 6VUXB1jTUjK5zjkfMa2Kd2WW4sFUlgfBlfJSx01qLpU
@@ -102,24 +103,38 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_tags:
-    type: entity_reference_autocomplete
+    type: options_shs_chosen
     weight: 6
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      chosen_override: false
+      chosen_settings:
+        disable_search: false
+        search_contains: false
+        placeholder_text_multiple: 'Choose some options'
+        placeholder_text_single: 'Choose an option'
+        no_results_text: 'No results match'
+      display_node_count: false
+      create_new_items: false
+      create_new_levels: false
+      force_deepest: false
     third_party_settings: {  }
   field_thesaurus:
-    type: entity_reference_autocomplete
+    type: options_shs_chosen
     weight: 8
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      chosen_override: false
+      chosen_settings:
+        disable_search: false
+        search_contains: false
+        placeholder_text_multiple: 'Choose some options'
+        placeholder_text_single: 'Choose an option'
+        no_results_text: 'No results match'
+      display_node_count: false
+      create_new_items: false
+      create_new_levels: false
+      force_deepest: false
     third_party_settings: {  }
   langcode:
     type: language_select

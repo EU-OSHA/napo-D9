@@ -1,0 +1,57 @@
+display:
+  default:
+    display_title: Nadřízené
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Použít
+          reset_button_label: Reset
+          exposed_sorts_label: 'Řadit dle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« První'
+            last: 'Poslední »'
+          expose:
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
+      fields:
+        entity_field:
+          separator: ', '
+        entity_langcode:
+          label: 'Jazyk entity'
+          separator: ', '
+        url:
+          label: URL
+          separator: ', '
+        last_check:
+          label: 'Naposled kontrolováno'
+          separator: ', '
+        method:
+          label: Metoda
+          separator: ', '
+        code:
+          separator: ', '
+        error:
+          label: Chyba
+          separator: ', '
+        fail_count:
+          separator: ', '
+        status:
+          separator: ', '
+        operations:
+          label: Operace
+      filters:
+        url:
+          expose:
+            label: URL
+        entity_langcode:
+          expose:
+            label: 'Jazyk entity'
+  page_1:
+    display_title: Stránka

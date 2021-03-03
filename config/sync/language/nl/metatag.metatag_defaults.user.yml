@@ -1,0 +1,4 @@
+label: Gebruiker
+tags:
+  canonical_url: '[user:url]'
+  title: '[user:display-name] | [site:name]'

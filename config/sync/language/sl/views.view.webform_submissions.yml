@@ -1,0 +1,54 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+      fields:
+        created:
+          label: Ustvarjeno
+        remote_addr:
+          label: 'IP naslovi'
+        view_webform_submission:
+          label: Operacije
+          text: pogled
+      arguments:
+        in_draft:
+          exception:
+            title: Vsi
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Akcija
+        created:
+          label: Ustvarjeno
+        remote_addr:
+          label: 'IP naslovi'
+        operations:
+          label: Operacije
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Akcija
+        created:
+          label: Ustvarjeno
+        remote_addr:
+          label: 'IP naslovi'
+        view_webform_submission:
+          label: Operacije
+          text: pogled
+        edit_webform_submission:
+          label: Operacije
+          text: uredi
+  embed_review:
+    display_options:
+      fields:
+        created:
+          label: Ustvarjeno
+        remote_addr:
+          label: 'IP naslovi'
+        view_webform_submission:
+          label: Operacije
+          text: pogled

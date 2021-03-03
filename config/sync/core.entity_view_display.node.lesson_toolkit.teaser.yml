@@ -30,3 +30,4 @@ content:
 hidden:
   field_target_ages: true
   langcode: true
+  search_api_excerpt: true

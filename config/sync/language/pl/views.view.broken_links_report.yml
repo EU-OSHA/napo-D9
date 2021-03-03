@@ -1,0 +1,73 @@
+display:
+  default:
+    display_title: Główny
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Zastosuj
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+      fields:
+        entity_field:
+          label: 'Pole encji'
+          separator: ', '
+        entity_langcode:
+          label: 'Język encji'
+          separator: ', '
+        url:
+          label: URL
+          separator: ', '
+        last_check:
+          label: 'Ostatnio sprawdzano'
+          separator: ', '
+        method:
+          label: Metoda
+          separator: ', '
+        code:
+          label: 'Kod statusu'
+          separator: ', '
+        error:
+          label: Błąd
+          separator: ', '
+        fail_count:
+          separator: ', '
+        status:
+          separator: ', '
+        operations:
+          label: Operacje
+      filters:
+        url:
+          expose:
+            label: URL
+        code_1:
+          expose:
+            label: 'Kod statusu'
+          group_info:
+            label: Wynik
+            group_items:
+              1:
+                title: Niepowodzenie
+        code:
+          expose:
+            label: 'Kod statusu'
+        entity_langcode:
+          expose:
+            label: 'Język encji'
+      footer:
+        result:
+          content: 'Wyświetlanie @start - @end z @total'
+  page_1:
+    display_title: Strona

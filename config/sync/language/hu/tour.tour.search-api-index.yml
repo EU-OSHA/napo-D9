@@ -1,0 +1,21 @@
+tips:
+  search-api-index-index-status:
+    label: 'Indexelés állapota'
+  search-api-index-status:
+    label: Állapot
+  search-api-index-datasources:
+    label: Adatforrások
+  search-api-index-tracker:
+    label: Követő
+  search-api-index-server:
+    label: Kiszolgáló
+  search-api-index-server-index-status:
+    label: 'Kiszolgáló indexelési állapota'
+  search-api-index-cron-batch-size:
+    label: 'Időzítő kötegelt futtatási mérete'
+  search-api-index-index-now:
+    label: 'Indexelés elindítása most'
+  search-api-index-reindex:
+    label: 'Minden elem sorba állítása újraindexeléshez'
+  search-api-index-clear:
+    label: 'Minden indexelt adat törlése'

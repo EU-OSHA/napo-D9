@@ -1,0 +1,111 @@
+display:
+  default:
+    display_title: Mestre
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reinicialitza
+          exposed_sorts_label: 'Ordena per'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        media_bulk_form:
+          action_title: Acció
+      filters:
+        status:
+          expose:
+            label: 'Estat de la publicació'
+          group_info:
+            label: Publicat
+            group_items:
+              1:
+                title: Publicat
+              2:
+                title: 'Sense publicar'
+        name:
+          expose:
+            label: Nom
+        bundle:
+          expose:
+            label: 'Tipus de mèdia'
+          group_info:
+            label: 'Tipus de mèdia'
+        langcode:
+          expose:
+            label: Llengua
+      sorts:
+        created:
+          expose:
+            label: 'Els més nous primer'
+        name:
+          expose:
+            label: 'Nom (A-Z)'
+        name_1:
+          expose:
+            label: 'Nom (Z-A)'
+      title: Multimèdia
+      empty:
+        area_text_custom:
+          content: 'No hi ha mèdia disponible.'
+  page:
+    display_title: Pàgina
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Acció
+        name:
+          separator: ', '
+        edit_media:
+          text: Edita
+        delete_media:
+          text: Suprimeix
+  widget:
+    display_title: Giny
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Nom
+      arguments:
+        bundle:
+          exception:
+            title: Tot
+      header:
+        display_link_grid:
+          label: Graella
+        display_link_table:
+          label: Taula
+  widget_table:
+    display_title: 'Giny (taula)'
+    display_options:
+      fields:
+        thumbnail__target_id:
+          label: Miniatura
+        name:
+          label: Nom
+        uid:
+          label: Autor
+        changed:
+          label: Actualitzat
+      filters:
+        name:
+          expose:
+            label: Nom
+      arguments:
+        bundle:
+          exception:
+            title: Tot
+      header:
+        display_link_grid:
+          label: Graella
+        display_link_table:
+          label: Taula

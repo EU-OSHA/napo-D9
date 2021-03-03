@@ -1,0 +1,13 @@
+label: Γλώσσα
+tips:
+  language-overview:
+    label: Γλώσσες
+    body: '<p>Η σελίδα "Γλώσσες" σας επιτρέπει να προσθέσετε, επεξεργαστείτε, διαγράψετε και να αναδιατάξετε γλώσσες για τον ιστότοπο.</p>'
+  language-add:
+    label: 'Προσθήκη γλωσσών'
+  language-reorder:
+    label: 'Αναδιάταξη γλωσσών'
+  language-default:
+    label: 'Ορισμός μιας γλώσσας ως προεπιλεγμένη'
+  language-operations:
+    label: 'Τροποποίηση γλωσσών'

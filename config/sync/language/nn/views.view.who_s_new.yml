@@ -1,0 +1,15 @@
+label: 'Nye brukarar'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      title: 'Nye brukarar'
+  block_1:
+    display_title: 'Nye brukarar'
+    display_options:
+      block_description: 'Nye brukarar'
+      block_category: Brukar

@@ -1,0 +1,145 @@
+display:
+  default:
+    display_title: Mestre
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplica
+          reset_button_label: Reinicialitza
+          exposed_sorts_label: 'Ordena per'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Primer'
+            last: 'Últim »'
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        created:
+          label: Creat
+          separator: ', '
+        remote_addr:
+          label: 'Adreça IP'
+          separator: ', '
+        view_webform_submission:
+          label: Operacions
+          text: mostra
+      header:
+        result:
+          content: 'Es mostren @start - @end de @total'
+      arguments:
+        in_draft:
+          exception:
+            title: Tot
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Acció
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: Estàtic
+          separator: ', '
+        locked:
+          label: Bloquejat
+          separator: ', '
+        created:
+          label: Creat
+          separator: ', '
+        completed:
+          label: Completat
+          separator: ', '
+        remote_addr:
+          label: 'Adreça IP'
+          separator: ', '
+        operations:
+          label: Operacions
+      filters:
+        sticky:
+          expose:
+            label: Estàtic
+        locked:
+          expose:
+            label: Bloquejat
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Acció
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: Estàtic
+          separator: ', '
+        locked:
+          label: Bloquejat
+          separator: ', '
+        created:
+          label: Creat
+          separator: ', '
+        completed:
+          label: Completat
+          separator: ', '
+        remote_addr:
+          label: 'Adreça IP'
+          separator: ', '
+        view_webform_submission:
+          label: Operacions
+          text: mostra
+        edit_webform_submission:
+          label: Operacions
+          text: edita
+      filters:
+        sticky:
+          expose:
+            label: Estàtic
+        locked:
+          expose:
+            label: Bloquejat
+  embed_review:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: Estàtic
+          separator: ', '
+        locked:
+          label: Bloquejat
+          separator: ', '
+        created:
+          label: Creat
+          separator: ', '
+        completed:
+          label: Completat
+          separator: ', '
+        remote_addr:
+          label: 'Adreça IP'
+          separator: ', '
+        view_webform_submission:
+          label: Operacions
+          text: mostra
+      filters:
+        sticky:
+          expose:
+            label: Estàtic
+        locked:
+          expose:
+            label: Bloquejat

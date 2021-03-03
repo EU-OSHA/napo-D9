@@ -1,0 +1,18 @@
+settings:
+  default_submit_button_label: Beküldés
+  default_reset_button_label: Alaphelyzet
+  default_delete_button_label: Törlés
+  default_wizard_toggle_show_label: 'Összes megjelenítése'
+  default_preview_next_button_label: Előnézet
+  default_preview_label: Előnézet
+  dialog_options:
+    narrow:
+      title: Keskeny
+    normal:
+      title: Általános
+    wide:
+      title: Széles
+element:
+  default_more_title: Több
+mail:
+  default_from_name: '[site:name]'

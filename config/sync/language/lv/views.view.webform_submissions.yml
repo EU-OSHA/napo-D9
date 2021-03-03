@@ -1,0 +1,103 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apstiprināt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          tags:
+            previous: '"'
+            next: '"'
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      fields:
+        created:
+          label: Izveidots
+        remote_addr:
+          label: 'IP adrese'
+        view_webform_submission:
+          label: Darbības
+          text: skatīt
+      arguments:
+        in_draft:
+          exception:
+            title: Visi
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Darbība
+        sticky:
+          label: Uzlīme
+        locked:
+          label: Slēgts
+        created:
+          label: Izveidots
+        completed:
+          label: Pabeigts
+        remote_addr:
+          label: 'IP adrese'
+        operations:
+          label: Darbības
+      filters:
+        sticky:
+          expose:
+            label: Uzlīme
+        locked:
+          expose:
+            label: Slēgts
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Darbība
+        sticky:
+          label: Uzlīme
+        locked:
+          label: Slēgts
+        created:
+          label: Izveidots
+        completed:
+          label: Pabeigts
+        remote_addr:
+          label: 'IP adrese'
+        view_webform_submission:
+          label: Darbības
+          text: skatīt
+        edit_webform_submission:
+          label: Darbības
+          text: labot
+      filters:
+        sticky:
+          expose:
+            label: Uzlīme
+        locked:
+          expose:
+            label: Slēgts
+  embed_review:
+    display_options:
+      fields:
+        sticky:
+          label: Uzlīme
+        locked:
+          label: Slēgts
+        created:
+          label: Izveidots
+        completed:
+          label: Pabeigts
+        remote_addr:
+          label: 'IP adrese'
+        view_webform_submission:
+          label: Darbības
+          text: skatīt
+      filters:
+        sticky:
+          expose:
+            label: Uzlīme
+        locked:
+          expose:
+            label: Slēgts

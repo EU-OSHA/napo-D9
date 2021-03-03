@@ -1,0 +1,47 @@
+label: Sargsuns
+description: 'Jaunākās žurnāla ziņas'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrēt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+          tags:
+            previous: '"'
+            next: '"'
+      fields:
+        nothing:
+          admin_label: Ikona
+        severity:
+          label: Smagums
+        type:
+          label: Veids
+        timestamp:
+          label: Datums
+        message:
+          label: Ziņojums
+        name:
+          label: Lietotājs
+        link:
+          label: Darbības
+      filters:
+        type:
+          expose:
+            label: Veids
+        severity:
+          expose:
+            label: Smagums
+      title: 'Jaunākās žurnāla ziņas'
+      empty:
+        area:
+          admin_label: 'Žurnālā nav ziņojumu.'
+          content: 'Žurnālā nav ziņojumu.'
+  page:
+    display_title: Lapa

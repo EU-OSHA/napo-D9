@@ -1,0 +1,51 @@
+label: Watchdog
+description: 'Nedávne záznamy logu'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Zoradiť podľa'
+          sort_asc_label: Vzostupne
+          sort_desc_label: Zostupne
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Položiek na stránku'
+            items_per_page_options_all_label: '- Všetko -'
+            offset_label: 'Zobraziť od'
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        nothing:
+          admin_label: Ikona
+        severity:
+          label: Závažnosť
+        type:
+          label: Typ
+        timestamp:
+          label: Dátum
+        message:
+          label: Správa
+        name:
+          label: Používateľ
+          separator: ', '
+        link:
+          label: Operácie
+      filters:
+        type:
+          expose:
+            label: Typ
+        severity:
+          expose:
+            label: Závažnosť
+      title: 'Nedávne záznamy logu'
+      empty:
+        area:
+          admin_label: 'Nie sú k dispozícii žiadne správy v zázname.'
+          content: 'Nie sú k dispozícii žiadne správy v zázname.'
+  page:
+    display_title: Stránka

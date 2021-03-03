@@ -1,0 +1,90 @@
+label: Ficheiros
+description: 'Encontrar e gerir ficheiros.'
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Seguinte ›'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+      fields:
+        fid:
+          label: Fid
+        filename:
+          label: Nome
+          separator: ', '
+        filemime:
+          label: 'Tipo MIME'
+        filesize:
+          label: Tamanho
+        status:
+          label: Estado
+          settings:
+            format_custom_false: Temporário
+            format_custom_true: Permanente
+        created:
+          label: 'Data de carregamento'
+        changed:
+          label: 'Data alterada'
+        count:
+          label: 'Utilizado em'
+      filters:
+        filename:
+          expose:
+            label: 'Nome do ficheiro'
+        filemime:
+          expose:
+            label: 'Tipo MIME'
+        status:
+          expose:
+            label: Estado
+      title: Ficheiros
+      empty:
+        area_text_custom:
+          content: 'Sem ficheiros disponíveis.'
+  page_1:
+    display_title: 'Resumo de ficheiros'
+    display_options:
+      menu:
+        title: Ficheiros
+  page_2:
+    display_title: 'uso de ficheiros'
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Seguinte ›'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+      fields:
+        entity_label:
+          label: Entidade
+        type:
+          label: 'Tipo de entidade'
+        module:
+          label: 'A registar o módulo'
+        count:
+          label: 'Nº de Utilizações'
+          format_plural_string: !!binary MQNAY291bnQ=
+      title: 'uso de ficheiros'
+      arguments:
+        fid:
+          exception:
+            title: Todos
+          title: 'Informação de utilização de ficheiro para {{ arguments.fid }}'

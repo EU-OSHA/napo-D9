@@ -1,0 +1,18 @@
+label: Traducció
+tips:
+  locale-overview:
+    label: 'Traducció de la interfície d''usuari'
+  locale-language:
+    label: 'Llengua de la traducció'
+    body: 'Escolliu la llengua que voleu traduir.'
+  locale-search:
+    label: Cerca
+    body: 'Introduïu la paraula específica o la frase que voleu traduir. Podeu escriure només una part de la paraula.'
+  locale-filter:
+    label: 'Filtra la cerca'
+  locale-submit:
+    label: 'Apliqueu el vostre criteri de cerca'
+  locale-translate:
+    label: Tradueix
+  locale-validate:
+    label: 'Valida la traducció'

@@ -1,0 +1,145 @@
+display:
+  default:
+    display_title: Mester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Alkalmaz
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
+          sort_asc_label: Növekvő
+          sort_desc_label: Csökkenő
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Első'
+            last: 'Utolsó »'
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '– Mind –'
+            offset_label: Eltolás
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        created:
+          label: Létrehozva
+          separator: ', '
+        remote_addr:
+          label: IP-cím
+          separator: ', '
+        view_webform_submission:
+          label: Műveletek
+          text: megtekintés
+      header:
+        result:
+          content: '@start - @end / @total megjelenítése'
+      arguments:
+        in_draft:
+          exception:
+            title: Mind
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Művelet
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: Kiemelt
+          separator: ', '
+        locked:
+          label: Zárolt
+          separator: ', '
+        created:
+          label: Létrehozva
+          separator: ', '
+        completed:
+          label: Teljesítve
+          separator: ', '
+        remote_addr:
+          label: IP-cím
+          separator: ', '
+        operations:
+          label: Műveletek
+      filters:
+        sticky:
+          expose:
+            label: Kiemelt
+        locked:
+          expose:
+            label: Zárolt
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Művelet
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: Kiemelt
+          separator: ', '
+        locked:
+          label: Zárolt
+          separator: ', '
+        created:
+          label: Létrehozva
+          separator: ', '
+        completed:
+          label: Teljesítve
+          separator: ', '
+        remote_addr:
+          label: IP-cím
+          separator: ', '
+        view_webform_submission:
+          label: Műveletek
+          text: megtekintés
+        edit_webform_submission:
+          label: Műveletek
+          text: szerkesztés
+      filters:
+        sticky:
+          expose:
+            label: Kiemelt
+        locked:
+          expose:
+            label: Zárolt
+  embed_review:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: Kiemelt
+          separator: ', '
+        locked:
+          label: Zárolt
+          separator: ', '
+        created:
+          label: Létrehozva
+          separator: ', '
+        completed:
+          label: Teljesítve
+          separator: ', '
+        remote_addr:
+          label: IP-cím
+          separator: ', '
+        view_webform_submission:
+          label: Műveletek
+          text: megtekintés
+      filters:
+        sticky:
+          expose:
+            label: Kiemelt
+        locked:
+          expose:
+            label: Zárolt

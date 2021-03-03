@@ -1,0 +1,94 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        created:
+          label: Laga
+          separator: ', '
+        remote_addr:
+          separator: ', '
+        view_webform_submission:
+          label: Operasjonar
+          text: vis
+      arguments:
+        in_draft:
+          exception:
+            title: Alle
+  embed_administer:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
+        created:
+          label: Laga
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          separator: ', '
+        operations:
+          label: Operasjonar
+  embed_manage:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
+        created:
+          label: Laga
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          separator: ', '
+        view_webform_submission:
+          label: Operasjonar
+          text: vis
+        edit_webform_submission:
+          label: Operasjonar
+          text: endre
+  embed_review:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
+        created:
+          label: Laga
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          separator: ', '
+        view_webform_submission:
+          label: Operasjonar
+          text: vis

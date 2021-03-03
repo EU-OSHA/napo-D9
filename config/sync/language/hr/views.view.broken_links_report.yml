@@ -1,0 +1,49 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Poništi
+          exposed_sorts_label: 'Rasporedi po'
+          sort_asc_label: Uzlazno
+          sort_desc_label: Silazno
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        entity_field:
+          separator: ', '
+        entity_langcode:
+          separator: ', '
+        url:
+          label: URL
+          separator: ', '
+        last_check:
+          separator: ', '
+        method:
+          label: Metoda
+          separator: ', '
+        code:
+          separator: ', '
+        error:
+          label: Greška
+          separator: ', '
+        fail_count:
+          separator: ', '
+        status:
+          separator: ', '
+        operations:
+          label: Operacije
+      filters:
+        url:
+          expose:
+            label: URL
+        code_1:
+          group_info:
+            label: Rezultat
+  page_1:
+    display_title: Stranica

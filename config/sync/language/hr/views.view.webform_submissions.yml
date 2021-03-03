@@ -1,0 +1,133 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Poništi
+          exposed_sorts_label: 'Rasporedi po'
+          sort_asc_label: Uzlazno
+          sort_desc_label: Silazno
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        created:
+          label: Stvoreno
+          separator: ', '
+        remote_addr:
+          label: 'IP adresa'
+          separator: ', '
+        view_webform_submission:
+          label: Operacije
+          text: prikaz
+      arguments:
+        in_draft:
+          exception:
+            title: Svi
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Akcija
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: Ljepljivo
+          separator: ', '
+        locked:
+          label: Zaključano
+          separator: ', '
+        created:
+          label: Stvoreno
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          label: 'IP adresa'
+          separator: ', '
+        operations:
+          label: Operacije
+      filters:
+        sticky:
+          expose:
+            label: Ljepljivo
+        locked:
+          expose:
+            label: Zaključano
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Akcija
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: Ljepljivo
+          separator: ', '
+        locked:
+          label: Zaključano
+          separator: ', '
+        created:
+          label: Stvoreno
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          label: 'IP adresa'
+          separator: ', '
+        view_webform_submission:
+          label: Operacije
+          text: prikaz
+        edit_webform_submission:
+          label: Operacije
+          text: uredi
+      filters:
+        sticky:
+          expose:
+            label: Ljepljivo
+        locked:
+          expose:
+            label: Zaključano
+  embed_review:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: Ljepljivo
+          separator: ', '
+        locked:
+          label: Zaključano
+          separator: ', '
+        created:
+          label: Stvoreno
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          label: 'IP adresa'
+          separator: ', '
+        view_webform_submission:
+          label: Operacije
+          text: prikaz
+      filters:
+        sticky:
+          expose:
+            label: Ljepljivo
+        locked:
+          expose:
+            label: Zaključano

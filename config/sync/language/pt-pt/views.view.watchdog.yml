@@ -1,0 +1,54 @@
+label: Watchdog
+description: 'Mensagens de registo recentes'
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtro
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        nothing:
+          admin_label: Ícone
+        severity:
+          label: Severidade
+        type:
+          label: Tipo
+        timestamp:
+          label: Data
+        message:
+          label: Mensagem
+          alter:
+            alt: '{{ message }}'
+        name:
+          label: Utilizador
+          separator: ', '
+        link:
+          label: Operações
+      filters:
+        type:
+          expose:
+            label: Tipo
+        severity:
+          expose:
+            label: Severidade
+      title: 'Mensagens de registo recentes'
+      empty:
+        area:
+          admin_label: 'Não há mensagens no registo.'
+          content: 'Não há mensagens no registo.'
+  page:
+    display_title: Página

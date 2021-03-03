@@ -1,0 +1,63 @@
+label: Komentarji
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Ponastavi
+      pager:
+        options:
+          tags:
+            previous: '‹ prejšnja'
+            next: 'naslednja ›'
+            first: '« prva'
+            last: 'zadnja »'
+      fields:
+        comment_bulk_form:
+          action_title: Akcija
+        subject:
+          label: Zadeva
+        name:
+          label: Avtor
+        changed:
+          label: Posodobljeno
+        operations:
+          label: Operacije
+      filters:
+        subject:
+          expose:
+            label: Zadeva
+        langcode:
+          expose:
+            label: Jezik
+      title: Komentarji
+      empty:
+        area_text_custom:
+          content: 'Ni komentarjev.'
+      use_more_text: več
+  page_published:
+    display_title: 'Objavljeni komentarji'
+    display_options:
+      menu:
+        title: Komentarji
+  page_unapproved:
+    display_options:
+      filters:
+        subject:
+          expose:
+            label: Zadeva
+        langcode:
+          expose:
+            label: Jezik
+      fields:
+        comment_bulk_form:
+          action_title: Akcija
+        subject:
+          label: Zadeva
+        name:
+          label: Avtor
+        changed:
+          label: Posodobljeno
+        operations:
+          label: Operacije

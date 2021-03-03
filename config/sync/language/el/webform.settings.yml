@@ -1,0 +1,15 @@
+settings:
+  default_submit_button_label: Υποβολή
+  default_reset_button_label: Επαναφορά
+  default_delete_button_label: Διαγραφή
+  default_preview_next_button_label: Προεπισκόπηση
+  default_preview_label: Προεπισκόπηση
+  dialog_options:
+    narrow:
+      title: Στενό
+    normal:
+      title: Κανονικό
+    wide:
+      title: Πλατύ
+element:
+  default_more_title: Περισσότερα

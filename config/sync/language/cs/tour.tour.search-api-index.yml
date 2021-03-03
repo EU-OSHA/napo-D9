@@ -1,0 +1,5 @@
+tips:
+  search-api-index-status:
+    label: Stav
+  search-api-index-tracker:
+    label: 'Sledování příspěvků'

@@ -1,0 +1,10 @@
+label: 'Editant llengües'
+tips:
+  language-edit-overview:
+    label: 'Editant llengües'
+  language-edit-langcode:
+    label: 'Codi de llengua'
+  language-edit-label:
+    label: 'Nom de la llengua'
+  language-edit-direction:
+    label: 'Direcció de l''idioma'

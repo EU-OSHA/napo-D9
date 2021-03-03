@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
+      fields:
+        url:
+          label: URL
+        method:
+          label: Metoda
+        error:
+          label: Napaka
+        operations:
+          label: Operacije
+      filters:
+        url:
+          expose:
+            label: URL
+  page_1:
+    display_title: Stran

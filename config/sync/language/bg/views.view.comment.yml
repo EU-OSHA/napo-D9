@@ -1,0 +1,67 @@
+label: Коментари
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Филтър
+          reset_button_label: Рестартирай
+      pager:
+        options:
+          tags:
+            previous: '‹ предишна'
+            next: 'следваща ›'
+            first: '« първа'
+            last: 'последна »'
+      fields:
+        comment_bulk_form:
+          action_title: Действие
+        subject:
+          label: Тема
+        name:
+          label: Автор
+        entity_id:
+          label: 'Публикуван в'
+        changed:
+          label: Обновено
+        operations:
+          label: Действия
+      filters:
+        subject:
+          expose:
+            label: Тема
+        langcode:
+          expose:
+            label: Език
+      title: Коментари
+      empty:
+        area_text_custom:
+          content: 'Няма достъпни коментари.'
+      use_more_text: още
+  page_published:
+    display_title: 'Публикувани коментари'
+    display_options:
+      menu:
+        title: Коментари
+  page_unapproved:
+    display_options:
+      filters:
+        subject:
+          expose:
+            label: Тема
+        langcode:
+          expose:
+            label: Език
+      fields:
+        comment_bulk_form:
+          action_title: Действие
+        subject:
+          label: Тема
+        name:
+          label: Автор
+        entity_id:
+          label: 'Публикуван в'
+        changed:
+          label: Обновено
+        operations:
+          label: Действия

@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      title: 'Pålogga no'
+  who_s_online_block:
+    display_title: 'Pålogga no'
+    display_options:
+      block_description: 'Pålogga no'

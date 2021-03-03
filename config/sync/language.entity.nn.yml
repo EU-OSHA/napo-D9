@@ -1,0 +1,9 @@
+uuid: 6be39046-71bd-4321-8845-609f2d9f29bd
+langcode: en
+status: true
+dependencies: {  }
+id: nn
+label: 'Norwegian Nynorsk'
+direction: ltr
+weight: 18
+locked: false

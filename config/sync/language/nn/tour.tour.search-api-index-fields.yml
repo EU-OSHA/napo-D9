@@ -1,0 +1,9 @@
+tips:
+  search-api-index-fields-label:
+    label: Etikett
+  search-api-index-fields-machine-name:
+    label: Datamaskinnamn
+  search-api-index-fields-type:
+    label: Type
+  search-api-index-fields-submit:
+    label: 'Lagre endringar'

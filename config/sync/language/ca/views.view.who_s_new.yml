@@ -1,0 +1,20 @@
+label: 'Qui és nou'
+description: 'Mostra una llista dels usuaris més nous del lloc web.'
+display:
+  default:
+    display_title: Mestre
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplica
+          reset_button_label: Reinicialitza
+          exposed_sorts_label: 'Ordena per'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      title: 'Qui és nou'
+  block_1:
+    display_title: 'Qui és nou'
+    display_options:
+      display_description: 'Una llista dels usuaris nous'
+      block_description: 'Qui és nou'
+      block_category: Usuari

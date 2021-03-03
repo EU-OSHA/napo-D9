@@ -1,0 +1,12 @@
+label: 'Keelte haldamine'
+tips:
+  language-edit-overview:
+    label: 'Keelte haldamine'
+  language-edit-langcode:
+    label: 'Keele kood'
+  language-edit-label:
+    label: 'Keele nimetus'
+  language-edit-direction:
+    label: 'Keele suund'
+  language-edit-continue:
+    label: Jätkub

@@ -1,0 +1,30 @@
+label: 'Bloco quem está ligado'
+description: 'Mostra o nome de utilizador dos utilizadores ativos mais recentes, e o número total de utilizadores ativos.'
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      filters:
+        access:
+          expose:
+            label: 'Último acesso'
+            description: 'Um utilizador é considerado "ligado" por este intervalo de tempo, após ter visualizado uma página pela última vez.'
+      title: 'Utilizadores ligados'
+      header:
+        result:
+          content: 'Atualmente, existe(m) @total utilizador(es) ligado(s).'
+      empty:
+        area_text_custom:
+          content: 'Existem 0 utilizadores ligados, atualmente.'
+  who_s_online_block:
+    display_title: 'Utilizadores ligados'
+    display_options:
+      block_description: 'Utilizadores ligados'
+      display_description: 'Uma lista de utilizadores que estão atualmente com sessão iniciada.'

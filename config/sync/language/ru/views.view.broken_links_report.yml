@@ -1,0 +1,76 @@
+display:
+  default:
+    display_title: Основной
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Применить
+          reset_button_label: Сбросить
+          exposed_sorts_label: 'Сортировать по'
+          sort_asc_label: 'По возрастанию'
+          sort_desc_label: 'По убыванию'
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Первая'
+            last: 'Последняя »'
+          expose:
+            items_per_page_label: 'Элементов на страницу'
+            items_per_page_options_all_label: '- Все -'
+            offset_label: Пропустить
+      fields:
+        entity_field:
+          separator: ', '
+        entity_langcode:
+          label: 'Язык сущности'
+          separator: ', '
+        url:
+          label: URL
+          separator: ', '
+        last_check:
+          label: 'Посл. проверка'
+          separator: ', '
+        method:
+          label: Метод
+          separator: ', '
+        code:
+          label: 'Код состояния'
+          separator: ', '
+        error:
+          label: Ошибка
+          separator: ', '
+        fail_count:
+          separator: ', '
+        status:
+          separator: ', '
+        operations:
+          label: Операции
+      filters:
+        url:
+          expose:
+            label: URL
+        code_1:
+          expose:
+            label: 'Код состояния'
+          group_info:
+            label: Результат
+            group_items:
+              1:
+                title: 'Не удалось'
+        code:
+          expose:
+            label: 'Код состояния'
+        entity_langcode:
+          expose:
+            label: 'Язык сущности'
+      footer:
+        result:
+          content: 'Отображается с @start по @end из @total'
+  page_1:
+    display_title: Страница
+    display_options:
+      menu:
+        title: 'Битые ссылки'
+        description: 'Показывает список битых ссылк в материале.'

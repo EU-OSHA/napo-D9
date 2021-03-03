@@ -1,0 +1,26 @@
+cancel_confirm:
+  body: "[user:display-name],\r\n\r\nS'ha realitzat una sol·licitud per cancel·lar el vostre compte a [site:name].\r\n\r\nAra podeu cancel·lar el vostre compte a [site:url-brief] fent clic en aquest enllaç o copiant-lo i enganxant-lo al vostre navegador:\r\n\r\n[user:cancel-url]\r\n\r\nNOTA: la cancel·lació del vostre compte no és reversible.\r\n\r\nAquest enllaç caduca en un dia i no passarà res si no s'utilitza.\r\n\r\n-- L'equip de [site:name]"
+  subject: 'Sol·licitud de cancel·lació del compte de [user:display-name] a [site:name]'
+password_reset:
+  body: "[user:display-name],\r\n\r\nS'ha realitzat una sol·licitud per restablir la contrasenya del compte [site:name].\r\n\r\nAra podeu iniciar la sessió fent clic en aquest enllaç o copiant-lo i enganxant-lo al vostre navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nAquest enllaç només es pot utilitzar una vegada per iniciar sessió i us conduirà a una pàgina on podeu configurar la vostra contrasenya. Caduca en un dia i no passarà res si no s'utilitza.\r\n\r\n--  L'equip de [site:name]"
+  subject: 'Canvi de la informació d''inici de sessió per [user:display-name] a [site:name]'
+register_admin_created:
+  body: "[user:display-name],\r\n\r\nUn administrador del lloc [site:name] us ha creat un compte. Ara podeu iniciar sessió fent clic en aquest enllaç o copiant-lo i enganxant-lo al vostre navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nAquest enllaç només es pot usar un sol cop per autenticar-vos i us durà a una pàgina on podreu establir la vostra contrasenya.\r\n\r\nDesprés d'establir la vostra contrasenya, ja podreu autenticar-vos a [site:login-url] en un futur usant:\r\n\r\nnom d'usuari: [user:name]\r\ncontrasenya: Your password\r\n\r\n--  L'equip de [site:name]"
+  subject: 'Un administrador us ha creat un compte a [site:name]'
+register_no_approval_required:
+  body: "[user:display-name],\r\n\r\nGràcies per registrar-vos a [site:name]. Ara podeu iniciar sessió fent clic en aquest enllaç o copiant-lo i enganxant-lo al vostre navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nAquest enllaç només es pot utilitzar una vegada per iniciar sessió i us conduirà a una pàgina on podeu configurar la vostra contrasenya.\r\n\r\nDesprés d'establir la vostra contrasenya, podreu iniciar sessió a [site:login-url] utilitzant en el futur:\r\n\r\nnom d’usuari: [user:name]\r\ncontrasenya: La vostra contrasenya\r\n\r\n--  L'equip de [site:name]"
+  subject: 'Detalls del compte per [user:display-name] a [site:name]'
+register_pending_approval:
+  subject: 'Detalls del compte per [user:display-name] a [site:name] (pendent d''aprovació per part de l''administrador)'
+register_pending_approval_admin:
+  body: "[user:display-name] ha demanat un compte.\r\n\r\n[user:edit-url]"
+  subject: 'Detalls del compte per [user:display-name] a [site:name] (pendent d''aprovació per part de l''administrador)'
+status_activated:
+  body: "[user:display-name],\r\n\r\nGràcies per registrar-vos a [site:name]. Ara podeu iniciar sessió fent clic en aquest enllaç o copiant-lo i enganxant-lo al vostre navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nAquest enllaç només es pot utilitzar una vegada per iniciar sessió i us conduirà a una pàgina on podeu configurar la vostra contrasenya.\r\n\r\nDesprés d'establir la vostra contrasenya, podreu iniciar sessió a [site:login-url] utilitzant en el futur:\r\n\r\nnom d’usuari: [user:account-name]\r\ncontrasenya: La vostra contrasenya\r\n\r\n--  L'equip de [site:name]"
+  subject: 'Detalls del compte per [user:display-name] a [site:name] (aprovat)'
+status_blocked:
+  body: "[user:display-name],\r\n\r\nEl vostre compte a [site:name] ha estat bloquejat.\r\n\r\n--  L'equip de [site:name]"
+  subject: 'Detalls del compte per [user:display-name] a [site:name] (bloquejat)'
+status_canceled:
+  body: "[user:display-name],\r\n\r\nEl vostre compte a [site:name] ha estat cancel·lat.\r\n\r\n--  L'equip de [site:name]"
+  subject: 'Detalls del compte per [user:display-name] a [site:name] (cancel·lat)'

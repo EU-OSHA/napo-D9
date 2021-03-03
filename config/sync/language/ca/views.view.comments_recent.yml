@@ -1,0 +1,15 @@
+label: 'Comentaris recents'
+description: 'Comentaris recents.'
+display:
+  default:
+    display_title: Mestre
+    display_options:
+      title: 'Comentaris recents'
+      empty:
+        area_text_custom:
+          content: 'No hi ha comentaris disponibles.'
+  block_1:
+    display_title: Bloc
+    display_options:
+      block_description: 'Comentaris recents'
+      block_category: 'Llistes (Views)'

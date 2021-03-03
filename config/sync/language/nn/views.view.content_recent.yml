@@ -1,0 +1,16 @@
+label: 'Nyaste innhald'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      fields:
+        changed:
+          separator: ', '
+      title: 'Nyaste innhald'
+      use_more_text: Meir
+  block_1:
+    display_title: Blokk

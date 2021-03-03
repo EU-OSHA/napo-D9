@@ -1,0 +1,141 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Použiť
+          reset_button_label: Reset
+          exposed_sorts_label: 'Zoradiť podľa'
+          sort_asc_label: Vzostupne
+          sort_desc_label: Zostupne
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Prvý'
+            last: Koniec
+          expose:
+            items_per_page_label: 'Položiek na stránku'
+            items_per_page_options_all_label: '- Všetko -'
+            offset_label: 'Zobraziť od'
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        created:
+          label: Vytvorené
+          separator: ', '
+        remote_addr:
+          label: 'IP adresa'
+          separator: ', '
+        view_webform_submission:
+          label: Operácie
+          text: zobraziť
+      arguments:
+        in_draft:
+          exception:
+            title: Všetko
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Akcia
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: 'Prilepený v zozname'
+          separator: ', '
+        locked:
+          label: Zamknuté
+          separator: ', '
+        created:
+          label: Vytvorené
+          separator: ', '
+        completed:
+          label: Ukončená
+          separator: ', '
+        remote_addr:
+          label: 'IP adresa'
+          separator: ', '
+        operations:
+          label: Operácie
+      filters:
+        sticky:
+          expose:
+            label: 'Prilepený v zozname'
+        locked:
+          expose:
+            label: Zamknuté
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Akcia
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: 'Prilepený v zozname'
+          separator: ', '
+        locked:
+          label: Zamknuté
+          separator: ', '
+        created:
+          label: Vytvorené
+          separator: ', '
+        completed:
+          label: Ukončená
+          separator: ', '
+        remote_addr:
+          label: 'IP adresa'
+          separator: ', '
+        view_webform_submission:
+          label: Operácie
+          text: zobraziť
+        edit_webform_submission:
+          label: Operácie
+          text: upraviť
+      filters:
+        sticky:
+          expose:
+            label: 'Prilepený v zozname'
+        locked:
+          expose:
+            label: Zamknuté
+  embed_review:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          label: 'Prilepený v zozname'
+          separator: ', '
+        locked:
+          label: Zamknuté
+          separator: ', '
+        created:
+          label: Vytvorené
+          separator: ', '
+        completed:
+          label: Ukončená
+          separator: ', '
+        remote_addr:
+          label: 'IP adresa'
+          separator: ', '
+        view_webform_submission:
+          label: Operácie
+          text: zobraziť
+      filters:
+        sticky:
+          expose:
+            label: 'Prilepený v zozname'
+        locked:
+          expose:
+            label: Zamknuté

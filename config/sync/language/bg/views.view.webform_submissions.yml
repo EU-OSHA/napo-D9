@@ -1,0 +1,65 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Рестартирай
+      fields:
+        created:
+          label: Създадено
+        view_webform_submission:
+          label: Действия
+          text: преглед
+      arguments:
+        in_draft:
+          exception:
+            title: Всички
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Действие
+        sticky:
+          label: Фиксиран
+        created:
+          label: Създадено
+        operations:
+          label: Действия
+      filters:
+        sticky:
+          expose:
+            label: Фиксиран
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Действие
+        sticky:
+          label: Фиксиран
+        created:
+          label: Създадено
+        view_webform_submission:
+          label: Действия
+          text: преглед
+        edit_webform_submission:
+          label: Действия
+          text: редактирай
+      filters:
+        sticky:
+          expose:
+            label: Фиксиран
+  embed_review:
+    display_options:
+      fields:
+        sticky:
+          label: Фиксиран
+        created:
+          label: Създадено
+        view_webform_submission:
+          label: Действия
+          text: преглед
+      filters:
+        sticky:
+          expose:
+            label: Фиксиран

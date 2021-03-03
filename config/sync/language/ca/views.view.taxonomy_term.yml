@@ -1,0 +1,31 @@
+label: 'Terme de taxonomia'
+description: 'Contingut que pertany a cert terme de taxonomia.'
+display:
+  default:
+    display_title: Mestre
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplica
+          reset_button_label: Reinicialitza
+          exposed_sorts_label: 'Ordena per'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+          tags:
+            previous: ‹‹
+            next: ››
+      arguments:
+        tid:
+          exception:
+            title: Tot
+          title: '{{ arguments.tid }}'
+  feed_1:
+    display_title: Canal
+  page_1:
+    display_title: Pàgina

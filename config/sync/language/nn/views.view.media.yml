@@ -1,0 +1,55 @@
+label: Media
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        thumbnail__target_id:
+          separator: ', '
+        name:
+          separator: ', '
+        bundle:
+          label: Type
+          separator: ', '
+        uid:
+          label: Forfattar
+          separator: ', '
+        status:
+          label: Status
+          settings:
+            format_custom_true: Publisert
+            format_custom_false: Upublisert
+          separator: ', '
+        changed:
+          label: Oppdatert
+          separator: ', '
+        operations:
+          label: Operasjonar
+      filters:
+        bundle:
+          expose:
+            label: Type
+        status:
+          group_info:
+            group_items:
+              1:
+                title: Publisert
+              2:
+                title: Upublisert
+        langcode:
+          expose:
+            label: Språk
+      title: Media
+  media_page_list:
+    display_title: Media
+    display_options:
+      menu:
+        title: Media

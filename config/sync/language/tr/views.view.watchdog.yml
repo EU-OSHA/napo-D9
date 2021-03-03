@@ -1,0 +1,56 @@
+label: Bekçi
+description: 'Son günlük iletileri'
+display:
+  default:
+    display_title: 'Ana (master)'
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Süzgeç
+          reset_button_label: Sıfırla
+          exposed_sorts_label: 'Sıralama anahtarı'
+          sort_asc_label: Artan
+          sort_desc_label: Azalan
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Sayfa başına öğe sayısı'
+            items_per_page_options_all_label: '- Tümü -'
+            offset_label: 'Başlangıç değeri'
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        nothing:
+          admin_label: Simge
+        wid:
+          label: WID
+        severity:
+          label: 'Önem seviyesi'
+        type:
+          label: Tip
+        timestamp:
+          label: Tarih
+        message:
+          label: İleti
+          alter:
+            alt: '{{ message }}'
+        name:
+          label: Kullanıcı
+          separator: ', '
+        link:
+          label: İşlemler
+      filters:
+        type:
+          expose:
+            label: Tip
+        severity:
+          expose:
+            label: 'Önem seviyesi'
+      title: 'Son günlük iletileri'
+      empty:
+        area:
+          admin_label: 'Kayıt mesajı yok.'
+          content: 'Kayıt mesajı yok.'
+  page:
+    display_title: Sayfa

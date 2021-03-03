@@ -1,0 +1,70 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      filters:
+        status:
+          group_info:
+            label: Publisert
+            group_items:
+              1:
+                title: Publisert
+              2:
+                title: Upublisert
+        name:
+          expose:
+            label: Namn
+        langcode:
+          expose:
+            label: Språk
+      title: Media
+  page:
+    display_title: Nettside
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        edit_media:
+          text: Rediger
+        delete_media:
+          text: Slett
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Namn
+      arguments:
+        bundle:
+          exception:
+            title: Alle
+      header:
+        display_link_table:
+          label: Tabell
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Namn
+        uid:
+          label: Forfattar
+        changed:
+          label: Oppdatert
+      filters:
+        name:
+          expose:
+            label: Namn
+      arguments:
+        bundle:
+          exception:
+            title: Alle
+      header:
+        display_link_table:
+          label: Tabell

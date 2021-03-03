@@ -1,0 +1,73 @@
+label: Χρήστες
+description: 'Εύρεση και διαχείριση χρηστών που αλληλεπιδρούν με τον ιστοτόπο σας.'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Φίλτρο
+          reset_button_label: Επαναφορά
+          exposed_sorts_label: 'Ταξινόμηση κατά'
+          sort_asc_label: Αύξ
+          sort_desc_label: Φθί
+      pager:
+        options:
+          tags:
+            previous: '‹ Προηγούμενο'
+            next: 'Επόμενο ›'
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
+      fields:
+        user_bulk_form:
+          label: 'Μαζική ενημέρωση'
+        name:
+          label: 'Όνομα χρήστη'
+        status:
+          label: Κατάσταση
+          settings:
+            format_custom_true: Ενεργό
+            format_custom_false: Αποκλεισμένος
+        roles_target_id:
+          label: Ρόλοι
+        created:
+          label: 'Μέλος για'
+        access:
+          label: 'Τελευταία προσπέλαση'
+        operations:
+          label: Λειτουργίες
+        mail:
+          separator: ', '
+      filters:
+        combine:
+          expose:
+            label: 'Το όνομα ή το επίθετο περιέχει'
+        status:
+          group_info:
+            label: Κατάσταση
+            group_items:
+              1:
+                title: Ενεργό
+              2:
+                title: Αποκλεισμένος
+        roles_target_id:
+          expose:
+            label: Ρόλος
+        permission:
+          expose:
+            label: Άδεια
+      title: Χρήστες
+      empty:
+        area_text_custom:
+          content: 'Κανένας διαθέσιμος χρήστης.'
+      use_more_text: περισσότερα
+  page_1:
+    display_title: Σελίδα
+    display_options:
+      menu:
+        title: Λίστα
+        description: 'Εύρεση και διαχείριση χρηστών που αλληλεπιδρούν με τον ιστοτόπο σας.'
+      tab_options:
+        title: Χρήστες
+        description: 'Διαχείριση λογαριασμών χρηστών, ρόλων και αδειών'
