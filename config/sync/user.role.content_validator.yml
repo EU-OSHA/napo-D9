@@ -1,0 +1,9 @@
+uuid: 8646b52f-6389-4e92-bbab-b50c73c979c3
+langcode: en
+status: true
+dependencies: {  }
+id: content_validator
+label: 'Content Validator'
+weight: 6
+is_admin: null
+permissions: {  }

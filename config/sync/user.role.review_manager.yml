@@ -1,0 +1,9 @@
+uuid: 4d5455b9-6cd3-4853-b4bc-e7a56244d2d4
+langcode: en
+status: true
+dependencies: {  }
+id: review_manager
+label: 'Review Manager'
+weight: 8
+is_admin: null
+permissions: {  }

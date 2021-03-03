@@ -1,0 +1,14 @@
+uuid: da085447-a1c2-4ccc-8fc0-6bc5e8e351fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.content_validator
+  module:
+    - user
+id: user_remove_role_action.content_validator
+label: 'Remove the Content Validator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: content_validator

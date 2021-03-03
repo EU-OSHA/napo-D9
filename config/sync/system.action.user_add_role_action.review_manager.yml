@@ -1,0 +1,14 @@
+uuid: 79927481-53fc-4913-8a9b-733c46a1be49
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.review_manager
+  module:
+    - user
+id: user_add_role_action.review_manager
+label: 'Add the Review Manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: review_manager

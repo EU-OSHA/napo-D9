@@ -1,0 +1,9 @@
+uuid: 40645d82-a75c-4ddf-af16-a58aec83cceb
+langcode: en
+status: true
+dependencies: {  }
+id: translation_liaison
+label: 'Translation Liaison'
+weight: 4
+is_admin: null
+permissions: {  }

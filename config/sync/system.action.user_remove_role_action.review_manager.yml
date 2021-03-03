@@ -1,0 +1,14 @@
+uuid: 223c0787-ec36-45df-8ce1-83eaaf1cff00
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.review_manager
+  module:
+    - user
+id: user_remove_role_action.review_manager
+label: 'Remove the Review Manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: review_manager

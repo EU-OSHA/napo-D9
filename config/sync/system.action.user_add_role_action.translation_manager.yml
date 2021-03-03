@@ -1,0 +1,14 @@
+uuid: 9af1056f-8cc4-4b7d-b4af-f97532225d24
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.translation_manager
+  module:
+    - user
+id: user_add_role_action.translation_manager
+label: 'Add the Translation Manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: translation_manager

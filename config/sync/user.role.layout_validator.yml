@@ -1,0 +1,9 @@
+uuid: 4117047f-e97a-444b-9365-5b54b02cf1fe
+langcode: en
+status: true
+dependencies: {  }
+id: layout_validator
+label: 'Layout Validator'
+weight: 5
+is_admin: null
+permissions: {  }

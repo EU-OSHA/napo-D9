@@ -1,0 +1,14 @@
+uuid: 4264dc67-f539-4b19-9bb2-46dc99b18144
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.translation_liaison
+  module:
+    - user
+id: user_add_role_action.translation_liaison
+label: 'Add the Translation Liaison role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: translation_liaison

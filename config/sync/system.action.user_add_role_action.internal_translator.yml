@@ -1,0 +1,14 @@
+uuid: 6af848e9-157a-45c8-84cf-11975022af71
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.internal_translator
+  module:
+    - user
+id: user_add_role_action.internal_translator
+label: 'Add the Internal translator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: internal_translator

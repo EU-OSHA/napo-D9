@@ -1,0 +1,14 @@
+uuid: 8fe606e6-5c81-4b26-85e5-53e0634b434a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.internal_translator
+  module:
+    - user
+id: user_remove_role_action.internal_translator
+label: 'Remove the Internal translator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: internal_translator

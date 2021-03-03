@@ -1,0 +1,9 @@
+uuid: 30586fc6-0ae1-45be-a853-979713741608
+langcode: en
+status: true
+dependencies: {  }
+id: translation_manager
+label: 'Translation Manager'
+weight: 3
+is_admin: null
+permissions: {  }
