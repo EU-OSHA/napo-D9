@@ -2,6 +2,7 @@ settings:
   default_submit_button_label: Zachowaj
   default_reset_button_label: Resetuj
   default_delete_button_label: Usuń
+  default_wizard_start_label: Początek
   default_wizard_toggle_show_label: 'Pokaż wszystko'
   default_preview_next_button_label: Podgląd
   default_preview_label: Podgląd

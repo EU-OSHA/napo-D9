@@ -1,0 +1,24 @@
+uuid: 20df72b6-8cd5-47ff-82ed-151a20863e75
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.consortium_partners
+  module:
+    - views
+  theme:
+    - napo_theme
+id: views_block__consortium_partners_block
+theme: napo_theme
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'views_block:consortium_partners-block'
+settings:
+  id: 'views_block:consortium_partners-block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

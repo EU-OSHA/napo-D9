@@ -3,10 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.consortium_partners
     - field.storage.node.field_image
     - field.storage.node.field_url
     - image.style.napo_logo
+    - node.type.consortium_partner
   module:
+    - entityqueue
     - link
     - media
     - node
@@ -275,12 +278,79 @@ display:
             operator_limit_selection: false
             operator_list: {  }
           group: 1
-      sorts: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            consortium_partner: consortium_partner
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      sorts:
+        queue:
+          id: queue
+          table: entity_subqueue_field_data
+          field: queue
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: entity_subqueue
+          entity_field: queue
+          plugin_id: standard
       title: 'Napo is an initiative of:'
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: false
+          limit_queue: consortium_partners
+          entity_type: node
+          plugin_id: entity_queue
       arguments: {  }
       display_extenders: {  }
       show_admin_links: false
@@ -292,8 +362,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:entityqueue.entity_queue.consortium_partners'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_url'
+        - entity_field_info
+        - views_data
   block:
     display_plugin: block
     id: block
@@ -310,5 +383,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:entityqueue.entity_queue.consortium_partners'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_url'
+        - entity_field_info
+        - views_data

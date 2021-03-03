@@ -2,6 +2,7 @@ settings:
   default_submit_button_label: Odoslať
   default_reset_button_label: Reset
   default_delete_button_label: Odstrániť
+  default_wizard_start_label: Štart
   default_preview_next_button_label: Náhľad
   default_preview_label: Náhľad
   dialog_options:
