@@ -6,12 +6,14 @@ module:
   blazy: 0
   block: 0
   block_content: 0
+  block_form_alter: 0
   breakpoint: 0
   chosen: 0
   chosen_field: 0
   chosen_lib: 0
   ckeditor: 0
   color: 0
+  color_field: 0
   comment: 0
   config: 0
   config_translation: 0
@@ -28,6 +30,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   entity: 0
+  entity_reference_revisions: 0
   entityqueue: 0
   facets: 0
   field: 0
@@ -39,15 +42,21 @@ module:
   help: 0
   history: 0
   image: 0
+  inline_entity_form: 0
   jquery_ui: 0
   jquery_ui_accordion: 0
   jquery_ui_slider: 0
+  jquery_ui_tooltip: 0
   language: 0
+  layout_builder: 0
+  layout_discovery: 0
+  layoutcomponents: 0
   link: 0
   linkchecker: 0
   locale: 0
   media: 0
   media_library: 0
+  media_library_form_element: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
@@ -69,6 +78,7 @@ module:
   shs_chosen: 0
   slick: 0
   slick_views: 0
+  sliderwidget: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -77,6 +87,7 @@ module:
   tour: 0
   update: 0
   user: 0
+  video_embed_field: 0
   views_accordion: 0
   views_bulk_operations: 0
   views_data_export: 0
@@ -88,6 +99,7 @@ module:
   pathauto: 1
   content_translation: 10
   views: 10
+  linked_field: 100
   standard: 1000
 theme:
   seven: 0
