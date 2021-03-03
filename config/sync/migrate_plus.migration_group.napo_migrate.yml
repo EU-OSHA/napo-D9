@@ -1,0 +1,15 @@
+uuid: e380a55a-3ec9-42d1-a150-811f237606af
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - custom_migrations
+id: napo_migrate
+label: 'Migrate Napo'
+description: 'Migration nodes from D7 to Drupal 8'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: migrate
