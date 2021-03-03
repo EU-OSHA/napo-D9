@@ -3,15 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
-    - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.large
     - node.type.article
   module:
-    - comment
     - image
     - text
     - user
@@ -29,15 +26,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     label: hidden
-  comment:
-    type: comment_default
-    weight: 110
-    region: content
-    label: above
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
   field_image:
     type: image
     weight: -1
@@ -61,4 +49,15 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_activity_list_file: true
+  field_character_count: true
+  field_expiration_date: true
+  field_guidance_file: true
+  field_icon: true
+  field_menu: true
+  field_nace_codes: true
+  field_page_count: true
+  field_publication_date: true
+  field_thesaurus: true
   langcode: true
+  search_api_excerpt: true
