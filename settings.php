@@ -794,6 +794,29 @@ $databases['default']['default'] = [
 
 $settings['config_sync_directory'] = $app_root . '/' . $site_path . '/config/sync';
 
+
+// Split configuration.
+$config['config_split.config_split.local']['status'] = FALSE;
+$config['config_split.config_split.develop']['status'] = FALSE;
+$config['config_split.config_split.staging']['status'] = FALSE;
+$config['config_split.config_split.production']['status'] = TRUE;
+
+// PROD settings.
+if (file_exists($app_root . '/' . $site_path . '/settings.production.php')) {
+  include $app_root . '/' . $site_path . '/settings.production.php';
+}
+
+// STAGING settings.
+if (file_exists($app_root . '/' . $site_path . '/settings.staging.php')) {
+  include $app_root . '/' . $site_path . '/settings.staging.php';
+}
+
+// DEVELOP settings.
+if (file_exists($app_root . '/' . $site_path . '/settings.develop.php')) {
+  include $app_root . '/' . $site_path . '/settings.develop.php';
+}
+
+// LOCAL settings.
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
