@@ -1,0 +1,20 @@
+uuid: f123ebcb-e0a0-4ae6-8570-8b585fe7b717
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.msds_activities
+  module:
+    - path
+id: node.msds_activities.path
+field_name: path
+entity_type: node
+bundle: msds_activities
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

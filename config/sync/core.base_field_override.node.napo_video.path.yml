@@ -1,0 +1,20 @@
+uuid: 0205db57-1bb4-468d-8153-d9760fdab4b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_video
+  module:
+    - path
+id: node.napo_video.path
+field_name: path
+entity_type: node
+bundle: napo_video
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

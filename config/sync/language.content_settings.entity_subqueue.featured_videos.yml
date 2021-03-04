@@ -1,0 +1,18 @@
+uuid: 45711819-5599-4aa6-973f-90805632e143
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.featured_videos
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: entity_subqueue.featured_videos
+target_entity_type_id: entity_subqueue
+target_bundle: featured_videos
+default_langcode: site_default
+language_alterable: false

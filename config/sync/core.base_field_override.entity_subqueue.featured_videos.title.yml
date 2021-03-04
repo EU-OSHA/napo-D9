@@ -1,0 +1,18 @@
+uuid: db9e4713-6a92-4aa3-9330-a72fbec191de
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.featured_videos
+id: entity_subqueue.featured_videos.title
+field_name: title
+entity_type: entity_subqueue
+bundle: featured_videos
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

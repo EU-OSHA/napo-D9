@@ -1,0 +1,20 @@
+uuid: a38dbe83-30d1-423b-9bb6-fff2fef5d0a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.target_ages
+  module:
+    - path
+id: taxonomy_term.target_ages.path
+field_name: path
+entity_type: taxonomy_term
+bundle: target_ages
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

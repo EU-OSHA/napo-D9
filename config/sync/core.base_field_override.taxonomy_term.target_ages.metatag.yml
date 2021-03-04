@@ -1,0 +1,18 @@
+uuid: 19d17d4c-916c-4dbf-ab37-c5a7bde87e56
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.target_ages
+id: taxonomy_term.target_ages.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: target_ages
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

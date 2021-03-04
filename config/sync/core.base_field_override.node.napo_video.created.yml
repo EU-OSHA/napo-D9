@@ -1,0 +1,18 @@
+uuid: 9a9727dc-8781-4bf0-9e06-914d2119c703
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_video
+id: node.napo_video.created
+field_name: created
+entity_type: node
+bundle: napo_video
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

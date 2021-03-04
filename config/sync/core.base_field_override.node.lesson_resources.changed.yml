@@ -1,0 +1,18 @@
+uuid: e82796df-f004-480a-9fc5-85be6069ab36
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_resources
+id: node.lesson_resources.changed
+field_name: changed
+entity_type: node
+bundle: lesson_resources
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

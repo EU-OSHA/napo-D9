@@ -1,0 +1,22 @@
+uuid: 959dc27f-2dcd-4228-a0c2-dbfbf31a3230
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nace_codes
+id: taxonomy_term.nace_codes.status
+field_name: status
+entity_type: taxonomy_term
+bundle: nace_codes
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

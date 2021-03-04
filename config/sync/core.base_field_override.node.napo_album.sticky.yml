@@ -1,0 +1,22 @@
+uuid: 24bd2bea-2c6a-4454-86af-62b5534db36e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_album
+id: node.napo_album.sticky
+field_name: sticky
+entity_type: node
+bundle: napo_album
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

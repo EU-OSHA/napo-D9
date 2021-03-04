@@ -1,0 +1,22 @@
+uuid: 3b32f083-3cd0-46a4-9981-af639ecf6dce
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.napo_s_gallery
+id: entity_subqueue.napo_s_gallery.status
+field_name: status
+entity_type: entity_subqueue
+bundle: napo_s_gallery
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

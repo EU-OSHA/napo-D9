@@ -1,0 +1,19 @@
+uuid: 1fff239d-1cd8-4a55-a07f-281130ad00ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_nace_includes
+    - taxonomy.vocabulary.nace_codes
+id: taxonomy_term.nace_codes.field_nace_includes
+field_name: field_nace_includes
+entity_type: taxonomy_term
+bundle: nace_codes
+label: Includes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

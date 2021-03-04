@@ -1,0 +1,20 @@
+uuid: 8bd778cb-b029-40c0-abef-acc450000074
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.msds_resources
+id: node.msds_resources.uid
+field_name: uid
+entity_type: node
+bundle: msds_resources
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

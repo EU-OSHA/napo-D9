@@ -1,0 +1,22 @@
+uuid: 218cd813-4d7f-4d4c-a6f4-974b09ff09be
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.msds_activities
+id: node.msds_activities.sticky
+field_name: sticky
+entity_type: node
+bundle: msds_activities
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

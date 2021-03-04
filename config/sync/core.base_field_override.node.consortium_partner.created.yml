@@ -1,0 +1,18 @@
+uuid: cb0a3035-0c09-4157-a57e-e6648779cfea
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.consortium_partner
+id: node.consortium_partner.created
+field_name: created
+entity_type: node
+bundle: consortium_partner
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

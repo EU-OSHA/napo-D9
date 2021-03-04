@@ -1,0 +1,18 @@
+uuid: 768a5f21-b1dc-4090-b463-aa7912c198d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.msds_activities
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.msds_activities
+target_entity_type_id: node
+target_bundle: msds_activities
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+uuid: 93ff1439-e0ca-4ba4-b55a-1019df338d08
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.panel
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.panel
+target_entity_type_id: node
+target_bundle: panel
+default_langcode: site_default
+language_alterable: false

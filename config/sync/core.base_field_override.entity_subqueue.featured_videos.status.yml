@@ -1,0 +1,22 @@
+uuid: ebac83fd-81df-4d60-9e8a-41a7e2f323dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.featured_videos
+id: entity_subqueue.featured_videos.status
+field_name: status
+entity_type: entity_subqueue
+bundle: featured_videos
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 66d1d94c-6f28-44be-8fe8-855adaad8d6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.msds_resources
+id: node.msds_resources.title
+field_name: title
+entity_type: node
+bundle: msds_resources
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 12aec1c4-8488-4732-821c-3ead7a8e84ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.thesaurus
+id: taxonomy_term.thesaurus.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: thesaurus
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

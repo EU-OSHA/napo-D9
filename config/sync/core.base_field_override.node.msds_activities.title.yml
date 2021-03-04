@@ -1,0 +1,18 @@
+uuid: 17a67996-8601-4803-b8e8-c373d717e09e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.msds_activities
+id: node.msds_activities.title
+field_name: title
+entity_type: node
+bundle: msds_activities
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

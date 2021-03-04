@@ -1,0 +1,22 @@
+uuid: a401f83a-b20a-4133-8f37-c385d6fac31c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_image
+id: node.napo_image.status
+field_name: status
+entity_type: node
+bundle: napo_image
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

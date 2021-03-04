@@ -1,0 +1,18 @@
+uuid: 8515fb74-0a1d-4968-8a51-e8e1ac25479d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.video_type
+id: taxonomy_term.video_type.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: video_type
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

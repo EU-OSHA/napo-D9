@@ -1,0 +1,21 @@
+uuid: 4ff6c1ae-d908-4815-96ed-72922906ca6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_excluded_from
+    - taxonomy.vocabulary.tags
+  module:
+    - options
+id: taxonomy_term.tags.field_excluded_from
+field_name: field_excluded_from
+entity_type: taxonomy_term
+bundle: tags
+label: 'Excluded from'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

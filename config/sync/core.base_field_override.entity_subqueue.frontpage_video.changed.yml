@@ -1,0 +1,18 @@
+uuid: 26c7c3f6-82a9-4519-ba50-4e7c9bb0b31b
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.frontpage_video
+id: entity_subqueue.frontpage_video.changed
+field_name: changed
+entity_type: entity_subqueue
+bundle: frontpage_video
+label: Changed
+description: 'The time that the subqueue was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

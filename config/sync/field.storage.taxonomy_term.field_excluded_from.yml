@@ -1,0 +1,37 @@
+uuid: b718d9fd-2435-4cab-a596-df571cfa857a
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - options
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: taxonomy_term.field_excluded_from
+field_name: field_excluded_from
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: article
+      label: Article
+    -
+      value: lesson
+      label: Lesson
+    -
+      value: lesson_toolkit
+      label: 'Lesson Toolkit'
+    -
+      value: napo_friend
+      label: 'Napo Friend'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

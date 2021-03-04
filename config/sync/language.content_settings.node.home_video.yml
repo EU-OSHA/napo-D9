@@ -1,0 +1,18 @@
+uuid: 12545fba-c86e-4f37-982b-cf81095dfa4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.home_video
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.home_video
+target_entity_type_id: node
+target_bundle: home_video
+default_langcode: site_default
+language_alterable: false

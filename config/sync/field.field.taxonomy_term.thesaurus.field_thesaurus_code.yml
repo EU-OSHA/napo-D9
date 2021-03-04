@@ -1,0 +1,19 @@
+uuid: 591b4d23-72fb-43f1-ae08-0aa536be103b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_thesaurus_code
+    - taxonomy.vocabulary.thesaurus
+id: taxonomy_term.thesaurus.field_thesaurus_code
+field_name: field_thesaurus_code
+entity_type: taxonomy_term
+bundle: thesaurus
+label: Code
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

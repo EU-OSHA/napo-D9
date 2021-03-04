@@ -1,0 +1,22 @@
+uuid: d4cb6a76-12ea-44b9-95a2-506e0d8242c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_image
+id: node.napo_image.sticky
+field_name: sticky
+entity_type: node
+bundle: napo_image
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

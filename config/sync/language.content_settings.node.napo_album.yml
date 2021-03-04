@@ -1,0 +1,18 @@
+uuid: d9a868ae-50bd-4bb8-8040-128404b253f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_album
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.napo_album
+target_entity_type_id: node
+target_bundle: napo_album
+default_langcode: site_default
+language_alterable: false

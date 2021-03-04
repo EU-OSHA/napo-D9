@@ -1,0 +1,20 @@
+uuid: 800882a6-0951-488b-a493-704e08a6d5c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_friend
+  module:
+    - path
+id: node.napo_friend.path
+field_name: path
+entity_type: node
+bundle: napo_friend
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,18 @@
+uuid: 1b517348-00d7-45ac-8d0b-95b18528e77e
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.napo_s_gallery
+id: entity_subqueue.napo_s_gallery.metatag
+field_name: metatag
+entity_type: entity_subqueue
+bundle: napo_s_gallery
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

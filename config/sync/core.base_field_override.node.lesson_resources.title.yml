@@ -1,0 +1,18 @@
+uuid: 4b9eb51c-9ba1-4f63-9026-3e274bde253c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_resources
+id: node.lesson_resources.title
+field_name: title
+entity_type: node
+bundle: lesson_resources
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

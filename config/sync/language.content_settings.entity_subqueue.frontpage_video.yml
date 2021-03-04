@@ -1,0 +1,18 @@
+uuid: 13ddb294-285f-48cb-bd55-316aa8f708ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.frontpage_video
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: entity_subqueue.frontpage_video
+target_entity_type_id: entity_subqueue
+target_bundle: frontpage_video
+default_langcode: site_default
+language_alterable: false

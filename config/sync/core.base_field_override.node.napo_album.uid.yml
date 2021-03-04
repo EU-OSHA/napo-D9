@@ -1,0 +1,20 @@
+uuid: 720eb309-3b58-406d-8a32-8d96ccbaa801
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_album
+id: node.napo_album.uid
+field_name: uid
+entity_type: node
+bundle: napo_album
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

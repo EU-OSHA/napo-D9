@@ -1,0 +1,22 @@
+uuid: c764ebb2-ddbd-47e1-a1c6-0a2c88f86578
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.msds_resources
+id: node.msds_resources.sticky
+field_name: sticky
+entity_type: node
+bundle: msds_resources
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

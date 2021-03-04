@@ -1,0 +1,20 @@
+uuid: 3930cb2d-40ee-4741-84f8-c2e813f208a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_video
+  module:
+    - path
+id: node.lesson_video.path
+field_name: path
+entity_type: node
+bundle: lesson_video
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

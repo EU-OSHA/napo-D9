@@ -1,0 +1,18 @@
+uuid: 26734abd-6471-4935-8f52-27df1d40c86e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.consortium_partner
+id: node.consortium_partner.changed
+field_name: changed
+entity_type: node
+bundle: consortium_partner
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

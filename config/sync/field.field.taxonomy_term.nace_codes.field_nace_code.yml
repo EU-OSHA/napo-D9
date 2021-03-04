@@ -1,0 +1,19 @@
+uuid: 2213483c-bdc6-4aeb-ba99-3891848a9a72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_nace_code
+    - taxonomy.vocabulary.nace_codes
+id: taxonomy_term.nace_codes.field_nace_code
+field_name: field_nace_code
+entity_type: taxonomy_term
+bundle: nace_codes
+label: Code
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

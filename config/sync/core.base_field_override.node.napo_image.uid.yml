@@ -1,0 +1,20 @@
+uuid: 8e1d90a8-8f44-4208-b8d0-f2844de116e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_image
+id: node.napo_image.uid
+field_name: uid
+entity_type: node
+bundle: napo_image
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

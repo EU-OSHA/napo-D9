@@ -1,0 +1,18 @@
+uuid: 502209ab-c119-4830-a7cd-ad1ca599e37e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_video
+id: node.napo_video.title
+field_name: title
+entity_type: node
+bundle: napo_video
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

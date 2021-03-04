@@ -1,0 +1,18 @@
+uuid: e37d90c4-5c89-4e66-9235-fa5531076b53
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.consortium_partner
+id: node.consortium_partner.title
+field_name: title
+entity_type: node
+bundle: consortium_partner
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

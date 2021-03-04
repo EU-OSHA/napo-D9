@@ -1,0 +1,20 @@
+uuid: a2daab33-992d-4909-92eb-eb2e68c1250b
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.napo_s_gallery
+id: entity_subqueue.napo_s_gallery.uid
+field_name: uid
+entity_type: entity_subqueue
+bundle: napo_s_gallery
+label: 'User ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\entityqueue\Entity\EntitySubqueue::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

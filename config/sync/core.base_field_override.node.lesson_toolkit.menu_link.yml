@@ -1,0 +1,20 @@
+uuid: 715a76a1-3bbb-4104-b829-ff5501b530cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_toolkit
+id: node.lesson_toolkit.menu_link
+field_name: menu_link
+entity_type: node
+bundle: lesson_toolkit
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

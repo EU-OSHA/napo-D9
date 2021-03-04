@@ -1,0 +1,23 @@
+uuid: bd0a5e9f-5d64-4205-8e8f-f33c7c4e98e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy_terms_for_target_ages
+label: 'Taxonomy terms for Target Ages'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/using-napo/napo-for-teachers/[term:name]'
+selection_criteria:
+  93e4260e-03d0-47d6-9d5b-46b6c69402ba:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      target_ages: target_ages
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 93e4260e-03d0-47d6-9d5b-46b6c69402ba
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,22 @@
+uuid: c31dc4ca-1183-4479-a31c-461b375a0010
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_friend
+id: node.napo_friend.sticky
+field_name: sticky
+entity_type: node
+bundle: napo_friend
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

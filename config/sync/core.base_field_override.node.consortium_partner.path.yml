@@ -1,0 +1,20 @@
+uuid: ab7214e5-7791-445e-9c89-76ecb04f69f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.consortium_partner
+  module:
+    - path
+id: node.consortium_partner.path
+field_name: path
+entity_type: node
+bundle: consortium_partner
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

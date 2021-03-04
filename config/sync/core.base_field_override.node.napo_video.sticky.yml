@@ -1,0 +1,22 @@
+uuid: 9bd3e329-480e-4bda-9448-715b762b22a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_video
+id: node.napo_video.sticky
+field_name: sticky
+entity_type: node
+bundle: napo_video
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

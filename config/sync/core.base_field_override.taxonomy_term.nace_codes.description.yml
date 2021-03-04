@@ -1,0 +1,20 @@
+uuid: dc29dfea-06dc-4cc5-b23f-5fcd9e50a6ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nace_codes
+  module:
+    - text
+id: taxonomy_term.nace_codes.description
+field_name: description
+entity_type: taxonomy_term
+bundle: nace_codes
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

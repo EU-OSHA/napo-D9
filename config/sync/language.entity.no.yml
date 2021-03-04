@@ -1,0 +1,9 @@
+uuid: c6c0a62e-864b-460f-a8b8-4544d1d78a37
+langcode: 'no'
+status: true
+dependencies: {  }
+id: 'no'
+label: Norsk
+direction: ltr
+weight: 28
+locked: false

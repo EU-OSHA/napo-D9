@@ -1,0 +1,18 @@
+uuid: e7ee6681-b525-46fe-b0b1-b08372e0cea8
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.napo_s_gallery
+id: entity_subqueue.napo_s_gallery.title
+field_name: title
+entity_type: entity_subqueue
+bundle: napo_s_gallery
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

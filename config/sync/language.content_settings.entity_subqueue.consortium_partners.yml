@@ -1,0 +1,18 @@
+uuid: 1920506c-61d6-4eab-870c-0e5f019511ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.consortium_partners
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: entity_subqueue.consortium_partners
+target_entity_type_id: entity_subqueue
+target_bundle: consortium_partners
+default_langcode: site_default
+language_alterable: false

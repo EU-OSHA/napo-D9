@@ -1,0 +1,18 @@
+uuid: d90270b8-b119-4ed1-a148-8393664a4f4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_toolkit
+id: node.lesson_toolkit.metatag
+field_name: metatag
+entity_type: node
+bundle: lesson_toolkit
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

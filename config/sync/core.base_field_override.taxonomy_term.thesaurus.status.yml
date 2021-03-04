@@ -1,0 +1,22 @@
+uuid: 38a489de-9794-4d4a-a35d-5c916ff3006e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.thesaurus
+id: taxonomy_term.thesaurus.status
+field_name: status
+entity_type: taxonomy_term
+bundle: thesaurus
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

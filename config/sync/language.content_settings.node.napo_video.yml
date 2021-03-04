@@ -1,0 +1,18 @@
+uuid: 6078c61d-eb50-4404-925b-743cb603b619
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_video
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.napo_video
+target_entity_type_id: node
+target_bundle: napo_video
+default_langcode: site_default
+language_alterable: false

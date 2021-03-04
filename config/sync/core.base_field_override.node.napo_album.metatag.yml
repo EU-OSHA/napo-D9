@@ -1,0 +1,18 @@
+uuid: 942eb58d-39e7-49c7-901f-e4bb1feb788f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_album
+id: node.napo_album.metatag
+field_name: metatag
+entity_type: node
+bundle: napo_album
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

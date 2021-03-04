@@ -1,0 +1,18 @@
+uuid: e264cfd8-8af8-4b69-b96d-89cab2c395a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_video
+id: node.lesson_video.title
+field_name: title
+entity_type: node
+bundle: lesson_video
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

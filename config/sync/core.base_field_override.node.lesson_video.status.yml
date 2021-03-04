@@ -1,0 +1,22 @@
+uuid: 210ed6a2-4f8d-4a40-8639-03becd118e4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_video
+id: node.lesson_video.status
+field_name: status
+entity_type: node
+bundle: lesson_video
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

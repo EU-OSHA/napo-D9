@@ -1,0 +1,22 @@
+uuid: 93a5669e-cd41-442d-994f-2d261e116cbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.consortium_partners
+id: entity_subqueue.consortium_partners.status
+field_name: status
+entity_type: entity_subqueue
+bundle: consortium_partners
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

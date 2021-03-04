@@ -1,0 +1,18 @@
+uuid: c53e6284-f634-46ef-886d-0fd765c07009
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.consortium_partner
+id: node.consortium_partner.metatag
+field_name: metatag
+entity_type: node
+bundle: consortium_partner
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

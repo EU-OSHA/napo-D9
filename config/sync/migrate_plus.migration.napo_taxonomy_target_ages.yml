@@ -37,7 +37,6 @@ process:
   forum_container: is_container
   changed: timestamp
   langcode: language
-  field_image: field_image
 destination:
   plugin: 'entity:taxonomy_term'
 migration_dependencies:

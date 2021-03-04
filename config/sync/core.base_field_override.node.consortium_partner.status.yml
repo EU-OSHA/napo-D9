@@ -1,0 +1,22 @@
+uuid: 8d24adf1-0f1b-43a5-87ee-a4d76342ad55
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.consortium_partner
+id: node.consortium_partner.status
+field_name: status
+entity_type: node
+bundle: consortium_partner
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: d5ec575c-12d2-4473-9502-2138c4042bd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_album
+id: node.napo_album.created
+field_name: created
+entity_type: node
+bundle: napo_album
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

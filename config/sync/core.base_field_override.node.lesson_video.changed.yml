@@ -1,0 +1,18 @@
+uuid: 4cab2d07-4049-4af8-ab96-7c28e93117e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_video
+id: node.lesson_video.changed
+field_name: changed
+entity_type: node
+bundle: lesson_video
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

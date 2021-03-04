@@ -1,0 +1,18 @@
+uuid: 60e92761-4850-4eea-9b37-73a623617696
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_friend
+id: node.napo_friend.title
+field_name: title
+entity_type: node
+bundle: napo_friend
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,33 @@
+uuid: d14235b1-0df2-486b-9cc7-1c41f5d901e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.target_ages.field_image
+    - taxonomy.vocabulary.target_ages
+  module:
+    - text
+id: taxonomy_term.target_ages.default
+targetEntityType: taxonomy_term
+bundle: target_ages
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

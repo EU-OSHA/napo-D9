@@ -1,0 +1,22 @@
+uuid: 3c5fff52-2bb5-4438-8484-a0e0066b0ea8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.home_video
+id: node.home_video.sticky
+field_name: sticky
+entity_type: node
+bundle: home_video
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

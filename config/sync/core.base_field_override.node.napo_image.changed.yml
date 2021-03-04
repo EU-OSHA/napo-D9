@@ -1,0 +1,18 @@
+uuid: 9fef3aec-40a4-4165-9d41-feb144ea60b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_image
+id: node.napo_image.changed
+field_name: changed
+entity_type: node
+bundle: napo_image
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: b619c653-6499-45eb-8c98-d021afefeab1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.target_ages
+id: taxonomy_term.target_ages.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: target_ages
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

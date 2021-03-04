@@ -1,0 +1,18 @@
+uuid: 32d4acf8-e42c-4ec8-80d5-cecb683dcd64
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.video_type
+id: taxonomy_term.video_type.name
+field_name: name
+entity_type: taxonomy_term
+bundle: video_type
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

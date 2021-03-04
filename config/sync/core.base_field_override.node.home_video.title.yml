@@ -1,0 +1,18 @@
+uuid: abd69251-3209-4e23-8031-d70b9c6b03cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.home_video
+id: node.home_video.title
+field_name: title
+entity_type: node
+bundle: home_video
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

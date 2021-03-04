@@ -1,0 +1,18 @@
+uuid: 17014da3-151b-44ca-962c-a226f6a91772
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nace_codes
+id: taxonomy_term.nace_codes.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: nace_codes
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

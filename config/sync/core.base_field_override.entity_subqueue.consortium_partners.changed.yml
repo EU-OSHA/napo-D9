@@ -1,0 +1,18 @@
+uuid: 8d4d569e-c32c-4951-8064-a15a54266b06
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.consortium_partners
+id: entity_subqueue.consortium_partners.changed
+field_name: changed
+entity_type: entity_subqueue
+bundle: consortium_partners
+label: Changed
+description: 'The time that the subqueue was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

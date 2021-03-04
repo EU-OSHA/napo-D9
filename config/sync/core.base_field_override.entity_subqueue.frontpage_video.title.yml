@@ -1,0 +1,18 @@
+uuid: df467e12-1d17-451d-b950-4aa094b29a69
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.frontpage_video
+id: entity_subqueue.frontpage_video.title
+field_name: title
+entity_type: entity_subqueue
+bundle: frontpage_video
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

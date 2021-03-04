@@ -19,6 +19,7 @@ module:
   config_translation: 0
   contact: 0
   contextual: 0
+  crop: 0
   csv_serialization: 0
   ctools: 0
   custom_migrations: 0
@@ -43,6 +44,7 @@ module:
   help: 0
   history: 0
   image: 0
+  image_widget_crop: 0
   inline_entity_form: 0
   jquery_ui: 0
   jquery_ui_accordion: 0

@@ -1,0 +1,29 @@
+uuid: 20c93351-f54e-4f77-89ab-ae9b629e000b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image
+    - media.type.image
+    - taxonomy.vocabulary.target_ages
+id: taxonomy_term.target_ages.field_image
+field_name: field_image
+entity_type: taxonomy_term
+bundle: target_ages
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

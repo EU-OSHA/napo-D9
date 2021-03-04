@@ -1,0 +1,18 @@
+uuid: 692cfd12-7739-4000-98b5-ef95664e2212
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_video
+id: node.napo_video.changed
+field_name: changed
+entity_type: node
+bundle: napo_video
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

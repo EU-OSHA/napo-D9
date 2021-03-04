@@ -1,0 +1,18 @@
+uuid: 3386790c-f851-4f35-a1ed-e617cb6ebb79
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_toolkit
+id: node.lesson_toolkit.changed
+field_name: changed
+entity_type: node
+bundle: lesson_toolkit
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,20 @@
+uuid: 3c6de9b7-4513-4671-868f-ad0673822cdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.home_video
+id: node.home_video.menu_link
+field_name: menu_link
+entity_type: node
+bundle: home_video
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

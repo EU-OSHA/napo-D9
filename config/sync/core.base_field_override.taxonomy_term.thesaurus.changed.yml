@@ -1,0 +1,18 @@
+uuid: 62dd9995-9e85-4762-8d80-bc91d32ad077
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.thesaurus
+id: taxonomy_term.thesaurus.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: thesaurus
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

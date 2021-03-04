@@ -1,0 +1,18 @@
+uuid: ce3d9f4f-6ec2-40b8-bab5-024c3ee37b21
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson
+id: node.lesson.created
+field_name: created
+entity_type: node
+bundle: lesson
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

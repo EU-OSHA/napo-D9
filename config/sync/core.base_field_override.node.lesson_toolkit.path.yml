@@ -1,0 +1,20 @@
+uuid: a3b902c1-331d-4b83-b617-68ec1d508c5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_toolkit
+  module:
+    - path
+id: node.lesson_toolkit.path
+field_name: path
+entity_type: node
+bundle: lesson_toolkit
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

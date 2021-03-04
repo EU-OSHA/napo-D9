@@ -1,0 +1,22 @@
+uuid: e919186b-e4e2-4657-a422-b88be0b44bcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.home_video
+id: node.home_video.status
+field_name: status
+entity_type: node
+bundle: home_video
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

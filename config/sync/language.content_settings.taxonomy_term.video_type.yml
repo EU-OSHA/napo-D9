@@ -1,0 +1,18 @@
+uuid: a56c8cb6-c0b7-45d4-83b5-4c78d3299d13
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.video_type
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: taxonomy_term.video_type
+target_entity_type_id: taxonomy_term
+target_bundle: video_type
+default_langcode: site_default
+language_alterable: false

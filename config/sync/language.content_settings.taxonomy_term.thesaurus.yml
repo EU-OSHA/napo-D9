@@ -1,0 +1,18 @@
+uuid: f913bbd7-3def-4ecc-b90e-5f06c3827198
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.thesaurus
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: taxonomy_term.thesaurus
+target_entity_type_id: taxonomy_term
+target_bundle: thesaurus
+default_langcode: site_default
+language_alterable: false

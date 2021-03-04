@@ -1,0 +1,20 @@
+uuid: 66a424db-c2cc-4402-a462-8a0eeb4abba9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_album
+  module:
+    - path
+id: node.napo_album.path
+field_name: path
+entity_type: node
+bundle: napo_album
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

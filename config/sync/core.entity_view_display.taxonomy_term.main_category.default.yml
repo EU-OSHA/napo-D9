@@ -1,0 +1,32 @@
+uuid: 1fa93d9a-7fd2-4c78-aaed-56845d3a8898
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.main_category.field_tags
+    - taxonomy.vocabulary.main_category
+  module:
+    - text
+id: taxonomy_term.main_category.default
+targetEntityType: taxonomy_term
+bundle: main_category
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tags:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

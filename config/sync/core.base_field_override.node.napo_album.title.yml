@@ -1,0 +1,18 @@
+uuid: 9a61e592-b016-401e-a700-2fe903e12042
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_album
+id: node.napo_album.title
+field_name: title
+entity_type: node
+bundle: napo_album
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

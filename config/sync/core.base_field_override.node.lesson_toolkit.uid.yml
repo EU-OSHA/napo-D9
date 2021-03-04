@@ -1,0 +1,20 @@
+uuid: b3a2c830-da31-40b8-8db4-87e73be9c4bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_toolkit
+id: node.lesson_toolkit.uid
+field_name: uid
+entity_type: node
+bundle: lesson_toolkit
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

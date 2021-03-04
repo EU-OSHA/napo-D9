@@ -1,0 +1,22 @@
+uuid: b21ed17c-3131-4524-b3aa-59ad7c4c9b12
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.featured_articles_homepage_
+id: entity_subqueue.featured_articles_homepage_.status
+field_name: status
+entity_type: entity_subqueue
+bundle: featured_articles_homepage_
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

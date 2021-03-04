@@ -1,0 +1,18 @@
+uuid: a1cc1a43-e0d6-4c5f-8fd7-85c538f3472a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_toolkit
+id: node.lesson_toolkit.created
+field_name: created
+entity_type: node
+bundle: lesson_toolkit
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -21,12 +21,12 @@ process:
     plugin: migration_lookup
     migration: napo_taxonomy_tags
     source: tid
-    langcode:
-      plugin: static_map
-      bypass: true
-      source: language
-      map:
-        pt: pt-pt
+  langcode:
+    plugin: static_map
+    bypass: true
+    source: ltlanguage
+    map:
+      pt: pt-pt
   vid:
     -
       plugin: default_value

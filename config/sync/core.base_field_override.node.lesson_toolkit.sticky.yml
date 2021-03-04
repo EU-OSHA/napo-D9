@@ -1,0 +1,22 @@
+uuid: d7e50acf-9278-430c-9616-8a491fab5408
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_toolkit
+id: node.lesson_toolkit.sticky
+field_name: sticky
+entity_type: node
+bundle: lesson_toolkit
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

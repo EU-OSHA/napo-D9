@@ -1,0 +1,23 @@
+uuid: 03366366-dc67-47dd-94d9-7d39bd578e4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy_terms_for_nace_codes
+label: 'Taxonomy terms for Nace codes'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/nace-codes/[term:field_nace_code]'
+selection_criteria:
+  4cb7e788-415a-445d-84e4-6fb318ac31ee:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      nace_codes: nace_codes
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 4cb7e788-415a-445d-84e4-6fb318ac31ee
+selection_logic: and
+weight: -5
+relationships: {  }

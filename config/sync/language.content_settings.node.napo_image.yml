@@ -1,0 +1,18 @@
+uuid: 774aeeb9-bd8d-451c-ab18-31f2bb306b74
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_image
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.napo_image
+target_entity_type_id: node
+target_bundle: napo_image
+default_langcode: site_default
+language_alterable: false

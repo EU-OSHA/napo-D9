@@ -1,0 +1,18 @@
+uuid: 6f348d4a-cfad-4845-867d-c0902b2df72a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.msds_resources
+id: node.msds_resources.created
+field_name: created
+entity_type: node
+bundle: msds_resources
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

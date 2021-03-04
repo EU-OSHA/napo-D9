@@ -1,0 +1,18 @@
+uuid: 87b7bc0f-18ca-49f2-bc14-89ee4895f204
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lesson_video
+id: node.lesson_video.metatag
+field_name: metatag
+entity_type: node
+bundle: lesson_video
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

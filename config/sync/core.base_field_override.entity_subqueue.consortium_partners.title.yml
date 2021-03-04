@@ -1,0 +1,18 @@
+uuid: 8072f31b-5292-4e56-abf0-90b9b73ad8e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.consortium_partners
+id: entity_subqueue.consortium_partners.title
+field_name: title
+entity_type: entity_subqueue
+bundle: consortium_partners
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
