@@ -1,0 +1,64 @@
+uuid: f3663d61-0fe0-4d80-aef1-00e567da9747
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - custom_migrations
+id: napo_node_lesson
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: napo_migrate_node
+label: 'Node: Lesson'
+source:
+  plugin: d7_node
+  node_type: lesson
+process:
+  type:
+    -
+      plugin: default_value
+      default_value: lesson
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  body: body
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_lesson_type:
+    -
+      plugin: sub_process
+      source: field_lesson_type
+      process:
+        target_id: tid
+  field_activities: field_activities
+  field_assessment: field_assessment
+  field_file: field_file
+  field_lesson_intro_text: field_lesson_intro_text
+  field_learning_objectives: field_learning_objectives
+  field_lesson_toolkit: field_lesson_toolkit
+  field_lesson_video: field_lesson_video
+  field_curriculum_links: field_curriculum_links
+  field_resources_required: field_resources_required
+  field_starter: field_starter
+  field_tags:
+    -
+      plugin: sub_process
+      source: field_tags
+      process:
+        target_id: tid
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required:
+    - d7_user

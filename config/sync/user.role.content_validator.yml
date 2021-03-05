@@ -6,4 +6,14 @@ id: content_validator
 label: 'Content Validator'
 weight: 6
 is_admin: null
-permissions: {  }
+permissions:
+  - 'abort job item'
+  - 'access dashboard'
+  - 'access toolbar'
+  - 'preview layout validation'
+  - 'use manualcrop'
+  - 'use text format full_html'
+  - 'view needs content validation list'
+  - 'view the administration theme'
+  - 'view translation job'
+  - 'view translation job item'

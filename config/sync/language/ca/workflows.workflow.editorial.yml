@@ -1,0 +1,20 @@
+label: Editorial
+type_settings:
+  states:
+    archived:
+      label: Arxivat
+    draft:
+      label: Esborrany
+    published:
+      label: Publicat
+  transitions:
+    archive:
+      label: Arxiva
+    archived_draft:
+      label: 'Restaura com a esborrany'
+    archived_published:
+      label: Restaura
+    create_new_draft:
+      label: 'Crea un nou esborrany'
+    publish:
+      label: Publica

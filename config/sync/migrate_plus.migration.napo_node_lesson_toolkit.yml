@@ -1,0 +1,43 @@
+uuid: 0c2b9dab-81d7-4a52-9c3f-6e8bbc69f312
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - custom_migrations
+id: napo_node_lesson_toolkit
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: napo_migrate_node
+label: 'Node: lesson_toolkit'
+source:
+  plugin: d7_node
+  node_type: 'Lesson Resources'
+process:
+  type:
+    -
+      plugin: default_value
+      default_value: lesson_toolkit
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  body: body
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_target_ages: field_target_ages
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required:
+    - d7_user

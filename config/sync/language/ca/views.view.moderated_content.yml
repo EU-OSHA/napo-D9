@@ -1,0 +1,61 @@
+label: 'Contingut moderat'
+description: 'Cerca i modera contingut.'
+display:
+  default:
+    display_title: Mestre
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtra
+          reset_button_label: Reinicialitza
+          exposed_sorts_label: 'Ordena per'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Següent ›'
+            first: '« Primer'
+            last: 'Últim »'
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+      fields:
+        title:
+          label: Títol
+          separator: ', '
+        type:
+          label: 'Tipus de contingut'
+          separator: ', '
+        name:
+          label: Autor
+          separator: ', '
+        moderation_state:
+          label: 'Estat de moderació'
+          separator: ', '
+        changed:
+          label: Actualitzat
+          separator: ', '
+        operations:
+          label: Operacions
+      filters:
+        title:
+          expose:
+            label: Títol
+        type:
+          expose:
+            label: 'Tipus de contingut'
+        moderation_state:
+          expose:
+            label: 'Estat de moderació'
+        langcode:
+          expose:
+            label: Llengua
+      title: 'Contingut moderat'
+      empty:
+        area_text_custom:
+          content: 'No hi ha disponible contingut moderat. Només es llisten aquí les versions pendents de continguts, com poden ser els esborranys.'
+  moderated_content:
+    display_title: 'Contingut moderat'

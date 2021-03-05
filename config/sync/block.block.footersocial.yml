@@ -1,0 +1,22 @@
+uuid: 39d4158c-595d-4e3d-9fb7-b662c8010cce
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.footer_social
+  module:
+    - simple_block
+  theme:
+    - napo_theme
+id: footersocial
+theme: napo_theme
+region: featured_bottom_third
+weight: -7
+provider: null
+plugin: 'simple_block:footer_social'
+settings:
+  id: 'simple_block:footer_social'
+  label: 'Footer - Social'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

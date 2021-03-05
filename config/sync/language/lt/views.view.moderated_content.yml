@@ -1,0 +1,34 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtruoti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        title:
+          label: Pavadinimas
+        type:
+          label: 'Turinio tipas'
+        name:
+          label: Autorius
+        changed:
+          label: Atnaujinta
+        operations:
+          label: Veiksmai
+      filters:
+        title:
+          expose:
+            label: Pavadinimas
+        type:
+          expose:
+            label: 'Turinio tipas'
+        langcode:
+          expose:
+            label: Kalba

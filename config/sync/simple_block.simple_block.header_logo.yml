@@ -1,0 +1,11 @@
+uuid: 7405ff2c-70e0-467e-a372-2f58aa2d53ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: header_logo
+title: 'Header - Logo'
+content:
+  value: "<p><img alt=\"Napo logo\" data-entity-type=\"file\" data-entity-uuid=\"096afabe-742f-4614-a644-c6ee91cd8d03\" src=\"/sites/napo/files/inline-images/logo.png\" /></p>\r\n"
+  format: full_html

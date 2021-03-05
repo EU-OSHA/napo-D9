@@ -1,0 +1,124 @@
+uuid: 1da5099a-1b94-4f13-bd39-7d67506375d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - napo_theme
+id: socialmedialinks
+theme: napo_theme
+region: featured_bottom_second
+weight: -8
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    facebook:
+      value: naposafety
+      description: ''
+      weight: '-33'
+    contact:
+      value: ''
+      description: ''
+      weight: '-32'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-31'
+    github:
+      value: ''
+      description: ''
+      weight: '-30'
+    youtube_channel:
+      value: napofilms
+      description: ''
+      weight: '-29'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-28'
+    email:
+      value: ''
+      description: ''
+      weight: '-27'
+    whatsapp:
+      value: ''
+      description: ''
+      weight: '-26'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-25'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-24'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-23'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-22'
+    youtube:
+      value: ''
+      description: ''
+      weight: '-21'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-20'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-19'
+    xing:
+      value: ''
+      description: ''
+      weight: '-18'
+    twitter:
+      value: ''
+      description: ''
+      weight: '-17'
+    behance:
+      value: ''
+      description: ''
+      weight: '-16'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-15'
+    instagram:
+      value: ''
+      description: ''
+      weight: '-14'
+    website:
+      value: ''
+      description: ''
+      weight: '-13'
+    rss:
+      value: ''
+      description: ''
+      weight: '-12'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '-11'
+  appearance:
+    orientation: h
+    show_name: 0
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

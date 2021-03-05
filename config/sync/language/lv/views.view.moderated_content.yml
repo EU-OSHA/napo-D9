@@ -1,0 +1,34 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrēt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      fields:
+        title:
+          label: Virsraksts
+        type:
+          label: 'Satura veids'
+        name:
+          label: Autors
+        changed:
+          label: Atjaunināts
+        operations:
+          label: Darbības
+      filters:
+        title:
+          expose:
+            label: Virsraksts
+        type:
+          expose:
+            label: 'Satura veids'
+        langcode:
+          expose:
+            label: Valoda

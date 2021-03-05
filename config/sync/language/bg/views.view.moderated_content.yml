@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Филтър
+          reset_button_label: Рестартирай
+      fields:
+        title:
+          label: Заглавие
+        type:
+          label: 'Тип на съдържанието'
+        name:
+          label: Автор
+        changed:
+          label: Обновено
+        operations:
+          label: Действия
+      filters:
+        title:
+          expose:
+            label: Заглавие
+        type:
+          expose:
+            label: 'Тип на съдържанието'
+        langcode:
+          expose:
+            label: Език

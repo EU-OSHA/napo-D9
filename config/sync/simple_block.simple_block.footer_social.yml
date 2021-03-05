@@ -1,0 +1,11 @@
+uuid: 748d1af1-b8f3-4a82-84c6-7875b0db9073
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: footer_social
+title: 'Footer - Social'
+content:
+  value: "<p>Check us out in social media</p>\r\n"
+  format: full_html

@@ -1,0 +1,22 @@
+uuid: 765fc01e-a6d0-4270-984f-2d03c4e7796d
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.search_api
+  module:
+    - simple_block
+  theme:
+    - napo_theme
+id: searchapi
+theme: napo_theme
+region: header_form
+weight: -8
+provider: null
+plugin: 'simple_block:search_api'
+settings:
+  id: 'simple_block:search_api'
+  label: 'Search API'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

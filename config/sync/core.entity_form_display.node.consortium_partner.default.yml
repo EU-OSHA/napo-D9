@@ -8,8 +8,69 @@ dependencies:
     - field.field.node.consortium_partner.field_url
     - node.type.consortium_partner
   module:
+    - field_group
     - link
+    - media_library
     - text
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - group_general
+        - group_media
+        - group_related_information
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Info
+    group_general:
+      children:
+        - title
+        - body
+      parent_name: group_info
+      weight: 13
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: General
+    group_media:
+      children:
+        - field_image
+      parent_name: group_info
+      weight: 14
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Media
+    group_related_information:
+      children:
+        - field_url
+      parent_name: group_info
+      weight: 15
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Related Information'
 id: node.consortium_partner.default
 targetEntityType: node
 bundle: consortium_partner
@@ -17,7 +78,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 2
     settings:
       rows: 9
       summary_rows: 3
@@ -26,17 +87,14 @@ content:
     third_party_settings: {  }
     region: content
   field_image:
-    weight: 26
+    weight: 6
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_url:
-    weight: 3
+    weight: 4
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -45,18 +103,23 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 3
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true
