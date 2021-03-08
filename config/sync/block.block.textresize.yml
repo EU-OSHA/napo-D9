@@ -1,0 +1,20 @@
+uuid: d2c137cc-4c7c-4f96-bd93-6d7f892e8735
+langcode: en
+status: true
+dependencies:
+  module:
+    - text_resize
+  theme:
+    - napo_theme
+id: textresize
+theme: napo_theme
+region: top_header
+weight: -7
+provider: null
+plugin: text_resize_block
+settings:
+  id: text_resize_block
+  label: 'Text Resize'
+  provider: text_resize
+  label_display: '0'
+visibility: {  }

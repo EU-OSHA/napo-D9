@@ -4,12 +4,22 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
+    - field.field.node.article.field_character_count
+    - field.field.node.article.field_expiration_date
+    - field.field.node.article.field_glossary
+    - field.field.node.article.field_guidance_file
+    - field.field.node.article.field_icon
     - field.field.node.article.field_image
+    - field.field.node.article.field_list_of_activities
+    - field.field.node.article.field_nace_codes
+    - field.field.node.article.field_page_count
+    - field.field.node.article.field_publication_date
     - field.field.node.article.field_tags
+    - field.field.node.article.field_thesaurus
     - image.style.large
     - node.type.article
   module:
-    - image
+    - slick
     - text
     - user
 _core:
@@ -26,15 +36,86 @@ content:
     settings: {  }
     third_party_settings: {  }
     label: hidden
+  field_glossary:
+    type: entity_reference_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_guidance_file:
+    type: entity_reference_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   field_image:
-    type: image
+    type: slick_media
     weight: -1
     region: content
     settings:
       image_style: large
-      image_link: ''
+      thumbnail: ''
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      optionset: default
+      override: false
+      overridables: {  }
+      skin: ''
+      skin_arrows: ''
+      skin_dots: ''
+      cache: 0
+      current_view_mode: ''
+      fx: ''
+      style: ''
+      icon: ''
+      layout: ''
+      view_mode: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      preserve_keys: false
+      visible_items: 0
+      grid: 0
+      grid_medium: 0
+      grid_small: 0
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
     third_party_settings: {  }
     label: hidden
+  field_list_of_activities:
+    type: entity_reference_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   field_tags:
     type: entity_reference_label
     weight: 10
@@ -49,12 +130,9 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_activity_list_file: true
   field_character_count: true
   field_expiration_date: true
-  field_guidance_file: true
   field_icon: true
-  field_menu: true
   field_nace_codes: true
   field_page_count: true
   field_publication_date: true

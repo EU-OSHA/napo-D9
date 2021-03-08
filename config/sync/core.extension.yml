@@ -76,6 +76,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  printfriendly: 0
   quickedit: 0
   rdf: 0
   rest: 0
@@ -95,6 +96,7 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  text_resize: 0
   token: 0
   toolbar: 0
   tour: 0

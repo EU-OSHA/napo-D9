@@ -1,29 +1,29 @@
-uuid: 28b2f4d0-33c8-45d0-a590-ee317a7ce5d0
+uuid: 8ec7cbeb-1cd0-4d03-8008-0d09d851045a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_nace_codes
+    - field.storage.node.field_list_of_activities
+    - media.type.document
     - node.type.article
-    - taxonomy.vocabulary.nace_codes
-id: node.article.field_nace_codes
-field_name: field_nace_codes
+id: node.article.field_list_of_activities
+field_name: field_list_of_activities
 entity_type: node
 bundle: article
-label: Nace
+label: 'List of activities'
 description: ''
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:media'
   handler_settings:
     target_bundles:
-      nace_codes: nace_codes
+      document: document
     sort:
-      field: name
-      direction: asc
+      field: _none
+      direction: ASC
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 991e5402-921f-4cb0-be7d-41f722857a00
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.header_download_centre
+  module:
+    - simple_block
+  theme:
+    - napo_theme
+id: headerdownloadcentre
+theme: napo_theme
+region: top_header
+weight: 0
+provider: null
+plugin: 'simple_block:header_download_centre'
+settings:
+  id: 'simple_block:header_download_centre'
+  label: 'Header - Download Centre'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

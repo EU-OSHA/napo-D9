@@ -25,7 +25,7 @@ content:
     weight: 5
     region: content
   field_metatag:
-    weight: 31
+    weight: 32
     settings:
       sidebar: true
     third_party_settings: {  }

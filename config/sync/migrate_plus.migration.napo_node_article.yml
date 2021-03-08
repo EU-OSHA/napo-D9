@@ -16,33 +16,43 @@ source:
   plugin: d7_node
   node_type: article
 process:
+  nid:
+    -
+      plugin: get
+      source: nid
   type:
     -
       plugin: default_value
       default_value: article
-  langcode:
-    plugin: default_value
-    source: language
-    default_value: und
-  title: title
-  body: body
-  uid: node_uid
-  status: status
-  created: created
-  changed: changed
-  promote: promote
-  sticky: sticky
-  revision_uid: revision_uid
-  revision_log: log
-  revision_timestamp: timestamp
-  field_article_type:
+  title:
     -
-      plugin: sub_process
-      source: field_article_type
-      process:
-        target_id: tid
+      plugin: get
+      source: title
+  body:
+    -
+      plugin: get
+      source: body
+  body/0/format:
+    -
+      plugin: default_value
+      default_value: full_html
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
   field_character_count: field_character_count
-  field_menu: field_menu
   field_expiration_date:
     -
       plugin: sub_process
@@ -57,11 +67,6 @@ process:
           settings:
             validate_format: false
           source: value
-  field_guidance_file: field_guidance_file
-  field_icon: field_icon
-  field_image: field_image
-  field_activity_list_file: field_activity_list_file
-  field_nace_codes: field_nace_codes
   field_page_count: field_page_count
   field_publication_date:
     -
@@ -75,13 +80,24 @@ process:
           from_timezone: Europe/Madrid
           to_timezone: Europe/Madrid
           source: value
+  field_nace_codes:
+    -
+      plugin: sub_process
+      source: field_nace_codes
+      process:
+        target_id: tid
   field_tags:
     -
       plugin: sub_process
       source: field_tags
       process:
         target_id: tid
-  field_thesaurus: field_thesaurus
+  field_thesaurus:
+    -
+      plugin: sub_process
+      source: field_thesaurus
+      process:
+        target_id: tid
 destination:
   plugin: 'entity:node'
 migration_dependencies:

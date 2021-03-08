@@ -1,10 +1,7 @@
 uuid: c85db3c5-9822-4e76-b1dd-3930d4f0836b
 langcode: en
 status: true
-dependencies:
-  enforced:
-    module:
-      - custom_migrations
+dependencies: {  }
 id: napo_node_article_i18n
 class: null
 field_plugin_method: null
@@ -27,24 +24,7 @@ process:
   title: title
   body: body
   uid: uid
-  status: status
-  created: created
-  changed: changed
-  promote: promote
-  sticky: sticky
-  revision_uid: revision_uid
-  revision_log: log
-  revision_timestamp: timestamp
-  content_translation_source: source
-  content_translation_outdated: translate
-  field_article_type:
-    -
-      plugin: sub_process
-      source: field_article_type
-      process:
-        target_id: tid
   field_character_count: field_character_count
-  field_menu: field_menu
   field_expiration_date:
     -
       plugin: sub_process
@@ -59,11 +39,6 @@ process:
           settings:
             validate_format: false
           source: value
-  field_guidance_file: field_guidance_file
-  field_icon: field_icon
-  field_image: field_image
-  field_activity_list_file: field_activity_list_file
-  field_nace_codes: field_nace_codes
   field_page_count: field_page_count
   field_publication_date:
     -
@@ -77,18 +52,36 @@ process:
           from_timezone: Europe/Madrid
           to_timezone: Europe/Madrid
           source: value
+  field_nace_codes:
+    -
+      plugin: sub_process
+      source: field_nace_codes
+      process:
+        target_id: tid
   field_tags:
     -
       plugin: sub_process
       source: field_tags
       process:
         target_id: tid
-  field_thesaurus: field_thesaurus
+  field_thesaurus:
+    -
+      plugin: sub_process
+      source: field_thesaurus
+      process:
+        target_id: tid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  content_translation_source: source
+  content_translation_outdated: translate
 destination:
   plugin: 'entity:node'
   translations: true
   destination_module: content_translation
-migration_dependencies:
-  required:
-    - d7_user
-    - napo_node_article
+migration_dependencies: null

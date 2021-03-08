@@ -1,0 +1,20 @@
+uuid: d9e7136c-7ec7-4f50-aafd-3172283b98b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - printfriendly
+  theme:
+    - napo_theme
+id: printfriendly
+theme: napo_theme
+region: top_header
+weight: -8
+provider: null
+plugin: block_printfriendly
+settings:
+  id: block_printfriendly
+  label: printfriendly
+  provider: printfriendly
+  label_display: '0'
+visibility: {  }

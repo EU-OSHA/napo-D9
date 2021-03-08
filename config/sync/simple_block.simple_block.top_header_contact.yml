@@ -1,0 +1,11 @@
+uuid: f50071fd-1bbf-4cd9-a509-88b420c71e80
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: top_header_contact
+title: 'Header - Contact'
+content:
+  value: "<p><a class=\"header-contact\" href=\"/contact-us\">Contact us &amp; faqs</a></p>\r\n"
+  format: full_html

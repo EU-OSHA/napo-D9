@@ -1,4 +1,4 @@
-uuid: 5f9696ca-8ca9-454f-a590-b314206c0af1
+uuid: e6c1762c-b7e0-460e-b6b4-f6f415f18e40
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,8 @@ dependencies:
 third_party_settings:
   field_permissions:
     permission_type: public
-id: node.field_guidance_file
-field_name: field_guidance_file
+id: node.field_list_of_activities
+field_name: field_list_of_activities
 entity_type: node
 type: entity_reference
 settings:

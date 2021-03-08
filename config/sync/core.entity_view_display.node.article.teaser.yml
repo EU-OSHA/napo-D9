@@ -5,13 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
-    - field.field.node.article.field_activity_list_file
     - field.field.node.article.field_character_count
     - field.field.node.article.field_expiration_date
+    - field.field.node.article.field_glossary
     - field.field.node.article.field_guidance_file
     - field.field.node.article.field_icon
     - field.field.node.article.field_image
-    - field.field.node.article.field_menu
+    - field.field.node.article.field_list_of_activities
     - field.field.node.article.field_nace_codes
     - field.field.node.article.field_page_count
     - field.field.node.article.field_publication_date
@@ -36,13 +36,13 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
-  field_activity_list_file: true
   field_character_count: true
   field_expiration_date: true
+  field_glossary: true
   field_guidance_file: true
   field_icon: true
   field_image: true
-  field_menu: true
+  field_list_of_activities: true
   field_nace_codes: true
   field_page_count: true
   field_publication_date: true
