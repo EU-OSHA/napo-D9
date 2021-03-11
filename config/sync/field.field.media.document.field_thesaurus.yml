@@ -1,0 +1,29 @@
+uuid: 91fe1220-5b8b-4be7-b929-f485192d229b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_thesaurus
+    - media.type.document
+    - taxonomy.vocabulary.thesaurus
+id: media.document.field_thesaurus
+field_name: field_thesaurus
+entity_type: media
+bundle: document
+label: Thesaurus
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      thesaurus: thesaurus
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

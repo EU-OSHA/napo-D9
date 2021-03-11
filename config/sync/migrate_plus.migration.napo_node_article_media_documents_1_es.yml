@@ -1,4 +1,4 @@
-uuid: 06a50226-f8a5-4abe-9046-27dcd58c918d
+uuid: b61d2672-9e65-4658-b9ff-712f976d4b56
 langcode: en
 status: true
 dependencies:
@@ -15,11 +15,10 @@ migration_tags: null
 migration_group: napo_migrate_media
 label: 'Article: Media Documents Step 1 ES'
 source:
-  key: migrate
-  langcode: es
   plugin: media_entity_generator_d7
   entity_type: node
   bundle: article
+  langcode: es
   d7_file_url: 'https://www.napofilm.net/sites/default/files/'
   field_names:
     - field_guidance_file
@@ -32,23 +31,43 @@ process:
   name:
     plugin: media_name
     source: file_name
-  existing_media_file:
-    plugin: check_media_duplicate
+  mid:
+    plugin: migration_lookup
+    migration: napo_node_article_media_documents_1
     source: target_id
-  unique_file_id:
-    plugin: check_duplicate
-    source: target_id
+    no_stub: true
   field_media_document/title: title
+  field_media_description: field_file_description
   field_media_document/target_id:
     plugin: media_file_copy
     move: false
     reuse: true
     path: 'public://documents/articles/'
     source: file_path
+  field_tags:
+    -
+      plugin: sub_process
+      source: field_tags
+      process:
+        target_id: tid
+  field_nace_codes:
+    -
+      plugin: sub_process
+      source: field_nace_codes
+      process:
+        target_id: tid
+  field_thesaurus:
+    -
+      plugin: sub_process
+      source: field_thesaurus
+      process:
+        target_id: tid
   langcode: langcode
-  uid:
+  uid: uid
+  content_translation_source:
     plugin: default_value
-    default_value: 1
+    default_value: en
 destination:
   plugin: 'entity:media'
+  translations: true
 migration_dependencies: null

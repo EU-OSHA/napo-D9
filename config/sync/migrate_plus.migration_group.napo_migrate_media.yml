@@ -1,10 +1,15 @@
-uuid: 1d4a99a5-0272-4d60-b102-8fbb2beda219
+uuid: af1c2a50-1d68-44a4-b4f6-2d7cdc09ea79
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  enforced:
+    module:
+      - custom_migrations
 id: napo_migrate_media
-label: napo_migrate_media
-description: ''
-source_type: null
+label: 'Migrate Napo Medias'
+description: 'Migration files from D7 to Drupal 8'
+source_type: 'Drupal 7'
 module: null
-shared_configuration: null
+shared_configuration:
+  source:
+    key: migrate

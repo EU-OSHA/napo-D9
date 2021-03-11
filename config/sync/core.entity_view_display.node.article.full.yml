@@ -182,6 +182,41 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
+          f942faa1-61e2-4583-8ef1-23f758c37ef9:
+            uuid: f942faa1-61e2-4583-8ef1-23f758c37ef9
+            region: first
+            configuration:
+              id: 'field_block:node:article:field_guidance_file'
+              label: 'Guidance file'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: Array
+                      custom: Array
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI

@@ -4,7 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.document.field_media_description
     - field.field.media.document.field_media_document
+    - field.field.media.document.field_nace_codes
+    - field.field.media.document.field_tags
+    - field.field.media.document.field_thesaurus
     - media.type.document
 _core:
   default_config_hash: dcpfpqyLXOSGpulacMAJW3H-G34_LeNsjdfxd1_oCfY
@@ -20,9 +24,18 @@ content:
     settings:
       include_locked: true
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   created: true
+  field_media_description: true
   field_media_document: true
+  field_nace_codes: true
+  field_tags: true
+  field_thesaurus: true
   name: true
   path: true
   status: true

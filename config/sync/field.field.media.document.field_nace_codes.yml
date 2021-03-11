@@ -1,0 +1,29 @@
+uuid: 27dfaead-4fa3-4b49-8ef5-1c7bc07ff96f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_nace_codes
+    - media.type.document
+    - taxonomy.vocabulary.nace_codes
+id: media.document.field_nace_codes
+field_name: field_nace_codes
+entity_type: media
+bundle: document
+label: 'Nace Codes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      nace_codes: nace_codes
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

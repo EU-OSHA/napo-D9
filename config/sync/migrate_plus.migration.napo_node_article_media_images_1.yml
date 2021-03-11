@@ -1,4 +1,4 @@
-uuid: cc1e1ade-0507-4324-94e9-db749fd33477
+uuid: 9ec7855b-b087-40b0-b4a9-139905ee571f
 langcode: en
 status: true
 dependencies:
@@ -39,12 +39,31 @@ process:
     source: target_id
   field_media_image/alt: alt
   field_media_image/title: title
+  field_media_description: field_file_description
   field_media_image/target_id:
     plugin: media_file_copy
     move: true
     reuse: true
     path: 'public://images/articles/'
     source: file_path
+  field_tags:
+    -
+      plugin: sub_process
+      source: field_tags
+      process:
+        target_id: tid
+  field_nace_codes:
+    -
+      plugin: sub_process
+      source: field_nace_codes
+      process:
+        target_id: tid
+  field_thesaurus:
+    -
+      plugin: sub_process
+      source: field_thesaurus
+      process:
+        target_id: tid
   langcode: langcode
   uid:
     plugin: default_value

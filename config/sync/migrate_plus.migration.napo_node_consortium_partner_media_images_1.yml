@@ -1,4 +1,4 @@
-uuid: 59246c8a-572d-403a-b377-0ab130c22f27
+uuid: 1b098584-a155-466b-a1c3-89fab2d31a97
 langcode: en
 status: true
 dependencies:
@@ -38,12 +38,31 @@ process:
     source: target_id
   field_media_image/alt: alt
   field_media_image/title: title
+  field_media_description: field_file_description
   field_media_image/target_id:
     plugin: media_file_copy
     move: true
     reuse: true
     path: 'public://images/consortium_partners/'
     source: file_path
+  field_tags:
+    -
+      plugin: sub_process
+      source: field_tags
+      process:
+        target_id: tid
+  field_nace_codes:
+    -
+      plugin: sub_process
+      source: field_nace_codes
+      process:
+        target_id: tid
+  field_thesaurus:
+    -
+      plugin: sub_process
+      source: field_thesaurus
+      process:
+        target_id: tid
   langcode: langcode
   uid:
     plugin: default_value

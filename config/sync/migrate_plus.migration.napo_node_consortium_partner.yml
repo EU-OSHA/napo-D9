@@ -1,4 +1,4 @@
-uuid: 83c813d6-c397-4a37-a207-89409ef4d039
+uuid: 52b9534e-13d3-4872-9e44-87c2689a37b6
 langcode: en
 status: true
 dependencies:
@@ -52,8 +52,14 @@ process:
   field_url:
     plugin: field_link
     source: field_url
+  field_image:
+    plugin: file_id_lookup
+    source: field_image
+    migration: napo_node_consortium_partner_media_images_1
+    no_stub: true
 destination:
   plugin: 'entity:node'
 migration_dependencies:
   required:
     - d7_user
+    - napo_node_consortium_partner_media_images_1

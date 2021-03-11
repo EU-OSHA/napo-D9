@@ -1,4 +1,4 @@
-uuid: e65b3e51-2994-4d6b-8936-e05fc4300e20
+uuid: 22c08528-b7e7-437e-aadc-24d50a390aeb
 langcode: en
 status: true
 dependencies:
@@ -98,8 +98,38 @@ process:
       source: field_thesaurus
       process:
         target_id: tid
+  field_image:
+    plugin: file_id_lookup
+    source: field_image
+    migration: napo_node_article_media_images_1
+    no_stub: true
+  field_icon:
+    plugin: file_id_lookup
+    source: field_icon
+    migration: napo_node_article_media_images_1
+    no_stub: true
+  field_guidance_file:
+    plugin: file_id_lookup
+    source: field_guidance_file
+    migration:
+      - napo_node_article_media_documents_1
+    no_stub: true
+  field_activity_list_file:
+    plugin: file_id_lookup
+    source: field_activity_list_file
+    migration:
+      - napo_node_article_media_documents_1
+    no_stub: true
+  field_glossary:
+    plugin: file_id_lookup
+    source: field_menu
+    migration:
+      - napo_node_article_media_documents_1
+    no_stub: true
 destination:
   plugin: 'entity:node'
 migration_dependencies:
   required:
     - d7_user
+    - napo_node_article_media_documents_1
+    - napo_node_article_media_images_1

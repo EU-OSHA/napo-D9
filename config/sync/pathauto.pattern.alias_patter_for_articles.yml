@@ -1,0 +1,22 @@
+uuid: bb1168bf-b590-4087-b3b5-d953a2d10e00
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: alias_patter_for_articles
+label: 'Alias pattern for Articles'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  e155ad5c-baeb-4dab-9174-b2e40a95d588:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e155ad5c-baeb-4dab-9174-b2e40a95d588
+selection_logic: and
+weight: -5
+relationships: {  }
