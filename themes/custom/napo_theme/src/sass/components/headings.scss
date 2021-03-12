@@ -1,0 +1,47 @@
+
+/*Headings*/
+
+h1, h2, label{
+  font-family: 'Open Sans',sans-serif;
+  color: $text-color-blue;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 1.6rem;
+  padding-left: 0;
+  font-weight: 600;
+  margin-bottom: 22px;
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+      transition: all 1s;
+    }
+  }
+}
+
+h2.views-field-title{
+  a{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+h3{
+  font-size: 1.1rem;
+  color: $text-color-blue;
+  a{
+    color: $text-color-blue;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+      transition: all 1s;
+    }
+  }
+}

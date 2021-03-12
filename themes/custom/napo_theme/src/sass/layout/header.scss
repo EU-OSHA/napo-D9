@@ -1,0 +1,339 @@
+.header{
+  &_top_bar{
+    background-color: $bg-color-grey;
+    font-weight:bold;
+    a{
+      color: $text-color-white;
+      &[target=_blank]:after {
+       display:none;
+      }
+      .fa{
+        font-size:inherit;
+      }
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    p{
+      margin:0px;
+    }
+    ul {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .region-top-header{
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin: 0;
+      min-height: 3.125rem;
+      display:inline-flex;
+      flex-direction:row;
+      align-items: center;
+      &>div{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        font-size:0.875rem;
+        &:not(:last-of-type):after {
+          content: '|';
+          position: relative;
+          padding: 0 0.625rem;
+          display: inline-block;
+          font-weight: bold;
+          font-size:0.875rem;
+          color:$text-color-white;
+        }
+      }
+    }
+    &_content{
+      text-align:center;
+    }
+    .block-text-resize-block{
+
+      &:before{
+        content:"Set font size";
+        display:inline;
+        font-size:0.875rem;
+        font-weight:bold;
+        color:$text-color-white;
+
+      }
+      &>.content>.content{
+        display:flex;
+        flex-direction: row-reverse;
+      }
+    }
+    a#text_resize_decrease,
+    a#text_resize_increase{
+      background-repeat: no-repeat;
+      display:inline-block;
+      text-indent: 0;
+      float:none;
+      padding-left:0.875rem;
+      margin:0px;
+      height:27px;
+      margin-left:4px;
+      sup{
+        display:none;
+      }
+
+    }
+    #text_resize_decrease{
+      background: url(/sites/napo/themes/custom/napo_theme/images/a-minor.png);
+      font-size:1rem;
+      padding-top:6px;
+    }
+    #text_resize_increase{
+      background: url(/sites/napo/themes/custom/napo_theme/images/a-plus.png);
+      font-size:1.25rem;
+    }
+  }
+  &_navbar_content{
+
+    .form-group{
+      width: 163px;
+      font-weight: bold;
+    }
+  }
+  &-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .nav{
+    background: none;
+    font-size: 1rem;
+    font-weight: bold;
+    &-item{
+      border-radius: 3.875rem;
+      border: 0 ;
+      min-height: 3.875rem;
+      margin-right: 1rem;
+      background: $bg-color-blue;
+      height: 100%;
+      padding: 0em 1em 0em 1em ;
+      vertical-align: middle;
+      display: flex;
+      align-items: center;
+      cursor:pointer;
+      &:hover,
+      &.show{
+        transition: all 0.1s;
+        background: $bg-color-blue-light-hover;
+        border-radius: 3rem 3rem 0 0;
+      }
+      &:first-of-type{
+        a{
+          color:transparent;
+          position:relative;
+          width:34px;
+          height:28px;
+          &:after{
+            content:'';
+            display:inline-block;
+            background: url(/sites/napo/themes/custom/napo_theme/images/napo-home_0_0.png);
+            background-position: center 0px;
+            background-repeat: no-repeat;
+            width:34px;
+            height:28px;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+            z-index:1;
+          }
+        }
+        &:hover{
+          border-radius: 3.875rem;
+        }
+      }
+    }
+    &-link{
+      background: transparent;
+      color: $text-color-white;
+      padding: 0;
+      display: block;
+      &.dropdown-toggle{
+        &:after{
+          display:block;
+          background: url(/sites/napo/themes/custom/napo_theme/images/a-minor.png);
+          background-color: transparent;
+          background-position: center 0px;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 10px;
+          vertical-align: middle;
+          border:none;
+        }
+      }
+    }
+  }
+  .dropdown-menu{
+    background-color:$bg-color-blue;
+    padding:0px;
+    margin:0px;
+    border-top:0.625rem solid transparent;
+    border-radius: 0 0 0rem 1.875rem;
+    width: 21.25rem;
+    border-top: 0.625rem solid transparent;
+    overflow: hidden;
+    max-width: 215px;
+    min-width: 129px;
+    &.show{}
+
+    .dropdown-item{
+      padding: 0;
+      border: 0;
+      border-top: 1px solid $bg-color-blue-light-hover;
+      &:focus,
+      &:hover {
+        color:$text-color-white;
+        text-decoration: none;
+        background-color: transparent;
+      }
+      a{
+        color:$text-color-white;
+        padding: 0.625rem 0.625rem 0.625rem 1.875rem;
+        background-position: 50% 50%;
+        font-weight:bold;
+        display:block;
+        font-size:0.875rem;
+        &:hover{
+          text-decoration: none;
+          background: #506b9e url(/sites/napo/themes/custom/napo_theme/images/arrow-menu-hover.png) 97% 50% no-repeat;
+          transition: all 0.6s;
+          transition-property: all;
+          transition-duration: 0.6s;
+          transition-timing-function: ease;
+          transition-delay: 0s;
+        }
+      }
+    }
+  }
+  .block-simple-blocksearch-api{
+    .form-group{
+      input{
+        display: table-cell;
+        position: relative;
+        z-index: 2;
+        float: left;
+        width: 100%;
+        margin-bottom: 0;
+        border: 0;
+      }
+      .form-control {
+        width: 79px;
+        height: 28px;
+        padding: 0px 16px;
+        border-radius: 3.875rem;
+        background: $text-color-blue;
+        color: $text-color-white;
+        &::-webkit-input-placeholder {
+          color: $text-color-white;
+        }
+        &::selection,
+        &:focus {
+          background: $text-color-blue;
+          color: $text-color-white;
+        }
+        &:-webkit-autofill {
+          -webkit-animation-name: autofill;
+          -webkit-animation-fill-mode: both;
+        }
+      }
+    }
+
+  }
+  .block-dropdown-languagelanguage-interface {
+    display:none;
+    //  .form-item{
+    //    legend{
+    //      display:none;
+    //    }
+    //  }
+    //  .dropdown{}
+    //  .dropbutton{
+    //    &-wrapper{
+    //      line-height: 18px;
+    //      border: none;
+    //      height: 31px;
+    //      width: 163px;
+    //      appearance: none;
+    //      -moz-appearance: none;
+    //      -webkit-appearance: none;
+    //      -moz-box-sizing: border-box;
+    //      -webkit-box-sizing: border-box;
+    //      box-sizing: border-box;
+    //      cursor: pointer;
+    //
+    //      &:after {
+    //        width: 26px;
+    //        height: 30px;
+    //        display: block;
+    //        content: '';
+    //        position: absolute;
+    //        right: 0px;
+    //        top: 5px;
+    //        pointer-events: none;
+    //        background: url(/sites/napo/themes/custom/napo_theme/images/arrow-language.png);
+    //        -moz-box-sizing: border-box;
+    //        -webkit-box-sizing: border-box;
+    //        box-sizing: border-box;
+    //        background-repeat: no-repeat;
+    //      }
+    //    }
+    //    &-widget{
+    //      border: none;
+    //      background-color: transparent;
+    //      background-image:none;
+    //      color: inherit;
+    //      cursor: pointer;
+    //      text-align: left;
+    //      margin: 0;
+    //      border-radius: 0;
+    //      overflow: hidden;
+    //      padding-right:0;
+    //      font-size:0.75rem;
+    //    }
+    //    &-action{
+    //      background: $bg-color-yellow;
+    //      &:hover{
+    //        background: $bg-color-yellow;
+    //      }
+    //      &:not(.secondary-action) {
+    //        line-height: 31px;
+    //        border-radius: 20px;
+    //        .language-link{
+    //          height:31px;
+    //          font-weight:bold;
+    //        }
+    //      }
+    //      &.secondary-action {
+    //        border-top: none;
+    //        .language-link:hover{
+    //          color:$text-color-white;
+    //          background-color:$bg-color-orange;
+    //          text-decoration: none;
+    //        }
+    //      }
+    //    }
+    //    &-toggle{
+    //      display:none;
+    //    }
+    //    .language-link{
+    //      width: 100%;
+    //      display: inline-block;
+    //      color:$text-color-blue;
+    //      font-weight:400;
+    //      &:hover{
+    //        background:none;
+    //      }
+    //    }
+    //  }
+  }
+}
+

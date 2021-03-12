@@ -1,5 +1,418 @@
+@charset "UTF-8";
+/* D9 - Variables NCW */
+/*Font Family*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+}
+/* Font colours */
+.text-color-blue {
+  color: #1f3695;
+}
+
+.text-color-blue-light {
+  color: #666;
+}
+
+.text-color-white {
+  color: #FFF;
+}
+
+/* background colours */
+/*Accordions*/
+.bg-color-blue {
+  background: #1f3695;
+}
+
+.bg-color-blue-light-hover {
+  background: #506B9E;
+}
+
+.bg-color-blue-light {
+  background: #bbc2df;
+}
+
+.bg-color-blue-light-2 {
+  background: #b9c3e0;
+}
+
+.bg-color-yellow {
+  background: #f7e235;
+}
+
+.bg-color-grey {
+  background: #59595A;
+}
+
+.bg-color-grey-light {
+  background: #f2f1f2;
+}
+
+.bg-color-grey-light-2 {
+  background: #e0e1e1;
+}
+
+.bg-color-white {
+  background: #FFF;
+}
+
+.bg-color-orange {
+  background-color: #e95420;
+}
+
+/* END - D9 - Variables NCW */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: #FFF;
+}
+
+.site-footer .block {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.form-group {
+  margin-bottom: 0rem;
+}
+
+/*Headings*/
+h1, h2, label {
+  font-family: "Open Sans", sans-serif;
+  color: #1f3695;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding-left: 0;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+h2 a {
+  text-decoration: none;
+}
+h2 a:hover {
+  text-decoration: underline;
+  transition: all 1s;
+}
+
+h2.views-field-title a {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: #1f3695;
+}
+h3 a {
+  color: #1f3695;
+  text-decoration: none;
+}
+h3 a:hover {
+  text-decoration: underline;
+  transition: all 1s;
+}
+
 a {
-  color: orange;
+  color: #1f3695;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+a[target=_blank]:after {
+  content: "";
+  font-family: "FontAwesome";
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.footer_bottom {
+  background-color: #59595A;
+  padding: 1.5rem 0;
+}
+.footer .menu--footer {
+  text-align: center;
+  width: 100%;
+}
+.footer .navbar-nav {
+  display: block;
+}
+.footer .nav-item {
+  display: inline;
+}
+.footer .nav-item:last-of-type a:after {
+  display: none;
+}
+.footer .nav-link {
+  display: inline-block;
+  color: #FFF;
+  font-size: 0.8rem;
+  font-family: "ubuntu";
+  font-weight: normal;
+  padding: 0;
+}
+.footer .nav-link:after {
+  content: " | ";
+  font-family: "ubuntu";
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.header_top_bar {
+  background-color: #59595A;
+  font-weight: bold;
+}
+.header_top_bar a {
+  color: #FFF;
+}
+.header_top_bar a[target=_blank]:after {
+  display: none;
+}
+.header_top_bar a .fa {
+  font-size: inherit;
+}
+.header_top_bar a:hover {
+  text-decoration: none;
+}
+.header_top_bar p {
+  margin: 0px;
+}
+.header_top_bar ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header_top_bar .region-top-header {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  min-height: 3.125rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header_top_bar .region-top-header > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.875rem;
+}
+.header_top_bar .region-top-header > div:not(:last-of-type):after {
+  content: "|";
+  position: relative;
+  padding: 0 0.625rem;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #FFF;
+}
+.header_top_bar_content {
+  text-align: center;
+}
+.header_top_bar .block-text-resize-block:before {
+  content: "Set font size";
+  display: inline;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #FFF;
+}
+.header_top_bar .block-text-resize-block > .content > .content {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.header_top_bar a#text_resize_decrease,
+.header_top_bar a#text_resize_increase {
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-indent: 0;
+  float: none;
+  padding-left: 0.875rem;
+  margin: 0px;
+  height: 27px;
+  margin-left: 4px;
+}
+.header_top_bar a#text_resize_decrease sup,
+.header_top_bar a#text_resize_increase sup {
+  display: none;
+}
+.header_top_bar #text_resize_decrease {
+  background: url(/sites/napo/themes/custom/napo_theme/images/a-minor.png);
+  font-size: 1rem;
+  padding-top: 6px;
+}
+.header_top_bar #text_resize_increase {
+  background: url(/sites/napo/themes/custom/napo_theme/images/a-plus.png);
+  font-size: 1.25rem;
+}
+.header_navbar_content .form-group {
+  width: 163px;
+  font-weight: bold;
+}
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .nav {
+  background: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.header .nav-item {
+  border-radius: 3.875rem;
+  border: 0;
+  min-height: 3.875rem;
+  margin-right: 1rem;
+  background: #1f3695;
+  height: 100%;
+  padding: 0em 1em 0em 1em;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header .nav-item:hover, .header .nav-item.show {
+  transition: all 0.1s;
+  background: #506B9E;
+  border-radius: 3rem 3rem 0 0;
+}
+.header .nav-item:first-of-type a {
+  color: transparent;
+  position: relative;
+  width: 34px;
+  height: 28px;
+}
+.header .nav-item:first-of-type a:after {
+  content: "";
+  display: inline-block;
+  background: url(/sites/napo/themes/custom/napo_theme/images/napo-home_0_0.png);
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.header .nav-item:first-of-type:hover {
+  border-radius: 3.875rem;
+}
+.header .nav-link {
+  background: transparent;
+  color: #FFF;
+  padding: 0;
+  display: block;
+}
+.header .nav-link.dropdown-toggle:after {
+  display: block;
+  background: url(/sites/napo/themes/custom/napo_theme/images/a-minor.png);
+  background-color: transparent;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 10px;
+  vertical-align: middle;
+  border: none;
+}
+.header .dropdown-menu {
+  background-color: #1f3695;
+  padding: 0px;
+  margin: 0px;
+  border-top: 0.625rem solid transparent;
+  border-radius: 0 0 0rem 1.875rem;
+  width: 21.25rem;
+  border-top: 0.625rem solid transparent;
+  overflow: hidden;
+  max-width: 215px;
+  min-width: 129px;
+}
+.header .dropdown-menu .dropdown-item {
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #506B9E;
+}
+.header .dropdown-menu .dropdown-item:focus, .header .dropdown-menu .dropdown-item:hover {
+  color: #FFF;
+  text-decoration: none;
+  background-color: transparent;
+}
+.header .dropdown-menu .dropdown-item a {
+  color: #FFF;
+  padding: 0.625rem 0.625rem 0.625rem 1.875rem;
+  background-position: 50% 50%;
+  font-weight: bold;
+  display: block;
+  font-size: 0.875rem;
+}
+.header .dropdown-menu .dropdown-item a:hover {
+  text-decoration: none;
+  background: #506b9e url(/sites/napo/themes/custom/napo_theme/images/arrow-menu-hover.png) 97% 50% no-repeat;
+  transition: all 0.6s;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.header .block-simple-blocksearch-api .form-group input {
+  display: table-cell;
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+  border: 0;
+}
+.header .block-simple-blocksearch-api .form-group .form-control {
+  width: 79px;
+  height: 28px;
+  padding: 0px 16px;
+  border-radius: 3.875rem;
+  background: #1f3695;
+  color: #FFF;
+}
+.header .block-simple-blocksearch-api .form-group .form-control::-webkit-input-placeholder {
+  color: #FFF;
+}
+.header .block-simple-blocksearch-api .form-group .form-control::selection, .header .block-simple-blocksearch-api .form-group .form-control:focus {
+  background: #1f3695;
+  color: #FFF;
+}
+.header .block-simple-blocksearch-api .form-group .form-control:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+.header .block-dropdown-languagelanguage-interface {
+  display: none;
 }
 
 /*# sourceMappingURL=napo-global.css.map */
