@@ -12,8 +12,8 @@ _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: napo_theme_footer
 theme: napo_theme
-region: footer_fifth
-weight: 0
+region: footer_second
+weight: -10
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

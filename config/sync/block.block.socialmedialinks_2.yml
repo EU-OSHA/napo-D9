@@ -9,7 +9,7 @@ dependencies:
 id: socialmedialinks_2
 theme: napo_theme
 region: top_header
-weight: -9
+weight: -11
 provider: null
 plugin: social_media_links_block
 settings:

@@ -10,8 +10,8 @@ dependencies:
     - napo_theme
 id: views_block__consortium_partners_block
 theme: napo_theme
-region: featured_bottom_first
-weight: -7
+region: footer_first
+weight: -11
 provider: null
 plugin: 'views_block:consortium_partners-block'
 settings:
