@@ -1,1 +1,41 @@
-
+.footer{
+  &_top{}
+  &_bottom{
+    background-color: $bg-color-grey;
+    padding: 1.5rem 0;
+    &_content{}
+  }
+  .menu--footer{
+    text-align:center;
+    width:100%;
+  }
+  .navbar-nav{
+    display:block;
+  }
+  .nav{
+    &-item{
+      display:inline;
+      &:last-of-type{
+        a{
+          &:after{
+            display:none;
+          }
+        }
+      }
+    }
+    &-link{
+      display:inline-block;
+      color:$text-color-white;
+      font-size: 0.8rem;
+      font-family: 'ubuntu';
+      font-weight: normal;
+      padding: 0;
+      &:after{
+        content: ' | ';
+        font-family: 'ubuntu';
+        display: inline-block;
+        margin: 0 1rem;
+      }
+    }
+  }
+}

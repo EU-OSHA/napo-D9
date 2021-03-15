@@ -416,6 +416,104 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
+      sorts:
+        queue:
+          id: queue
+          table: entity_subqueue_field_data
+          field: queue
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: entity_subqueue
+          entity_field: queue
+          plugin_id: standard
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          plugin_id: entity_queue_position
+      defaults:
+        sorts: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.consortium_partners'
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_url'
+        - entity_field_info
+        - views_data
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Consortium-partners-responsive
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      style:
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          type: ul
+          wrapper_class: section-logo-wrapper
+          class: section-logo-list
+      defaults:
+        style: false
+        row: false
+        title: false
+        sorts: false
+      row:
+        type: fields
+        options: {  }
+      display_description: ''
+      title: 'Napo is an initiative of: the Napo consortium'
+      sorts:
+        queue:
+          id: queue
+          table: entity_subqueue_field_data
+          field: queue
+          relationship: entityqueue_relationship
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: entity_subqueue
+          entity_field: queue
+          plugin_id: standard
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          plugin_id: entity_queue_position
     cache_metadata:
       max-age: -1
       contexts:

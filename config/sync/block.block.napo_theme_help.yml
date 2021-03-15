@@ -11,7 +11,7 @@ _core:
 id: napo_theme_help
 theme: napo_theme
 region: content
-weight: -30
+weight: -8
 provider: null
 plugin: help_block
 settings:
