@@ -271,7 +271,11 @@ a[target=_blank]:after {
   background: url(/sites/napo/themes/custom/napo_theme/images/a-plus.png);
   font-size: 1.25rem;
 }
-.header_navbar_content .form-group {
+.header_navbar_container {
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+.header_navbar_content .form-row {
   width: 163px;
   font-weight: bold;
 }
@@ -280,6 +284,17 @@ a[target=_blank]:after {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+}
+.header #navbar-main {
+  padding: 0px;
+  display: inline-block;
+}
+.header #navbar-main .container {
+  padding: 0px;
+}
+.header-blocks {
+  display: inline-block;
+  width: 163px;
 }
 .header .nav {
   background: none;
@@ -290,10 +305,10 @@ a[target=_blank]:after {
   border-radius: 3.875rem;
   border: 0;
   min-height: 3.875rem;
-  margin-right: 1rem;
+  margin-right: 0.625rem;
   background: #1f3695;
   height: 100%;
-  padding: 0em 1em 0em 1em;
+  padding: 0 0.625rem;
   vertical-align: middle;
   display: flex;
   align-items: center;
@@ -303,6 +318,13 @@ a[target=_blank]:after {
   transition: all 0.1s;
   background: #506B9E;
   border-radius: 3rem 3rem 0 0;
+}
+.header .nav-item:hover .dropdown-menu, .header .nav-item.show .dropdown-menu {
+  display: block;
+}
+.header .nav-item:first-of-type {
+  width: 64px;
+  justify-content: center;
 }
 .header .nav-item:first-of-type a {
   color: transparent;
@@ -383,36 +405,104 @@ a[target=_blank]:after {
   transition-timing-function: ease;
   transition-delay: 0s;
 }
-.header .block-simple-blocksearch-api .form-group input {
-  display: table-cell;
-  position: relative;
-  z-index: 2;
-  float: left;
-  width: 100%;
-  margin-bottom: 0;
-  border: 0;
+.header .region-header-form {
+  margin: 0px;
 }
-.header .block-simple-blocksearch-api .form-group .form-control {
-  width: 79px;
+.header .block-simple-blocksearch-api .form-row {
   height: 28px;
-  padding: 0px 16px;
   border-radius: 3.875rem;
   background: #1f3695;
   color: #FFF;
 }
-.header .block-simple-blocksearch-api .form-group .form-control::-webkit-input-placeholder {
+.header .block-simple-blocksearch-api .form-group {
+  max-width: calc(100% - 26px);
+}
+.header .block-simple-blocksearch-api .form-group input {
+  padding: 0 1rem;
+  height: 28px;
+  margin-bottom: 0;
+  border: 0;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 3.875rem;
+  font-size: 0.875rem;
+}
+.header .block-simple-blocksearch-api .form-group input:-webkit-autofill, .header .block-simple-blocksearch-api .form-group input:-webkit-autofill:hover, .header .block-simple-blocksearch-api .form-group input:-webkit-autofill:focus, .header .block-simple-blocksearch-api .form-group input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #1f3695 inset !important;
+  -webkit-text-fill-color: #FFF !important;
+  font-size: 0.875rem;
+}
+.header .block-simple-blocksearch-api .form-control::-webkit-input-placeholder {
   color: #FFF;
 }
-.header .block-simple-blocksearch-api .form-group .form-control::selection, .header .block-simple-blocksearch-api .form-group .form-control:focus {
-  background: #1f3695;
+.header .block-simple-blocksearch-api .form-control:focus {
+  background: transparent;
   color: #FFF;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
-.header .block-simple-blocksearch-api .form-group .form-control:-webkit-autofill {
+.header .block-simple-blocksearch-api .form-control:-webkit-autofill {
   -webkit-animation-name: autofill;
   -webkit-animation-fill-mode: both;
 }
+.header .block-simple-blocksearch-api .form-submit {
+  height: 28px;
+  background-color: transparent;
+  color: transparent;
+  background: url(/sites/napo/themes/custom/napo_theme/images/search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  width: 26px;
+}
 .header .block-dropdown-languagelanguage-interface {
   display: none;
+}
+
+.block-views-blockconsortium-partners-block h2 {
+  color: #1f3695;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.block-views-blockconsortium-partners-block img {
+  filter: grayscale(100%);
+  border: 0px;
+  margin: 0 auto;
+  border-bottom: 0px;
+  opacity: 0.8;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+.block-views-blockconsortium-partners-block a {
+  display: inline-block;
+}
+.block-views-blockconsortium-partners-block a:hover img {
+  filter: grayscale(0%);
+}
+.block-views-blockconsortium-partners-block .views-row {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0.625rem 0;
+}
+.block-views-blockconsortium-partners-block .views-col {
+  display: inline-block;
+  width: auto !important;
+  padding: 0 0.625rem;
+  flex: auto;
+}
+.block-views-blockconsortium-partners-block .views-col:nth-child(2) {
+  position: relative;
+  top: -5px;
+}
+.block-views-blockconsortium-partners-block .views-col:first-child {
+  padding: 0 0.625rem 0 0;
+}
+.block-views-blockconsortium-partners-block .views-collast-child {
+  padding: 0 0 0 0.625rem;
 }
 
 /*# sourceMappingURL=napo-global.css.map */
