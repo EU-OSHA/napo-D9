@@ -40,11 +40,9 @@
 {% endblock %}
 
 {% block content %}
-  <main>
-      <section class="section">
-        <a id="main-content" tabindex="-1"></a>
-        {{ page.content }}
-      </section>
+  <main class="container">
+    {{ page.content }}
+    {{ page.home_page }}
   </main>
 {% endblock %}
 

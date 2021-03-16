@@ -247,7 +247,8 @@
         color: $text-color-white;
       }
       &-group {
-        max-width: calc(100% - 26px);
+        max-width: calc(100% - 36px);
+        display: inline-flex;
         input {
           padding: 0 1rem;
           height: 28px;

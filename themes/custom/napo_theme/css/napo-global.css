@@ -415,7 +415,8 @@ a[target=_blank]:after {
   color: #FFF;
 }
 .header .block-simple-blocksearch-api .form-group {
-  max-width: calc(100% - 26px);
+  max-width: calc(100% - 36px);
+  display: inline-flex;
 }
 .header .block-simple-blocksearch-api .form-group input {
   padding: 0 1rem;
