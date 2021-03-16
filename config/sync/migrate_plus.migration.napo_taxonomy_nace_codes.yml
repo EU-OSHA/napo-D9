@@ -1,0 +1,49 @@
+uuid: 2d8a1955-a60d-4c6a-b367-b01235f88c31
+langcode: en
+status: true
+dependencies: {  }
+id: napo_taxonomy_nace_codes
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: napo_migrate
+label: 'Terms: Nace codes'
+source:
+  plugin: d7_taxonomy_term
+  bundle: nace_codes
+process:
+  tid: tid
+  vid:
+    -
+      plugin: default_value
+      default_value: nace_codes
+  name: name
+  description/value: description
+  description/format: format
+  weight: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration: napo_taxonomy_nace_codes
+  parent:
+    plugin: default_value
+    default_value: 0
+    source: '@parent_id'
+  forum_container: is_container
+  changed: timestamp
+  langcode: language
+  field_nace_code: field_nace_code
+  field_nace_changes: field_nace_changes
+  field_nace_includes: field_nace_includes
+  field_nace_excludes: field_nace_excludes
+  field_nace_includes_also: field_nace_includes_also
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies:
+  optional:
+    - d7_field_instance
