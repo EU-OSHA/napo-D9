@@ -1,6 +1,6 @@
 uuid: 05e6fbf7-ce67-4792-9d4a-bde38e5ced58
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.account
@@ -12,8 +12,8 @@ _core:
   default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
 id: napo_theme_account_menu
 theme: napo_theme
-region: secondary_menu
-weight: 0
+region: content
+weight: -3
 provider: null
 plugin: 'system_menu_block:account'
 settings:

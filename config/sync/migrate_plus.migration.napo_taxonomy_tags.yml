@@ -1,0 +1,46 @@
+uuid: 05aee377-aef6-4013-87af-06187038dfe7
+langcode: en
+status: true
+dependencies: {  }
+id: napo_taxonomy_tags
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: napo_migrate
+label: 'Terms: Tags'
+source:
+  plugin: d7_taxonomy_term
+  bundle: tags
+process:
+  tid: tid
+  vid:
+    -
+      plugin: default_value
+      default_value: tags
+  name: name
+  description/value: description
+  description/format: format
+  weight: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration: napo_taxonomy_tags
+  parent:
+    plugin: default_value
+    default_value: 0
+    source: '@parent_id'
+  forum_container: is_container
+  changed: timestamp
+  langcode: language
+  field_tags_code: field_tags_code
+  field_excluded_from: field_excluded_from
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies:
+  optional:
+    - d7_field_instance

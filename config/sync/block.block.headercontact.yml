@@ -11,7 +11,7 @@ dependencies:
 id: headercontact
 theme: napo_theme
 region: top_header
-weight: -10
+weight: -12
 provider: null
 plugin: 'simple_block:top_header_contact'
 settings:

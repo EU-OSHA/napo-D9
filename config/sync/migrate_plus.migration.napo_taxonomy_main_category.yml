@@ -1,0 +1,52 @@
+uuid: 7a907d9e-a8c4-4bcf-8c9c-2cc4c9b58284
+langcode: en
+status: true
+dependencies: {  }
+id: napo_taxonomy_main_category
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: napo_migrate
+label: 'Terms: Main Category'
+source:
+  plugin: d7_taxonomy_term
+  bundle: main_category
+process:
+  tid: tid
+  vid:
+    -
+      plugin: default_value
+      default_value: main_category
+  name: name
+  description/value: description
+  description/format: format
+  weight: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration: napo_taxonomy_main_category
+  parent:
+    plugin: default_value
+    default_value: 0
+    source: '@parent_id'
+  forum_container: is_container
+  changed: timestamp
+  langcode: language
+  field_tags:
+    -
+      plugin: sub_process
+      source: field_tags
+      process:
+        target_id:
+          plugin: get
+          source: tid
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies:
+  optional:
+    - d7_field_instance

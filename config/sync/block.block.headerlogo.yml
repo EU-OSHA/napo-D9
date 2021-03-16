@@ -10,8 +10,8 @@ dependencies:
     - napo_theme
 id: headerlogo
 theme: napo_theme
-region: header
-weight: 0
+region: header_logo
+weight: -11
 provider: null
 plugin: 'simple_block:header_logo'
 settings:

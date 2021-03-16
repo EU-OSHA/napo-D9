@@ -1,0 +1,22 @@
+uuid: f4165ebc-a541-420a-b051-0d1c5665ee3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: alias_pattern_for_lesson_toolkit
+label: 'Alias pattern for Lesson Toolkit'
+type: 'canonical_entities:node'
+pattern: '/using-napo/napo-for-teachers/[node:title]'
+selection_criteria:
+  aea3334b-b2ce-4656-acc6-47f77dfe6a25:
+    id: node_type
+    bundles:
+      lesson_toolkit: lesson_toolkit
+    negate: false
+    context_mapping:
+      node: node
+    uuid: aea3334b-b2ce-4656-acc6-47f77dfe6a25
+selection_logic: and
+weight: -5
+relationships: {  }
