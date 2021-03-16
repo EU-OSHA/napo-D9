@@ -1,14 +1,10 @@
-uuid: 82cae472-a152-4126-86a5-29adc6525485
+uuid: f01a987b-ff88-457e-97a8-85e4344ecf0c
 langcode: en
 status: true
 dependencies:
   module:
-    - field_permissions
     - node
     - taxonomy
-third_party_settings:
-  field_permissions:
-    permission_type: public
 id: node.field_target_ages
 field_name: field_target_ages
 entity_type: node

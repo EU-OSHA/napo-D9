@@ -3,15 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.featured_videos
     - field.storage.node.field_image
     - image.style.napo_featured
     - image.style.slider_item
     - node.type.napo_video
     - taxonomy.vocabulary.video_type
   content:
-    - 'taxonomy_term:video_type:1ced73ac-2a27-4828-9f0b-f61d27f1c821'
+    - 'taxonomy_term:video_type:23b8f973-8feb-423e-90e9-0cd8fcddf842'
   module:
     - datetime
+    - entityqueue
     - media
     - node
     - slick_views
@@ -324,7 +326,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            2: 2
+            2727: 2727
           group: 1
           exposed: false
           expose:
@@ -342,6 +344,12 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            chosen_override: false
+            disable_search: false
+            search_contains: false
+            placeholder_text_multiple: ''
+            placeholder_text_single: ''
+            no_results_text: ''
           is_grouped: false
           group_info:
             label: ''
@@ -361,12 +369,36 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
-      sorts: {  }
+      sorts:
+        entityqueue_relationship_in_queue:
+          id: entityqueue_relationship_in_queue
+          table: node_field_data
+          field: entityqueue_relationship_in_queue
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          plugin_id: entity_queue_in_queue
       title: 'Frontpage Carousel Featured'
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: false
+          limit_queue: featured_videos
+          entity_type: node
+          plugin_id: entity_queue
       arguments: {  }
       display_extenders: {  }
       show_admin_links: false
@@ -379,7 +411,10 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:entityqueue.entity_queue.featured_videos'
         - 'config:field.storage.node.field_image'
+        - entity_field_info
+        - views_data
   block:
     display_plugin: block
     id: block
@@ -395,7 +430,35 @@ display:
       defaults:
         pager: false
         title: false
+        sorts: false
       title: 'Napo''s films'
+      sorts:
+        entityqueue_relationship_in_queue:
+          id: entityqueue_relationship_in_queue
+          table: node_field_data
+          field: entityqueue_relationship_in_queue
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          plugin_id: entity_queue_in_queue
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          plugin_id: entity_queue_position
     cache_metadata:
       max-age: -1
       contexts:
@@ -405,7 +468,10 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:entityqueue.entity_queue.featured_videos'
         - 'config:field.storage.node.field_image'
+        - entity_field_info
+        - views_data
   block_1:
     display_plugin: block
     id: block_1
@@ -435,6 +501,7 @@ display:
         style: false
         row: false
         css_class: false
+        relationships: false
       fields:
         field_image:
           id: field_image
@@ -616,6 +683,7 @@ display:
           hide_empty: false
       display_description: ''
       css_class: napo-homepage-featured-films
+      relationships: {  }
     cache_metadata:
       max-age: -1
       contexts:

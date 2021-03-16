@@ -1,0 +1,24 @@
+uuid: 3e6d46e0-f3e4-486a-9034-0e45aacacae3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.frontpage_carousel_featured
+  module:
+    - views
+  theme:
+    - napo_theme
+id: views_block__frontpage_carousel_featured_block
+theme: napo_theme
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:frontpage_carousel_featured-block'
+settings:
+  id: 'views_block:frontpage_carousel_featured-block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

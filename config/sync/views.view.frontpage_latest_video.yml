@@ -10,7 +10,7 @@ dependencies:
     - node.type.napo_video
     - taxonomy.vocabulary.video_type
   content:
-    - 'taxonomy_term:video_type:1ced73ac-2a27-4828-9f0b-f61d27f1c821'
+    - 'taxonomy_term:video_type:23b8f973-8feb-423e-90e9-0cd8fcddf842'
   module:
     - datetime
     - link
@@ -147,7 +147,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -212,7 +212,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: true
             text: '{{ body__summary }}'
@@ -274,7 +274,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -336,7 +336,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: true
             text: "{{ title }} \r\n<div class=\"homepage-video-summary\">{{ body }}</div>\r\n<div class=\"homepage-video-body\">{{ body_1 }}</div>"
@@ -506,7 +506,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            2: 2
+            2727: 2727
           group: 1
           exposed: false
           expose:
@@ -524,6 +524,12 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            chosen_override: false
+            disable_search: false
+            search_contains: false
+            placeholder_text_multiple: ''
+            placeholder_text_single: ''
+            no_results_text: ''
           is_grouped: false
           group_info:
             label: ''
