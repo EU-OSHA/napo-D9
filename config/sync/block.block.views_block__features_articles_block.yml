@@ -1,0 +1,24 @@
+uuid: cf9010dc-e775-4207-ad7e-81974c77705c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.features_articles
+  module:
+    - views
+  theme:
+    - napo_theme
+id: views_block__features_articles_block
+theme: napo_theme
+region: home_page
+weight: -11
+provider: null
+plugin: 'views_block:features_articles-block'
+settings:
+  id: 'views_block:features_articles-block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

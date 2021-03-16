@@ -11,7 +11,7 @@ _core:
 id: napo_theme_branding
 theme: napo_theme
 region: content
-weight: -5
+weight: -10
 provider: null
 plugin: system_branding_block
 settings:

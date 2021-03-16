@@ -1,0 +1,25 @@
+uuid: 4b0a87a8-7171-4685-b47a-fef3ee747c74
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.napo_s_film_episodes
+  module:
+    - views
+  theme:
+    - napo_theme
+id: views_block__napo_s_film_episodes_block
+theme: napo_theme
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:napo_s_film_episodes-block'
+settings:
+  id: 'views_block:napo_s_film_episodes-block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

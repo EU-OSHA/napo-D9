@@ -9,7 +9,7 @@ dependencies:
 id: textresize
 theme: napo_theme
 region: top_header
-weight: -7
+weight: -8
 provider: null
 plugin: text_resize_block
 settings:

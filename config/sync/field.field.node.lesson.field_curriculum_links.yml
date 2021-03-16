@@ -14,7 +14,7 @@ bundle: lesson
 label: 'Links to subject/curriculum'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

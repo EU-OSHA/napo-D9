@@ -11,7 +11,7 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
 migration_group: napo_migrate_node
-label: 'Node: Lesson i18n'
+label: 'Node: Lesson Translations'
 source:
   plugin: d7_node_entity_translation
   node_type: lesson
@@ -45,9 +45,13 @@ process:
         target_id: tid
   field_activities: field_activities
   field_assessment: field_assessment
+  field_file: field_file
   field_lesson_intro_text: field_lesson_intro_text
   field_learning_objectives: field_learning_objectives
+  field_lesson_toolkit: field_lesson_toolkit
+  field_lesson_video: field_lesson_video
   field_curriculum_links: field_curriculum_links
+  field_resources_required: field_resources_required
   field_starter: field_starter
   field_tags:
     -
@@ -55,39 +59,6 @@ process:
       source: field_tags
       process:
         target_id: tid
-  field_file:
-    plugin: file_id_lookup_translations
-    source: field_file
-    migration:
-      - napo_node_lesson_media_documents_1
-      - napo_node_lesson_media_documents_1_bg
-      - napo_node_lesson_media_documents_1_ca
-      - napo_node_lesson_media_documents_1_cs
-      - napo_node_lesson_media_documents_1_da
-      - napo_node_lesson_media_documents_1_de
-      - napo_node_lesson_media_documents_1_el
-      - napo_node_lesson_media_documents_1_es
-      - napo_node_lesson_media_documents_1_et
-      - napo_node_lesson_media_documents_1_fi
-      - napo_node_lesson_media_documents_1_fr
-      - napo_node_lesson_media_documents_1_hr
-      - napo_node_lesson_media_documents_1_hu
-      - napo_node_lesson_media_documents_1_is
-      - napo_node_lesson_media_documents_1_it
-      - napo_node_lesson_media_documents_1_lt
-      - napo_node_lesson_media_documents_1_lv
-      - napo_node_lesson_media_documents_1_mt
-      - napo_node_lesson_media_documents_1_nl
-      - napo_node_lesson_media_documents_1_no
-      - napo_node_lesson_media_documents_1_pl
-      - napo_node_lesson_media_documents_1_pt
-      - napo_node_lesson_media_documents_1_ro
-      - napo_node_lesson_media_documents_1_ru
-      - napo_node_lesson_media_documents_1_sk
-      - napo_node_lesson_media_documents_1_sl
-      - napo_node_lesson_media_documents_1_sv
-      - napo_node_lesson_media_documents_1_tr
-    no_stub: true
 destination:
   plugin: 'entity:node'
   translations: true
@@ -96,31 +67,3 @@ migration_dependencies:
   required:
     - d7_user
     - napo_node_lesson
-    - napo_node_lesson_media_documents_1
-    - napo_node_lesson_media_documents_1_bg
-    - napo_node_lesson_media_documents_1_ca
-    - napo_node_lesson_media_documents_1_cs
-    - napo_node_lesson_media_documents_1_da
-    - napo_node_lesson_media_documents_1_de
-    - napo_node_lesson_media_documents_1_el
-    - napo_node_lesson_media_documents_1_es
-    - napo_node_lesson_media_documents_1_et
-    - napo_node_lesson_media_documents_1_fi
-    - napo_node_lesson_media_documents_1_fr
-    - napo_node_lesson_media_documents_1_hr
-    - napo_node_lesson_media_documents_1_hu
-    - napo_node_lesson_media_documents_1_is
-    - napo_node_lesson_media_documents_1_it
-    - napo_node_lesson_media_documents_1_lt
-    - napo_node_lesson_media_documents_1_lv
-    - napo_node_lesson_media_documents_1_mt
-    - napo_node_lesson_media_documents_1_nl
-    - napo_node_lesson_media_documents_1_no
-    - napo_node_lesson_media_documents_1_pl
-    - napo_node_lesson_media_documents_1_pt
-    - napo_node_lesson_media_documents_1_ro
-    - napo_node_lesson_media_documents_1_ru
-    - napo_node_lesson_media_documents_1_sk
-    - napo_node_lesson_media_documents_1_sl
-    - napo_node_lesson_media_documents_1_sv
-    - napo_node_lesson_media_documents_1_tr

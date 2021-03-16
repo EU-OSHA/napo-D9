@@ -1,4 +1,4 @@
-uuid: fa518f6d-5a9e-4a1f-be2d-ea17b1e4db2f
+uuid: 5eaf267a-9bd9-4e92-852f-55cf51887649
 langcode: en
 status: true
 dependencies:
@@ -11,54 +11,31 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
 migration_group: napo_migrate_node
-label: 'Node: Lesson Toolkit'
+label: 'Node: lesson_toolkit'
 source:
   plugin: d7_node
-  node_type: lesson_toolkit
+  node_type: 'Lesson Resources'
 process:
-  nid:
-    -
-      plugin: get
-      source: nid
   type:
     -
       plugin: default_value
       default_value: lesson_toolkit
-  title:
-    -
-      plugin: get
-      source: title
-  body:
-    -
-      plugin: get
-      source: body
-  body/0/format:
-    -
-      plugin: default_value
-      default_value: full_html
-  uid:
-    -
-      plugin: get
-      source: node_uid
-  status:
-    -
-      plugin: get
-      source: status
-  created:
-    -
-      plugin: get
-      source: created
-  changed:
-    -
-      plugin: get
-      source: changed
-  field_target_ages:
-    -
-      plugin: sub_process
-      source: field_target_ages
-      process:
-        target_id: tid
-      no_stub: true
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  body: body
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_target_ages: field_target_ages
 destination:
   plugin: 'entity:node'
 migration_dependencies:

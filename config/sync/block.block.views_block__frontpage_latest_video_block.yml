@@ -1,0 +1,24 @@
+uuid: 743d7666-7c25-4ca3-a2a3-447cbf979219
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.frontpage_latest_video
+  module:
+    - views
+  theme:
+    - napo_theme
+id: views_block__frontpage_latest_video_block
+theme: napo_theme
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:frontpage_latest_video-block'
+settings:
+  id: 'views_block:frontpage_latest_video-block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }
