@@ -1,0 +1,12 @@
+uuid: eeac4061-eabb-45c0-b5a4-0511dfa08408
+langcode: en
+status: true
+dependencies: {  }
+id: crop_and_scale_319x180
+label: 'Crop and scale  319x180'
+description: ''
+aspect_ratio: ''
+soft_limit_width: 319
+soft_limit_height: 180
+hard_limit_width: 319
+hard_limit_height: 180

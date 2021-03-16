@@ -415,7 +415,8 @@ a[target=_blank]:after {
   color: #FFF;
 }
 .header .block-simple-blocksearch-api .form-group {
-  max-width: calc(100% - 26px);
+  max-width: calc(100% - 36px);
+  display: inline-flex;
 }
 .header .block-simple-blocksearch-api .form-group input {
   padding: 0 1rem;
@@ -473,13 +474,16 @@ a[target=_blank]:after {
   opacity: 0.8;
   max-width: 100%;
   display: block;
-  height: auto;
+  height: 50px !important;
 }
 .block-views-blockconsortium-partners-block a {
   display: inline-block;
 }
 .block-views-blockconsortium-partners-block a:hover img {
   filter: grayscale(0%);
+}
+.block-views-blockconsortium-partners-block a:after {
+  display: none;
 }
 .block-views-blockconsortium-partners-block .views-row {
   display: flex;
@@ -503,6 +507,17 @@ a[target=_blank]:after {
 }
 .block-views-blockconsortium-partners-block .views-collast-child {
   padding: 0 0 0 0.625rem;
+}
+
+.block-simple-blockfooter-social {
+  margin: 0 auto;
+}
+.block-simple-blockfooter-social p {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #1f3695;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=napo-global.css.map */
