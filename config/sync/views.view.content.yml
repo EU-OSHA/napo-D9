@@ -2,12 +2,8 @@ uuid: 54ee1205-1354-4f4b-805c-553e98309b65
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.storage.node.field_publication_date
   module:
-    - datetime
     - node
-    - taxonomy
     - user
 _core:
   default_config_hash: P7F4DFe8BL31DRVqsvS-ix9KZZqvvaPjZ7zEvGo9yNM
