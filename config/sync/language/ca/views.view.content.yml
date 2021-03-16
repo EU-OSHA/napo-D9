@@ -1,0 +1,69 @@
+label: Contingut
+description: 'Busqueu i gestioneu el contingut.'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtra
+          reset_button_label: Reinicialitza
+          exposed_sorts_label: 'Ordena per'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Següent ›'
+            first: '« Primer'
+            last: 'Últim »'
+      fields:
+        title:
+          label: Títol
+        type:
+          label: 'Tipus de contingut'
+          separator: ', '
+        name:
+          label: Autor
+        status:
+          label: Estat
+          settings:
+            format_custom_true: Publicat
+            format_custom_false: 'Sense publicar'
+        changed:
+          label: Actualitzat
+        operations:
+          label: Operacions
+      filters:
+        title:
+          expose:
+            label: Títol
+        type:
+          expose:
+            label: 'Tipus de contingut'
+        status:
+          expose:
+            label: Estat
+          group_info:
+            label: 'Estat de publicació'
+            group_items:
+              1:
+                title: Publicat
+              2:
+                title: 'Sense publicar'
+        langcode:
+          expose:
+            label: Llengua
+      title: Contingut
+      empty:
+        area_text_custom:
+          content: 'No hi ha contingut disponible.'
+    display_title: Mestre
+  page_1:
+    display_options:
+      menu:
+        title: Contingut
+      tab_options:
+        title: Contingut
+        description: 'Troba i gestiona el contingut'
+    display_title: Pàgina

@@ -1,0 +1,57 @@
+label: Innihald
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Sía
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      pager:
+        options:
+          tags:
+            previous: '< Fyrri'
+      fields:
+        title:
+          label: Titill
+        type:
+          label: Efnisgerð
+          separator: ', '
+        name:
+          label: Höfundur
+        status:
+          label: Staða
+          settings:
+            format_custom_true: Birt
+            format_custom_false: 'Ekki birt'
+        changed:
+          label: Uppfært
+        operations:
+          label: Aðgerðir
+      filters:
+        title:
+          expose:
+            label: Titill
+        type:
+          expose:
+            label: Efnisgerð
+        status:
+          expose:
+            label: Staða
+          group_info:
+            group_items:
+              1:
+                title: Birt
+              2:
+                title: 'Ekki birt'
+        langcode:
+          expose:
+            label: Tungumál
+      title: Innihald
+  page_1:
+    display_options:
+      menu:
+        title: Innihald
+      tab_options:
+        title: Innihald
+    display_title: Síða
