@@ -68,11 +68,11 @@ third_party_settings:
                 section_label: '11614948463'
                 section_delta: '0'
               structure:
-                section_structure_sm: '12'
                 section_structure: '12'
-                section_structure_lg: '1'
                 section_carousel: false
                 section_carousel_slick: none
+                section_structure_sm: '12'
+                section_structure_lg: '1'
             styles:
               background:
                 image: null
