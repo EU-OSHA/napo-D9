@@ -18,7 +18,12 @@ source:
 process:
   nid: entity_id
   type: type
-  langcode: language
+  langcode:
+    plugin: static_map
+    bypass: true
+    source: language
+    map:
+      pt: pt-pt
   title: title
   body: body
   uid: uid
