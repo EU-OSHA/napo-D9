@@ -10,11 +10,11 @@ class: null
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
-migration_group: napo_migrate
-label: 'Node: Home Video Translations'
+migration_group: napo_migrate_node
+label: 'Node: Lesson Video i18n'
 source:
   plugin: d7_node_entity_translation
-  node_type: faq
+  node_type: lesson_video
 process:
   nid: entity_id
   type: type
