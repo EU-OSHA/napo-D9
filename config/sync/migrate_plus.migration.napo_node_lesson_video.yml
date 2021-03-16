@@ -1,4 +1,4 @@
-uuid: 5596b9df-75ca-46ff-9058-7e110be32c35
+uuid: cf716354-c67e-4629-b52e-7e22ecdf042b
 langcode: en
 status: true
 dependencies:
@@ -11,43 +11,74 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
 migration_group: napo_migrate_node
-label: 'Node: lesson_video'
+label: 'Node: Lesson Video'
 source:
   plugin: d7_node
-  node_type: 'Lesson Resources'
+  node_type: lesson_video
 process:
+  nid:
+    -
+      plugin: get
+      source: nid
   type:
     -
       plugin: default_value
       default_value: lesson_video
-  langcode:
-    plugin: default_value
-    source: language
-    default_value: und
-  title: title
-  body: body
-  uid: node_uid
-  status: status
-  created: created
-  changed: changed
-  promote: promote
-  sticky: sticky
-  revision_uid: revision_uid
-  revision_log: log
-  revision_timestamp: timestamp
+  title:
+    -
+      plugin: get
+      source: title
+  body:
+    -
+      plugin: get
+      source: body
+  body/0/format:
+    -
+      plugin: default_value
+      default_value: full_html
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
   field_body_revamp: field_body_revamp
-  field_image: field_image
-  field_poster_image: field_poster_image
+  field_image:
+    plugin: file_id_lookup
+    source: field_image
+    migration: napo_node_lesson_video_media_images_1
+    no_stub: true
+  field_poster_image:
+    plugin: file_id_lookup
+    source: field_poster_image
+    migration: napo_node_lesson_video_media_images_1
+    no_stub: true
+  field_video:
+    plugin: file_id_lookup
+    source: field_video
+    migration: napo_node_lesson_video_media_videos_1
+    no_stub: true
   field_tags:
     -
       plugin: sub_process
       source: field_tags
       process:
         target_id: tid
-  field_video: field_video
   field_youtube: field_youtube
 destination:
   plugin: 'entity:node'
 migration_dependencies:
   required:
     - d7_user
+    - napo_node_lesson_video_media_images_1
+    - napo_node_lesson_video_media_videos_1
