@@ -1,25 +1,17 @@
 .ui-accordion{
-  .view-content{
-    &>div{
-      &>div{
-      }
-    }
-  }
-
   & &-header{
     display: block;
     cursor: pointer;
     position: relative;
     margin-top: 2px;
-    padding: 0.372rem 0.372rem 0.372rem 0.5rem;
-    color: $text-color-blue;
-    font-weight: bold;
-    font-size: 17px;
-    text-transform: uppercase;
-    min-height: 0;
+    padding: 0.625rem 0.625rem 0.625rem 0.875rem;
+    padding-left: 2.75rem;
     &.ui-state-active{
       background-color: transparent;
       color: $text-color-blue;
+    }
+    &:focus{
+      outline: none;
     }
     &-collapsed{
       .ui-icon{
@@ -37,11 +29,11 @@
       margin-top: -8px;
       width: 27px;
       height: 44px;
-      left: 100%;
+      left: 100%;transform: translateX(-100%);
     }
-    .field-content{}
   }
   & &-content{
-    &-active{}
+    padding: 1.25rem 2.75rem;
+    height:auto!important;
   }
 }
