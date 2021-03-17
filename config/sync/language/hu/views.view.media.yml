@@ -2,15 +2,15 @@ label: Média
 description: 'Média keresés és kezelés.'
 display:
   default:
-    display_title: Mester
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Szűrő
-          reset_button_label: Alaphelyzet
-          exposed_sorts_label: Rendezés
-          sort_asc_label: Növekvő
-          sort_desc_label: Csökkenő
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -18,10 +18,10 @@ display:
             items_per_page_options_all_label: '– Mind –'
             offset_label: Eltolás
           tags:
-            previous: '‹ Előző'
-            next: 'Következő ›'
-            first: '« Első'
-            last: 'Utolsó »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Művelet
@@ -35,19 +35,19 @@ display:
           label: Típus
           separator: ', '
         uid:
-          label: Szerző
+          label: Author
           separator: ', '
         status:
-          label: Állapot
+          label: Status
           settings:
-            format_custom_true: Közzétéve
-            format_custom_false: Rejtett
+            format_custom_true: Published
+            format_custom_false: Unpublished
           separator: ', '
         changed:
-          label: Frissítve
+          label: Updated
           separator: ', '
         operations:
-          label: Műveletek
+          label: Operations
       filters:
         name:
           expose:
@@ -59,15 +59,15 @@ display:
           expose:
             label: Igaz
           group_info:
-            label: 'Közzététel állapota'
+            label: 'Published status'
             group_items:
               1:
-                title: Közzétéve
+                title: Published
               2:
-                title: Rejtett
+                title: Unpublished
         langcode:
           expose:
-            label: Nyelv
+            label: Language
       title: Média
       empty:
         area_text_custom:

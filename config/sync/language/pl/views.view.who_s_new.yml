@@ -2,15 +2,15 @@ label: 'Nowi użytkownicy'
 description: 'Prezentuje listę najnowszych użytkowników na stronie.'
 display:
   default:
-    display_title: Główny
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Zastosuj
-          reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj po'
-          sort_asc_label: Rosnąco
-          sort_desc_label: Malejąco
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       title: 'Nowi użytkownicy'
   block_1:
     display_title: 'Nowi użytkownicy'

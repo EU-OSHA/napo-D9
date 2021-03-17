@@ -5,11 +5,11 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Pročisti
-          reset_button_label: Poništi
-          exposed_sorts_label: 'Rasporedi po'
-          sort_asc_label: Uzlazno
-          sort_desc_label: Silazno
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -30,7 +30,7 @@ display:
           label: Korisnik
           separator: ', '
         link:
-          label: Operacije
+          label: Operations
       filters:
         type:
           expose:
@@ -44,4 +44,4 @@ display:
           admin_label: 'Nema poruka u zapisniku.'
           content: 'Nema poruka u zapisniku.'
   page:
-    display_title: Stranica
+    display_title: Page

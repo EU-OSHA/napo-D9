@@ -2,20 +2,20 @@ label: 'Biblioteka własnych bloków'
 description: 'Znajdź i zarządzaj własnymi blokami.'
 display:
   default:
-    display_title: Główny
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Zastosuj
-          reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj po'
-          sort_asc_label: Rosnąco
-          sort_desc_label: Malejąco
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Poprzednia'
-            next: 'Następna ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Elementów na stronę'
             items_per_page_options_all_label: '- Wszystko -'
@@ -28,9 +28,9 @@ display:
           label: 'Rodzaj bloku'
           separator: ', '
         changed:
-          label: Uaktualniono
+          label: Updated
         operations:
-          label: Operacje
+          label: Operations
       filters:
         info:
           expose:
@@ -43,7 +43,7 @@ display:
         area_text_custom:
           content: 'Brak dostępnych bloków własnych.'
   page_1:
-    display_title: Strona
+    display_title: Page
     display_options:
       menu:
         title: 'Biblioteka własnych bloków'

@@ -1,13 +1,13 @@
 label: Media
 display:
   default:
-    display_title: Principal
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtro
-          reset_button_label: Reiniciar
-          exposed_sorts_label: 'Ordenar por'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -17,10 +17,10 @@ display:
             items_per_page_options_all_label: '- Todos -'
             offset_label: Deslocamento
           tags:
-            previous: '‹ Anterior'
-            next: 'Seguinte ›'
-            first: '« Primeira'
-            last: 'Última »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Ação
@@ -34,19 +34,19 @@ display:
           label: Tipo
           separator: ', '
         uid:
-          label: Autor
+          label: Author
           separator: ', '
         status:
-          label: Estado
+          label: Status
           settings:
-            format_custom_true: Publicado
-            format_custom_false: 'Não publicado'
+            format_custom_true: Published
+            format_custom_false: Unpublished
           separator: ', '
         changed:
-          label: Atualizado
+          label: Updated
           separator: ', '
         operations:
-          label: Operações
+          label: Operations
       filters:
         name:
           expose:
@@ -58,15 +58,15 @@ display:
           expose:
             label: Verdadeiro
           group_info:
-            label: 'Estado da publicação'
+            label: 'Published status'
             group_items:
               1:
-                title: Publicado
+                title: Published
               2:
-                title: 'Não publicado'
+                title: Unpublished
         langcode:
           expose:
-            label: Idioma
+            label: Language
       title: Media
       empty:
         area_text_custom:

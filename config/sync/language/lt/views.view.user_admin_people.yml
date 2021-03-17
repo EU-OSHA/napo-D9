@@ -5,9 +5,9 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filtruoti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
@@ -17,7 +17,7 @@ display:
         name:
           label: 'Nario vardas'
         status:
-          label: Būsena
+          label: Status
           settings:
             format_custom_true: Aktyvus
             format_custom_false: Užblokuotas
@@ -28,14 +28,14 @@ display:
         access:
           label: Naudojosi
         operations:
-          label: Veiksmai
+          label: Operations
       filters:
         combine:
           expose:
             label: 'Vardas ar el. pašto adresas turi'
         status:
           group_info:
-            label: Būsena
+            label: Status
             group_items:
               1:
                 title: Aktyvus
@@ -53,7 +53,7 @@ display:
           content: 'Nėra žmonių'
       use_more_text: daugiau
   page_1:
-    display_title: Puslapis
+    display_title: Page
     display_options:
       menu:
         title: Sąrašas

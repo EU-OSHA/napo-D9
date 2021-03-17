@@ -2,13 +2,13 @@ label: 'Quién es nuevo'
 description: 'Muestra una lista de las cuentas de usuario más recientes del sitio.'
 display:
   default:
-    display_title: Máster
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Aplicar
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       title: 'Quién es nuevo'

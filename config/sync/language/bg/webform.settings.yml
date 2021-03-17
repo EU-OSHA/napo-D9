@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Запис
-  default_reset_button_label: Рестартирай
+  default_reset_button_label: Reset
   default_delete_button_label: Изтриване
   default_preview_next_button_label: 'Предварителен преглед'
   default_preview_label: 'Предварителен преглед'

@@ -1,6 +1,6 @@
 tips:
   search-api-index-status:
-    label: Estado
+    label: Status
   search-api-index-tracker:
     label: Tracker
   search-api-index-server:

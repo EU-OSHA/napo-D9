@@ -2,13 +2,13 @@ label: Comentarios
 description: 'Buscar y gestionar comentarios.'
 display:
   default:
-    display_title: Máster
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtro
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -31,16 +31,16 @@ display:
         uid:
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         entity_id:
           label: 'Enviado en'
           separator: ', '
         changed:
-          label: Actualizado
+          label: Updated
           separator: ', '
         operations:
-          label: Operaciones
+          label: Operations
         name_1:
           separator: ', '
       filters:
@@ -52,7 +52,7 @@ display:
             label: 'Nombre del autor'
         langcode:
           expose:
-            label: Idioma
+            label: Language
       title: Comentarios
       empty:
         area_text_custom:
@@ -81,7 +81,7 @@ display:
             label: 'Nombre del autor'
         langcode:
           expose:
-            label: Idioma
+            label: Language
       fields:
         comment_bulk_form:
           action_title: Acción
@@ -91,15 +91,15 @@ display:
         uid:
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         entity_id:
           label: 'Enviado en'
           separator: ', '
         changed:
-          label: Actualizado
+          label: Updated
           separator: ', '
         operations:
-          label: Operaciones
+          label: Operations
         name_1:
           separator: ', '

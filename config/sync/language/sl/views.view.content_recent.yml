@@ -3,10 +3,10 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       empty:
         area_text_custom:
-          content: 'Na voljo ni nobene vsebine.'
+          content: 'No content available.'
       use_more_text: Več
   block_1:
     display_title: Blok

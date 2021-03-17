@@ -2,15 +2,15 @@ label: Sözlükçe
 description: 'Harfe göre tüm içerikler.'
 display:
   default:
-    display_title: 'Ana (master)'
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Uygula
-          reset_button_label: Sıfırla
-          exposed_sorts_label: 'Sıralama anahtarı'
-          sort_asc_label: Artan
-          sort_desc_label: Azalan
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -22,15 +22,15 @@ display:
             next: ››
       fields:
         title:
-          label: Başlık
+          label: Title
         name:
-          label: Yazar
+          label: Author
         changed:
           label: 'Son güncelleme'
   attachment_1:
     display_title: Ek
   page_1:
-    display_title: Sayfa
+    display_title: Page
     display_options:
       menu:
         title: Sözlükçe

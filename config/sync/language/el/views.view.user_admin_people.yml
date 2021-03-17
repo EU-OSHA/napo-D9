@@ -5,16 +5,16 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Φίλτρο
-          reset_button_label: Επαναφορά
-          exposed_sorts_label: 'Ταξινόμηση κατά'
-          sort_asc_label: Αύξ
-          sort_desc_label: Φθί
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Προηγούμενο'
-            next: 'Επόμενο ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Είδη ανά σελίδα'
             items_per_page_options_all_label: '- Όλα -'
@@ -25,7 +25,7 @@ display:
         name:
           label: 'Όνομα χρήστη'
         status:
-          label: Κατάσταση
+          label: Status
           settings:
             format_custom_true: Ενεργό
             format_custom_false: Αποκλεισμένος
@@ -36,7 +36,7 @@ display:
         access:
           label: 'Τελευταία προσπέλαση'
         operations:
-          label: Λειτουργίες
+          label: Operations
         mail:
           separator: ', '
       filters:
@@ -45,7 +45,7 @@ display:
             label: 'Το όνομα ή το επίθετο περιέχει'
         status:
           group_info:
-            label: Κατάσταση
+            label: Status
             group_items:
               1:
                 title: Ενεργό
@@ -63,7 +63,7 @@ display:
           content: 'Κανένας διαθέσιμος χρήστης.'
       use_more_text: περισσότερα
   page_1:
-    display_title: Σελίδα
+    display_title: Page
     display_options:
       menu:
         title: Λίστα

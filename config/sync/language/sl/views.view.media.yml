@@ -4,22 +4,22 @@ display:
       exposed_form:
         options:
           submit_button: Filter
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       fields:
         media_bulk_form:
           action_title: Akcija
         bundle:
           label: Tip
         uid:
-          label: Avtor
+          label: Author
         status:
-          label: Stanje
+          label: Status
           settings:
-            format_custom_true: Objavljeno
+            format_custom_true: Published
         changed:
-          label: Posodobljeno
+          label: Updated
         operations:
-          label: Operacije
+          label: Operations
       filters:
         bundle:
           expose:
@@ -28,7 +28,7 @@ display:
           group_info:
             group_items:
               1:
-                title: Objavljeno
+                title: Published
         langcode:
           expose:
-            label: Jezik
+            label: Language

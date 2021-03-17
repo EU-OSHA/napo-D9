@@ -4,8 +4,8 @@ display:
       exposed_form:
         options:
           submit_button: Virkja
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       title: 'Hverjir eru tengdir'
   who_s_online_block:
     display_title: 'Hverjir eru tengdir'

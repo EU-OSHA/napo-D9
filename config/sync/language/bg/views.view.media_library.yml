@@ -3,26 +3,26 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Рестартирай
+          reset_button_label: Reset
       fields:
         media_bulk_form:
           action_title: Действие
       filters:
         status:
           group_info:
-            label: Публикувано
+            label: Published
             group_items:
               1:
-                title: Публикувано
+                title: Published
         name:
           expose:
             label: Име
         langcode:
           expose:
-            label: Език
+            label: Language
       title: Медия
   page:
-    display_title: Страница
+    display_title: Page
     display_options:
       fields:
         media_bulk_form:
@@ -52,9 +52,9 @@ display:
         name:
           label: Име
         uid:
-          label: Автор
+          label: Author
         changed:
-          label: Обновено
+          label: Updated
       filters:
         name:
           expose:

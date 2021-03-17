@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Beküldés
-  default_reset_button_label: Alaphelyzet
+  default_reset_button_label: Reset
   default_delete_button_label: Törlés
   default_wizard_start_label: Kezdet
   default_wizard_toggle_show_label: 'Összes megjelenítése'

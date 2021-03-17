@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Sisesta
-  default_reset_button_label: Tühista
+  default_reset_button_label: Reset
   default_delete_button_label: Kustuta
   default_wizard_start_label: Algus
   default_preview_next_button_label: Eelvaade

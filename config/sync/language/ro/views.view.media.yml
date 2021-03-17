@@ -1,14 +1,14 @@
 label: Media
 display:
   default:
-    display_title: Expert
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtru
-          reset_button_label: Resetează
-          exposed_sorts_label: 'Sortare după'
-          sort_asc_label: Ascendent
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
@@ -17,10 +17,10 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
           tags:
-            previous: '‹ Anterior'
-            next: 'Următor ›'
-            first: '« Primul'
-            last: 'Ultimul »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Acțiune
@@ -33,19 +33,19 @@ display:
           label: Tip
           separator: ', '
         uid:
-          label: Autor
+          label: Author
           separator: ', '
         status:
-          label: Stare
+          label: Status
           settings:
-            format_custom_true: Publicat
-            format_custom_false: Nepublicat
+            format_custom_true: Published
+            format_custom_false: Unpublished
           separator: ', '
         changed:
-          label: Actualizat
+          label: Updated
           separator: ', '
         operations:
-          label: Operaţii
+          label: Operations
       filters:
         bundle:
           expose:
@@ -54,15 +54,15 @@ display:
           expose:
             label: Adevărat
           group_info:
-            label: 'Statusul publicat'
+            label: 'Published status'
             group_items:
               1:
-                title: Publicat
+                title: Published
               2:
-                title: Nepublicat
+                title: Unpublished
         langcode:
           expose:
-            label: Limba
+            label: Language
       title: Media
   media_page_list:
     display_title: Media

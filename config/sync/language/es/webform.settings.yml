@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Enviar
-  default_reset_button_label: Restablecer
+  default_reset_button_label: Reset
   default_delete_button_label: Eliminar
   default_wizard_start_label: Comienzo
   default_wizard_toggle_show_label: 'Mostrar todo'

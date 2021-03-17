@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Υποβολή
-  default_reset_button_label: Επαναφορά
+  default_reset_button_label: Reset
   default_delete_button_label: Διαγραφή
   default_wizard_start_label: Αρχή
   default_preview_next_button_label: Προεπισκόπηση

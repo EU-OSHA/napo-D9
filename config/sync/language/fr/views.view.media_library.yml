@@ -2,13 +2,13 @@ label: 'Media library'
 description: 'Trouver et gérer des media.'
 display:
   default:
-    display_title: Maître
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: 'Appliquer les filtres'
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -28,12 +28,12 @@ display:
           expose:
             label: 'Statut de publication'
           group_info:
-            label: Publié
+            label: Published
             group_items:
               1:
-                title: Publié
+                title: Published
               2:
-                title: 'Non publié'
+                title: Unpublished
         name:
           expose:
             label: Nom
@@ -44,7 +44,7 @@ display:
             label: 'Type de média'
         langcode:
           expose:
-            label: Langue
+            label: Language
       sorts:
         created:
           expose:
@@ -102,9 +102,9 @@ display:
         name:
           label: Nom
         uid:
-          label: Auteur
+          label: Author
         changed:
-          label: 'Mis à jour'
+          label: Updated
       filters:
         name:
           expose:

@@ -7,15 +7,15 @@ display:
       exposed_form:
         options:
           submit_button: Udfør
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Forrige'
-            next: 'Næste ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Antal elementer'
             items_per_page_options_all_label: '- Alle -'
@@ -28,9 +28,9 @@ display:
           label: Bloktype
           separator: ', '
         changed:
-          label: Opdateret
+          label: Updated
         operations:
-          label: Handlinger
+          label: Operations
       filters:
         info:
           expose:
@@ -43,7 +43,7 @@ display:
         area_text_custom:
           content: 'Der er ingen tilpassede blokke tilgængeligt.'
   page_1:
-    display_title: Side
+    display_title: Page
     display_options:
       menu:
         title: 'Brugerdefineret blokbibliotek'

@@ -3,44 +3,44 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Φίλτρο
-          reset_button_label: Επαναφορά
-          exposed_sorts_label: 'Ταξινόμηση κατά'
-          sort_asc_label: Αύξ
-          sort_desc_label: Φθί
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Προηγούμενο'
-            next: 'Επόμενο ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Είδη ανά σελίδα'
             items_per_page_options_all_label: '- Όλα -'
             offset_label: Αντιστάθμιση
       fields:
         title:
-          label: Τίτλος
+          label: Title
           separator: ', '
         type:
-          label: 'Τύπος περιεχομένου'
+          label: 'Content type'
           separator: ', '
         name:
-          label: Συντάκτης
+          label: Author
           separator: ', '
         moderation_state:
           separator: ', '
         changed:
-          label: Ενημερώθηκε
+          label: Updated
           separator: ', '
         operations:
-          label: Λειτουργίες
+          label: Operations
       filters:
         title:
           expose:
-            label: Τίτλος
+            label: Title
         type:
           expose:
-            label: 'Τύπος περιεχομένου'
+            label: 'Content type'
         langcode:
           expose:
-            label: Γλώσσα
+            label: Language

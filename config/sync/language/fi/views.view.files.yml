@@ -1,20 +1,20 @@
 label: Tiedostot
 display:
   default:
-    display_title: Isäntä
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Suodatus
-          reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Edellinen'
-            next: 'Seuraava ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
@@ -30,7 +30,7 @@ display:
         filesize:
           label: Koko
         status:
-          label: Tila
+          label: Status
           settings:
             format_custom_false: Tilapäinen
             format_custom_true: Pysyvä
@@ -49,7 +49,7 @@ display:
             label: 'MIME tyyppi'
         status:
           expose:
-            label: Tila
+            label: Status
       title: Tiedostot
       empty:
         area_text_custom:
@@ -64,8 +64,8 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Edellinen'
-            next: 'Seuraava ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
