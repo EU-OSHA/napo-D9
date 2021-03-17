@@ -1,6 +1,5 @@
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -12,9 +11,6 @@ display:
       fields:
         info:
           label: 'Opis bloka'
-          separator: ', '
-        type:
-          separator: ', '
         changed:
           label: Updated
         operations:

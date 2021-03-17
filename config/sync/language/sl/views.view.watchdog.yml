@@ -2,10 +2,6 @@ label: Čuvaj
 display:
   default:
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
       fields:
         severity:
           label: Resnost
@@ -17,8 +13,6 @@ display:
           label: Sporočilo
         name:
           label: Uporabnik
-        link:
-          label: Operations
       filters:
         type:
           expose:
@@ -30,5 +24,3 @@ display:
         area:
           admin_label: 'V zapisniku ni sporočil.'
           content: 'V zapisniku ni sporočil.'
-  page:
-    display_title: Page

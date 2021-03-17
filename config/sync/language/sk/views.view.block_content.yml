@@ -6,7 +6,6 @@ display:
       exposed_form:
         options:
           submit_button: Použiť
-          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -22,10 +21,8 @@ display:
       fields:
         info:
           label: 'Popis bloku'
-          separator: ', '
         type:
           label: 'Typ bloku'
-          separator: ', '
         changed:
           label: Updated
         operations:

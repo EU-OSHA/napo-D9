@@ -1,1 +1,4 @@
 label: Uporabnik
+tags:
+  canonical_url: '[current-page:url:absolute]'
+  title: '[user:name] | [site:name]'

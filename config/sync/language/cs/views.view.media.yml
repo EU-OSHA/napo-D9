@@ -6,7 +6,6 @@ display:
       exposed_form:
         options:
           submit_button: Filter
-          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -26,24 +25,17 @@ display:
           action_title: Akce
         thumbnail__target_id:
           label: Náhled
-          separator: ', '
-        name:
-          separator: ', '
         bundle:
           label: Typ
-          separator: ', '
         uid:
           label: Author
-          separator: ', '
         status:
           label: Status
           settings:
             format_custom_true: Published
             format_custom_false: Unpublished
-          separator: ', '
         changed:
           label: Updated
-          separator: ', '
         operations:
           label: Operations
       filters:

@@ -1,12 +1,6 @@
 display:
   default:
     display_options:
-      exposed_form:
-        options:
-          reset_button_label: Reset
-      empty:
-        area_text_custom:
-          content: 'No content available.'
       use_more_text: Več
   block_1:
     display_title: Blok

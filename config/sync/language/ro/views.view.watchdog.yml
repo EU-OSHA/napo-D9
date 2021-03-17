@@ -1,4 +1,3 @@
-label: Watchdog
 description: 'Mesaje recente din jurnal'
 display:
   default:
@@ -10,21 +9,15 @@ display:
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           expose:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         nothing:
           admin_label: Pictogramă
-        wid:
-          label: WID
         severity:
           label: Gravitate
         type:
@@ -35,7 +28,6 @@ display:
           label: Mesaj
         name:
           label: Utilizator
-          separator: ', '
         link:
           label: Operations
       filters:

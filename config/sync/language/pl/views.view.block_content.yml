@@ -23,10 +23,8 @@ display:
       fields:
         info:
           label: 'Opis bloku'
-          separator: ', '
         type:
           label: 'Rodzaj bloku'
-          separator: ', '
         changed:
           label: Updated
         operations:

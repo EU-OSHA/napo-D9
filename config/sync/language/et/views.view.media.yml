@@ -26,25 +26,19 @@ display:
           action_title: Tegevus
         thumbnail__target_id:
           label: Pisipilt
-          separator: ', '
         name:
           label: 'Meedia nimetus'
-          separator: ', '
         bundle:
           label: Liik
-          separator: ', '
         uid:
           label: Author
-          separator: ', '
         status:
           label: Status
           settings:
             format_custom_true: Published
             format_custom_false: Unpublished
-          separator: ', '
         changed:
           label: Updated
-          separator: ', '
         operations:
           label: Operations
       filters:

@@ -7,7 +7,6 @@ display:
           submit_button: 'Applica filtri'
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
@@ -15,9 +14,6 @@ display:
             items_per_page_label: 'Voci per pagina'
             items_per_page_options_all_label: '- Tutto -'
             offset_label: Scostamento
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         media_bulk_form:
           action_title: Azione
@@ -42,7 +38,6 @@ display:
         created:
           expose:
             label: 'Prima i più recenti'
-      title: Media
       empty:
         area_text_custom:
           content: 'Non è disponibile alcun contributo mediale.'
@@ -52,14 +47,11 @@ display:
       fields:
         media_bulk_form:
           action_title: Azione
-        name:
-          separator: ', '
         edit_media:
           text: Modifica
         delete_media:
           text: Elimina
   widget:
-    display_title: Widget
     display_options:
       filters:
         name:
