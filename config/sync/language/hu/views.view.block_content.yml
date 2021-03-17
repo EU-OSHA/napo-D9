@@ -2,20 +2,20 @@ label: 'Egyéni blokkok könyvtára'
 description: 'Egyéni blokkok keresése és kezelése.'
 display:
   default:
-    display_title: Mester
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Alkalmaz
-          reset_button_label: Alaphelyzet
-          exposed_sorts_label: Rendezés
-          sort_asc_label: Növekvő
-          sort_desc_label: Csökkenő
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Előző'
-            next: 'Következő ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Elemek száma oldalanként'
             items_per_page_options_all_label: '– Mind –'
@@ -28,9 +28,9 @@ display:
           label: Blokktípus
           separator: ', '
         changed:
-          label: Frissítve
+          label: Updated
         operations:
-          label: Műveletek
+          label: Operations
       filters:
         info:
           expose:
@@ -43,7 +43,7 @@ display:
         area_text_custom:
           content: 'Nem érhetőek el egyéni blokkok.'
   page_1:
-    display_title: Oldal
+    display_title: Page
     display_options:
       menu:
         title: 'Egyéni blokkok könyvtára'

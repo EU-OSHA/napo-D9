@@ -6,7 +6,7 @@ tips:
   search-api-index-index-status:
     label: 'Estado del índice'
   search-api-index-status:
-    label: Estado
+    label: Status
     body: 'Muestra si el índice está actualmente activado o desactivado.'
   search-api-index-datasources:
     label: 'Orígenes de datos'

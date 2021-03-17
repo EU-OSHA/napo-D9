@@ -2,15 +2,15 @@ label: Övervakning
 description: 'Senaste loggmeddelanden'
 display:
   default:
-    display_title: Huvud
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtrera
-          reset_button_label: Återställ
-          exposed_sorts_label: 'Sortera efter'
-          sort_asc_label: Stigande
-          sort_desc_label: Fallande
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -37,7 +37,7 @@ display:
           label: Användare
           separator: ', '
         link:
-          label: Funktioner
+          label: Operations
       filters:
         type:
           expose:
@@ -51,4 +51,4 @@ display:
           admin_label: 'Inga loggmeddelanden tillgängliga.'
           content: 'Inga loggmeddelanden tillgängliga.'
   page:
-    display_title: Sida
+    display_title: Page

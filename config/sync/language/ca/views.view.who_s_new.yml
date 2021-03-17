@@ -2,13 +2,13 @@ label: 'Qui és nou'
 description: 'Mostra una llista dels usuaris més nous del lloc web.'
 display:
   default:
-    display_title: Mestre
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Aplica
-          reset_button_label: Reinicialitza
-          exposed_sorts_label: 'Ordena per'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       title: 'Qui és nou'

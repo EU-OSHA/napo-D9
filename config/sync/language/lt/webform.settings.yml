@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Siųsti
-  default_reset_button_label: Išvalyti
+  default_reset_button_label: Reset
   default_delete_button_label: Pašalinti
   default_wizard_start_label: Pradžia
   default_wizard_toggle_show_label: 'Rodyti visus'

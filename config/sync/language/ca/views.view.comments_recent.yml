@@ -2,7 +2,7 @@ label: 'Comentaris recents'
 description: 'Comentaris recents.'
 display:
   default:
-    display_title: Mestre
+    display_title: Master
     display_options:
       title: 'Comentaris recents'
       empty:

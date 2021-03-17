@@ -4,9 +4,9 @@ display:
       exposed_form:
         options:
           submit_button: Apstiprināt
-          reset_button_label: Attīrīt
-          exposed_sorts_label: 'Kārtot pēc'
-          sort_desc_label: Dilst.
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -20,7 +20,7 @@ display:
         remote_addr:
           label: 'IP adrese'
         view_webform_submission:
-          label: Darbības
+          label: Operations
           text: skatīt
       arguments:
         in_draft:
@@ -42,7 +42,7 @@ display:
         remote_addr:
           label: 'IP adrese'
         operations:
-          label: Darbības
+          label: Operations
       filters:
         sticky:
           expose:
@@ -66,10 +66,10 @@ display:
         remote_addr:
           label: 'IP adrese'
         view_webform_submission:
-          label: Darbības
+          label: Operations
           text: skatīt
         edit_webform_submission:
-          label: Darbības
+          label: Operations
           text: labot
       filters:
         sticky:
@@ -92,7 +92,7 @@ display:
         remote_addr:
           label: 'IP adrese'
         view_webform_submission:
-          label: Darbības
+          label: Operations
           text: skatīt
       filters:
         sticky:

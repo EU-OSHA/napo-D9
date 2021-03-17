@@ -1,57 +1,57 @@
 label: 'Contenuto moderato'
 display:
   default:
-    display_title: Principale
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtra
-          reset_button_label: Ripristina
-          exposed_sorts_label: 'Ordina per'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
-          sort_desc_label: Disc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Precedente'
-            next: 'Seguente ›'
-            first: '« Prima'
-            last: 'Ultima »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Voci per pagina'
             items_per_page_options_all_label: '- Tutto -'
             offset_label: Scostamento
       fields:
         title:
-          label: Titolo
+          label: Title
           separator: ', '
         type:
-          label: 'Tipo di contenuto'
+          label: 'Content type'
           separator: ', '
         name:
-          label: Autore
+          label: Author
           separator: ', '
         moderation_state:
           label: 'Stato moderazione'
           separator: ', '
         changed:
-          label: Aggiornato
+          label: Updated
           separator: ', '
         operations:
-          label: Operazioni
+          label: Operations
       filters:
         title:
           expose:
-            label: Titolo
+            label: Title
         type:
           expose:
-            label: 'Tipo di contenuto'
+            label: 'Content type'
         moderation_state:
           expose:
             label: 'Stato moderazione'
         langcode:
           expose:
-            label: Lingua
+            label: Language
       title: 'Contenuto moderato'
   moderated_content:
     display_title: 'Contenuto moderato'

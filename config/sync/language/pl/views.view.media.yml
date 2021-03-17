@@ -2,15 +2,15 @@ label: Media
 description: 'Znajdź i zarządaj mediami.'
 display:
   default:
-    display_title: Główny
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtr
-          reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj po'
-          sort_asc_label: Rosnąco
-          sort_desc_label: Malejąco
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -18,10 +18,10 @@ display:
             items_per_page_options_all_label: '- Wszystko -'
             offset_label: Przesunięcie
           tags:
-            previous: '‹ Poprzednia'
-            next: 'Następna ›'
-            first: '« Pierwsza'
-            last: 'Ostatnia »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Akcja
@@ -35,19 +35,19 @@ display:
           label: Typ
           separator: ', '
         uid:
-          label: Autor
+          label: Author
           separator: ', '
         status:
           label: Status
           settings:
-            format_custom_true: Opublikowane
-            format_custom_false: Nieopublikowany
+            format_custom_true: Published
+            format_custom_false: Unpublished
           separator: ', '
         changed:
-          label: Uaktualniono
+          label: Updated
           separator: ', '
         operations:
-          label: Operacje
+          label: Operations
       filters:
         name:
           expose:
@@ -59,15 +59,15 @@ display:
           expose:
             label: Prawda
           group_info:
-            label: 'Status publikacji'
+            label: 'Published status'
             group_items:
               1:
-                title: Opublikowane
+                title: Published
               2:
-                title: Nieopublikowany
+                title: Unpublished
         langcode:
           expose:
-            label: Język
+            label: Language
       title: Media
       empty:
         area_text_custom:

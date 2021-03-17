@@ -2,20 +2,20 @@ label: Файлы
 description: 'Поиск файлов и управление ими.'
 display:
   default:
-    display_title: Основной
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Фильтр
-          reset_button_label: Сбросить
-          exposed_sorts_label: 'Сортировать по'
-          sort_asc_label: 'По возрастанию'
-          sort_desc_label: 'По убыванию'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Предыдущий'
-            next: 'Следующий ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Элементов на страницу'
             items_per_page_options_all_label: '- Все -'
@@ -31,7 +31,7 @@ display:
         filesize:
           label: Размер
         status:
-          label: Статус
+          label: Status
           settings:
             format_custom_false: Временный
             format_custom_true: Постоянный
@@ -50,7 +50,7 @@ display:
             label: MIME-тип
         status:
           expose:
-            label: Статус
+            label: Status
       title: Файлы
       empty:
         area_text_custom:
@@ -66,8 +66,8 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Предыдущий'
-            next: 'Следующий ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Элементов на страницу'
             items_per_page_options_all_label: '- Все -'

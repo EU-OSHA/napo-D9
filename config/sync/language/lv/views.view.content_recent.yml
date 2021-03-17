@@ -5,13 +5,13 @@ display:
       exposed_form:
         options:
           submit_button: Apstiprināt
-          reset_button_label: Attīrīt
-          exposed_sorts_label: 'Kārtot pēc'
-          sort_desc_label: Dilst.
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
       title: 'Jaunākais saturs'
       empty:
         area_text_custom:
-          content: 'Nav pieejams nekāds saturs.'
+          content: 'No content available.'
       use_more_text: Vairāk
   block_1:
     display_title: Bloks

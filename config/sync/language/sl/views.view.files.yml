@@ -4,7 +4,7 @@ display:
       exposed_form:
         options:
           submit_button: Filter
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       fields:
         filename:
           label: Ime
@@ -13,7 +13,7 @@ display:
         filesize:
           label: Velikost
         status:
-          label: Stanje
+          label: Status
         count:
           label: 'Uporabljen v'
       filters:
@@ -25,7 +25,7 @@ display:
             label: 'MIME type'
         status:
           expose:
-            label: Stanje
+            label: Status
   page_2:
     display_options:
       arguments:

@@ -4,10 +4,10 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filtrēt
-          reset_button_label: Attīrīt
-          exposed_sorts_label: 'Kārtot pēc'
-          sort_desc_label: Dilst.
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -20,15 +20,15 @@ display:
         bundle:
           label: Veids
         uid:
-          label: Autors
+          label: Author
         status:
-          label: Statuss
+          label: Status
           settings:
-            format_custom_true: Publicēts
+            format_custom_true: Published
         changed:
-          label: Atjaunināts
+          label: Updated
         operations:
-          label: Darbības
+          label: Operations
       filters:
         bundle:
           expose:
@@ -39,10 +39,10 @@ display:
           group_info:
             group_items:
               1:
-                title: Publicēts
+                title: Published
         langcode:
           expose:
-            label: Valoda
+            label: Language
       title: Multivide
       empty:
         area_text_custom:

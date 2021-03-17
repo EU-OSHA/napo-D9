@@ -4,8 +4,8 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Филтър
-          reset_button_label: Рестартирай
+          submit_button: Filter
+          reset_button_label: Reset
       fields:
         media_bulk_form:
           action_title: Действие
@@ -14,15 +14,15 @@ display:
         bundle:
           label: Тип
         uid:
-          label: Автор
+          label: Author
         status:
-          label: Статус
+          label: Status
           settings:
-            format_custom_true: Публикувано
+            format_custom_true: Published
         changed:
-          label: Обновено
+          label: Updated
         operations:
-          label: Действия
+          label: Operations
       filters:
         bundle:
           expose:
@@ -31,10 +31,10 @@ display:
           group_info:
             group_items:
               1:
-                title: Публикувано
+                title: Published
         langcode:
           expose:
-            label: Език
+            label: Language
       title: Медия
   media_page_list:
     display_title: Медия

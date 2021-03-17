@@ -4,9 +4,9 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filtruoti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           tags:
@@ -23,20 +23,20 @@ display:
         subject:
           label: Tema
         name:
-          label: Autorius
+          label: Author
         entity_id:
           label: kategorijoje
         changed:
-          label: Atnaujinta
+          label: Updated
         operations:
-          label: Veiksmai
+          label: Operations
       filters:
         subject:
           expose:
             label: Tema
         langcode:
           expose:
-            label: Kalba
+            label: Language
       title: Komentarai
       empty:
         area_text_custom:
@@ -58,17 +58,17 @@ display:
             label: Tema
         langcode:
           expose:
-            label: Kalba
+            label: Language
       fields:
         comment_bulk_form:
           action_title: Veiksmas
         subject:
           label: Tema
         name:
-          label: Autorius
+          label: Author
         entity_id:
           label: kategorijoje
         changed:
-          label: Atnaujinta
+          label: Updated
         operations:
-          label: Veiksmai
+          label: Operations

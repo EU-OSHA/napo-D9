@@ -4,10 +4,10 @@ display:
       exposed_form:
         options:
           submit_button: Εφαρμογή
-          reset_button_label: Επαναφορά
-          exposed_sorts_label: 'Ταξινόμηση κατά'
-          sort_asc_label: Αύξ
-          sort_desc_label: Φθί
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -29,7 +29,7 @@ display:
           label: 'διεύθυνση IP'
           separator: ', '
         view_webform_submission:
-          label: Λειτουργίες
+          label: Operations
           text: προβολή
       arguments:
         in_draft:
@@ -60,7 +60,7 @@ display:
           label: 'διεύθυνση IP'
           separator: ', '
         operations:
-          label: Λειτουργίες
+          label: Operations
       filters:
         sticky:
           expose:
@@ -93,10 +93,10 @@ display:
           label: 'διεύθυνση IP'
           separator: ', '
         view_webform_submission:
-          label: Λειτουργίες
+          label: Operations
           text: προβολή
         edit_webform_submission:
-          label: Λειτουργίες
+          label: Operations
           text: επεξεργασία
       filters:
         sticky:
@@ -128,7 +128,7 @@ display:
           label: 'διεύθυνση IP'
           separator: ', '
         view_webform_submission:
-          label: Λειτουργίες
+          label: Operations
           text: προβολή
       filters:
         sticky:

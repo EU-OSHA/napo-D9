@@ -2,15 +2,15 @@ label: Eseménynapló
 description: 'Legutóbbi naplóüzenetek'
 display:
   default:
-    display_title: Mester
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Szűrő
-          reset_button_label: Alaphelyzet
-          exposed_sorts_label: Rendezés
-          sort_asc_label: Növekvő
-          sort_desc_label: Csökkenő
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -39,7 +39,7 @@ display:
           label: Felhasználó
           separator: ', '
         link:
-          label: Műveletek
+          label: Operations
       filters:
         type:
           expose:
@@ -53,4 +53,4 @@ display:
           admin_label: 'Nincs egyetlen rögzített esemény sem.'
           content: 'Nincs egyetlen rögzített esemény sem.'
   page:
-    display_title: Oldal
+    display_title: Page

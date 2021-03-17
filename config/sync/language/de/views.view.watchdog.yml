@@ -7,10 +7,10 @@ display:
       exposed_form:
         options:
           submit_button: Filter
-          reset_button_label: Zurücksetzen
-          exposed_sorts_label: 'Sortieren nach'
-          sort_asc_label: Aufsteigend
-          sort_desc_label: Absteigend
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -39,7 +39,7 @@ display:
           label: Benutzer
           separator: ', '
         link:
-          label: Aktionen
+          label: Operations
       filters:
         type:
           expose:
@@ -53,4 +53,4 @@ display:
           admin_label: 'Keine Protokollnachrichten verfügbar.'
           content: 'Keine Protokollnachrichten verfügbar.'
   page:
-    display_title: Seite
+    display_title: Page

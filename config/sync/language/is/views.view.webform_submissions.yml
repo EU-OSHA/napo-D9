@@ -4,8 +4,8 @@ display:
       exposed_form:
         options:
           submit_button: Virkja
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           tags:
@@ -26,7 +26,7 @@ display:
           label: 'IP vistfang'
           separator: ', '
         view_webform_submission:
-          label: Aðgerðir
+          label: Operations
           text: skoða
       arguments:
         in_draft:
@@ -55,7 +55,7 @@ display:
           label: 'IP vistfang'
           separator: ', '
         operations:
-          label: Aðgerðir
+          label: Operations
   embed_manage:
     display_options:
       fields:
@@ -79,10 +79,10 @@ display:
           label: 'IP vistfang'
           separator: ', '
         view_webform_submission:
-          label: Aðgerðir
+          label: Operations
           text: skoða
         edit_webform_submission:
-          label: Aðgerðir
+          label: Operations
           text: breyta
   embed_review:
     display_options:
@@ -105,5 +105,5 @@ display:
           label: 'IP vistfang'
           separator: ', '
         view_webform_submission:
-          label: Aðgerðir
+          label: Operations
           text: skoða

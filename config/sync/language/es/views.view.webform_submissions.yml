@@ -1,12 +1,12 @@
 display:
   default:
-    display_title: Máster
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Aplicar
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -14,8 +14,8 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Primero'
-            last: 'Último »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Elementos por página'
             items_per_page_options_all_label: '- Todo -'
@@ -32,7 +32,7 @@ display:
           label: 'Direccion(es) IP'
           separator: ', '
         view_webform_submission:
-          label: Operaciones
+          label: Operations
           text: vista
       header:
         result:
@@ -66,7 +66,7 @@ display:
           label: 'Direccion(es) IP'
           separator: ', '
         operations:
-          label: Operaciones
+          label: Operations
       filters:
         sticky:
           expose:
@@ -99,10 +99,10 @@ display:
           label: 'Direccion(es) IP'
           separator: ', '
         view_webform_submission:
-          label: Operaciones
+          label: Operations
           text: vista
         edit_webform_submission:
-          label: Operaciones
+          label: Operations
           text: editar
       filters:
         sticky:
@@ -134,7 +134,7 @@ display:
           label: 'Direccion(es) IP'
           separator: ', '
         view_webform_submission:
-          label: Operaciones
+          label: Operations
           text: vista
       filters:
         sticky:

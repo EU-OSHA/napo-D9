@@ -1,21 +1,21 @@
 display:
   default:
-    display_title: Huvud
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Verkställ
-          reset_button_label: Återställ
-          exposed_sorts_label: 'Sortera efter'
-          sort_asc_label: Stigande
-          sort_desc_label: Fallande
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Första'
-            last: 'Sista »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Inlägg per sida'
             items_per_page_options_all_label: '- Alla -'
@@ -32,7 +32,7 @@ display:
           label: IP-adress
           separator: ', '
         view_webform_submission:
-          label: Funktioner
+          label: Operations
           text: visa
       header:
         result:
@@ -66,7 +66,7 @@ display:
           label: IP-adress
           separator: ', '
         operations:
-          label: Funktioner
+          label: Operations
       filters:
         sticky:
           expose:
@@ -99,10 +99,10 @@ display:
           label: IP-adress
           separator: ', '
         view_webform_submission:
-          label: Funktioner
+          label: Operations
           text: visa
         edit_webform_submission:
-          label: Funktioner
+          label: Operations
           text: redigera
       filters:
         sticky:
@@ -134,7 +134,7 @@ display:
           label: IP-adress
           separator: ', '
         view_webform_submission:
-          label: Funktioner
+          label: Operations
           text: visa
       filters:
         sticky:

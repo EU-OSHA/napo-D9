@@ -1,11 +1,11 @@
 display:
   default:
-    display_title: Isäntä
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -25,12 +25,12 @@ display:
           expose:
             label: 'Julkaisun tila'
           group_info:
-            label: Julkaistu
+            label: Published
             group_items:
               1:
-                title: Julkaistu
+                title: Published
               2:
-                title: Julkaisematon
+                title: Unpublished
         name:
           expose:
             label: Nimi
@@ -41,7 +41,7 @@ display:
             label: 'Median tyyppi'
         langcode:
           expose:
-            label: Kieli
+            label: Language
       sorts:
         created:
           expose:
@@ -51,7 +51,7 @@ display:
         area_text_custom:
           content: 'Ei mediaa saatavilla.'
   page:
-    display_title: Sivu
+    display_title: Page
     display_options:
       fields:
         media_bulk_form:
@@ -86,9 +86,9 @@ display:
         name:
           label: Nimi
         uid:
-          label: Tekijä
+          label: Author
         changed:
-          label: Päivitetty
+          label: Updated
       filters:
         name:
           expose:

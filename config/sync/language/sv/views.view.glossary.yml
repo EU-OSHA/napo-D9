@@ -2,15 +2,15 @@ label: Ordlista
 description: 'All innehåll, i bokstavsordning.'
 display:
   default:
-    display_title: Huvud
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Verkställ
-          reset_button_label: Återställ
-          exposed_sorts_label: 'Sortera efter'
-          sort_asc_label: Stigande
-          sort_desc_label: Fallande
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -22,15 +22,15 @@ display:
             next: ››
       fields:
         title:
-          label: Titel
+          label: Title
         name:
-          label: Författare
+          label: Author
         changed:
           label: 'Senaste uppdatering'
   attachment_1:
     display_title: Bilaga
   page_1:
-    display_title: Sida
+    display_title: Page
     display_options:
       menu:
         title: Ordlista

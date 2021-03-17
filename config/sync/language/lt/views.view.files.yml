@@ -4,9 +4,9 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filtruoti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
@@ -20,7 +20,7 @@ display:
         filesize:
           label: Dydis
         status:
-          label: Būsena
+          label: Status
           settings:
             format_custom_false: Laikina
             format_custom_true: Nuolatinė
@@ -39,7 +39,7 @@ display:
             label: 'MIME tipas'
         status:
           expose:
-            label: Būsena
+            label: Status
       title: Failai
       empty:
         area_text_custom:

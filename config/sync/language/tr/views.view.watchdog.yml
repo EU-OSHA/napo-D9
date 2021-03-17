@@ -2,15 +2,15 @@ label: Bekçi
 description: 'Son günlük iletileri'
 display:
   default:
-    display_title: 'Ana (master)'
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Süzgeç
-          reset_button_label: Sıfırla
-          exposed_sorts_label: 'Sıralama anahtarı'
-          sort_asc_label: Artan
-          sort_desc_label: Azalan
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -39,7 +39,7 @@ display:
           label: Kullanıcı
           separator: ', '
         link:
-          label: İşlemler
+          label: Operations
       filters:
         type:
           expose:
@@ -53,4 +53,4 @@ display:
           admin_label: 'Kayıt mesajı yok.'
           content: 'Kayıt mesajı yok.'
   page:
-    display_title: Sayfa
+    display_title: Page

@@ -1,15 +1,15 @@
 description: 'Hitta och hantera media.'
 display:
   default:
-    display_title: Huvud
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: 'Tillämpa filter'
-          reset_button_label: Återställ
-          exposed_sorts_label: 'Sortera efter'
-          sort_asc_label: Stigande
-          sort_desc_label: Fallande
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -27,18 +27,18 @@ display:
           expose:
             label: 'Status för publicering'
           group_info:
-            label: Publicerad
+            label: Published
             group_items:
               1:
-                title: Publicerad
+                title: Published
               2:
-                title: 'Ej publicerad'
+                title: Unpublished
         name:
           expose:
             label: Namn
         langcode:
           expose:
-            label: Språk
+            label: Language
       sorts:
         created:
           expose:
@@ -54,7 +54,7 @@ display:
         area_text_custom:
           content: 'Ingen media tillgänglig.'
   page:
-    display_title: Sida
+    display_title: Page
     display_options:
       fields:
         media_bulk_form:
@@ -96,9 +96,9 @@ display:
         name:
           label: Namn
         uid:
-          label: Författare
+          label: Author
         changed:
-          label: Uppdaterad
+          label: Updated
       filters:
         name:
           expose:
