@@ -390,6 +390,9 @@ a[target=_blank]:after {
   padding: 0;
   display: block;
 }
+.header .nav-link:focus {
+  outline: none;
+}
 .header .nav-link.dropdown-toggle:after {
   display: block;
   background: url(/sites/napo/themes/custom/napo_theme/images/a-minor.png);
@@ -492,8 +495,71 @@ a[target=_blank]:after {
   border: none;
   width: 26px;
 }
-.header .block-dropdown-languagelanguage-interface {
-  display: none;
+.block-views-blockfrontpage-custom-video-block {
+  position: relative;
+}
+.block-views-blockfrontpage-custom-video-block .frontpage-video-title {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 6.875rem;
+  padding: 2.5rem;
+  color: #FFF;
+  background: url(/sites/napo/themes/custom/napo_theme/images/background-slider-home.png);
+  max-width: 23.75rem;
+}
+.block-views-blockfrontpage-custom-video-block .field-content {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+.block-views-blockfrontpage-custom-video-block .homepage-video-summary {
+  margin-top: 1.875rem;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+.block-views-blockfrontpage-custom-video-block .homepage-video-body {
+  color: #FFF;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.block-views-blocknapo-films-block-1 {
+  background: #EEEDEE;
+  padding: 0 0 1.875rem 0;
+}
+.block-views-blocknapo-films-block-1 .views-field-title {
+  padding: 1.875rem 0 0.625rem;
+  font-size: 1.875rem;
+  color: #1f3695;
+  font-weight: bold;
+}
+.block-views-blocknapo-films-block-1 .views-field-title a {
+  padding: 1.875rem 0 0.625rem;
+  font-size: 1.875rem;
+}
+
+.block-views-blockfeatures-articles-block {
+  padding: 0rem 3% 1.25rem;
+}
+.block-views-blockfeatures-articles-block h2 {
+  padding: 1.875rem 0 0.625rem;
+  font-size: 1.875rem;
+  margin-bottom: 0.625rem;
+}
+.block-views-blockfeatures-articles-block .view-content {
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.block-views-blockfeatures-articles-block .views-row {
+  background: #1f3695 url(/sites/napo/themes/custom/napo_theme/images/background-yellow-lines.png) top left;
+  background-repeat: repeat-x;
+  color: #FFF;
+  width: 49%;
+  padding: 1.25rem 1.25rem 0.625rem;
+  border-radius: 0 0 1.25rem 1.25rem;
+  position: relative;
 }
 
 .block-simple-blockfooter-social {

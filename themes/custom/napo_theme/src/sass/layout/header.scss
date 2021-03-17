@@ -5,7 +5,7 @@
     a{
       color: $text-color-white;
       &[target=_blank]:after {
-       display:none;
+        display:none;
       }
       .fa{
         font-size:inherit;
@@ -177,6 +177,9 @@
       color: $text-color-white;
       padding: 0;
       display: block;
+      &:focus{
+        outline: none;
+      }
       &.dropdown-toggle{
         &:after{
           display:block;
@@ -301,8 +304,7 @@
       }
     }
   }
-  .block-dropdown-languagelanguage-interface {
-    display:none;
+  .block{
     //  .form-item{
     //    legend{
     //      display:none;
