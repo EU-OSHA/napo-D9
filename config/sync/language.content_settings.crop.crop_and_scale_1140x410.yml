@@ -1,0 +1,11 @@
+uuid: 77e92417-b840-4114-ac0e-da4068eca549
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_and_scale_1140x410
+id: crop.crop_and_scale_1140x410
+target_entity_type_id: crop
+target_bundle: crop_and_scale_1140x410
+default_langcode: site_default
+language_alterable: false
