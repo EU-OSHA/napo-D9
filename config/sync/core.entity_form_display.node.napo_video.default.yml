@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.napo_video.field_youtube
     - node.type.napo_video
   module:
+    - datetime
     - text
 id: node.napo_video.default
 targetEntityType: node
@@ -33,7 +34,7 @@ content:
     third_party_settings: {  }
     region: content
   field_combined_tags:
-    weight: 6
+    weight: 4
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -43,7 +44,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_image:
-    weight: 26
+    weight: 6
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -53,7 +54,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_main_tag:
-    weight: 29
+    weight: 9
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -62,8 +63,24 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_napo_film:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_publication_date:
+    type: datetime_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_video:
-    weight: 27
+    weight: 7
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -73,17 +90,13 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_video_type:
-    weight: 2
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 3
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_youtube:
-    weight: 28
+    weight: 8
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -107,11 +120,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   field_archived: true
-  field_napo_film: true
-  field_publication_date: true
   field_tags: true
   path: true
   promote: true
