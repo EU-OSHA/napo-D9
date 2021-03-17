@@ -27,22 +27,14 @@ display:
           action_title: Akcja
         subject:
           label: Tytuł
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
         entity_id:
           label: 'Odpowiedź do'
-          separator: ', '
         changed:
           label: Uaktualniono
-          separator: ', '
         operations:
           label: Operacje
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:
@@ -87,19 +79,11 @@ display:
           action_title: Akcja
         subject:
           label: Tytuł
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
         entity_id:
           label: 'Odpowiedź do'
-          separator: ', '
         changed:
           label: Uaktualniono
-          separator: ', '
         operations:
           label: Operacje
-        name_1:
-          separator: ', '

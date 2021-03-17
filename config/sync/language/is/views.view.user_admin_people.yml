@@ -27,8 +27,6 @@ display:
           label: 'Meðlimur í'
         operations:
           label: Aðgerðir
-        mail:
-          separator: ', '
       filters:
         status:
           group_info:

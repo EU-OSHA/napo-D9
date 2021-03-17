@@ -5,8 +5,6 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
           exposed_sorts_label: 'Zoradiť podľa'
           sort_asc_label: Vzostupne
           sort_desc_label: Zostupne
@@ -39,8 +37,6 @@ display:
           label: 'Posledný prístup'
         operations:
           label: Operácie
-        mail:
-          separator: ', '
       filters:
         combine:
           expose:

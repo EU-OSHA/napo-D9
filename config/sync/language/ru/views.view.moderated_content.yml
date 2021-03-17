@@ -25,19 +25,14 @@ display:
       fields:
         title:
           label: Заголовок
-          separator: ', '
         type:
           label: 'Тип материала'
-          separator: ', '
         name:
           label: Автор
-          separator: ', '
         moderation_state:
           label: 'Состояние модерации'
-          separator: ', '
         changed:
           label: Обновлено
-          separator: ', '
         operations:
           label: Операции
       filters:

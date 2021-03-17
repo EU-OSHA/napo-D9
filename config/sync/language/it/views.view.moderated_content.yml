@@ -8,7 +8,6 @@ display:
           submit_button: Filtra
           reset_button_label: Ripristina
           exposed_sorts_label: 'Ordina per'
-          sort_asc_label: Asc
           sort_desc_label: Disc
       pager:
         options:
@@ -24,19 +23,14 @@ display:
       fields:
         title:
           label: Titolo
-          separator: ', '
         type:
           label: 'Tipo di contenuto'
-          separator: ', '
         name:
           label: Autore
-          separator: ', '
         moderation_state:
           label: 'Stato moderazione'
-          separator: ', '
         changed:
           label: Aggiornato
-          separator: ', '
         operations:
           label: Operazioni
       filters:

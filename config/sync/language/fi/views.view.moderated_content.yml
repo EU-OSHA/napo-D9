@@ -8,8 +8,6 @@ display:
           submit_button: Suodatus
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -20,22 +18,15 @@ display:
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
-            offset_label: Offset
       fields:
         title:
           label: Otsikko
-          separator: ', '
         type:
           label: Sisältötyyppi
-          separator: ', '
         name:
           label: Tekijä
-          separator: ', '
-        moderation_state:
-          separator: ', '
         changed:
           label: Päivitetty
-          separator: ', '
         operations:
           label: Toimenpiteet
       filters:

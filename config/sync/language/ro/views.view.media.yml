@@ -1,4 +1,3 @@
-label: Media
 display:
   default:
     display_title: Expert
@@ -9,7 +8,6 @@ display:
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
-          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -26,24 +24,17 @@ display:
           action_title: Acțiune
         thumbnail__target_id:
           label: Miniatură
-          separator: ', '
-        name:
-          separator: ', '
         bundle:
           label: Tip
-          separator: ', '
         uid:
           label: Autor
-          separator: ', '
         status:
           label: Stare
           settings:
             format_custom_true: Publicat
             format_custom_false: Nepublicat
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operaţii
       filters:
@@ -63,9 +54,3 @@ display:
         langcode:
           expose:
             label: Limba
-      title: Media
-  media_page_list:
-    display_title: Media
-    display_options:
-      menu:
-        title: Media

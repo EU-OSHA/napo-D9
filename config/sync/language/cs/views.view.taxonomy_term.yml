@@ -7,7 +7,6 @@ display:
       exposed_form:
         options:
           submit_button: Použít
-          reset_button_label: Reset
           exposed_sorts_label: 'Řadit dle'
           sort_asc_label: Vzestupně
           sort_desc_label: Sestupně
@@ -17,9 +16,6 @@ display:
             items_per_page_label: 'Položek na stránku'
             items_per_page_options_all_label: '- Vše -'
             offset_label: Posun
-          tags:
-            previous: ‹‹
-            next: ››
       arguments:
         tid:
           exception:

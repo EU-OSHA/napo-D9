@@ -18,17 +18,7 @@ display:
             items_per_page_label: 'Kirjeid lehel'
             items_per_page_options_all_label: '- Kõik -'
             offset_label: Nihe
-          tags:
-            previous: ‹‹
-            next: ››
-      arguments:
-        created_year_month:
-          title: '{{ arguments.created_year_month }}'
   block_1:
     display_title: Plokk
-    display_options:
-      arguments:
-        created_year_month:
-          title: '{{ arguments.created_year_month }}'
   page_1:
     display_title: Lehekülg

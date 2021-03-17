@@ -25,19 +25,14 @@ display:
       fields:
         title:
           label: Pealkiri
-          separator: ', '
         type:
           label: 'Sisu tüüp'
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
         moderation_state:
           label: 'Modereerimise olek'
-          separator: ', '
         changed:
           label: Uuendatud
-          separator: ', '
         operations:
           label: Toimingud
       filters:

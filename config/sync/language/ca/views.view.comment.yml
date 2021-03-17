@@ -9,8 +9,6 @@ display:
           submit_button: Filtra
           reset_button_label: Reinicialitza
           exposed_sorts_label: 'Ordena per'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -27,22 +25,14 @@ display:
           action_title: Acció
         subject:
           label: Assumpte
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
         entity_id:
           label: 'Publicat a'
-          separator: ', '
         changed:
           label: Actualitzat
-          separator: ', '
         operations:
           label: Operacions
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:
@@ -87,19 +77,11 @@ display:
           action_title: Acció
         subject:
           label: Assumpte
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
         entity_id:
           label: 'Publicat a'
-          separator: ', '
         changed:
           label: Actualitzat
-          separator: ', '
         operations:
           label: Operacions
-        name_1:
-          separator: ', '

@@ -1,6 +1,5 @@
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -8,11 +7,6 @@ display:
           exposed_sorts_label: 'Rasporedi po'
           sort_asc_label: Uzlazno
           sort_desc_label: Silazno
-      pager:
-        options:
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         media_bulk_form:
           action_title: Akcija
@@ -36,8 +30,6 @@ display:
       fields:
         media_bulk_form:
           action_title: Akcija
-        name:
-          separator: ', '
         edit_media:
           text: Uredi
         delete_media:
@@ -61,8 +53,6 @@ display:
   widget_table:
     display_options:
       fields:
-        thumbnail__target_id:
-          label: Thumbnail
         name:
           label: Naziv
         uid:

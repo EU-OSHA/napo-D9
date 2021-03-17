@@ -1,0 +1,57 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtra
+          reset_button_label: Reinicialitza
+          exposed_sorts_label: 'Ordena per'
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Següent ›'
+            first: '« Primer'
+            last: 'Últim »'
+      fields:
+        title:
+          label: Títol
+        type:
+          label: 'Tipus de contingut'
+        name:
+          label: Autor
+        status:
+          label: Estat
+          settings:
+            format_custom_true: Publicat
+            format_custom_false: 'Sense publicar'
+        changed:
+          label: Actualitzat
+        operations:
+          label: Operacions
+      filters:
+        title:
+          expose:
+            label: Títol
+        type:
+          expose:
+            label: 'Tipus de contingut'
+        status:
+          expose:
+            label: Estat
+          group_info:
+            label: 'Estat de publicació'
+            group_items:
+              1:
+                title: Publicat
+              2:
+                title: 'Sense publicar'
+        langcode:
+          expose:
+            label: Llengua
+      empty:
+        area_text_custom:
+          content: 'No hi ha contingut disponible.'
+    display_title: Mestre
+  page_1:
+    display_title: Pàgina

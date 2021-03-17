@@ -21,17 +21,13 @@ display:
             items_per_page_options_all_label: '- Wszystko -'
             offset_label: Przesunięcie
       fields:
-        fid:
-          label: Fid
         filename:
           label: Nazwa
-          separator: ', '
         filemime:
           label: 'typ MIME'
         filesize:
           label: Rozmiar
         status:
-          label: Status
           settings:
             format_custom_false: Tymczasowy
             format_custom_true: Stały
@@ -48,9 +44,6 @@ display:
         filemime:
           expose:
             label: 'typ MIME'
-        status:
-          expose:
-            label: Status
       title: Pliki
       empty:
         area_text_custom:

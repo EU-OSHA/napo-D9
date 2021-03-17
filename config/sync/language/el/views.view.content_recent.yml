@@ -10,9 +10,6 @@ display:
           exposed_sorts_label: 'Ταξινόμηση κατά'
           sort_asc_label: Αύξ
           sort_desc_label: Φθί
-      fields:
-        changed:
-          separator: ', '
       title: 'Πρόσφατο περιεχόμενο'
       empty:
         area_text_custom:

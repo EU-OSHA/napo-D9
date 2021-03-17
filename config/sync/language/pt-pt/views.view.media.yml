@@ -1,4 +1,3 @@
-label: Media
 display:
   default:
     display_title: Principal
@@ -8,8 +7,6 @@ display:
           submit_button: Filtro
           reset_button_label: Reiniciar
           exposed_sorts_label: 'Ordenar por'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -26,25 +23,19 @@ display:
           action_title: Ação
         thumbnail__target_id:
           label: Miniatura
-          separator: ', '
         name:
           label: 'Nome do Media'
-          separator: ', '
         bundle:
           label: Tipo
-          separator: ', '
         uid:
           label: Autor
-          separator: ', '
         status:
           label: Estado
           settings:
             format_custom_true: Publicado
             format_custom_false: 'Não publicado'
-          separator: ', '
         changed:
           label: Atualizado
-          separator: ', '
         operations:
           label: Operações
       filters:
@@ -67,12 +58,6 @@ display:
         langcode:
           expose:
             label: Idioma
-      title: Media
       empty:
         area_text_custom:
           content: 'Sem media disponível.'
-  media_page_list:
-    display_title: Media
-    display_options:
-      menu:
-        title: Media

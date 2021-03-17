@@ -25,19 +25,14 @@ display:
       fields:
         title:
           label: Titel
-          separator: ', '
         type:
           label: Innehållstyp
-          separator: ', '
         name:
           label: Författare
-          separator: ', '
         moderation_state:
           label: Modereringsstatus
-          separator: ', '
         changed:
           label: Uppdaterad
-          separator: ', '
         operations:
           label: Funktioner
       filters:

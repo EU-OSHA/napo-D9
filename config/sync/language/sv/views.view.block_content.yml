@@ -1,5 +1,3 @@
-label: 'Bibliotek med anpassade block'
-description: 'Hitta och hantera anpassade block.'
 display:
   default:
     display_title: Huvud
@@ -21,29 +19,9 @@ display:
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
       fields:
-        info:
-          label: Blockbeskrivning
-          separator: ', '
-        type:
-          label: 'Typ av block'
-          separator: ', '
         changed:
           label: Uppdaterad
         operations:
           label: Funktioner
-      filters:
-        info:
-          expose:
-            label: Blockbeskrivning
-        type:
-          expose:
-            label: 'Typ av block'
-      title: 'Bibliotek med anpassade block'
-      empty:
-        area_text_custom:
-          content: 'Det finns inga anpassade block tillgängliga.'
   page_1:
     display_title: Sida
-    display_options:
-      menu:
-        title: 'Bibliotek med anpassade block'

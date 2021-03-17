@@ -23,24 +23,17 @@ display:
           action_title: Ενέργεια
         thumbnail__target_id:
           label: Μικρογραφία
-          separator: ', '
-        name:
-          separator: ', '
         bundle:
           label: Τύπος
-          separator: ', '
         uid:
           label: Συντάκτης
-          separator: ', '
         status:
           label: Κατάσταση
           settings:
             format_custom_true: Δημοσιευμένο
             format_custom_false: 'Μη δημοσιευμένο'
-          separator: ', '
         changed:
           label: Ενημερώθηκε
-          separator: ', '
         operations:
           label: Λειτουργίες
       filters:

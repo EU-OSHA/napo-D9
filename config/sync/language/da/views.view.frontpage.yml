@@ -24,8 +24,5 @@ display:
             next: 'Næste ›'
             first: '« Første'
             last: 'Sidste »'
-    display_title: Master
-  feed_1:
-    display_title: Feed
   page_1:
     display_title: Side

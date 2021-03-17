@@ -7,30 +7,19 @@ display:
           submit_button: Käytä
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« Ensimmäinen'
             last: 'Viimeinen »'
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
-            offset_label: Offset
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         created:
           label: Luotu
-          separator: ', '
         remote_addr:
           label: 'IP osoite'
-          separator: ', '
         view_webform_submission:
           label: Toimenpiteet
           text: näkymä
@@ -43,25 +32,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Toiminto
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Kiinnitetty
-          separator: ', '
         locked:
           label: Lukittu
-          separator: ', '
         created:
           label: Luotu
-          separator: ', '
         completed:
           label: Valmis
-          separator: ', '
         remote_addr:
           label: 'IP osoite'
-          separator: ', '
         operations:
           label: Toimenpiteet
       filters:
@@ -76,25 +56,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Toiminto
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Kiinnitetty
-          separator: ', '
         locked:
           label: Lukittu
-          separator: ', '
         created:
           label: Luotu
-          separator: ', '
         completed:
           label: Valmis
-          separator: ', '
         remote_addr:
           label: 'IP osoite'
-          separator: ', '
         view_webform_submission:
           label: Toimenpiteet
           text: näkymä
@@ -111,25 +82,16 @@ display:
   embed_review:
     display_options:
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Kiinnitetty
-          separator: ', '
         locked:
           label: Lukittu
-          separator: ', '
         created:
           label: Luotu
-          separator: ', '
         completed:
           label: Valmis
-          separator: ', '
         remote_addr:
           label: 'IP osoite'
-          separator: ', '
         view_webform_submission:
           label: Toimenpiteet
           text: näkymä

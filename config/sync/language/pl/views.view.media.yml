@@ -1,4 +1,3 @@
-label: Media
 description: 'Znajdź i zarządaj mediami.'
 display:
   default:
@@ -27,25 +26,18 @@ display:
           action_title: Akcja
         thumbnail__target_id:
           label: Miniaturka
-          separator: ', '
         name:
           label: 'Nazwa mediów'
-          separator: ', '
         bundle:
           label: Typ
-          separator: ', '
         uid:
           label: Autor
-          separator: ', '
         status:
-          label: Status
           settings:
             format_custom_true: Opublikowane
             format_custom_false: Nieopublikowany
-          separator: ', '
         changed:
           label: Uaktualniono
-          separator: ', '
         operations:
           label: Operacje
       filters:
@@ -68,12 +60,6 @@ display:
         langcode:
           expose:
             label: Język
-      title: Media
       empty:
         area_text_custom:
           content: 'Brak mediów'
-  media_page_list:
-    display_title: Media
-    display_options:
-      menu:
-        title: Media

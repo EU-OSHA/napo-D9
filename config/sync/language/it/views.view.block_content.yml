@@ -9,7 +9,6 @@ display:
           submit_button: Applica
           reset_button_label: Ripristina
           exposed_sorts_label: 'Ordina per'
-          sort_asc_label: Asc
           sort_desc_label: Disc
       pager:
         options:
@@ -23,10 +22,8 @@ display:
       fields:
         info:
           label: 'Descrizione del blocco'
-          separator: ', '
         type:
           label: 'Tipo di blocco'
-          separator: ', '
         changed:
           label: Aggiornato
         operations:

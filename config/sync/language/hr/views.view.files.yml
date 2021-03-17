@@ -1,7 +1,6 @@
 label: Datoteke
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -13,13 +12,10 @@ display:
       fields:
         filename:
           label: Naziv
-          separator: ', '
         filemime:
           label: 'MIME vrsta'
         filesize:
           label: Veličina
-        status:
-          label: Status
         created:
           label: 'Nadnevak otpreme'
         count:
@@ -31,9 +27,6 @@ display:
         filemime:
           expose:
             label: 'MIME vrsta'
-        status:
-          expose:
-            label: Status
       title: Datoteke
   page_1:
     display_options:

@@ -1,0 +1,36 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Филтър
+          reset_button_label: Рестартирай
+      fields:
+        title:
+          label: Заглавие
+        name:
+          label: Автор
+        status:
+          label: Статус
+          settings:
+            format_custom_true: Публикувано
+        changed:
+          label: Обновено
+        operations:
+          label: Действия
+      filters:
+        title:
+          expose:
+            label: Заглавие
+        status:
+          expose:
+            label: Статус
+          group_info:
+            group_items:
+              1:
+                title: Публикувано
+        langcode:
+          expose:
+            label: Език
+  page_1:
+    display_title: Страница

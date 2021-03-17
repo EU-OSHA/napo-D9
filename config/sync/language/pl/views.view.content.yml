@@ -1,0 +1,56 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtr
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
+      pager:
+        options:
+          tags:
+            previous: '‹ Poprzednia'
+            next: 'Następna ›'
+            first: '« Pierwsza'
+            last: 'Ostatnia »'
+      fields:
+        title:
+          label: Tytuł
+        type:
+          label: 'Rodzaj zawartości'
+        name:
+          label: Autor
+        status:
+          settings:
+            format_custom_true: Opublikowane
+            format_custom_false: Nieopublikowany
+        changed:
+          label: Uaktualniono
+        operations:
+          label: Operacje
+      filters:
+        title:
+          expose:
+            label: Tytuł
+        type:
+          expose:
+            label: 'Rodzaj zawartości'
+        status:
+          group_info:
+            label: 'Status publikacji'
+            group_items:
+              1:
+                title: Opublikowane
+              2:
+                title: Nieopublikowany
+        langcode:
+          expose:
+            label: Język
+      empty:
+        area_text_custom:
+          content: 'Brak zawartości.'
+    display_title: Główny
+  page_1:
+    display_title: Strona

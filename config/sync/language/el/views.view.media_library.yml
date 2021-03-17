@@ -13,9 +13,6 @@ display:
             items_per_page_label: 'Είδη ανά σελίδα'
             items_per_page_options_all_label: '- Όλα -'
             offset_label: Αντιστάθμιση
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         media_bulk_form:
           action_title: Ενέργεια
@@ -47,8 +44,6 @@ display:
       fields:
         media_bulk_form:
           action_title: Ενέργεια
-        name:
-          separator: ', '
         edit_media:
           text: Επεξεργασία
         delete_media:

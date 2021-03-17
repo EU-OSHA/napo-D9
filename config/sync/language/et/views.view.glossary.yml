@@ -17,9 +17,6 @@ display:
             items_per_page_label: 'Kirjeid lehel'
             items_per_page_options_all_label: '- Kõik -'
             offset_label: Nihe
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         title:
           label: Pealkiri

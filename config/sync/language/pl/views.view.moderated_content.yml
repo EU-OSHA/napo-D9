@@ -25,19 +25,14 @@ display:
       fields:
         title:
           label: Tytuł
-          separator: ', '
         type:
           label: 'Rodzaj zawartości'
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
         moderation_state:
           label: 'Stan moderacji'
-          separator: ', '
         changed:
           label: Uaktualniono
-          separator: ', '
         operations:
           label: Operacje
       filters:

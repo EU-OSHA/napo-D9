@@ -1,6 +1,5 @@
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -9,22 +8,11 @@ display:
           exposed_sorts_label: 'Rasporedi po'
           sort_asc_label: Uzlazno
           sort_desc_label: Silazno
-      pager:
-        options:
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         created:
           label: Stvoreno
-          separator: ', '
         remote_addr:
           label: 'IP adresa'
-          separator: ', '
         view_webform_submission:
           label: Operacije
           text: prikaz
@@ -37,24 +25,14 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Akcija
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Ljepljivo
-          separator: ', '
         locked:
           label: Zaključano
-          separator: ', '
         created:
           label: Stvoreno
-          separator: ', '
-        completed:
-          separator: ', '
         remote_addr:
           label: 'IP adresa'
-          separator: ', '
         operations:
           label: Operacije
       filters:
@@ -69,24 +47,14 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Akcija
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Ljepljivo
-          separator: ', '
         locked:
           label: Zaključano
-          separator: ', '
         created:
           label: Stvoreno
-          separator: ', '
-        completed:
-          separator: ', '
         remote_addr:
           label: 'IP adresa'
-          separator: ', '
         view_webform_submission:
           label: Operacije
           text: prikaz
@@ -103,24 +71,14 @@ display:
   embed_review:
     display_options:
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Ljepljivo
-          separator: ', '
         locked:
           label: Zaključano
-          separator: ', '
         created:
           label: Stvoreno
-          separator: ', '
-        completed:
-          separator: ', '
         remote_addr:
           label: 'IP adresa'
-          separator: ', '
         view_webform_submission:
           label: Operacije
           text: prikaz

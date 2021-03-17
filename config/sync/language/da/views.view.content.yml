@@ -1,0 +1,54 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      pager:
+        options:
+          tags:
+            previous: '‹ Forrige'
+            next: 'Næste ›'
+            first: '« Første'
+            last: 'Sidste »'
+      fields:
+        title:
+          label: Titel
+        type:
+          label: Indholdstype
+        name:
+          label: Forfatter
+        status:
+          settings:
+            format_custom_true: Udgivet
+            format_custom_false: 'Ikke udgivet'
+        changed:
+          label: Opdateret
+        operations:
+          label: Handlinger
+      filters:
+        title:
+          expose:
+            label: Titel
+        type:
+          expose:
+            label: Indholdstype
+        status:
+          group_info:
+            label: Publiceringsstatus
+            group_items:
+              1:
+                title: Udgivet
+              2:
+                title: 'Ikke udgivet'
+        langcode:
+          expose:
+            label: Sprog
+      empty:
+        area_text_custom:
+          content: 'Der er intet indhold at vise.'
+  page_1:
+    display_title: Side

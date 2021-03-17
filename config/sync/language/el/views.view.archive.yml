@@ -17,17 +17,7 @@ display:
             items_per_page_label: 'Είδη ανά σελίδα'
             items_per_page_options_all_label: '- Όλα -'
             offset_label: Αντιστάθμιση
-          tags:
-            previous: ‹‹
-            next: ››
-      arguments:
-        created_year_month:
-          title: '{{ arguments.created_year_month }}'
   block_1:
     display_title: Μπλοκ
-    display_options:
-      arguments:
-        created_year_month:
-          title: '{{ arguments.created_year_month }}'
   page_1:
     display_title: Σελίδα

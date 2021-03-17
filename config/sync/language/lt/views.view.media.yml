@@ -1,4 +1,3 @@
-label: Media
 display:
   default:
     display_options:
@@ -35,8 +34,6 @@ display:
           expose:
             label: Tipas
         status:
-          expose:
-            label: 'True'
           group_info:
             label: 'Paskelbta statusas'
             group_items:
@@ -47,12 +44,6 @@ display:
         langcode:
           expose:
             label: Kalba
-      title: Media
       empty:
         area_text_custom:
           content: 'Nėra galimos media.'
-  media_page_list:
-    display_title: Media
-    display_options:
-      menu:
-        title: Media

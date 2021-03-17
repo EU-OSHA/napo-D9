@@ -5,8 +5,6 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
           exposed_sorts_label: 'Zoradiť podľa'
           sort_asc_label: Vzostupne
           sort_desc_label: Zostupne
@@ -26,22 +24,14 @@ display:
           action_title: Akcia
         subject:
           label: Predmet
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
         entity_id:
           label: 'Poslané do'
-          separator: ', '
         changed:
           label: Aktualizované
-          separator: ', '
         operations:
           label: Operácie
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:
@@ -79,19 +69,11 @@ display:
           action_title: Akcia
         subject:
           label: Predmet
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
         entity_id:
           label: 'Poslané do'
-          separator: ', '
         changed:
           label: Aktualizované
-          separator: ', '
         operations:
           label: Operácie
-        name_1:
-          separator: ', '

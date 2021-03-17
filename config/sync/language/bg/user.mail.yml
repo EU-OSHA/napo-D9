@@ -1,2 +1,0 @@
-register_admin_created:
-  subject: 'Администраторът  на сайта създаде акаунт за Вас в [site:name]'

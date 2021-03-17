@@ -9,7 +9,6 @@ display:
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
-          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -26,22 +25,14 @@ display:
           action_title: Acțiune
         subject:
           label: Subiect
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
         entity_id:
           label: 'Publicat în'
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operaţii
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:
@@ -79,19 +70,11 @@ display:
           action_title: Acțiune
         subject:
           label: Subiect
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
         entity_id:
           label: 'Publicat în'
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operaţii
-        name_1:
-          separator: ', '

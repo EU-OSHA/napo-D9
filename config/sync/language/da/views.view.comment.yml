@@ -2,11 +2,9 @@ label: Kommentarer
 description: 'Find og administrér kommentarer'
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
           reset_button_label: Gendan
           exposed_sorts_label: 'Sortér efter'
           sort_asc_label: Stigende
@@ -27,22 +25,14 @@ display:
           action_title: Handling
         subject:
           label: Emne
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Forfatter
-          separator: ', '
         entity_id:
           label: 'Indsendt til'
-          separator: ', '
         changed:
           label: Opdateret
-          separator: ', '
         operations:
           label: Handlinger
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:
@@ -86,19 +76,11 @@ display:
           action_title: Handling
         subject:
           label: Emne
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Forfatter
-          separator: ', '
         entity_id:
           label: 'Indsendt til'
-          separator: ', '
         changed:
           label: Opdateret
-          separator: ', '
         operations:
           label: Handlinger
-        name_1:
-          separator: ', '

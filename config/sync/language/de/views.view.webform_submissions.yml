@@ -1,6 +1,5 @@
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -12,8 +11,6 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« Anfang'
             last: 'Ende »'
           expose:
@@ -21,16 +18,10 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset_label: Versatz
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         created:
           label: Erstellt
-          separator: ', '
         remote_addr:
           label: IP-Adresse
-          separator: ', '
         view_webform_submission:
           label: Aktionen
           text: Ansicht
@@ -46,25 +37,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Aktion
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: 'am Anfang von Listen'
-          separator: ', '
         locked:
           label: Gesperrt
-          separator: ', '
         created:
           label: Erstellt
-          separator: ', '
         completed:
           label: Abgeschlossen
-          separator: ', '
         remote_addr:
           label: IP-Adresse
-          separator: ', '
         operations:
           label: Aktionen
       filters:
@@ -79,25 +61,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Aktion
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: 'am Anfang von Listen'
-          separator: ', '
         locked:
           label: Gesperrt
-          separator: ', '
         created:
           label: Erstellt
-          separator: ', '
         completed:
           label: Abgeschlossen
-          separator: ', '
         remote_addr:
           label: IP-Adresse
-          separator: ', '
         view_webform_submission:
           label: Aktionen
           text: Ansicht
@@ -114,25 +87,16 @@ display:
   embed_review:
     display_options:
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: 'am Anfang von Listen'
-          separator: ', '
         locked:
           label: Gesperrt
-          separator: ', '
         created:
           label: Erstellt
-          separator: ', '
         completed:
           label: Abgeschlossen
-          separator: ', '
         remote_addr:
           label: IP-Adresse
-          separator: ', '
         view_webform_submission:
           label: Aktionen
           text: Ansicht

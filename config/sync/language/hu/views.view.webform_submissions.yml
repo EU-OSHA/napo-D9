@@ -12,8 +12,6 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« Első'
             last: 'Utolsó »'
           expose:
@@ -21,16 +19,10 @@ display:
             items_per_page_options_all_label: '– Mind –'
             offset_label: Eltolás
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         created:
           label: Létrehozva
-          separator: ', '
         remote_addr:
           label: IP-cím
-          separator: ', '
         view_webform_submission:
           label: Műveletek
           text: megtekintés
@@ -46,25 +38,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Művelet
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Kiemelt
-          separator: ', '
         locked:
           label: Zárolt
-          separator: ', '
         created:
           label: Létrehozva
-          separator: ', '
         completed:
           label: Teljesítve
-          separator: ', '
         remote_addr:
           label: IP-cím
-          separator: ', '
         operations:
           label: Műveletek
       filters:
@@ -79,25 +62,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Művelet
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Kiemelt
-          separator: ', '
         locked:
           label: Zárolt
-          separator: ', '
         created:
           label: Létrehozva
-          separator: ', '
         completed:
           label: Teljesítve
-          separator: ', '
         remote_addr:
           label: IP-cím
-          separator: ', '
         view_webform_submission:
           label: Műveletek
           text: megtekintés
@@ -114,25 +88,16 @@ display:
   embed_review:
     display_options:
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Kiemelt
-          separator: ', '
         locked:
           label: Zárolt
-          separator: ', '
         created:
           label: Létrehozva
-          separator: ', '
         completed:
           label: Teljesítve
-          separator: ', '
         remote_addr:
           label: IP-cím
-          separator: ', '
         view_webform_submission:
           label: Műveletek
           text: megtekintés

@@ -9,8 +9,6 @@ display:
           submit_button: Aplica
           reset_button_label: Reinicialitza
           exposed_sorts_label: 'Ordena per'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       filters:
         access:
           expose:

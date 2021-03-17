@@ -8,7 +8,6 @@ display:
           submit_button: Applica
           reset_button_label: Ripristina
           exposed_sorts_label: 'Ordina per'
-          sort_asc_label: Asc
           sort_desc_label: Disc
       pager:
         options:
@@ -16,15 +15,9 @@ display:
             items_per_page_label: 'Voci per pagina'
             items_per_page_options_all_label: '- Tutto -'
             offset_label: Scostamento
-          tags:
-            previous: ‹‹
-            next: ››
       arguments:
         tid:
           exception:
             title: Tutti
-          title: '{{ arguments.tid }}'
-  feed_1:
-    display_title: Feed
   page_1:
     display_title: Pagina

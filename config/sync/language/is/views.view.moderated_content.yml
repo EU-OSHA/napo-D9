@@ -17,18 +17,12 @@ display:
       fields:
         title:
           label: Titill
-          separator: ', '
         type:
           label: Efnisgerð
-          separator: ', '
         name:
           label: Höfundur
-          separator: ', '
-        moderation_state:
-          separator: ', '
         changed:
           label: Uppfært
-          separator: ', '
         operations:
           label: Aðgerðir
       filters:

@@ -11,9 +11,6 @@ display:
           exposed_sorts_label: 'Sortuj po'
           sort_asc_label: Rosnąco
           sort_desc_label: Malejąco
-      fields:
-        changed:
-          separator: ', '
       title: 'Ostatnio dodana zawartość'
       empty:
         area_text_custom:

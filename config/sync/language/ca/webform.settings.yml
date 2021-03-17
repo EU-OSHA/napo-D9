@@ -8,11 +8,7 @@ settings:
   dialog_options:
     narrow:
       title: Estret
-    normal:
-      title: Normal
     wide:
       title: Ample
 element:
   default_more_title: Més
-mail:
-  default_from_name: '[site:name]'

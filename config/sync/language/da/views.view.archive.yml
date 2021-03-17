@@ -2,7 +2,6 @@ label: Arkiv
 description: 'Alt indhold, efter måned.'
 display:
   default:
-    display_title: Master
     display_options:
       title: Månedsarkiv
       exposed_form:
@@ -18,17 +17,7 @@ display:
             items_per_page_label: 'Antal elementer'
             items_per_page_options_all_label: '- Alle -'
             offset_label: Forskydning
-          tags:
-            previous: ‹‹
-            next: ››
-      arguments:
-        created_year_month:
-          title: '{{ arguments.created_year_month }}'
   block_1:
     display_title: Blok
-    display_options:
-      arguments:
-        created_year_month:
-          title: '{{ arguments.created_year_month }}'
   page_1:
     display_title: Side

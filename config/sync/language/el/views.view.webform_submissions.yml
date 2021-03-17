@@ -10,24 +10,15 @@ display:
           sort_desc_label: Φθί
       pager:
         options:
-          tags:
-            previous: ‹‹
-            next: ››
           expose:
             items_per_page_label: 'Είδη ανά σελίδα'
             items_per_page_options_all_label: '- Όλα -'
             offset_label: Αντιστάθμιση
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         created:
           label: Δημιουργήθηκε
-          separator: ', '
         remote_addr:
           label: 'διεύθυνση IP'
-          separator: ', '
         view_webform_submission:
           label: Λειτουργίες
           text: προβολή
@@ -40,25 +31,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Ενέργεια
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Καρφιτσωμένο
-          separator: ', '
         locked:
           label: Κλειδωμένο
-          separator: ', '
         created:
           label: Δημιουργήθηκε
-          separator: ', '
         completed:
           label: Ολοκληρώθηκε
-          separator: ', '
         remote_addr:
           label: 'διεύθυνση IP'
-          separator: ', '
         operations:
           label: Λειτουργίες
       filters:
@@ -73,25 +55,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Ενέργεια
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Καρφιτσωμένο
-          separator: ', '
         locked:
           label: Κλειδωμένο
-          separator: ', '
         created:
           label: Δημιουργήθηκε
-          separator: ', '
         completed:
           label: Ολοκληρώθηκε
-          separator: ', '
         remote_addr:
           label: 'διεύθυνση IP'
-          separator: ', '
         view_webform_submission:
           label: Λειτουργίες
           text: προβολή
@@ -108,25 +81,16 @@ display:
   embed_review:
     display_options:
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Καρφιτσωμένο
-          separator: ', '
         locked:
           label: Κλειδωμένο
-          separator: ', '
         created:
           label: Δημιουργήθηκε
-          separator: ', '
         completed:
           label: Ολοκληρώθηκε
-          separator: ', '
         remote_addr:
           label: 'διεύθυνση IP'
-          separator: ', '
         view_webform_submission:
           label: Λειτουργίες
           text: προβολή

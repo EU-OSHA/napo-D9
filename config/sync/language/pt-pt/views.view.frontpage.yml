@@ -11,8 +11,6 @@ display:
           submit_button: Aplicar
           reset_button_label: Reiniciar
           exposed_sorts_label: 'Ordenar por'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -25,7 +23,5 @@ display:
             first: '« Primeira'
             last: 'Última »'
     display_title: Principal
-  feed_1:
-    display_title: Feed
   page_1:
     display_title: Página

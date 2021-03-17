@@ -18,17 +18,7 @@ display:
             items_per_page_label: 'Elementów na stronę'
             items_per_page_options_all_label: '- Wszystko -'
             offset_label: Przesunięcie
-          tags:
-            previous: ‹‹
-            next: ››
-      arguments:
-        created_year_month:
-          title: '{{ arguments.created_year_month }}'
   block_1:
     display_title: Blok
-    display_options:
-      arguments:
-        created_year_month:
-          title: '{{ arguments.created_year_month }}'
   page_1:
     display_title: Strona

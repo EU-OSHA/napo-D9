@@ -6,8 +6,6 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
           exposed_sorts_label: 'Sorteren op'
           sort_asc_label: Oplopend
           sort_desc_label: Aflopend
@@ -28,7 +26,6 @@ display:
         name:
           label: Gebruikersnaam
         status:
-          label: Status
           settings:
             format_custom_true: Actief
             format_custom_false: Geblokkeerd
@@ -40,15 +37,12 @@ display:
           label: 'Laatste toegang'
         operations:
           label: Bewerkingen
-        mail:
-          separator: ', '
       filters:
         combine:
           expose:
             label: 'Naam of e-mail bevat'
         status:
           group_info:
-            label: Status
             group_items:
               1:
                 title: Actief

@@ -1,7 +1,6 @@
 label: 'Moderirani sadržaj'
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -13,18 +12,12 @@ display:
       fields:
         title:
           label: Naziv
-          separator: ', '
         type:
           label: 'Vrsta sadržaja'
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
-        moderation_state:
-          separator: ', '
         changed:
           label: Osvježeno
-          separator: ', '
         operations:
           label: Operacije
       filters:

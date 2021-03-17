@@ -1,5 +1,3 @@
-label: Kommentarer
-description: 'Hitta och hantera kommentarer.'
 display:
   default:
     display_title: Huvud
@@ -13,11 +11,6 @@ display:
           sort_desc_label: Fallande
       pager:
         options:
-          tags:
-            previous: '‹ föregående'
-            next: 'nästa ›'
-            first: '« första'
-            last: 'sista »'
           expose:
             items_per_page_label: 'Inlägg per sida'
             items_per_page_options_all_label: '- Alla -'
@@ -25,81 +18,28 @@ display:
       fields:
         comment_bulk_form:
           action_title: Åtgärd
-        subject:
-          label: Ämne
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Författare
-          separator: ', '
-        entity_id:
-          label: 'Inlagt i'
-          separator: ', '
         changed:
           label: Uppdaterad
-          separator: ', '
         operations:
           label: Funktioner
-        name_1:
-          separator: ', '
       filters:
-        subject:
-          expose:
-            label: Ämne
-        combine:
-          expose:
-            label: Författarnamn
         langcode:
           expose:
             label: Språk
-      title: Kommentarer
-      empty:
-        area_text_custom:
-          content: 'Inga kommentarer tillgängliga.'
-      use_more_text: mer
-  page_published:
-    display_title: 'Publicerade kommentarer'
-    display_options:
-      menu:
-        title: Kommentarer
-        description: 'Kommentarer publicerade'
-      display_description: 'Listan över godkända kommentarer.'
   page_unapproved:
-    display_title: 'Ej godkända kommentarer'
     display_options:
-      menu:
-        title: 'Ej godkända kommentarer'
-        description: 'Kommentarer ej godkända'
-      display_description: 'Den ej godkända kommentarlistan.'
       filters:
-        subject:
-          expose:
-            label: Ämne
-        combine:
-          expose:
-            label: Författarnamn
         langcode:
           expose:
             label: Språk
       fields:
         comment_bulk_form:
           action_title: Åtgärd
-        subject:
-          label: Ämne
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Författare
-          separator: ', '
-        entity_id:
-          label: 'Inlagt i'
-          separator: ', '
         changed:
           label: Uppdaterad
-          separator: ', '
         operations:
           label: Funktioner
-        name_1:
-          separator: ', '

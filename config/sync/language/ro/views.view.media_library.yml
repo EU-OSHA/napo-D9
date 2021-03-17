@@ -7,16 +7,12 @@ display:
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
-          sort_desc_label: Desc
       pager:
         options:
           expose:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         media_bulk_form:
           action_title: Acțiune
@@ -41,21 +37,17 @@ display:
         created:
           expose:
             label: 'Cele noi primele'
-      title: Media
   page:
     display_title: Pagina
     display_options:
       fields:
         media_bulk_form:
           action_title: Acțiune
-        name:
-          separator: ', '
         edit_media:
           text: Modifică
         delete_media:
           text: Şterge
   widget:
-    display_title: Widget
     display_options:
       filters:
         name:

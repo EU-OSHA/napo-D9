@@ -17,9 +17,6 @@ display:
             items_per_page_label: 'Elemek száma oldalanként'
             items_per_page_options_all_label: '– Mind –'
             offset_label: Eltolás
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         title:
           label: Cím

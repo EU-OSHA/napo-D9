@@ -20,18 +20,12 @@ display:
       fields:
         title:
           label: Τίτλος
-          separator: ', '
         type:
           label: 'Τύπος περιεχομένου'
-          separator: ', '
         name:
           label: Συντάκτης
-          separator: ', '
-        moderation_state:
-          separator: ', '
         changed:
           label: Ενημερώθηκε
-          separator: ', '
         operations:
           label: Λειτουργίες
       filters:

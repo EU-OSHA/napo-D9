@@ -9,7 +9,6 @@ display:
           submit_button: Filtra
           reset_button_label: Ripristina
           exposed_sorts_label: 'Ordina per'
-          sort_asc_label: Asc
           sort_desc_label: Disc
       pager:
         options:
@@ -40,8 +39,6 @@ display:
           label: 'Ultimo accesso'
         operations:
           label: Operazioni
-        mail:
-          separator: ', '
       filters:
         combine:
           expose:

@@ -6,8 +6,6 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
-          reset_button_label: Reset
           exposed_sorts_label: 'Sorteren op'
           sort_asc_label: Oplopend
           sort_desc_label: Aflopend
@@ -27,22 +25,14 @@ display:
           action_title: Actie
         subject:
           label: Onderwerp
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Auteur
-          separator: ', '
         entity_id:
           label: 'Geplaatst in'
-          separator: ', '
         changed:
           label: Bijgewerkt
-          separator: ', '
         operations:
           label: Bewerkingen
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:
@@ -87,19 +77,11 @@ display:
           action_title: Actie
         subject:
           label: Onderwerp
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Auteur
-          separator: ', '
         entity_id:
           label: 'Geplaatst in'
-          separator: ', '
         changed:
           label: Bijgewerkt
-          separator: ', '
         operations:
           label: Bewerkingen
-        name_1:
-          separator: ', '

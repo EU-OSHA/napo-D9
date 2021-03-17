@@ -9,8 +9,6 @@ display:
           submit_button: Filtro
           reset_button_label: Reiniciar
           exposed_sorts_label: 'Ordenar por'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -40,8 +38,6 @@ display:
           label: 'Último acesso'
         operations:
           label: Operações
-        mail:
-          separator: ', '
       filters:
         combine:
           expose:

@@ -12,8 +12,6 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« Första'
             last: 'Sista »'
           expose:
@@ -21,22 +19,8 @@ display:
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
-        created:
-          label: Skapad
-          separator: ', '
-        remote_addr:
-          label: IP-adress
-          separator: ', '
         view_webform_submission:
           label: Funktioner
-          text: visa
-      header:
-        result:
-          content: 'Visar @start - @end av @total'
       arguments:
         in_draft:
           exception:
@@ -46,100 +30,19 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Åtgärd
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
-        sticky:
-          label: Klistrad
-          separator: ', '
-        locked:
-          label: Låst
-          separator: ', '
-        created:
-          label: Skapad
-          separator: ', '
-        completed:
-          label: Slutförd
-          separator: ', '
-        remote_addr:
-          label: IP-adress
-          separator: ', '
         operations:
           label: Funktioner
-      filters:
-        sticky:
-          expose:
-            label: Klistrad
-        locked:
-          expose:
-            label: Låst
   embed_manage:
     display_options:
       fields:
         webform_submission_bulk_form:
           action_title: Åtgärd
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
-        sticky:
-          label: Klistrad
-          separator: ', '
-        locked:
-          label: Låst
-          separator: ', '
-        created:
-          label: Skapad
-          separator: ', '
-        completed:
-          label: Slutförd
-          separator: ', '
-        remote_addr:
-          label: IP-adress
-          separator: ', '
         view_webform_submission:
           label: Funktioner
-          text: visa
         edit_webform_submission:
           label: Funktioner
-          text: redigera
-      filters:
-        sticky:
-          expose:
-            label: Klistrad
-        locked:
-          expose:
-            label: Låst
   embed_review:
     display_options:
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
-        sticky:
-          label: Klistrad
-          separator: ', '
-        locked:
-          label: Låst
-          separator: ', '
-        created:
-          label: Skapad
-          separator: ', '
-        completed:
-          label: Slutförd
-          separator: ', '
-        remote_addr:
-          label: IP-adress
-          separator: ', '
         view_webform_submission:
           label: Funktioner
-          text: visa
-      filters:
-        sticky:
-          expose:
-            label: Klistrad
-        locked:
-          expose:
-            label: Låst

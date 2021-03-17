@@ -12,9 +12,6 @@ display:
           expose:
             items_per_page_label: 'Hlutir per síðu'
             items_per_page_options_all_label: '- Allt -'
-          tags:
-            previous: ‹‹
-            next: ››
   block_1:
     display_title: Blokk
   page_1:

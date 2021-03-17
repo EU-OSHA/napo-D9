@@ -17,9 +17,6 @@ display:
             items_per_page_label: 'Elementów na stronę'
             items_per_page_options_all_label: '- Wszystko -'
             offset_label: Przesunięcie
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         title:
           label: Tytuł
