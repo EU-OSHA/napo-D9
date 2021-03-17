@@ -8,8 +8,6 @@ display:
       fields:
         title:
           label: Title
-        type:
-          label: 'Content type'
         name:
           label: Author
         changed:
@@ -20,9 +18,6 @@ display:
         title:
           expose:
             label: Title
-        type:
-          expose:
-            label: 'Content type'
         langcode:
           expose:
             label: Language

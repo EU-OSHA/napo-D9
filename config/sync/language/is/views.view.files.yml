@@ -17,7 +17,6 @@ display:
       fields:
         filename:
           label: Nafn
-          separator: ', '
         filesize:
           label: Stærð
         status:

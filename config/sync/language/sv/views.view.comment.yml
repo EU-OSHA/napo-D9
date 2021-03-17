@@ -27,22 +27,14 @@ display:
           action_title: Åtgärd
         subject:
           label: Ämne
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Author
-          separator: ', '
         entity_id:
           label: 'Inlagt i'
-          separator: ', '
         changed:
           label: Updated
-          separator: ', '
         operations:
           label: Operations
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:
@@ -87,19 +79,11 @@ display:
           action_title: Åtgärd
         subject:
           label: Ämne
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Author
-          separator: ', '
         entity_id:
           label: 'Inlagt i'
-          separator: ', '
         changed:
           label: Updated
-          separator: ', '
         operations:
           label: Operations
-        name_1:
-          separator: ', '

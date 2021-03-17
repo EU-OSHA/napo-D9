@@ -1,1 +1,3 @@
 label: Yleinen
+tags:
+  canonical_url: '[current-page:url:absolute]'

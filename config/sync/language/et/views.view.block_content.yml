@@ -23,10 +23,8 @@ display:
       fields:
         info:
           label: 'Ploki kirjeldus'
-          separator: ', '
         type:
           label: 'Ploki tüüp'
-          separator: ', '
         changed:
           label: Updated
         operations:

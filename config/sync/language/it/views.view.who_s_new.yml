@@ -9,7 +9,6 @@ display:
           submit_button: Applica
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
           sort_desc_label: Desc
       title: 'Nuovi utenti'
   block_1:

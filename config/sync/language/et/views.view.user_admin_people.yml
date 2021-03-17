@@ -40,8 +40,6 @@ display:
           label: 'Viimane külastus'
         operations:
           label: Operations
-        mail:
-          separator: ', '
       filters:
         combine:
           expose:

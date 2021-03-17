@@ -21,10 +21,8 @@ display:
       fields:
         info:
           label: 'Περιγραφή του μπλοκ'
-          separator: ', '
         type:
           label: 'Τύπος μπλοκ'
-          separator: ', '
         changed:
           label: Updated
         operations:

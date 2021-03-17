@@ -17,14 +17,10 @@ display:
             items_per_page_label: 'Kirjeid lehel'
             items_per_page_options_all_label: '- Kõik -'
             offset_label: Nihe
-          tags:
-            previous: ‹‹
-            next: ››
       arguments:
         tid:
           exception:
             title: Kõik
-          title: '{{ arguments.tid }}'
   feed_1:
     display_title: Andmevoog
   page_1:

@@ -7,13 +7,10 @@ display:
           submit_button: Applica
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« First'
             last: 'Last »'
           expose:
@@ -21,16 +18,10 @@ display:
             items_per_page_options_all_label: '- Tutto -'
             offset_label: Scostamento
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         created:
           label: Creato
-          separator: ', '
         remote_addr:
           label: 'Indirizzo IP'
-          separator: ', '
         view_webform_submission:
           label: Operations
           text: mostra
@@ -46,25 +37,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Azione
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: 'Sempre in cima'
-          separator: ', '
         locked:
           label: Bloccato
-          separator: ', '
         created:
           label: Creato
-          separator: ', '
         completed:
           label: Completato
-          separator: ', '
         remote_addr:
           label: 'Indirizzo IP'
-          separator: ', '
         operations:
           label: Operations
       filters:
@@ -79,25 +61,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Azione
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: 'Sempre in cima'
-          separator: ', '
         locked:
           label: Bloccato
-          separator: ', '
         created:
           label: Creato
-          separator: ', '
         completed:
           label: Completato
-          separator: ', '
         remote_addr:
           label: 'Indirizzo IP'
-          separator: ', '
         view_webform_submission:
           label: Operations
           text: mostra
@@ -114,25 +87,16 @@ display:
   embed_review:
     display_options:
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: 'Sempre in cima'
-          separator: ', '
         locked:
           label: Bloccato
-          separator: ', '
         created:
           label: Creato
-          separator: ', '
         completed:
           label: Completato
-          separator: ', '
         remote_addr:
           label: 'Indirizzo IP'
-          separator: ', '
         view_webform_submission:
           label: Operations
           text: mostra

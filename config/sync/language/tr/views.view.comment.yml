@@ -2,15 +2,7 @@ label: Yorumlar
 description: 'Yorumları bulun ve yönetin.'
 display:
   default:
-    display_title: Master
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -27,22 +19,8 @@ display:
           action_title: Eylem
         subject:
           label: Konu
-          separator: ', '
-        uid:
-          separator: ', '
-        name:
-          label: Author
-          separator: ', '
         entity_id:
           label: 'İlgili konu'
-          separator: ', '
-        changed:
-          label: Updated
-          separator: ', '
-        operations:
-          label: Operations
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:
@@ -50,9 +28,6 @@ display:
         combine:
           expose:
             label: 'Yazar adı'
-        langcode:
-          expose:
-            label: Language
       title: Yorumlar
       empty:
         area_text_custom:
@@ -79,27 +54,10 @@ display:
         combine:
           expose:
             label: 'Yazar Adı'
-        langcode:
-          expose:
-            label: Language
       fields:
         comment_bulk_form:
           action_title: Eylem
         subject:
           label: Konu
-          separator: ', '
-        uid:
-          separator: ', '
-        name:
-          label: Author
-          separator: ', '
         entity_id:
           label: 'İlgili konu'
-          separator: ', '
-        changed:
-          label: Updated
-          separator: ', '
-        operations:
-          label: Operations
-        name_1:
-          separator: ', '

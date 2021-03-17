@@ -1,6 +1,5 @@
 settings:
   default_submit_button_label: Indienen
-  default_reset_button_label: Reset
   default_delete_button_label: Verwijderen
   default_wizard_start_label: Begin
   default_wizard_toggle_show_label: 'Alles weergeven'
@@ -15,5 +14,3 @@ settings:
       title: Breed
 element:
   default_more_title: Meer
-mail:
-  default_from_name: '[site:name]'

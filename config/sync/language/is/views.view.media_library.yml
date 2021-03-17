@@ -10,9 +10,6 @@ display:
           expose:
             items_per_page_label: 'Hlutir per síðu'
             items_per_page_options_all_label: '- Allt -'
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         media_bulk_form:
           action_title: Aðgerð
@@ -39,8 +36,6 @@ display:
       fields:
         media_bulk_form:
           action_title: Aðgerð
-        name:
-          separator: ', '
         edit_media:
           text: Breyta
         delete_media:

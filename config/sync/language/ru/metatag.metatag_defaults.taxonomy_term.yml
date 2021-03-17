@@ -1,4 +1,4 @@
 label: 'Термин таксономии'
 tags:
-  description: '[term:description]'
+  canonical_url: '[current-page:url:absolute]'
   title: '[term:name] | [site:name]'

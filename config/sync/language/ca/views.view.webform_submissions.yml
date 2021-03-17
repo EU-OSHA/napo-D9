@@ -7,13 +7,9 @@ display:
           submit_button: Aplica
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« First'
             last: 'Last »'
           expose:
@@ -21,16 +17,10 @@ display:
             items_per_page_options_all_label: '- Tot -'
             offset_label: Desplaçament
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         created:
           label: Creat
-          separator: ', '
         remote_addr:
           label: 'Adreça IP'
-          separator: ', '
         view_webform_submission:
           label: Operations
           text: mostra
@@ -46,25 +36,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Acció
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Estàtic
-          separator: ', '
         locked:
           label: Bloquejat
-          separator: ', '
         created:
           label: Creat
-          separator: ', '
         completed:
           label: Completat
-          separator: ', '
         remote_addr:
           label: 'Adreça IP'
-          separator: ', '
         operations:
           label: Operations
       filters:
@@ -79,25 +60,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Acció
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Estàtic
-          separator: ', '
         locked:
           label: Bloquejat
-          separator: ', '
         created:
           label: Creat
-          separator: ', '
         completed:
           label: Completat
-          separator: ', '
         remote_addr:
           label: 'Adreça IP'
-          separator: ', '
         view_webform_submission:
           label: Operations
           text: mostra
@@ -114,25 +86,16 @@ display:
   embed_review:
     display_options:
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Estàtic
-          separator: ', '
         locked:
           label: Bloquejat
-          separator: ', '
         created:
           label: Creat
-          separator: ', '
         completed:
           label: Completat
-          separator: ', '
         remote_addr:
           label: 'Adreça IP'
-          separator: ', '
         view_webform_submission:
           label: Operations
           text: mostra

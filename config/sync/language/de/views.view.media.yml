@@ -2,11 +2,9 @@ label: Medien
 description: 'Medien finden und verwalten.'
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
@@ -27,25 +25,18 @@ display:
           action_title: Aktion
         thumbnail__target_id:
           label: Miniaturbild
-          separator: ', '
         name:
           label: Medienname
-          separator: ', '
         bundle:
           label: Typ
-          separator: ', '
         uid:
           label: Author
-          separator: ', '
         status:
-          label: Status
           settings:
             format_custom_true: Published
             format_custom_false: Unpublished
-          separator: ', '
         changed:
           label: Updated
-          separator: ', '
         operations:
           label: Operations
       filters:

@@ -17,14 +17,9 @@ display:
             items_per_page_label: 'Elemek száma oldalanként'
             items_per_page_options_all_label: '– Mind –'
             offset_label: Eltolás
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         nothing:
           admin_label: Ikon
-        wid:
-          label: WID
         severity:
           label: Szint
         type:
@@ -33,11 +28,8 @@ display:
           label: Dátum
         message:
           label: Üzenet
-          alter:
-            alt: '{{ message }}'
         name:
           label: Felhasználó
-          separator: ', '
         link:
           label: Operations
       filters:

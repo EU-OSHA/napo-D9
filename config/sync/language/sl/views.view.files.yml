@@ -1,31 +1,17 @@
 display:
   default:
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
       fields:
         filename:
           label: Ime
-        filemime:
-          label: 'MIME type'
         filesize:
           label: Velikost
-        status:
-          label: Status
         count:
           label: 'Uporabljen v'
       filters:
         filename:
           expose:
             label: 'Ime datoteke'
-        filemime:
-          expose:
-            label: 'MIME type'
-        status:
-          expose:
-            label: Status
   page_2:
     display_options:
       arguments:

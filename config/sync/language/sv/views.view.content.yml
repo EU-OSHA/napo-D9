@@ -1,5 +1,4 @@
 label: Innehåll
-description: 'Find and manage content.'
 display:
   default:
     display_options:
@@ -22,11 +21,9 @@ display:
           label: Title
         type:
           label: 'Content type'
-          separator: ', '
         name:
           label: Author
         status:
-          label: Status
           settings:
             format_custom_true: Published
             format_custom_false: Unpublished
@@ -42,8 +39,6 @@ display:
           expose:
             label: 'Content type'
         status:
-          expose:
-            label: Status
           group_info:
             label: 'Published status'
             group_items:
@@ -55,9 +50,6 @@ display:
           expose:
             label: Language
       title: Innehåll
-      empty:
-        area_text_custom:
-          content: 'No content available.'
     display_title: Master
   page_1:
     display_options:
@@ -65,5 +57,4 @@ display:
         title: Innehåll
       tab_options:
         title: Innehåll
-        description: 'Find and manage content'
     display_title: Page

@@ -2,11 +2,9 @@ label: 'Modereret indhold'
 description: 'Find og moderér indhold.'
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
@@ -25,18 +23,12 @@ display:
       fields:
         title:
           label: Title
-          separator: ', '
         type:
           label: 'Content type'
-          separator: ', '
         name:
           label: Author
-          separator: ', '
-        moderation_state:
-          separator: ', '
         changed:
           label: Updated
-          separator: ', '
         operations:
           label: Operations
       filters:
