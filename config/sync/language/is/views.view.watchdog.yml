@@ -4,9 +4,9 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Sía
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
@@ -30,7 +30,7 @@ display:
           label: Notandi
           separator: ', '
         link:
-          label: Aðgerðir
+          label: Operations
       filters:
         type:
           expose:
@@ -43,4 +43,4 @@ display:
           admin_label: 'Engin kerfisskilaboð fáanleg.'
           content: 'Engin kerfisskilaboð fáanleg.'
   page:
-    display_title: Síða
+    display_title: Page

@@ -2,15 +2,15 @@ label: Reacties
 description: 'Zoek en beheer reacties.'
 display:
   default:
-    display_title: Hoofd
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Filter
           reset_button_label: Reset
-          exposed_sorts_label: 'Sorteren op'
-          sort_asc_label: Oplopend
-          sort_desc_label: Aflopend
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -31,16 +31,16 @@ display:
         uid:
           separator: ', '
         name:
-          label: Auteur
+          label: Author
           separator: ', '
         entity_id:
           label: 'Geplaatst in'
           separator: ', '
         changed:
-          label: Bijgewerkt
+          label: Updated
           separator: ', '
         operations:
-          label: Bewerkingen
+          label: Operations
         name_1:
           separator: ', '
       filters:
@@ -52,7 +52,7 @@ display:
             label: 'Naam auteur'
         langcode:
           expose:
-            label: Taal
+            label: Language
       title: Reacties
       empty:
         area_text_custom:
@@ -81,7 +81,7 @@ display:
             label: Auteursnaam
         langcode:
           expose:
-            label: Taal
+            label: Language
       fields:
         comment_bulk_form:
           action_title: Actie
@@ -91,15 +91,15 @@ display:
         uid:
           separator: ', '
         name:
-          label: Auteur
+          label: Author
           separator: ', '
         entity_id:
           label: 'Geplaatst in'
           separator: ', '
         changed:
-          label: Bijgewerkt
+          label: Updated
           separator: ', '
         operations:
-          label: Bewerkingen
+          label: Operations
         name_1:
           separator: ', '

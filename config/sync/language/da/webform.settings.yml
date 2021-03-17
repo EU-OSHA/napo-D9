@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Indsend
-  default_reset_button_label: Gendan
+  default_reset_button_label: Reset
   default_delete_button_label: Slet
   default_wizard_start_label: Start
   default_wizard_toggle_show_label: 'Vis alle'

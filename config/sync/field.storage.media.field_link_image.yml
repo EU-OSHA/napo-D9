@@ -1,0 +1,23 @@
+uuid: 9c72e482-22fe-4f30-9d7e-f3b113bb6205
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - link
+    - media
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: media.field_link_image
+field_name: field_link_image
+entity_type: media
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

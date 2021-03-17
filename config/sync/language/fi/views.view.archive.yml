@@ -2,14 +2,14 @@ label: Arkisto
 description: 'Kaikki sisältö, kuukausittain lajiteltuna.'
 display:
   default:
-    display_title: Isäntä
+    display_title: Master
     display_options:
       title: Arkisto
       exposed_form:
         options:
           submit_button: Käytä
-          reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -24,4 +24,4 @@ display:
   block_1:
     display_title: Lohko
   page_1:
-    display_title: Sivu
+    display_title: Page

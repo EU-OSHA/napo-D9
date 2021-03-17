@@ -1,21 +1,21 @@
 display:
   default:
-    display_title: Основной
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Применить
-          reset_button_label: Сбросить
-          exposed_sorts_label: 'Сортировать по'
-          sort_asc_label: 'По возрастанию'
-          sort_desc_label: 'По убыванию'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Первая'
-            last: 'Последняя »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Элементов на страницу'
             items_per_page_options_all_label: '- Все -'
@@ -32,7 +32,7 @@ display:
           label: IP-адрес
           separator: ', '
         view_webform_submission:
-          label: Операции
+          label: Operations
           text: представление
       header:
         result:
@@ -66,7 +66,7 @@ display:
           label: IP-адрес
           separator: ', '
         operations:
-          label: Операции
+          label: Operations
       filters:
         sticky:
           expose:
@@ -99,10 +99,10 @@ display:
           label: IP-адрес
           separator: ', '
         view_webform_submission:
-          label: Операции
+          label: Operations
           text: представление
         edit_webform_submission:
-          label: Операции
+          label: Operations
           text: изменить
       filters:
         sticky:
@@ -134,7 +134,7 @@ display:
           label: IP-адрес
           separator: ', '
         view_webform_submission:
-          label: Операции
+          label: Operations
           text: представление
       filters:
         sticky:

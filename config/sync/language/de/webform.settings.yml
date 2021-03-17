@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Absenden
-  default_reset_button_label: Zurücksetzen
+  default_reset_button_label: Reset
   default_delete_button_label: Löschen
   default_wizard_start_label: Beginn
   default_wizard_toggle_show_label: 'Alle anzeigen'

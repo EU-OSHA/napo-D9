@@ -3,15 +3,15 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       fields:
         title:
-          label: Naslov
+          label: Title
         name:
-          label: Avtor
+          label: Author
         changed:
           label: 'Zadnja posodobitev'
   attachment_1:
     display_title: Priponka
   page_1:
-    display_title: Stran
+    display_title: Page

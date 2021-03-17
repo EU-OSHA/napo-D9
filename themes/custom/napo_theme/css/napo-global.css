@@ -91,6 +91,41 @@ body {
   margin-bottom: 0rem;
 }
 
+.ui-accordion .ui-accordion-header {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin-top: 2px;
+  padding: 0.625rem 0.625rem 0.625rem 0.875rem;
+  padding-left: 2.75rem;
+}
+.ui-accordion .ui-accordion-header.ui-state-active {
+  background-color: transparent;
+  color: #1f3695;
+}
+.ui-accordion .ui-accordion-header:focus {
+  outline: none;
+}
+.ui-accordion .ui-accordion-header-collapsed .ui-icon {
+  background: url(/sites/napo/themes/custom/napo_theme/images/accordion-state-default.png) no-repeat 0px 0px;
+}
+.ui-accordion .ui-accordion-header-active .ui-icon {
+  background: url(/sites/napo/themes/custom/napo_theme/images/accordion-state-active.png) no-repeat 0px 0px;
+}
+.ui-accordion .ui-accordion-header .ui-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  width: 27px;
+  height: 44px;
+  left: 100%;
+  transform: translateX(-100%);
+}
+.ui-accordion .ui-accordion-content {
+  padding: 1.25rem 2.75rem;
+  height: auto !important;
+}
+
 /*Headings*/
 h1, h2, label {
   font-family: "Open Sans", sans-serif;
@@ -461,6 +496,17 @@ a[target=_blank]:after {
   display: none;
 }
 
+.block-simple-blockfooter-social {
+  margin: 0 auto;
+}
+.block-simple-blockfooter-social p {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #1f3695;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
 .block-views-blockconsortium-partners-block h2 {
   color: #1f3695;
   font-size: 1.25rem;
@@ -505,19 +551,26 @@ a[target=_blank]:after {
 .block-views-blockconsortium-partners-block .views-col:first-child {
   padding: 0 0.625rem 0 0;
 }
-.block-views-blockconsortium-partners-block .views-collast-child {
+.block-views-blockconsortium-partners-block .views-col:last-child {
   padding: 0 0 0 0.625rem;
 }
 
-.block-simple-blockfooter-social {
-  margin: 0 auto;
-}
-.block-simple-blockfooter-social p {
-  font-size: 1.25rem;
-  text-align: center;
+.block-views-blockfaqs-block .ui-accordion-header {
+  border: none;
+  background: transparent;
+  width: 98%;
   color: #1f3695;
-  margin-bottom: 1rem;
   font-weight: bold;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.block-views-blockfaqs-block .ui-accordion-content {
+  border: none;
+  font-size: 1rem;
+  color: #1f3695;
+}
+.block-views-blockfaqs-block .ui-accordion-content p {
+  padding-left: 2.2rem;
 }
 
 /*# sourceMappingURL=napo-global.css.map */

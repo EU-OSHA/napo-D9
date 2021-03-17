@@ -11,10 +11,10 @@ display:
       exposed_form:
         options:
           submit_button: Zastosuj
-          reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj po'
-          sort_asc_label: Rosnąco
-          sort_desc_label: Malejąco
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -22,12 +22,12 @@ display:
             items_per_page_options_all_label: '- Wszystko -'
             offset_label: Przesunięcie
           tags:
-            previous: '‹ Poprzednia'
-            next: 'Następna ›'
-            first: '« Pierwsza'
-            last: 'Ostatnia »'
-    display_title: Główny
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+    display_title: Master
   feed_1:
     display_title: Zasób
   page_1:
-    display_title: Strona
+    display_title: Page

@@ -9,9 +9,9 @@ display:
       exposed_form:
         options:
           submit_button: Aplicare
-          reset_button_label: Resetează
-          exposed_sorts_label: 'Sortare după'
-          sort_asc_label: Ascendent
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
@@ -20,12 +20,12 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
           tags:
-            previous: '‹ Anterior'
-            next: 'Următor ›'
-            first: '« Primul'
-            last: 'Ultimul »'
-    display_title: Expert
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+    display_title: Master
   feed_1:
     display_title: Flux
   page_1:
-    display_title: Pagina
+    display_title: Page

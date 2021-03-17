@@ -1,20 +1,20 @@
 label: 'Kustomoitujen lohkojen kirjasto'
 display:
   default:
-    display_title: Isäntä
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Käytä
-          reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Edellinen'
-            next: 'Seuraava ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
@@ -27,9 +27,9 @@ display:
           label: 'Lohkon tyyppi'
           separator: ', '
         changed:
-          label: Päivitetty
+          label: Updated
         operations:
-          label: Toimenpiteet
+          label: Operations
       filters:
         info:
           expose:
@@ -39,7 +39,7 @@ display:
             label: 'Lohkon tyyppi'
       title: 'Kustomoitujen lohkojen kirjasto'
   page_1:
-    display_title: Sivu
+    display_title: Page
     display_options:
       menu:
         title: 'Kustomoitujen lohkojen kirjasto'

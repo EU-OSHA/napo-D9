@@ -4,8 +4,8 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Филтър
-          reset_button_label: Рестартирай
+          submit_button: Filter
+          reset_button_label: Reset
       pager:
         options:
           tags:
@@ -19,20 +19,20 @@ display:
         subject:
           label: Тема
         name:
-          label: Автор
+          label: Author
         entity_id:
           label: 'Публикуван в'
         changed:
-          label: Обновено
+          label: Updated
         operations:
-          label: Действия
+          label: Operations
       filters:
         subject:
           expose:
             label: Тема
         langcode:
           expose:
-            label: Език
+            label: Language
       title: Коментари
       empty:
         area_text_custom:
@@ -51,17 +51,17 @@ display:
             label: Тема
         langcode:
           expose:
-            label: Език
+            label: Language
       fields:
         comment_bulk_form:
           action_title: Действие
         subject:
           label: Тема
         name:
-          label: Автор
+          label: Author
         entity_id:
           label: 'Публикуван в'
         changed:
-          label: Обновено
+          label: Updated
         operations:
-          label: Действия
+          label: Operations

@@ -3,26 +3,26 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Филтър
-          reset_button_label: Рестартирай
+          submit_button: Filter
+          reset_button_label: Reset
       fields:
         title:
-          label: Заглавие
+          label: Title
         type:
-          label: 'Тип на съдържанието'
+          label: 'Content type'
         name:
-          label: Автор
+          label: Author
         changed:
-          label: Обновено
+          label: Updated
         operations:
-          label: Действия
+          label: Operations
       filters:
         title:
           expose:
-            label: Заглавие
+            label: Title
         type:
           expose:
-            label: 'Тип на съдържанието'
+            label: 'Content type'
         langcode:
           expose:
-            label: Език
+            label: Language

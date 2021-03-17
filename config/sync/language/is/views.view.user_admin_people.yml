@@ -4,13 +4,13 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Sía
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           tags:
-            previous: '< Fyrri'
+            previous: '‹ Previous'
           expose:
             items_per_page_label: 'Hlutir per síðu'
             items_per_page_options_all_label: '- Allt -'
@@ -18,7 +18,7 @@ display:
         name:
           label: Notendanafn
         status:
-          label: Staða
+          label: Status
           settings:
             format_custom_true: Virkt
         roles_target_id:
@@ -26,13 +26,13 @@ display:
         created:
           label: 'Meðlimur í'
         operations:
-          label: Aðgerðir
+          label: Operations
         mail:
           separator: ', '
       filters:
         status:
           group_info:
-            label: Staða
+            label: Status
             group_items:
               1:
                 title: Virkt
@@ -45,7 +45,7 @@ display:
       title: Notendur
       use_more_text: meira
   page_1:
-    display_title: Síða
+    display_title: Page
     display_options:
       menu:
         title: Listi

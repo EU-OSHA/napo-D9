@@ -5,7 +5,7 @@ display:
       exposed_form:
         options:
           submit_button: Търси
-          reset_button_label: Рестартирай
+          reset_button_label: Reset
       title: 'Последно съдържание'
       use_more_text: още...
   block_1:

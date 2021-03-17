@@ -5,9 +5,9 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filtruoti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
@@ -25,7 +25,7 @@ display:
         name:
           label: Narys
         link:
-          label: Veiksmai
+          label: Operations
       filters:
         type:
           expose:
@@ -39,4 +39,4 @@ display:
           admin_label: 'Nėra įrašų'
           content: 'Nėra įrašų'
   page:
-    display_title: Puslapis
+    display_title: Page

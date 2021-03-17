@@ -3,8 +3,8 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
@@ -16,18 +16,18 @@ display:
       filters:
         status:
           group_info:
-            label: Paskelbtas
+            label: Published
             group_items:
               1:
-                title: Paskelbtas
+                title: Published
               2:
-                title: Nepaskelbtas
+                title: Unpublished
         name:
           expose:
             label: Pavadinimas
         langcode:
           expose:
-            label: Kalba
+            label: Language
       sorts:
         created:
           expose:
@@ -37,7 +37,7 @@ display:
         area_text_custom:
           content: 'Nėra galimos media.'
   page:
-    display_title: Puslapis
+    display_title: Page
     display_options:
       fields:
         media_bulk_form:
@@ -70,9 +70,9 @@ display:
         name:
           label: Pavadinimas
         uid:
-          label: Autorius
+          label: Author
         changed:
-          label: Atnaujinta
+          label: Updated
       filters:
         name:
           expose:

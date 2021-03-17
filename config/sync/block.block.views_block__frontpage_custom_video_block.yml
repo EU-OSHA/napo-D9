@@ -18,7 +18,7 @@ settings:
   id: 'views_block:frontpage_custom_video-block'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility: {  }

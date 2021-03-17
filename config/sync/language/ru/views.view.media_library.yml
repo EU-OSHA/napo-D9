@@ -2,15 +2,15 @@ label: Медиа-библиотека
 description: 'Найти и управлять медиа.'
 display:
   default:
-    display_title: Основной
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: 'Применить фильтры'
-          reset_button_label: Сбросить
-          exposed_sorts_label: 'Сортировать по'
-          sort_asc_label: 'По возрастанию'
-          sort_desc_label: 'По убыванию'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -28,12 +28,12 @@ display:
           expose:
             label: 'Статус публикации'
           group_info:
-            label: Опубликовано
+            label: Published
             group_items:
               1:
-                title: Опубликовано
+                title: Published
               2:
-                title: 'Снято с публикации'
+                title: Unpublished
         name:
           expose:
             label: Название
@@ -44,7 +44,7 @@ display:
             label: 'Тип медиа'
         langcode:
           expose:
-            label: Язык
+            label: Language
       sorts:
         created:
           expose:
@@ -60,7 +60,7 @@ display:
         area_text_custom:
           content: 'Мультимедийных файлов не найдено.'
   page:
-    display_title: Страница
+    display_title: Page
     display_options:
       fields:
         media_bulk_form:
@@ -102,9 +102,9 @@ display:
         name:
           label: Название
         uid:
-          label: Автор
+          label: Author
         changed:
-          label: Обновлено
+          label: Updated
       filters:
         name:
           expose:

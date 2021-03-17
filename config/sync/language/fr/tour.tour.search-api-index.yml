@@ -2,7 +2,7 @@ tips:
   search-api-index-index-status:
     label: 'Statut de l''index'
   search-api-index-status:
-    label: État
+    label: Status
   search-api-index-tracker:
     label: Suivi
   search-api-index-server:

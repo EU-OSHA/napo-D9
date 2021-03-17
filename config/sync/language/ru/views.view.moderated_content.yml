@@ -2,57 +2,57 @@ label: 'Модерируемые материалы'
 description: 'Найти и модерировать контент.'
 display:
   default:
-    display_title: Основной
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Фильтр
-          reset_button_label: Сбросить
-          exposed_sorts_label: 'Сортировать по'
-          sort_asc_label: 'По возрастанию'
-          sort_desc_label: 'По убыванию'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Предыдущий'
-            next: 'Следующий ›'
-            first: '« Первая'
-            last: 'Последняя »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Элементов на страницу'
             items_per_page_options_all_label: '- Все -'
             offset_label: Пропустить
       fields:
         title:
-          label: Заголовок
+          label: Title
           separator: ', '
         type:
-          label: 'Тип материала'
+          label: 'Content type'
           separator: ', '
         name:
-          label: Автор
+          label: Author
           separator: ', '
         moderation_state:
           label: 'Состояние модерации'
           separator: ', '
         changed:
-          label: Обновлено
+          label: Updated
           separator: ', '
         operations:
-          label: Операции
+          label: Operations
       filters:
         title:
           expose:
-            label: Заголовок
+            label: Title
         type:
           expose:
-            label: 'Тип материала'
+            label: 'Content type'
         moderation_state:
           expose:
             label: 'Состояние модерации'
         langcode:
           expose:
-            label: Язык
+            label: Language
       title: 'Модерируемые материалы'
       empty:
         area_text_custom:

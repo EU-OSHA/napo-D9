@@ -1,15 +1,15 @@
 label: Commenti
 display:
   default:
-    display_title: Principale
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtra
-          reset_button_label: Ripristina
-          exposed_sorts_label: 'Ordina per'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
-          sort_desc_label: Disc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -30,16 +30,16 @@ display:
         uid:
           separator: ', '
         name:
-          label: Autore
+          label: Author
           separator: ', '
         entity_id:
           label: 'Inserito in'
           separator: ', '
         changed:
-          label: Aggiornato
+          label: Updated
           separator: ', '
         operations:
-          label: Operazioni
+          label: Operations
         name_1:
           separator: ', '
       filters:
@@ -51,7 +51,7 @@ display:
             label: 'Nome dell''autore'
         langcode:
           expose:
-            label: Lingua
+            label: Language
       title: Commenti
       empty:
         area_text_custom:
@@ -76,7 +76,7 @@ display:
             label: 'Nome dell''autore'
         langcode:
           expose:
-            label: Lingua
+            label: Language
       fields:
         comment_bulk_form:
           action_title: Azione
@@ -86,15 +86,15 @@ display:
         uid:
           separator: ', '
         name:
-          label: Autore
+          label: Author
           separator: ', '
         entity_id:
           label: 'Inserito in'
           separator: ', '
         changed:
-          label: Aggiornato
+          label: Updated
           separator: ', '
         operations:
-          label: Operazioni
+          label: Operations
         name_1:
           separator: ', '

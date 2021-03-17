@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Invia
-  default_reset_button_label: Ripristina
+  default_reset_button_label: Reset
   default_delete_button_label: Elimina
   default_wizard_start_label: Inizio
   default_wizard_toggle_show_label: 'Mostra tutti'

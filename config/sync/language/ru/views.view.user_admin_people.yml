@@ -2,22 +2,22 @@ label: Пользователи
 description: 'Поиск и управление людьми, взаимодействующих с вашим сайтом.'
 display:
   default:
-    display_title: Основной
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Фильтр
-          reset_button_label: Сбросить
-          exposed_sorts_label: 'Сортировать по'
-          sort_asc_label: 'По возрастанию'
-          sort_desc_label: 'По убыванию'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Предыдущий'
-            next: 'Следующий ›'
-            first: '« Первая'
-            last: 'Последняя »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Элементов на страницу'
             items_per_page_options_all_label: '- Все -'
@@ -28,7 +28,7 @@ display:
         name:
           label: 'Имя пользователя'
         status:
-          label: Статус
+          label: Status
           settings:
             format_custom_true: Активно
             format_custom_false: Заблокировано
@@ -39,7 +39,7 @@ display:
         access:
           label: 'Последнее посещение'
         operations:
-          label: Операции
+          label: Operations
         mail:
           separator: ', '
       filters:
@@ -48,7 +48,7 @@ display:
             label: 'Имя или email содержит'
         status:
           group_info:
-            label: Статус
+            label: Status
             group_items:
               1:
                 title: Активно
@@ -66,7 +66,7 @@ display:
           content: 'Нет доступных людей.'
       use_more_text: ещё
   page_1:
-    display_title: Страница
+    display_title: Page
     display_options:
       menu:
         title: Список

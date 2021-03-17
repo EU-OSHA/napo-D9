@@ -1,12 +1,12 @@
 display:
   default:
-    display_title: Isäntä
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Käytä
-          reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -14,8 +14,8 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Ensimmäinen'
-            last: 'Viimeinen »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
@@ -32,7 +32,7 @@ display:
           label: 'IP osoite'
           separator: ', '
         view_webform_submission:
-          label: Toimenpiteet
+          label: Operations
           text: näkymä
       arguments:
         in_draft:
@@ -63,7 +63,7 @@ display:
           label: 'IP osoite'
           separator: ', '
         operations:
-          label: Toimenpiteet
+          label: Operations
       filters:
         sticky:
           expose:
@@ -96,10 +96,10 @@ display:
           label: 'IP osoite'
           separator: ', '
         view_webform_submission:
-          label: Toimenpiteet
+          label: Operations
           text: näkymä
         edit_webform_submission:
-          label: Toimenpiteet
+          label: Operations
           text: muokkaa
       filters:
         sticky:
@@ -131,7 +131,7 @@ display:
           label: 'IP osoite'
           separator: ', '
         view_webform_submission:
-          label: Toimenpiteet
+          label: Operations
           text: näkymä
       filters:
         sticky:

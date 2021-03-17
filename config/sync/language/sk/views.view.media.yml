@@ -6,9 +6,9 @@ display:
         options:
           submit_button: Filter
           reset_button_label: Reset
-          exposed_sorts_label: 'Zoradiť podľa'
-          sort_asc_label: Vzostupne
-          sort_desc_label: Zostupne
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -16,10 +16,10 @@ display:
             items_per_page_options_all_label: '- Všetko -'
             offset_label: 'Zobraziť od'
           tags:
-            previous: '‹ Predchádzajúci'
-            next: Ďalej
-            first: '« Prvý'
-            last: Koniec
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Akcia
@@ -33,19 +33,19 @@ display:
           label: Typ
           separator: ', '
         uid:
-          label: Autor
+          label: Author
           separator: ', '
         status:
-          label: Stav
+          label: Status
           settings:
-            format_custom_true: Zverejnené
-            format_custom_false: Nezverejnené
+            format_custom_true: Published
+            format_custom_false: Unpublished
           separator: ', '
         changed:
-          label: Aktualizované
+          label: Updated
           separator: ', '
         operations:
-          label: Operácie
+          label: Operations
       filters:
         name:
           expose:
@@ -57,15 +57,15 @@ display:
           expose:
             label: Pravda
           group_info:
-            label: 'Stav zverejnenia'
+            label: 'Published status'
             group_items:
               1:
-                title: Zverejnené
+                title: Published
               2:
-                title: Nezverejnené
+                title: Unpublished
         langcode:
           expose:
-            label: Jazyk
+            label: Language
       title: Médiá
       empty:
         area_text_custom:

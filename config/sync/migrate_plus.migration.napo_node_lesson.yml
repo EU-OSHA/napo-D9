@@ -20,22 +20,14 @@ process:
     -
       plugin: get
       source: nid
-  vid:
-    -
-      plugin: get
-      source: vid
   type:
     -
       plugin: default_value
-      default_value: lesson
+      default_value: lesson_resources
   title:
     -
       plugin: get
       source: title
-  langcode:
-    plugin: default_value
-    source: language
-    default_value: en
   body:
     -
       plugin: get
@@ -56,12 +48,10 @@ process:
     -
       plugin: get
       source: created
-  changed: changed
-  promote: promote
-  sticky: sticky
-  revision_uid: revision_uid
-  revision_log: log
-  revision_timestamp: timestamp
+  changed:
+    -
+      plugin: get
+      source: changed
   field_lesson_type:
     -
       plugin: sub_process

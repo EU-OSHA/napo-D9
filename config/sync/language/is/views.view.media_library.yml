@@ -3,8 +3,8 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
@@ -21,20 +21,20 @@ display:
           expose:
             label: Birtingarstaða
           group_info:
-            label: Birt
+            label: Published
             group_items:
               1:
-                title: Birt
+                title: Published
               2:
-                title: 'Ekki birt'
+                title: Unpublished
         name:
           expose:
             label: Nafn
         langcode:
           expose:
-            label: Tungumál
+            label: Language
   page:
-    display_title: Síða
+    display_title: Page
     display_options:
       fields:
         media_bulk_form:
@@ -68,9 +68,9 @@ display:
         name:
           label: Nafn
         uid:
-          label: Höfundur
+          label: Author
         changed:
-          label: Uppfært
+          label: Updated
       filters:
         name:
           expose:

@@ -4,25 +4,25 @@ display:
       exposed_form:
         options:
           submit_button: Filter
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       fields:
         title:
-          label: Naslov
+          label: Title
         type:
-          label: 'Tip vsebine'
+          label: 'Content type'
         name:
-          label: Avtor
+          label: Author
         changed:
-          label: Posodobljeno
+          label: Updated
         operations:
-          label: Operacije
+          label: Operations
       filters:
         title:
           expose:
-            label: Naslov
+            label: Title
         type:
           expose:
-            label: 'Tip vsebine'
+            label: 'Content type'
         langcode:
           expose:
-            label: Jezik
+            label: Language

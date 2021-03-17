@@ -2,13 +2,13 @@ label: Glosario
 description: 'Todo el contenido, alfabéticamente.'
 display:
   default:
-    display_title: Máster
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Aplicar
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -22,15 +22,15 @@ display:
             next: ››
       fields:
         title:
-          label: Título
+          label: Title
         name:
-          label: Autor
+          label: Author
         changed:
           label: 'Última actualización'
   attachment_1:
     display_title: Adjunto
   page_1:
-    display_title: Página
+    display_title: Page
     display_options:
       menu:
         title: Glosario

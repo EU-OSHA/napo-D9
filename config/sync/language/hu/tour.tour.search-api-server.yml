@@ -1,6 +1,6 @@
 tips:
   search-api-server-status:
-    label: Állapot
+    label: Status
   search-api-server-backend:
     label: 'Háttérrendszer osztály'
   search-api-server-indexes:

@@ -1,12 +1,12 @@
 display:
   default:
-    display_title: Maître
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Appliquer
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -14,8 +14,8 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Premier'
-            last: 'Dernier »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Éléments par page'
             items_per_page_options_all_label: '- Tout -'
@@ -32,7 +32,7 @@ display:
           label: 'Adresse IP'
           separator: ', '
         view_webform_submission:
-          label: Actions
+          label: Operations
           text: voir
       header:
         result:
@@ -66,7 +66,7 @@ display:
           label: 'Adresse IP'
           separator: ', '
         operations:
-          label: Actions
+          label: Operations
       filters:
         sticky:
           expose:
@@ -99,10 +99,10 @@ display:
           label: 'Adresse IP'
           separator: ', '
         view_webform_submission:
-          label: Actions
+          label: Operations
           text: voir
         edit_webform_submission:
-          label: Actions
+          label: Operations
           text: modifier
       filters:
         sticky:
@@ -134,7 +134,7 @@ display:
           label: 'Adresse IP'
           separator: ', '
         view_webform_submission:
-          label: Actions
+          label: Operations
           text: voir
       filters:
         sticky:

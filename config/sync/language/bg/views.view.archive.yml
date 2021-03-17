@@ -4,8 +4,8 @@ display:
       exposed_form:
         options:
           submit_button: Търси
-          reset_button_label: Рестартирай
+          reset_button_label: Reset
   block_1:
     display_title: Блокирай
   page_1:
-    display_title: Страница
+    display_title: Page

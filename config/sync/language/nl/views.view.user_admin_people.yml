@@ -2,22 +2,22 @@ label: Personen
 description: 'Vind en beheer personen die gebruik maken van de website.'
 display:
   default:
-    display_title: Hoofd
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Filter
           reset_button_label: Reset
-          exposed_sorts_label: 'Sorteren op'
-          sort_asc_label: Oplopend
-          sort_desc_label: Aflopend
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Vorige'
-            next: 'Volgende ›'
-            first: '« Eerste'
-            last: 'Laatste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Items per pagina'
             items_per_page_options_all_label: '- Alle -'
@@ -39,7 +39,7 @@ display:
         access:
           label: 'Laatste toegang'
         operations:
-          label: Bewerkingen
+          label: Operations
         mail:
           separator: ', '
       filters:
@@ -66,7 +66,7 @@ display:
           content: 'Geen personen beschikbaar.'
       use_more_text: meer
   page_1:
-    display_title: Pagina
+    display_title: Page
     display_options:
       menu:
         title: Lijst

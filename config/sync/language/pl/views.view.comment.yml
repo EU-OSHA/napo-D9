@@ -2,15 +2,15 @@ label: Komentarze
 description: 'Znajdź komentarze i zarządzaj nimi.'
 display:
   default:
-    display_title: Główny
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtr
-          reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj po'
-          sort_asc_label: Rosnąco
-          sort_desc_label: Malejąco
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -31,16 +31,16 @@ display:
         uid:
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         entity_id:
           label: 'Odpowiedź do'
           separator: ', '
         changed:
-          label: Uaktualniono
+          label: Updated
           separator: ', '
         operations:
-          label: Operacje
+          label: Operations
         name_1:
           separator: ', '
       filters:
@@ -52,7 +52,7 @@ display:
             label: 'Nazwa autora'
         langcode:
           expose:
-            label: Język
+            label: Language
       title: Komentarze
       empty:
         area_text_custom:
@@ -81,7 +81,7 @@ display:
             label: 'Nazwa Autora'
         langcode:
           expose:
-            label: Język
+            label: Language
       fields:
         comment_bulk_form:
           action_title: Akcja
@@ -91,15 +91,15 @@ display:
         uid:
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         entity_id:
           label: 'Odpowiedź do'
           separator: ', '
         changed:
-          label: Uaktualniono
+          label: Updated
           separator: ', '
         operations:
-          label: Operacje
+          label: Operations
         name_1:
           separator: ', '

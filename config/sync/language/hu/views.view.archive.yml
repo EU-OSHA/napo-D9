@@ -2,16 +2,16 @@ label: Archiválás
 description: 'Minden tartalom, hónaponként csoportosítva.'
 display:
   default:
-    display_title: Mester
+    display_title: Master
     display_options:
       title: 'Havi archívum'
       exposed_form:
         options:
           submit_button: Alkalmaz
-          reset_button_label: Alaphelyzet
-          exposed_sorts_label: Rendezés
-          sort_asc_label: Növekvő
-          sort_desc_label: Csökkenő
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -31,4 +31,4 @@ display:
         created_year_month:
           title: '{{ arguments.created_year_month }}'
   page_1:
-    display_title: Oldal
+    display_title: Page
