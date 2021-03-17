@@ -1,0 +1,21 @@
+.block-views-blockfaqs-block{
+  .ui-accordion{
+    &-header{
+      border: none;
+      background: transparent;
+      width:98%;
+      color: $text-color-blue;
+      font-weight: bold;
+      font-size: 17px;
+      text-transform: uppercase;
+    }
+    &-content{
+      border:none;
+      font-size: 1rem;
+      color: $text-color-blue;
+      p{
+        padding-left: 2.2rem;
+      }
+    }
+  }
+}
