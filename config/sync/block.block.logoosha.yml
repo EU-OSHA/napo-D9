@@ -1,0 +1,25 @@
+uuid: 08c15546-cca7-430b-9e64-2b9966e752ad
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_image:c8303207-9877-41a1-a10d-cb6c653b037e'
+  module:
+    - block_content
+  theme:
+    - napo_theme
+id: logoosha
+theme: napo_theme
+region: header_logo
+weight: 0
+provider: null
+plugin: 'block_content:c8303207-9877-41a1-a10d-cb6c653b037e'
+settings:
+  id: 'block_content:c8303207-9877-41a1-a10d-cb6c653b037e'
+  label: 'Logo OSHA'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
