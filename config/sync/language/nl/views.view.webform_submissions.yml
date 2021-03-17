@@ -1,21 +1,21 @@
 display:
   default:
-    display_title: Hoofd
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Toepassen
           reset_button_label: Reset
-          exposed_sorts_label: 'Sorteren op'
-          sort_asc_label: Oplopend
-          sort_desc_label: Aflopend
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Eerste'
-            last: 'Laatste »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Items per pagina'
             items_per_page_options_all_label: '- Alle -'
@@ -32,7 +32,7 @@ display:
           label: IP-adres
           separator: ', '
         view_webform_submission:
-          label: Bewerkingen
+          label: Operations
           text: weergeven
       header:
         result:
@@ -66,7 +66,7 @@ display:
           label: IP-adres
           separator: ', '
         operations:
-          label: Bewerkingen
+          label: Operations
       filters:
         sticky:
           expose:
@@ -99,10 +99,10 @@ display:
           label: IP-adres
           separator: ', '
         view_webform_submission:
-          label: Bewerkingen
+          label: Operations
           text: weergeven
         edit_webform_submission:
-          label: Bewerkingen
+          label: Operations
           text: bewerken
       filters:
         sticky:
@@ -134,7 +134,7 @@ display:
           label: IP-adres
           separator: ', '
         view_webform_submission:
-          label: Bewerkingen
+          label: Operations
           text: weergeven
       filters:
         sticky:

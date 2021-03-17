@@ -1,21 +1,21 @@
 display:
   default:
-    display_title: Nadřízené
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Použít
           reset_button_label: Reset
-          exposed_sorts_label: 'Řadit dle'
-          sort_asc_label: Vzestupně
-          sort_desc_label: Sestupně
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
             previous: ‹‹
             next: ››
-            first: '« První'
-            last: 'Poslední »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Položek na stránku'
             items_per_page_options_all_label: '- Vše -'
@@ -32,7 +32,7 @@ display:
           label: 'IP adresa'
           separator: ', '
         view_webform_submission:
-          label: Operace
+          label: Operations
           text: zobrazit
       arguments:
         in_draft:
@@ -63,7 +63,7 @@ display:
           label: 'IP adresa'
           separator: ', '
         operations:
-          label: Operace
+          label: Operations
       filters:
         sticky:
           expose:
@@ -96,10 +96,10 @@ display:
           label: 'IP adresa'
           separator: ', '
         view_webform_submission:
-          label: Operace
+          label: Operations
           text: zobrazit
         edit_webform_submission:
-          label: Operace
+          label: Operations
           text: upravit
       filters:
         sticky:
@@ -131,7 +131,7 @@ display:
           label: 'IP adresa'
           separator: ', '
         view_webform_submission:
-          label: Operace
+          label: Operations
           text: zobrazit
       filters:
         sticky:

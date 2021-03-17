@@ -2,13 +2,13 @@ label: Média
 description: 'Trouver et gérer des media.'
 display:
   default:
-    display_title: Maître
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtrer
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -18,10 +18,10 @@ display:
             items_per_page_options_all_label: '- Tout -'
             offset_label: Décalage
           tags:
-            previous: '‹ Précédent'
-            next: 'Suivant ›'
-            first: '« Premier'
-            last: 'Dernier »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Action
@@ -35,19 +35,19 @@ display:
           label: Type
           separator: ', '
         uid:
-          label: Auteur
+          label: Author
           separator: ', '
         status:
-          label: État
+          label: Status
           settings:
-            format_custom_true: Publié
-            format_custom_false: 'Non publié'
+            format_custom_true: Published
+            format_custom_false: Unpublished
           separator: ', '
         changed:
-          label: 'Mis à jour'
+          label: Updated
           separator: ', '
         operations:
-          label: Actions
+          label: Operations
       filters:
         name:
           expose:
@@ -59,15 +59,15 @@ display:
           expose:
             label: Vrai
           group_info:
-            label: 'Statut de publication'
+            label: 'Published status'
             group_items:
               1:
-                title: Publié
+                title: Published
               2:
-                title: 'Non publié'
+                title: Unpublished
         langcode:
           expose:
-            label: Langue
+            label: Language
       title: Média
       empty:
         area_text_custom:

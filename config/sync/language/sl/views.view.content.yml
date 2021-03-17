@@ -1,0 +1,51 @@
+label: Vsebine
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+      fields:
+        title:
+          label: Title
+        type:
+          label: 'Content type'
+        name:
+          label: Author
+        status:
+          label: Status
+          settings:
+            format_custom_true: Published
+        changed:
+          label: Updated
+        operations:
+          label: Operations
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: 'Content type'
+        status:
+          expose:
+            label: Status
+          group_info:
+            group_items:
+              1:
+                title: Published
+        langcode:
+          expose:
+            label: Language
+      title: Vsebine
+      empty:
+        area_text_custom:
+          content: 'No content available.'
+  page_1:
+    display_options:
+      menu:
+        title: Vsebine
+      tab_options:
+        title: Vsebine
+    display_title: Page

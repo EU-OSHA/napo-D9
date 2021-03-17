@@ -1,15 +1,15 @@
 label: Medya
 display:
   default:
-    display_title: 'Ana (master)'
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Süzgeç
-          reset_button_label: Sıfırla
-          exposed_sorts_label: 'Sıralama anahtarı'
-          sort_asc_label: Artan
-          sort_desc_label: Azalan
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -17,10 +17,10 @@ display:
             items_per_page_options_all_label: '- Tümü -'
             offset_label: 'Başlangıç değeri'
           tags:
-            previous: '‹ Önceki'
-            next: 'Sonraki ›'
-            first: '« İlk'
-            last: 'Son »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Eylem
@@ -34,19 +34,19 @@ display:
           label: Tip
           separator: ', '
         uid:
-          label: Yazar
+          label: Author
           separator: ', '
         status:
-          label: Durum
+          label: Status
           settings:
-            format_custom_true: Yayında
-            format_custom_false: 'Yayında değil'
+            format_custom_true: Published
+            format_custom_false: Unpublished
           separator: ', '
         changed:
-          label: Güncellendi
+          label: Updated
           separator: ', '
         operations:
-          label: İşlemler
+          label: Operations
       filters:
         name:
           expose:
@@ -58,15 +58,15 @@ display:
           expose:
             label: Doğru
           group_info:
-            label: 'Yayın durumu'
+            label: 'Published status'
             group_items:
               1:
-                title: Yayında
+                title: Published
               2:
-                title: 'Yayında değil'
+                title: Unpublished
         langcode:
           expose:
-            label: Dil
+            label: Language
       title: Medya
   media_page_list:
     display_title: Medya

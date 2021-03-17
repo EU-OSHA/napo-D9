@@ -2,13 +2,13 @@ label: Vahtikoira
 description: 'Viimeisimmät lokimerkinnät'
 display:
   default:
-    display_title: Isäntä
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Suodatus
-          reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -37,7 +37,7 @@ display:
           label: Käyttäjä
           separator: ', '
         link:
-          label: Toimenpiteet
+          label: Operations
       filters:
         type:
           expose:
@@ -51,4 +51,4 @@ display:
           admin_label: 'Yhtään lokimerkintää ei ole saatavilla.'
           content: 'Yhtään lokimerkintää ei ole saatavilla.'
   page:
-    display_title: Sivu
+    display_title: Page

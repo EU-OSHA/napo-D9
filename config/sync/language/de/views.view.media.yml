@@ -7,10 +7,10 @@ display:
       exposed_form:
         options:
           submit_button: Filter
-          reset_button_label: Zurücksetzen
-          exposed_sorts_label: 'Sortieren nach'
-          sort_asc_label: Aufsteigend
-          sort_desc_label: Absteigend
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -18,10 +18,10 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset_label: Versatz
           tags:
-            previous: '‹ Vorherige Seite'
-            next: 'Nächste Seite ›'
-            first: '« Anfang'
-            last: 'Ende »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Aktion
@@ -35,19 +35,19 @@ display:
           label: Typ
           separator: ', '
         uid:
-          label: Autor
+          label: Author
           separator: ', '
         status:
           label: Status
           settings:
-            format_custom_true: Veröffentlicht
-            format_custom_false: 'Nicht veröffentlicht'
+            format_custom_true: Published
+            format_custom_false: Unpublished
           separator: ', '
         changed:
-          label: Aktualisiert
+          label: Updated
           separator: ', '
         operations:
-          label: Aktionen
+          label: Operations
       filters:
         name:
           expose:
@@ -59,15 +59,15 @@ display:
           expose:
             label: Wahr
           group_info:
-            label: Veröffentlichungsstatus
+            label: 'Published status'
             group_items:
               1:
-                title: Veröffentlicht
+                title: Published
               2:
-                title: 'Nicht veröffentlicht'
+                title: Unpublished
         langcode:
           expose:
-            label: Sprache
+            label: Language
       title: Medien
       empty:
         area_text_custom:

@@ -1,13 +1,13 @@
 label: Multimèdia
 display:
   default:
-    display_title: Mestre
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtra
-          reset_button_label: Reinicialitza
-          exposed_sorts_label: 'Ordena per'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -17,10 +17,10 @@ display:
             items_per_page_options_all_label: '- Tot -'
             offset_label: Desplaçament
           tags:
-            previous: '‹ Anterior'
-            next: 'Següent ›'
-            first: '« Primer'
-            last: 'Últim »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Acció
@@ -33,19 +33,19 @@ display:
           label: Tipus
           separator: ', '
         uid:
-          label: Autor
+          label: Author
           separator: ', '
         status:
-          label: Estat
+          label: Status
           settings:
-            format_custom_true: Publicat
-            format_custom_false: 'Sense publicar'
+            format_custom_true: Published
+            format_custom_false: Unpublished
           separator: ', '
         changed:
-          label: Actualitzat
+          label: Updated
           separator: ', '
         operations:
-          label: Operacions
+          label: Operations
       filters:
         bundle:
           expose:
@@ -54,15 +54,15 @@ display:
           expose:
             label: Cert
           group_info:
-            label: 'Estat de publicació'
+            label: 'Published status'
             group_items:
               1:
-                title: Publicat
+                title: Published
               2:
-                title: 'Sense publicar'
+                title: Unpublished
         langcode:
           expose:
-            label: Llengua
+            label: Language
       title: Multimèdia
       empty:
         area_text_custom:

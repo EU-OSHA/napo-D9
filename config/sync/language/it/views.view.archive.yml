@@ -2,16 +2,16 @@ label: Archivio
 description: 'Tutti i contenuti, per mese.'
 display:
   default:
-    display_title: Principale
+    display_title: Master
     display_options:
       title: 'Archivio mensile'
       exposed_form:
         options:
           submit_button: Applica
-          reset_button_label: Ripristina
-          exposed_sorts_label: 'Ordina per'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
-          sort_desc_label: Disc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -24,4 +24,4 @@ display:
   block_1:
     display_title: Blocco
   page_1:
-    display_title: Pagina
+    display_title: Page

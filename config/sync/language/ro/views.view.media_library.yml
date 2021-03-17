@@ -1,12 +1,12 @@
 display:
   default:
-    display_title: Expert
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          reset_button_label: Resetează
-          exposed_sorts_label: 'Sortare după'
-          sort_asc_label: Ascendent
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
@@ -25,25 +25,25 @@ display:
           expose:
             label: 'Statusul publicării'
           group_info:
-            label: Publicat
+            label: Published
             group_items:
               1:
-                title: Publicat
+                title: Published
               2:
-                title: Nepublicat
+                title: Unpublished
         name:
           expose:
             label: Nume
         langcode:
           expose:
-            label: Limba
+            label: Language
       sorts:
         created:
           expose:
             label: 'Cele noi primele'
       title: Media
   page:
-    display_title: Pagina
+    display_title: Page
     display_options:
       fields:
         media_bulk_form:
@@ -78,9 +78,9 @@ display:
         name:
           label: Nume
         uid:
-          label: Autor
+          label: Author
         changed:
-          label: Actualizat
+          label: Updated
       filters:
         name:
           expose:

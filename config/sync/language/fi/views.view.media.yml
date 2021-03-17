@@ -1,13 +1,13 @@
 label: Media
 display:
   default:
-    display_title: Isäntä
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Suodatus
-          reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -17,10 +17,10 @@ display:
             items_per_page_options_all_label: '- Kaikki -'
             offset_label: Offset
           tags:
-            previous: '‹ Edellinen'
-            next: 'Seuraava ›'
-            first: '« Ensimmäinen'
-            last: 'Viimeinen »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Toiminto
@@ -33,19 +33,19 @@ display:
           label: Tyyppi
           separator: ', '
         uid:
-          label: Tekijä
+          label: Author
           separator: ', '
         status:
-          label: Tila
+          label: Status
           settings:
-            format_custom_true: Julkaistu
-            format_custom_false: Julkaisematon
+            format_custom_true: Published
+            format_custom_false: Unpublished
           separator: ', '
         changed:
-          label: Päivitetty
+          label: Updated
           separator: ', '
         operations:
-          label: Toimenpiteet
+          label: Operations
       filters:
         bundle:
           expose:
@@ -54,15 +54,15 @@ display:
           expose:
             label: Tosi
           group_info:
-            label: Julkaisutila
+            label: 'Published status'
             group_items:
               1:
-                title: Julkaistu
+                title: Published
               2:
-                title: Julkaisematon
+                title: Unpublished
         langcode:
           expose:
-            label: Kieli
+            label: Language
       title: Media
       empty:
         area_text_custom:

@@ -2,13 +2,13 @@ label: Comentaris
 description: 'Cerqueu i gestioneu els comentaris.'
 display:
   default:
-    display_title: Mestre
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtra
-          reset_button_label: Reinicialitza
-          exposed_sorts_label: 'Ordena per'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -31,16 +31,16 @@ display:
         uid:
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         entity_id:
           label: 'Publicat a'
           separator: ', '
         changed:
-          label: Actualitzat
+          label: Updated
           separator: ', '
         operations:
-          label: Operacions
+          label: Operations
         name_1:
           separator: ', '
       filters:
@@ -52,7 +52,7 @@ display:
             label: 'Nom de l''autor'
         langcode:
           expose:
-            label: Llengua
+            label: Language
       title: Comentaris
       empty:
         area_text_custom:
@@ -81,7 +81,7 @@ display:
             label: 'Nom de l''autor'
         langcode:
           expose:
-            label: Llengua
+            label: Language
       fields:
         comment_bulk_form:
           action_title: Acció
@@ -91,15 +91,15 @@ display:
         uid:
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         entity_id:
           label: 'Publicat a'
           separator: ', '
         changed:
-          label: Actualitzat
+          label: Updated
           separator: ', '
         operations:
-          label: Operacions
+          label: Operations
         name_1:
           separator: ', '

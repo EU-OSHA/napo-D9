@@ -2,16 +2,16 @@ label: Arkiv
 description: 'Allt innehåll, månadsvis.'
 display:
   default:
-    display_title: Huvud
+    display_title: Master
     display_options:
       title: 'Månatligt arkiv'
       exposed_form:
         options:
           submit_button: Verkställ
-          reset_button_label: Återställ
-          exposed_sorts_label: 'Sortera efter'
-          sort_asc_label: Stigande
-          sort_desc_label: Fallande
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -31,4 +31,4 @@ display:
         created_year_month:
           title: '{{ arguments.created_year_month }}'
   page_1:
-    display_title: Sida
+    display_title: Page

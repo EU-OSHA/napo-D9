@@ -2,22 +2,22 @@ label: 'Contenuti recenti'
 description: 'Contenuti recenti.'
 display:
   default:
-    display_title: Principale
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Applica
-          reset_button_label: Ripristina
-          exposed_sorts_label: 'Ordina per'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
-          sort_desc_label: Disc
+          sort_desc_label: Desc
       fields:
         changed:
           separator: ', '
       title: 'Contenuti recenti'
       empty:
         area_text_custom:
-          content: 'Nessun contenuto disponibile.'
+          content: 'No content available.'
       use_more_text: Altro
   block_1:
     display_title: Blocco

@@ -5,10 +5,10 @@ display:
       exposed_form:
         options:
           submit_button: Primjeni
-          reset_button_label: Poništi
-          exposed_sorts_label: 'Rasporedi po'
-          sort_asc_label: Uzlazno
-          sort_desc_label: Silazno
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -26,7 +26,7 @@ display:
           label: 'IP adresa'
           separator: ', '
         view_webform_submission:
-          label: Operacije
+          label: Operations
           text: prikaz
       arguments:
         in_draft:
@@ -56,7 +56,7 @@ display:
           label: 'IP adresa'
           separator: ', '
         operations:
-          label: Operacije
+          label: Operations
       filters:
         sticky:
           expose:
@@ -88,10 +88,10 @@ display:
           label: 'IP adresa'
           separator: ', '
         view_webform_submission:
-          label: Operacije
+          label: Operations
           text: prikaz
         edit_webform_submission:
-          label: Operacije
+          label: Operations
           text: uredi
       filters:
         sticky:
@@ -122,7 +122,7 @@ display:
           label: 'IP adresa'
           separator: ', '
         view_webform_submission:
-          label: Operacije
+          label: Operations
           text: prikaz
       filters:
         sticky:

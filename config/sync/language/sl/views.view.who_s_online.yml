@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       filters:
         access:
           expose:

@@ -1,6 +1,6 @@
 tips:
   search-api-index-status:
-    label: Статус
+    label: Status
   search-api-index-tracker:
     label: Изменения
   search-api-index-server:

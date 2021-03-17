@@ -6,11 +6,11 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Pročisti
-          reset_button_label: Poništi
-          exposed_sorts_label: 'Rasporedi po'
-          sort_asc_label: Uzlazno
-          sort_desc_label: Silazno
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         user_bulk_form:
           label: 'Skupno osvježenje'
@@ -28,7 +28,7 @@ display:
         access:
           label: 'Zadnji pristup'
         operations:
-          label: Operacije
+          label: Operations
         mail:
           separator: ', '
       filters:
@@ -52,7 +52,7 @@ display:
           content: 'Nema dostupnih korisnika.'
       use_more_text: više
   page_1:
-    display_title: Stranica
+    display_title: Page
     display_options:
       menu:
         title: Popis

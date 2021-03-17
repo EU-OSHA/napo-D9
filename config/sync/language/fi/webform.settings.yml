@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Lähetä
-  default_reset_button_label: Palauta
+  default_reset_button_label: Reset
   default_delete_button_label: Poista
   default_wizard_start_label: Alkaa
   default_wizard_toggle_show_label: 'Näytä kaikki'

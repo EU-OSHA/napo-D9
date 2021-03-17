@@ -2,13 +2,13 @@ label: Surveillance
 description: 'Entrées récentes du journal'
 display:
   default:
-    display_title: Maître
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtrer
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -39,7 +39,7 @@ display:
           label: Utilisateur
           separator: ', '
         link:
-          label: Actions
+          label: Operations
       filters:
         type:
           expose:

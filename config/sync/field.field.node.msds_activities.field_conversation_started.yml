@@ -13,7 +13,7 @@ bundle: msds_activities
 label: 'Conversation starters'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

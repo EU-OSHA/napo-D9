@@ -11,10 +11,10 @@ display:
       exposed_form:
         options:
           submit_button: Verkställ
-          reset_button_label: Återställ
-          exposed_sorts_label: 'Sortera efter'
-          sort_asc_label: Stigande
-          sort_desc_label: Fallande
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -22,12 +22,12 @@ display:
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
           tags:
-            previous: '‹ Föregående'
-            next: 'Nästa ›'
-            first: '« Första'
-            last: 'Sista »'
-    display_title: Huvud
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+    display_title: Master
   feed_1:
     display_title: Innehållsflöde
   page_1:
-    display_title: Sida
+    display_title: Page

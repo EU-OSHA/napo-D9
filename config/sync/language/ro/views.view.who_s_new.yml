@@ -2,14 +2,14 @@ label: 'Cine e nou'
 description: 'Afișează o listă a celor mai noi conturi de utilizator de pe site.'
 display:
   default:
-    display_title: Expert
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Aplicare
-          reset_button_label: Resetează
-          exposed_sorts_label: 'Sortare după'
-          sort_asc_label: Ascendent
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
           sort_desc_label: Desc
       title: 'Cine e nou'
   block_1:

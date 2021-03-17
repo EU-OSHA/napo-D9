@@ -4,13 +4,13 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Sía
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           tags:
-            previous: '< Fyrri'
+            previous: '‹ Previous'
           expose:
             items_per_page_label: 'Hlutir per síðu'
             items_per_page_options_all_label: '- Allt -'
@@ -21,7 +21,7 @@ display:
         filesize:
           label: Stærð
         status:
-          label: Staða
+          label: Status
           settings:
             format_custom_false: Tímabundið
       filters:
@@ -30,7 +30,7 @@ display:
             label: Skráarnafn
         status:
           expose:
-            label: Staða
+            label: Status
       title: Skrár
   page_1:
     display_options:
@@ -41,7 +41,7 @@ display:
       pager:
         options:
           tags:
-            previous: '< Fyrri'
+            previous: '‹ Previous'
           expose:
             items_per_page_label: 'Hlutir per síðu'
             items_per_page_options_all_label: '- Allt -'

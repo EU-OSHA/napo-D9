@@ -4,8 +4,8 @@ display:
       exposed_form:
         options:
           submit_button: Pritaikyti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
@@ -13,12 +13,12 @@ display:
             items_per_page_options_all_label: '- Visos -'
       fields:
         title:
-          label: Pavadinimas
+          label: Title
         name:
-          label: Autorius
+          label: Author
         changed:
           label: 'Paskutinis atnaujinimas'
   attachment_1:
     display_title: Prisegtukas
   page_1:
-    display_title: Puslapis
+    display_title: Page

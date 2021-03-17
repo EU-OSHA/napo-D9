@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Soumettre
-  default_reset_button_label: Réinitialiser
+  default_reset_button_label: Reset
   default_delete_button_label: Supprimer
   default_wizard_start_label: Début
   default_wizard_toggle_show_label: 'Tout afficher'

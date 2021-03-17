@@ -4,9 +4,9 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filtruoti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
@@ -20,16 +20,16 @@ display:
         bundle:
           label: Tipas
         uid:
-          label: Autorius
+          label: Author
         status:
-          label: Būsena
+          label: Status
           settings:
-            format_custom_true: Paskelbtas
-            format_custom_false: Nepaskelbtas
+            format_custom_true: Published
+            format_custom_false: Unpublished
         changed:
-          label: Atnaujinta
+          label: Updated
         operations:
-          label: Veiksmai
+          label: Operations
       filters:
         bundle:
           expose:
@@ -38,15 +38,15 @@ display:
           expose:
             label: 'True'
           group_info:
-            label: 'Paskelbta statusas'
+            label: 'Published status'
             group_items:
               1:
-                title: Paskelbtas
+                title: Published
               2:
-                title: Nepaskelbtas
+                title: Unpublished
         langcode:
           expose:
-            label: Kalba
+            label: Language
       title: Media
       empty:
         area_text_custom:

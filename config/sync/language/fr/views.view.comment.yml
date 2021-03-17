@@ -2,13 +2,13 @@ label: Commentaires
 description: 'Trouver et gérer les commentaires.'
 display:
   default:
-    display_title: Maître
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtrer
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -31,16 +31,16 @@ display:
         uid:
           separator: ', '
         name:
-          label: Auteur
+          label: Author
           separator: ', '
         entity_id:
           label: 'Posté sur'
           separator: ', '
         changed:
-          label: 'Mis à jour'
+          label: Updated
           separator: ', '
         operations:
-          label: Actions
+          label: Operations
         name_1:
           separator: ', '
       filters:
@@ -52,7 +52,7 @@ display:
             label: 'Nom de l''auteur'
         langcode:
           expose:
-            label: Langue
+            label: Language
       title: Commentaires
       empty:
         area_text_custom:
@@ -81,7 +81,7 @@ display:
             label: 'Nom de l''auteur'
         langcode:
           expose:
-            label: Langue
+            label: Language
       fields:
         comment_bulk_form:
           action_title: Action
@@ -91,15 +91,15 @@ display:
         uid:
           separator: ', '
         name:
-          label: Auteur
+          label: Author
           separator: ', '
         entity_id:
           label: 'Posté sur'
           separator: ', '
         changed:
-          label: 'Mis à jour'
+          label: Updated
           separator: ', '
         operations:
-          label: Actions
+          label: Operations
         name_1:
           separator: ', '

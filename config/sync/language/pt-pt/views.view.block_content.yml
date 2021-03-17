@@ -2,20 +2,20 @@ label: 'Biblioteca de blocos personalizados'
 description: 'Encontrar e gerir blocos personalizados.'
 display:
   default:
-    display_title: Principal
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Aplicar
-          reset_button_label: Reiniciar
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Anterior'
-            next: 'Seguinte ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Itens por página'
             items_per_page_options_all_label: '- Todos -'
@@ -28,9 +28,9 @@ display:
           label: 'Tipo Bloco'
           separator: ', '
         changed:
-          label: Atualizado
+          label: Updated
         operations:
-          label: Operações
+          label: Operations
       filters:
         info:
           expose:
@@ -43,7 +43,7 @@ display:
         area_text_custom:
           content: 'Não existem blocos personalizados disponíveis.'
   page_1:
-    display_title: Página
+    display_title: Page
     display_options:
       menu:
         title: 'Biblioteca de blocos personalizados'

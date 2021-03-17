@@ -4,13 +4,13 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Филтър
-          reset_button_label: Рестартирай
+          submit_button: Filter
+          reset_button_label: Reset
       fields:
         name:
           label: 'Потребителско име'
         status:
-          label: Статус
+          label: Status
           settings:
             format_custom_true: Активен
             format_custom_false: Блокиран
@@ -21,11 +21,11 @@ display:
         access:
           label: 'Последен достъп'
         operations:
-          label: Действия
+          label: Operations
       filters:
         status:
           group_info:
-            label: Статус
+            label: Status
             group_items:
               1:
                 title: Активен
@@ -40,7 +40,7 @@ display:
       title: Потребители
       use_more_text: още
   page_1:
-    display_title: Страница
+    display_title: Page
     display_options:
       menu:
         title: Списък

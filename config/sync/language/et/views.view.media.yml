@@ -1,15 +1,15 @@
 label: Meedia
 display:
   default:
-    display_title: Peamine
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtreeri
-          reset_button_label: Tühista
-          exposed_sorts_label: 'Sorteerimise alus'
-          sort_asc_label: Kasvav
-          sort_desc_label: Kahanev
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -17,10 +17,10 @@ display:
             items_per_page_options_all_label: '- Kõik -'
             offset_label: Nihe
           tags:
-            previous: '‹ Eelmine'
-            next: 'Järgmine ›'
-            first: '« Esimene'
-            last: 'Viimane »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Tegevus
@@ -34,19 +34,19 @@ display:
           label: Liik
           separator: ', '
         uid:
-          label: Autor
+          label: Author
           separator: ', '
         status:
-          label: Olek
+          label: Status
           settings:
-            format_custom_true: Avaldatud
-            format_custom_false: Avaldamata
+            format_custom_true: Published
+            format_custom_false: Unpublished
           separator: ', '
         changed:
-          label: Uuendatud
+          label: Updated
           separator: ', '
         operations:
-          label: Toimingud
+          label: Operations
       filters:
         name:
           expose:
@@ -58,15 +58,15 @@ display:
           expose:
             label: Tõene
           group_info:
-            label: 'Avaldamise staatus'
+            label: 'Published status'
             group_items:
               1:
-                title: Avaldatud
+                title: Published
               2:
-                title: Avaldamata
+                title: Unpublished
         langcode:
           expose:
-            label: Keel
+            label: Language
       title: Meedia
       empty:
         area_text_custom:

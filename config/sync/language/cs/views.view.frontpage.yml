@@ -9,9 +9,9 @@ display:
         options:
           submit_button: Použít
           reset_button_label: Reset
-          exposed_sorts_label: 'Řadit dle'
-          sort_asc_label: Vzestupně
-          sort_desc_label: Sestupně
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -19,12 +19,12 @@ display:
             items_per_page_options_all_label: '- Vše -'
             offset_label: Posun
           tags:
-            previous: '‹ Předchozí'
-            next: 'Následující ›'
-            first: '« První'
-            last: 'Poslední »'
-    display_title: Nadřízené
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+    display_title: Master
   feed_1:
     display_title: Zdroj
   page_1:
-    display_title: Stránka
+    display_title: Page

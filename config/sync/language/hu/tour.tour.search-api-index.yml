@@ -2,7 +2,7 @@ tips:
   search-api-index-index-status:
     label: 'Indexelés állapota'
   search-api-index-status:
-    label: Állapot
+    label: Status
   search-api-index-datasources:
     label: Adatforrások
   search-api-index-tracker:
