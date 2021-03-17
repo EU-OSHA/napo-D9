@@ -11,31 +11,54 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
 migration_group: napo_migrate_node
-label: 'Node: lesson_toolkit'
+label: 'Node: Lesson Toolkit'
 source:
   plugin: d7_node
-  node_type: 'Lesson Resources'
+  node_type: lesson_toolkit
 process:
+  nid:
+    -
+      plugin: get
+      source: nid
   type:
     -
       plugin: default_value
       default_value: lesson_toolkit
-  langcode:
-    plugin: default_value
-    source: language
-    default_value: und
-  title: title
-  body: body
-  uid: node_uid
-  status: status
-  created: created
-  changed: changed
-  promote: promote
-  sticky: sticky
-  revision_uid: revision_uid
-  revision_log: log
-  revision_timestamp: timestamp
-  field_target_ages: field_target_ages
+  title:
+    -
+      plugin: get
+      source: title
+  body:
+    -
+      plugin: get
+      source: body
+  body/0/format:
+    -
+      plugin: default_value
+      default_value: full_html
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  field_target_ages:
+    -
+      plugin: sub_process
+      source: field_target_ages
+      process:
+        target_id: tid
+      no_stub: true
 destination:
   plugin: 'entity:node'
 migration_dependencies:

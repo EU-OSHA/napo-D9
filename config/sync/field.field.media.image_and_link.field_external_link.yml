@@ -1,0 +1,23 @@
+uuid: 6ef37c1b-4e18-4e65-bd38-39f370341f08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_external_link
+    - media.type.image_and_link
+id: media.image_and_link.field_external_link
+field_name: field_external_link
+entity_type: media
+bundle: image_and_link
+label: 'External Link'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'External link'
+  off_label: 'Internal link'
+field_type: boolean
