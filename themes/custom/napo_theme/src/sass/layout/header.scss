@@ -177,6 +177,9 @@
       color: $text-color-white;
       padding: 0;
       display: block;
+      &:focus{
+        outline: none;
+      }
       &.dropdown-toggle{
         &:after{
           display:block;
