@@ -461,7 +461,7 @@ display:
           relationship: none
           group_type: group
           admin_label: 'Content queue'
-          required: false
+          required: true
           limit_queue: frontpage_video
           entity_type: node
           plugin_id: entity_queue
