@@ -19,11 +19,8 @@ display:
             items_per_page_options_all_label: '- Όλα -'
             offset_label: Αντιστάθμιση
       fields:
-        fid:
-          label: Fid
         filename:
           label: Όνομα
-          separator: ', '
         filemime:
           label: 'MIME τύπος'
         filesize:
@@ -75,8 +72,6 @@ display:
           label: 'Τύπος οντότητας'
         module:
           label: 'Καταχώρηση μονάδας'
-        count:
-          format_plural_string: !!binary MQNAY291bnQ=
       arguments:
         fid:
           exception:

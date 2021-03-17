@@ -18,24 +18,17 @@ display:
           action_title: Aðgerð
         thumbnail__target_id:
           label: Smámynd
-          separator: ', '
-        name:
-          separator: ', '
         bundle:
           label: Gerð
-          separator: ', '
         uid:
           label: Author
-          separator: ', '
         status:
           label: Status
           settings:
             format_custom_true: Published
             format_custom_false: Unpublished
-          separator: ', '
         changed:
           label: Updated
-          separator: ', '
         operations:
           label: Operations
       filters:

@@ -10,10 +10,6 @@ display:
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
-          sort_desc_label: Desc
-      fields:
-        changed:
-          separator: ', '
       title: 'Conținut recent'
       empty:
         area_text_custom:

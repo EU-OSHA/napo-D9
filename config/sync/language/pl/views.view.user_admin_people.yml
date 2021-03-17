@@ -28,7 +28,6 @@ display:
         name:
           label: 'Nazwa użytkownika'
         status:
-          label: Status
           settings:
             format_custom_true: Aktywne
             format_custom_false: Zablokowany
@@ -40,15 +39,12 @@ display:
           label: 'Ostatni dostęp'
         operations:
           label: Operations
-        mail:
-          separator: ', '
       filters:
         combine:
           expose:
             label: 'Nazwa lub email zawiera'
         status:
           group_info:
-            label: Status
             group_items:
               1:
                 title: Aktywne

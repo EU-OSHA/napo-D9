@@ -2,15 +2,10 @@ label: Uporabniki
 display:
   default:
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
       fields:
         name:
           label: 'Uporabniško ime'
         status:
-          label: Status
           settings:
             format_custom_true: Aktiven
             format_custom_false: Blokiran
@@ -20,12 +15,9 @@ display:
           label: Registriran
         access:
           label: 'Zadnji dostop'
-        operations:
-          label: Operations
       filters:
         status:
           group_info:
-            label: Status
             group_items:
               1:
                 title: Aktiven
@@ -37,7 +29,6 @@ display:
       title: Uporabniki
       use_more_text: več
   page_1:
-    display_title: Page
     display_options:
       menu:
         title: Seznam

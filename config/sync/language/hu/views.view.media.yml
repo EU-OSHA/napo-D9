@@ -27,25 +27,19 @@ display:
           action_title: Művelet
         thumbnail__target_id:
           label: Bélyegkép
-          separator: ', '
         name:
           label: 'Média neve'
-          separator: ', '
         bundle:
           label: Típus
-          separator: ', '
         uid:
           label: Author
-          separator: ', '
         status:
           label: Status
           settings:
             format_custom_true: Published
             format_custom_false: Unpublished
-          separator: ', '
         changed:
           label: Updated
-          separator: ', '
         operations:
           label: Operations
       filters:

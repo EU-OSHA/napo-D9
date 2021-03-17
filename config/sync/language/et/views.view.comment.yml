@@ -27,22 +27,14 @@ display:
           action_title: Tegevus
         subject:
           label: Teema
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Author
-          separator: ', '
         entity_id:
           label: Postitatud
-          separator: ', '
         changed:
           label: Updated
-          separator: ', '
         operations:
           label: Operations
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:
@@ -87,19 +79,11 @@ display:
           action_title: Tegevus
         subject:
           label: Teema
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Author
-          separator: ', '
         entity_id:
           label: Postitatud
-          separator: ', '
         changed:
           label: Updated
-          separator: ', '
         operations:
           label: Operations
-        name_1:
-          separator: ', '

@@ -1,6 +1,5 @@
 settings:
   default_submit_button_label: Odeslat
-  default_reset_button_label: Reset
   default_delete_button_label: Smazat
   default_wizard_start_label: Začátek
   default_preview_next_button_label: Náhled

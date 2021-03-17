@@ -1,17 +1,8 @@
 display:
   default:
     display_options:
-      exposed_form:
-        options:
-          reset_button_label: Reset
       fields:
-        title:
-          label: Title
-        name:
-          label: Author
         changed:
           label: 'Zadnja posodobitev'
   attachment_1:
     display_title: Priponka
-  page_1:
-    display_title: Page

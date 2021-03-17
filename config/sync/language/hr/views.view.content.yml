@@ -1,5 +1,4 @@
 label: Sadržaj
-description: 'Find and manage content.'
 display:
   default:
     display_options:
@@ -15,11 +14,9 @@ display:
           label: Title
         type:
           label: 'Content type'
-          separator: ', '
         name:
           label: Author
         status:
-          label: Status
           settings:
             format_custom_true: Published
         changed:
@@ -34,8 +31,6 @@ display:
           expose:
             label: 'Content type'
         status:
-          expose:
-            label: Status
           group_info:
             group_items:
               1:
@@ -47,7 +42,6 @@ display:
       empty:
         area_text_custom:
           content: 'No content available.'
-    display_title: Master
   page_1:
     display_options:
       menu:

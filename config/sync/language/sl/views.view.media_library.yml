@@ -1,27 +1,14 @@
 display:
   default:
     display_options:
-      exposed_form:
-        options:
-          reset_button_label: Reset
       fields:
         media_bulk_form:
           action_title: Akcija
       filters:
-        status:
-          group_info:
-            label: Published
-            group_items:
-              1:
-                title: Published
         name:
           expose:
             label: Ime
-        langcode:
-          expose:
-            label: Language
   page:
-    display_title: Page
     display_options:
       fields:
         media_bulk_form:
@@ -49,10 +36,6 @@ display:
       fields:
         name:
           label: Ime
-        uid:
-          label: Author
-        changed:
-          label: Updated
       filters:
         name:
           expose:
