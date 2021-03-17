@@ -495,10 +495,6 @@ a[target=_blank]:after {
   border: none;
   width: 26px;
 }
-.header .block-dropdown-languagelanguage-interface {
-  display: none;
-}
-
 .block-views-blockfrontpage-custom-video-block {
   position: relative;
 }
