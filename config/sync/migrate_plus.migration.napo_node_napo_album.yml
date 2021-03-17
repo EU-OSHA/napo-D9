@@ -16,26 +16,47 @@ source:
   plugin: d7_node
   node_type: napo_album
 process:
+  nid:
+    -
+      plugin: get
+      source: nid
   type:
     -
       plugin: default_value
       default_value: napo_album
-  langcode:
-    plugin: default_value
-    source: language
-    default_value: und
-  title: title
-  body: body
-  uid: node_uid
-  status: status
-  created: created
-  changed: changed
-  promote: promote
-  sticky: sticky
-  revision_uid: revision_uid
-  revision_log: log
-  revision_timestamp: timestamp
-  field_images: field_images
+  title:
+    -
+      plugin: get
+      source: title
+  body:
+    -
+      plugin: get
+      source: body
+  body/0/format:
+    -
+      plugin: default_value
+      default_value: full_html
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  field_images:
+    plugin: file_id_lookup
+    source: field_images
+    migration: napo_node_napo_album_media_images_1
+    no_stub: true
   field_publication_date:
     -
       plugin: sub_process
@@ -53,3 +74,4 @@ destination:
 migration_dependencies:
   required:
     - d7_user
+    - napo_node_napo_album_media_images_1
