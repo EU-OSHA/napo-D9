@@ -13,7 +13,6 @@
     max-width: 100%;
     display:block;
     height:50px!important;
-
   }
   a{
     display: inline-block;
@@ -21,7 +20,6 @@
       img{
         filter: grayscale(0%);
       }
-
     }
     &:after{
       display:none;
@@ -40,24 +38,14 @@
       width:auto!important;
       padding: 0 0.625rem;
       flex: auto;
-      &:nth-child(1){
-      }
       &:nth-child(2){
         position: relative;
         top: -5px;
       }
-      &:nth-child(3){}
-      &:nth-child(4){}
-      &:nth-child(5){}
-      &:nth-child(6){}
-      &:nth-child(7){}
-      &:nth-child(8){
-      }
       &:first-child{
         padding: 0 0.625rem 0 0;
       }
-      &last-child{
-
+      &:last-child{
         padding: 0 0 0 0.625rem;
       }
     }

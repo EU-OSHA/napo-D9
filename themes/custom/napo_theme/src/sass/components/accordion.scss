@@ -1,0 +1,39 @@
+.ui-accordion{
+  & &-header{
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin-top: 2px;
+    padding: 0.625rem 0.625rem 0.625rem 0.875rem;
+    padding-left: 2.75rem;
+    &.ui-state-active{
+      background-color: transparent;
+      color: $text-color-blue;
+    }
+    &:focus{
+      outline: none;
+    }
+    &-collapsed{
+      .ui-icon{
+        background:url(/sites/napo/themes/custom/napo_theme/images/accordion-state-default.png) no-repeat 0px 0px;
+      }
+    }
+    &-active{
+      .ui-icon{
+        background:url(/sites/napo/themes/custom/napo_theme/images/accordion-state-active.png) no-repeat 0px 0px;
+      }
+    }
+    .ui-icon{
+      position: absolute;
+      top: 50%;
+      margin-top: -8px;
+      width: 27px;
+      height: 44px;
+      left: 100%;transform: translateX(-100%);
+    }
+  }
+  & &-content{
+    padding: 1.25rem 2.75rem;
+    height:auto!important;
+  }
+}
