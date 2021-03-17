@@ -5,12 +5,12 @@ display:
       exposed_form:
         options:
           submit_button: Pritaikyti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       title: 'Naujausias turinys'
       empty:
         area_text_custom:
-          content: 'Turinio nėra.'
+          content: 'No content available.'
       use_more_text: Daugiau
   block_1:
     display_title: Blokas

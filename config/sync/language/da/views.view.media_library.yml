@@ -4,10 +4,10 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -25,12 +25,12 @@ display:
           expose:
             label: Publiceringsstatus
           group_info:
-            label: Udgivet
+            label: Published
             group_items:
               1:
-                title: Udgivet
+                title: Published
               2:
-                title: 'Ikke udgivet'
+                title: Unpublished
         name:
           expose:
             label: Navn
@@ -41,7 +41,7 @@ display:
             label: 'Medie type'
         langcode:
           expose:
-            label: Sprog
+            label: Language
       sorts:
         created:
           expose:
@@ -51,7 +51,7 @@ display:
         area_text_custom:
           content: 'Ingen tilgængelige media'
   page:
-    display_title: Side
+    display_title: Page
     display_options:
       fields:
         media_bulk_form:
@@ -86,9 +86,9 @@ display:
         name:
           label: Navn
         uid:
-          label: Forfatter
+          label: Author
         changed:
-          label: Opdateret
+          label: Updated
       filters:
         name:
           expose:

@@ -2,15 +2,15 @@ label: Watchdog
 description: 'Messaggi di log recenti'
 display:
   default:
-    display_title: Principale
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtra
-          reset_button_label: Ripristina
-          exposed_sorts_label: 'Ordina per'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
-          sort_desc_label: Disc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -37,7 +37,7 @@ display:
           label: Utente
           separator: ', '
         link:
-          label: Operazioni
+          label: Operations
       filters:
         type:
           expose:
@@ -51,4 +51,4 @@ display:
           admin_label: 'Nessun messaggio di log disponibile.'
           content: 'Nessun messaggio di log disponibile.'
   page:
-    display_title: Pagina
+    display_title: Page

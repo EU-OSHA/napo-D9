@@ -3,15 +3,15 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Филтър
-          reset_button_label: Рестартирай
+          submit_button: Filter
+          reset_button_label: Reset
       fields:
         filename:
           label: Име
         filesize:
           label: Размер
         status:
-          label: Статус
+          label: Status
         changed:
           label: 'Дата на промяна'
       filters:
@@ -20,7 +20,7 @@ display:
             label: 'Име на файла'
         status:
           expose:
-            label: Статус
+            label: Status
   page_2:
     display_options:
       arguments:

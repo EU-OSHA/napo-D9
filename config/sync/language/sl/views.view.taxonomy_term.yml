@@ -4,10 +4,10 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       arguments:
         tid:
           exception:
             title: Vsi
   page_1:
-    display_title: Stran
+    display_title: Page

@@ -2,15 +2,15 @@ label: 'Kimler yeni'
 description: 'Sitedeki en yeni kullanıcıların listesini görüntüler.'
 display:
   default:
-    display_title: 'Ana (master)'
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Uygula
-          reset_button_label: Sıfırla
-          exposed_sorts_label: 'Sıralama anahtarı'
-          sort_asc_label: Artan
-          sort_desc_label: Azalan
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       title: 'Kimler yeni'
   block_1:
     display_title: 'Kimler yeni'

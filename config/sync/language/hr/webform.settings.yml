@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Pošalji
-  default_reset_button_label: Poništi
+  default_reset_button_label: Reset
   default_delete_button_label: Ukloni
   default_wizard_start_label: Početak
   default_preview_next_button_label: Pregled

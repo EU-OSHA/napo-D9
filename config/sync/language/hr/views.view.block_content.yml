@@ -5,10 +5,10 @@ display:
       exposed_form:
         options:
           submit_button: Primjeni
-          reset_button_label: Poništi
-          exposed_sorts_label: 'Rasporedi po'
-          sort_asc_label: Uzlazno
-          sort_desc_label: Silazno
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         info:
           label: 'Opis bloka'
@@ -16,12 +16,12 @@ display:
         type:
           separator: ', '
         changed:
-          label: Osvježeno
+          label: Updated
         operations:
-          label: Operacije
+          label: Operations
       filters:
         info:
           expose:
             label: 'Opis bloka'
   page_1:
-    display_title: Stranica
+    display_title: Page

@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Отправить
-  default_reset_button_label: Сбросить
+  default_reset_button_label: Reset
   default_delete_button_label: Удалить
   default_wizard_start_label: Начало
   default_wizard_toggle_show_label: 'Показать все'

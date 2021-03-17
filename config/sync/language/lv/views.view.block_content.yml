@@ -4,9 +4,9 @@ display:
       exposed_form:
         options:
           submit_button: Apstiprināt
-          reset_button_label: Attīrīt
-          exposed_sorts_label: 'Kārtot pēc'
-          sort_desc_label: Dilst.
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -15,12 +15,12 @@ display:
         info:
           label: 'Bloka apraksts'
         changed:
-          label: Atjaunināts
+          label: Updated
         operations:
-          label: Darbības
+          label: Operations
       filters:
         info:
           expose:
             label: 'Bloka apraksts'
   page_1:
-    display_title: Lapa
+    display_title: Page

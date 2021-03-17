@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Vista
-  default_reset_button_label: Endursetja
+  default_reset_button_label: Reset
   default_delete_button_label: Eyða
   default_wizard_start_label: Hefst
   default_preview_next_button_label: Forskoða

@@ -7,14 +7,14 @@ display:
         options:
           submit_button: Filter
           reset_button_label: Reset
-          exposed_sorts_label: 'Zoradiť podľa'
-          sort_asc_label: Vzostupne
-          sort_desc_label: Zostupne
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Predchádzajúci'
-            next: Ďalej
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Položiek na stránku'
             items_per_page_options_all_label: '- Všetko -'
@@ -28,7 +28,7 @@ display:
         filesize:
           label: Veľkosť
         status:
-          label: Stav
+          label: Status
           settings:
             format_custom_false: Dočasne
             format_custom_true: Natrvalo
@@ -47,7 +47,7 @@ display:
             label: 'MIME typ'
         status:
           expose:
-            label: Stav
+            label: Status
       title: Súbory
       empty:
         area_text_custom:
@@ -62,8 +62,8 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Predchádzajúci'
-            next: Ďalej
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Položiek na stránku'
             items_per_page_options_all_label: '- Všetko -'

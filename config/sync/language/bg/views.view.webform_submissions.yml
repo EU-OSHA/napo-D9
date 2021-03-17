@@ -4,12 +4,12 @@ display:
       exposed_form:
         options:
           submit_button: Търси
-          reset_button_label: Рестартирай
+          reset_button_label: Reset
       fields:
         created:
           label: Създадено
         view_webform_submission:
-          label: Действия
+          label: Operations
           text: преглед
       arguments:
         in_draft:
@@ -25,7 +25,7 @@ display:
         created:
           label: Създадено
         operations:
-          label: Действия
+          label: Operations
       filters:
         sticky:
           expose:
@@ -40,10 +40,10 @@ display:
         created:
           label: Създадено
         view_webform_submission:
-          label: Действия
+          label: Operations
           text: преглед
         edit_webform_submission:
-          label: Действия
+          label: Operations
           text: редактирай
       filters:
         sticky:
@@ -57,7 +57,7 @@ display:
         created:
           label: Създадено
         view_webform_submission:
-          label: Действия
+          label: Operations
           text: преглед
       filters:
         sticky:

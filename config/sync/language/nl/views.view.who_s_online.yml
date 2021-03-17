@@ -2,15 +2,15 @@ label: '''Wie is online''-blok'
 description: 'Toont de gebruikersnamen van de meest recente actieve gebruikers, en het totale aantal actieve gebruikers.'
 display:
   default:
-    display_title: Hoofd
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Toepassen
           reset_button_label: Reset
-          exposed_sorts_label: 'Sorteren op'
-          sort_asc_label: Oplopend
-          sort_desc_label: Aflopend
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       filters:
         access:
           expose:

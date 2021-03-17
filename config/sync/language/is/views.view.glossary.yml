@@ -4,8 +4,8 @@ display:
       exposed_form:
         options:
           submit_button: Virkja
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
@@ -16,12 +16,12 @@ display:
             next: ››
       fields:
         title:
-          label: Titill
+          label: Title
         name:
-          label: Höfundur
+          label: Author
         changed:
           label: 'Síðast uppfært'
   attachment_1:
     display_title: Viðhengi
   page_1:
-    display_title: Síða
+    display_title: Page

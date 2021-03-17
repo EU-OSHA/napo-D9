@@ -2,15 +2,15 @@ label: 'Biblioteka mediów'
 description: 'Znajdź i zarządaj mediami.'
 display:
   default:
-    display_title: Główny
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: 'Zastosuj filtry'
-          reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj po'
-          sort_asc_label: Rosnąco
-          sort_desc_label: Malejąco
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -28,12 +28,12 @@ display:
           expose:
             label: 'Status publikacji'
           group_info:
-            label: Opublikowane
+            label: Published
             group_items:
               1:
-                title: Opublikowane
+                title: Published
               2:
-                title: Nieopublikowany
+                title: Unpublished
         name:
           expose:
             label: Nazwa
@@ -44,7 +44,7 @@ display:
             label: 'Typ mediów'
         langcode:
           expose:
-            label: Język
+            label: Language
       sorts:
         created:
           expose:
@@ -60,7 +60,7 @@ display:
         area_text_custom:
           content: 'Brak mediów'
   page:
-    display_title: Strona
+    display_title: Page
     display_options:
       fields:
         media_bulk_form:
@@ -102,9 +102,9 @@ display:
         name:
           label: Nazwa
         uid:
-          label: Autor
+          label: Author
         changed:
-          label: Uaktualniono
+          label: Updated
       filters:
         name:
           expose:

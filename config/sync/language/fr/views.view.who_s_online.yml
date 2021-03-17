@@ -2,13 +2,13 @@ label: 'Bloc "Qui est connecté"'
 description: 'Affiche les noms des utilisateurs les plus actifs récemment et le nombre total d''utilisateurs actifs.'
 display:
   default:
-    display_title: Maître
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Appliquer
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       filters:

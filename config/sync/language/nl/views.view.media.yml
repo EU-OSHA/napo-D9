@@ -2,15 +2,15 @@ label: Media
 description: 'Media zoeken en beheren.'
 display:
   default:
-    display_title: Hoofd
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Filter
           reset_button_label: Reset
-          exposed_sorts_label: 'Sorteren op'
-          sort_asc_label: Oplopend
-          sort_desc_label: Aflopend
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -18,10 +18,10 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset_label: Startpunt
           tags:
-            previous: '‹ Vorige'
-            next: 'Volgende ›'
-            first: '« Eerste'
-            last: 'Laatste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Actie
@@ -35,19 +35,19 @@ display:
           label: Type
           separator: ', '
         uid:
-          label: Auteur
+          label: Author
           separator: ', '
         status:
           label: Status
           settings:
-            format_custom_true: Gepubliceerd
-            format_custom_false: 'Niet gepubliceerd'
+            format_custom_true: Published
+            format_custom_false: Unpublished
           separator: ', '
         changed:
-          label: Bijgewerkt
+          label: Updated
           separator: ', '
         operations:
-          label: Bewerkingen
+          label: Operations
       filters:
         name:
           expose:
@@ -59,15 +59,15 @@ display:
           expose:
             label: Waar
           group_info:
-            label: Publicatiestatus
+            label: 'Published status'
             group_items:
               1:
-                title: Gepubliceerd
+                title: Published
               2:
-                title: 'Niet gepubliceerd'
+                title: Unpublished
         langcode:
           expose:
-            label: Taal
+            label: Language
       title: Media
       empty:
         area_text_custom:

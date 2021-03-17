@@ -5,11 +5,11 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Φίλτρο
-          reset_button_label: Επαναφορά
-          exposed_sorts_label: 'Ταξινόμηση κατά'
-          sort_asc_label: Αύξ
-          sort_desc_label: Φθί
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -36,7 +36,7 @@ display:
           label: Χρήστης
           separator: ', '
         link:
-          label: Λειτουργίες
+          label: Operations
       filters:
         type:
           expose:
@@ -50,4 +50,4 @@ display:
           admin_label: 'Δεν υπάρχουν μηνύματα στο ημερολόγιο συστήματος.'
           content: 'Δεν υπάρχουν μηνύματα στο ημερολόγιο συστήματος.'
   page:
-    display_title: Σελίδα
+    display_title: Page

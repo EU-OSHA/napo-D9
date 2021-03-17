@@ -5,8 +5,8 @@ display:
       exposed_form:
         options:
           submit_button: Pritaikyti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
@@ -18,9 +18,9 @@ display:
         type:
           label: 'Bloko tipas'
         changed:
-          label: Atnaujinta
+          label: Updated
         operations:
-          label: Veiksmai
+          label: Operations
       filters:
         info:
           expose:
@@ -30,7 +30,7 @@ display:
             label: 'Bloko tipas'
       title: 'Saviti blokai'
   page_1:
-    display_title: Puslapis
+    display_title: Page
     display_options:
       menu:
         title: 'Saviti blokai'

@@ -2,20 +2,20 @@ label: 'Knihovna vlastních bloků'
 description: 'Hledat a spravovat vlastní bloky.'
 display:
   default:
-    display_title: Nadřízené
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Použít
           reset_button_label: Reset
-          exposed_sorts_label: 'Řadit dle'
-          sort_asc_label: Vzestupně
-          sort_desc_label: Sestupně
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Předchozí'
-            next: 'Následující ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Položek na stránku'
             items_per_page_options_all_label: '- Vše -'
@@ -28,9 +28,9 @@ display:
           label: 'Typ bloku'
           separator: ', '
         changed:
-          label: Aktualizováno
+          label: Updated
         operations:
-          label: Operace
+          label: Operations
       filters:
         info:
           expose:
@@ -40,7 +40,7 @@ display:
             label: 'Typ bloku'
       title: 'Knihovna vlastních bloků'
   page_1:
-    display_title: Stránka
+    display_title: Page
     display_options:
       menu:
         title: 'Knihovna vlastních bloků'

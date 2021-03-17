@@ -2,57 +2,57 @@ label: 'Modererat innehåll'
 description: 'Hitta och moderera innehåll.'
 display:
   default:
-    display_title: Huvud
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtrera
-          reset_button_label: Återställ
-          exposed_sorts_label: 'Sortera efter'
-          sort_asc_label: Stigande
-          sort_desc_label: Fallande
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Föregående'
-            next: 'Nästa ›'
-            first: '« Första'
-            last: 'Sista »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Inlägg per sida'
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
       fields:
         title:
-          label: Titel
+          label: Title
           separator: ', '
         type:
-          label: Innehållstyp
+          label: 'Content type'
           separator: ', '
         name:
-          label: Författare
+          label: Author
           separator: ', '
         moderation_state:
           label: Modereringsstatus
           separator: ', '
         changed:
-          label: Uppdaterad
+          label: Updated
           separator: ', '
         operations:
-          label: Funktioner
+          label: Operations
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
         type:
           expose:
-            label: Innehållstyp
+            label: 'Content type'
         moderation_state:
           expose:
             label: Modereringsstatus
         langcode:
           expose:
-            label: Språk
+            label: Language
       title: 'Modererat innehåll'
       empty:
         area_text_custom:

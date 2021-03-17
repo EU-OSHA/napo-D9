@@ -2,13 +2,13 @@ label: 'Contenu récent'
 description: 'Contenu récent.'
 display:
   default:
-    display_title: Maître
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Appliquer
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       fields:
@@ -17,7 +17,7 @@ display:
       title: 'Contenu récent'
       empty:
         area_text_custom:
-          content: 'Aucun contenu disponible.'
+          content: 'No content available.'
       use_more_text: Plus
   block_1:
     display_title: Bloc

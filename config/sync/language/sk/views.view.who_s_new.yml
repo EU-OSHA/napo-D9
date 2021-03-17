@@ -6,9 +6,9 @@ display:
         options:
           submit_button: Použiť
           reset_button_label: Reset
-          exposed_sorts_label: 'Zoradiť podľa'
-          sort_asc_label: Vzostupne
-          sort_desc_label: Zostupne
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       title: 'Kto je nový'
   block_1:
     display_title: 'Kto je nový'

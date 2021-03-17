@@ -2,20 +2,20 @@ label: Fişiere
 description: 'Găsiți și gestionați fișiere.'
 display:
   default:
-    display_title: Expert
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtru
-          reset_button_label: Resetează
-          exposed_sorts_label: 'Sortare după'
-          sort_asc_label: Ascendent
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Anterior'
-            next: 'Următor ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
@@ -31,7 +31,7 @@ display:
         filesize:
           label: Mărime
         status:
-          label: Stare
+          label: Status
           settings:
             format_custom_false: Temporar
             format_custom_true: Permanent
@@ -50,7 +50,7 @@ display:
             label: 'Tip MIME'
         status:
           expose:
-            label: Stare
+            label: Status
       title: Fişiere
       empty:
         area_text_custom:
@@ -66,8 +66,8 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Anterior'
-            next: 'Următor ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'

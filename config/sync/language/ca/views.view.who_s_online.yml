@@ -2,13 +2,13 @@ label: 'Bloc de qui està en línia'
 description: 'Mostra els noms d''usuari dels usuaris actius més recentment i el nombre total d''usuaris actius.'
 display:
   default:
-    display_title: Mestre
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Aplica
-          reset_button_label: Reinicialitza
-          exposed_sorts_label: 'Ordena per'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       filters:

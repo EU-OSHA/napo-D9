@@ -11,77 +11,43 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
 migration_group: napo_migrate_node
-label: 'Node: MSDS Activities'
+label: 'Node: MSDs_Activities'
 source:
   plugin: d7_node
-  node_type: msds_activities
+  node_type: 'Lesson Resources'
 process:
-  nid:
-    -
-      plugin: get
-      source: nid
   type:
     -
       plugin: default_value
       default_value: msds_activities
-  title:
-    -
-      plugin: get
-      source: title
-  uid:
-    -
-      plugin: get
-      source: node_uid
-  status:
-    -
-      plugin: get
-      source: status
-  created:
-    -
-      plugin: get
-      source: created
-  changed:
-    -
-      plugin: get
-      source: changed
-  field_resources_related: field_resources_related
-  field_conversation_started:
-    plugin: file_id_lookup
-    source: field_conversation_started
-    migration:
-      - napo_node_msds_activities_media_documents_1
-    no_stub: true
-  field_conversation_starters_cove:
-    plugin: file_id_lookup
-    source: field_conversation_starters_cove
-    migration:
-      - napo_node_msds_activities_media_images_1
-    no_stub: true
-  field_activity:
-    plugin: file_id_lookup
-    source: field_activity
-    migration:
-      - napo_node_msds_activities_media_documents_1
-    no_stub: true
-  field_msds_video: field_msds_video
-  field_introductory_text: field_introductory_text
-  field_learning_objectives: field_learning_objectives
-  field_activities: field_activities
-  field_concluding_questions: field_concluding_questions
-  field_assessment: field_assessment
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  body: body
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_body_revamp: field_body_revamp
+  field_image: field_image
+  field_poster_image: field_poster_image
   field_tags:
     -
       plugin: sub_process
       source: field_tags
       process:
-        target_id:
-          plugin: get
-          source: tid
-  field_msds_resources_required: field_msds_resources_required
+        target_id: tid
+  field_video: field_video
+  field_youtube: field_youtube
 destination:
   plugin: 'entity:node'
 migration_dependencies:
   required:
     - d7_user
-    - napo_node_msds_resources
-    - napo_node_msds_activities_media_documents_1

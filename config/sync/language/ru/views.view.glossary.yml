@@ -2,15 +2,15 @@ label: Глоссарий
 description: 'Все материалы, по алфавиту.'
 display:
   default:
-    display_title: Основной
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Применить
-          reset_button_label: Сбросить
-          exposed_sorts_label: 'Сортировать по'
-          sort_asc_label: 'По возрастанию'
-          sort_desc_label: 'По убыванию'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -22,15 +22,15 @@ display:
             next: ››
       fields:
         title:
-          label: Заголовок
+          label: Title
         name:
-          label: Автор
+          label: Author
         changed:
           label: 'Последнее обновление'
   attachment_1:
     display_title: Вложение
   page_1:
-    display_title: Страница
+    display_title: Page
     display_options:
       menu:
         title: Глоссарий

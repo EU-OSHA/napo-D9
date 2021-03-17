@@ -2,57 +2,57 @@ label: 'Moderálandó tartalmak'
 description: 'Tartalom keresése és moderálása.'
 display:
   default:
-    display_title: Mester
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Szűrő
-          reset_button_label: Alaphelyzet
-          exposed_sorts_label: Rendezés
-          sort_asc_label: Növekvő
-          sort_desc_label: Csökkenő
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Előző'
-            next: 'Következő ›'
-            first: '« Első'
-            last: 'Utolsó »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Elemek száma oldalanként'
             items_per_page_options_all_label: '– Mind –'
             offset_label: Eltolás
       fields:
         title:
-          label: Cím
+          label: Title
           separator: ', '
         type:
-          label: Tartalomtípus
+          label: 'Content type'
           separator: ', '
         name:
-          label: Szerző
+          label: Author
           separator: ', '
         moderation_state:
           label: 'Moderációs állapot'
           separator: ', '
         changed:
-          label: Frissítve
+          label: Updated
           separator: ', '
         operations:
-          label: Műveletek
+          label: Operations
       filters:
         title:
           expose:
-            label: Cím
+            label: Title
         type:
           expose:
-            label: Tartalomtípus
+            label: 'Content type'
         moderation_state:
           expose:
             label: 'Moderációs állapot'
         langcode:
           expose:
-            label: Nyelv
+            label: Language
       title: 'Moderálandó tartalmak'
       empty:
         area_text_custom:

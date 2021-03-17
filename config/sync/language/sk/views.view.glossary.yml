@@ -5,9 +5,9 @@ display:
         options:
           submit_button: Použiť
           reset_button_label: Reset
-          exposed_sorts_label: 'Zoradiť podľa'
-          sort_asc_label: Vzostupne
-          sort_desc_label: Zostupne
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -19,12 +19,12 @@ display:
             next: ››
       fields:
         title:
-          label: Nadpis
+          label: Title
         name:
-          label: Autor
+          label: Author
         changed:
           label: 'Posledná aktualizácia'
   attachment_1:
     display_title: Príloha
   page_1:
-    display_title: Stránka
+    display_title: Page

@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: Enviar
-  default_reset_button_label: Reiniciar
+  default_reset_button_label: Reset
   default_delete_button_label: Eliminar
   default_wizard_start_label: Iniciar
   default_preview_next_button_label: Pré-visualizar

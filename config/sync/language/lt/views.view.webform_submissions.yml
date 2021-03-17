@@ -4,8 +4,8 @@ display:
       exposed_form:
         options:
           submit_button: Pritaikyti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
@@ -17,7 +17,7 @@ display:
         remote_addr:
           label: 'IP adresas'
         view_webform_submission:
-          label: Veiksmai
+          label: Operations
           text: Peržiūrėti
       arguments:
         in_draft:
@@ -39,7 +39,7 @@ display:
         remote_addr:
           label: 'IP adresas'
         operations:
-          label: Veiksmai
+          label: Operations
       filters:
         sticky:
           expose:
@@ -63,10 +63,10 @@ display:
         remote_addr:
           label: 'IP adresas'
         view_webform_submission:
-          label: Veiksmai
+          label: Operations
           text: Peržiūrėti
         edit_webform_submission:
-          label: Veiksmai
+          label: Operations
           text: redaguoti
       filters:
         sticky:
@@ -89,7 +89,7 @@ display:
         remote_addr:
           label: 'IP adresas'
         view_webform_submission:
-          label: Veiksmai
+          label: Operations
           text: Peržiūrėti
       filters:
         sticky:

@@ -2,57 +2,57 @@ label: 'Contingut moderat'
 description: 'Cerca i modera contingut.'
 display:
   default:
-    display_title: Mestre
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtra
-          reset_button_label: Reinicialitza
-          exposed_sorts_label: 'Ordena per'
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Anterior'
-            next: 'Següent ›'
-            first: '« Primer'
-            last: 'Últim »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Elements per pàgina'
             items_per_page_options_all_label: '- Tot -'
             offset_label: Desplaçament
       fields:
         title:
-          label: Títol
+          label: Title
           separator: ', '
         type:
-          label: 'Tipus de contingut'
+          label: 'Content type'
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         moderation_state:
           label: 'Estat de moderació'
           separator: ', '
         changed:
-          label: Actualitzat
+          label: Updated
           separator: ', '
         operations:
-          label: Operacions
+          label: Operations
       filters:
         title:
           expose:
-            label: Títol
+            label: Title
         type:
           expose:
-            label: 'Tipus de contingut'
+            label: 'Content type'
         moderation_state:
           expose:
             label: 'Estat de moderació'
         langcode:
           expose:
-            label: Llengua
+            label: Language
       title: 'Contingut moderat'
       empty:
         area_text_custom:

@@ -5,11 +5,11 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Pročisti
-          reset_button_label: Poništi
-          exposed_sorts_label: 'Rasporedi po'
-          sort_asc_label: Uzlazno
-          sort_desc_label: Silazno
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         media_bulk_form:
           action_title: Akcija
@@ -22,18 +22,18 @@ display:
           label: Vrsta
           separator: ', '
         uid:
-          label: Autor
+          label: Author
           separator: ', '
         status:
           label: Status
           settings:
-            format_custom_true: Objavljeno
+            format_custom_true: Published
           separator: ', '
         changed:
-          label: Osvježeno
+          label: Updated
           separator: ', '
         operations:
-          label: Operacije
+          label: Operations
       filters:
         bundle:
           expose:
@@ -44,10 +44,10 @@ display:
           group_info:
             group_items:
               1:
-                title: Objavljeno
+                title: Published
         langcode:
           expose:
-            label: Jezik
+            label: Language
       title: Mediji
   media_page_list:
     display_title: Mediji

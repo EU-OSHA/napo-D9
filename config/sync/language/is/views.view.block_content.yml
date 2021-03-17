@@ -4,12 +4,12 @@ display:
       exposed_form:
         options:
           submit_button: Virkja
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           tags:
-            previous: '< Fyrri'
+            previous: '‹ Previous'
           expose:
             items_per_page_label: 'Hlutir per síðu'
             items_per_page_options_all_label: '- Allt -'
@@ -20,12 +20,12 @@ display:
         type:
           separator: ', '
         changed:
-          label: Uppfært
+          label: Updated
         operations:
-          label: Aðgerðir
+          label: Operations
       filters:
         info:
           expose:
             label: 'Lýsing á blokk'
   page_1:
-    display_title: Síða
+    display_title: Page
