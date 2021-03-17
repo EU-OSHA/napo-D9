@@ -91,6 +91,36 @@ body {
   margin-bottom: 0rem;
 }
 
+.ui-accordion .ui-accordion-header {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin-top: 2px;
+  padding: 0.372rem 0.372rem 0.372rem 0.5rem;
+  color: #1f3695;
+  font-weight: bold;
+  font-size: 17px;
+  text-transform: uppercase;
+  min-height: 0;
+}
+.ui-accordion .ui-accordion-header.ui-state-active {
+  background-color: transparent;
+  color: #1f3695;
+}
+.ui-accordion .ui-accordion-header-collapsed .ui-icon {
+  background: url(/sites/napo/themes/custom/napo_theme/images/accordion-state-default.png) no-repeat 0px 0px;
+}
+.ui-accordion .ui-accordion-header-active .ui-icon {
+  background: url(/sites/napo/themes/custom/napo_theme/images/accordion-state-active.png) no-repeat 0px 0px;
+}
+.ui-accordion .ui-accordion-header .ui-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  width: 27px;
+  height: 44px;
+  left: 100%;
+}
 /*Headings*/
 h1, h2, label {
   font-family: "Open Sans", sans-serif;
@@ -518,6 +548,16 @@ a[target=_blank]:after {
   color: #1f3695;
   margin-bottom: 1rem;
   font-weight: bold;
+}
+
+.block-views-blockfaqs-block .ui-accordion-header {
+  border: none;
+  background: transparent;
+}
+.block-views-blockfaqs-block .ui-accordion-content {
+  border: none;
+  font-size: 1rem;
+  color: #1f3695;
 }
 
 /*# sourceMappingURL=napo-global.css.map */

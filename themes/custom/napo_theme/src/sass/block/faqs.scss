@@ -1,0 +1,14 @@
+.block-views-blockfaqs-block{
+
+  .ui-accordion{
+    &-header{
+      border: none;
+      background: transparent;
+    }
+    &-content{
+      border:none;
+      font-size: 1rem;
+      color: $text-color-blue;
+    }
+  }
+}
