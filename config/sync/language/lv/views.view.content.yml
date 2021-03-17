@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+label: Saturs
+description: 'Meklēt un pārvaldīt saturu.'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -39,8 +44,20 @@ display:
         langcode:
           expose:
             label: Valoda
+<<<<<<< HEAD
+=======
+      title: Saturs
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
       empty:
         area_text_custom:
           content: 'Nav pieejams nekāds saturs.'
   page_1:
+<<<<<<< HEAD
+=======
+    display_options:
+      menu:
+        title: Saturs
+      tab_options:
+        title: Saturs
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Lapa

@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+label: Sisu
+description: 'Otsi ja halda lehe sisu.'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -20,6 +25,10 @@ display:
           label: Pealkiri
         type:
           label: 'Sisu tüüp'
+<<<<<<< HEAD
+=======
+          separator: ', '
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
         name:
           label: Autor
         status:
@@ -51,9 +60,22 @@ display:
         langcode:
           expose:
             label: Keel
+<<<<<<< HEAD
+=======
+      title: Sisu
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
       empty:
         area_text_custom:
           content: 'Sisu puudub.'
     display_title: Peamine
   page_1:
+<<<<<<< HEAD
+=======
+    display_options:
+      menu:
+        title: Sisu
+      tab_options:
+        title: Sisu
+        description: 'Otsi ja halda sisu'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Lehekülg

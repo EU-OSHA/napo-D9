@@ -1,9 +1,17 @@
 label: Inhalt
+<<<<<<< HEAD
+=======
+description: 'Inhalte finden und verwalten.'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
       exposed_form:
         options:
+<<<<<<< HEAD
+=======
+          submit_button: Filter
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           reset_button_label: Zurücksetzen
           exposed_sorts_label: 'Sortieren nach'
           sort_asc_label: Aufsteigend
@@ -20,9 +28,17 @@ display:
           label: Titel
         type:
           label: Inhaltstyp
+<<<<<<< HEAD
         name:
           label: Autor
         status:
+=======
+          separator: ', '
+        name:
+          label: Autor
+        status:
+          label: Status
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           settings:
             format_custom_true: Veröffentlicht
             format_custom_false: 'Nicht veröffentlicht'
@@ -38,6 +54,11 @@ display:
           expose:
             label: Inhaltstyp
         status:
+<<<<<<< HEAD
+=======
+          expose:
+            label: Status
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           group_info:
             label: Veröffentlichungsstatus
             group_items:
@@ -52,10 +73,18 @@ display:
       empty:
         area_text_custom:
           content: 'Kein Inhalt verfügbar.'
+<<<<<<< HEAD
+=======
+    display_title: Master
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
   page_1:
     display_options:
       menu:
         title: Inhalt
       tab_options:
         title: Inhalt
+<<<<<<< HEAD
+=======
+        description: 'Inhalte finden und verwalten'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Seite

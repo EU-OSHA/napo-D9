@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+label: Innihald
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -15,6 +19,10 @@ display:
           label: Titill
         type:
           label: Efnisgerð
+<<<<<<< HEAD
+=======
+          separator: ', '
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
         name:
           label: Höfundur
         status:
@@ -45,5 +53,15 @@ display:
         langcode:
           expose:
             label: Tungumál
+<<<<<<< HEAD
   page_1:
+=======
+      title: Innihald
+  page_1:
+    display_options:
+      menu:
+        title: Innihald
+      tab_options:
+        title: Innihald
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Síða

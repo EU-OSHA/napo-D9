@@ -1,8 +1,17 @@
+<<<<<<< HEAD
+=======
+label: Indhold
+description: 'Find og håndtér indhold.'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
       exposed_form:
         options:
+<<<<<<< HEAD
+=======
+          submit_button: Filter
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           reset_button_label: Gendan
           exposed_sorts_label: 'Sortér efter'
           sort_asc_label: Stigende
@@ -19,9 +28,17 @@ display:
           label: Titel
         type:
           label: Indholdstype
+<<<<<<< HEAD
         name:
           label: Forfatter
         status:
+=======
+          separator: ', '
+        name:
+          label: Forfatter
+        status:
+          label: Status
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           settings:
             format_custom_true: Udgivet
             format_custom_false: 'Ikke udgivet'
@@ -37,6 +54,11 @@ display:
           expose:
             label: Indholdstype
         status:
+<<<<<<< HEAD
+=======
+          expose:
+            label: Status
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           group_info:
             label: Publiceringsstatus
             group_items:
@@ -47,8 +69,23 @@ display:
         langcode:
           expose:
             label: Sprog
+<<<<<<< HEAD
       empty:
         area_text_custom:
           content: 'Der er intet indhold at vise.'
   page_1:
+=======
+      title: Indhold
+      empty:
+        area_text_custom:
+          content: 'Der er intet indhold at vise.'
+    display_title: Master
+  page_1:
+    display_options:
+      menu:
+        title: Indhold
+      tab_options:
+        title: Indhold
+        description: 'Find og håndtér indhold'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Side

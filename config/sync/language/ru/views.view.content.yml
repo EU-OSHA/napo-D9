@@ -1,4 +1,8 @@
 label: Содержимое
+<<<<<<< HEAD
+=======
+description: 'Поиск материалов и управление ими'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -21,6 +25,10 @@ display:
           label: Заголовок
         type:
           label: 'Тип материала'
+<<<<<<< HEAD
+=======
+          separator: ', '
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
         name:
           label: Автор
         status:
@@ -63,4 +71,8 @@ display:
         title: Содержимое
       tab_options:
         title: Содержимое
+<<<<<<< HEAD
+=======
+        description: 'Поиск материалов и управление ими'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Страница

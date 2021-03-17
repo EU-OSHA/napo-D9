@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+label: Turinys
+description: 'Surasti ir valdyti turinį.'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -42,8 +47,20 @@ display:
         langcode:
           expose:
             label: Kalba
+<<<<<<< HEAD
+=======
+      title: Turinys
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
       empty:
         area_text_custom:
           content: 'Turinio nėra.'
   page_1:
+<<<<<<< HEAD
+=======
+    display_options:
+      menu:
+        title: Turinys
+      tab_options:
+        title: Turinys
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Puslapis

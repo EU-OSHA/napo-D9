@@ -1,4 +1,8 @@
 label: Contenido
+<<<<<<< HEAD
+=======
+description: 'Encontrar y administrar contenido.'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -7,6 +11,11 @@ display:
           submit_button: Filtro
           reset_button_label: Restablecer
           exposed_sorts_label: 'Ordenar por'
+<<<<<<< HEAD
+=======
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
       pager:
         options:
           tags:
@@ -19,6 +28,10 @@ display:
           label: Título
         type:
           label: 'Tipo de contenido'
+<<<<<<< HEAD
+=======
+          separator: ', '
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
         name:
           label: Autor
         status:
@@ -61,4 +74,8 @@ display:
         title: Contenido
       tab_options:
         title: Contenido
+<<<<<<< HEAD
+=======
+        description: 'Encuentre y gestione el contenido'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Página

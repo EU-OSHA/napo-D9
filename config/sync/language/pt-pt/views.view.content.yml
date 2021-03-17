@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+label: Conteúdo
+description: 'Encontrar e gerir conteúdo.'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -6,6 +11,11 @@ display:
           submit_button: Filtro
           reset_button_label: Reiniciar
           exposed_sorts_label: 'Ordenar por'
+<<<<<<< HEAD
+=======
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
       pager:
         options:
           tags:
@@ -18,6 +28,10 @@ display:
           label: Título
         type:
           label: 'Tipo de conteúdo'
+<<<<<<< HEAD
+=======
+          separator: ', '
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
         name:
           label: Autor
         status:
@@ -49,9 +63,22 @@ display:
         langcode:
           expose:
             label: Idioma
+<<<<<<< HEAD
+=======
+      title: Conteúdo
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
       empty:
         area_text_custom:
           content: 'Conteúdo não disponível'
     display_title: Principal
   page_1:
+<<<<<<< HEAD
+=======
+    display_options:
+      menu:
+        title: Conteúdo
+      tab_options:
+        title: Conteúdo
+        description: 'Encontrar e gerir conteúdo'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Página

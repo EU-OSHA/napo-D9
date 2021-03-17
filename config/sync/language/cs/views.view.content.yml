@@ -1,9 +1,18 @@
+<<<<<<< HEAD
+=======
+label: Obsah
+description: 'Hledat a spravovat obsah.'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
       exposed_form:
         options:
           submit_button: Filtr
+<<<<<<< HEAD
+=======
+          reset_button_label: Reset
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           exposed_sorts_label: 'Řadit dle'
           sort_asc_label: Vzestupně
           sort_desc_label: Sestupně
@@ -19,6 +28,10 @@ display:
           label: Nadpis
         type:
           label: 'Typ obsahu'
+<<<<<<< HEAD
+=======
+          separator: ', '
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
         name:
           label: Autor
         status:
@@ -50,9 +63,22 @@ display:
         langcode:
           expose:
             label: Jazyk
+<<<<<<< HEAD
+=======
+      title: Obsah
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
       empty:
         area_text_custom:
           content: 'Žádný obsah není k dispozici.'
     display_title: Nadřízené
   page_1:
+<<<<<<< HEAD
+=======
+    display_options:
+      menu:
+        title: Obsah
+      tab_options:
+        title: Obsah
+        description: 'Najít a spravovat obsah'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Stránka

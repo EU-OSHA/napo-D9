@@ -1,0 +1,41 @@
+.block-views-blockfrontpage-custom-video-block{
+  position:relative;
+  .frontpage-video-title{
+    position:absolute;
+    z-index:1;
+    top: 10%;
+    left: 6.875rem;
+    padding: 2.5rem;
+    color:$text-color-white;
+    background:url(/sites/napo/themes/custom/napo_theme/images/background-slider-home.png);
+    max-width: 23.75rem;
+  }
+  .field-content{
+    font-size: 1.875rem;
+    font-weight: bold;
+  }
+  .homepage-video{
+    &-summary{
+      margin-top: 1.875rem;
+      color: $text-color-white;
+      font-weight: bold;
+      font-size:1.125rem;
+    }
+    &-body{
+      color: $text-color-white;
+      font-size:1.125rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.block-views-blocknapo-films-block-1{
+  background: $bg-color-grey-light-3;
+  padding: 0 0 1.875rem 0;
+  .views-field-title{
+    a{
+      padding: 1.875rem 0 0.625rem;
+      font-size: 1.875rem;
+    }
+  }
+}

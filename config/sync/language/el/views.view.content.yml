@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+label: Περιεχόμενο
+description: 'Εύρεση και διαχείριση περιεχομένου'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -18,6 +23,10 @@ display:
           label: Τίτλος
         type:
           label: 'Τύπος περιεχομένου'
+<<<<<<< HEAD
+=======
+          separator: ', '
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
         name:
           label: Συντάκτης
         status:
@@ -49,8 +58,21 @@ display:
         langcode:
           expose:
             label: Γλώσσα
+<<<<<<< HEAD
+=======
+      title: Περιεχόμενο
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
       empty:
         area_text_custom:
           content: 'Δεν υπάρχει διαθέσιμη ύλη.'
   page_1:
+<<<<<<< HEAD
+=======
+    display_options:
+      menu:
+        title: Περιεχόμενο
+      tab_options:
+        title: Περιεχόμενο
+        description: 'Αναζήτηση και διαχείριση περιεχομένου'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Σελίδα

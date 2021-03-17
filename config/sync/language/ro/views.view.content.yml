@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+label: Conţinut
+description: 'Găsire şi administrare conţinut'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -7,6 +12,10 @@ display:
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
+<<<<<<< HEAD
+=======
+          sort_desc_label: Desc
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
       pager:
         options:
           tags:
@@ -19,6 +28,10 @@ display:
           label: Titlu
         type:
           label: 'Tip conţinut'
+<<<<<<< HEAD
+=======
+          separator: ', '
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
         name:
           label: Autor
         status:
@@ -50,9 +63,22 @@ display:
         langcode:
           expose:
             label: Limba
+<<<<<<< HEAD
+=======
+      title: Conţinut
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
       empty:
         area_text_custom:
           content: 'Nu este conţinut disponibil.'
     display_title: Expert
   page_1:
+<<<<<<< HEAD
+=======
+    display_options:
+      menu:
+        title: Conţinut
+      tab_options:
+        title: Conţinut
+        description: 'Găsire şi administrare conţinut'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Pagina

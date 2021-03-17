@@ -1,9 +1,18 @@
 label: Inhoud
+<<<<<<< HEAD
+=======
+description: 'Inhoud zoeken en beheren'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
       exposed_form:
         options:
+<<<<<<< HEAD
+=======
+          submit_button: Filter
+          reset_button_label: Reset
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           exposed_sorts_label: 'Sorteren op'
           sort_asc_label: Oplopend
           sort_desc_label: Aflopend
@@ -19,9 +28,17 @@ display:
           label: Titel
         type:
           label: Inhoudstype
+<<<<<<< HEAD
         name:
           label: Auteur
         status:
+=======
+          separator: ', '
+        name:
+          label: Auteur
+        status:
+          label: Status
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           settings:
             format_custom_true: Gepubliceerd
             format_custom_false: 'Niet gepubliceerd'
@@ -37,6 +54,11 @@ display:
           expose:
             label: Inhoudstype
         status:
+<<<<<<< HEAD
+=======
+          expose:
+            label: Status
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           group_info:
             label: Publicatiestatus
             group_items:
@@ -58,4 +80,8 @@ display:
         title: Inhoud
       tab_options:
         title: Inhoud
+<<<<<<< HEAD
+=======
+        description: 'Inhoud vinden en beheren'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Pagina

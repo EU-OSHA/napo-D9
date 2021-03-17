@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+label: Zawartość
+description: 'Wyszukiwanie i zarządzanie zawartością.'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -20,9 +25,17 @@ display:
           label: Tytuł
         type:
           label: 'Rodzaj zawartości'
+<<<<<<< HEAD
         name:
           label: Autor
         status:
+=======
+          separator: ', '
+        name:
+          label: Autor
+        status:
+          label: Status
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           settings:
             format_custom_true: Opublikowane
             format_custom_false: Nieopublikowany
@@ -38,6 +51,11 @@ display:
           expose:
             label: 'Rodzaj zawartości'
         status:
+<<<<<<< HEAD
+=======
+          expose:
+            label: Status
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           group_info:
             label: 'Status publikacji'
             group_items:
@@ -48,9 +66,22 @@ display:
         langcode:
           expose:
             label: Język
+<<<<<<< HEAD
+=======
+      title: Zawartość
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
       empty:
         area_text_custom:
           content: 'Brak zawartości.'
     display_title: Główny
   page_1:
+<<<<<<< HEAD
+=======
+    display_options:
+      menu:
+        title: Zawartość
+      tab_options:
+        title: Zawartość
+        description: 'Znajdź i zarządzaj treścią'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Strona

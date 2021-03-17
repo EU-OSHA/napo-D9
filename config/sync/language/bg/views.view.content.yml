@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+label: Съдържание
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -8,6 +12,11 @@ display:
       fields:
         title:
           label: Заглавие
+<<<<<<< HEAD
+=======
+        type:
+          label: 'Тип на съдържанието'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
         name:
           label: Автор
         status:
@@ -22,6 +31,12 @@ display:
         title:
           expose:
             label: Заглавие
+<<<<<<< HEAD
+=======
+        type:
+          expose:
+            label: 'Тип на съдържанието'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
         status:
           expose:
             label: Статус
@@ -32,5 +47,15 @@ display:
         langcode:
           expose:
             label: Език
+<<<<<<< HEAD
   page_1:
+=======
+      title: Съдържание
+  page_1:
+    display_options:
+      menu:
+        title: Съдържание
+      tab_options:
+        title: Съдържание
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Страница

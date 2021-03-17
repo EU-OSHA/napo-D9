@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+label: Innehåll
+description: 'Hitta och hantera innehåll.'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -20,9 +25,17 @@ display:
           label: Titel
         type:
           label: Innehållstyp
+<<<<<<< HEAD
         name:
           label: Författare
         status:
+=======
+          separator: ', '
+        name:
+          label: Författare
+        status:
+          label: Status
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           settings:
             format_custom_true: Publicerad
             format_custom_false: 'Ej publicerad'
@@ -38,6 +51,11 @@ display:
           expose:
             label: Innehållstyp
         status:
+<<<<<<< HEAD
+=======
+          expose:
+            label: Status
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           group_info:
             label: 'Status för publicering'
             group_items:
@@ -48,6 +66,21 @@ display:
         langcode:
           expose:
             label: Språk
+<<<<<<< HEAD
     display_title: Huvud
   page_1:
+=======
+      title: Innehåll
+      empty:
+        area_text_custom:
+          content: 'Inget innehåll tillgängligt.'
+    display_title: Huvud
+  page_1:
+    display_options:
+      menu:
+        title: Innehåll
+      tab_options:
+        title: Innehåll
+        description: 'Hitta och hantera innehåll'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Sida

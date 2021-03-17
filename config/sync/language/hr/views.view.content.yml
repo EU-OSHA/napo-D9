@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+label: Sadržaj
+description: 'Pretraga i upravljanje sadržajem'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -13,9 +18,17 @@ display:
           label: Naziv
         type:
           label: 'Vrsta sadržaja'
+<<<<<<< HEAD
         name:
           label: Autor
         status:
+=======
+          separator: ', '
+        name:
+          label: Autor
+        status:
+          label: Status
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           settings:
             format_custom_true: Objavljeno
         changed:
@@ -30,6 +43,11 @@ display:
           expose:
             label: 'Vrsta sadržaja'
         status:
+<<<<<<< HEAD
+=======
+          expose:
+            label: Status
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
           group_info:
             group_items:
               1:
@@ -37,8 +55,22 @@ display:
         langcode:
           expose:
             label: Jezik
+<<<<<<< HEAD
       empty:
         area_text_custom:
           content: 'Nema sadržaja.'
   page_1:
+=======
+      title: Sadržaj
+      empty:
+        area_text_custom:
+          content: 'Nema sadržaja.'
+    display_title: Master
+  page_1:
+    display_options:
+      menu:
+        title: Sadržaj
+      tab_options:
+        title: Sadržaj
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Stranica

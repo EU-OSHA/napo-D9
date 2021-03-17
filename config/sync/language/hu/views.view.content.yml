@@ -1,4 +1,8 @@
 label: Tartalom
+<<<<<<< HEAD
+=======
+description: 'Tartalmakat keres és kezel.'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
 display:
   default:
     display_options:
@@ -21,6 +25,10 @@ display:
           label: Cím
         type:
           label: Tartalomtípus
+<<<<<<< HEAD
+=======
+          separator: ', '
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
         name:
           label: Szerző
         status:
@@ -63,4 +71,8 @@ display:
         title: Tartalom
       tab_options:
         title: Tartalom
+<<<<<<< HEAD
+=======
+        description: 'Tartalom keresése és kezelése'
+>>>>>>> df1116b65550bc91a4eaed1e2efbcff5043b8ded
     display_title: Oldal
