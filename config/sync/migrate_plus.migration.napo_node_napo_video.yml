@@ -71,7 +71,7 @@ process:
     source: field_video
     migration: napo_node_napo_video_media_videos_1
     no_stub: true
-  field_youtube: field_youtube
+  field_youtube: field_youtube/0/input
   field_publication_date:
     -
       plugin: sub_process
