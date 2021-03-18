@@ -11,7 +11,7 @@ dependencies:
 id: views_block__napo_films_block_1
 theme: napo_theme
 region: home_page
-weight: -12
+weight: -14
 provider: null
 plugin: 'views_block:napo_films-block_1'
 settings:

@@ -11,7 +11,7 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
 migration_group: napo_migrate_node
-label: 'Node: MSDs activities Translations'
+label: 'Node: MSDS Activities i18n'
 source:
   plugin: d7_node_entity_translation
   node_type: msds_activities
@@ -37,23 +37,29 @@ process:
   revision_timestamp: timestamp
   content_translation_source: source
   content_translation_outdated: translate
-  field_activities: field_activities
-  field_activity: field_activity
-  field_assessment: field_assessment
-  field_concluding_questions: field_concluding_questions
-  field_conversation_started: field_conversation_started
-  field_conversation_starters_cove: field_conversation_starters_cove
+  field_conversation_started:
+    plugin: file_id_lookup
+    source: field_conversation_started
+    migration:
+      - napo_node_msds_activities_media_documents_1
+    no_stub: true
+  field_conversation_starters_cove:
+    plugin: file_id_lookup
+    source: field_conversation_starters_cove
+    migration:
+      - napo_node_msds_activities_media_images_1
+    no_stub: true
+  field_activity:
+    plugin: file_id_lookup
+    source: field_activity
+    migration:
+      - napo_node_msds_activities_media_documents_1
+    no_stub: true
   field_introductory_text: field_introductory_text
   field_learning_objectives: field_learning_objectives
-  field_msds_video: field_msds_video
-  field_resources_related: field_resources_related
-  field_msds_resources_required: field_msds_resources_required
-  field_tags:
-    -
-      plugin: sub_process
-      source: field_tags
-      process:
-        target_id: tid
+  field_activities: field_activities
+  field_concluding_questions: field_concluding_questions
+  field_assessment: field_assessment
 destination:
   plugin: 'entity:node'
   translations: true

@@ -58,13 +58,12 @@ content:
     type: entity_reference_label
     region: content
   field_youtube:
-    type: entity_reference_entity_view
     weight: 11
     label: above
     settings:
-      view_mode: default
-      link: false
+      link_to_entity: false
     third_party_settings: {  }
+    type: string
     region: content
 hidden:
   field_tags: true
