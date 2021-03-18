@@ -40,8 +40,6 @@ display:
           label: 'Utolsó tevékenység'
         operations:
           label: Operations
-        mail:
-          separator: ', '
       filters:
         combine:
           expose:

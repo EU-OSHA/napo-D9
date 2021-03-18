@@ -2,10 +2,6 @@ uuid: 355542c8-8ea0-40bc-b775-264c430075d0
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:block_image:a1eb13f7-ade7-41a3-bf22-79509a30264c'
-  module:
-    - block_content
   theme:
     - napo_theme
 id: logoosha

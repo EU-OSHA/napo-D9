@@ -9,11 +9,7 @@ settings:
   dialog_options:
     narrow:
       title: Schmal
-    normal:
-      title: Normal
     wide:
       title: Breit
 element:
   default_more_title: Zusätzlich
-mail:
-  default_from_name: '[site:name]'

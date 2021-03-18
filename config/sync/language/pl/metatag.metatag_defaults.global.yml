@@ -1,1 +1,3 @@
 label: Globalne
+tags:
+  canonical_url: '[current-page:url:absolute]'

@@ -8,7 +8,6 @@ display:
           submit_button: Filter
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
@@ -24,19 +23,14 @@ display:
       fields:
         title:
           label: Title
-          separator: ', '
         type:
           label: 'Content type'
-          separator: ', '
         name:
           label: Author
-          separator: ', '
         moderation_state:
           label: 'Stato moderazione'
-          separator: ', '
         changed:
           label: Updated
-          separator: ', '
         operations:
           label: Operations
       filters:

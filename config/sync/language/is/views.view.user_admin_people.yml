@@ -27,8 +27,6 @@ display:
           label: 'Meðlimur í'
         operations:
           label: Operations
-        mail:
-          separator: ', '
       filters:
         status:
           group_info:

@@ -7,16 +7,13 @@ tips:
     label: 'Index Status'
     body: 'Dies ist eine Zusammenfassung darüber, wie viele Elemente in diesem Index bekannt sind und wie viele Elemente in ihrer neuesten Version indiziert wurden. Elemente, die noch nicht indiziert wurden, können von der Suchfunktion nicht gefunden werden.'
   search-api-index-status:
-    label: Status
     body: 'Zeigt an, ob der Index aktuell aktiviert oder deaktiviert ist.'
   search-api-index-datasources:
     label: Datenquellen
     body: 'Listet alle für diesen Index aktivierten Datenquellen auf.'
   search-api-index-tracker:
-    label: Tracker
     body: 'Der Tracker, der vom Index verwendet wird. Standardmäßig ist nur („Standard") verfügbar.'
   search-api-index-server:
-    label: Server
     body: 'Falls der Index einem Server zugeordnet ist, wird der Server hier aufgeführt.'
   search-api-index-server-index-status:
     label: Server-Indexstatus

@@ -1,6 +1,6 @@
 uuid: eb14106f-17f1-4ef4-8cf1-55808e600c67
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.base_field_override.node.article.title

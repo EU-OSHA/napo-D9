@@ -7,7 +7,6 @@ display:
       exposed_form:
         options:
           submit_button: Toepassen
-          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -17,9 +16,6 @@ display:
             items_per_page_label: 'Items per pagina'
             items_per_page_options_all_label: '- Alle -'
             offset_label: Startpunt
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         title:
           label: Title

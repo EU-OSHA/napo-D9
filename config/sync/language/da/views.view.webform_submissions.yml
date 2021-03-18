@@ -1,6 +1,5 @@
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -12,8 +11,6 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« First'
             last: 'Last »'
           expose:
@@ -21,16 +18,10 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset_label: Forskydning
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         created:
           label: Oprettet
-          separator: ', '
         remote_addr:
           label: IP-adresse
-          separator: ', '
         view_webform_submission:
           label: Operations
           text: vis
@@ -46,25 +37,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Handling
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Klæbrig
-          separator: ', '
         locked:
           label: Låst
-          separator: ', '
         created:
           label: Oprettet
-          separator: ', '
         completed:
           label: Gennemført
-          separator: ', '
         remote_addr:
           label: IP-adresse
-          separator: ', '
         operations:
           label: Operations
       filters:
@@ -79,25 +61,16 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Handling
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Klæbrig
-          separator: ', '
         locked:
           label: Låst
-          separator: ', '
         created:
           label: Oprettet
-          separator: ', '
         completed:
           label: Gennemført
-          separator: ', '
         remote_addr:
           label: IP-adresse
-          separator: ', '
         view_webform_submission:
           label: Operations
           text: vis
@@ -114,25 +87,16 @@ display:
   embed_review:
     display_options:
       fields:
-        sid:
-          separator: ', '
-        in_draft:
-          separator: ', '
         sticky:
           label: Klæbrig
-          separator: ', '
         locked:
           label: Låst
-          separator: ', '
         created:
           label: Oprettet
-          separator: ', '
         completed:
           label: Gennemført
-          separator: ', '
         remote_addr:
           label: IP-adresse
-          separator: ', '
         view_webform_submission:
           label: Operations
           text: vis

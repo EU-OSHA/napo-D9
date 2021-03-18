@@ -11,9 +11,6 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      fields:
-        changed:
-          separator: ', '
       title: 'Последние материалы'
       empty:
         area_text_custom:

@@ -2,7 +2,6 @@ label: 'Nye brugere'
 description: 'Viser en liste af de nyeste brugerkonti på sitet.'
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:

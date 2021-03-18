@@ -1,0 +1,10 @@
+uuid: 812342d0-8278-41a2-8041-cdf6ee944a11
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.osha_slideshow
+label: 'Osha Slideshow'
+targetEntityType: node
+cache: true

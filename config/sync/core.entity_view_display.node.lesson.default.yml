@@ -18,6 +18,8 @@ dependencies:
     - node.type.lesson
   module:
     - field_group
+    - layout_builder
+    - layout_discovery
     - text
     - user
 third_party_settings:
@@ -25,7 +27,7 @@ third_party_settings:
     group_left:
       children: {  }
       parent_name: ''
-      weight: 0
+      weight: 1
       format_type: details
       region: content
       format_settings:
@@ -37,7 +39,7 @@ third_party_settings:
     group_right:
       children: {  }
       parent_name: ''
-      weight: 8
+      weight: 9
       format_type: details
       region: content
       format_settings:
@@ -46,6 +48,21 @@ third_party_settings:
         id: ''
         classes: ''
       label: Right
+    group_header:
+      children: {  }
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        description: ''
+        open: true
+        id: ''
+        classes: ''
+      label: header
+  layout_builder:
+    allow_custom: false
+    enabled: false
 id: node.lesson.default
 targetEntityType: node
 bundle: lesson
@@ -54,26 +71,26 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 11
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     region: content
   field_activities:
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_assessment:
     weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_curriculum_links:
+  field_assessment:
     weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_curriculum_links:
+    weight: 6
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -81,7 +98,7 @@ content:
     region: content
   field_file:
     type: entity_reference_entity_view
-    weight: 9
+    weight: 10
     label: above
     settings:
       view_mode: default
@@ -89,21 +106,21 @@ content:
     third_party_settings: {  }
     region: content
   field_learning_objectives:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_lesson_intro_text:
-    weight: 7
+    weight: 8
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_lesson_toolkit:
-    weight: 10
+    weight: 11
     label: hidden
     settings:
       link: true
@@ -111,7 +128,7 @@ content:
     type: entity_reference_label
     region: content
   field_lesson_video:
-    weight: 12
+    weight: 13
     label: hidden
     settings:
       link: true
@@ -120,14 +137,14 @@ content:
     region: content
   field_resources_required:
     type: entity_reference_label
-    weight: 6
+    weight: 7
     region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
   field_starter:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }

@@ -40,8 +40,6 @@ display:
           label: 'Последнее посещение'
         operations:
           label: Operations
-        mail:
-          separator: ', '
       filters:
         combine:
           expose:

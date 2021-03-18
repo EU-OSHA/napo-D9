@@ -18,7 +18,6 @@ dependencies:
     - field.field.node.article.field_thesaurus
     - node.type.article
   module:
-    - chosen_field
     - datetime
     - field_group
     - media_library
@@ -161,7 +160,7 @@ content:
     weight: 6
     settings: {  }
     third_party_settings: {  }
-    type: chosen_select
+    type: options_select
     region: content
   field_page_count:
     type: number
@@ -177,13 +176,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_tags:
-    type: chosen_select
+    type: options_select
     weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_thesaurus:
-    type: chosen_select
+    type: options_select
     weight: 8
     region: content
     settings: {  }
