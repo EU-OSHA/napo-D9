@@ -21,16 +21,8 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  field_weight:
-    weight: 1
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
 hidden:
+  field_weight: true
   langcode: true
   links: true
   search_api_excerpt: true

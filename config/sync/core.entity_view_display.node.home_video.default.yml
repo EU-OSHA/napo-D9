@@ -10,9 +10,67 @@ dependencies:
     - field.field.node.home_video.field_video
     - node.type.home_video
   module:
+    - field_group
     - link
     - text
     - user
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - group_general
+        - group_media
+        - group_related_information
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: info
+    group_general:
+      children:
+        - body
+      parent_name: group_info
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+      label: General
+    group_media:
+      children:
+        - field_poster_image
+        - field_image
+        - field_video
+      parent_name: group_info
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+      label: Media
+    group_related_information:
+      children:
+        - field_url
+      parent_name: group_info
+      weight: 23
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+      label: 'Related Information'
 id: node.home_video.default
 targetEntityType: node
 bundle: home_video
@@ -21,12 +79,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_image:
-    weight: 7
+    weight: 23
     label: above
     settings:
       link: true
@@ -35,7 +93,7 @@ content:
     region: content
   field_poster_image:
     type: entity_reference_entity_view
-    weight: 8
+    weight: 22
     label: above
     settings:
       view_mode: default
@@ -43,7 +101,7 @@ content:
     third_party_settings: {  }
     region: content
   field_url:
-    weight: 4
+    weight: 2
     label: above
     settings:
       trim_length: 80
@@ -56,7 +114,7 @@ content:
     region: content
   field_video:
     type: entity_reference_entity_view
-    weight: 9
+    weight: 24
     label: above
     settings:
       view_mode: default
