@@ -118,7 +118,9 @@
   &-blocks{
     display:inline-block;
     width: 163px;
+    vertical-align: top;
   }
+
   .nav{
     background: none;
     font-size: 1rem;
@@ -177,6 +179,7 @@
       color: $text-color-white;
       padding: 0;
       display: block;
+      padding:0px;
       &:focus{
         outline: none;
       }
@@ -248,6 +251,7 @@
         border-radius: 3.875rem;
         background: $text-color-blue;
         color: $text-color-white;
+        margin:0px;
       }
       &-group {
         max-width: calc(100% - 36px);
@@ -304,91 +308,10 @@
       }
     }
   }
-  .block{
-    //  .form-item{
-    //    legend{
-    //      display:none;
-    //    }
-    //  }
-    //  .dropdown{}
-    //  .dropbutton{
-    //    &-wrapper{
-    //      line-height: 18px;
-    //      border: none;
-    //      height: 31px;
-    //      width: 163px;
-    //      appearance: none;
-    //      -moz-appearance: none;
-    //      -webkit-appearance: none;
-    //      -moz-box-sizing: border-box;
-    //      -webkit-box-sizing: border-box;
-    //      box-sizing: border-box;
-    //      cursor: pointer;
-    //
-    //      &:after {
-    //        width: 26px;
-    //        height: 30px;
-    //        display: block;
-    //        content: '';
-    //        position: absolute;
-    //        right: 0px;
-    //        top: 5px;
-    //        pointer-events: none;
-    //        background: url(/sites/napo/themes/custom/napo_theme/images/arrow-language.png);
-    //        -moz-box-sizing: border-box;
-    //        -webkit-box-sizing: border-box;
-    //        box-sizing: border-box;
-    //        background-repeat: no-repeat;
-    //      }
-    //    }
-    //    &-widget{
-    //      border: none;
-    //      background-color: transparent;
-    //      background-image:none;
-    //      color: inherit;
-    //      cursor: pointer;
-    //      text-align: left;
-    //      margin: 0;
-    //      border-radius: 0;
-    //      overflow: hidden;
-    //      padding-right:0;
-    //      font-size:0.75rem;
-    //    }
-    //    &-action{
-    //      background: $bg-color-yellow;
-    //      &:hover{
-    //        background: $bg-color-yellow;
-    //      }
-    //      &:not(.secondary-action) {
-    //        line-height: 31px;
-    //        border-radius: 20px;
-    //        .language-link{
-    //          height:31px;
-    //          font-weight:bold;
-    //        }
-    //      }
-    //      &.secondary-action {
-    //        border-top: none;
-    //        .language-link:hover{
-    //          color:$text-color-white;
-    //          background-color:$bg-color-orange;
-    //          text-decoration: none;
-    //        }
-    //      }
-    //    }
-    //    &-toggle{
-    //      display:none;
-    //    }
-    //    .language-link{
-    //      width: 100%;
-    //      display: inline-block;
-    //      color:$text-color-blue;
-    //      font-weight:400;
-    //      &:hover{
-    //        background:none;
-    //      }
-    //    }
-    //  }
+
+
+  .block-language-dropdown-blocklanguage-interface{
+
   }
 }
 

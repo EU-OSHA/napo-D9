@@ -1,5 +1,7 @@
 .block-simple-blockfooter-social{
-  margin: 0 auto;
+  .footer &{
+    margin: 0 auto;
+  }
   p {
     font-size: 1.25rem;
     text-align: center;

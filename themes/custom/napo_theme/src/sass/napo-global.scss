@@ -11,6 +11,7 @@
 @import 'components/helper';
 @import 'components/links';
 @import 'components/modal';
+@import 'components/select';
 
 @import 'layout/body';
 @import 'layout/footer';
@@ -25,5 +26,6 @@
 @import 'block/faqs';
 
 @import 'responsive/common/common-responsive';
+@import 'responsive/desktop/desktop-responsive';
 @import 'responsive/mobile/mobile-responsive';
 @import 'responsive/tablet/tablet-responsive';

@@ -10,9 +10,16 @@
     background:url(/sites/napo/themes/custom/napo_theme/images/background-slider-home.png);
     max-width: 23.75rem;
   }
-  .field-content{
-    font-size: 1.875rem;
-    font-weight: bold;
+  .frontpage-video-title{
+    .field-content{
+      font-size: 1.875rem;
+      font-weight: bold;
+    }
+  }
+  .field--type-file{
+    .field__item{
+      font-size:0;
+    }
   }
   .homepage-video{
     &-summary{
@@ -26,6 +33,10 @@
       font-size:1.125rem;
       font-weight: 400;
     }
+  }
+  video{
+    max-width: 100%;
+    background-color: black;
   }
 }
 
@@ -67,3 +78,17 @@
     position: relative;
   }
 }
+
+
+.block-views-blockfrontpage-carousel-featured-block{
+  background: $bg-color-grey-light-3;
+  padding: 0 0 1.875rem 0;
+
+}
+
+.view-display-id-block{
+  &>.row{
+    margin:0px;
+  }
+}
+

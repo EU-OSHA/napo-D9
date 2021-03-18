@@ -1,0 +1,23 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .block-views-blockconsortium-partners-block{
+    .views-row{
+      flex-wrap: wrap;
+      width: 80%;
+      margin: auto;
+      float: none;
+    }
+  }
+}
+@media (min-width: 992px){
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding:0;
+  }
+  .region-header-logo{
+    img{
+      width: auto;
+      margin: auto;
+      display:block;
+    }
+  }
+}

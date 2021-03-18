@@ -1,0 +1,120 @@
+@media only screen and (max-width: 767px){
+
+  .header-logo {
+    padding:0px;
+    .contextual-region{
+      width:100%;
+    }
+    a{
+      display:block;
+      text-align:center;
+    }
+    img{
+      width: auto;
+      margin: auto;
+      display:block;
+    }
+  }
+  .region-header-logo{
+    margin:0px;
+  }
+ .header{
+   .contextual-region{
+     width:100%;
+   }
+   .navbar-toggler {
+     margin-top: 0px;
+     margin-right: 0px;
+     position: relative;
+     left: 0.325rem;
+     top: 0.325rem;
+     background: $bg-color-white;
+     border-radius: 3.125rem;
+     width: 3.125rem;
+     height: 3.125rem;
+     .icon-bar {
+       background: $bg-color-blue;
+       height: 4px;
+       display: block;
+     }
+
+     .icon-bar + .icon-bar {
+       margin-top: 4px;
+     }
+     &:focus{
+       outline:none;
+       box-shadow: none;
+     }
+   }
+   .navbar-expand-lg,
+   #navbar-main{
+     max-width: 90%;
+     margin: 0 auto;
+     background: $bg-color-blue;
+     border-radius: 1.875rem;
+     //height: 3.75rem;
+     //width:100%;
+     display:block;
+     position:relative;
+   }
+   .nav{
+     &-item{
+       min-width: 100%;
+       max-width: 100%;
+       height: auto;
+       background: $bg-color-white;
+       padding: 0 ;
+       border-bottom: 1px solid $bg-color-grey-light-4 ;
+       border-radius: 0;
+       text-align: center;
+       margin: 0 ;
+       flex-direction: column;
+     }
+     &-link{
+       color: $text-color-blue;
+       background: $bg-color-white;
+       min-height: 3.125rem;
+       padding-top: 1.25rem;
+       font-size: 1.25rem;
+       width:100%;
+     }
+   }
+    .dropdown-menu {
+      background-color: transparent;
+      border-top: none;
+      border-radius: 0 ;
+      width: 100%;
+      overflow: hidden;
+      max-width: 100%;
+      min-width: 129px;
+      text-align:center;
+    }
+ }
+
+  .block-views-blockfrontpage-custom-video-block{
+    video{
+      max-height:350px;
+    }
+    .frontpage-video-title{
+      display:none;
+    }
+  }
+  .header_top_bar{
+    display:none;
+  }
+  .block-views-blockconsortium-partners-block{
+    .views-row{
+      display: flex;
+      flex-wrap: wrap;
+      align-content: stretch;
+    }
+  }
+
+  .footer {
+    .nav{
+      &-item {
+        display: block;
+      }
+    }
+  }
+}
