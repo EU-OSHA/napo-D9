@@ -74,7 +74,7 @@ process:
       source: field_tags
       process:
         target_id: tid
-  field_youtube: field_youtube
+  field_youtube/value: field_youtube/0/input
 destination:
   plugin: 'entity:node'
 migration_dependencies:
