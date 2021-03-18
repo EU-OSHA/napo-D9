@@ -1,9 +1,9 @@
-uuid: bd4aa0c6-ff5a-4ca3-9bb9-71aa7ad26c4d
+uuid: 02cca108-42e4-41f2-8174-89424a889a32
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
+    - core.entity_view_mode.node.osha_slideshow
     - field.field.node.consortium_partner.body
     - field.field.node.consortium_partner.field_image
     - field.field.node.consortium_partner.field_url
@@ -17,10 +17,10 @@ third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-id: node.consortium_partner.full
+id: node.consortium_partner.osha_slideshow
 targetEntityType: node
 bundle: consortium_partner
-mode: full
+mode: osha_slideshow
 content:
   body:
     label: hidden

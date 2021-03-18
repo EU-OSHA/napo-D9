@@ -3,12 +3,8 @@ langcode: en
 status: true
 dependencies:
   module:
-    - field_permissions
     - options
     - taxonomy
-third_party_settings:
-  field_permissions:
-    permission_type: public
 id: taxonomy_term.field_excluded_from
 field_name: field_excluded_from
 entity_type: taxonomy_term
