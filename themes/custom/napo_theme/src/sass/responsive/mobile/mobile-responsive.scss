@@ -1,5 +1,11 @@
 @media only screen and (max-width: 767px){
-
+  .header {
+    .region-header-logo {
+      img {
+        margin: auto;
+      }
+    }
+  }
   .header-logo {
     padding:0px;
     .contextual-region{
@@ -19,6 +25,9 @@
     margin:0px;
   }
  .header{
+   &_nav {
+     text-align: left;
+   }
    .contextual-region{
      width:100%;
    }
@@ -103,10 +112,20 @@
     display:none;
   }
   .block-views-blockconsortium-partners-block{
-    .views-row{
-      display: flex;
-      flex-wrap: wrap;
-      align-content: stretch;
+    .views{
+      &-row{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+      }
+      &-col{
+
+        margin: 10px;
+      }
+    }
+
+    h2{
+      display:none;
     }
   }
 
@@ -115,6 +134,19 @@
       &-item {
         display: block;
       }
+      &-link{
+        padding:0.375rem;
+        &:after{
+          display:none;
+        }
+      }
+    }
+  }
+
+  .block-views-blockfeatures-articles-block{
+    .views-row{
+      width:100%;
+      margin-bottom: 1.25rem;
     }
   }
 }
