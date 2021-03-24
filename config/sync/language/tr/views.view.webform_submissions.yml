@@ -1,21 +1,38 @@
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Uygula
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Sayfa başına öğe sayısı'
             items_per_page_options_all_label: '- Tümü -'
             offset_label: 'Başlangıç değeri'
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         created:
           label: Oluşturulma
+          separator: ', '
         remote_addr:
           label: 'IP adresi'
+          separator: ', '
         view_webform_submission:
+          label: Operations
           text: görüntüle
       header:
         result:
@@ -29,16 +46,27 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Eylem
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         sticky:
           label: Kalıcı
+          separator: ', '
         locked:
           label: Kilitli
+          separator: ', '
         created:
           label: Oluşturulma
+          separator: ', '
         completed:
           label: Tamamlandı
+          separator: ', '
         remote_addr:
           label: 'IP adresi'
+          separator: ', '
+        operations:
+          label: Operations
       filters:
         sticky:
           expose:
@@ -51,19 +79,30 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Eylem
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         sticky:
           label: Kalıcı
+          separator: ', '
         locked:
           label: Kilitli
+          separator: ', '
         created:
           label: Oluşturulma
+          separator: ', '
         completed:
           label: Tamamlandı
+          separator: ', '
         remote_addr:
           label: 'IP adresi'
+          separator: ', '
         view_webform_submission:
+          label: Operations
           text: görüntüle
         edit_webform_submission:
+          label: Operations
           text: düzenle
       filters:
         sticky:
@@ -75,17 +114,27 @@ display:
   embed_review:
     display_options:
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         sticky:
           label: Kalıcı
+          separator: ', '
         locked:
           label: Kilitli
+          separator: ', '
         created:
           label: Oluşturulma
+          separator: ', '
         completed:
           label: Tamamlandı
+          separator: ', '
         remote_addr:
           label: 'IP adresi'
+          separator: ', '
         view_webform_submission:
+          label: Operations
           text: görüntüle
       filters:
         sticky:

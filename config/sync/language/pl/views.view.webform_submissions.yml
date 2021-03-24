@@ -12,6 +12,8 @@ display:
       pager:
         options:
           tags:
+            previous: ‹‹
+            next: ››
             first: '« First'
             last: 'Last »'
           expose:
@@ -19,10 +21,16 @@ display:
             items_per_page_options_all_label: '- Wszystko -'
             offset_label: Przesunięcie
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         created:
           label: Utworzono
+          separator: ', '
         remote_addr:
           label: 'Adres IP'
+          separator: ', '
         view_webform_submission:
           label: Operations
           text: przeglądaj
@@ -38,16 +46,25 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Akcja
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         sticky:
           label: Przyklejony
+          separator: ', '
         locked:
           label: Zablokowany
+          separator: ', '
         created:
           label: Utworzono
+          separator: ', '
         completed:
           label: Zakończone
+          separator: ', '
         remote_addr:
           label: 'Adres IP'
+          separator: ', '
         operations:
           label: Operations
       filters:
@@ -62,16 +79,25 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Akcja
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         sticky:
           label: Przyklejony
+          separator: ', '
         locked:
           label: Zablokowany
+          separator: ', '
         created:
           label: Utworzono
+          separator: ', '
         completed:
           label: Zakończone
+          separator: ', '
         remote_addr:
           label: 'Adres IP'
+          separator: ', '
         view_webform_submission:
           label: Operations
           text: przeglądaj
@@ -88,16 +114,25 @@ display:
   embed_review:
     display_options:
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         sticky:
           label: Przyklejony
+          separator: ', '
         locked:
           label: Zablokowany
+          separator: ', '
         created:
           label: Utworzono
+          separator: ', '
         completed:
           label: Zakończone
+          separator: ', '
         remote_addr:
           label: 'Adres IP'
+          separator: ', '
         view_webform_submission:
           label: Operations
           text: przeglądaj

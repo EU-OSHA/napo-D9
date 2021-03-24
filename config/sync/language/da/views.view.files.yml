@@ -2,9 +2,11 @@ label: Filer
 description: 'Find og håndtér filer.'
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
+          submit_button: Filter
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
@@ -19,13 +21,20 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset_label: Forskydning
       fields:
+        fid:
+          label: Fid
         filename:
           label: Navn
+          separator: ', '
+        filemime:
+          label: 'MIME type'
         filesize:
           label: Størrelse
         status:
+          label: Status
           settings:
             format_custom_false: Midlertidig
+            format_custom_true: Permanent
         created:
           label: Upload-dato
         changed:
@@ -36,6 +45,12 @@ display:
         filename:
           expose:
             label: Filnavn
+        filemime:
+          expose:
+            label: 'MIME type'
+        status:
+          expose:
+            label: Status
       title: Filer
       empty:
         area_text_custom:
@@ -46,6 +61,7 @@ display:
       menu:
         title: Filer
   page_2:
+    display_title: 'File usage'
     display_options:
       pager:
         options:
@@ -57,12 +73,16 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset_label: Forskydning
       fields:
+        entity_label:
+          label: Entity
         type:
           label: Entity-type
         module:
           label: 'Registrerer modul'
         count:
           label: 'Brug antal'
+          format_plural_string: !!binary MQNAY291bnQ=
+      title: 'File usage'
       arguments:
         fid:
           exception:

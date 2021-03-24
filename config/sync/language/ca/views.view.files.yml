@@ -9,6 +9,8 @@ display:
           submit_button: Filter
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -19,8 +21,11 @@ display:
             items_per_page_options_all_label: '- Tot -'
             offset_label: Desplaçament
       fields:
+        fid:
+          label: Fid
         filename:
           label: Nom
+          separator: ', '
         filemime:
           label: 'Tipus MIME'
         filesize:
@@ -29,6 +34,7 @@ display:
           label: Status
           settings:
             format_custom_false: Temporal
+            format_custom_true: Permanent
         created:
           label: 'Data de càrrega'
         changed:
@@ -75,6 +81,7 @@ display:
           label: 'Mòdul de registre'
         count:
           label: 'Comptador d''ús'
+          format_plural_string: !!binary MQNAY291bnQ=
       title: 'Utilització de fitxer'
       arguments:
         fid:

@@ -16,9 +16,14 @@ display:
             items_per_page_label: 'Είδη ανά σελίδα'
             items_per_page_options_all_label: '- Όλα -'
             offset_label: Αντιστάθμιση
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         nothing:
           admin_label: Εικονίδιο
+        wid:
+          label: WID
         severity:
           label: Σοβαρότητα
         type:
@@ -29,6 +34,7 @@ display:
           label: Μήνυμα
         name:
           label: Χρήστης
+          separator: ', '
         link:
           label: Operations
       filters:

@@ -17,7 +17,78 @@ dependencies:
     - field.field.node.lesson.field_tags
     - node.type.lesson
   module:
+    - field_group
     - text
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - group_general
+        - group_m
+        - group_r
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: info
+    group_general:
+      children:
+        - title
+        - body
+        - field_lesson_intro_text
+      parent_name: group_info
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: General
+    group_m:
+      children:
+        - field_lesson_toolkit
+        - field_lesson_video
+        - field_resources_required
+        - field_file
+      parent_name: group_info
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Media
+    group_r:
+      children:
+        - langcode
+        - field_learning_objectives
+        - field_starter
+        - field_activities
+        - field_assessment
+        - field_curriculum_links
+        - translation
+        - field_tags
+      parent_name: group_info
+      weight: 22
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Related Information'
 id: node.lesson.default
 targetEntityType: node
 bundle: lesson
@@ -25,7 +96,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 2
     region: content
     settings:
       rows: 9
@@ -35,7 +106,7 @@ content:
     third_party_settings: {  }
   field_activities:
     type: text_textarea
-    weight: 8
+    weight: 6
     region: content
     settings:
       rows: 5
@@ -43,7 +114,7 @@ content:
     third_party_settings: {  }
   field_assessment:
     type: text_textarea
-    weight: 9
+    weight: 7
     region: content
     settings:
       rows: 5
@@ -51,14 +122,14 @@ content:
     third_party_settings: {  }
   field_curriculum_links:
     type: text_textarea
-    weight: 10
+    weight: 8
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_file:
-    weight: 26
+    weight: 7
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -69,7 +140,7 @@ content:
     region: content
   field_learning_objectives:
     type: text_textarea
-    weight: 6
+    weight: 4
     region: content
     settings:
       rows: 5
@@ -77,23 +148,13 @@ content:
     third_party_settings: {  }
   field_lesson_intro_text:
     type: text_textarea
-    weight: 5
+    weight: 3
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_lesson_toolkit:
-    type: entity_reference_autocomplete
-    weight: 2
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_lesson_video:
     type: entity_reference_autocomplete
     weight: 4
     region: content
@@ -103,9 +164,19 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_lesson_video:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_resources_required:
     type: entity_reference_autocomplete
-    weight: 12
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
@@ -115,7 +186,7 @@ content:
     third_party_settings: {  }
   field_starter:
     type: text_textarea
-    weight: 7
+    weight: 5
     region: content
     settings:
       rows: 5
@@ -123,7 +194,7 @@ content:
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete
-    weight: 11
+    weight: 10
     region: content
     settings:
       match_operator: CONTAINS
@@ -133,18 +204,23 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 3
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 9
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

@@ -23,7 +23,7 @@ process:
   type:
     -
       plugin: default_value
-      default_value: lesson_resources
+      default_value: lesson
   title:
     -
       plugin: get
@@ -52,23 +52,20 @@ process:
     -
       plugin: get
       source: changed
-  field_lesson_type:
-    -
-      plugin: sub_process
-      source: field_lesson_type
-      process:
-        target_id:
-          plugin: get
-          source: tid
-  field_activities: field_activities
-  field_assessment: field_assessment
+  field_lesson_toolkit: field_lesson_toolkit
+  field_file:
+    plugin: file_id_lookup
+    source: field_file
+    migration:
+      - napo_node_lesson_media_documents_1
+    no_stub: true
+  field_lesson_video: field_lesson_video
   field_lesson_intro_text: field_lesson_intro_text
   field_learning_objectives: field_learning_objectives
-  field_lesson_toolkit: field_lesson_toolkit
-  field_lesson_video: field_lesson_video
-  field_curriculum_links: field_curriculum_links
-  field_resources_required: field_resources_required
   field_starter: field_starter
+  field_activities: field_activities
+  field_assessment: field_assessment
+  field_curriculum_links: field_curriculum_links
   field_tags:
     -
       plugin: sub_process
@@ -77,15 +74,13 @@ process:
         target_id:
           plugin: get
           source: tid
-  field_file:
-    plugin: file_id_lookup
-    source: field_file
-    migration:
-      - napo_node_lesson_media_documents_1
-    no_stub: true
+  field_resources_required: field_resources_required
 destination:
   plugin: 'entity:node'
 migration_dependencies:
   required:
     - d7_user
+    - napo_taxonomy_tags
+    - napo_node_lesson_toolkit
+    - napo_node_lesson_resources
     - napo_node_lesson_media_documents_1

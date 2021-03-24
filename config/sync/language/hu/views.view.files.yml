@@ -21,8 +21,11 @@ display:
             items_per_page_options_all_label: '– Mind –'
             offset_label: Eltolás
       fields:
+        fid:
+          label: Fid
         filename:
           label: Név
+          separator: ', '
         filemime:
           label: 'MIME típus'
         filesize:
@@ -78,6 +81,7 @@ display:
           label: 'Használó modul'
         count:
           label: 'Használatok száma'
+          format_plural_string: !!binary MQNAY291bnQ=
       title: 'Fájl használata'
       arguments:
         fid:

@@ -27,14 +27,22 @@ display:
           action_title: Művelet
         subject:
           label: Tárgy
+          separator: ', '
+        uid:
+          separator: ', '
         name:
           label: Author
+          separator: ', '
         entity_id:
           label: 'Hozzászólás ehhez'
+          separator: ', '
         changed:
           label: Updated
+          separator: ', '
         operations:
           label: Operations
+        name_1:
+          separator: ', '
       filters:
         subject:
           expose:
@@ -79,11 +87,19 @@ display:
           action_title: Művelet
         subject:
           label: Tárgy
+          separator: ', '
+        uid:
+          separator: ', '
         name:
           label: Author
+          separator: ', '
         entity_id:
           label: 'Hozzászólás ehhez'
+          separator: ', '
         changed:
           label: Updated
+          separator: ', '
         operations:
           label: Operations
+        name_1:
+          separator: ', '

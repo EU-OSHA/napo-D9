@@ -1,20 +1,17 @@
-uuid: c2b531b2-63da-4710-ab3c-c01835564f19
+uuid: 223e9c79-8812-46f7-99d1-99470a68cbb0
 langcode: en
 status: true
 dependencies:
   module:
-    - field_permissions
-    - media
     - node
-third_party_settings:
-  field_permissions:
-    permission_type: public
 id: node.field_youtube
 field_name: field_youtube
 entity_type: node
-type: entity_reference
+type: string
 settings:
-  target_type: media
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1

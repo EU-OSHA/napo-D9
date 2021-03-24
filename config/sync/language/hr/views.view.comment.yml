@@ -1,6 +1,7 @@
 label: Komentari
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -21,14 +22,22 @@ display:
           action_title: Akcija
         subject:
           label: Naziv
+          separator: ', '
+        uid:
+          separator: ', '
         name:
           label: Author
+          separator: ', '
         entity_id:
           label: 'Objavljeno u'
+          separator: ', '
         changed:
           label: Updated
+          separator: ', '
         operations:
           label: Operations
+        name_1:
+          separator: ', '
       filters:
         subject:
           expose:
@@ -63,11 +72,19 @@ display:
           action_title: Akcija
         subject:
           label: Naziv
+          separator: ', '
+        uid:
+          separator: ', '
         name:
           label: Author
+          separator: ', '
         entity_id:
           label: 'Objavljeno u'
+          separator: ', '
         changed:
           label: Updated
+          separator: ', '
         operations:
           label: Operations
+        name_1:
+          separator: ', '

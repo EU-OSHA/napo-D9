@@ -7,6 +7,8 @@ tips:
     label: 'Identyfikator systemowy'
   search-api-index-fields-type:
     label: Typ
+  search-api-index-fields-boost:
+    label: Boost
   search-api-index-fields-edit:
     label: 'Edycja pola'
   search-api-index-fields-remove:

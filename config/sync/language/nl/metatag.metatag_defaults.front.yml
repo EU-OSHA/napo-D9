@@ -1,1 +1,4 @@
 label: Voorpagina
+tags:
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'

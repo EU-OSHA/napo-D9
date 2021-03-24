@@ -2,6 +2,7 @@ label: 'Son yorumlar'
 description: 'Son yorumlar.'
 display:
   default:
+    display_title: Master
     display_options:
       title: 'Son yorumlar'
       empty:

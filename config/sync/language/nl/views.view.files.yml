@@ -6,6 +6,8 @@ display:
     display_options:
       exposed_form:
         options:
+          submit_button: Filter
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -19,15 +21,20 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset_label: Startpunt
       fields:
+        fid:
+          label: Fid
         filename:
           label: Naam
+          separator: ', '
         filemime:
           label: MIME-type
         filesize:
           label: Grootte
         status:
+          label: Status
           settings:
             format_custom_false: Tijdelijk
+            format_custom_true: Permanent
         created:
           label: Uploaddatum
         changed:
@@ -41,6 +48,9 @@ display:
         filemime:
           expose:
             label: MIME-type
+        status:
+          expose:
+            label: Status
       title: Bestanden
       empty:
         area_text_custom:
@@ -71,6 +81,7 @@ display:
           label: 'Module registreren'
         count:
           label: Gebruiksfrequentie
+          format_plural_string: !!binary MQNAY291bnQ=
       title: Bestandsgebruik
       arguments:
         fid:

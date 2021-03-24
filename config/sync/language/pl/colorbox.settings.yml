@@ -1,0 +1,6 @@
+custom:
+  text_current: '{current} z {total}'
+  text_previous: '« Poprzednie'
+  text_next: 'Następne »'
+  text_close: Zamknij
+  initialwidth: '300'

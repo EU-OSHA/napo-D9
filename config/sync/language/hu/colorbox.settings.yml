@@ -1,0 +1,12 @@
+custom:
+  text_current: '{current} / {total}'
+  text_previous: '« Előző'
+  text_next: 'Következő »'
+  text_close: Bezár
+  maxwidth: 98%
+  maxheight: 98%
+  initialwidth: '300'
+  initialheight: '250'
+  slideshow:
+    text_start: 'Diavetítés indítása'
+    text_stop: 'Diavetítés megállítása'

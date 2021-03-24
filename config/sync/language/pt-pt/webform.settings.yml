@@ -8,6 +8,8 @@ settings:
   dialog_options:
     narrow:
       title: Estreito
+    normal:
+      title: Normal
     wide:
       title: Largo
 element:

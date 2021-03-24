@@ -25,14 +25,19 @@ display:
       fields:
         title:
           label: Title
+          separator: ', '
         type:
           label: 'Content type'
+          separator: ', '
         name:
           label: Author
+          separator: ', '
         moderation_state:
           label: 'Moderációs állapot'
+          separator: ', '
         changed:
           label: Updated
+          separator: ', '
         operations:
           label: Operations
       filters:
