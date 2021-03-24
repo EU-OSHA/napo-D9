@@ -19,6 +19,7 @@ tips:
     label: Typ
     body: 'Der Datentyp, der bei der Indizierung des Feldes verwendet werden soll. Legt fest, wie ein Feld bei der Suche verwendet werden kann. Informationen zu den verfügbaren Typen finden Sie in der Box <a href="#search-api-data-types-table">"Datentyptabelle"</a> am Ende der Seite.'
   search-api-index-fields-boost:
+    label: Boost
     body: 'Trifft nur für Volltextfelder zu. Bestimmt, wie "wichtig" das Feld im Vergleich zu anderen Volltextfeldern ist, um die Gewichtung von Volltextsuchen zu beeinflussen.'
   search-api-index-fields-edit:
     label: 'Feld bearbeiten'

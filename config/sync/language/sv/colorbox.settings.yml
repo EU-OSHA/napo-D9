@@ -1,0 +1,12 @@
+custom:
+  text_current: '{current} av {total}'
+  text_previous: '« Föregående'
+  text_next: 'Nästa »'
+  text_close: Stäng
+  maxwidth: 98%
+  maxheight: 98%
+  initialwidth: '300'
+  initialheight: '250'
+  slideshow:
+    text_start: 'starta bildspel'
+    text_stop: 'dtoppa bildspel'

@@ -2,6 +2,7 @@ label: 'Seneste kommentarer'
 description: 'Seneste kommentarer.'
 display:
   default:
+    display_title: Master
     display_options:
       title: 'Seneste kommentarer'
       empty:

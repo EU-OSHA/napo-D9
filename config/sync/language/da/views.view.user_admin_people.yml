@@ -2,9 +2,11 @@ label: Personer
 description: 'Find og håndtér personer som bruger dit site.'
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
+          submit_button: Filter
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
@@ -26,6 +28,7 @@ display:
         name:
           label: Brugernavn
         status:
+          label: Status
           settings:
             format_custom_true: Aktiv
             format_custom_false: Blokeret
@@ -37,12 +40,15 @@ display:
           label: 'Seneste tilgang'
         operations:
           label: Operations
+        mail:
+          separator: ', '
       filters:
         combine:
           expose:
             label: 'Navn eller e-mail indeholder'
         status:
           group_info:
+            label: Status
             group_items:
               1:
                 title: Aktiv

@@ -22,12 +22,21 @@ display:
           action_title: Aðgerð
         subject:
           label: Viðfangsefni
+          separator: ', '
+        uid:
+          separator: ', '
         name:
           label: Author
+          separator: ', '
+        entity_id:
+          separator: ', '
         changed:
           label: Updated
+          separator: ', '
         operations:
           label: Operations
+        name_1:
+          separator: ', '
       filters:
         subject:
           expose:
@@ -59,9 +68,18 @@ display:
           action_title: Aðgerð
         subject:
           label: Viðfangsefni
+          separator: ', '
+        uid:
+          separator: ', '
         name:
           label: Author
+          separator: ', '
+        entity_id:
+          separator: ', '
         changed:
           label: Updated
+          separator: ', '
         operations:
           label: Operations
+        name_1:
+          separator: ', '

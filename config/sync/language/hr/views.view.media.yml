@@ -1,6 +1,7 @@
 label: Mediji
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -12,15 +13,25 @@ display:
       fields:
         media_bulk_form:
           action_title: Akcija
+        thumbnail__target_id:
+          label: Thumbnail
+          separator: ', '
+        name:
+          separator: ', '
         bundle:
           label: Vrsta
+          separator: ', '
         uid:
           label: Author
+          separator: ', '
         status:
+          label: Status
           settings:
             format_custom_true: Published
+          separator: ', '
         changed:
           label: Updated
+          separator: ', '
         operations:
           label: Operations
       filters:

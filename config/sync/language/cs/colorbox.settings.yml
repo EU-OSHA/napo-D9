@@ -1,0 +1,5 @@
+custom:
+  text_current: '{current} z {total}'
+  text_previous: '« Předchozí'
+  text_next: 'Následující »'
+  text_close: Zavřít

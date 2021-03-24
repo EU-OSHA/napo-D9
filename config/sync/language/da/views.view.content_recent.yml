@@ -2,6 +2,7 @@ label: 'Seneste indhold'
 description: 'Seneste indhold.'
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -10,6 +11,9 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
+      fields:
+        changed:
+          separator: ', '
       title: 'Seneste indhold'
       empty:
         area_text_custom:

@@ -2,9 +2,11 @@ label: Hændelseslog
 description: 'Seneste logmeddelelser'
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
+          submit_button: Filter
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
@@ -15,20 +17,33 @@ display:
             items_per_page_label: 'Antal elementer'
             items_per_page_options_all_label: '- Alle -'
             offset_label: Forskydning
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         nothing:
           admin_label: Ikon
+        wid:
+          label: WID
         severity:
           label: Grad
+        type:
+          label: Type
         timestamp:
           label: Dato
         message:
           label: Meddelelse
+          alter:
+            alt: '{{ message }}'
         name:
           label: Bruger
+          separator: ', '
         link:
           label: Operations
       filters:
+        type:
+          expose:
+            label: Type
         severity:
           expose:
             label: Grad

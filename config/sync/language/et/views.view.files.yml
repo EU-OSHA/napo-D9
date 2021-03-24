@@ -21,8 +21,11 @@ display:
             items_per_page_options_all_label: '- Kõik -'
             offset_label: Nihe
       fields:
+        fid:
+          label: Fid
         filename:
           label: Nimi
+          separator: ', '
         filemime:
           label: MIME-tüüp
         filesize:
@@ -78,6 +81,7 @@ display:
           label: 'Registreerin moodulit'
         count:
           label: 'Kasutuse loendur'
+          format_plural_string: !!binary MQNAY291bnQ=
       title: 'Faili kasutus'
       arguments:
         fid:

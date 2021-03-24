@@ -1,3 +1,4 @@
+label: Watchdog
 description: 'Recente logberichten'
 display:
   default:
@@ -5,6 +6,8 @@ display:
     display_options:
       exposed_form:
         options:
+          submit_button: Filter
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -14,6 +17,9 @@ display:
             items_per_page_label: 'Items per pagina'
             items_per_page_options_all_label: '- Alle -'
             offset_label: Startpunt
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         nothing:
           admin_label: Pictogram
@@ -21,15 +27,23 @@ display:
           label: Watchdog-ID
         severity:
           label: Ernst
+        type:
+          label: Type
         timestamp:
           label: Datum
         message:
           label: Bericht
+          alter:
+            alt: '{{ message }}'
         name:
           label: Gebruiker
+          separator: ', '
         link:
           label: Operations
       filters:
+        type:
+          expose:
+            label: Type
         severity:
           expose:
             label: Ernst

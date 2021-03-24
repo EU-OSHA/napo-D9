@@ -2,10 +2,15 @@ label: 'Çevrimiçi kullanıcılar bloğu'
 description: 'Son zamanlarda en etkin kullanıcıların adlarını ve toplam etkin kullanıcı sayısını görüntüler.'
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Uygula
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       filters:
         access:
           expose:

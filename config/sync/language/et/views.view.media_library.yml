@@ -16,6 +16,9 @@ display:
             items_per_page_label: 'Kirjeid lehel'
             items_per_page_options_all_label: '- Kõik -'
             offset_label: Nihe
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         media_bulk_form:
           action_title: Tegevus
@@ -61,6 +64,8 @@ display:
       fields:
         media_bulk_form:
           action_title: Tegevus
+        name:
+          separator: ', '
         edit_media:
           text: Muuda
         delete_media:

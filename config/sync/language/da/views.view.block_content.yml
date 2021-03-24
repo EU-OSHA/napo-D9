@@ -2,6 +2,7 @@ label: 'Brugerdefineret blokbibliotek'
 description: 'Find og håndtér brugerdefinerede blokke.'
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -22,8 +23,10 @@ display:
       fields:
         info:
           label: Beskrivelse
+          separator: ', '
         type:
           label: Bloktype
+          separator: ', '
         changed:
           label: Updated
         operations:

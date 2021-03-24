@@ -6,6 +6,9 @@ display:
           submit_button: Virkja
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
+      fields:
+        changed:
+          separator: ', '
       use_more_text: Meira
   block_1:
     display_title: Blokk

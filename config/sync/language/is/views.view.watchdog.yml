@@ -12,6 +12,9 @@ display:
           expose:
             items_per_page_label: 'Hlutir per síðu'
             items_per_page_options_all_label: '- Allt -'
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         nothing:
           admin_label: Táknmynd
@@ -25,6 +28,7 @@ display:
           label: Skilaboð
         name:
           label: Notandi
+          separator: ', '
         link:
           label: Operations
       filters:

@@ -37,6 +37,8 @@ display:
           label: 'Τελευταία προσπέλαση'
         operations:
           label: Operations
+        mail:
+          separator: ', '
       filters:
         combine:
           expose:

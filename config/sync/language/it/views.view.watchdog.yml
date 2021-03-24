@@ -1,3 +1,4 @@
+label: Watchdog
 description: 'Messaggi di log recenti'
 display:
   default:
@@ -8,6 +9,7 @@ display:
           submit_button: Filter
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
@@ -15,9 +17,14 @@ display:
             items_per_page_label: 'Voci per pagina'
             items_per_page_options_all_label: '- Tutto -'
             offset_label: Scostamento
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         nothing:
           admin_label: Icona
+        wid:
+          label: WID
         severity:
           label: Rilevanza
         type:
@@ -28,6 +35,7 @@ display:
           label: Messaggio
         name:
           label: Utente
+          separator: ', '
         link:
           label: Operations
       filters:
