@@ -3,9 +3,8 @@
       display: flex;
   }
   .navbar-expand-lg .navbar-collapse {
-    display: -ms-flexbox!important;
-    display: flex!important;
-    -ms-flex-preferred-size: auto;
+    display: -ms-flexbox;
+    display: flex;
     flex-basis: auto;
   }
 }
