@@ -4,6 +4,7 @@ tips:
     label: 'Informationen über einen Server'
     body: 'Diese Seite zeigt die Zusammenfassung eines Suchservers an.'
   search-api-server-status:
+    label: Status
     body: 'Zeigt an, ob der Server aktuell aktiviert oder deaktiviert ist.'
   search-api-server-backend:
     label: Backend-Klasse

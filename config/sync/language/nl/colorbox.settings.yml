@@ -1,0 +1,7 @@
+custom:
+  text_current: '{current} van {total}'
+  text_previous: '« Vorige'
+  text_next: 'Volgende »'
+  text_close: Sluiten
+  slideshow:
+    text_stop: 'stop de slideshow'

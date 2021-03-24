@@ -1,0 +1,5 @@
+custom:
+  text_current: '{current} iš {total}'
+  text_previous: '« Atgal'
+  text_next: 'Toliau »'
+  text_close: Uždaryti

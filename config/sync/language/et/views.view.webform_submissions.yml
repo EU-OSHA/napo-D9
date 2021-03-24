@@ -12,6 +12,8 @@ display:
       pager:
         options:
           tags:
+            previous: ‹‹
+            next: ››
             first: '« First'
             last: 'Last »'
           expose:
@@ -19,10 +21,16 @@ display:
             items_per_page_options_all_label: '- Kõik -'
             offset_label: Nihe
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         created:
           label: Loodud
+          separator: ', '
         remote_addr:
           label: IP-aadress
+          separator: ', '
         view_webform_submission:
           label: Operations
           text: näita
@@ -38,16 +46,25 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Tegevus
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         sticky:
           label: Kleepuv
+          separator: ', '
         locked:
           label: Lukus
+          separator: ', '
         created:
           label: Loodud
+          separator: ', '
         completed:
           label: Lõpetatud
+          separator: ', '
         remote_addr:
           label: IP-aadress
+          separator: ', '
         operations:
           label: Operations
       filters:
@@ -62,16 +79,25 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Tegevus
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         sticky:
           label: Kleepuv
+          separator: ', '
         locked:
           label: Lukus
+          separator: ', '
         created:
           label: Loodud
+          separator: ', '
         completed:
           label: Lõpetatud
+          separator: ', '
         remote_addr:
           label: IP-aadress
+          separator: ', '
         view_webform_submission:
           label: Operations
           text: näita
@@ -88,16 +114,25 @@ display:
   embed_review:
     display_options:
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         sticky:
           label: Kleepuv
+          separator: ', '
         locked:
           label: Lukus
+          separator: ', '
         created:
           label: Loodud
+          separator: ', '
         completed:
           label: Lõpetatud
+          separator: ', '
         remote_addr:
           label: IP-aadress
+          separator: ', '
         view_webform_submission:
           label: Operations
           text: näita

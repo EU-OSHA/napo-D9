@@ -32,6 +32,7 @@ display:
         created:
           expose:
             label: 'Nauji pradžioj'
+      title: Media
       empty:
         area_text_custom:
           content: 'Nėra galimos media.'

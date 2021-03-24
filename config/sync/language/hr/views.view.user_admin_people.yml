@@ -2,6 +2,7 @@ label: Korisnici
 description: 'Pronađite i upravljajte korisnicima vaše mrežne lokacije.'
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -16,6 +17,7 @@ display:
         name:
           label: 'Korisničko ime'
         status:
+          label: Status
           settings:
             format_custom_true: Aktivno
             format_custom_false: Blokiran
@@ -27,9 +29,12 @@ display:
           label: 'Zadnji pristup'
         operations:
           label: Operations
+        mail:
+          separator: ', '
       filters:
         status:
           group_info:
+            label: Status
             group_items:
               1:
                 title: Aktivno

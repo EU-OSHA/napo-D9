@@ -27,19 +27,25 @@ display:
           action_title: Действие
         thumbnail__target_id:
           label: Миниатюра
+          separator: ', '
         name:
           label: 'Название медиа'
+          separator: ', '
         bundle:
           label: Тип
+          separator: ', '
         uid:
           label: Author
+          separator: ', '
         status:
           label: Status
           settings:
             format_custom_true: Published
             format_custom_false: Unpublished
+          separator: ', '
         changed:
           label: Updated
+          separator: ', '
         operations:
           label: Operations
       filters:

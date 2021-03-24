@@ -2,6 +2,10 @@ label: Komentarji
 display:
   default:
     display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
       pager:
         options:
           tags:
@@ -14,10 +18,19 @@ display:
           action_title: Akcija
         subject:
           label: Zadeva
+        name:
+          label: Author
+        changed:
+          label: Updated
+        operations:
+          label: Operations
       filters:
         subject:
           expose:
             label: Zadeva
+        langcode:
+          expose:
+            label: Language
       title: Komentarji
       empty:
         area_text_custom:
@@ -34,8 +47,17 @@ display:
         subject:
           expose:
             label: Zadeva
+        langcode:
+          expose:
+            label: Language
       fields:
         comment_bulk_form:
           action_title: Akcija
         subject:
           label: Zadeva
+        name:
+          label: Author
+        changed:
+          label: Updated
+        operations:
+          label: Operations

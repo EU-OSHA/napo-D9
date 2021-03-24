@@ -1,3 +1,4 @@
+label: Watchdog
 description: 'Poslední zprávy v logu'
 display:
   default:
@@ -6,6 +7,7 @@ display:
       exposed_form:
         options:
           submit_button: Filter
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -15,9 +17,14 @@ display:
             items_per_page_label: 'Položek na stránku'
             items_per_page_options_all_label: '- Vše -'
             offset_label: Posun
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         nothing:
           admin_label: Ikona
+        wid:
+          label: WID
         severity:
           label: Vážnost
         type:
@@ -28,6 +35,7 @@ display:
           label: Zpráva
         name:
           label: Uživatel
+          separator: ', '
         link:
           label: Operations
       filters:

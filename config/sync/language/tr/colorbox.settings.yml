@@ -1,0 +1,11 @@
+custom:
+  text_current: '{total} toplamın {current} adedi'
+  text_previous: '« Önceki'
+  text_next: 'Sonraki »'
+  text_close: Kapat
+  maxwidth: 98%
+  maxheight: 98%
+  initialwidth: '300'
+  slideshow:
+    text_start: 'slayt gösterisini başlat'
+    text_stop: 'slayt gösterisini durdur'

@@ -1,0 +1,4 @@
+custom:
+  text_current: '{current} de {total}'
+  text_next: 'Següent »'
+  text_close: Tanca

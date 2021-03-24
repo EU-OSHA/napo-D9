@@ -8,6 +8,8 @@ settings:
   dialog_options:
     narrow:
       title: Smal
+    normal:
+      title: Normal
     wide:
       title: Bred
 element:

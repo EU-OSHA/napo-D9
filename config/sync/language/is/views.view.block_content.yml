@@ -16,6 +16,9 @@ display:
       fields:
         info:
           label: 'Lýsing á blokk'
+          separator: ', '
+        type:
+          separator: ', '
         changed:
           label: Updated
         operations:

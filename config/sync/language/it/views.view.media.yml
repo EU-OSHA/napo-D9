@@ -1,3 +1,4 @@
+label: Media
 display:
   default:
     display_title: Master
@@ -7,6 +8,7 @@ display:
           submit_button: Filter
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
@@ -24,17 +26,24 @@ display:
           action_title: Azione
         thumbnail__target_id:
           label: Miniatura
+          separator: ', '
+        name:
+          separator: ', '
         bundle:
           label: Tipo
+          separator: ', '
         uid:
           label: Author
+          separator: ', '
         status:
           label: Status
           settings:
             format_custom_true: Published
             format_custom_false: Unpublished
+          separator: ', '
         changed:
           label: Updated
+          separator: ', '
         operations:
           label: Operations
       filters:
@@ -54,6 +63,12 @@ display:
         langcode:
           expose:
             label: Language
+      title: Media
       empty:
         area_text_custom:
           content: 'Non è disponibile alcun contributo mediale.'
+  media_page_list:
+    display_title: Media
+    display_options:
+      menu:
+        title: Media

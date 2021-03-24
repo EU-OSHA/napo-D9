@@ -25,14 +25,22 @@ display:
           action_title: Ενέργεια
         subject:
           label: Θέμα
+          separator: ', '
+        uid:
+          separator: ', '
         name:
           label: Author
+          separator: ', '
         entity_id:
           label: 'Αναρτήθηκε στο'
+          separator: ', '
         changed:
           label: Updated
+          separator: ', '
         operations:
           label: Operations
+        name_1:
+          separator: ', '
       filters:
         subject:
           expose:
@@ -70,11 +78,19 @@ display:
           action_title: Ενέργεια
         subject:
           label: Θέμα
+          separator: ', '
+        uid:
+          separator: ', '
         name:
           label: Author
+          separator: ', '
         entity_id:
           label: 'Αναρτήθηκε στο'
+          separator: ', '
         changed:
           label: Updated
+          separator: ', '
         operations:
           label: Operations
+        name_1:
+          separator: ', '

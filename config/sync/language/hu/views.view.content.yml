@@ -1,4 +1,5 @@
 label: Content
+description: 'Find and manage content.'
 display:
   default:
     display_options:
@@ -21,6 +22,7 @@ display:
           label: Title
         type:
           label: 'Content type'
+          separator: ', '
         name:
           label: Author
         status:
@@ -63,4 +65,5 @@ display:
         title: Content
       tab_options:
         title: Content
+        description: 'Find and manage content'
     display_title: Page

@@ -58,6 +58,8 @@ display:
           exception:
             title: Visi
       header:
+        display_link_grid:
+          label: Grid
         display_link_table:
           label: Tabula
   widget_table:
@@ -80,5 +82,7 @@ display:
           exception:
             title: Visi
       header:
+        display_link_grid:
+          label: Grid
         display_link_table:
           label: Tabula

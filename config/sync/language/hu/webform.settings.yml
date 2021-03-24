@@ -15,3 +15,5 @@ settings:
       title: Széles
 element:
   default_more_title: Több
+mail:
+  default_from_name: '[site:name]'
