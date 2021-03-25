@@ -91,6 +91,12 @@ body {
   margin-bottom: 0rem;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .ui-accordion .ui-accordion-header {
   display: block;
   cursor: pointer;
@@ -184,6 +190,81 @@ a[target=_blank]:after {
   display: inline-block;
   margin-left: 5px;
   font-weight: bold;
+}
+
+.pagination {
+  background: #f2f1f2;
+  margin: 20px 0 0 0;
+  text-align: center;
+  justify-content: center;
+}
+.pagination .first,
+.pagination .prev,
+.pagination .last,
+.pagination .pager__item--next {
+  margin: 0 0.5rem;
+}
+.pagination .first .sr-only,
+.pagination .prev .sr-only,
+.pagination .last .sr-only,
+.pagination .pager__item--next .sr-only {
+  display: none;
+}
+.pagination .first span,
+.pagination .prev span,
+.pagination .last span,
+.pagination .pager__item--next span {
+  color: transparent;
+  width: 24px;
+  height: 25px;
+  display: block;
+  overflow: hidden;
+}
+.pagination .first .page-link,
+.pagination .prev .page-link,
+.pagination .last .page-link,
+.pagination .pager__item--next .page-link {
+  padding: 4px;
+}
+
+.page-item {
+  display: inline-block;
+}
+.page-item.active .page-link {
+  background: transparent;
+  text-decoration: underline;
+  color: #1f3695;
+}
+.page-item.first span {
+  background: url(/sites/napo/themes/custom/napo_theme/images/pagination-first.png) no-repeat;
+}
+.page-item.prev span {
+  background: url(/sites/napo/themes/custom/napo_theme/images/pagination-previous.png) no-repeat;
+}
+.page-item.last span {
+  background: url(/sites/napo/themes/custom/napo_theme/images/pagination-next.png) no-repeat;
+}
+.page-link {
+  background: transparent;
+  border: 1px;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 1.125rem;
+  color: #1f3695;
+  display: block;
+}
+.page-link:hover {
+  color: #1f3695;
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+.page-link:focus {
+  box-shadow: none;
+}
+
+.pager__item--next span {
+  background: url(/sites/napo/themes/custom/napo_theme/images/pagination-last.png) no-repeat;
 }
 
 .custom-select {
@@ -736,6 +817,45 @@ a[target=_blank]:after {
 }
 .block-views-blockfaqs-block .ui-accordion-content p {
   padding-left: 2.2rem;
+}
+
+.view-napos-gallery .views-row {
+  position: relative;
+}
+.view-napos-gallery .napo-gallery-title-container {
+  height: 73px;
+  background: url(/sites/napo/themes/custom/napo_theme/images/background-blue.png) repeat-x;
+  color: #FFF;
+  padding-left: 0.625rem;
+  padding-top: 5px;
+  font-size: 21px;
+  margin-top: 0px;
+  position: relative;
+  width: 100%;
+}
+.view-napos-gallery .napo-gallery-title-container a {
+  color: #FFF;
+  background: url(/sites/napo/themes/custom/napo_theme/images/arrow-button-yellow.png) 100% 0px no-repeat;
+  padding: 1px 34px 1px 1px;
+  font-size: 21px;
+}
+.view-napos-gallery .napo-gallery-title-container .datetime {
+  float: right;
+  font-size: 14px;
+  padding-top: 5px;
+  display: block;
+  bottom: 6px;
+  position: absolute;
+  right: 9px;
+}
+.view-napos-gallery .image-style-napo-cover {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.view-napos-gallery .views-field-body {
+  display: none;
 }
 
 @media only screen and (max-width: 1200px) {

@@ -6,11 +6,13 @@
 
 @import 'components/accordion';
 @import 'components/buttons';
+@import 'components/carousel';
 @import 'components/grid';
 @import 'components/headings';
 @import 'components/helper';
 @import 'components/links';
 @import 'components/modal';
+@import 'components/pager';
 @import 'components/select';
 
 @import 'layout/body';
@@ -22,6 +24,7 @@
 
 
 @import 'block/faqs';
+@import 'block/napo-gallery';
 
 @import 'responsive/common/common-responsive';
 @import 'responsive/desktop/desktop-responsive';

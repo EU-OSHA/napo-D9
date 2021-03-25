@@ -1,0 +1,41 @@
+.view-napos-gallery{
+  .views-row{
+    position:relative;
+  }
+  .napo-gallery-title-container{
+    height: 73px;
+    background: url(/sites/napo/themes/custom/napo_theme/images/background-blue.png) repeat-x;
+    color: $text-color-white;
+    padding-left: 0.625rem;
+    padding-top: 5px;
+    font-size: 21px;
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    a{
+      color: $text-color-white;
+      background: url(/sites/napo/themes/custom/napo_theme/images/arrow-button-yellow.png) 100% 0px no-repeat;
+      padding: 1px 34px 1px 1px;
+      font-size: 21px;
+    }
+    .datetime{
+      float: right;
+      font-size: 14px;
+      padding-top: 5px;
+      display: block;
+      bottom: 6px;
+      position: absolute;
+      right: 9px;
+    }
+  }
+  .image-style-napo-cover{
+    display:block;
+    max-width: 100%;
+    height:auto;
+    vertical-align: middle;
+  }
+  .views-field-body{
+    display:none;
+  }
+
+}
