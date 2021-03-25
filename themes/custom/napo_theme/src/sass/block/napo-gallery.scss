@@ -37,5 +37,27 @@
   .views-field-body{
     display:none;
   }
+  .attachment-before{
+    display:flex;
+    flex-direction: column-reverse;
+    .views-element-container{
+      margin-bottom: 1.625rem;
+    }
+    .view-napos-gallery{
+      >.row{
+        margin:0px;
+      }
+    }
+  }
+  p{
+    font-size:1.125rem;
+    margin:0px;
+  }
 
+  .views-view-grid.horizontal{
+    .views-row{
+      width:auto;
+      margin-bottom:1.75rem;
+    }
+  }
 }

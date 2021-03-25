@@ -2,7 +2,7 @@
 /*Headings*/
 
 h1, h2, label{
-  font-family: 'Open Sans',sans-serif;
+
   color: $text-color-blue;
 }
 
@@ -44,4 +44,20 @@ h3{
       transition: all 1s;
     }
   }
+}
+
+
+.block-page-title-block{
+  h1{
+    padding: 0.25rem 0.5rem;
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid $bg-color-grey-light-3;
+    color: $text-color-blue;
+    background: $bg-color-grey-light;
+    font-size: 30px;
+    font-weight:500;
+    line-height: 1.1;
+  }
+
 }
