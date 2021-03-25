@@ -1,6 +1,6 @@
 uuid: 568ba62b-29ea-4d0c-b748-7a4c650a79b0
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.episode_list
@@ -11,7 +11,7 @@ dependencies:
 id: views_block__episode_list_block
 theme: napo_theme
 region: content
-weight: -6
+weight: -8
 provider: null
 plugin: 'views_block:episode_list-block'
 settings:
