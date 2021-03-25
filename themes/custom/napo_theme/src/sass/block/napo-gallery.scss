@@ -1,4 +1,5 @@
 .view-napos-gallery{
+  margin-bottom: 27px;
   .views-row{
     position:relative;
   }
@@ -58,6 +59,7 @@
     .views-row{
       width:auto;
       margin-bottom:1.75rem;
+      float:none;
     }
   }
 }

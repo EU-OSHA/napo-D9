@@ -46,7 +46,7 @@
     }
     &.last{
       span{
-        background: url(/sites/napo/themes/custom/napo_theme/images/pagination-next.png) no-repeat;
+        background: url(/sites/napo/themes/custom/napo_theme/images/pagination-last.png) no-repeat;
       }
     }
   }
@@ -72,7 +72,7 @@
 .pager__item{
   &--next{
     span{
-      background: url(/sites/napo/themes/custom/napo_theme/images/pagination-last.png) no-repeat;
+      background: url(/sites/napo/themes/custom/napo_theme/images/pagination-next.png) no-repeat;
     }
 
   }

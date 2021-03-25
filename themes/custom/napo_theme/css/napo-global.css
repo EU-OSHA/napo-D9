@@ -133,6 +133,10 @@ img {
   height: auto !important;
 }
 
+.block-system-main-block {
+  padding: 0 0.625rem 1.25rem;
+}
+
 /*Headings*/
 h1, h2, label {
   color: #1f3695;
@@ -254,7 +258,7 @@ a[target=_blank]:after {
   background: url(/sites/napo/themes/custom/napo_theme/images/pagination-previous.png) no-repeat;
 }
 .page-item.last span {
-  background: url(/sites/napo/themes/custom/napo_theme/images/pagination-next.png) no-repeat;
+  background: url(/sites/napo/themes/custom/napo_theme/images/pagination-last.png) no-repeat;
 }
 .page-link {
   background: transparent;
@@ -276,7 +280,7 @@ a[target=_blank]:after {
 }
 
 .pager__item--next span {
-  background: url(/sites/napo/themes/custom/napo_theme/images/pagination-last.png) no-repeat;
+  background: url(/sites/napo/themes/custom/napo_theme/images/pagination-next.png) no-repeat;
 }
 
 .custom-select {
@@ -831,6 +835,9 @@ a[target=_blank]:after {
   padding-left: 2.2rem;
 }
 
+.view-napos-gallery {
+  margin-bottom: 27px;
+}
 .view-napos-gallery .views-row {
   position: relative;
 }
@@ -886,6 +893,7 @@ a[target=_blank]:after {
 .view-napos-gallery .views-view-grid.horizontal .views-row {
   width: auto;
   margin-bottom: 1.75rem;
+  float: none;
 }
 
 @media only screen and (max-width: 1200px) {
