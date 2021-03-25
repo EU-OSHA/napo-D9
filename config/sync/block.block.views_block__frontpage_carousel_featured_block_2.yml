@@ -11,7 +11,7 @@ dependencies:
 id: views_block__frontpage_carousel_featured_block_2
 theme: napo_theme
 region: home_page
-weight: 0
+weight: -12
 provider: null
 plugin: 'views_block:frontpage_carousel_featured-block'
 settings:
@@ -20,5 +20,5 @@ settings:
   provider: views
   label_display: '0'
   views_label: ''
-  items_per_page: '3'
+  items_per_page: none
 visibility: {  }

@@ -463,45 +463,14 @@ display:
           entity_type: node
           plugin_id: entity_queue_position
       style:
-        type: slick
+        type: html_list
         options:
-          vanilla: false
-          optionset: default
-          skin: split
-          layout: ''
-          caption:
-            view_node: '0'
-            field_image: '0'
-            title: '0'
-          optionset_thumbnail: ''
-          skin_thumbnail: ''
-          thumbnail_position: ''
-          thumbnail_caption: ''
-          grid: 3
-          grid_medium: null
-          grid_small: null
-          visible_items: 3
-          preserve_keys: false
-          image: ''
-          thumbnail: field_image
-          overlay: ''
-          title: title
-          link: view_node
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          type: ul
+          wrapper_class: item-list
           class: ''
-          id: ''
-          override: false
-          overridables:
-            arrows: '0'
-            autoplay: '0'
-            dots: '0'
-            draggable: '0'
-            infinite: '0'
-            mouseWheel: '0'
-            randomize: '0'
-            variableWidth: '0'
-          cache: 0
-          current_view_mode: block
-          thumbnail_effect: ''
       row:
         type: fields
         options:
