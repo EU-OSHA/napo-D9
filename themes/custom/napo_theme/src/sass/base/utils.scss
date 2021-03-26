@@ -1,0 +1,11 @@
+.field--name-body{
+  ul {
+   list-style: none;
+    li:before {
+      content: "\2022";
+      padding-right: 0.625rem;
+      padding-left: 1.125rem;
+      float: left;
+    }
+  }
+}

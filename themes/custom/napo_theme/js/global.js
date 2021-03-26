@@ -29,4 +29,18 @@
     }
   });
 
+
+
+  let lastScroll = 0;
+  $(window).scroll(function(event){
+    let st = $(this).scrollTop();
+    if (st > lastScroll){
+     $('#navbar').stop().removeClass('show-menu').addClass('hide-menu');
+    }
+    else {
+      $('#navbar').stop().removeClass('hide-menu').addClass('show-menu');
+    }
+    lastScroll = st;
+  });
+
 })(jQuery, Drupal);

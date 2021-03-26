@@ -63,6 +63,24 @@
     font-size: 1.875rem;
     margin-bottom:0.625rem;
   }
+  .views-field-field-icon{
+    display:none;
+  }
+  h3{
+    font-size: 1.875rem;
+    background: none;
+    height: auto;
+    min-height: auto;
+    border: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 7px;
+    a{
+      color: $text-color-white;
+      display: block;
+      font-size: inherit;
+    }
+  }
   .view-content{
     margin:0px;
     display: flex;
@@ -76,6 +94,22 @@
     padding: 1.25rem 1.25rem 0.625rem;
     border-radius: 0 0 1.25rem 1.25rem ;
     position: relative;
+    &:nth-child(1){
+      h3{
+        a{
+          padding: 1.5rem 0 0rem 4rem;
+          background: url(/sites/napo/themes/custom/napo_theme/images/workplace-icon.png) left -1px no-repeat;
+        }
+      }
+    }
+    &:nth-child(2){
+      h3{
+        a{
+          padding: 1.5rem 0 0rem 4.625rem;
+          background: url(/sites/napo/themes/custom/napo_theme/images/teachers-icon.png) left -1px no-repeat;
+        }
+      }
+    }
   }
 }
 

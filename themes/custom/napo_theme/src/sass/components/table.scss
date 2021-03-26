@@ -1,0 +1,23 @@
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+  font-size:1rem;
+  margin:0px;
+  width:auto;
+}
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: $bg-color-grey-2;
+  text-align: left;
+}
+tr{
+  background-color: transparent;
+  padding:0px;
+  td,
+  th{
+    border: 1px solid grey;
+    padding:0px;
+  }
+}

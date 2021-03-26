@@ -98,6 +98,16 @@ img {
   height: auto;
 }
 
+.field--name-body ul {
+  list-style: none;
+}
+.field--name-body ul li:before {
+  content: "•";
+  padding-right: 0.625rem;
+  padding-left: 1.125rem;
+  float: left;
+}
+
 .ui-accordion .ui-accordion-header {
   display: block;
   cursor: pointer;
@@ -316,6 +326,32 @@ a[target=_blank]:after {
   pointer-events: none;
   background: url(/sites/napo/themes/custom/napo_theme/images/arrow-language.png) no-repeat 2px 6px transparent;
   box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+  font-size: 1rem;
+  margin: 0px;
+  width: auto;
+}
+
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777777;
+  text-align: left;
+}
+
+tr {
+  background-color: transparent;
+  padding: 0px;
+}
+tr td,
+tr th {
+  border: 1px solid grey;
+  padding: 0px;
 }
 
 .footer_bottom {
@@ -793,6 +829,24 @@ a[target=_blank]:after {
   font-size: 1.875rem;
   margin-bottom: 0.625rem;
 }
+.block-views-blockfeatures-articles-block .views-field-field-icon {
+  display: none;
+}
+.block-views-blockfeatures-articles-block h3 {
+  font-size: 1.875rem;
+  background: none;
+  height: auto;
+  min-height: auto;
+  border: 0px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 7px;
+}
+.block-views-blockfeatures-articles-block h3 a {
+  color: #FFF;
+  display: block;
+  font-size: inherit;
+}
 .block-views-blockfeatures-articles-block .view-content {
   margin: 0px;
   display: flex;
@@ -806,6 +860,14 @@ a[target=_blank]:after {
   padding: 1.25rem 1.25rem 0.625rem;
   border-radius: 0 0 1.25rem 1.25rem;
   position: relative;
+}
+.block-views-blockfeatures-articles-block .views-row:nth-child(1) h3 a {
+  padding: 1.5rem 0 0rem 4rem;
+  background: url(/sites/napo/themes/custom/napo_theme/images/workplace-icon.png) left -1px no-repeat;
+}
+.block-views-blockfeatures-articles-block .views-row:nth-child(2) h3 a {
+  padding: 1.5rem 0 0rem 4.625rem;
+  background: url(/sites/napo/themes/custom/napo_theme/images/teachers-icon.png) left -1px no-repeat;
 }
 
 .block-views-blockfrontpage-carousel-featured-block {
