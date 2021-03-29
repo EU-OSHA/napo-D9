@@ -434,6 +434,7 @@ display:
         style: false
         row: false
         fields: false
+        query: false
       title: 'Napo''s films'
       sorts:
         entityqueue_relationship_in_queue:
@@ -664,6 +665,14 @@ display:
           entity_field: title
           plugin_id: field
       block_description: 'Napo''s films'
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: true
+          replica: false
+          query_comment: ''
+          query_tags: null
     cache_metadata:
       max-age: -1
       contexts:

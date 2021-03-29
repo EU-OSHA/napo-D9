@@ -20,5 +20,5 @@ settings:
   provider: views
   label_display: '0'
   views_label: ''
-  items_per_page: none
+  items_per_page: '3'
 visibility: {  }

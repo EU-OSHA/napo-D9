@@ -11,7 +11,7 @@ _core:
 id: napo_theme_messages
 theme: napo_theme
 region: breadcrumb
-weight: -12
+weight: -13
 provider: null
 plugin: system_messages_block
 settings:

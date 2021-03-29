@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.featured_articles_homepage_
     - field.storage.node.body
     - field.storage.node.field_icon
     - node.type.article
   module:
+    - entityqueue
     - media
     - node
     - text
@@ -308,12 +310,78 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-      sorts: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+      sorts:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          plugin_id: entity_queue_position
       title: 'Features Articles'
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: featured_articles_homepage_
+          entity_type: node
+          plugin_id: entity_queue
       arguments: {  }
       display_extenders: {  }
       show_admin_links: false
@@ -325,8 +393,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:entityqueue.entity_queue.featured_articles_homepage_'
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_icon'
+        - entity_field_info
+        - views_data
   block:
     display_plugin: block
     id: block
@@ -335,13 +406,16 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
+      rendering_language: '***LANGUAGE_site_default***'
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:entityqueue.entity_queue.featured_articles_homepage_'
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_icon'
+        - entity_field_info
+        - views_data

@@ -11,7 +11,7 @@ _core:
 id: napo_theme_help
 theme: napo_theme
 region: breadcrumb
-weight: -14
+weight: -15
 provider: null
 plugin: help_block
 settings:
