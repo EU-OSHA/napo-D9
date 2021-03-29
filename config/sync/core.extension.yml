@@ -107,6 +107,7 @@ module:
   user: 0
   video_embed_field: 0
   views_accordion: 0
+  views_bootstrap: 0
   views_bulk_operations: 0
   views_data_export: 0
   views_slideshow: 0
