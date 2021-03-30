@@ -366,7 +366,7 @@ display:
             label: ''
           entity_type: node
           plugin_id: entity_queue_position
-      title: 'Features Articles'
+      title: 'Featured Articles'
       header: {  }
       footer: {  }
       empty: {  }

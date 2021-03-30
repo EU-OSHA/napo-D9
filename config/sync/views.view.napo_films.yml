@@ -1359,7 +1359,7 @@ display:
         style: false
         row: false
         header: false
-      path: napos-films/films
+      path: no/napos-films/films
       style:
         type: grid
         options:
@@ -1840,7 +1840,7 @@ display:
         fields: false
         style: false
         row: false
-      path: napo-films/node-films-grid
+      path: no/napo-films/node-films-grid
       style:
         type: grid
         options:
@@ -1881,7 +1881,7 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
-      path: napo-films/node-films
+      path: no/napo-films/node-films
       display_description: ''
     cache_metadata:
       max-age: -1

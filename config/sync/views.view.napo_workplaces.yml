@@ -12,6 +12,8 @@ dependencies:
     - field.storage.node.field_learning_objectives
     - image.style.lessons_grid_image
     - node.type.msds_activities
+  content:
+    - 'node:article:9d41789b-0313-43ca-8b2f-7f4ce1def67a'
   module:
     - media
     - node
@@ -43,7 +45,7 @@ display:
         type: views_query
         options:
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_comment: ''
           query_tags: {  }
@@ -285,7 +287,7 @@ display:
           id: field_image
           table: node__field_image
           field: field_image
-          relationship: reverse__node__field_msds_video
+          relationship: field_msds_video
           group_type: group
           admin_label: ''
           label: ''
@@ -769,7 +771,7 @@ display:
           admin_label: ''
           operator: allwords
           value: ''
-          group: 1
+          group: 2
           exposed: true
           expose:
             operator_id: combine_op
@@ -787,6 +789,13 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              review_manager: '0'
+              internal_translator: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -801,10 +810,57 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           fields:
+            title: title
             title_1: title_1
+            field_assessment: field_assessment
+            field_concluding_questions: field_concluding_questions
+            field_introductory_text: field_introductory_text
+            field_learning_objectives: field_learning_objectives
           plugin_id: combine
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
       sorts: {  }
-      title: 'Napo in the workplace'
+      title: ''
       header:
         result:
           id: result
@@ -824,10 +880,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
+          empty: true
           tokenize: false
-          target: '430'
-          view_mode: teaser
+          target: 9d41789b-0313-43ca-8b2f-7f4ce1def67a
+          view_mode: default
           bypass_access: false
           plugin_id: entity
       empty:
@@ -843,16 +899,6 @@ display:
           content: 'No results'
           plugin_id: text_custom
       relationships:
-        reverse__node__field_msds_video:
-          id: reverse__node__field_msds_video
-          table: node_field_data
-          field: reverse__node__field_msds_video
-          relationship: none
-          group_type: group
-          admin_label: ''
-          required: true
-          entity_type: node
-          plugin_id: entity_reverse
         field_tags:
           id: field_tags
           table: node__field_tags
@@ -862,10 +908,24 @@ display:
           admin_label: ''
           required: false
           plugin_id: standard
+        field_msds_video:
+          id: field_msds_video
+          table: node__field_msds_video
+          field: field_msds_video
+          relationship: none
+          group_type: group
+          admin_label: 'field_msds_video: Content'
+          required: false
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
       css_class: lessons--items--grid
       show_admin_links: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+          2: OR
     cache_metadata:
       max-age: -1
       contexts:
@@ -892,10 +952,10 @@ display:
       display_extenders:
         metatag_display_extender: {  }
       path: learning-with-napo/napo-in-the-workplace
+      rendering_language: '***LANGUAGE_site_default***'
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
