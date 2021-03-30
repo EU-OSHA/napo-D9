@@ -5,20 +5,25 @@ dependencies:
   config:
     - views.view.features_articles
   module:
+    - system
     - views
   theme:
     - napo_theme
 id: views_block__features_articles_block
 theme: napo_theme
 region: home_page
-weight: -13
+weight: -12
 provider: null
 plugin: 'views_block:features_articles-block'
 settings:
   id: 'views_block:features_articles-block'
-  label: ''
+  label: 'Learning with Napo'
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: 'Learning with Napo'
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

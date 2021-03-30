@@ -1,0 +1,29 @@
+uuid: e2b12e70-760b-4901-a2f2-b02cee6bed84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.menu-social-media-menu.field_image_menu_
+    - system.menu.menu-social-media-menu
+id: menu_link_content.menu-social-media-menu.default
+targetEntityType: menu_link_content
+bundle: menu-social-media-menu
+mode: default
+content:
+  children:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image_menu_:
+    type: entity_reference_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
