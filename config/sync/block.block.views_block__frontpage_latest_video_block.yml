@@ -11,7 +11,7 @@ dependencies:
 id: views_block__frontpage_latest_video_block
 theme: napo_theme
 region: content
-weight: -6
+weight: -5
 provider: null
 plugin: 'views_block:frontpage_latest_video-block'
 settings:

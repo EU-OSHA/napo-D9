@@ -81,6 +81,7 @@ module:
   path_alias: 0
   printfriendly: 0
   quickedit: 0
+  quicktabs: 0
   rdf: 0
   rest: 0
   search: 0
