@@ -958,6 +958,16 @@ tr th {
   float: none;
 }
 
+.view-napo-workplaces .views-row {
+  border: 2px solid #1f3695;
+  width: 30%;
+  margin: 1rem;
+  border-radius: 0 0 1.25rem 1.25rem;
+  overflow: hidden;
+  min-height: 17.5rem;
+  position: relative;
+}
+
 @media only screen and (max-width: 1200px) {
   .container {
     max-width: 100%;
