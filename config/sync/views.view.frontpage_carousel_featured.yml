@@ -477,6 +477,9 @@ display:
         row: false
         fields: false
         query: false
+        relationships: false
+        filters: false
+        filter_groups: false
       title: 'Napo''s films'
       sorts:
         entityqueue_relationship_in_queue:
@@ -532,7 +535,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -573,7 +576,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           text: ''
-          output_url_as_text: false
+          output_url_as_text: true
           absolute: true
           entity_type: node
           plugin_id: entity_link
@@ -585,7 +588,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -652,7 +655,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"slider-item\">\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ <div class=\"lead\">\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ <div>\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ <p>{{ title }} </p>[play-video-link]\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ </div>\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ </div>\r\n{{ field_image }}\r\n</div>"
+            text: "<div class=\"slider-item\">\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ <div class=\"lead\">\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ <div>\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ <p>{{ title }} </p>\r\n                      <a href=\"{{view_node}}\"><button class=\"btn-primary\"><img src=\"/sites/napo/themes/custom/napo_theme/images/play-video.png\"></button></a>\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ </div>\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ </div>\r\n{{ field_image }}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -715,10 +718,215 @@ display:
           replica: false
           query_comment: ''
           query_tags: null
+      rendering_language: '***LANGUAGE_site_default***'
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: false
+          limit_queue: featured_videos
+          entity_type: node
+          plugin_id: entity_queue
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            napo_video: napo_video
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_video_type_target_id:
+          id: field_video_type_target_id
+          table: node__field_video_type
+          field: field_video_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            2727: 2727
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+            chosen_override: false
+            disable_search: false
+            search_contains: false
+            placeholder_text_multiple: ''
+            placeholder_text_single: ''
+            no_results_text: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: video_type
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          plugin_id: entity_queue_in_queue
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - user
         - 'user.node_grants:view'
