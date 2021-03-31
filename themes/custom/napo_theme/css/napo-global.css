@@ -354,6 +354,45 @@ tr th {
   padding: 0px;
 }
 
+.quicktabs-tabs.list-group {
+  width: 100%;
+  flex-direction: row;
+  background: #f2f1f2;
+  margin-bottom: 0.325rem;
+  margin-top: 45px;
+  border-radius: 0;
+}
+.quicktabs-tabs.list-group .list-group-item {
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: #bbc2df;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  height: 26px;
+}
+.quicktabs-tabs.list-group .list-group-item.active {
+  background-color: #f7e235;
+  z-index: 2;
+  color: #1f3695;
+  border: none;
+}
+.quicktabs-tabs.list-group .quicktabs-loaded {
+  font-weight: bold;
+  font-size: 13px;
+  padding: 6px 18px 6px 3.25rem;
+}
+.quicktabs-tabs.list-group .quicktabs-loaded:hover {
+  color: #1f3695;
+}
+.quicktabs-tabs.list-group .list-view .quicktabs-loaded {
+  background: url(/sites/napo/themes/custom/napo_theme/images/last-view-ico.png) 17px 4px;
+  background-repeat: no-repeat;
+}
+.quicktabs-tabs.list-group .gallery-view .quicktabs-loaded {
+  background: url(/sites/napo/themes/custom/napo_theme/images/gallery-view-ico.png) 17px 4px;
+  background-repeat: no-repeat;
+}
 .footer_bottom {
   background-color: #59595A;
   padding: 1.5rem 0;
@@ -445,15 +484,61 @@ tr th {
   padding: 0 0 0 0.625rem;
 }
 
-.footer .block-simple-blockfooter-social {
+.footer .menu--menu-social-media-menu {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 100%;
 }
-.block-simple-blockfooter-social p {
-  font-size: 1.25rem;
-  text-align: center;
+.menu--menu-social-media-menu h2 {
   color: #1f3695;
-  margin-bottom: 1rem;
-  font-weight: bold;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: auto;
+  font-size: 1.25rem;
+  margin-bottom: 1.875rem;
+}
+.menu--menu-social-media-menu .menu {
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+  margin-top: 2.25rem;
+  display: block;
+  margin-bottom: 0.375rem;
+}
+.menu--menu-social-media-menu .menu-item {
+  display: inline-block;
+  padding: 0 0.625rem;
+}
+.menu--menu-social-media-menu .menu-item:first-of-type {
+  background: url(/sites/napo/themes/custom/napo_theme/images/facebook-icon-footer.png) no-repeat;
+}
+.menu--menu-social-media-menu .menu-item:last-of-type {
+  background: url(/sites/napo/themes/custom/napo_theme/images/youtube-icon-footer.png) no-repeat;
+}
+.menu--menu-social-media-menu .menu .field--type-entity-reference {
+  margin: 0;
+}
+.menu--menu-social-media-menu a {
+  padding: 0 !important;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: block;
+}
+.menu--menu-social-media-menu a[target=_blank]:after {
+  display: none;
+}
+.menu--menu-social-media-menu a:not([target]) {
+  display: none;
+}
+.menu--menu-social-media-menu a img {
+  display: none;
 }
 
 .header {
