@@ -63,6 +63,7 @@ module:
   media: 0
   media_library: 0
   media_library_form_element: 0
+  menu_item_extras: 0
   menu_link_content: 0
   menu_ui: 0
   meta_position: 0
@@ -80,6 +81,7 @@ module:
   path_alias: 0
   printfriendly: 0
   quickedit: 0
+  quicktabs: 0
   rdf: 0
   rest: 0
   search: 0
@@ -107,6 +109,7 @@ module:
   user: 0
   video_embed_field: 0
   views_accordion: 0
+  views_bootstrap: 0
   views_bulk_operations: 0
   views_data_export: 0
   views_slideshow: 0
