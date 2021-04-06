@@ -1,0 +1,138 @@
+{#
+/**
+ * @file
+ * Theme override for a field.
+ *
+ * To override output, copy the "field.html.twig" from the templates directory
+ * to your theme's directory and customize it, just like customizing other
+ * Drupal templates such as page.html.twig or node.html.twig.
+ *
+ * Instead of overriding the theming for all fields, you can also just override
+ * theming for a subset of fields using
+ * @link themeable Theme hook suggestions. @endlink For example,
+ * here are some theme hook suggestions that can be used for a field_foo field
+ * on an article node type:
+ * - field--node--field-foo--article.html.twig
+ * - field--node--field-foo.html.twig
+ * - field--node--article.html.twig
+ * - field--field-foo.html.twig
+ * - field--text-with-summary.html.twig
+ * - field.html.twig
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the containing element.
+ * - label_hidden: Whether to show the field label or not.
+ * - title_attributes: HTML attributes for the title.
+ * - label: The label for the field.
+ * - multiple: TRUE if a field can contain multiple items.
+ * - items: List of all the field items. Each item contains:
+ *   - attributes: List of HTML attributes for each item.
+ *   - content: The field item's content.
+ * - entity_type: The entity type to which the field belongs.
+ * - field_name: The name of the field.
+ * - field_type: The type of the field.
+ * - label_display: The display settings for the label.
+ *
+ *
+ * @see template_preprocess_field()
+ */
+#}
+{%
+  set classes = [
+    'field',
+    'field--name-' ~ field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
+  ]
+%}
+{%
+  set title_classes = [
+    'field__label',
+    label_display == 'visually_hidden' ? 'visually-hidden',
+  ]
+%}
+
+{% if label_hidden %}
+  {% if multiple %}
+    <div{{ attributes.addClass(classes, 'field__items') }}>
+      {% for item in items %}
+        <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+      {% endfor %}
+    </div>
+  {% else %}
+    {% for item in items %}
+      <div{{ attributes.addClass(classes, 'field__item') }}>{{ item.content }}</div>
+    {% endfor %}
+  {% endif %}
+{% else %}
+  <div{{ attributes.addClass(classes) }}>
+    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+    {% if multiple %}
+      <div class='field__items'>
+    {% endif %}
+    {% for item in items %}
+      <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+    {% endfor %}
+    {% if multiple %}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
+
+
+<script>
+  /**
+   * @file
+   * Global utilities.
+   *
+   */
+  (function ($, Drupal) {
+    'use strict';
+    Drupal.behaviors.napo_theme = {
+      attach: function (context, settings) {
+      }
+    };
+    // Home video controls
+    $( document ).ready(function() {
+      let video=$('.block-views-blockfrontpage-custom-video-block').find('video');
+      let playVideo=false;
+      let soundVideo=true;
+      //video.removeAttr('controls');
+
+
+      let videoDuration;
+      video[0].onloadedmetadata = function() {
+        videoDuration = this.duration;
+      };
+
+      alert(videoDuration);
+
+
+      $('.block-views-blockfrontpage-custom-video-block').append('<div class="play-button-container"><span class="button-play"></span></div><div class="video-controls"><div class="sound-control"><div class="volume-control"><div class="volume-bar"></div><div class="volume-dot"></div><div class="volume-range"></div></div><div class="mute-control"><button class="mute-button"></button></div></div><div class="time-control"><span class="video-duration">'+videoDuration+'</span><span class="video-progress"></span></div></div>');
+
+      $('.block-views-blockfrontpage-custom-video-block').on('click','.play-button-container', function(){
+       if(playVideo==false){
+         video.get()[0].play();
+         $('.block-views-blockfrontpage-custom-video-block').stop().addClass('video-run');
+         playVideo=true;
+       }
+       else if(playVideo==true){
+         video.get()[0].pause();
+         $('.block-views-blockfrontpage-custom-video-block').stop().removeClass('video-run');
+         playVideo=false;
+       }
+      })
+
+      $('.block-views-blockfrontpage-custom-video-block').on('click','.mute-button', function(){
+        if(soundVideo==true) {
+          video.prop('muted', true);
+          soundVideo=false;
+        }
+        else if(soundVideo==false) {
+          video.prop('muted', false);
+          soundVideo=true;
+        }
+      });
+    })
+  })(jQuery, Drupal);
+</script>

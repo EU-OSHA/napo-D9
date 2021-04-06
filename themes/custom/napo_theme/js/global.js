@@ -30,17 +30,31 @@
   });
 
 
-
+  // Header behaviour at scroll
   let lastScroll = 0;
   $(window).scroll(function(event){
-    let st = $(this).scrollTop();
-    if (st > lastScroll){
-     $('#navbar').stop().removeClass('show-menu').addClass('hide-menu');
+    let windowScrollTop = $(this).scrollTop();
+    if (windowScrollTop > lastScroll){
+      if(!$('#header').hasClass('hide-menu')){
+        $('#header').stop().removeClass('show-menu').addClass('hide-menu');
+      }
     }
     else {
-      $('#navbar').stop().removeClass('hide-menu').addClass('show-menu');
+      if(windowScrollTop >= 80){
+        if(!$('#header').hasClass('show-menu')){
+          $('#header').stop().removeClass('hide-menu').addClass('show-menu');
+        }
+      }
+      else{
+        if(!$('#header').hasClass('hide-menu')){
+          $('#header').stop().removeClass('show-menu').addClass('hide-menu');
+        }
+      }
     }
-    lastScroll = st;
+    lastScroll = windowScrollTop;
   });
+
+
+
 
 })(jQuery, Drupal);
