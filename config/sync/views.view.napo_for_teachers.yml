@@ -14,6 +14,8 @@ dependencies:
     - field.storage.node.field_tags
     - image.style.lessons_grid_image
     - node.type.lesson
+  content:
+    - 'node:article:f849921a-beda-4f77-8085-c9c050505ca4'
   module:
     - media
     - node
@@ -907,7 +909,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"lessons-items\">\r\n <a href=\"{{ view_node }}\">{{field_image}}</a>\r\n</div>\r\n<div class=\"lessons-item-content\">\r\n\r\n<h3>{{ title }}</h3>\r\n<p class=\"keyword-list\">\r\n{{field_tags}}\r\n</p>\r\n</div>"
+            text: "<div class=\"lessons-item\">\r\n <a href=\"{{ view_node }}\">{{field_image}}</a>\r\n <div class=\"lessons-item-content\">\r\n   <h3>{{ title }}</h3>\r\n   <p class=\"keyword-list\">\r\n  Keyword: {{field_tags}}\r\n </p>\r\n </div>\r\n \r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -1070,6 +1072,13 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              review_manager: '0'
+              internal_translator: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -1084,16 +1093,12 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           fields:
-            field_activities: field_activities
-            field_assessment: field_assessment
-            field_lesson_intro_text: field_lesson_intro_text
-            field_learning_objectives: field_learning_objectives
-            field_starter: field_starter
-            field_lesson_intro_text_1: field_lesson_intro_text_1
             field_curriculum_links: field_curriculum_links
+            title_1: title_1
+            body: body
           plugin_id: combine
       sorts: {  }
-      title: napo_for_teachers
+      title: 'Napo for teachers'
       header:
         result:
           id: result
@@ -1103,7 +1108,7 @@ display:
           group_type: group
           admin_label: ''
           empty: false
-          content: '@total'
+          content: '<h2> Lessons <span class="lessons-available"> [@total] </span> </h2>'
           plugin_id: result
       footer:
         entity_node:
@@ -1115,8 +1120,8 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          target: 32a617c8-4c38-4a8e-af6d-31374251df1e
-          view_mode: teaser
+          target: f849921a-beda-4f77-8085-c9c050505ca4
+          view_mode: default
           bypass_access: false
           plugin_id: entity
       empty:
