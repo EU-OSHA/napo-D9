@@ -12,6 +12,7 @@ dependencies:
     - draggableviews
     - media
     - node
+    - slick
     - slick_views
     - text
     - user
@@ -64,32 +65,30 @@ display:
         options:
           vanilla: false
           optionset: default
-          skin: ''
-          layout: ''
+          skin: default
+          layout: top
           caption:
-            title_1: title_1
-            field_image: field_image
-            field_image_1: field_image_1
             title: title
-            body_1: body_1
-          optionset_thumbnail: ''
-          skin_thumbnail: ''
-          thumbnail_position: ''
-          thumbnail_caption: ''
-          grid: 7
+            body: '0'
+          optionset_thumbnail: slider_nav
+          skin_thumbnail: asnavfor
+          thumbnail_position: top
+          thumbnail_caption: title
+          grid: null
           grid_medium: null
           grid_small: null
-          visible_items: 1
+          visible_items: 7
           preserve_keys: false
           image: ''
           thumbnail: ''
           overlay: ''
-          title: ''
+          title: title
           link: ''
           class: ''
           id: ''
-          override: false
+          override: true
           overridables:
+            variableWidth: variableWidth
             arrows: '0'
             autoplay: '0'
             dots: '0'
@@ -97,9 +96,8 @@ display:
             infinite: '0'
             mouseWheel: '0'
             randomize: '0'
-            variableWidth: '0'
           cache: 0
-          current_view_mode: page
+          current_view_mode: attachment_1
           thumbnail_effect: ''
       row:
         type: fields
@@ -416,30 +414,16 @@ display:
           grouping: {  }
           row_class: ''
           default_row_class: true
+          uses_fields: false
+          columns: {  }
+          default: ''
+          info: {  }
           override: true
           sticky: false
+          order: asc
           caption: ''
           summary: ''
           description: ''
-          columns:
-            title: title
-            body: body
-          info:
-            title:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            body:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          default: '-1'
           empty_table: false
       defaults:
         style: false
@@ -601,6 +585,7 @@ display:
         style: false
         row: false
         access: false
+        sorts: false
       menu:
         type: 'default tab'
         title: View
@@ -932,24 +917,24 @@ display:
       style:
         type: slick
         options:
-          vanilla: false
+          vanilla: true
           optionset: default
           skin: ''
           layout: ''
           caption:
-            field_image_2: field_image_2
-            field_image: field_image
-            title: title
-            body: body
-            draggableviews: draggableviews
+            field_image_2: '0'
+            field_image: '0'
+            title: '0'
+            body: '0'
+            draggableviews: '0'
           optionset_thumbnail: ''
           skin_thumbnail: ''
           thumbnail_position: ''
           thumbnail_caption: ''
-          grid: 7
+          grid: null
           grid_medium: null
           grid_small: null
-          visible_items: 1
+          visible_items: null
           preserve_keys: false
           image: ''
           thumbnail: ''
@@ -983,6 +968,19 @@ display:
         options:
           perm: 'edit any napo_friend content'
       rendering_language: '***LANGUAGE_site_default***'
+      sorts:
+        weight:
+          id: weight
+          table: draggableviews_structure
+          field: weight
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
     cache_metadata:
       max-age: 0
       contexts:
@@ -996,7 +994,7 @@ display:
     display_plugin: page
     id: page_3
     display_title: Page
-    position: 2
+    position: 1
     display_options:
       display_extenders:
         metatag_display_extender:
@@ -1009,6 +1007,7 @@ display:
         style: false
         row: false
         access: false
+        sorts: false
       menu:
         type: none
         title: View
@@ -1029,78 +1028,13 @@ display:
           items_per_page: 7
           offset: 0
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         field_image_2:
           id: field_image_2
           table: node__field_image
           field: field_image
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'img thumb'
           label: ''
           exclude: true
           alter:
@@ -1164,7 +1098,7 @@ display:
           field: field_image
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'img large'
           label: ''
           exclude: false
           alter:
@@ -1222,6 +1156,71 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
         body:
           id: body
           table: node__body
@@ -1271,7 +1270,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
+          type: slick_text
           settings: {  }
           group_column: value
           group_columns: {  }
@@ -1287,44 +1286,44 @@ display:
       style:
         type: slick
         options:
-          vanilla: false
+          vanilla: true
           optionset: default
-          skin: ''
-          layout: ''
+          skin: default
+          layout: top
           caption:
-            title: title
-            field_image_2: field_image_2
             field_image: field_image
+            title: title
             body: body
-          optionset_thumbnail: ''
-          skin_thumbnail: ''
-          thumbnail_position: ''
-          thumbnail_caption: ''
-          grid: 1
+            field_image_2: '0'
+          optionset_thumbnail: slider_nav
+          skin_thumbnail: asnavfor
+          thumbnail_position: top
+          thumbnail_caption: title
+          grid: null
           grid_medium: null
           grid_small: null
-          visible_items: 1
+          visible_items: null
           preserve_keys: false
           image: ''
-          thumbnail: ''
+          thumbnail: field_image_2
           overlay: ''
           title: ''
           link: ''
           class: ''
-          id: ''
-          override: false
+          id: friends
+          override: true
           overridables:
-            arrows: '0'
+            arrows: arrows
+            infinite: infinite
+            variableWidth: variableWidth
             autoplay: '0'
             dots: '0'
             draggable: '0'
-            infinite: '0'
             mouseWheel: '0'
             randomize: '0'
-            variableWidth: '0'
           cache: 0
           current_view_mode: page_3
-          thumbnail_effect: ''
+          thumbnail_effect: grid
       row:
         type: fields
         options:
@@ -1336,6 +1335,19 @@ display:
         type: perm
         options:
           perm: 'access content'
+      sorts:
+        weight:
+          id: weight
+          table: draggableviews_structure
+          field: weight
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
     cache_metadata:
       max-age: -1
       contexts:
