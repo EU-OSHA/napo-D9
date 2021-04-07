@@ -97,19 +97,38 @@
       let video=$('.block-views-blockfrontpage-custom-video-block').find('video');
       let playVideo=false;
       let soundVideo=true;
-      //video.removeAttr('controls');
+      video.removeAttr('controls');
+
+      $('.block-views-blockfrontpage-custom-video-block').append('<div class="play-button-container"><span class="button-play"></span></div><div class="video-controls"><div class="sound-control"><div class="volumeBar"><div class="volume"></div></div><div class="mute-control"><button class="mute-button"></button></div></div><div class="time-control"><span class="video-duration"></span><span class="video-progress"></span></div></div><div class="progressBar"><div class="timeBar"></div></div>');
 
 
+
+      // Video Duration
       let videoDuration;
+      let videoCurrentTime;
       video[0].onloadedmetadata = function() {
         videoDuration = this.duration;
+        let videoDurationMinutes  = Math.floor(videoDuration / 60);
+        videoDurationMinutes = (videoDurationMinutes >= 10) ? videoDurationMinutes : "0" + videoDurationMinutes;
+        let videoDurationSeconds = Math.floor(videoDuration % 60);
+        videoDurationSeconds = (videoDurationSeconds >= 10) ? videoDurationSeconds : "0" + videoDurationSeconds;
+
+        $('.block-views-blockfrontpage-custom-video-block').find('.video-duration').text(videoDurationMinutes +' : '+ videoDurationSeconds);
+        $('.block-views-blockfrontpage-custom-video-block').find('.video-progress').text('00 : 00');
       };
 
-      alert(videoDuration);
+      // Video Current Time
+      video[0].ontimeupdate = function() {
+        videoCurrentTime=this.currentTime;
+        let videoCurrentTimeMinutes  = Math.floor(videoCurrentTime / 60);
+        videoCurrentTimeMinutes = (videoCurrentTimeMinutes >= 10) ? videoCurrentTimeMinutes : "0" + videoCurrentTimeMinutes;
+        let videoCurrentTimeSeconds = Math.floor(videoCurrentTime % 60);
+        videoCurrentTimeSeconds = (videoCurrentTimeSeconds >= 10) ? videoCurrentTimeSeconds : "0" + videoCurrentTimeSeconds;
 
+        $('.block-views-blockfrontpage-custom-video-block').find('.video-progress').text(videoCurrentTimeMinutes +' : '+ videoCurrentTimeSeconds);
+      };
 
-      $('.block-views-blockfrontpage-custom-video-block').append('<div class="play-button-container"><span class="button-play"></span></div><div class="video-controls"><div class="sound-control"><div class="volume-control"><div class="volume-bar"></div><div class="volume-dot"></div><div class="volume-range"></div></div><div class="mute-control"><button class="mute-button"></button></div></div><div class="time-control"><span class="video-duration">'+videoDuration+'</span><span class="video-progress"></span></div></div>');
-
+      // Video Play/Pause
       $('.block-views-blockfrontpage-custom-video-block').on('click','.play-button-container', function(){
        if(playVideo==false){
          video.get()[0].play();
@@ -123,6 +142,7 @@
        }
       })
 
+      // Video Mute
       $('.block-views-blockfrontpage-custom-video-block').on('click','.mute-button', function(){
         if(soundVideo==true) {
           video.prop('muted', true);
@@ -133,6 +153,16 @@
           soundVideo=true;
         }
       });
+
+      //Volume control clicked
+      $('.volumeBar').on('mousedown', function(e) {
+        let position = e.pageX - volume.offset().left;
+        let percentage = 100 * position / volume.width();
+        $('.volumeBar').css('width', percentage+'%');
+        video[0].volume = percentage / 100;
+      });
+
+
     })
   })(jQuery, Drupal);
 </script>
