@@ -1,0 +1,71 @@
+uuid: d199f10d-1c5f-4b71-8e66-457599601b37
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - slick
+_core:
+  default_config_hash: WpWUAD3X2RwYxsRGzJeh2Imqi592ZcXwEkvcT4tgzQU
+id: default_frontpage
+name: default_frontpage
+label: 'Default frontpage'
+weight: -10
+group: ''
+skin: default
+breakpoints: 0
+optimized: false
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    mobileFirst: false
+    asNavFor: ''
+    accessibility: true
+    adaptiveHeight: false
+    autoplay: false
+    autoplaySpeed: 3000
+    pauseOnHover: true
+    pauseOnDotsHover: false
+    pauseOnFocus: true
+    arrows: true
+    prevArrow: Previous
+    nextArrow: Next
+    downArrow: false
+    downArrowTarget: ''
+    downArrowOffset: 0
+    centerMode: false
+    centerPadding: 50px
+    dots: false
+    dotsClass: slick-dots
+    appendDots: $(element)
+    draggable: true
+    fade: false
+    focusOnSelect: false
+    infinite: true
+    initialSlide: 0
+    lazyLoad: ondemand
+    mouseWheel: false
+    randomize: false
+    respondTo: window
+    rtl: false
+    rows: 1
+    slidesPerRow: 3
+    slide: ''
+    slidesToShow: 3
+    slidesToScroll: 3
+    speed: 500
+    swipe: true
+    swipeToSlide: false
+    edgeFriction: 0.35
+    touchMove: true
+    touchThreshold: 5
+    useCSS: true
+    cssEase: ease
+    cssEaseBezier: ''
+    cssEaseOverride: ''
+    useTransform: true
+    easing: linear
+    variableWidth: true
+    vertical: false
+    verticalSwiping: false
+    waitForAnimate: true

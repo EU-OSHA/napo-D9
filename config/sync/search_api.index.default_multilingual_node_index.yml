@@ -4,41 +4,41 @@ status: true
 dependencies:
   module:
     - search_api_solr
-    - taxonomy
     - node
+    - taxonomy
     - path
     - search_api
   config:
-    - field.storage.node.field_tags
-    - field.storage.node.field_archived
-    - field.storage.node.field_character_count
+    - field.storage.node.body
     - field.storage.node.field_combined_tags
-    - field.storage.node.field_napo_film
-    - field.storage.node.field_download
-    - field.storage.taxonomy_term.field_excluded_from
-    - field.storage.node.field_main_tag
+    - field.storage.node.field_character_count
     - field.storage.node.field_expiration_date
     - field.storage.node.field_image
-    - field.storage.taxonomy_term.field_image
     - field.storage.node.field_lesson_toolkit
     - field.storage.node.field_lesson_video
-    - field.storage.node.field_msds_resources_required
-    - field.storage.node.field_msds_video
+    - field.storage.node.field_main_tag
     - field.storage.taxonomy_term.field_nace_changes
+    - field.storage.taxonomy_term.field_tags_code
     - field.storage.taxonomy_term.field_nace_code
-    - field.storage.node.field_nace_codes
+    - field.storage.taxonomy_term.field_thesaurus_code
+    - field.storage.taxonomy_term.field_excluded_from
     - field.storage.taxonomy_term.field_nace_excludes
     - field.storage.taxonomy_term.field_nace_includes
     - field.storage.taxonomy_term.field_nace_includes_also
+    - field.storage.node.field_archived
+    - field.storage.node.field_msds_video
+    - field.storage.node.field_nace_codes
+    - field.storage.node.field_napo_film
+    - field.storage.node.field_download
     - field.storage.node.field_page_count
     - field.storage.node.field_publication_date
-    - field.storage.taxonomy_term.field_tags_code
+    - field.storage.node.field_msds_resources_required
+    - field.storage.node.field_tags
+    - field.storage.taxonomy_term.field_image
     - field.storage.node.field_target_ages
     - field.storage.node.field_thesaurus
-    - field.storage.taxonomy_term.field_thesaurus_code
     - field.storage.node.field_video
     - field.storage.node.field_video_type
-    - field.storage.node.body
     - search_api.server.apache_solr
 third_party_settings:
   search_api_solr:
@@ -542,7 +542,7 @@ field_settings:
     label: 'Body » Processed text'
     datasource_id: 'entity:node'
     property_path: 'body:processed'
-    type: string
+    type: text
     dependencies:
       config:
         - field.storage.node.body
@@ -630,7 +630,7 @@ field_settings:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
-    type: string
+    type: text
     dependencies:
       module:
         - node

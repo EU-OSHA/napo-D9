@@ -18,7 +18,7 @@ settings:
   id: 'views_block:frontpage_carousel_featured-block'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: '3'
 visibility: {  }
