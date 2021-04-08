@@ -1,0 +1,19 @@
+.napos-films-coming-soon{
+  .slick--less{
+    display:inline-block;
+    float:left;
+    clear:none;
+  }
+  .field--name-body {
+    display:inline-block;
+    width: calc(100% - 432px);
+  }
+
+  .media__image{
+    padding-bottom:0.625rem;
+    padding-right:1.125rem;
+  }
+  p{
+    font-size:1.125rem;
+  }
+}

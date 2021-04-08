@@ -108,15 +108,64 @@
   }
 }
 
-.block-simple-blockfooter-social{
+.menu--menu-social-media-menu{
   .footer &{
     margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
   }
-  p {
+  h2{
+    color:$text-color-blue;
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width:auto;
     font-size: 1.25rem;
+    margin-bottom:1.875rem;
+  }
+  .menu{
+    margin:0px;
+    width: 100%;
     text-align: center;
-    color: $text-color-blue;
-    margin-bottom: 1rem;
-    font-weight: bold;
+    margin-top: 2.25rem;
+    display: block;
+    margin-bottom:0.375rem;
+    &-item{
+      display:inline-block;
+      padding:0 0.625rem;
+      &:first-of-type{
+        background: url(/sites/napo/themes/custom/napo_theme/images/facebook-icon-footer.png) no-repeat;
+
+      }
+      &:last-of-type{
+        background: url(/sites/napo/themes/custom/napo_theme/images/youtube-icon-footer.png) no-repeat;
+      }
+    }
+    .field--type-entity-reference{
+      margin:0;
+    }
+  }
+  a{
+    padding: 0 !important;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: block;
+    &[target="_blank"]{
+      &:after{
+        display:none;
+      }
+    }
+    &:not([target]){
+      display:none;
+    }
+    img{
+      display:none;
+    }
   }
 }

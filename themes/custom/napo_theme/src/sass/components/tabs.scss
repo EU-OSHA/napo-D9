@@ -1,0 +1,48 @@
+.quicktabs-tabs.list-group{
+  width:100%;
+  flex-direction:row;
+  background: $bg-color-grey-light;
+  margin-bottom: 0.325rem;
+  margin-top: 45px;
+  border-radius:0;
+  .list-group-item{
+    display:inline-block;
+    vertical-align:bottom;
+    background-color: $bg-color-blue-light;
+    border:none;
+    padding:0px;
+    margin:0px;
+    height:26px;
+    &.active{
+      background-color: $bg-color-yellow;
+      z-index: 2;
+      color: $text-color-blue;
+      border:none;
+
+    }
+  }
+
+  .quicktabs-loaded{
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px 18px 6px 3.25rem;
+    &:hover{
+      color: $text-color-blue;
+    }
+
+  }
+  .list-view{
+    .quicktabs-loaded{
+      background: url(/sites/napo/themes/custom/napo_theme/images/last-view-ico.png) 17px 4px;
+      background-repeat: no-repeat;
+    }
+  }
+  .gallery-view{
+    .quicktabs-loaded{
+      background: url(/sites/napo/themes/custom/napo_theme/images/gallery-view-ico.png) 17px 4px;
+      background-repeat: no-repeat;
+    }
+  }
+  .quicktabs-loaded{}
+
+}
