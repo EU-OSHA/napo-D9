@@ -1,0 +1,47 @@
+.lessons-item{
+  border-radius: 0 0 1.25rem 1.25rem;
+  overflow: hidden;
+  min-height: 17.5rem;
+  position: relative;
+  border: 2px solid $text-color-blue;
+  height:100%;
+  >a{
+    img{
+      &:hover{
+        opacity: 0.6;
+        filter: grayscale(1);
+        transform: scale(1.2);
+        transition: all 1.5s;
+      }
+    }
+  }
+  img{
+    width:100%;
+  }
+  &-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/sites/napo/themes/custom/napo_theme/images/background-items.png)  ;
+    background-repeat: repeat-x;
+    background-position: top left;
+    background-color: $bg-color-blue;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    padding: 1.25rem 1.25rem 0;
+    h3{
+      font-size: 1rem;
+      font-weight: bold;
+      color: $text-color-white;
+      margin: 0.625rem 0;
+    }
+    a {
+      color:inherit;
+    }
+  }
+  .keyword-list{
+    color: $text-color-white;
+    font-size: 0.875rem;
+  }
+}

@@ -25,11 +25,15 @@
 @import 'layout/section';
 
 
-@import 'block/faqs';
-@import 'block/napo-gallery';
-@import 'block/napo-workplaces';
+@import 'display/faqs';
+@import 'display/napo-for-teachers';
+@import 'display/napo-gallery';
+@import 'display/napo-workplaces';
+@import 'display/lessons-item';
 
 
+@import 'pages/coming-soon';
+@import 'pages/napo-in-the-workplace';
 @import 'pages/napo-story';
 
 @import 'responsive/common/common-responsive';

@@ -49,6 +49,22 @@
   }
 
   &__slider{
-    padding: 0 44px;
+    padding: 0 32px;
+  }
+}
+
+.slick{
+  &-prev{
+    &:before{
+      content: url(/sites/napo/themes/custom/napo_theme/images/slider-left.png);
+    }
+  }
+  &-next{
+    &:before{
+      content: url(/sites/napo/themes/custom/napo_theme/images/slider-right.png);
+    }
+  }
+  &-arrow{
+    &.slick-disabled{}
   }
 }
