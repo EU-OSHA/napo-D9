@@ -434,6 +434,7 @@ display:
         access: false
         pager: false
         arguments: false
+        sorts: false
       row:
         type: fields
         options:
@@ -564,6 +565,21 @@ display:
           items_per_page: 7
           offset: 0
       arguments: {  }
+      sorts:
+        weight:
+          id: weight
+          table: draggableviews_structure
+          field: weight
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          draggable_views_reference: this
+          draggable_views_null_order: after
+          plugin_id: standard
     cache_metadata:
       max-age: 0
       contexts:
@@ -1401,6 +1417,8 @@ display:
           exposed: false
           expose:
             label: ''
+          draggable_views_reference: 'napo_and_friends:page_1'
+          draggable_views_null_order: after
           plugin_id: standard
       filters:
         status:
