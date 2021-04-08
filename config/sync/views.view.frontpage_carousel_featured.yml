@@ -686,7 +686,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"slider-item\">\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ <div class=\"lead\">\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ <div>\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ <p>{{ title }} </p>\r\n                      <a href=\"{{view_node}}\"><button class=\"btn-primary\"><img src=\"/sites/napo/themes/custom/napo_theme/images/play-video.png\"></button></a>\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ \_ </div>\r\n\_ \_ \_ \_ \_ \_ \_ \_ \_ </div>\r\n{{ field_image }}\r\n</div>"
+            text: "<div class=\"slider-item\">\r\n<div class=\"lead\">\r\n<div>\r\n<p>{{ title }} </p>\r\n<a href=\"{{view_node}}\"><button class=\"btn-primary\"><img src=\"/sites/napo/themes/custom/napo_theme/images/play-video.png\"></button></a>\r\n</div>\r\n</div>\r\n{{ field_image }}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
