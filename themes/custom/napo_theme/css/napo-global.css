@@ -103,6 +103,10 @@ img {
   font-size: inherit;
 }
 
+p {
+  font-size: 1.125rem;
+}
+
 .field--name-body ul {
   list-style: none;
 }
@@ -148,6 +152,7 @@ img {
   height: auto !important;
 }
 
+/* SLICK */
 .slick__slide .slider-item {
   position: relative;
   text-align: center;
@@ -199,6 +204,79 @@ img {
 .slick-next:before {
   content: url(/sites/napo/themes/custom/napo_theme/images/slider-right.png);
 }
+/* SLIDE-SHOW */
+.views-slideshow-controls-top .views_slideshow_pager_field_item {
+  width: 139px;
+  height: 115px;
+  margin: 10px 7px 25px 0;
+  float: left;
+}
+.views-slideshow-controls-top .views-field-title {
+  color: #1f3695;
+  background: url(/sites/napo/themes/custom/napo_theme/images/background-yellow.png) repeat-x;
+  padding-left: 17px;
+  font-weight: bold;
+  height: 29px;
+  padding-top: 2px;
+  font-size: 17px;
+}
+.views-slideshow-controls-top .views-content-title {
+  width: 117px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.views-slideshow-controls-top .image-style-thumbnail {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.views_slideshow_cycle_main .views-row {
+  padding: 50px;
+}
+.views_slideshow_cycle_main .views-field-title {
+  color: #1f3695;
+  padding-bottom: 1.125rem;
+  font-size: 17px;
+  font-weight: bold;
+}
+.views_slideshow_cycle_main .views-field-field-image {
+  float: left;
+  padding-right: 1.125rem;
+}
+.views_slideshow_cycle_main .image-style-large {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 125px;
+}
+.views-slideshow-controls-bottom .views_slideshow_controls_text_previous {
+  left: 15px;
+  background: url(/sites/napo/themes/custom/napo_theme/images/carousel-left.png) no-repeat;
+  height: 43px;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  z-index: 900;
+}
+.views-slideshow-controls-bottom .views_slideshow_controls_text_pause {
+  display: none;
+}
+.views-slideshow-controls-bottom .views_slideshow_controls_text_next {
+  right: 0px;
+  background: url(/sites/napo/themes/custom/napo_theme/images/carousel-right.png) no-repeat;
+  height: 43px;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 25px;
+  position: absolute;
+  top: 50%;
+  z-index: 900;
+}
+
 .block-system-main-block {
   padding: 0 0.625rem 1.25rem;
 }
