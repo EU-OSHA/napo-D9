@@ -1,0 +1,29 @@
+uuid: ca4b8d25-6d4c-4e39-a4ab-2379f3a3bfad
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.faqs
+  module:
+    - system
+    - views
+  theme:
+    - napo_theme
+id: views_block__faqs_block
+theme: napo_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:faqs-block'
+settings:
+  id: 'views_block:faqs-block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact-us
+    negate: false
