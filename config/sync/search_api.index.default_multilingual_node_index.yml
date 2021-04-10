@@ -7,20 +7,23 @@ dependencies:
     - node
     - taxonomy
     - path
+    - media
+    - file
     - search_api
   config:
     - field.storage.node.body
     - field.storage.node.field_combined_tags
     - field.storage.node.field_character_count
     - field.storage.node.field_expiration_date
+    - field.storage.node.field_file_media
     - field.storage.node.field_image
     - field.storage.node.field_lesson_toolkit
     - field.storage.node.field_lesson_video
     - field.storage.node.field_main_tag
     - field.storage.taxonomy_term.field_nace_changes
-    - field.storage.taxonomy_term.field_tags_code
     - field.storage.taxonomy_term.field_nace_code
     - field.storage.taxonomy_term.field_thesaurus_code
+    - field.storage.taxonomy_term.field_tags_code
     - field.storage.taxonomy_term.field_excluded_from
     - field.storage.taxonomy_term.field_nace_excludes
     - field.storage.taxonomy_term.field_nace_includes
@@ -39,6 +42,8 @@ dependencies:
     - field.storage.node.field_thesaurus
     - field.storage.node.field_video
     - field.storage.node.field_video_type
+    - field.storage.media.field_media_video_file
+    - field.storage.media.field_media_oembed_video
     - search_api.server.apache_solr
 third_party_settings:
   search_api_solr:
@@ -86,6 +91,14 @@ name: 'Default multilingual node index'
 description: 'An automatically created search index for indexing multilingual node data. Might be configured to specific needs.'
 read_only: false
 field_settings:
+  aggregated_field:
+    label: 'Aggregated field categories'
+    property_path: aggregated_field
+    type: text
+    configuration:
+      type: union
+      fields:
+        - 'entity:node/field_combined_tags'
   changed:
     label: 'Tags » Taxonomy term » Changed'
     datasource_id: 'entity:node'
@@ -159,6 +172,14 @@ field_settings:
         - field.storage.node.field_napo_film
       module:
         - node
+  field_combined_tags_2:
+    label: Categories
+    datasource_id: 'entity:node'
+    property_path: field_combined_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_combined_tags
   field_download:
     label: 'Napo film » Content » Download'
     datasource_id: 'entity:node'
@@ -200,6 +221,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_expiration_date
+  field_file_media:
+    label: FIle
+    datasource_id: 'entity:node'
+    property_path: field_file_media
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_file_media
   field_image:
     label: Image
     datasource_id: 'entity:node'
@@ -243,6 +272,28 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_main_tag
+  field_media_oembed_video:
+    label: 'Video » Media » Video URL'
+    datasource_id: 'entity:node'
+    property_path: 'field_video:entity:field_media_oembed_video'
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_media_oembed_video
+        - field.storage.node.field_video
+      module:
+        - media
+  field_media_video_file:
+    label: 'Video » Media » Video file'
+    datasource_id: 'entity:node'
+    property_path: 'field_video:entity:field_media_video_file'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.media.field_media_video_file
+        - field.storage.node.field_video
+      module:
+        - media
   field_msds_resources_required:
     label: 'Resources required'
     datasource_id: 'entity:node'
@@ -477,6 +528,18 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_video_type
+  filemime:
+    label: 'Video » Media » Video file » File » File MIME type'
+    datasource_id: 'entity:node'
+    property_path: 'field_video:entity:field_media_video_file:entity:filemime'
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_media_video_file
+        - field.storage.node.field_video
+      module:
+        - file
+        - media
   format:
     label: 'Body » Text format'
     datasource_id: 'entity:node'
@@ -642,6 +705,18 @@ field_settings:
     dependencies:
       module:
         - node
+  uri:
+    label: 'Video » Media » Video file » File » URI'
+    datasource_id: 'entity:node'
+    property_path: 'field_video:entity:field_media_video_file:entity:uri'
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_media_video_file
+        - field.storage.node.field_video
+      module:
+        - file
+        - media
   url:
     label: URI
     property_path: search_api_url
@@ -731,10 +806,12 @@ processor_settings:
   html_filter:
     all_fields: true
     fields:
+      - aggregated_field
       - description
       - field_download
       - field_excluded_from
       - field_excluded_from_1
+      - field_media_oembed_video
       - field_nace_changes
       - field_nace_changes_1
       - field_nace_code
@@ -750,6 +827,7 @@ processor_settings:
       - field_tags_code_1
       - field_thesaurus_code
       - field_thesaurus_code_1
+      - filemime
       - format
       - language_with_fallback
       - name
@@ -760,6 +838,7 @@ processor_settings:
       - summary_processed
       - title
       - type
+      - uri
       - url
       - uuid
       - uuid_tags

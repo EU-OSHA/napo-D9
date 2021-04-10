@@ -18,6 +18,9 @@ configuration_data:
     weight: 0
     type: view_content
     content:
+      qtabs_content:
+        options:
+          machine_name: napo_and_friends
       block_content:
         options:
           bid: 'entity_view:node'
@@ -33,14 +36,14 @@ configuration_data:
           vid: napo_films_index
           display: page_list
           args: ''
-      qtabs_content:
-        options:
-          machine_name: ''
   -
     title: 'Gallery view'
     weight: 0
     type: view_content
     content:
+      qtabs_content:
+        options:
+          machine_name: napo_and_friends
       block_content:
         options:
           bid: 'entity_view:node'
@@ -54,8 +57,5 @@ configuration_data:
       view_content:
         options:
           vid: napo_films_index
-          display: page_grid
+          display: page_2
           args: ''
-      qtabs_content:
-        options:
-          machine_name: ''
