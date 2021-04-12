@@ -738,7 +738,7 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
-      path: node/%/reorder-faqs
+      path: node/%node/reorder-faqs
       fields:
         title:
           id: title
@@ -846,6 +846,8 @@ display:
         sorts: false
         filters: false
         filter_groups: false
+        show_admin_links: false
+        arguments: false
       sorts:
         weight:
           id: weight
@@ -862,7 +864,7 @@ display:
           draggable_views_null_order: after
           plugin_id: standard
       menu:
-        type: none
+        type: tab
         title: 'Reorder faqs'
         description: ''
         expanded: false
@@ -927,10 +929,55 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        nid:
+          id: nid
+          table: node_access
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: node_access
       filter_groups:
         operator: AND
         groups:
           1: AND
+      tab_options:
+        type: none
+        title: 'Reorder faqs'
+        description: ''
+        weight: 0
+      show_admin_links: true
+      arguments: {  }
     cache_metadata:
       max-age: 0
       contexts:

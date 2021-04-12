@@ -12,7 +12,7 @@ dependencies:
 id: exposedformnapo_films_indexpage_1
 theme: napo_theme
 region: content
-weight: -12
+weight: -14
 provider: null
 plugin: 'views_exposed_filter_block:napo_films_index-page_1'
 settings:
@@ -24,5 +24,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/napos-films/films\r\n/napos-films/films-list\r\n/napos-films/films-grid\r\n"
+    pages: "/napos-films/films\r\n/napos-films/films-list\r\n/napos-films/films-grid\r\n/napo-films/node-films"
     negate: false

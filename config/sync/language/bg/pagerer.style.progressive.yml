@@ -1,0 +1,15 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Page
+      page_title: 'Към страница @number'
+      first_title: 'Към първата страница'
+      previous_title: 'Към предишната страница'
+      next_title: 'Към следващата страница'
+      last_title: 'Към последната страница'
+      page_reader: Page
+    items:
+      first_reader: 'Първи елемент'
+    item_ranges:
+      prefix_label: Новини
+      page_reader: Новини

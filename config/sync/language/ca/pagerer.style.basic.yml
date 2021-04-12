@@ -1,0 +1,20 @@
+default_config:
+  tags:
+    pages:
+      previous: ‹
+      next: ›
+      first_title: 'Vés a la primera pàgina'
+      previous_title: 'Vés a la pàgina anterior'
+      next_title: 'Vés a la pàgina següent'
+      last_title: 'Vés a la darrera pàgina'
+      first_reader: 'Primera pàgina'
+      previous_reader: 'Pàgina anterior'
+      next_reader: 'Pàgina següent'
+      last_reader: 'Última pàgina'
+    items:
+      previous: ‹
+      next: ›
+      first_reader: 'Primer element'
+    item_ranges:
+      previous: ‹
+      next: ›

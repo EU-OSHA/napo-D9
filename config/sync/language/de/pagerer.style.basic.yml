@@ -1,0 +1,26 @@
+default_config:
+  tags:
+    pages:
+      first: «
+      previous: ‹
+      next: ›
+      last: »
+      first_title: 'Zur ersten Seite'
+      previous_title: 'Zur vorherigen Seite'
+      next_title: 'Zur nächsten Seite'
+      last_title: 'Zur letzten Seite'
+      first_reader: 'Erste Seite'
+      previous_reader: 'Vorherige Seite'
+      next_reader: 'Nächste Seite'
+      last_reader: 'Letzte Seite'
+    items:
+      first: «
+      previous: ‹
+      next: ›
+      last: »
+      first_reader: 'Erstes Element'
+    item_ranges:
+      first: «
+      previous: ‹
+      next: ›
+      last: »

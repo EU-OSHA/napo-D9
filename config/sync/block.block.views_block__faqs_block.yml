@@ -12,7 +12,7 @@ dependencies:
 id: views_block__faqs_block
 theme: napo_theme
 region: content
-weight: 0
+weight: -11
 provider: null
 plugin: 'views_block:faqs-block'
 settings:
@@ -25,5 +25,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /contact-us
+    pages: /node/253
     negate: false
