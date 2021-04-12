@@ -234,6 +234,11 @@
         }
       }
     }
+    .featured-article-body{
+      font-size: 1rem;
+      background: transparent;
+      padding: 0.625rem 0;
+    }
   }
 }
 
@@ -316,5 +321,10 @@
     padding: 1.25rem 0;
     flex: 50%;
     color: $text-color-blue;
+  }
+  .view-footer{
+    iframe{
+      width:100%!important;
+    }
   }
 }

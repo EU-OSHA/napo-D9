@@ -607,6 +607,7 @@ tr th {
   padding: 0 0.625rem;
   flex: auto;
   max-width: initial;
+  text-align: center;
 }
 .block-views-blockconsortium-partners-block .views-col:nth-child(2) {
   position: relative;
@@ -1217,6 +1218,11 @@ tr th {
   opacity: 0.6;
   text-decoration: none;
 }
+.block-views-blockfeatures-articles-block .views-row .featured-article-body {
+  font-size: 1rem;
+  background: transparent;
+  padding: 0.625rem 0;
+}
 
 .block-views-blockfrontpage-carousel-featured-block {
   background: #EEEDEE;
@@ -1287,6 +1293,9 @@ tr th {
   padding: 1.25rem 0;
   flex: 50%;
   color: #1f3695;
+}
+.block-views-blocknapo-story-block-1 .view-footer iframe {
+  width: 100% !important;
 }
 
 .block-views-blockfaqs-block .ui-accordion-header {
@@ -1619,6 +1628,14 @@ tr th {
     width: 100%;
     margin-bottom: 1.25rem;
   }
+
+  .block-views-blocknapo-story-block-1 .view-napo-story {
+    flex-direction: column-reverse;
+  }
+  .block-views-blocknapo-story-block-1 .view-content,
+.block-views-blocknapo-story-block-1 .view-footer {
+    flex: 100%;
+  }
 }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .collapse:not(.show) {
@@ -1629,6 +1646,11 @@ tr th {
     display: -ms-flexbox;
     display: flex;
     flex-basis: auto;
+  }
+
+  .block-views-blockfeatures-articles-block .views-row .views-field-body .featured-article-body {
+    min-height: auto;
+    padding-bottom: 2.5rem;
   }
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
