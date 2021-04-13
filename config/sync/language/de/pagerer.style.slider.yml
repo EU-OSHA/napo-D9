@@ -1,0 +1,35 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Page
+      suffix_label: 'von @total'
+      page_current: '@number'
+      page_previous: '@number'
+      page_next: '@number'
+      first: «
+      previous: ‹
+      next: ›
+      last: »
+      page_current_title: 'Aktuelle Seite'
+      first_title: 'Zur ersten Seite'
+      previous_title: 'Zur vorherigen Seite'
+      next_title: 'Zur nächsten Seite'
+      last_title: 'Zur letzten Seite'
+      page_current_reader: 'Aktuelle Seite'
+      first_reader: 'Erste Seite'
+      previous_reader: 'Vorherige Seite'
+      next_reader: 'Nächste Seite'
+      last_reader: 'Letzte Seite'
+    items:
+      prefix_label: Element
+      first: «
+      previous: ‹
+      next: ›
+      last: »
+      first_reader: 'Erstes Element'
+    item_ranges:
+      prefix_label: Elemente
+      first: «
+      previous: ‹
+      next: ›
+      last: »

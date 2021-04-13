@@ -1,0 +1,16 @@
+uuid: a6a7524a-2c4c-426a-b262-d7c491bbe7c5
+langcode: en
+status: true
+dependencies: {  }
+id: custom_pagination
+label: 'Custom pagination'
+panes:
+  left:
+    style: none
+    config: {  }
+  center:
+    style: standard
+    config: {  }
+  right:
+    style: none
+    config: {  }

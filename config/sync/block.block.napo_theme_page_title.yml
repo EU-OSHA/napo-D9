@@ -9,7 +9,7 @@ _core:
 id: napo_theme_page_title
 theme: napo_theme
 region: content
-weight: -14
+weight: -16
 provider: null
 plugin: page_title_block
 settings:

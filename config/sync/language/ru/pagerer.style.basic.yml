@@ -1,0 +1,20 @@
+default_config:
+  tags:
+    pages:
+      previous: ‹
+      next: ›
+      first_title: 'На первую страницу'
+      previous_title: 'На предыдущую страницу'
+      next_title: 'На следующую страницу'
+      last_title: 'На последнюю страницу'
+      first_reader: 'Первая страница'
+      previous_reader: 'Предыдущая страница'
+      next_reader: 'Следующая страница'
+      last_reader: 'Последняя страница'
+    items:
+      previous: ‹
+      next: ›
+      first_reader: 'Первый элемент'
+    item_ranges:
+      previous: ‹
+      next: ›
