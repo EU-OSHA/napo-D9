@@ -10,7 +10,7 @@ dependencies:
 id: quicktabsnapofilms
 theme: napo_theme
 region: content
-weight: -10
+weight: -12
 provider: null
 plugin: 'quicktabs_block:napo_films'
 settings:

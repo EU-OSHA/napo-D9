@@ -51,6 +51,9 @@ module:
   inline_entity_form: 0
   jquery_ui: 0
   jquery_ui_accordion: 0
+  jquery_ui_button: 0
+  jquery_ui_checkboxradio: 0
+  jquery_ui_controlgroup: 0
   jquery_ui_slider: 0
   jquery_ui_tooltip: 0
   lang_dropdown: 0
@@ -77,6 +80,7 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  pagerer: 0
   path: 0
   path_alias: 0
   printfriendly: 0

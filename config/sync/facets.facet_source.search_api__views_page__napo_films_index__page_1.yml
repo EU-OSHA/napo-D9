@@ -1,0 +1,12 @@
+uuid: 35a68509-f0e9-4833-ba15-23bb33a2ca55
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__napo_films_index__page_1
+name: 'search_api:views_page__napo_films_index__page_1'
+filter_key: ''
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

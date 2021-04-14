@@ -21,6 +21,7 @@ dependencies:
     - datetime
     - field_group
     - media_library
+    - path
     - text
 third_party_settings:
   field_group:
@@ -189,10 +190,16 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 1
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -203,13 +210,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   created: true
-  path: true
   promote: true
   status: true
   sticky: true

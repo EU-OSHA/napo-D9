@@ -16,7 +16,7 @@ provider: null
 plugin: 'system_menu_block:menu-social-media-menu'
 settings:
   id: 'system_menu_block:menu-social-media-menu'
-  label: 'Social media menu'
+  label: 'Check us out in social media'
   provider: system
   label_display: '0'
   level: 1

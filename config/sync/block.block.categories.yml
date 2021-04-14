@@ -1,0 +1,28 @@
+uuid: a73e7afc-62b0-4f52-9334-383b4d29470f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.categories
+  module:
+    - facets
+    - system
+  theme:
+    - napo_theme
+id: categories
+theme: napo_theme
+region: content
+weight: -15
+provider: null
+plugin: 'facet_block:categories'
+settings:
+  id: 'facet_block:categories'
+  label: Categories
+  provider: facets
+  label_display: '0'
+  block_id: categories
+visibility:
+  request_path:
+    id: request_path
+    pages: /napos-films/films
+    negate: false

@@ -1,0 +1,23 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Page
+      previous: '‹ Previous'
+      page_current_title: 'Núverandi síða'
+      page_title: 'Fara á síðu @number'
+      first_title: 'Fara á fremstu síðu'
+      previous_title: 'Fara á fyrri síðu'
+      next_title: 'Fara á næstu síðu'
+      last_title: 'Fara á öftustu síðu'
+      page_current_reader: 'Núverandi síða'
+      page_reader: Page
+      next_reader: 'Næsta síða'
+      last_reader: 'Síðasta síða'
+    items:
+      prefix_label: Hlutur
+      previous: '‹ Previous'
+      page_reader: Hlutur
+    item_ranges:
+      prefix_label: Hlutir
+      previous: '‹ Previous'
+      page_reader: Hlutir
