@@ -1084,10 +1084,10 @@ tr th {
   margin: 0px;
 }
 
-#header {
+.header_navbar_container {
   background-color: #FFF;
 }
-#header.show-menu {
+.header_navbar_container.show-menu {
   position: fixed;
   top: 0rem;
   transition: all 0.6s;
@@ -1095,6 +1095,17 @@ tr th {
   width: 100%;
   margin: 0;
   min-height: 5.625rem;
+  max-width: 100vw;
+}
+.header_navbar_container.hide-menu {
+  position: fixed;
+  top: -12rem;
+  transition: all 0.6s;
+  z-index: 999999999;
+  width: 100%;
+  margin: 0;
+  min-height: 5.625rem;
+  max-width: 100vw;
 }
 
 .block-views-blockfrontpage-custom-video-block {
@@ -1716,7 +1727,7 @@ tr th {
 }
 .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 input.form-control:-webkit-autofill, .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 input.form-control:-webkit-autofill:hover, .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 input.form-control:-webkit-autofill:focus, .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 input.form-control:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
-  -webkit-text-fill-color: #1f3695 !important;
+  -webkit-text-fill-color: #1f3695;
 }
 .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-actions {
   padding: 0px;
