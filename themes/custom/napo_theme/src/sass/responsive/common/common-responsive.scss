@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1199px){
 
   .container{
 
@@ -19,3 +19,35 @@
   }
 }
 
+@media only screen and (max-width: 991px){
+
+  .napo-film-list-view{
+    .item-list{
+      .item{
+        flex-direction: column;
+        align-items: flex-end;
+        position:relative;
+      }
+      .napo-film-list-image{
+        width:calc(100% - 44px);
+      }
+      .group-right{
+        width:calc(100% - 44px);
+      }
+      .cart{
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:200;
+      }
+      .group-right {
+        h3{
+          margin-top:0.625rem;
+        }
+      }
+    }
+  }
+
+
+
+}

@@ -29,6 +29,21 @@
     }
   });
 
+  // Resize Font size
+  $('#text_resize_increase').on('click', function() {
+    let fontSize = $('html').css('font-size');
+    let newFontSize = parseInt(fontSize)+1;
+
+    $('html').css('font-size', newFontSize+'px')
+  })
+
+  $('#text_resize_decrease').on('click', function() {
+    let fontSize = $('html').css('font-size');
+    let newFontSize = parseInt(fontSize)-1;
+
+    $('html').css('font-size', newFontSize+'px')
+  })
+
 
   // Header behaviour at scroll
   let lastScroll = 0;
