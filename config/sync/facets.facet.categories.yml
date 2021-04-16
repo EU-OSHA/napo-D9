@@ -16,7 +16,7 @@ show_only_one_result: true
 field_identifier: field_combined_tags
 facet_source_id: 'search_api:views_page__napo_films_index__page_1'
 widget:
-  type: checkbox
+  type: links
   config:
     show_numbers: false
     soft_limit: 0
