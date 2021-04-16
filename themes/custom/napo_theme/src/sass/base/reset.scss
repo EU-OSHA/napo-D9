@@ -41,3 +41,19 @@ img{
   margin: 0px;
   font-size:inherit;
 }
+
+p{
+  font-size:1.125rem;
+}
+
+.block-system-main-block{
+  margin:0px;
+  padding:0px!important;
+}
+
+a{
+  color:$text-color-blue;
+  &:hover{
+    color:$text-color-blue;
+  }
+}

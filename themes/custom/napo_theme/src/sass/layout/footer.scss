@@ -94,9 +94,10 @@
       padding: 0 0.625rem;
       flex: auto;
       max-width: initial;
+      text-align:center;
+
       &:nth-child(2){
         position: relative;
-        //top: -5px;
       }
       &:first-child{
         padding: 0 0.625rem 0 0;

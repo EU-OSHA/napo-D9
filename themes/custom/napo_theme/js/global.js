@@ -29,30 +29,21 @@
     }
   });
 
+  // Resize Font size
+  $('#text_resize_increase').on('click', function() {
+    let fontSize = $('html').css('font-size');
+    let newFontSize = parseInt(fontSize)+1;
 
-  // Header behaviour at scroll
-  let lastScroll = 0;
-  $(window).scroll(function(event){
-    let windowScrollTop = $(this).scrollTop();
-    if (windowScrollTop > lastScroll){
-      if(!$('#header').hasClass('hide-menu')){
-        $('#header').stop().removeClass('show-menu').addClass('hide-menu');
-      }
-    }
-    else {
-      if(windowScrollTop >= 80){
-        if(!$('#header').hasClass('show-menu')){
-          $('#header').stop().removeClass('hide-menu').addClass('show-menu');
-        }
-      }
-      else{
-        if(!$('#header').hasClass('hide-menu')){
-          $('#header').stop().removeClass('show-menu').addClass('hide-menu');
-        }
-      }
-    }
-    lastScroll = windowScrollTop;
-  });
+    $('html').css('font-size', newFontSize+'px')
+  })
+
+  $('#text_resize_decrease').on('click', function() {
+    let fontSize = $('html').css('font-size');
+    let newFontSize = parseInt(fontSize)-1;
+
+    $('html').css('font-size', newFontSize+'px')
+  })
+
 
 
 

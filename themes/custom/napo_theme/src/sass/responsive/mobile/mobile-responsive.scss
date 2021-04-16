@@ -147,4 +147,15 @@
       margin-bottom: 1.25rem;
     }
   }
+
+
+  .block-views-blocknapo-story-block-1{
+    .view-napo-story{
+      flex-direction: column-reverse;
+    }
+    .view-content,
+    .view-footer{
+      flex: 100%;
+    }
+  }
 }

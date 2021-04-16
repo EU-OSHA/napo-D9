@@ -234,6 +234,11 @@
         }
       }
     }
+    .featured-article-body{
+      font-size: 1rem;
+      background: transparent;
+      padding: 0.625rem 0;
+    }
   }
 }
 
@@ -314,7 +319,12 @@
   .view-content,
   .view-footer{
     padding: 1.25rem 0;
-    flex: 50%;
+    flex: 50px;
     color: $text-color-blue;
+  }
+  .view-footer{
+    iframe{
+      width:100%!important;
+    }
   }
 }

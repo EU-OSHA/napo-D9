@@ -2,6 +2,7 @@ global-styling:
   version: VERSION
   js:
     js/global.js: {}
+    js/sticky-menu.js: {}
   css:
     component:
       css/napo-global.css: {}
