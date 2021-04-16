@@ -1096,6 +1096,25 @@ tr th {
   margin: 0;
   min-height: 5.625rem;
   max-width: 100vw;
+  padding: 0.625rem 0;
+}
+.header_navbar_container.show-menu:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/nav-bar-border.png);
+  background-repeat: repeat-x;
+  background-position: 30px;
+  width: 100%;
+  top: 100%;
+  left: 0%;
+  filter: grayscale(100%);
+  height: 0.625rem;
+  opacity: 0.75;
+  transform: translateY(-100%);
+}
+.header_navbar_container.show-menu .header_navbar_content {
+  margin: 0;
 }
 .header_navbar_container.hide-menu {
   position: fixed;
@@ -1106,6 +1125,25 @@ tr th {
   margin: 0;
   min-height: 5.625rem;
   max-width: 100vw;
+  padding: 0.625rem 0;
+}
+.header_navbar_container.hide-menu:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/nav-bar-border.png);
+  background-repeat: repeat-x;
+  background-position: 30px;
+  width: 100%;
+  top: 100%;
+  left: 0%;
+  filter: grayscale(100%);
+  height: 0.625rem;
+  opacity: 0.75;
+  transform: translateY(-100%);
+}
+.header_navbar_container.hide-menu .header_navbar_content {
+  margin: 0;
 }
 
 .block-views-blockfrontpage-custom-video-block {
@@ -1396,7 +1434,7 @@ tr th {
 .block-views-blocknapo-story-block-1 .view-content,
 .block-views-blocknapo-story-block-1 .view-footer {
   padding: 1.25rem 0;
-  flex: 50%;
+  flex: 50px;
   color: #1f3695;
 }
 .block-views-blocknapo-story-block-1 .view-footer iframe {
