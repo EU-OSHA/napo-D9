@@ -1,0 +1,21 @@
+uuid: cf2bd60b-b7b8-499c-9daa-d242bddfa6c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_node_views
+    - field.storage.block_content.field_node_id
+id: block_content.block_node_views.field_node_id
+field_name: field_node_id
+entity_type: block_content
+bundle: block_node_views
+label: 'Node ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

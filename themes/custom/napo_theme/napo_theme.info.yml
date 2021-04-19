@@ -16,6 +16,7 @@ regions:
   header_form: 'Header form'
   breadcrumb: 'Breadcrumb'
   home_page: 'Home page'
+  node_view: 'Node Views Content'
   content: 'Content'
   footer_first: 'Footer first'
   footer_second: 'Footer second'

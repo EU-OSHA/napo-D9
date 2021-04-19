@@ -11,7 +11,7 @@ dependencies:
 id: duplicateofduplicateofcategories
 theme: napo_theme
 region: content
-weight: 0
+weight: -10
 provider: null
 plugin: 'facet_block:duplicate_of_duplicate_of_categories'
 settings:

@@ -43,10 +43,14 @@
 
 {% block content %}
   <main class="container">
-    <div class="row">
+    <div class="row content-node-view">
+      <div class="col-12">
+        {{ page.node_view }}
+      </div>
+    </div>
+    <div class="row content-page-content">
       <div class="col-12">
         {{ page.content }}
-
       </div>
     </div>
   </main>

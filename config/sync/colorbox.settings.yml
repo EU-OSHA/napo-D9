@@ -1,7 +1,7 @@
 custom:
-  style: example3
-  activate: 0
-  transition_type: elastic
+  style: example5
+  activate: 1
+  transition_type: fade
   transition_speed: 350
   opacity: 0.85
   text_current: '{current} of {total}'
@@ -17,9 +17,9 @@ custom:
   fixed: true
   scrolling: true
   slideshow:
-    slideshow: 0
-    auto: true
-    speed: 2500
+    slideshow: 1
+    auto: false
+    speed: 3000
     text_start: 'start slideshow'
     text_stop: 'stop slideshow'
 advanced:

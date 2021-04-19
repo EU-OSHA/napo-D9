@@ -14,8 +14,6 @@ dependencies:
     - field.storage.node.field_tags
     - image.style.lessons_grid_image
     - node.type.lesson
-  content:
-    - 'node:article:f849921a-beda-4f77-8085-c9c050505ca4'
   module:
     - media
     - node
@@ -1106,20 +1104,7 @@ display:
           empty: false
           content: '<h2> Lessons <span class="lessons-available"> [@total] </span> </h2>'
           plugin_id: result
-      footer:
-        entity_node:
-          id: entity_node
-          table: views
-          field: entity_node
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          target: f849921a-beda-4f77-8085-c9c050505ca4
-          view_mode: default
-          bypass_access: false
-          plugin_id: entity
+      footer: {  }
       empty:
         area_text_custom:
           id: area_text_custom
