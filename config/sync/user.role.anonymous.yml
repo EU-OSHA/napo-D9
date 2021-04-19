@@ -25,3 +25,4 @@ permissions:
   - 'use manualcrop'
   - 'use text format filtered_html'
   - 'view files'
+  - 'view media'

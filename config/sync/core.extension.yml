@@ -123,6 +123,7 @@ module:
   webform_node: 0
   workbench_access: 0
   workflows: 0
+  ds: 1
   pathauto: 1
   content_translation: 10
   views: 10

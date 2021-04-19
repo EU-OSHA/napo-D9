@@ -13,8 +13,6 @@ dependencies:
     - field.storage.node.field_tags
     - image.style.lessons_grid_image
     - node.type.msds_activities
-  content:
-    - 'node:article:9d41789b-0313-43ca-8b2f-7f4ce1def67a'
   module:
     - media
     - node
@@ -984,20 +982,7 @@ display:
           empty: false
           content: '<h2>Understanding MSDs <span class="lessons-available">[@total]</span></h2>'
           plugin_id: result
-      footer:
-        entity_node:
-          id: entity_node
-          table: views
-          field: entity_node
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          target: 9d41789b-0313-43ca-8b2f-7f4ce1def67a
-          view_mode: default
-          bypass_access: false
-          plugin_id: entity
+      footer: {  }
       empty:
         area_text_custom:
           id: area_text_custom

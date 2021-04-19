@@ -1,0 +1,30 @@
+uuid: a6252019-0d12-4dda-9ad7-5b27880b7d96
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_node_views:e258416d-6957-4626-8237-6d830398c23f'
+  module:
+    - block_content
+    - system
+  theme:
+    - napo_theme
+id: napointheworkplaceviewnode
+theme: napo_theme
+region: node_view
+weight: 0
+provider: null
+plugin: 'block_content:e258416d-6957-4626-8237-6d830398c23f'
+settings:
+  id: 'block_content:e258416d-6957-4626-8237-6d830398c23f'
+  label: 'Napo in the workplace view node'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /learning-with-napo/napo-in-the-workplace
+    negate: false

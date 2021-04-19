@@ -1,0 +1,30 @@
+uuid: ea0731be-555a-4f4a-86b2-44811f317a9c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_node_views:ac8d5629-ebc2-4ebf-bd55-59f24b66639d'
+  module:
+    - block_content
+    - system
+  theme:
+    - napo_theme
+id: napoforteachersviewnode
+theme: napo_theme
+region: node_view
+weight: -18
+provider: null
+plugin: 'block_content:ac8d5629-ebc2-4ebf-bd55-59f24b66639d'
+settings:
+  id: 'block_content:ac8d5629-ebc2-4ebf-bd55-59f24b66639d'
+  label: 'Napo for teachers view node'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /learning-with-napo/napo-for-teachers
+    negate: false
