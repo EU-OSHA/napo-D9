@@ -1539,7 +1539,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<a href="{{path}}/napos-films/films?search_api_fulltext={{ field_combined_tags__target_id}}" >{{ field_combined_tags }}</a>'
+            text: '<a href="{{path}}/napos-films/films?f[0]=categories:{{ field_combined_tags__target_id }}" >{{ field_combined_tags }}</a>'
             make_link: false
             path: ''
             absolute: false
@@ -1716,7 +1716,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: 'See video'
+            text: 'View film'
             make_link: false
             path: ''
             absolute: false
@@ -1840,7 +1840,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"item\">\r\n<div class=\"cart\">{{content_cart}}<a href=\"#\">Add to download centre</a></div>\r\n<div class=\"napo-film-list-image\">{{field_image}}</div>\r\n<div class=\"group-right\">\r\n<h3>{{title}}</h3>\r\n<div>{{field_publication_date}}</div>\r\n<p>{{processed}}</p>\r\n<div class=\"napo-film-list-details-container\">\r\n<div class=\"\">{{ field_combined_tags }} </div>\r\n<div class=\"view-scenes\"><a href=\"/napo-s-film-episodes/{{nid}}\">View scenes</a></div>\r\n<div class=\"view-video\">{{ url_1 }}</div>\r\n<div class=\"download-video\"><a target=\"_blank\" href=\"{{ uri}}\">Download video</a></div>\r\n\r\n</div>\r\n</div>\r\n</div>"
+            text: "<div class=\"item\">\r\n    <div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\"><a target=\"_blank\" href=\"{{ uri}}\">Download video</a></div>\r\n         <div class=\"cart\">{{content_cart}}<a href=\"#\">Add to download centre</a></div>\r\n    </div>\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n        <div class=\"view-scenes\"><a href=\"/napo-s-film-episodes/{{nid}}\">View scenes</a></div>\r\n    </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -2784,7 +2784,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: 'See video'
+            text: 'View film'
             make_link: false
             path: ''
             absolute: false
