@@ -1,0 +1,46 @@
+.learning-with-napo-napo-in-the-workplace,
+.page-view-napo-for-teachers{
+  .view-napo-workplaces{
+    display:flex;
+    flex-direction:column;
+  }
+  .content-page-content{
+    background-color:$bg-color-grey-light;
+    background-image: url(/sites/napo/themes/custom/napo_theme/images/nav-bar-borderx2.png);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    padding: 1.875rem 3% 1.875rem 3%;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .view-filters{
+    position:absolute;
+    z-index:1;
+    top:0;
+    right:0;
+    padding: 0 0 0 2.5rem;
+    width: 28%;
+    .form-actions{
+      display: none;
+    }
+  }
+  .node--view-mode-header-view-node{
+    padding: 0 3% 2.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    .field--name-field-image{
+      flex:50%;
+      img{
+        width:100%!important;
+      }
+    }
+    .field--type-text-with-summary{
+      flex:50%;
+      padding: 0.625rem 2.5rem;
+    }
+  }
+}

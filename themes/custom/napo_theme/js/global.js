@@ -12,22 +12,7 @@
 
     }
   };
-  // Pager index
-  $('.pagination').each(function () {
-    let itemLast = $(this).find('[title="Go to last page"]').length;
-    if(itemLast>0){
-      $(this).find('[title="Go to last page"]').closest('.page-item').addClass('last');
-    }
-    let itemFirst = $(this).find('[title="Go to first page"]').length;
-    if(itemFirst>0){
-      $(this).find('[title="Go to first page"]').closest('.page-item').addClass('first');
-    }
 
-    let itemPrev = $(this).find('[title="Go to previous page"]').length;
-    if(itemPrev>0){
-      $(this).find('[title="Go to previous page"]').closest('.page-item').addClass('prev');
-    }
-  });
 
   // Resize Font size
   $('#text_resize_increase').on('click', function() {
@@ -46,6 +31,14 @@
 
 
 
+  /* Add custom class to facet parent when child is-active */
+  $(window).on('load', function() {
+    if ($(".facet-active a.is-active")[0]){
+      $(".facet-active a.is-active").parent().addClass('active-custom', true);
+    }
+  });
 
 
 })(jQuery, Drupal);
+
+

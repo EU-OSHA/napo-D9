@@ -27,6 +27,7 @@
  .header{
    &_nav {
      text-align: left;
+     padding:0px;
    }
    .contextual-region{
      width:100%;
@@ -34,9 +35,6 @@
    .navbar-toggler {
      margin-top: 0px;
      margin-right: 0px;
-     position: relative;
-     left: 0.325rem;
-     top: 0.325rem;
      background: $bg-color-white;
      border-radius: 3.125rem;
      width: 3.125rem;
@@ -57,13 +55,24 @@
    }
    .navbar-expand-lg,
    #navbar-main{
-     max-width: 90%;
-     margin: 0 auto;
-     background: $bg-color-blue;
-     border-radius: 1.875rem;
+     width:100%;
      display:block;
      position:relative;
    }
+   .container-toogle{
+     width:100%;
+     background: $bg-color-blue;
+     border-radius: 1.875rem;
+     max-width: 90%;
+     margin: 0 auto;
+     padding:0.25rem;
+   }
+   .navbar-collapse{
+     max-width: 90%;
+     margin: 0 auto;
+
+   }
+
    .nav{
      &-item{
        min-width: 100%;
@@ -73,9 +82,40 @@
        padding: 0 ;
        border-bottom: 1px solid $bg-color-grey-light-4 ;
        border-radius: 0;
-       text-align: center;
+       text-align: left;
        margin: 0 ;
        flex-direction: column;
+       &:first-of-type{
+         width:100%;
+         justify-content: flex-start;
+         color:$text-color-blue;
+         a{
+           width:100%;
+           height:auto;
+           color:$text-color-blue;
+
+           &:after{
+             display:none;
+           }
+         }
+       }
+       &.show{
+         .dropdown-menu{
+           border:none;
+           outline:none;
+         }
+         >.nav-link{
+           border-bottom: 1px solid $bg-color-blue;
+           &.dropdown-toggle{
+             &:after {
+               border-top: 0;
+               border-right: .3em solid transparent;
+               border-bottom: .3em solid;
+               border-left: .3em solid transparent;
+             }
+           }
+         }
+       }
      }
      &-link{
        color: $text-color-blue;
@@ -84,6 +124,21 @@
        padding-top: 1.25rem;
        font-size: 1.25rem;
        width:100%;
+       &.dropdown-toggle{
+         &:after {
+           display: inline-block;
+           margin-left: .255em;
+           vertical-align: .255em;
+           content: "";
+           border-top: .3em solid;
+           border-right: .3em solid transparent;
+           border-bottom: 0;
+           border-left: .3em solid transparent;
+           background: none;
+           width: auto;
+           height: auto;
+         }
+       }
      }
    }
     .dropdown-menu {
@@ -95,6 +150,17 @@
       max-width: 100%;
       min-width: 129px;
       text-align:center;
+      .dropdown-item{
+        border-bottom:1px solid $bg-color-grey-light-4;
+        border-top: none;
+        a{
+          color: $text-color-blue ;
+          background-color: $bg-color-grey-light ;
+          padding: 0.625rem ;
+          font-weight: normal ;
+          font-size:1.25rem;
+        }
+      }
     }
  }
 
@@ -157,5 +223,8 @@
     .view-footer{
       flex: 100%;
     }
+  }
+  .container.header_navbar_container{
+    padding:0px;
   }
 }

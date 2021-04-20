@@ -1,0 +1,42 @@
+.node--type-napo-album{
+  .field--name-field-media-image{
+    img{
+      margin:0;
+
+    }
+  }
+  .field--type-text-with-summary{
+    padding: 1.125rem 0em ;
+    width: 70%;
+    float: left;
+  }
+  #share-this-on{
+    float:right;
+  }
+  .field--name-field-images{
+    clear: both;
+    .field--type-image{
+      width:100%;
+      .field__item{
+        a{
+          display:block;
+          width:100%;
+          height:222px;
+          overflow:hidden;
+          margin:1rem 0;
+          img{
+            max-width:100%;
+            height:auto;
+            display:block;
+            position:relative;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+
+}

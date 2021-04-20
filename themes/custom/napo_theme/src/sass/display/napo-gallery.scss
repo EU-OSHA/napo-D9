@@ -2,6 +2,12 @@
   margin-bottom: 27px;
   .views-row{
     position:relative;
+    width:100%;
+    .views-field-field-images{
+      width:100%;
+      background-color: $bg-color-black;
+
+    }
   }
   .napo-gallery-title-container{
     height: 73px;
@@ -60,6 +66,15 @@
       width:auto;
       margin-bottom:1.75rem;
       float:none;
+    }
+  }
+
+  .views-field-field-images{
+    a{
+      display:block;
+    }
+    img{
+      margin:0 auto;
     }
   }
 }
