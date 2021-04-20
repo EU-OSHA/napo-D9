@@ -885,7 +885,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: Search
+            label: ''
             description: ''
             use_operator: false
             operator: combine_op
@@ -906,7 +906,7 @@ display:
               project_manager: '0'
               review_manager: '0'
               internal_translator: '0'
-            placeholder: ''
+            placeholder: Search...
           is_grouped: false
           group_info:
             label: ''
