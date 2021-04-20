@@ -13,4 +13,17 @@
   .navbar-expand-lg .navbar-nav .nav-link {
     padding:0;
   }
+  .nav{
+    &-item{
+      &:hover,
+      &.show{
+        transition: all 0.1s;
+        background: $bg-color-blue-light-hover;
+        border-radius: 3rem 3rem 0 0;
+        .dropdown-menu{
+          display: block;
+        }
+      }
+    }
+  }
 }

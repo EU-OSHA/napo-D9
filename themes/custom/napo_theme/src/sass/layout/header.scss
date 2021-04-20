@@ -153,15 +153,7 @@
       display: flex;
       align-items: center;
       cursor:pointer;
-      &:hover,
-      &.show{
-        transition: all 0.1s;
-        background: $bg-color-blue-light-hover;
-        border-radius: 3rem 3rem 0 0;
-        .dropdown-menu{
-          display: block;
-        }
-      }
+
       &:first-of-type{
         width: 64px;
         justify-content: center;

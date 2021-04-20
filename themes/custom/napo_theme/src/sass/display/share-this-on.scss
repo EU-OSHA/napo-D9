@@ -1,0 +1,30 @@
+#share-this-on{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top:1.125rem;
+  a{
+    height: 40px;
+    width: 45px;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:inline-block;
+    &:hover{
+      background-color:$bg-color-yellow;
+    }
+    span{
+      display:none!important;
+    }
+  }
+  .a2a_button_facebook{
+
+    background: url(/sites/napo/themes/custom/napo_theme/images/facebook.png);
+  }
+  .a2a_button_twitter{
+    background: url(/sites/napo/themes/custom/napo_theme/images/twitter.png);
+  }
+  .a2a_button_linkedin_share{
+    background: url(/sites/napo/themes/custom/napo_theme/images/link.png);
+  }
+}

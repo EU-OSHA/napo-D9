@@ -1,0 +1,12 @@
+.block-facets{
+  .item-list{
+    &__links{
+      list-style: none;
+    }
+  }
+  .facet{
+    &-item{}
+  }
+}
+
+.facets-widget-links{}

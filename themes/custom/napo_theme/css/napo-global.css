@@ -119,6 +119,11 @@ a:hover {
   color: #1f3695;
 }
 
+div.pagerer-container {
+  margin: 0px;
+  padding: 0px;
+}
+
 .field--name-body ul {
   list-style: none;
 }
@@ -231,6 +236,10 @@ a:hover {
   height: 29px;
   padding-top: 2px;
   font-size: 17px;
+  cursor: pointer;
+}
+.views-slideshow-controls-top .views-field-field-image {
+  cursor: pointer;
 }
 .views-slideshow-controls-top .views-content-title {
   width: 117px;
@@ -289,6 +298,22 @@ a:hover {
   z-index: 900;
 }
 
+.form-item-search .form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  line-height: 1.42857143;
+  background-image: none;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  border-radius: 3.75rem;
+  background: #1f3695;
+  color: #FFF;
+  border: 0;
+  box-shadow: none;
+  padding: 0.375rem 1rem;
+  font-size: 1rem;
+}
+
 .block-system-main-block {
   padding: 0 0.625rem 1.25rem;
 }
@@ -336,6 +361,9 @@ h3 a:hover {
   transition: all 1s;
 }
 
+.block-page-title-block {
+  width: 100%;
+}
 .block-page-title-block h1 {
   padding: 0.25rem 0.5rem;
   padding-bottom: 9px;
@@ -346,6 +374,7 @@ h3 a:hover {
   font-size: 30px;
   font-weight: 500;
   line-height: 1.1;
+  width: 100%;
 }
 
 a {
@@ -917,14 +946,6 @@ tr th {
   align-items: center;
   cursor: pointer;
 }
-.header .nav-item:hover, .header .nav-item.show {
-  transition: all 0.1s;
-  background: #506B9E;
-  border-radius: 3rem 3rem 0 0;
-}
-.header .nav-item:hover .dropdown-menu, .header .nav-item.show .dropdown-menu {
-  display: block;
-}
 .header .nav-item:first-of-type {
   width: 64px;
   justify-content: center;
@@ -1441,6 +1462,9 @@ tr th {
   width: 100% !important;
 }
 
+.block-facets .item-list__links {
+  list-style: none;
+}
 .block-views-blockfaqs-block .ui-accordion-header {
   border: none;
   background: transparent;
@@ -1618,6 +1642,11 @@ tr th {
 }
 .view-napos-gallery .views-row {
   position: relative;
+  width: 100%;
+}
+.view-napos-gallery .views-row .views-field-field-images {
+  width: 100%;
+  background-color: #000;
 }
 .view-napos-gallery .napo-gallery-title-container {
   height: 73px;
@@ -1673,6 +1702,12 @@ tr th {
   margin-bottom: 1.75rem;
   float: none;
 }
+.view-napos-gallery .views-field-field-images a {
+  display: block;
+}
+.view-napos-gallery .views-field-field-images img {
+  margin: 0 auto;
+}
 
 .view-napo-workplaces .views-row {
   width: 30%;
@@ -1723,6 +1758,36 @@ tr th {
   font-size: 0.875rem;
 }
 
+#share-this-on {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 1.125rem;
+}
+#share-this-on a {
+  height: 40px;
+  width: 45px;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+#share-this-on a:hover {
+  background-color: #f7e235;
+}
+#share-this-on a span {
+  display: none !important;
+}
+#share-this-on .a2a_button_facebook {
+  background: url(/sites/napo/themes/custom/napo_theme/images/facebook.png);
+}
+#share-this-on .a2a_button_twitter {
+  background: url(/sites/napo/themes/custom/napo_theme/images/twitter.png);
+}
+#share-this-on .a2a_button_linkedin_share {
+  background: url(/sites/napo/themes/custom/napo_theme/images/link.png);
+}
+
 .napos-films-coming-soon .slick--less {
   display: inline-block;
   float: left;
@@ -1738,6 +1803,41 @@ tr th {
 }
 .napos-films-coming-soon p {
   font-size: 1.125rem;
+}
+
+.node--type-napo-album .field--name-field-media-image img {
+  margin: 0;
+}
+.node--type-napo-album .field--type-text-with-summary {
+  padding: 1.125rem 0em;
+  width: 70%;
+  float: left;
+}
+.node--type-napo-album #share-this-on {
+  float: right;
+}
+.node--type-napo-album .field--name-field-images {
+  clear: both;
+}
+.node--type-napo-album .field--name-field-images .field--type-image {
+  width: 100%;
+}
+.node--type-napo-album .field--name-field-images .field--type-image .field__item a {
+  display: block;
+  width: 100%;
+  height: 222px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+.node--type-napo-album .field--name-field-images .field--type-image .field__item a img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-row {
@@ -1784,14 +1884,62 @@ tr th {
 .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 button#edit-reset--2 {
   display: none;
 }
+.napos-films-films .node--type-article header,
+.napos-films-films .node--type-article #share-this-on {
+  display: none;
+}
 
-.learning-with-napo-napo-in-the-workplace .view-napo-workplaces {
+.learning-with-napo-napo-in-the-workplace .view-napo-workplaces,
+.page-view-napo-for-teachers .view-napo-workplaces {
   display: flex;
   flex-direction: column;
 }
-.learning-with-napo-napo-in-the-workplace .view-footer {
-  order: 0;
+.learning-with-napo-napo-in-the-workplace .content-page-content,
+.page-view-napo-for-teachers .content-page-content {
+  background-color: #f2f1f2;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/nav-bar-borderx2.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  padding: 1.875rem 3% 1.875rem 3%;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
 }
+.learning-with-napo-napo-in-the-workplace .view-filters,
+.page-view-napo-for-teachers .view-filters {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding: 0 0 0 2.5rem;
+  width: 28%;
+}
+.learning-with-napo-napo-in-the-workplace .view-filters .form-actions,
+.page-view-napo-for-teachers .view-filters .form-actions {
+  display: none;
+}
+.learning-with-napo-napo-in-the-workplace .node--view-mode-header-view-node,
+.page-view-napo-for-teachers .node--view-mode-header-view-node {
+  padding: 0 3% 2.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.learning-with-napo-napo-in-the-workplace .node--view-mode-header-view-node .field--name-field-image,
+.page-view-napo-for-teachers .node--view-mode-header-view-node .field--name-field-image {
+  flex: 50%;
+}
+.learning-with-napo-napo-in-the-workplace .node--view-mode-header-view-node .field--name-field-image img,
+.page-view-napo-for-teachers .node--view-mode-header-view-node .field--name-field-image img {
+  width: 100% !important;
+}
+.learning-with-napo-napo-in-the-workplace .node--view-mode-header-view-node .field--type-text-with-summary,
+.page-view-napo-for-teachers .node--view-mode-header-view-node .field--type-text-with-summary {
+  flex: 50%;
+  padding: 0.625rem 2.5rem;
+}
+
 .napo-story iframe {
   float: left;
   padding-right: 1.125rem;
@@ -1855,6 +2003,15 @@ tr th {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0;
   }
+
+  .nav-item:hover, .nav-item.show {
+    transition: all 0.1s;
+    background: #506B9E;
+    border-radius: 3rem 3rem 0 0;
+  }
+  .nav-item:hover .dropdown-menu, .nav-item.show .dropdown-menu {
+    display: block;
+  }
 }
 @media only screen and (max-width: 767px) {
   .header .region-header-logo img {
@@ -1883,6 +2040,7 @@ tr th {
 
   .header_nav {
     text-align: left;
+    padding: 0px;
   }
   .header .contextual-region {
     width: 100%;
@@ -1890,9 +2048,6 @@ tr th {
   .header .navbar-toggler {
     margin-top: 0px;
     margin-right: 0px;
-    position: relative;
-    left: 0.325rem;
-    top: 0.325rem;
     background: #FFF;
     border-radius: 3.125rem;
     width: 3.125rem;
@@ -1912,12 +2067,21 @@ tr th {
   }
   .header .navbar-expand-lg,
 .header #navbar-main {
-    max-width: 90%;
-    margin: 0 auto;
-    background: #1f3695;
-    border-radius: 1.875rem;
+    width: 100%;
     display: block;
     position: relative;
+  }
+  .header .container-toogle {
+    width: 100%;
+    background: #1f3695;
+    border-radius: 1.875rem;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0.25rem;
+  }
+  .header .navbar-collapse {
+    max-width: 90%;
+    margin: 0 auto;
   }
   .header .nav-item {
     min-width: 100%;
@@ -1927,9 +2091,35 @@ tr th {
     padding: 0;
     border-bottom: 1px solid #ccc;
     border-radius: 0;
-    text-align: center;
+    text-align: left;
     margin: 0;
     flex-direction: column;
+  }
+  .header .nav-item:first-of-type {
+    width: 100%;
+    justify-content: flex-start;
+    color: #1f3695;
+  }
+  .header .nav-item:first-of-type a {
+    width: 100%;
+    height: auto;
+    color: #1f3695;
+  }
+  .header .nav-item:first-of-type a:after {
+    display: none;
+  }
+  .header .nav-item.show .dropdown-menu {
+    border: none;
+    outline: none;
+  }
+  .header .nav-item.show > .nav-link {
+    border-bottom: 1px solid #1f3695;
+  }
+  .header .nav-item.show > .nav-link.dropdown-toggle:after {
+    border-top: 0;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.3em solid;
+    border-left: 0.3em solid transparent;
   }
   .header .nav-link {
     color: #1f3695;
@@ -1938,6 +2128,19 @@ tr th {
     padding-top: 1.25rem;
     font-size: 1.25rem;
     width: 100%;
+  }
+  .header .nav-link.dropdown-toggle:after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    background: none;
+    width: auto;
+    height: auto;
   }
   .header .dropdown-menu {
     background-color: transparent;
@@ -1948,6 +2151,17 @@ tr th {
     max-width: 100%;
     min-width: 129px;
     text-align: center;
+  }
+  .header .dropdown-menu .dropdown-item {
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+  }
+  .header .dropdown-menu .dropdown-item a {
+    color: #1f3695;
+    background-color: #f2f1f2;
+    padding: 0.625rem;
+    font-weight: normal;
+    font-size: 1.25rem;
   }
 
   .block-views-blockfrontpage-custom-video-block video {
@@ -1994,6 +2208,10 @@ tr th {
   .block-views-blocknapo-story-block-1 .view-content,
 .block-views-blocknapo-story-block-1 .view-footer {
     flex: 100%;
+  }
+
+  .container.header_navbar_container {
+    padding: 0px;
   }
 }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
