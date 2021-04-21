@@ -1,6 +1,6 @@
 uuid: 6c4c81e1-5d48-4739-b7bb-fdb19c43a5bf
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.print
@@ -139,6 +139,7 @@ content:
     type: text_default
     region: content
 hidden:
+  addtoany: true
   field_tags: true
   langcode: true
   links: true
