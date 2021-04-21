@@ -29,7 +29,7 @@
      text-align: left;
      padding:0px;
    }
-   .contextual-region{
+   .menu--main{
      width:100%;
    }
    .navbar-toggler {
@@ -74,6 +74,7 @@
    }
 
    .nav{
+     padding: 0 1rem;
      &-item{
        min-width: 100%;
        max-width: 100%;
@@ -121,9 +122,10 @@
        color: $text-color-blue;
        background: $bg-color-white;
        min-height: 3.125rem;
-       padding-top: 1.25rem;
+       padding-top: 1rem;
        font-size: 1.25rem;
        width:100%;
+       padding-bottom:0.75rem;
        &.dropdown-toggle{
          &:after {
            display: inline-block;
@@ -227,4 +229,103 @@
   .container.header_navbar_container{
     padding:0px;
   }
+  .header_nav{
+    position:relative;
+  }
+  .header-blocks{
+    position:absolute;
+    z-index:200;
+    top:0.75rem;
+    right: 5%;
+    padding-right: 1.25rem;
+    width:calc(100% - 140px);
+    .region-header-form{
+      display:flex;
+      flex-direction: row-reverse;
+    }
+  }
+  .custom-select {
+    background: $bg-color-blue;
+    color: $text-color-white;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 0 0.625rem;
+    line-height:1.5;
+    width:136px!important;
+  }
+  .form-item-lang-dropdown-select{
+    &:after{
+      background-color: $bg-color-blue;
+      background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-select-mobile.png);
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      right: 0rem;
+      height: 24px;
+      width: 22px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .btn-search-custom-mobile{
+    display: block;
+    width: 2.5rem!important;
+    height: 2.5rem;
+    background-image: url(/sites/napo/themes/custom/napo_theme/images/btn-search-mobile.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    .block-simple-blocksearch-api &{
+      background-image: url(/sites/napo/themes/custom/napo_theme/images/search.png) ;
+      background-size: 1.875rem;
+    }
+  }
+  #block-languagedropdownswitcher .content{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+  }
+  .lang-dropdown-form{
+    margin-right:1.25rem;
+  }
+  #block-searchapi{
+    position: absolute;
+    top: 0rem;
+    right: 1.25rem;
+    width: 0%;
+    z-index: 10;
+    border-radius: 1.75rem;
+    overflow: hidden;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    opacity: 0;
+    &.in{
+      width: 80%;
+      opacity: 1;
+      transition: all 0.6s;
+    }
+  }
+  .header{
+    .block-simple-blocksearch-api {
+      .form-row{
+        width:100%;
+        height:auto;
+        .form-group{
+          width:calc(100% - 40px);
+        }
+        input{
+          border-radius: 0;
+          width: 100%;
+          padding: 1.25rem;
+          border-bottom: 1px dotted $bg-color-white;
+        }
+      }
+      .form-actions{
+        display:none;
+      }
+    }
+  }
+}
+
+
+.contextual{
+  display:none;
 }

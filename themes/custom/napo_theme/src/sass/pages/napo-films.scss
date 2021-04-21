@@ -1,5 +1,9 @@
 .napos-films-films{
   .block-views-exposed-filter-blocknapo-films-index-page-1{
+    position:absolute;
+    right:1rem;
+    top:-3.625rem;
+    z-index:200;
     .form-row{
       align-items: center;
     }
@@ -51,6 +55,18 @@
         display:none;
       }
     }
+  }
+  .block-facet--links{
+    position:absolute;
+    right:0.75rem;
+    top:-3.625rem;
+    z-index:200;
+    &.facet-active + .block-views-exposed-filter-blocknapo-films-index-page-1{
+      top:-1.25rem;
+    }
+    .item-list__links {
+       width: 387px;
+     }
   }
   .node--type-article{
     header,

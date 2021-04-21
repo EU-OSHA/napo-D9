@@ -104,6 +104,41 @@
   }
 
   .views-view-grid{
+    .napo-film-title-container{
+      position:relative;
+    }
+    h3{
+      background-image: url(/sites/napo/themes/custom/napo_theme/images/background-blue.png) ;
+      background-repeat: repeat-x;
+      color: $text-color-white;
+      height: 100px;
+      margin-bottom: 0;
+      padding-left: 1.25rem;
+      padding-top: 5px;
+      margin-top: 2rem;
+      font-size: 21px;
+      a{
+        color: $text-color-white;
+        display: block;
+        width: 72%;
+        padding-right: 15px;
+      }
+    }
+    .cart{
+      top:50%;
+      right: 12px;
+      position:absolute;
+      z-index:200;
+      transform:translateY(-50%);
+    }
+    .download-video{
+      right: 60px;
+      max-width: 50px;
+      top:50%;
+      position:absolute;
+      z-index:200;
+      transform:translateY(-50%);
+    }
     .views-row{
       float:none;
       >.views-col{
@@ -111,24 +146,60 @@
         max-width: 50%;
       }
     }
-    .field-content{}
-    .item{}
-    .napo-film-list-image{
-      a{}
-      img{}
+    .napo-film-content-container{
+      display:none;
     }
-    .group-right{
-      h3{
-        a{
-          span{
-          }
+    .views-field-nothing{
+      position:relative;
+      &:hover{
+        .napo-film-list-image{
+          display:none;
+        }
+        .napo-film-content-container {
+          color: $text-color-white;
+          display: block;
+          padding: 1.125rem;
+          background-image: url(/sites/napo/themes/custom/napo_theme/images/bacground-hover-napo-films-gallery.png) ;
+          background-repeat: repeat;
+          min-height: 281px;
+          max-width: 555px;
         }
       }
-      p{}
-      .datetime{
+    }
+    .datetime {
+      color: $text-color-yellow;
+      font-weight: bold;
+    }
+    .tags{
+      color: $text-color-yellow;
+      a{
+        color: $text-color-yellow;
+        font-weight: bold;
       }
     }
-
+    .view-video,
+    .view-scenes{
+      position:absolute;
+      z-index:200;
+      bottom:0;
+      a{
+        text-indent: 1px;
+        width: auto;
+        height: auto;
+        border-radius: 0px;
+        color: $text-color-blue;
+        font-weight: bold;
+        padding: 4px 2.25rem 0.5rem 0.5rem;
+        display: block;
+        background-image: url(/sites/napo/themes/custom/napo_theme/images/view-episodes-yellow.png) ;
+        background-repeat: no-repeat;
+        background-position:96% 5px;
+        background-color: $bg-color-yellow;
+      }
+    }
+    .view-scenes{
+      left:140px;
+    }
   }
 }
 
