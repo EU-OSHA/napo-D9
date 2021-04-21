@@ -1,6 +1,6 @@
 uuid: 5fa2ad44-0b20-49c3-bb04-d992ca601b87
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.full
@@ -108,9 +108,10 @@ content:
     weight: 1
     label: hidden
     settings:
-      link: true
+      view_mode: napo_video_from_msd_video
+      link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   field_resources_required:
     type: entity_reference_label
@@ -128,6 +129,7 @@ content:
     type: text_default
     region: content
 hidden:
+  addtoany: true
   body: true
   field_file: true
   field_lesson_toolkit: true
