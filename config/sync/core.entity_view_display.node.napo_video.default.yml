@@ -16,7 +16,7 @@ dependencies:
     - field.field.node.napo_video.field_youtube
     - node.type.napo_video
   module:
-    - datetime
+    - ds
     - text
     - user
 id: node.napo_video.default
@@ -24,101 +24,51 @@ targetEntityType: node
 bundle: napo_video
 mode: default
 content:
+  addtoany:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 3
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_archived:
-    weight: 110
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
     region: content
   field_combined_tags:
-    weight: 111
-    label: above
+    weight: 2
+    label: inline
     settings:
       link: true
+      view_mode: default
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_image:
-    weight: 112
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_main_tag:
-    weight: 115
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_napo_film:
-    weight: 103
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_publication_date:
-    weight: 107
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_tags:
-    weight: 109
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   field_video:
-    weight: 113
-    label: above
+    weight: 0
+    label: hidden
     settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_video_type:
-    weight: 102
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_youtube:
-    weight: 116
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
+      view_mode: default
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
     region: content
   links:
-    weight: 100
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  field_archived: true
+  field_image: true
+  field_main_tag: true
+  field_napo_film: true
+  field_publication_date: true
+  field_tags: true
+  field_video_type: true
+  field_youtube: true
   langcode: true
   search_api_excerpt: true
