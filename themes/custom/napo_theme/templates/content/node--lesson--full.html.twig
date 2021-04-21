@@ -72,52 +72,65 @@
     'clearfix',
   ]
 %}
-<div class="back-button-custom"><a href="/napos-films/films">{{ 'Back to Films' | trans }}</a></div>
+<div class="back-button-custom"><a href="/learning-with-napo/napo-in-the-workplace">{{ 'Back to Napo for teachers' | trans }}</a></div>
 <article{{ attributes.addClass(classes) }}>
-  <header>
-    {{ title_prefix }}
-    {% if label and not page %}
-      <h2{{ title_attributes.addClass('node__title') }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
-    {% endif %}
-    {{ title_suffix }}
-    {% if display_submitted %}
-      <div class="node__meta">
-        {{ author_picture }}
-        {% block submitted %}
-          <em{{ author_attributes }}>
-            {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-          </em>
-        {% endblock %}
-        {{ metadata }}
-      </div>
-    {% endif %}
-  </header>
   <div class="video-custom">
-    {{ content.field_video }}
+    {{ content.field_lesson_video }}
   </div>
-<div class="view-scenes-custom">
-    <h2>{{ 'View scenes' | trans }}</h2>
-    {{ drupal_view('episode_list', 'scenes') }}
-  </div>
-  <div class="conten-video-info">
-    <div class="napo-film-title-2">{{ label }}</div>
-    <div class="napo-film-video-download-form">
-      <div class="download"><a href="TO-DO-LINK">MP4</a></div>
-      <div class="share-links-node">
-        <div class="napo-share-widget"></div>
-        {{ content.addtoany }}
+  <div class="content-text-facilitator-custom">
+    <div class="introducrory-text">
+      {{ content.field_introductory_text }}
+    </div>
+    <div class="facilitator-guidance">
+      <div class="title-box">
+        {{ 'Teacher guidance' | trans }}
       </div>
+      <div class="text-box">
+        {{ 'Do you need help to organise a learning activity in your classroom?' | trans }}
+      </div>
+      <div class="link-box">
+        <a href="TO-DO">{{ 'Find out more here' | trans }}</a>
+      </div>
+      <div class="content-accordions-download-custom">
+        <div class="acordions">
+          <h2>{{ 'Lesson' | trans }}</h2>
+          <div class="acorddion-imtem">
+            {{ content.field_learning_objectives }}
+          </div>
+          <div class="acorddion-imtem">
+            {{ content.field_starter}}
+          </div>
+          <div class="acorddion-imtem">
+            {{ content.field_activities}}
+          </div>
+          <div class="acorddion-imtem">
+            {{ content.field_assessment }}
+          </div>
+          <div class="acorddion-imtem">
+            {{ content.field_curriculum_links }}
+          </div>
+          <div class="acorddion-imtem">
+            {{ content.field_resources_required }}
+          </div>
+        </div>
+        <div class="download-box">
+          <div class="download-title">
+            {{ 'Download' | trans }}
+          </div>
+          <!-- TODO Download -->
+          <ul>
+            <li><a href="">{{ 'Video' | trans }}Video <span class="related_size">(84.25 MB)</span></a></li>
+            <li><a href="" target="_blank">{{ 'Activity' | trans }} <span class="related_size">(86.96 KB)</span></a></li>
+            <li><a href="">{{ 'Facilitator guidance' | trans }}Facilitator guidance</a></li>
+            <li><a href="">{{ 'Download all' | trans }}</a></li>
+          </ul>
+          <!-- END TODO Download -->
+        </div>
+      </div>
+      <div class="related">
+      <h2>{{ 'Related lesson' | trans }}</h2>
+        <h1>- TO DO - </h1>
+    </div>
     </div>
   </div>
-  <div class="conten-video-info-tags">
-    <div class="categories">{{ content.field_combined_tags }}</div>
-    <div class="body">{{ content.body }}</div>
-  </div>
-  <div class="recommended-films">
-    <div>{{ 'Other films recommended for you' | trans }}</div>
-    <h1>- TO DO - </h1>
-  </div>
-
 </article>
