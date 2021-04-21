@@ -5,7 +5,31 @@
     }
   }
   .facet{
-    &-item{}
+    &-item{
+      display:none;
+      &.active-custom{
+        display:block;
+
+        a{
+          background-image: url(/sites/napo/themes/custom/napo_theme/images/close-filters.png) ;
+          background-color: $bg-color-blue-light;
+          background-repeat: no-repeat;
+          background-position: 96% 8px;
+          height: 34px;
+          padding-top: 5px;
+          font-weight: bold;
+          border-radius: 0px;
+          display: block;
+          padding-right: 30px;
+          right: 0px;
+          position: relative;
+          width: 100%;
+          .facet-item__status{
+            display:none;
+          }
+        }
+      }
+    }
   }
 }
 
