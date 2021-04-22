@@ -1,0 +1,41 @@
+.node--type-lesson,
+.node--type-msds-activities{
+  .video-custom{
+    header{
+      display:none;
+    }
+    vide{
+      width:100%!important;
+      height:auto!important;
+    }
+  }
+  .content-accordions-download-custom{
+    .acorddion-imtem{
+      border-radius: 1.5rem;
+      padding: 0;
+      margin-bottom: 0.75rem;
+      border: 2px solid #B9C3E0;
+    }
+    .field__label{
+      background: url(/sites/napo/themes/custom/napo_theme/images/arrow-language.png) no-repeat 97% 12px #b9c3e0;
+      border-radius: 1.875rem;
+      padding: 0.625rem 1.25rem;
+      font-size: 1.25rem;
+      font-weight: bold;
+      position: relative;
+      z-index: 10;
+      margin: 0;
+    }
+    .field__item{
+      border: 0;
+      padding: 1.25rem 1.875rem 1.875rem;
+      position: relative;
+      //display: none;
+      color: #666;
+      ul{
+        padding-inline-start: 40px;
+        font-size:1.125rem;
+      }
+    }
+  }
+}
