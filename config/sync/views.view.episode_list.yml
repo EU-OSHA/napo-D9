@@ -62,7 +62,7 @@ display:
       style:
         type: slick
         options:
-          vanilla: false
+          vanilla: true
           optionset: default_frontpage
           skin: default
           layout: ''
@@ -70,8 +70,6 @@ display:
             nid: nid
             title_1: title_1
             field_image: field_image
-            view_node: view_node
-            nothing: nothing
           optionset_thumbnail: ''
           skin_thumbnail: ''
           thumbnail_position: ''
@@ -99,7 +97,7 @@ display:
             randomize: '0'
             variableWidth: '0'
           cache: 0
-          current_view_mode: block_2
+          current_view_mode: block
           thumbnail_effect: ''
       row:
         type: fields
