@@ -8,8 +8,8 @@ custom:
   text_previous: '« Prev'
   text_next: 'Next »'
   text_close: Close
-  maxwidth: 98%
-  maxheight: 98%
+  maxwidth: 60%
+  maxheight: 60%
   initialwidth: '300'
   initialheight: '250'
   overlayclose: true
