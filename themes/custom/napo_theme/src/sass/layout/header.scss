@@ -6,6 +6,7 @@
     font-weight:bold;
     a{
       color: $text-color-white;
+      font-size:0.875rem;
       &[target=_blank]:after {
         display:none;
       }
@@ -18,6 +19,7 @@
     }
     p{
       margin:0px;
+      font-size:0.875rem;
     }
     ul {
       margin-top: 0;
@@ -52,6 +54,19 @@
     }
     &_content{
       text-align:center;
+    }
+    .block-printfriendly{
+      color:$text-color-white;
+      .printfriendly{
+        background-image: url(/sites/napo/themes/custom/napo_theme/images/print-icon.svg) ;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 25px;
+        padding:0.75rem 1rem;
+        img{
+          display:none;
+        }
+      }
     }
     .block-text-resize-block{
 

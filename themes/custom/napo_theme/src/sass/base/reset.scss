@@ -4,6 +4,14 @@
   padding:0px;
 }
 
+*,
+button,
+a{
+  &:focus{
+    outline:none;
+  }
+}
+
 .clearfix{
   clear: both;
   float: none;
@@ -61,3 +69,4 @@ div.pagerer-container{
   margin:0px;
   padding:0px;
 }
+
