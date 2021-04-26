@@ -425,6 +425,41 @@
       margin-bottom:1.125rem;
     }
   }
+  .view-napo-and-friends{
+    .views-row{
+      padding:50px 65px;
+    }
+    .views-slideshow-controls-top{
+      display:none;
+    }
+    .views_slideshow_cycle_main{
+      .views-row{
+        padding-top:0;
+      }
+      .views-field-field-image {
+        float: none;
+        .image-style-large{
+          padding-bottom:0;
+        }
+      }
+    }
+    .skin-default{
+      width:100%;
+    }
+    .views_slideshow_slide{
+      width:100%!important;
+    }
+    .views-slideshow-controls-bottom {
+      .views_slideshow_controls_text_previous{
+        top:7%;
+      }
+      .views_slideshow_controls_text_next{
+        top:7%;
+        right:0;
+        left:222px;
+      }
+    }
+  }
 }
 
 

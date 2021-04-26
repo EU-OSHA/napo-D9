@@ -3136,6 +3136,36 @@ tr th {
     margin: 0;
     margin-bottom: 1.125rem;
   }
+
+  .view-napo-and-friends .views-row {
+    padding: 50px 65px;
+  }
+  .view-napo-and-friends .views-slideshow-controls-top {
+    display: none;
+  }
+  .view-napo-and-friends .views_slideshow_cycle_main .views-row {
+    padding-top: 0;
+  }
+  .view-napo-and-friends .views_slideshow_cycle_main .views-field-field-image {
+    float: none;
+  }
+  .view-napo-and-friends .views_slideshow_cycle_main .views-field-field-image .image-style-large {
+    padding-bottom: 0;
+  }
+  .view-napo-and-friends .skin-default {
+    width: 100%;
+  }
+  .view-napo-and-friends .views_slideshow_slide {
+    width: 100% !important;
+  }
+  .view-napo-and-friends .views-slideshow-controls-bottom .views_slideshow_controls_text_previous {
+    top: 7%;
+  }
+  .view-napo-and-friends .views-slideshow-controls-bottom .views_slideshow_controls_text_next {
+    top: 7%;
+    right: 0;
+    left: 222px;
+  }
 }
 @media only screen and (max-width: 525px) {
   .view-napo-workplaces .views-row {
