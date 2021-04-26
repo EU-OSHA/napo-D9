@@ -74,11 +74,12 @@
 %}
 <div class="back-button-custom"><a href="/learning-with-napo/napo-in-the-workplace">{{ 'Back to Napo in the workplace' | trans }}</a></div>
 <article{{ attributes.addClass(classes) }}>
+  <div class="page-banner-custom">
   <div class="video-custom">
     {{ content.field_msds_video }}
   </div>
   <div class="content-text-facilitator-custom">
-    <div class="introducrory-text">
+    <div class="introductory-text">
       {{ content.field_introductory_text }}
     </div>
     <div class="facilitator-guidance">
@@ -91,22 +92,26 @@
       <div class="link-box">
         <a href="TO-DO">{{ 'Find out more here' | trans }}</a>
       </div>
-      <div class="content-accordions-download-custom">
-        <div class="acordions">
-          <h2>{{ 'Activity' | trans }}</h2>
-          <div class="acorddion-imtem">
+    </div>
+  </div>
+  </div>
+    <div class="content-accordions-download-custom">
+      <h2>{{ 'Activity' | trans }}</h2>
+      <div class="detail--text--block">
+        <div class="accordions">
+          <div class="accordion-item">
             {{ content.field_learning_objectives }}
           </div>
-          <div class="acorddion-imtem">
+          <div class="accordion-item">
             {{ content.field_activities }}
           </div>
-          <div class="acorddion-imtem">
+          <div class="accordion-item">
             {{ content.field_concluding_questions }}
           </div>
-          <div class="acorddion-imtem">
+          <div class="accordion-item">
             {{ content.field_assessment }}
           </div>
-          <div class="acorddion-imtem">
+          <div class="accordion-item">
             {{ content.field_msds_resources_required }}
           </div>
         </div>
@@ -124,10 +129,10 @@
           <!-- END TODO Download -->
         </div>
       </div>
-      <div class="related">
+    </div>
+    <div class="related">
       <h2>{{ 'Related resources' | trans }}</h2>
         <h1>- TO DO - </h1>
     </div>
-    </div>
-  </div>
+
 </article>

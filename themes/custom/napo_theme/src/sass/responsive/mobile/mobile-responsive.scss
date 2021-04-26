@@ -323,9 +323,116 @@
       }
     }
   }
+  .learning-with-napo-napo-in-the-workplace,
+  .page-view-napo-for-teachers {
+    .view-filters{
+      padding:0;
+      width:100%;
+    }
+  }
+  .views-exposed-form{
+    .form-item-search{
+      width:100%;
+    }
+  }
+  .view-napo-workplaces {
+    .views-row{
+      width:45%;
+    }
+  }
+  .node--type-lesson,
+  .node--type-msds-activities {
+    .page-banner-custom{
+      padding:0;
+    }
+    .content-text-facilitator-custom {
+      padding:0;
+      .introductory-text,
+      .facilitator-guidance{
+        float:none;
+        width:100%;
+      }
+
+      .introductory-text{
+        padding:1.875rem;
+      }
+      .facilitator-guidance{
+        text-align: left;
+        padding:0.625rem 1.875rem;
+        .link-box {
+          a{
+            right:-1.875rem;
+          }
+        }
+      }
+    }
+    .content-accordions-download-custom {
+      margin:0;
+      .accordions{
+         width: 100%;
+        flex: 0 0 100%;
+        padding: 0 ;
+        margin-top: 0;
+      }
+      .download-box {
+        .download-title{
+          font-size:1.875rem;
+          margin-top:20px;
+          margin-bottom:10px;
+        }
+        ul{
+          display:flex;
+          flex-wrap: wrap;
+          li{
+            &:last-child{
+              flex: 100%;
+              text-align: center;
+              margin: 1rem 0 0;
+            }
+          }
+        }
+      }
+    }
+    .content-accordions-download-custom {
+      .detail--text--block{
+        flex-direction: column;
+      }
+    }
+    .content-accordions-download-custom {
+      .download-box {
+        width: 100%;
+        flex: 0 0 100%;
+        top:0rem;
+      }
+    }
+  }
+  .napos-films-coming-soon{
+    .field--name-field-image{
+      img{
+        margin:0 auto;
+      }
+    }
+    .field--name-body{
+      width:100%;
+    }
+  }
+  .napo-story {
+    iframe{
+      float:none;
+      width:100%;
+      padding:0;
+      margin:0;
+      margin-bottom:1.125rem;
+    }
+  }
 }
 
 
-.contextual{
-  display:none;
+@media only screen and (max-width: 525px){
+
+  .view-napo-workplaces {
+    .views-row{
+      width:100%;
+    }
+  }
 }

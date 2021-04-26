@@ -55,6 +55,33 @@
   });
 
 
+
+  /** ACCORDION **/
+  jQuery(document).ready(function () {
+
+    function accordionOpen(elem){
+      let contentDiv = jQuery(elem).next();
+      let parentDiv = jQuery(elem).closest('.accordion-item');
+
+      if ( parentDiv.hasClass("active")) {
+        jQuery(contentDiv).slideUp(600).fadeOut(600);
+        jQuery(parentDiv).removeClass('active');
+        jQuery(elem).removeClass('active');
+      } else {
+        jQuery('.accordion-item').removeClass('active');
+        jQuery('.accordion-item .field__label').removeClass('active');
+        jQuery('.accordion-item .field__item').slideUp(600);
+        jQuery(contentDiv).slideDown(600).fadeIn(600);
+        jQuery(parentDiv).addClass('active');
+        jQuery(elem).addClass('active');
+      }
+    }
+
+    jQuery('.accordion-item .field__label').click(function () {
+      accordionOpen( this );
+    });
+  });
+
 })(jQuery, Drupal);
 
 

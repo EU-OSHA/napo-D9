@@ -66,6 +66,12 @@
   padding: 0px;
 }
 
+*:focus,
+button:focus,
+a:focus {
+  outline: none;
+}
+
 .clearfix {
   clear: both;
   float: none;
@@ -167,6 +173,26 @@ div.pagerer-container {
 .ui-accordion .ui-accordion-content {
   padding: 1.25rem 2.75rem;
   height: auto !important;
+}
+
+.back-button-custom a {
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-button-back.png);
+  background-color: #1f3695;
+  background-repeat: no-repeat;
+  background-position: 96% 8px;
+  color: #FFF;
+  height: 45px;
+  padding-top: 12px;
+  padding-left: 18px;
+  padding-right: 44px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.user-logged-in .back-button-custom {
+  position: absolute;
+  z-index: 200;
+  top: -52px;
+  right: 0;
 }
 
 /* SLICK */
@@ -298,6 +324,60 @@ div.pagerer-container {
   z-index: 900;
 }
 
+#colorbox #cboxCurrent {
+  display: none !important;
+}
+#colorbox #cboxTitle {
+  display: none !important;
+}
+#colorbox #cboxLoadedContent img {
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+#colorbox #cboxPrevious {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  z-index: 40;
+  transform: translate(50%, -50%);
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/previous-pop-up.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+}
+#colorbox #cboxNext {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  left: auto;
+  z-index: 40;
+  transform: translate(-50%, -50%);
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/next-pop-up.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+}
+#colorbox #cboxSlideshow {
+  display: none !important;
+}
+#colorbox #cboxClose {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  left: auto;
+  z-index: 40;
+  transform: translate(0%, 0%);
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/close-pop-up.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1.25rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#colorbox #cboxBottomLeft, #colorbox #cboxBottomCenter, #colorbox #cboxBottomRight {
+  display: none !important;
+}
+
 .form-item-search .form-control {
   display: block;
   width: 100%;
@@ -312,6 +392,9 @@ div.pagerer-container {
   box-shadow: none;
   padding: 0.375rem 1rem;
   font-size: 1rem;
+}
+.form-item-search .form-control::placeholder {
+  color: #FFF;
 }
 
 .block-system-main-block {
@@ -383,6 +466,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+a:focus {
+  outline: none;
+}
 
 a[target=_blank]:after {
   content: "";
@@ -409,7 +495,7 @@ a[target=_blank]:after {
   padding: 4px;
 }
 .pager__item--first {
-  margin-right: 18px;
+  margin-right: 9px;
 }
 .pager__item--first a {
   height: 26px;
@@ -419,7 +505,7 @@ a[target=_blank]:after {
   background-position: center;
 }
 .pager__item--previous {
-  margin-right: 18px;
+  margin-right: 9px;
 }
 .pager__item--previous a {
   height: 26px;
@@ -429,7 +515,7 @@ a[target=_blank]:after {
   background-position: center;
 }
 .pager__item--next {
-  margin-left: 18px;
+  margin-left: 9px;
 }
 .pager__item--next a {
   height: 26px;
@@ -439,7 +525,7 @@ a[target=_blank]:after {
   background-position: center;
 }
 .pager__item--last {
-  margin-left: 18px;
+  margin-left: 9px;
 }
 .pager__item--last a {
   height: 26px;
@@ -808,6 +894,7 @@ tr th {
 }
 .header_top_bar a {
   color: #FFF;
+  font-size: 0.875rem;
 }
 .header_top_bar a[target=_blank]:after {
   display: none;
@@ -820,6 +907,7 @@ tr th {
 }
 .header_top_bar p {
   margin: 0px;
+  font-size: 0.875rem;
 }
 .header_top_bar ul {
   margin-top: 0;
@@ -854,6 +942,19 @@ tr th {
 }
 .header_top_bar_content {
   text-align: center;
+}
+.header_top_bar .block-printfriendly {
+  color: #FFF;
+}
+.header_top_bar .block-printfriendly .printfriendly {
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/print-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  padding: 0.75rem 1rem;
+}
+.header_top_bar .block-printfriendly .printfriendly img {
+  display: none;
 }
 .header_top_bar .block-text-resize-block:before {
   content: "Set font size";
@@ -939,7 +1040,7 @@ tr th {
   margin-right: 0.625rem;
   background: #1f3695;
   height: 100%;
-  padding: 0 0.625rem;
+  padding: 0 1rem;
   vertical-align: middle;
   display: flex;
   align-items: center;
@@ -1507,10 +1608,48 @@ tr th {
   padding-left: 2.2rem;
 }
 
-.view-napo-s-film-episodes .row {
+.view-napo-s-film-episodes .views-row {
   margin: 0px;
+  margin-bottom: 1.125rem;
+  clear: both;
+  padding-left: 4.5rem;
+  width: 100%;
 }
-
+.view-napo-s-film-episodes .views-row > div {
+  margin: 0;
+  padding: 0;
+}
+.view-napo-s-film-episodes .col-sm-3 > div {
+  height: 144px;
+  overflow: hidden;
+}
+.view-napo-s-film-episodes h3 {
+  background: #1f3695;
+  margin: 0;
+  padding: 10px;
+}
+.view-napo-s-film-episodes h3 a {
+  color: #FFF;
+  font-size: 15px;
+}
+.view-napo-s-film-episodes .datetime {
+  background: #f2f1f2;
+  color: #1f3695;
+  font-weight: bold;
+  padding: 12px;
+  display: block;
+}
+.view-napo-s-film-episodes .episode-list-details-container {
+  padding: 0 1.125rem;
+  background: #f2f1f2;
+  height: 51px;
+}
+.view-napo-s-film-episodes .tags {
+  float: left;
+}
+.view-napo-s-film-episodes .tags a {
+  font-size: 11px;
+}
 .napo-film-list-view:focus {
   outline: none;
 }
@@ -1599,6 +1738,7 @@ tr th {
 }
 .napo-film-list-view .views-view-grid .napo-film-title-container {
   position: relative;
+  z-index: 4;
 }
 .napo-film-list-view .views-view-grid h3 {
   background-image: url(/sites/napo/themes/custom/napo_theme/images/background-blue.png);
@@ -1608,7 +1748,6 @@ tr th {
   margin-bottom: 0;
   padding-left: 1.25rem;
   padding-top: 5px;
-  margin-top: 2rem;
   font-size: 21px;
 }
 .napo-film-list-view .views-view-grid h3 a {
@@ -1640,22 +1779,25 @@ tr th {
   max-width: 50%;
 }
 .napo-film-list-view .views-view-grid .napo-film-content-container {
-  display: none;
-}
-.napo-film-list-view .views-view-grid .views-field-nothing {
-  position: relative;
-}
-.napo-film-list-view .views-view-grid .views-field-nothing:hover .napo-film-list-image {
-  display: none;
-}
-.napo-film-list-view .views-view-grid .views-field-nothing:hover .napo-film-content-container {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
   color: #FFF;
-  display: block;
   padding: 1.125rem;
   background-image: url(/sites/napo/themes/custom/napo_theme/images/bacground-hover-napo-films-gallery.png);
   background-repeat: repeat;
-  min-height: 281px;
-  max-width: 555px;
+  height: calc(100% - 100px);
+  transform: translateY(calc(-100% - 100px));
+  transition: transform 0.3s ease-in;
+}
+.napo-film-list-view .views-view-grid .views-field-nothing {
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+.napo-film-list-view .views-view-grid .views-field-nothing:hover .napo-film-content-container {
+  transform: translateY(0);
 }
 .napo-film-list-view .views-view-grid .datetime {
   color: #f7e235;
@@ -1673,6 +1815,7 @@ tr th {
   position: absolute;
   z-index: 200;
   bottom: 0;
+  margin-bottom: 0.5rem;
 }
 .napo-film-list-view .views-view-grid .view-video a,
 .napo-film-list-view .views-view-grid .view-scenes a {
@@ -2083,6 +2226,453 @@ tr th {
   font-size: 1.125rem;
 }
 
+.node--type-lesson .page-banner-custom,
+.node--type-msds-activities .page-banner-custom {
+  padding: 0 0 2.5rem;
+  position: relative;
+}
+.node--type-lesson .video-custom header,
+.node--type-msds-activities .video-custom header {
+  display: none;
+}
+.node--type-lesson .video-custom video,
+.node--type-msds-activities .video-custom video {
+  width: 100% !important;
+  height: auto !important;
+}
+.node--type-lesson .video-custom .field--type-entity-reference,
+.node--type-msds-activities .video-custom .field--type-entity-reference {
+  margin: 0;
+}
+.node--type-lesson .content-text-facilitator-custom,
+.node--type-msds-activities .content-text-facilitator-custom {
+  clear: both;
+  float: none;
+  margin-top: -6px;
+  padding-bottom: 2.5rem;
+  min-height: 175px;
+}
+.node--type-lesson .content-text-facilitator-custom .introductory-text,
+.node--type-msds-activities .content-text-facilitator-custom .introductory-text {
+  background: #EEEDEE;
+  padding: 1.25rem 1.875rem 0.625rem 5rem;
+  min-height: 175px;
+  width: 76%;
+  float: left;
+}
+.node--type-lesson .content-text-facilitator-custom .facilitator-guidance,
+.node--type-msds-activities .content-text-facilitator-custom .facilitator-guidance {
+  width: 24%;
+  float: right;
+  color: #FFF;
+  padding: 0.625rem;
+  border-radius: 0 0 1.875rem 1.875rem;
+  text-align: center;
+  background: #1f3695;
+  font-size: 1.125rem;
+}
+.node--type-lesson .content-text-facilitator-custom .facilitator-guidance .title-box,
+.node--type-msds-activities .content-text-facilitator-custom .facilitator-guidance .title-box {
+  font-weight: bold;
+  margin: 1.25rem 0 0.625rem;
+}
+.node--type-lesson .content-text-facilitator-custom .facilitator-guidance .link-box,
+.node--type-msds-activities .content-text-facilitator-custom .facilitator-guidance .link-box {
+  margin-bottom: 0.625rem;
+}
+.node--type-lesson .content-text-facilitator-custom .facilitator-guidance .link-box a,
+.node--type-msds-activities .content-text-facilitator-custom .facilitator-guidance .link-box a {
+  position: relative;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/home-see-more.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  right: -11px;
+  bottom: -20px;
+  font-size: 1rem;
+  min-height: 3.125rem;
+  color: #FFF;
+  padding: 0rem 3.75rem 0 0;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: 16px;
+  font-weight: bold;
+}
+.node--type-lesson .content-accordions-download-custom,
+.node--type-msds-activities .content-accordions-download-custom {
+  margin-top: 3.75rem;
+  padding: 0 3% 1.25rem 3%;
+}
+.node--type-lesson .content-accordions-download-custom h2,
+.node--type-msds-activities .content-accordions-download-custom h2 {
+  font-size: 1.875rem;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.node--type-lesson .content-accordions-download-custom .detail--text--block,
+.node--type-msds-activities .content-accordions-download-custom .detail--text--block {
+  display: flex;
+  flex-direction: row;
+}
+.node--type-lesson .content-accordions-download-custom .accordions,
+.node--type-msds-activities .content-accordions-download-custom .accordions {
+  width: 76%;
+  flex: 0 0 76%;
+  padding: 0 5rem 0 0;
+  margin-top: 1.25rem;
+  position: relative;
+}
+.node--type-lesson .content-accordions-download-custom .accordions .accordion-item,
+.node--type-msds-activities .content-accordions-download-custom .accordions .accordion-item {
+  border-radius: 1.875rem;
+  padding: 0;
+  margin-bottom: 0.75rem;
+  border: 2px solid #b9c3e0;
+}
+.node--type-lesson .content-accordions-download-custom .accordions .accordion-item .field--type-entity-reference,
+.node--type-msds-activities .content-accordions-download-custom .accordions .accordion-item .field--type-entity-reference {
+  margin: 0;
+}
+.node--type-lesson .content-accordions-download-custom .accordions .accordion-item.active,
+.node--type-msds-activities .content-accordions-download-custom .accordions .accordion-item.active {
+  border-color: #1f3695;
+}
+.node--type-lesson .content-accordions-download-custom .accordions .accordion-item.active .field__label,
+.node--type-msds-activities .content-accordions-download-custom .accordions .accordion-item.active .field__label {
+  background-color: #1f3695;
+  color: #FFF;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-language-up.png);
+}
+.node--type-lesson .content-accordions-download-custom .accordions .field__label,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field__label {
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-language.png);
+  background-repeat: no-repeat;
+  background-position: 97% 12px;
+  background-color: #b9c3e0;
+  border-radius: 1.875rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.node--type-lesson .content-accordions-download-custom .accordions .field__item,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field__item {
+  border: 0;
+  padding: 1.25rem 1.875rem 1.875rem;
+  position: relative;
+  display: none;
+  color: #666;
+}
+.node--type-lesson .content-accordions-download-custom .accordions .field__item ul,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field__item ul {
+  padding-inline-start: 40px;
+  font-size: 1.125rem;
+}
+.node--type-lesson .content-accordions-download-custom .accordions .field__item ul li strong,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field__item ul li strong {
+  width: auto;
+  padding: 2px 0 2px 1.875rem;
+  display: inline-block;
+  color: #666;
+}
+.node--type-lesson .content-accordions-download-custom .accordions .field__item ul li:nth-child(1) strong,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field__item ul li:nth-child(1) strong {
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/star-rating.svg);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+.node--type-lesson .content-accordions-download-custom .accordions .field__item ul li:nth-child(2) strong,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field__item ul li:nth-child(2) strong {
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/star-rating-silver.svg);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+.node--type-lesson .content-accordions-download-custom .accordions .field__item ul li:nth-child(3) strong,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field__item ul li:nth-child(3) strong {
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/star-rating-bronze.svg);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+.node--type-lesson .content-accordions-download-custom .accordions .field__item h4,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field__item h4 {
+  color: #1f3695;
+  font-size: 1.125rem;
+  margin: 1.25rem 0 0.875rem;
+}
+.node--type-lesson .content-accordions-download-custom .download-box,
+.node--type-msds-activities .content-accordions-download-custom .download-box {
+  width: 24%;
+  flex: 0 0 24%;
+  position: relative;
+  top: -2.25rem;
+}
+.node--type-lesson .content-accordions-download-custom .download-box .download-title,
+.node--type-msds-activities .content-accordions-download-custom .download-box .download-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.node--type-lesson .content-accordions-download-custom .download-box ul,
+.node--type-msds-activities .content-accordions-download-custom .download-box ul {
+  margin: 1.25rem 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+.node--type-lesson .content-accordions-download-custom .download-box ul li,
+.node--type-msds-activities .content-accordions-download-custom .download-box ul li {
+  border-bottom: 1px solid #1f3695;
+}
+.node--type-lesson .content-accordions-download-custom .download-box ul li:last-child,
+.node--type-msds-activities .content-accordions-download-custom .download-box ul li:last-child {
+  border: none;
+  background: #1f3695;
+  color: #FFF;
+  border-radius: 0 0 1.25rem 1.25rem;
+}
+.node--type-lesson .content-accordions-download-custom .download-box ul li:last-child a,
+.node--type-msds-activities .content-accordions-download-custom .download-box ul li:last-child a {
+  display: block;
+  color: #FFF;
+  padding: 0.625rem 1.25rem;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png);
+  background-position: 96% 50%;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+}
+.node--type-lesson .content-accordions-download-custom .download-box ul li a,
+.node--type-msds-activities .content-accordions-download-custom .download-box ul li a {
+  padding: 0.625rem 2.5rem 0.625rem 1.25rem;
+  display: block;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/btn-download.png);
+  background-position: 96% 50%;
+  background-repeat: no-repeat;
+  font-size: 1.125rem;
+}
+.node--type-lesson .content-accordions-download-custom .download-box ul li a:hover,
+.node--type-msds-activities .content-accordions-download-custom .download-box ul li a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+  transition: all 0.6s;
+}
+.node--type-lesson .content-accordions-download-custom .download-box ul li a[target=_blank]:after,
+.node--type-msds-activities .content-accordions-download-custom .download-box ul li a[target=_blank]:after {
+  display: none;
+}
+.node--type-lesson .related,
+.node--type-msds-activities .related {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 2.5rem 3%;
+  margin: 0 0 1.125rem 0;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/background-story.png);
+  background-repeat: repeat-x;
+  background-position: bottom left;
+}
+.node--type-lesson .related h2,
+.node--type-msds-activities .related h2 {
+  flex-direction: row;
+  flex: 100%;
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin: 0.625rem 0;
+}
+.node--type-lesson .back-button-custom,
+.node--type-msds-activities .back-button-custom {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  right: auto;
+  left: 0;
+  margin-bottom: 0.625rem;
+}
+.node--type-lesson .back-button-custom a,
+.node--type-msds-activities .back-button-custom a {
+  color: #1f3695;
+  height: auto;
+  font-size: 0.875rem;
+  font-weight: bold;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-back.png);
+  background-repeat: no-repeat;
+  background-position: left 50%;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  background-size: auto 10px;
+}
+
+.node--type-napo-video .video-custom video {
+  width: 100% !important;
+  height: auto !important;
+}
+.node--type-napo-video .video-custom .field--type-entity-reference {
+  margin: 0;
+}
+.node--type-napo-video .view-scenes-custom {
+  background-color: #e0e1e1;
+  margin-top: -5px;
+}
+.node--type-napo-video .view-scenes-custom h2 {
+  font-size: 1.625rem;
+  color: #59595A;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/ico-view-episodes.png);
+  background-repeat: no-repeat;
+  background-position: 23px 15px;
+  padding: 1.5rem 1.5rem 0rem 4.875rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+.node--type-napo-video .view-scenes-custom .views-element-container {
+  padding: 0 58px;
+  padding-bottom: 20px;
+}
+.node--type-napo-video .view-scenes-custom .slide__caption {
+  padding: 0;
+}
+.node--type-napo-video .view-scenes-custom .slide__description {
+  position: relative;
+  margin: 0 4px;
+}
+.node--type-napo-video .view-scenes-custom .slide__description .views-field-title-1 {
+  position: absolute;
+  width: 100%;
+  display: none;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/background-blue.png);
+  background-repeat: repeat-x;
+  height: auto;
+  color: #FFF;
+  font-weight: bold;
+  text-align: left;
+}
+.node--type-napo-video .view-scenes-custom .slide__description .views-field-title-1 .field-content {
+  padding: 0 10px;
+  display: block;
+}
+.node--type-napo-video .view-scenes-custom .slide__description .views-field-title-1 a {
+  color: #FFF;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-button-yellow.png);
+  background-repeat: no-repeat;
+  background-position: 95% 5px;
+  background-color: transparent;
+  font-weight: bold;
+  display: block;
+  padding: 3px 44px 12px 0px;
+}
+.node--type-napo-video .view-scenes-custom .slide__description img {
+  width: 100%;
+}
+.node--type-napo-video .view-scenes-custom .slick__slide:hover .views-field-title-1 {
+  display: block;
+}
+.node--type-napo-video .conten-video-info {
+  position: relative;
+}
+.node--type-napo-video .conten-video-info .napo-film-title-2 .field--name-title {
+  padding: 10px 14% 10px 54px;
+  color: #585759;
+  background: url(/sites/napo/themes/custom/napo_theme/images/ico-film.png);
+  background-repeat: no-repeat;
+  background-color: #e0e1e1;
+  background-position: 23px 10px;
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 1.5rem;
+  height: auto;
+  display: block;
+}
+.node--type-napo-video .conten-video-info .napo-film-video-download-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  display: flex;
+  flex-direction: row;
+}
+.node--type-napo-video .conten-video-info .download a {
+  color: transparent;
+  background: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+  display: block;
+  width: 43px;
+  height: 45px;
+}
+.node--type-napo-video .conten-video-info .napo-share-widget {
+  position: relative;
+  color: transparent;
+  background: url(/sites/napo/themes/custom/napo_theme/images/share.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #1f3695;
+  height: 43px;
+  width: 45px;
+  cursor: pointer;
+  margin-top: 1px;
+}
+.node--type-napo-video .conten-video-info .addtoany_list {
+  display: none;
+}
+.node--type-napo-video .conten-video-info .share-links-node {
+  margin-left: 0.5rem;
+}
+.node--type-napo-video .conten-video-info .share-links-node:hover .addtoany_list {
+  display: block;
+}
+.node--type-napo-video .conten-video-info #share-this-on {
+  flex-direction: column;
+  background-color: #FFF;
+  padding: 0;
+}
+.node--type-napo-video .conten-video-info-tags {
+  background-color: #f2f1f2;
+  padding-left: 1.5em;
+  padding-top: 1.125rem;
+  margin-bottom: 0px;
+  padding-bottom: 1.125rem;
+}
+.node--type-napo-video .conten-video-info-tags .categories {
+  padding-bottom: 1.125rem;
+}
+.node--type-napo-video .conten-video-info-tags .categories .field__label {
+  color: #585759;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+.node--type-napo-video .conten-video-info-tags .categories .field__label:after {
+  content: ":";
+}
+.node--type-napo-video .conten-video-info-tags .categories .field--type-entity-reference {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 1.125rem;
+}
+.node--type-napo-video .conten-video-info-tags .categories .field__items .field__item h2 {
+  font-size: 1.125rem;
+  margin: 0;
+}
+.node--type-napo-video .conten-video-info-tags .categories .field__items .field__item h2 a {
+  color: #1f3695;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+.node--type-napo-video .recommended-films {
+  background: #1f3695;
+  margin-top: 2.25rem;
+  padding: 1.125rem;
+  height: 1%;
+  overflow: hidden;
+}
+.node--type-napo-video .recommended-films > div:first-of-type {
+  color: #f7e235;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1199px) {
   .container {
     max-width: 100%;
@@ -2138,10 +2728,15 @@ tr th {
   .nav-item:hover, .nav-item.show {
     transition: all 0.1s;
     background: #506B9E;
-    border-radius: 3rem 3rem 0 0;
+    border-radius: 1.875rem 1.875rem 0 0;
   }
   .nav-item:hover .dropdown-menu, .nav-item.show .dropdown-menu {
     display: block;
+  }
+}
+@media (min-width: 768px) {
+  .block-simple-blocksearch-api .form-row > div {
+    display: none;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -2445,11 +3040,108 @@ tr th {
   .header .block-simple-blocksearch-api .form-actions {
     display: none;
   }
-}
-.contextual {
-  display: none;
-}
 
+  .learning-with-napo-napo-in-the-workplace .view-filters,
+.page-view-napo-for-teachers .view-filters {
+    padding: 0;
+    width: 100%;
+  }
+
+  .views-exposed-form .form-item-search {
+    width: 100%;
+  }
+
+  .view-napo-workplaces .views-row {
+    width: 45%;
+  }
+
+  .node--type-lesson .page-banner-custom,
+.node--type-msds-activities .page-banner-custom {
+    padding: 0;
+  }
+  .node--type-lesson .content-text-facilitator-custom,
+.node--type-msds-activities .content-text-facilitator-custom {
+    padding: 0;
+  }
+  .node--type-lesson .content-text-facilitator-custom .introductory-text,
+.node--type-lesson .content-text-facilitator-custom .facilitator-guidance,
+.node--type-msds-activities .content-text-facilitator-custom .introductory-text,
+.node--type-msds-activities .content-text-facilitator-custom .facilitator-guidance {
+    float: none;
+    width: 100%;
+  }
+  .node--type-lesson .content-text-facilitator-custom .introductory-text,
+.node--type-msds-activities .content-text-facilitator-custom .introductory-text {
+    padding: 1.875rem;
+  }
+  .node--type-lesson .content-text-facilitator-custom .facilitator-guidance,
+.node--type-msds-activities .content-text-facilitator-custom .facilitator-guidance {
+    text-align: left;
+    padding: 0.625rem 1.875rem;
+  }
+  .node--type-lesson .content-text-facilitator-custom .facilitator-guidance .link-box a,
+.node--type-msds-activities .content-text-facilitator-custom .facilitator-guidance .link-box a {
+    right: -1.875rem;
+  }
+  .node--type-lesson .content-accordions-download-custom,
+.node--type-msds-activities .content-accordions-download-custom {
+    margin: 0;
+  }
+  .node--type-lesson .content-accordions-download-custom .accordions,
+.node--type-msds-activities .content-accordions-download-custom .accordions {
+    width: 100%;
+    flex: 0 0 100%;
+    padding: 0;
+    margin-top: 0;
+  }
+  .node--type-lesson .content-accordions-download-custom .download-box .download-title,
+.node--type-msds-activities .content-accordions-download-custom .download-box .download-title {
+    font-size: 1.875rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .node--type-lesson .content-accordions-download-custom .download-box ul,
+.node--type-msds-activities .content-accordions-download-custom .download-box ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .node--type-lesson .content-accordions-download-custom .download-box ul li:last-child,
+.node--type-msds-activities .content-accordions-download-custom .download-box ul li:last-child {
+    flex: 100%;
+    text-align: center;
+    margin: 1rem 0 0;
+  }
+  .node--type-lesson .content-accordions-download-custom .detail--text--block,
+.node--type-msds-activities .content-accordions-download-custom .detail--text--block {
+    flex-direction: column;
+  }
+  .node--type-lesson .content-accordions-download-custom .download-box,
+.node--type-msds-activities .content-accordions-download-custom .download-box {
+    width: 100%;
+    flex: 0 0 100%;
+    top: 0rem;
+  }
+
+  .napos-films-coming-soon .field--name-field-image img {
+    margin: 0 auto;
+  }
+  .napos-films-coming-soon .field--name-body {
+    width: 100%;
+  }
+
+  .napo-story iframe {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.125rem;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .view-napo-workplaces .views-row {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .collapse:not(.show) {
     display: flex;

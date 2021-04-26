@@ -1,0 +1,62 @@
+#colorbox{
+  #cbox{
+    &Current{
+      display:none!important;
+    }
+    &Title{
+      display:none!important;
+    }
+    &LoadedContent{
+      img{
+        padding:1rem;
+        padding-bottom:2rem
+      }
+    }
+    &Previous{
+      position:absolute;
+      top:50%;
+      left:1rem;
+      z-index:40;
+      transform:translate(50%, -50%);
+      background-image: url(/sites/napo/themes/custom/napo_theme/images/previous-pop-up.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 40px;
+    }
+    &Next{
+      position:absolute;
+      top:50%;
+      right:1rem;
+      left:auto;
+      z-index:40;
+      transform:translate(-50%, -50%);
+      background-image: url(/sites/napo/themes/custom/napo_theme/images/next-pop-up.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 40px;
+    }
+    &Slideshow{
+      display:none!important;
+    }
+    &Close{
+      position:absolute;
+      top:1rem;
+      right:1rem;
+      left:auto;
+      z-index:40;
+      transform:translate(0%, 0%);
+      background-image: url(/sites/napo/themes/custom/napo_theme/images/close-pop-up.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 1.25rem;
+      border-radius: 50%;
+      background-color: rgba(0,0,0,0.5);
+    }
+    &BottomLeft,
+    &BottomCenter,
+    &BottomRight{
+      display:none!important;
+    }
+
+  }
+}
