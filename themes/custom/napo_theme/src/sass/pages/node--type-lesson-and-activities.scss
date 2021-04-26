@@ -129,6 +129,35 @@
         ul{
           padding-inline-start: 40px;
           font-size:1.125rem;
+          li{
+            strong{
+              width: auto;
+              padding: 2px 0 2px 1.875rem;
+              display: inline-block;
+              color: $text-color-grey-3;
+            }
+            &:nth-child(1) {
+              strong {
+                background-image: url(/sites/napo/themes/custom/napo_theme/images/star-rating.svg) ;
+                background-repeat: no-repeat;
+                background-size: 25px 25px;
+              }
+            }
+            &:nth-child(2) {
+              strong {
+                background-image: url(/sites/napo/themes/custom/napo_theme/images/star-rating-silver.svg) ;
+                background-repeat: no-repeat;
+                background-size: 25px 25px;
+              }
+            }
+            &:nth-child(3) {
+              strong {
+                background-image: url(/sites/napo/themes/custom/napo_theme/images/star-rating-bronze.svg) ;
+                background-repeat: no-repeat;
+                background-size: 25px 25px;
+              }
+            }
+          }
         }
         h4{
           color:$text-color-blue;
@@ -203,6 +232,27 @@
       font-size: 1.875rem;
       font-weight: bold;
       margin: 0.625rem 0;
+    }
+  }
+
+  .back-button-custom {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    right:auto;
+    left: 0;
+    margin-bottom:0.625rem;
+    a{
+      color: $text-color-blue;
+      height: auto;
+      font-size: 0.875rem;
+      font-weight: bold;
+      background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-back.png) ;
+      background-repeat: no-repeat;
+      background-position: left 50%;
+      background-color:transparent;
+      padding: 0.5rem 1rem;
+      background-size: auto 10px;
     }
   }
 }

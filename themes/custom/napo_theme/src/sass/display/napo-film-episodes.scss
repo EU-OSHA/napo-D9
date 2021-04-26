@@ -1,5 +1,47 @@
 .view-napo-s-film-episodes{
-  .row{
+  .views-row {
     margin:0px;
+    margin-bottom: 1.125rem;
+    clear: both;
+    padding-left: 4.5rem;
+    width: 100%;
+    &>div {
+      margin: 0;
+      padding: 0;
+    }
   }
+  .col-sm-3{
+    &>div{
+      height: 144px;
+      overflow: hidden;
+    }
+  }
+  h3{
+    background: $bg-color-blue;
+    margin: 0;
+    padding: 10px;
+    a{
+      color: $text-color-white;
+      font-size: 15px;
+    }
+  }
+  .datetime{
+    background:$bg-color-grey-light;
+    color:$text-color-blue;
+    font-weight: bold;
+    padding: 12px;
+    display: block;
+  }
+  .episode-list-details-container{
+    padding:0 1.125rem;
+    background:$bg-color-grey-light;
+    height: 51px;
+  }
+  .tags{
+    float:left;
+    a{
+      font-size:11px;
+    }
+  }
+  .buttons{}
 }
