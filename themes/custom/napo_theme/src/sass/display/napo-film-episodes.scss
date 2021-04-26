@@ -15,6 +15,22 @@
       height: 144px;
       overflow: hidden;
     }
+    a{
+      &:before{
+        background-image: url(/sites/napo/themes/custom/napo_theme/images/home-play-featured.png) ;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        content: " ";
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+        position: absolute;
+        width: 44px;
+        height: 48px;
+        cursor: pointer;
+      }
+    }
   }
   h3{
     background: $bg-color-blue;

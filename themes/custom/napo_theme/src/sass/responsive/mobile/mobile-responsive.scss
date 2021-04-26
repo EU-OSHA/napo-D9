@@ -460,6 +460,17 @@
       }
     }
   }
+  .node--type-napo-album {
+    .field--type-text-with-summary{
+      width:100%;
+      p{
+        margin:0;
+      }
+    }
+    #share-this-on{
+      padding-top:0;
+    }
+  }
 }
 
 
