@@ -2698,6 +2698,10 @@ tr th {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
   }
+  .container.header_navbar_container.show-menu {
+    margin: 0;
+    min-height: 8.5rem;
+  }
 
   .region-header-logo img {
     width: 90%;
@@ -3191,6 +3195,17 @@ tr th {
   .node--type-napo-album #share-this-on {
     padding-top: 0;
   }
+
+  .napo-film-list-view .views-view-grid .view-scenes,
+.napo-film-list-view .views-view-grid .view-video,
+.napo-film-list-view .views-view-grid .view-scenes,
+.napo-film-list-view .views-view-grid .view-video {
+    position: relative;
+    margin: 0;
+    left: initial;
+    width: 100%;
+    margin-top: 0.75rem;
+  }
 }
 @media only screen and (max-width: 525px) {
   .view-napo-workplaces .views-row {
@@ -3205,7 +3220,6 @@ tr th {
     transform: none;
     bottom: initial;
     left: initial;
-    padding-bottom: 3.5rem;
   }
 
   .napos-films-films .block-page-title-block h1 {
@@ -3259,7 +3273,7 @@ tr th {
   .content-page-content > .col-12 {
     padding: 0;
   }
-  .napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12 {
+  .napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12 {
     padding: 0 1rem;
   }
 

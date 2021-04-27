@@ -471,6 +471,20 @@
       padding-top:0;
     }
   }
+
+  .napo-film-list-view,
+  .napo-film-list-view {
+    .views-view-grid {
+      .view-scenes,
+      .view-video{
+        position:relative;
+        margin:0;
+        left:initial;
+        width:100%;
+        margin-top:0.75rem;
+      }
+    }
+  }
 }
 
 
@@ -491,7 +505,6 @@
        transform: none;
        bottom:initial;
        left:initial;
-       padding-bottom: 3.5rem;
      }
    }
   }
@@ -561,7 +574,8 @@
       padding:0;
       .napo-story &,
       .page-view-napos-gallery &,
-      .node--type-napo-album &{
+      .node--type-napo-album &,
+      .path-napos-films &{
         padding:0 1rem;
       }
     }
