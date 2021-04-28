@@ -6,6 +6,7 @@ global-styling:
   css:
     component:
       css/napo-global.css: {}
+      css/napo-print-version.css: {}
 bootstrap:
   js:
     /libraries/popper.js/dist/umd/popper.min.js: {}

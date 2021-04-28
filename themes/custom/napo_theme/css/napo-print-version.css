@@ -1,0 +1,64 @@
+/* D9 - Variables NCW */
+/*Font Family*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+}
+/* Font colours */
+.text-color-blue {
+  color: #1f3695;
+}
+
+.text-color-blue-light {
+  color: #666;
+}
+
+.text-color-white {
+  color: #FFF;
+}
+
+/* background colours */
+/*Accordions*/
+.bg-color-blue {
+  background: #1f3695;
+}
+
+.bg-color-blue-light-hover {
+  background: #506B9E;
+}
+
+.bg-color-blue-light {
+  background: #bbc2df;
+}
+
+.bg-color-blue-light-2 {
+  background: #b9c3e0;
+}
+
+.bg-color-yellow {
+  background: #f7e235;
+}
+
+.bg-color-grey {
+  background: #59595A;
+}
+
+.bg-color-grey-light {
+  background: #f2f1f2;
+}
+
+.bg-color-grey-light-2 {
+  background: #e0e1e1;
+}
+
+.bg-color-white {
+  background: #FFF;
+}
+
+.bg-color-orange {
+  background-color: #e95420;
+}
+
+/* END - D9 - Variables NCW */
+
+/*# sourceMappingURL=napo-print-version.css.map */
