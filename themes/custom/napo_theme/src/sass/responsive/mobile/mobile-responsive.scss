@@ -408,12 +408,14 @@
   }
   .napos-films-coming-soon{
     .field--name-field-image{
+      float:none;
       img{
         margin:0 auto;
       }
     }
     .field--name-body{
       width:100%;
+      padding:0;
     }
   }
   .napo-story {

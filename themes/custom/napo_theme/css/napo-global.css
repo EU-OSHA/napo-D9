@@ -2067,6 +2067,7 @@ tr th {
 .napos-films-coming-soon .field--name-body {
   display: inline-block;
   width: calc(100% - 432px);
+  padding: 1rem 0;
 }
 .napos-films-coming-soon .media__image {
   padding-bottom: 0.625rem;
@@ -2074,6 +2075,9 @@ tr th {
 }
 .napos-films-coming-soon p {
   font-size: 1.125rem;
+}
+.napos-films-coming-soon .field--name-field-image {
+  float: left;
 }
 
 .node--type-napo-album .field--name-field-media-image img {
@@ -3141,11 +3145,15 @@ tr th {
     top: 0rem;
   }
 
+  .napos-films-coming-soon .field--name-field-image {
+    float: none;
+  }
   .napos-films-coming-soon .field--name-field-image img {
     margin: 0 auto;
   }
   .napos-films-coming-soon .field--name-body {
     width: 100%;
+    padding: 0;
   }
 
   .napo-story iframe {

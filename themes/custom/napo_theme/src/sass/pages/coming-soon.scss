@@ -7,6 +7,7 @@
   .field--name-body {
     display:inline-block;
     width: calc(100% - 432px);
+    padding:1rem 0;
   }
 
   .media__image{
@@ -15,5 +16,8 @@
   }
   p{
     font-size:1.125rem;
+  }
+  .field--name-field-image{
+    float:left;
   }
 }
