@@ -575,7 +575,8 @@
       .napo-story &,
       .page-view-napos-gallery &,
       .node--type-napo-album &,
-      .path-napos-films &{
+      .path-napos-films &,
+      .napos-films-coming-soon &{
         padding:0 1rem;
       }
     }
@@ -595,6 +596,27 @@
           flex-direction: column;
         }
       }
+    }
+  }
+  .node--type-napo-video{
+    .block-page-title-block {
+      h1{
+        margin-top:5rem;
+      }
+    }
+    &.user-logged-in {
+      .back-button-custom{
+        top:-152px;
+        width:100%;
+        a{
+          display:block;
+        }
+      }
+    }
+  }
+  .quicktabs-tabs.list-group {
+    .list-group-item{
+      flex:1;
     }
   }
 }

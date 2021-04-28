@@ -3273,7 +3273,7 @@ tr th {
   .content-page-content > .col-12 {
     padding: 0;
   }
-  .napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12 {
+  .napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12 {
     padding: 0 1rem;
   }
 
@@ -3284,6 +3284,21 @@ tr th {
   .node--type-lesson .content-accordions-download-custom .download-box ul,
 .node--type-msds-activities .content-accordions-download-custom .download-box ul {
     flex-direction: column;
+  }
+
+  .node--type-napo-video .block-page-title-block h1 {
+    margin-top: 5rem;
+  }
+  .node--type-napo-video.user-logged-in .back-button-custom {
+    top: -152px;
+    width: 100%;
+  }
+  .node--type-napo-video.user-logged-in .back-button-custom a {
+    display: block;
+  }
+
+  .quicktabs-tabs.list-group .list-group-item {
+    flex: 1;
   }
 }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
