@@ -2067,7 +2067,7 @@ tr th {
 .napos-films-coming-soon .field--name-body {
   display: inline-block;
   width: calc(100% - 432px);
-  padding: 1rem 0;
+  padding: 1rem 0rem;
 }
 .napos-films-coming-soon .media__image {
   padding-bottom: 0.625rem;
