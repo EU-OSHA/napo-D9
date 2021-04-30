@@ -2102,7 +2102,7 @@ tr th {
   width: 100%;
   height: 222px;
   overflow: hidden;
-  margin: 1rem 0;
+  margin: 1rem 0rem;
 }
 .node--type-napo-album .field--name-field-images .field--type-image .field__item a img {
   max-width: 100%;
@@ -2310,7 +2310,7 @@ tr th {
   font-size: 1rem;
   min-height: 3.125rem;
   color: #FFF;
-  padding: 0rem 3.75rem 0 0;
+  padding: 0rem 3.75rem 0rem 0rem;
   text-align: right;
   display: flex;
   justify-content: flex-end;
@@ -2321,12 +2321,12 @@ tr th {
 .node--type-lesson .content-accordions-download-custom,
 .node--type-msds-activities .content-accordions-download-custom {
   margin-top: 3.75rem;
-  padding: 0 3% 1.25rem 3%;
+  padding: 0rem 3% 1.25rem 3%;
 }
 .node--type-lesson .content-accordions-download-custom h2,
 .node--type-msds-activities .content-accordions-download-custom h2 {
   font-size: 1.875rem;
-  padding: 0;
+  padding: 0rem;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -2339,20 +2339,20 @@ tr th {
 .node--type-msds-activities .content-accordions-download-custom .accordions {
   width: 76%;
   flex: 0 0 76%;
-  padding: 0 5rem 0 0;
+  padding: 0rem 5rem 0rem 0rem;
   margin-top: 1.25rem;
   position: relative;
 }
 .node--type-lesson .content-accordions-download-custom .accordions .accordion-item,
 .node--type-msds-activities .content-accordions-download-custom .accordions .accordion-item {
   border-radius: 1.875rem;
-  padding: 0;
+  padding: 0rem;
   margin-bottom: 0.75rem;
   border: 2px solid #b9c3e0;
 }
 .node--type-lesson .content-accordions-download-custom .accordions .accordion-item .field--type-entity-reference,
 .node--type-msds-activities .content-accordions-download-custom .accordions .accordion-item .field--type-entity-reference {
-  margin: 0;
+  margin: 0rem;
 }
 .node--type-lesson .content-accordions-download-custom .accordions .accordion-item.active,
 .node--type-msds-activities .content-accordions-download-custom .accordions .accordion-item.active {
@@ -2376,13 +2376,13 @@ tr th {
   font-weight: bold;
   position: relative;
   z-index: 10;
-  margin: 0;
+  margin: 0rem;
   width: 100%;
   cursor: pointer;
 }
 .node--type-lesson .content-accordions-download-custom .accordions .field__item,
 .node--type-msds-activities .content-accordions-download-custom .accordions .field__item {
-  border: 0;
+  border: 0rem;
   padding: 1.25rem 1.875rem 1.875rem;
   position: relative;
   display: none;
@@ -2422,7 +2422,7 @@ tr th {
 .node--type-msds-activities .content-accordions-download-custom .accordions .field__item h4 {
   color: #1f3695;
   font-size: 1.125rem;
-  margin: 1.25rem 0 0.875rem;
+  margin: 1.25rem 0rem 0.875rem;
 }
 .node--type-lesson .content-accordions-download-custom .download-box,
 .node--type-msds-activities .content-accordions-download-custom .download-box {
@@ -2438,8 +2438,8 @@ tr th {
 }
 .node--type-lesson .content-accordions-download-custom .download-box ul,
 .node--type-msds-activities .content-accordions-download-custom .download-box ul {
-  margin: 1.25rem 0 0 0;
-  padding: 0;
+  margin: 1.25rem 0rem 0rem 0rem;
+  padding: 0rem;
   list-style-type: none;
 }
 .node--type-lesson .content-accordions-download-custom .download-box ul li,
@@ -2451,7 +2451,7 @@ tr th {
   border: none;
   background: #1f3695;
   color: #FFF;
-  border-radius: 0 0 1.25rem 1.25rem;
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
 }
 .node--type-lesson .content-accordions-download-custom .download-box ul li:last-child a,
 .node--type-msds-activities .content-accordions-download-custom .download-box ul li:last-child a {
@@ -2488,7 +2488,7 @@ tr th {
   flex-wrap: wrap;
   flex-direction: row;
   padding: 2.5rem 3%;
-  margin: 0 0 1.125rem 0;
+  margin: 0rem 0rem 1.125rem 0rem;
   background-image: url(/sites/napo/themes/custom/napo_theme/images/background-story.png);
   background-repeat: repeat-x;
   background-position: bottom left;
@@ -2499,15 +2499,15 @@ tr th {
   flex: 100%;
   font-size: 1.875rem;
   font-weight: bold;
-  margin: 0.625rem 0;
+  margin: 0.625rem 0rem;
 }
 .node--type-lesson .back-button-custom,
 .node--type-msds-activities .back-button-custom {
   position: relative;
   z-index: 1;
-  top: 0;
+  top: 0rem;
   right: auto;
-  left: 0;
+  left: 0rem;
   margin-bottom: 0.625rem;
 }
 .node--type-lesson .back-button-custom a,
@@ -2751,7 +2751,7 @@ tr th {
   .nav-item:hover, .nav-item.show {
     transition: all 0.1s;
     background: #506B9E;
-    border-radius: 1.875rem 1.875rem 0 0;
+    border-radius: 1.875rem 1.875rem 0rem 0rem;
   }
   .nav-item:hover .dropdown-menu, .nav-item.show .dropdown-menu {
     display: block;
@@ -2842,7 +2842,7 @@ tr th {
     background: #FFF;
     padding: 0;
     border-bottom: 1px solid #ccc;
-    border-radius: 0;
+    border-radius: 0rem;
     text-align: left;
     margin: 0;
     flex-direction: column;
@@ -2868,7 +2868,7 @@ tr th {
     border-bottom: 1px solid #1f3695;
   }
   .header .nav-item.show > .nav-link.dropdown-toggle:after {
-    border-top: 0;
+    border-top: 0rem;
     border-right: 0.3em solid transparent;
     border-bottom: 0.3em solid;
     border-left: 0.3em solid transparent;
@@ -2889,7 +2889,7 @@ tr th {
     content: "";
     border-top: 0.3em solid;
     border-right: 0.3em solid transparent;
-    border-bottom: 0;
+    border-bottom: 0rem;
     border-left: 0.3em solid transparent;
     background: none;
     width: auto;
@@ -2988,7 +2988,7 @@ tr th {
     background: #1f3695;
     color: #FFF;
     font-size: 1.125rem;
-    margin: 0;
+    margin: 0rem;
     padding: 0 0.625rem;
     line-height: 1.5;
     width: 136px !important;
@@ -3039,7 +3039,7 @@ tr th {
     overflow: hidden;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
-    opacity: 0;
+    opacity: 0rem;
   }
   #block-searchapi.in {
     width: 80%;
@@ -3055,7 +3055,7 @@ tr th {
     width: calc(100% - 40px);
   }
   .header .block-simple-blocksearch-api .form-row input {
-    border-radius: 0;
+    border-radius: 0rem;
     width: 100%;
     padding: 1.25rem;
     border-bottom: 1px dotted #FFF;
@@ -3115,7 +3115,7 @@ tr th {
     width: 100%;
     flex: 0 0 100%;
     padding: 0;
-    margin-top: 0;
+    margin-top: 0rem;
   }
   .node--type-lesson .content-accordions-download-custom .download-box .download-title,
 .node--type-msds-activities .content-accordions-download-custom .download-box .download-title {
@@ -3132,7 +3132,7 @@ tr th {
 .node--type-msds-activities .content-accordions-download-custom .download-box ul li:last-child {
     flex: 100%;
     text-align: center;
-    margin: 1rem 0 0;
+    margin: 1rem 0rem 0rem;
   }
   .node--type-lesson .content-accordions-download-custom .detail--text--block,
 .node--type-msds-activities .content-accordions-download-custom .detail--text--block {

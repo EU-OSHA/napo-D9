@@ -82,7 +82,7 @@
        background: $bg-color-white;
        padding: 0 ;
        border-bottom: 1px solid $bg-color-grey-light-4 ;
-       border-radius: 0;
+       border-radius: 0rem;
        text-align: left;
        margin: 0 ;
        flex-direction: column;
@@ -109,7 +109,7 @@
            border-bottom: 1px solid $bg-color-blue;
            &.dropdown-toggle{
              &:after {
-               border-top: 0;
+               border-top: 0rem;
                border-right: .3em solid transparent;
                border-bottom: .3em solid;
                border-left: .3em solid transparent;
@@ -134,7 +134,7 @@
            content: "";
            border-top: .3em solid;
            border-right: .3em solid transparent;
-           border-bottom: 0;
+           border-bottom: 0rem;
            border-left: .3em solid transparent;
            background: none;
            width: auto;
@@ -248,7 +248,7 @@
     background: $bg-color-blue;
     color: $text-color-white;
     font-size: 1.125rem;
-    margin: 0;
+    margin: 0rem;
     padding: 0 0.625rem;
     line-height:1.5;
     width:136px!important;
@@ -296,7 +296,7 @@
     overflow: hidden;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
-    opacity: 0;
+    opacity: 0rem;
     &.in{
       width: 80%;
       opacity: 1;
@@ -312,7 +312,7 @@
           width:calc(100% - 40px);
         }
         input{
-          border-radius: 0;
+          border-radius: 0rem;
           width: 100%;
           padding: 1.25rem;
           border-bottom: 1px dotted $bg-color-white;
@@ -372,7 +372,7 @@
          width: 100%;
         flex: 0 0 100%;
         padding: 0 ;
-        margin-top: 0;
+        margin-top: 0rem;
       }
       .download-box {
         .download-title{
@@ -387,7 +387,7 @@
             &:last-child{
               flex: 100%;
               text-align: center;
-              margin: 1rem 0 0;
+              margin: 1rem 0rem 0rem;
             }
           }
         }
