@@ -1,0 +1,18 @@
+uuid: ae09dece-4793-4447-b5d0-daf63a1987ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-social-media-menu
+id: menu_link_content.menu-social-media-menu.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: menu-social-media-menu
+label: Changed
+description: 'The time that the menu link was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: 88968ebd-21f9-42ee-8edb-f86adb14146b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-social-media-menu
+id: menu_link_content.menu-social-media-menu.view_mode
+field_name: view_mode
+entity_type: menu_link_content
+bundle: menu-social-media-menu
+label: 'View mode'
+description: 'Per item view mode selector.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
