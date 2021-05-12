@@ -11,7 +11,7 @@ id: default_frontpage
 name: default_frontpage
 label: 'Default frontpage'
 weight: -10
-group: ''
+group: main
 skin: default
 breakpoints: 2
 optimized: false
@@ -78,9 +78,9 @@ options:
           adaptiveHeight: false
           autoplay: false
           autoplaySpeed: 3000
-          pauseOnHover: false
+          pauseOnHover: true
           pauseOnDotsHover: false
-          pauseOnFocus: false
+          pauseOnFocus: true
           arrows: true
           centerMode: false
           centerPadding: 50px
@@ -115,9 +115,9 @@ options:
           adaptiveHeight: false
           autoplay: false
           autoplaySpeed: 3000
-          pauseOnHover: false
+          pauseOnHover: true
           pauseOnDotsHover: false
-          pauseOnFocus: false
+          pauseOnFocus: true
           arrows: true
           centerMode: false
           centerPadding: 50px

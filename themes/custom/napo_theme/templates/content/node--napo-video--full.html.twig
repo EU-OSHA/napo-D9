@@ -72,10 +72,13 @@
   'clearfix',
 ]
 %}
+
+{%  set video_url = node.field_youtube.value |split('=') %}
+
 <div class="back-button-custom"><a href="/napos-films/films">{{ 'Back to Films' | trans }}</a></div>
 <article{{ attributes.addClass(classes) }}>
   <div class="video-custom">
-    {{ content.field_video }}
+    <iframe width="1110" height="641" src="https://www.youtube-nocookie.com/embed/{{ video_url[1] }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 <div class="view-scenes-custom">
     <h2>{{ 'View scenes' | trans }}</h2>

@@ -1,9 +1,9 @@
-uuid: 630fcc9b-e8d2-454b-a131-d3ca08e1f8b8
+uuid: 3f1a148e-0e1a-41dd-ba44-8fb8dc1e8679
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.block_node_views
+    - system.menu.account
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: false
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: block_content.block_node_views
-target_entity_type_id: block_content
-target_bundle: block_node_views
+id: menu_link_content.account
+target_entity_type_id: menu_link_content
+target_bundle: account
 default_langcode: site_default
 language_alterable: false

@@ -369,48 +369,6 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
-        langcode:
-          id: langcode
-          table: node_field_data
-          field: langcode
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: langcode
-          plugin_id: language
       sorts:
         entityqueue_relationship_in_queue:
           id: entityqueue_relationship_in_queue
@@ -749,7 +707,7 @@ display:
           replica: false
           query_comment: ''
           query_tags: null
-      rendering_language: '***LANGUAGE_site_default***'
+      rendering_language: '***LANGUAGE_entity_translation***'
       relationships:
         entityqueue_relationship:
           id: entityqueue_relationship
@@ -870,8 +828,8 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
-        langcode:
-          id: langcode
+        langcode_1:
+          id: langcode_1
           table: node_field_data
           field: langcode
           relationship: none
@@ -879,7 +837,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
           group: 1
           exposed: false
           expose:
@@ -919,6 +877,7 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - user
         - 'user.node_grants:view'
@@ -1141,7 +1100,7 @@ display:
       css_class: napo-homepage-featured-films
       relationships: {  }
       block_description: 'Napo''s films latest videos'
-      rendering_language: '***LANGUAGE_site_default***'
+      rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:
