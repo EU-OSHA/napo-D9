@@ -15,6 +15,7 @@ permissions:
   - 'access news feeds'
   - 'access site map'
   - 'display EU Cookie Compliance popup'
+  - 'display eu cookie compliance popup'
   - 'download any document files'
   - 'post comments'
   - 'skip comment approval'
