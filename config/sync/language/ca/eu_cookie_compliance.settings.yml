@@ -1,0 +1,10 @@
+popup_agreed:
+  value: '<h2>Gràcies per acceptar les cookies</h2><p>Ara podeu amagar aquest missatge o informar-vos-en més.</p>'
+popup_agree_button_message: Accepta
+popup_more_info_button_message: 'Més informació'
+popup_find_more_button_message: 'Més informació'
+popup_hide_button_message: Oculta
+disagree_button_label: 'No, gràcies'
+withdraw_tab_button_label: 'Paràmetres de privadesa'
+save_preferences_button_label: 'Desa les preferència'
+accept_all_categories_button_label: 'Accepta totes les galetes'
