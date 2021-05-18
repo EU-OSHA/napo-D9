@@ -1,0 +1,44 @@
+.sitemap{
+  &-item{
+    &--menu-main{
+      padding-left:27px;
+      margin-bottom:0.625rem;
+    }
+    h2{
+      display:none;
+    }
+    .nav{
+      &-item{
+        .dropdown{
+          &-toggle{
+            padding:0;
+            &:after{
+              display:none;
+            }
+          }
+          &-menu{
+           display:block;
+            padding:0;
+            margin:0;
+            border:none;
+            padding-left:27px;
+          }
+          &-item{
+            padding:0;
+            &:hover{
+              background-color: transparent;
+            }
+            a{
+              color: $text-color-blue;
+              font-size:1.125rem;
+            }
+          }
+        }
+      }
+      &-link{
+        color: $text-color-blue;
+        font-size:1.125rem;
+      }
+    }
+  }
+}

@@ -177,18 +177,4 @@
       }
     }
   }
-
-  .recommended-films{
-    background: $bg-color-blue;
-    margin-top: 2.25rem;
-    padding: 1.125rem;
-    height: 1%;
-    overflow: hidden;
-    >div{
-      &:first-of-type{
-        color:$text-color-yellow;
-        font-weight:bold;
-      }
-    }
-  }
 }
