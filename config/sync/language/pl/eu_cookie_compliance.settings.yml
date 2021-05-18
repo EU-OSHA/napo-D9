@@ -1,0 +1,11 @@
+popup_agreed:
+  value: '<h2>Dziękujemy za akceptację ciasteczek</h2><p>Możesz teraz ukryć tą wiadomość lub dowiedzieć się więcej na temat ciasteczek.</p>'
+popup_agree_button_message: Akceptuj
+popup_more_info_button_message: 'Więcej informacji'
+popup_find_more_button_message: 'Więcej informacji'
+popup_hide_button_message: Ukryj
+popup_info:
+  value: "<h2>This website uses cookies to gather information necessary for browsing the website, in accordance with our privacy notice.</h2>\r\n\r\n<p>&nbsp;</p>\r\n"
+popup_link: /using-napo/rights-and-permissions
+disagree_button_label: Decline
+save_preferences_button_label: 'Zapisz preferencje'

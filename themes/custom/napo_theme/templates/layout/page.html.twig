@@ -43,6 +43,11 @@
 
 {% block content %}
   <main class="container">
+    {% if page.breadcrumb %}
+      <div class="breadcrumb">
+        {{ page.breadcrumb }}
+      </div>
+    {% endif %}
     <div class="row content-node-view">
       <div class="col-12">
         {{ page.node_view }}

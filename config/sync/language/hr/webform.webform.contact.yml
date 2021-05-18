@@ -1,3 +1,4 @@
 title: Kontakt
 settings:
   confirmation_message: 'Vaša poruka je poslana.'
+  confirmation_url: /using-napo/rights-and-permissions

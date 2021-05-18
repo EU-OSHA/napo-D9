@@ -1,3 +1,4 @@
 title: 'Ota yhteyttä'
 settings:
   confirmation_message: 'Viestisi on lähetetty.'
+  confirmation_url: /using-napo/rights-and-permissions

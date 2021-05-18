@@ -1,3 +1,4 @@
 title: Kontaktai
 settings:
   confirmation_message: 'Jūsų žinutė išsiųsta'
+  confirmation_url: /using-napo/rights-and-permissions

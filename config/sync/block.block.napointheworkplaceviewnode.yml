@@ -1,9 +1,9 @@
-uuid: a6252019-0d12-4dda-9ad7-5b27880b7d96
+uuid: dff9acd9-5418-4b02-b6db-b4c4e289236d
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:block_node_views:e258416d-6957-4626-8237-6d830398c23f'
+    - 'block_content:block_node_views:3d4a180d-4d0a-47d9-b51d-311416e36b05'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: napo_theme
 region: node_view
 weight: 0
 provider: null
-plugin: 'block_content:e258416d-6957-4626-8237-6d830398c23f'
+plugin: 'block_content:3d4a180d-4d0a-47d9-b51d-311416e36b05'
 settings:
-  id: 'block_content:e258416d-6957-4626-8237-6d830398c23f'
+  id: 'block_content:3d4a180d-4d0a-47d9-b51d-311416e36b05'
   label: 'Napo in the workplace view node'
   provider: block_content
   label_display: '0'

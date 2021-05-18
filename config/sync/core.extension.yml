@@ -97,6 +97,7 @@ module:
   shs: 0
   shs_chosen: 0
   simple_block: 0
+  sitemap: 0
   slick: 0
   slick_ui: 0
   slick_views: 0
@@ -110,6 +111,7 @@ module:
   toolbar: 0
   tour: 0
   twig_tweak: 0
+  ultimate_cron: 0
   update: 0
   user: 0
   video_embed_field: 0
@@ -130,6 +132,7 @@ module:
   views: 10
   linked_field: 100
   standard: 1000
+  eu_cookie_compliance: 1001
 theme:
   seven: 0
   bootstrap_barrio: 0

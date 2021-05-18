@@ -97,6 +97,7 @@ content:
       ds:
         ds_limit: ''
 hidden:
+  addtoany: true
   field_character_count: true
   field_expiration_date: true
   field_glossary: true

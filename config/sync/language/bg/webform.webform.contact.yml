@@ -1,3 +1,4 @@
 title: Контакт
 settings:
   confirmation_message: 'Вашето съобщение беше изпратено.'
+  confirmation_url: /using-napo/rights-and-permissions

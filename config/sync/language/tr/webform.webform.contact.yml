@@ -1,3 +1,4 @@
 title: İletişim
 settings:
   confirmation_message: 'İletiniz gönderildi.'
+  confirmation_url: /using-napo/rights-and-permissions
