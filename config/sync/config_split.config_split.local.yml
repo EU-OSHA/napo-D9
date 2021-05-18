@@ -1,0 +1,23 @@
+uuid: 96e10148-3099-4811-9102-951f741b01d5
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: Local
+description: ''
+folder: sites/napo/config/local
+module:
+  custom_migrations: 0
+  easy_install: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_file_to_media: 0
+  migrate_plus: 0
+  migrate_tools: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - search_api.server.apache_solr
+graylist_dependents: false
+graylist_skip_equal: true
+weight: 0

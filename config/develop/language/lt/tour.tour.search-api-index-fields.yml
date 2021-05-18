@@ -1,0 +1,15 @@
+tips:
+  search-api-index-fields-label:
+    label: Žymė
+  search-api-index-fields-machine-name:
+    label: 'Mašininis pavadinimas'
+  search-api-index-fields-type:
+    label: Tipas
+  search-api-index-fields-edit:
+    label: 'Redaguoti laukelį'
+  search-api-index-fields-remove:
+    label: 'Pašalinti laukelius'
+  search-api-index-fields-submit:
+    label: 'Išsaugoti pakeitimus'
+  search-api-index-fields-cancel:
+    label: 'Atšaukti pakeitimus'

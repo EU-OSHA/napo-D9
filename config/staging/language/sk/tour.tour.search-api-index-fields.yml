@@ -1,0 +1,15 @@
+tips:
+  search-api-index-fields-label:
+    label: Označenie
+  search-api-index-fields-machine-name:
+    label: 'Strojový názov'
+  search-api-index-fields-type:
+    label: Typ
+  search-api-index-fields-edit:
+    label: 'Upraviť pole'
+  search-api-index-fields-remove:
+    label: 'Odstrániť pole'
+  search-api-index-fields-submit:
+    label: 'Uložiť zmeny'
+  search-api-index-fields-cancel:
+    label: 'Zrušiť zmeny'

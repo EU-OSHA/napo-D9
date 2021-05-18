@@ -1,0 +1,89 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Tipo
+          separator: ', '
+        status:
+          label: Published
+          separator: ', '
+        name:
+          label: Author
+          separator: ', '
+        changed:
+          label: 'Última atualização'
+          separator: ', '
+        edit_node:
+          label: Ações
+          text: editar
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Tipo
+        status:
+          expose:
+            label: Published
+      empty:
+        area:
+          content:
+            value: 'Não há conteúdo disponível para você editar.'
+      use_more_text: 'ver todos'
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+      filters:
+        status:
+          expose:
+            label: Published
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Tipo
+          separator: ', '
+        name:
+          label: Author
+          separator: ', '
+        changed:
+          label: 'Última atualização'
+          separator: ', '
+        edit_node:
+          label: Ações
+          text: editar

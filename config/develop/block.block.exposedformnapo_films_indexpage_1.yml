@@ -1,0 +1,28 @@
+uuid: b46e8239-a80f-4eaa-9d09-6b30efad117b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.napo_films_index
+  module:
+    - system
+    - views
+  theme:
+    - napo_theme
+id: exposedformnapo_films_indexpage_1
+theme: napo_theme
+region: content
+weight: -16
+provider: null
+plugin: 'views_exposed_filter_block:napo_films_index-page_1'
+settings:
+  id: 'views_exposed_filter_block:napo_films_index-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/napos-films/films\r\n/napos-films/films-list\r\n/napos-films/films-grid\r\n/napo-films/node-films"
+    negate: false

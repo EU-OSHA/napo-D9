@@ -1,0 +1,13 @@
+tips:
+  search-api-index-fields-label:
+    label: Etiket
+  search-api-index-fields-machine-name:
+    label: 'Makine adı'
+  search-api-index-fields-type:
+    label: Tip
+  search-api-index-fields-edit:
+    label: 'Alanı düzenle'
+  search-api-index-fields-remove:
+    label: 'Alanı kaldır'
+  search-api-index-fields-submit:
+    label: 'Değişiklikleri kaydet'

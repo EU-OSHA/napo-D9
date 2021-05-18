@@ -1,0 +1,9 @@
+tips:
+  search-api-index-form-name:
+    label: Indeksnavn
+  search-api-index-form-tracker:
+    label: Følg
+  search-api-index-form-server:
+    label: Server
+  search-api-index-form-options:
+    label: 'Avancerede indstillinger'

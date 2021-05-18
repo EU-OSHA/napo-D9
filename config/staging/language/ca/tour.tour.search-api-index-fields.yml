@@ -1,0 +1,15 @@
+tips:
+  search-api-index-fields-label:
+    label: Etiqueta
+  search-api-index-fields-machine-name:
+    label: Nom-màquina
+  search-api-index-fields-type:
+    label: Tipus
+  search-api-index-fields-edit:
+    label: 'Edita el camp'
+  search-api-index-fields-remove:
+    label: 'Eliminar camp'
+  search-api-index-fields-submit:
+    label: 'Desa els canvis'
+  search-api-index-fields-cancel:
+    label: 'Cancel·la els canvis'

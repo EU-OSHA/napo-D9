@@ -1,0 +1,88 @@
+label: 'Arbeitsbereich: Änderungen durch Benutzer'
+description: 'Vom Benutzer geänderte Inhalte anzeigen.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Anwenden
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elemente pro Seite'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Versatz
+      fields:
+        nid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Typ
+          separator: ', '
+        status:
+          label: Published
+          separator: ', '
+        changed:
+          label: 'Zuletzt aktualisiert'
+          separator: ', '
+        uid:
+          label: Author
+          separator: ', '
+        revision_uid:
+          label: 'Überarbeitet von'
+          separator: ', '
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Typ
+        status:
+          expose:
+            label: Published
+      title: 'Meine Änderungen'
+      empty:
+        area:
+          content:
+            value: 'Sie haben noch keinen Inhalt erstellt oder bearbeitet.'
+      arguments:
+        uid_revision:
+          exception:
+            title: Alle
+  block_1:
+    display_title: Übersichtsblock
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elemente pro Seite'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Versatz
+      header:
+        area:
+          content:
+            value: '<h3>Kürzlich bearbeitete Inhalte</h3>'
+      use_more_text: 'Alle anzeigen'
+      display_description: 'Die fünf letzten Bearbeitungen durch diesen Benutzer'
+  embed_1:
+    display_title: 'Seite einbetten'
+    display_options:
+      display_description: 'Die eingebettete Ansicht zur Verwendung auf einer Einstiegsseite'

@@ -17,6 +17,7 @@ permissions:
   - 'display EU Cookie Compliance popup'
   - 'display eu cookie compliance popup'
   - 'download any document files'
+  - 'opt-in or out of matomo tracking'
   - 'post comments'
   - 'skip comment approval'
   - 'use exclude node title'

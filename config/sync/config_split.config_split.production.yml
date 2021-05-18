@@ -1,0 +1,16 @@
+uuid: 20e2b87e-aebc-4aad-a983-cc03d8cc5889
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: ''
+folder: sites/napo/config/production
+module:
+  matomo: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: false
+graylist_skip_equal: true
+weight: 0

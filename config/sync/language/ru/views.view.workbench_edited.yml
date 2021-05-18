@@ -1,0 +1,76 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Применить
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Элементов на страницу'
+            items_per_page_options_all_label: '- Все -'
+            offset_label: Пропустить
+      fields:
+        nid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Тип
+          separator: ', '
+        status:
+          label: Published
+          separator: ', '
+        changed:
+          label: 'Последнее обновление'
+          separator: ', '
+        uid:
+          label: Author
+          separator: ', '
+        revision_uid:
+          label: Рассмотрено
+          separator: ', '
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Тип
+        status:
+          expose:
+            label: Published
+      title: 'Мои правки'
+      empty:
+        area:
+          content:
+            value: 'Вы не создавали и не редактировали содержимое.'
+      arguments:
+        uid_revision:
+          exception:
+            title: Все
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Элементов на страницу'
+            items_per_page_options_all_label: '- Все -'
+            offset_label: Пропустить
+      use_more_text: 'посмотреть всё'

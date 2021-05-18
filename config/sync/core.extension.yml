@@ -19,6 +19,8 @@ module:
   colorbox: 0
   comment: 0
   config: 0
+  config_filter: 0
+  config_split: 0
   config_translation: 0
   contact: 0
   content_moderation: 0
@@ -26,7 +28,6 @@ module:
   crop: 0
   csv_serialization: 0
   ctools: 0
-  custom_migrations: 0
   date_popup: 0
   datetime: 0
   dblog: 0
@@ -47,6 +48,7 @@ module:
   filter: 0
   help: 0
   history: 0
+  htmlmail: 0
   image: 0
   image_widget_crop: 0
   inline_entity_form: 0
@@ -64,6 +66,7 @@ module:
   layoutcomponents: 0
   link: 0
   locale: 0
+  mailsystem: 0
   media: 0
   media_library: 0
   media_library_form_element: 0
@@ -73,11 +76,6 @@ module:
   meta_position: 0
   metatag: 0
   metatag_views: 0
-  migrate: 0
-  migrate_drupal: 0
-  migrate_file_to_media: 0
-  migrate_plus: 0
-  migrate_tools: 0
   node: 0
   options: 0
   page_cache: 0
@@ -124,6 +122,7 @@ module:
   views_ui: 0
   webform: 0
   webform_node: 0
+  workbench: 0
   workbench_access: 0
   workflows: 0
   ds: 1

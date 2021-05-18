@@ -1,0 +1,52 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        nid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Vrsta
+          separator: ', '
+        status:
+          label: Published
+          separator: ', '
+        changed:
+          label: 'Posljednje osvježenje'
+          separator: ', '
+        uid:
+          label: Author
+          separator: ', '
+        revision_uid:
+          separator: ', '
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Vrsta
+        status:
+          expose:
+            label: Published
+      arguments:
+        uid_revision:
+          exception:
+            title: Svi
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››

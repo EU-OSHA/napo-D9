@@ -1,0 +1,60 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        title:
+          label: Title
+        type:
+          label: Tipas
+        status:
+          label: Published
+        name:
+          label: Author
+        changed:
+          label: 'Paskutinis atnaujinimas'
+        edit_node:
+          label: Veiksmai
+          text: redaguoti
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Tipas
+        status:
+          expose:
+            label: Published
+  block_1:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      filters:
+        status:
+          expose:
+            label: Published
+      fields:
+        title:
+          label: Title
+        type:
+          label: Tipas
+        name:
+          label: Author
+        changed:
+          label: 'Paskutinis atnaujinimas'
+        edit_node:
+          label: Veiksmai
+          text: redaguoti

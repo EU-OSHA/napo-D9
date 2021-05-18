@@ -1,0 +1,17 @@
+tips:
+  search-api-index-fields-label:
+    label: Etiket
+  search-api-index-fields-machine-name:
+    label: 'Internt navn'
+  search-api-index-fields-type:
+    label: Type
+  search-api-index-fields-boost:
+    label: Boost
+  search-api-index-fields-edit:
+    label: 'Redigér felt'
+  search-api-index-fields-remove:
+    label: 'Fjern felt'
+  search-api-index-fields-submit:
+    label: 'Gem ændringer'
+  search-api-index-fields-cancel:
+    label: 'Annuller ændringer'

@@ -1,0 +1,34 @@
+label: 'Arbeitsbereich: Aktueller Benutzer'
+description: 'Informationen über den aktuellen Benutzer.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Anwenden
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        uid:
+          separator: ', '
+        name:
+          separator: ', '
+        edit_user:
+          text: 'Mein Profil bearbeiten'
+        access:
+          label: 'Letzter Besuch'
+          separator: ', '
+        roles:
+          label: 'Zugewiesene Rollen'
+          separator: ', '
+      header:
+        area:
+          content:
+            value: '<h3>Profil von {{ name }}</h3>'
+  block_1:
+    display_title: Übersichtsblock
+    display_options:
+      display_description: 'Zeigt Informationen über den aktuellen Benutzer.'

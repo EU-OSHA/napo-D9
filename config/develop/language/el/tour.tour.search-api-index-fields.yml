@@ -1,0 +1,13 @@
+tips:
+  search-api-index-fields-label:
+    label: Ετικέτα
+  search-api-index-fields-machine-name:
+    label: 'Όνομα μηχανής'
+  search-api-index-fields-type:
+    label: Τύπος
+  search-api-index-fields-edit:
+    label: 'Επεξεργασία πεδίου'
+  search-api-index-fields-submit:
+    label: 'Αποθήκευση αλλαγών'
+  search-api-index-fields-cancel:
+    label: 'Ακύρωση αλλαγών'

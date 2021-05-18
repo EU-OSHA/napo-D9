@@ -1,0 +1,84 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicare
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Tip
+          separator: ', '
+        status:
+          label: Published
+          separator: ', '
+        name:
+          label: Author
+          separator: ', '
+        changed:
+          label: 'Ultima actualizare'
+          separator: ', '
+        edit_node:
+          label: Acţiuni
+          text: modifică
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Tip
+        status:
+          expose:
+            label: Published
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+      filters:
+        status:
+          expose:
+            label: Published
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Tip
+          separator: ', '
+        name:
+          label: Author
+          separator: ', '
+        changed:
+          label: 'Ultima actualizare'
+          separator: ', '
+        edit_node:
+          label: Acţiuni
+          text: modifică

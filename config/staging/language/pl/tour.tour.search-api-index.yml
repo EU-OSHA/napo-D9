@@ -1,0 +1,9 @@
+tips:
+  search-api-index-status:
+    label: Status
+  search-api-index-tracker:
+    label: Historia
+  search-api-index-server:
+    label: Serwer
+  search-api-index-cron-batch-size:
+    label: 'Rozmiar porcji crona'

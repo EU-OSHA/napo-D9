@@ -1,0 +1,11 @@
+tips:
+  search-api-index-form-name:
+    label: 'Имя индекса'
+  search-api-index-form-tracker:
+    label: Изменения
+  search-api-index-form-server:
+    label: Сервер
+  search-api-index-form-description:
+    label: 'Описание индекса'
+  search-api-index-form-options:
+    label: 'Дополнительные настройки'

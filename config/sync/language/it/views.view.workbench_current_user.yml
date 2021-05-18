@@ -1,0 +1,23 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Applica
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        uid:
+          separator: ', '
+        name:
+          separator: ', '
+        edit_user:
+          text: 'Modifica il tuo profilo'
+        access:
+          label: 'Ultima visita'
+          separator: ', '
+        roles:
+          separator: ', '
