@@ -1,4 +1,11 @@
 popup_agreed:
   value: '<h2>Tak forfi du accepterede cookies</h2><p>Du kan nu skjule denne meddelelse eller lære mere om cookies.</p>'
+popup_agree_button_message: 'OK, I agree'
+popup_more_info_button_message: 'More info'
+popup_find_more_button_message: 'More info'
 popup_hide_button_message: Skjul
+popup_info:
+  value: "<h2>This website uses cookies to gather information necessary for browsing the website, in accordance with our privacy notice.</h2>\r\n\r\n<p>&nbsp;</p>\r\n"
+popup_link: /using-napo/rights-and-permissions
+disagree_button_label: Decline
 withdraw_tab_button_label: 'Indstillinger for privatliv'

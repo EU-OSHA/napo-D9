@@ -1,3 +1,4 @@
 title: Kontakt
 settings:
   confirmation_message: 'Ditt meddelande har skickats.'
+  confirmation_url: /using-napo/rights-and-permissions

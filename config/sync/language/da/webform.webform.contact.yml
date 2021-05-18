@@ -1,3 +1,4 @@
 title: Kontakt
 settings:
   confirmation_message: 'Din besked er blevet sendt.'
+  confirmation_url: /using-napo/rights-and-permissions

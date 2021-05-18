@@ -8,6 +8,7 @@ popup_info:
   value: '<h2>A felhasználói élmény javítása érdekében a webhelyen sütiket használunk</h2><p>Az „Elfogadás” gombra kattintva hozzájárul a sütik létrehozásához.</p>'
 mobile_popup_info:
   value: '<h2>A felhasználói élmény javítása érdekében a webhelyen sütiket használunk</h2><p>Az „Elfogadás” gomb megérintésével hozzájárul a sütik létrehozásához.</p>'
+popup_link: /using-napo/rights-and-permissions
 disagree_button_label: 'Köszönöm, nem'
 withdraw_message:
   value: '<h2>A felhasználói élmény javítása érdekében a webhelyen sütiket használunk</h2><p>Hozzájárult, hogy sütiket hozzunk létre.</p>'

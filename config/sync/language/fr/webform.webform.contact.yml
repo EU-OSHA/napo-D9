@@ -1,3 +1,4 @@
 title: Contact
 settings:
   confirmation_message: 'Votre message a été envoyé.'
+  confirmation_url: /using-napo/rights-and-permissions

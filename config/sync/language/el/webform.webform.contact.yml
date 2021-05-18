@@ -1,3 +1,4 @@
 title: Επικοινωνία
 settings:
   confirmation_message: 'Το μήνυμά σας στάλθηκε.'
+  confirmation_url: /using-napo/rights-and-permissions

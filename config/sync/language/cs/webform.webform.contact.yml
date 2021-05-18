@@ -1,3 +1,4 @@
 title: Kontakt
 settings:
   confirmation_message: 'Vaše zpráva byla odeslána.'
+  confirmation_url: /using-napo/rights-and-permissions

@@ -8,6 +8,7 @@ popup_info:
   value: '<h2>Utilizamos cookies en este sitio web para mejorar su experiencia de usuario.</h2><p>Al hacer click en Aceptar, otorga su consentimiento para que establezcamos cookies.</p>'
 mobile_popup_info:
   value: '<h2>Utilizamos cookies en este sitio web para mejorar su experiencia de usuario.</h2><p>Al hacer tap en Aceptar, otorga su consentimiento para que establezcamos cookies.</p>'
+popup_link: /using-napo/rights-and-permissions
 disagree_button_label: 'No, gracias'
 withdraw_message:
   value: '<h2>Utilizamos cookies en este sitio web para mejorar su experiencia de usuario.</h2><p>Usted ha dado su consentimiento para que establezcamos cookies.</p>'
