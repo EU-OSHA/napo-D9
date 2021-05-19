@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Sök
+      title: 'Napo på arbetsplatsen'
+      header:
+        result:
+          content: '<h2>Att förstå belastningsbesvär <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Inga resultat'

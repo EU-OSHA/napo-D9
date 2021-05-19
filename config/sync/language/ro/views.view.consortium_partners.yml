@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Start
+      title: 'Napo este o inițiativă a:'
+  block_1:
+    display_options:
+      title: 'Napo este o inițiativă a consorțiului Napo'

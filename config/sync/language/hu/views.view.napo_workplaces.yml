@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Indítás
+      title: 'Napo a munkahelyen'
+      header:
+        result:
+          content: '<h2>A váz- és izomrendszeri megbetegedések megértése <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Nincs eredmény'

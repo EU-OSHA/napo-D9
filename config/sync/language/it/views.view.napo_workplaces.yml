@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Applica
+      title: 'Napo nell&rsquo;ambiente di lavoro'
+      header:
+        result:
+          content: '<h2>Comprendere i DMS <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Nessun risultato'

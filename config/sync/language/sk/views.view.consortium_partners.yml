@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Použiť
+      title: 'Napo je iniciatíva:'
+  block_1:
+    display_options:
+      title: 'Napo je iniciatíva konzorcia Napo'

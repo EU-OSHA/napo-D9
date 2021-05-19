@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Изпълни
+      header:
+        result:
+          content: '<h2>Разбиране на МСС <span class="lessons-available">[@total]</span></h2>'
+      title: 'Напо на работното място'
+      empty:
+        area_text_custom:
+          content: 'Няма резултати'

@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Išči
+      title: 'Napo na delovnem mestu'
+      header:
+        result:
+          content: '<h2>Razumevanje kostno-mišičnih obolenj <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Ni zadetkov'

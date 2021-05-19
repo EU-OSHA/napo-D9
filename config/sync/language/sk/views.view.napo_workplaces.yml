@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Použiť
+      title: 'Napo na pracovisku'
+      header:
+        result:
+          content: '<h2>Porozumenie poškodeniam podporno-pohybovej sústavy <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Žiadne výsledky'
