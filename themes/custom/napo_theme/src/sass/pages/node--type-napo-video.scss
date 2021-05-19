@@ -8,7 +8,6 @@
       margin:0;
     }
   }
-
   .view-scenes-custom{
     background-color: $bg-color-grey-light-2;
     margin-top:-5px;
@@ -29,12 +28,15 @@
     .slide__caption{
       padding:0;
     }
-    .slide__description{
+    .slick__slide{
       position:relative;
-      margin: 0 4px;
+      padding: 0 0.25rem;
       .views-field-title-1{
         position: absolute;
-        width:100%;
+        width:calc(100% - 0.5rem);
+        top:0;
+        left:50%;
+        transform:translate(-50% , 0%);
         display: none;
         background-image: url(/sites/napo/themes/custom/napo_theme/images/background-blue.png);
         background-repeat: repeat-x;
@@ -61,8 +63,6 @@
       img{
         width:100%;
       }
-    }
-    .slick__slide{
       &:hover{
         .views-field-title-1{
           display:block;
@@ -70,7 +70,6 @@
       }
     }
   }
-
   .conten-video-info{
     position:relative;
     .napo-film-title-2{
@@ -120,7 +119,6 @@
       cursor: pointer;
       margin-top:1px;
     }
-
     .addtoany_list{
       display:none;
     }
@@ -130,7 +128,6 @@
         .addtoany_list{
           display:block;
         }
-
       }
     }
     #share-this-on{
@@ -139,7 +136,6 @@
       padding:0;
     }
   }
-
   .conten-video-info-tags{
     background-color: $bg-color-grey-light;
     padding-left: 1.5rem;
