@@ -3,7 +3,6 @@ module:
   addtoany: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
-  authorization: 0
   automated_cron: 0
   big_pipe: 0
   blazy: 0
@@ -65,11 +64,6 @@ module:
   layout_builder: 0
   layout_discovery: 0
   layoutcomponents: 0
-  ldap_authentication: 0
-  ldap_authorization: 0
-  ldap_query: 0
-  ldap_servers: 0
-  ldap_user: 0
   link: 0
   locale: 0
   mailsystem: 0
@@ -134,7 +128,6 @@ module:
   ds: 1
   pathauto: 1
   content_translation: 10
-  externalauth: 10
   views: 10
   linked_field: 100
   standard: 1000
