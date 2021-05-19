@@ -1,6 +1,6 @@
 uuid: 87aa2e5c-9f45-442a-bd6c-1301c93fc7df
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.search_results
@@ -139,6 +139,7 @@ content:
     type: text_default
     region: content
 hidden:
+  addtoany: true
   field_tags: true
   langcode: true
   links: true

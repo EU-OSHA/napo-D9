@@ -1,0 +1,31 @@
+uuid: 58707ee6-3387-4b38-8cc3-ddab813e5d4b
+langcode: en
+status: true
+dependencies: {  }
+id: staging
+label: Staging
+description: ''
+folder: sites/napo/config/staging
+module:
+  custom_migrations: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_file_to_media: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  search_api: 0
+  search_api_solr: 0
+  authorization: 0
+  externalauth: 0
+  ldap_authentication: 0
+  ldap_authorization: 0
+  ldap_query: 0
+  ldap_servers: 0
+  ldap_user: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - search_api.server.apache_solr
+graylist_dependents: false
+graylist_skip_equal: true
+weight: 0

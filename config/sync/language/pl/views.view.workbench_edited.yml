@@ -1,0 +1,76 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Zastosuj
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+      fields:
+        nid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Typ
+          separator: ', '
+        status:
+          label: Published
+          separator: ', '
+        changed:
+          label: 'Ostatnia aktualizacja'
+          separator: ', '
+        uid:
+          label: Author
+          separator: ', '
+        revision_uid:
+          label: 'Zrewidowane przez'
+          separator: ', '
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Typ
+        status:
+          expose:
+            label: Published
+      title: 'Edytowane przeze mnie'
+      empty:
+        area:
+          content:
+            value: "Jeszcze nie utworzyłeś i nie edytowałeś\_żadnych zawartości."
+      arguments:
+        uid_revision:
+          exception:
+            title: Wszystko
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+      use_more_text: 'zobacz wszytkie'

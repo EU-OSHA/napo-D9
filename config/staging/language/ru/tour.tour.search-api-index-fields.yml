@@ -1,0 +1,17 @@
+tips:
+  search-api-index-fields-add:
+    label: 'Добавить поля'
+  search-api-index-fields-label:
+    label: Метка
+  search-api-index-fields-machine-name:
+    label: 'Машинное имя'
+  search-api-index-fields-type:
+    label: Тип
+  search-api-index-fields-edit:
+    label: 'Изменить поле'
+  search-api-index-fields-remove:
+    label: 'Удалить поле'
+  search-api-index-fields-submit:
+    label: 'Сохранить изменения'
+  search-api-index-fields-cancel:
+    label: 'Отменить изменения'

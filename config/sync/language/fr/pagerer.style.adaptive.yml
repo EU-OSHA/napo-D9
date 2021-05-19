@@ -1,0 +1,36 @@
+default_config:
+  tags:
+    page_breaker: …
+    pages:
+      prefix_label: Page
+      first: «
+      previous: ‹
+      next: ›
+      last: »
+      page_current_title: 'Page courante'
+      page_title: 'Aller à la page @number'
+      first_title: 'Aller à la première page'
+      previous_title: 'Aller à la page précédente'
+      next_title: 'Aller à la page suivante'
+      last_title: 'Aller à la dernière page'
+      page_current_reader: 'Page courante'
+      page_reader: Page
+      first_reader: 'Première page'
+      previous_reader: 'Page précédente'
+      next_reader: 'Page suivante'
+      last_reader: 'Dernière page'
+    items:
+      prefix_label: Élément
+      first: «
+      previous: ‹
+      next: ›
+      last: »
+      page_reader: Élément
+      first_reader: 'Premier élément'
+    item_ranges:
+      prefix_label: Éléments
+      first: «
+      previous: ‹
+      next: ›
+      last: »
+      page_reader: Éléments

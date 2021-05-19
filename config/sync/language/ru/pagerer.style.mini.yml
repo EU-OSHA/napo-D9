@@ -1,0 +1,21 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Page
+      previous: ‹
+      next: ›
+      page_current_title: 'Текущая страница'
+      first_title: 'На первую страницу'
+      previous_title: 'На предыдущую страницу'
+      next_title: 'На следующую страницу'
+      last_title: 'На последнюю страницу'
+      page_current_reader: 'Текущая страница'
+      first_reader: 'Первая страница'
+      previous_reader: 'Предыдущая страница'
+      next_reader: 'Следующая страница'
+      last_reader: 'Последняя страница'
+    items:
+      prefix_label: Элемент
+      previous: ‹
+      next: ›
+      first_reader: 'Первый элемент'

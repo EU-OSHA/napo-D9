@@ -1,4 +1,5 @@
 label: Sisu
+description: 'Find and manage content.'
 display:
   default:
     display_options:
@@ -21,6 +22,7 @@ display:
           label: Title
         type:
           label: 'Content type'
+          separator: ', '
         name:
           label: Author
         status:
@@ -63,4 +65,5 @@ display:
         title: Sisu
       tab_options:
         title: Sisu
+        description: 'Find and manage content'
     display_title: Page

@@ -1,3 +1,4 @@
+label: Watchdog
 description: 'Ostatnie wpisy dziennika'
 display:
   default:
@@ -16,9 +17,14 @@ display:
             items_per_page_label: 'Elementów na stronę'
             items_per_page_options_all_label: '- Wszystko -'
             offset_label: Przesunięcie
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         nothing:
           admin_label: Ikona
+        wid:
+          label: WID
         severity:
           label: Priorytet
         type:
@@ -27,8 +33,11 @@ display:
           label: Data
         message:
           label: Wiadomość
+          alter:
+            alt: '{{ message }}'
         name:
           label: Użytkownik
+          separator: ', '
         link:
           label: Operations
       filters:

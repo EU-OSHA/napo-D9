@@ -1,0 +1,37 @@
+.page-view-download-centre{
+  .content-page-content{
+    .col-12{
+      margin:0;
+      padding:0;
+    }
+  }
+  .view-download-centre{
+    padding: 0 0.625rem 1.25rem;
+    .view-empty{
+        background: $bg-color-grey-light;
+        padding: 1.125rem;
+        font-weight: bold;
+        font-size: 1.125rem;
+      .inline-icon {
+        position: relative;
+        display: inline-block;
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+        width: 42px;
+        height: 43px;
+        margin-top:0.5rem;
+      }
+      .napo-film-video-download-form-title{
+        color: transparent;
+        background-image: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .content-cart-add-to-cart-btn{
+        background-image: url(/sites/napo/themes/custom/napo_theme/images/download-center.png) ;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

@@ -17,49 +17,10 @@ dependencies:
     - field.field.node.lesson.field_tags
     - node.type.lesson
   module:
-    - field_group
     - layout_builder
-    - layout_discovery
     - text
     - user
 third_party_settings:
-  field_group:
-    group_left:
-      children: {  }
-      parent_name: ''
-      weight: 1
-      format_type: details
-      region: content
-      format_settings:
-        description: ''
-        open: true
-        id: ''
-        classes: ''
-      label: Left
-    group_right:
-      children: {  }
-      parent_name: ''
-      weight: 9
-      format_type: details
-      region: content
-      format_settings:
-        description: ''
-        open: true
-        id: ''
-        classes: ''
-      label: Right
-    group_header:
-      children: {  }
-      parent_name: ''
-      weight: 0
-      format_type: details
-      region: content
-      format_settings:
-        description: ''
-        open: true
-        id: ''
-        classes: ''
-      label: header
   layout_builder:
     allow_custom: false
     enabled: false
@@ -71,34 +32,34 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 12
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     region: content
   field_activities:
-    weight: 4
-    label: hidden
+    weight: 5
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_assessment:
-    weight: 5
-    label: hidden
+    weight: 6
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_curriculum_links:
-    weight: 6
-    label: hidden
+    weight: 7
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_file:
     type: entity_reference_entity_view
-    weight: 10
+    weight: 11
     label: above
     settings:
       view_mode: default
@@ -106,21 +67,21 @@ content:
     third_party_settings: {  }
     region: content
   field_learning_objectives:
-    weight: 2
-    label: hidden
+    weight: 3
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_lesson_intro_text:
-    weight: 8
-    label: hidden
+    weight: 9
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_lesson_toolkit:
-    weight: 11
+    weight: 12
     label: hidden
     settings:
       link: true
@@ -128,29 +89,31 @@ content:
     type: entity_reference_label
     region: content
   field_lesson_video:
-    weight: 13
+    weight: 1
     label: hidden
     settings:
-      link: true
+      view_mode: napo_video_from_msd_video
+      link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   field_resources_required:
     type: entity_reference_label
-    weight: 7
+    weight: 8
     region: content
-    label: hidden
+    label: above
     settings:
       link: true
     third_party_settings: {  }
   field_starter:
-    weight: 3
-    label: hidden
+    weight: 4
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
 hidden:
+  addtoany: true
   field_tags: true
   langcode: true
   links: true

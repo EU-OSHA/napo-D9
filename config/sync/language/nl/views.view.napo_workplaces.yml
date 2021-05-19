@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Toepassen
+      title: 'Napo op de werkplek'
+      header:
+        result:
+          content: '<h2>Spier- en skeletaandoeningen begrijpen <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Geen resultaten'

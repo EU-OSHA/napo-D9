@@ -1,0 +1,10 @@
+uuid: 8e31b1ec-2894-4242-b2f3-5efca7a9497f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.napo_video_from_msd_video
+label: 'Napo video from MSD Video'
+targetEntityType: node
+cache: true

@@ -1,0 +1,8 @@
+uuid: 9d5c3f4e-2982-42df-a97d-91940465c344
+langcode: en
+status: true
+dependencies: {  }
+id: block_node_views
+label: 'Block Node views'
+revision: 0
+description: ''

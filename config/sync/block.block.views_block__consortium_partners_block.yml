@@ -11,7 +11,7 @@ dependencies:
 id: views_block__consortium_partners_block
 theme: napo_theme
 region: footer_first
-weight: -11
+weight: -14
 provider: null
 plugin: 'views_block:consortium_partners-block'
 settings:

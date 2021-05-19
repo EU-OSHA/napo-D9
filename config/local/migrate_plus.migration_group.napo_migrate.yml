@@ -1,0 +1,15 @@
+uuid: f28cd8d6-f1fe-4725-9996-6783bc9c34ae
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - custom_migrations
+id: napo_migrate
+label: 'Migrate Napo Taxonomies'
+description: 'Migration Taxonomies from D7 to Drupal 8'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: migrate

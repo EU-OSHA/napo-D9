@@ -1,0 +1,37 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .block-views-blockconsortium-partners-block{
+    .views-row{
+      flex-wrap: wrap;
+      width: 80%;
+      margin: auto;
+      float: none;
+    }
+  }
+}
+@media (min-width: 992px){
+  #header{
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding:0;
+    }
+    .nav{
+      &-item{
+        &:hover,
+        &.show{
+          transition: all 0.1s;
+          background: $bg-color-blue-light-hover;
+          border-radius: 1.875rem 1.875rem 0rem 0rem;
+          .dropdown-menu{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px){
+  .block-simple-blocksearch-api{
+    .form-row>div{
+      display:none;
+    }
+  }
+}

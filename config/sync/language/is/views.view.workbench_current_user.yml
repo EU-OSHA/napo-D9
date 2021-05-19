@@ -1,0 +1,17 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      fields:
+        uid:
+          separator: ', '
+        name:
+          separator: ', '
+        access:
+          separator: ', '
+        roles:
+          separator: ', '

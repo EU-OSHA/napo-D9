@@ -16,6 +16,7 @@ permissions:
   - 'access site map'
   - 'access site-wide contact form'
   - 'display EU Cookie Compliance popup'
+  - 'display eu cookie compliance popup'
   - 'download any document files'
   - 'post comments'
   - 'search content'
@@ -25,3 +26,4 @@ permissions:
   - 'use manualcrop'
   - 'use text format filtered_html'
   - 'view files'
+  - 'view media'

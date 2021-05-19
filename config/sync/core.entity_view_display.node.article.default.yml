@@ -20,7 +20,7 @@ dependencies:
     - node.type.article
   module:
     - field_group
-    - slick
+    - media
     - text
     - user
 third_party_settings:
@@ -77,56 +77,12 @@ content:
     third_party_settings: {  }
     region: content
   field_image:
-    type: slick_media
+    type: media_thumbnail
     weight: 0
     region: content
     settings:
       image_style: large
-      thumbnail: ''
-      optionset_thumbnail: ''
-      skin_thumbnail: ''
-      thumbnail_caption: ''
-      thumbnail_effect: ''
-      thumbnail_position: ''
-      optionset: default
-      override: false
-      overridables: {  }
-      skin: ''
-      skin_arrows: ''
-      skin_dots: ''
-      cache: 0
-      current_view_mode: ''
-      fx: ''
-      style: ''
-      icon: ''
-      layout: ''
-      view_mode: ''
-      background: false
-      box_caption: ''
-      box_caption_custom: ''
-      box_media_style: ''
-      caption: {  }
-      responsive_image_style: ''
-      box_style: ''
-      media_switch: ''
-      ratio: ''
-      thumbnail_style: ''
-      _uri: ''
-      breakpoints: {  }
-      sizes: ''
-      grid_header: ''
-      preserve_keys: false
-      visible_items: 0
-      grid: 0
-      grid_medium: 0
-      grid_small: 0
-      class: ''
-      id: ''
-      image: ''
-      link: ''
-      overlay: ''
-      title: ''
-      vanilla: false
+      image_link: ''
     third_party_settings: {  }
     label: hidden
   field_list_of_activities:
@@ -144,6 +100,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  addtoany: true
   field_character_count: true
   field_expiration_date: true
   field_icon: true

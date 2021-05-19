@@ -4,7 +4,6 @@
 
 /*Font Family*/
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @font-face {
   font-family: 'Ubuntu', sans-serif;
 }
@@ -13,19 +12,11 @@
 /* Font colours */
 
 $text-color-blue: #1f3695;
-$text-color-blue-light: #666;
+$text-color-blue-light:#bbc2df;
 $text-color-white: #FFF;
-.text-color-blue {
-  color: #1f3695;
-}
-
-.text-color-blue-light {
-  color: #666;
-}
-
-.text-color-white {
-  color: #FFF;
-}
+$text-color-yellow: #f7e235;
+$text-color-grey-dark: #585759;
+$text-color-grey-3:#666;
 
 
 /* background colours */
@@ -35,55 +26,16 @@ $bg-color-blue-light-hover: #506B9E;
 $bg-color-blue-light: #bbc2df;
 $bg-color-blue-light-2: #b9c3e0;
 $bg-color-orange: #e95420;
-
-/*Accordions*/
-
 $bg-color-yellow: #f7e235;
 $bg-color-grey: #59595A;
 $bg-color-grey-light:#f2f1f2;
 $bg-color-grey-light-2: #e0e1e1;
 $bg-color-grey-light-3: #EEEDEE;
+$bg-color-grey-light-4: #ccc;
 $bg-color-white: #FFF;
-
-.bg-color-blue {
-  background: $bg-color-blue;
-}
-
-.bg-color-blue-light-hover {
-  background: $bg-color-blue-light-hover;
-}
-
-.bg-color-blue-light {
-  background: $bg-color-blue-light;
-}
-
-.bg-color-blue-light-2 {
-  background: $bg-color-blue-light-2;
-}
-
-.bg-color-yellow {
-  background: $bg-color-yellow;
-}
-
-.bg-color-grey {
-  background: $bg-color-grey;
-}
-
-.bg-color-grey-light {
-  background: $bg-color-grey-light;
-}
-
-.bg-color-grey-light-2 {
-  background: $bg-color-grey-light-2;
-}
-
-.bg-color-white {
-  background: $bg-color-white;
-}
-
-.bg-color-orange{
-  background-color:$bg-color-orange;
-}
+$bg-color-grey-2: #777777;
+$bg-color-grey-3:#666;
+$bg-color-black: #000;
 
 
 /* END - D9 - Variables NCW */

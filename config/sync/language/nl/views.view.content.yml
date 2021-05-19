@@ -1,9 +1,12 @@
 label: Content
+description: 'Find and manage content.'
 display:
   default:
     display_options:
       exposed_form:
         options:
+          submit_button: Filter
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -19,9 +22,11 @@ display:
           label: Title
         type:
           label: 'Content type'
+          separator: ', '
         name:
           label: Author
         status:
+          label: Status
           settings:
             format_custom_true: Published
             format_custom_false: Unpublished
@@ -37,6 +42,8 @@ display:
           expose:
             label: 'Content type'
         status:
+          expose:
+            label: Status
           group_info:
             label: 'Published status'
             group_items:
@@ -58,4 +65,5 @@ display:
         title: Content
       tab_options:
         title: Content
+        description: 'Find and manage content'
     display_title: Page

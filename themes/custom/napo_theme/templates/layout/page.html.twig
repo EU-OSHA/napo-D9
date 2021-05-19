@@ -1,6 +1,6 @@
 {% extends "@bootstrap_barrio/layout/page.html.twig" %}
 {% block head %}
-  <header id="navbar" role="banner" class="{{ navbar_classes }}">
+  <div id="navbar" role="banner" class="{{ navbar_classes }}">
     <div class="header_top_bar">
       <div class="header_top_bar_content container">
           {{ page.top_header }}
@@ -14,12 +14,14 @@
         <div class="header_nav col-md-8">
           <nav{{ navbar_attributes }}>
             {% if page.primary_menu %}
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+              <div class="container-toogle">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
               <div class="collapse navbar-collapse" id="CollapsingNavbar">
                 <div class="container">
                   {{ page.primary_menu }}
@@ -36,12 +38,26 @@
         </div>
       </div>
     </div>
-  </header>
+  </div>
 {% endblock %}
 
 {% block content %}
   <main class="container">
-    {{ page.content }}
+    {% if page.breadcrumb %}
+      <div class="breadcrumb">
+        {{ page.breadcrumb }}
+      </div>
+    {% endif %}
+    <div class="row content-node-view">
+      <div class="col-12">
+        {{ page.node_view }}
+      </div>
+    </div>
+    <div class="row content-page-content">
+      <div class="col-12">
+        {{ page.content }}
+      </div>
+    </div>
   </main>
 {% endblock %}
 

@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Wyślij
+      title: 'Napo w miejscu pracy'
+      header:
+        result:
+          content: '<h2>Czym są zaburzenia układu mięśniowo-szkieletowego? <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Brak wyników'

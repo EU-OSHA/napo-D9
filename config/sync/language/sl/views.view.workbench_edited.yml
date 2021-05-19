@@ -1,0 +1,31 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reset
+      fields:
+        title:
+          label: Title
+        type:
+          label: Tip
+        status:
+          label: Published
+        changed:
+          label: 'Nazadnje posodobljeno'
+        uid:
+          label: Author
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Tip
+        status:
+          expose:
+            label: Published
+      arguments:
+        uid_revision:
+          exception:
+            title: Vsi

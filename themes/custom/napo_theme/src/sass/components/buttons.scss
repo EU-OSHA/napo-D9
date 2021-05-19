@@ -1,0 +1,21 @@
+.back-button-custom{
+  a{
+    background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-button-back.png) ;
+    background-color: $bg-color-blue;
+    background-repeat: no-repeat;
+    background-position: 96% 8px;
+    color: $text-color-white;
+    height: 45px;
+    padding-top: 0.75rem;
+    padding-left: 1.125rem;
+    padding-right: 2.75rem;
+    padding-bottom:0.625rem;
+    font-weight: bold;
+  }
+  .user-logged-in &{
+    position: absolute;
+    z-index: 200;
+    top: -52px;
+    right: 0rem;
+  }
+}

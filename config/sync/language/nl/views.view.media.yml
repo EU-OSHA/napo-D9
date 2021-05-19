@@ -1,3 +1,4 @@
+label: Media
 description: 'Media zoeken en beheren.'
 display:
   default:
@@ -5,6 +6,8 @@ display:
     display_options:
       exposed_form:
         options:
+          submit_button: Filter
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -24,22 +27,34 @@ display:
           action_title: Actie
         thumbnail__target_id:
           label: Miniatuur
+          separator: ', '
         name:
           label: Medianaam
+          separator: ', '
+        bundle:
+          label: Type
+          separator: ', '
         uid:
           label: Author
+          separator: ', '
         status:
+          label: Status
           settings:
             format_custom_true: Published
             format_custom_false: Unpublished
+          separator: ', '
         changed:
           label: Updated
+          separator: ', '
         operations:
           label: Operations
       filters:
         name:
           expose:
             label: Medianaam
+        bundle:
+          expose:
+            label: Type
         status:
           expose:
             label: Waar
@@ -53,6 +68,12 @@ display:
         langcode:
           expose:
             label: Language
+      title: Media
       empty:
         area_text_custom:
           content: 'Geen media beschikbaar.'
+  media_page_list:
+    display_title: Media
+    display_options:
+      menu:
+        title: Media

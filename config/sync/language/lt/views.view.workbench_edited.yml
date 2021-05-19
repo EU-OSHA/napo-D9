@@ -1,0 +1,45 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        title:
+          label: Title
+        type:
+          label: Tipas
+        status:
+          label: Published
+        changed:
+          label: 'Paskutinis atnaujinimas'
+        uid:
+          label: Author
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Tipas
+        status:
+          expose:
+            label: Published
+      arguments:
+        uid_revision:
+          exception:
+            title: Visi
+  block_1:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'

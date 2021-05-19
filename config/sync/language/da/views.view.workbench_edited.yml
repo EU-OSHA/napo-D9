@@ -1,0 +1,76 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Udfør
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      fields:
+        nid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Type
+          separator: ', '
+        status:
+          label: Published
+          separator: ', '
+        changed:
+          label: 'Senest opdateret'
+          separator: ', '
+        uid:
+          label: Author
+          separator: ', '
+        revision_uid:
+          label: 'Redigeret af'
+          separator: ', '
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Type
+        status:
+          expose:
+            label: Published
+      title: 'Mine sider'
+      empty:
+        area:
+          content:
+            value: 'Du har ikke redigeret noget indhold.'
+      arguments:
+        uid_revision:
+          exception:
+            title: Alle
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      use_more_text: 'vis alle'

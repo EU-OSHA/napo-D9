@@ -1,0 +1,67 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Vrsta
+          separator: ', '
+        status:
+          label: Published
+          separator: ', '
+        name:
+          label: Author
+          separator: ', '
+        changed:
+          label: 'Posljednje osvježenje'
+          separator: ', '
+        edit_node:
+          label: Akcije
+          text: uredi
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Vrsta
+        status:
+          expose:
+            label: Published
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+      filters:
+        status:
+          expose:
+            label: Published
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Vrsta
+          separator: ', '
+        name:
+          label: Author
+          separator: ', '
+        changed:
+          label: 'Posljednje osvježenje'
+          separator: ', '
+        edit_node:
+          label: Akcije
+          text: uredi

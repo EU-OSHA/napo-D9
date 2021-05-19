@@ -8,14 +8,23 @@ display:
           exposed_sorts_label: 'Sort by'
       pager:
         options:
+          tags:
+            previous: ‹‹
+            next: ››
           expose:
             items_per_page_label: 'Hlutir per síðu'
             items_per_page_options_all_label: '- Allt -'
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         created:
           label: Stofnað
+          separator: ', '
         remote_addr:
           label: 'IP vistfang'
+          separator: ', '
         view_webform_submission:
           label: Operations
           text: skoða
@@ -28,12 +37,23 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Aðgerð
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
         created:
           label: Stofnað
+          separator: ', '
         completed:
           label: Lokið
+          separator: ', '
         remote_addr:
           label: 'IP vistfang'
+          separator: ', '
         operations:
           label: Operations
   embed_manage:
@@ -41,12 +61,23 @@ display:
       fields:
         webform_submission_bulk_form:
           action_title: Aðgerð
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
         created:
           label: Stofnað
+          separator: ', '
         completed:
           label: Lokið
+          separator: ', '
         remote_addr:
           label: 'IP vistfang'
+          separator: ', '
         view_webform_submission:
           label: Operations
           text: skoða
@@ -56,12 +87,23 @@ display:
   embed_review:
     display_options:
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
         created:
           label: Stofnað
+          separator: ', '
         completed:
           label: Lokið
+          separator: ', '
         remote_addr:
           label: 'IP vistfang'
+          separator: ', '
         view_webform_submission:
           label: Operations
           text: skoða

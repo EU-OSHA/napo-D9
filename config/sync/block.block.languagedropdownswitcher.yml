@@ -9,7 +9,7 @@ dependencies:
 id: languagedropdownswitcher
 theme: napo_theme
 region: header_form
-weight: 0
+weight: -18
 provider: null
 plugin: 'language_dropdown_block:language_interface'
 settings:

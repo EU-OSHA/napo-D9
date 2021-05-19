@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primijeni
+      title: 'Napo na radnom mjestu'
+      header:
+        result:
+          content: '<h2>Razumijevanje poremećaja mišićno-koštanog sustava <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Nema rezultata'

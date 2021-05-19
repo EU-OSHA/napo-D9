@@ -1,5 +1,6 @@
 settings:
   default_submit_button_label: Gönder
+  default_reset_button_label: Reset
   default_delete_button_label: Sil
   default_wizard_start_label: Başlangıç
   default_wizard_toggle_show_label: 'Tümünü göster'
@@ -8,6 +9,8 @@ settings:
   dialog_options:
     narrow:
       title: Dar
+    normal:
+      title: Normal
     wide:
       title: Geniş
 element:

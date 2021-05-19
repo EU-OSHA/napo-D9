@@ -10,8 +10,8 @@ _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
 id: napo_theme_help
 theme: napo_theme
-region: content
-weight: -11
+region: breadcrumb
+weight: -15
 provider: null
 plugin: help_block
 settings:

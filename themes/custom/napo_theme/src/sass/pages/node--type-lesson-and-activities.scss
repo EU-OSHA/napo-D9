@@ -1,0 +1,258 @@
+.node--type-lesson,
+.node--type-msds-activities{
+  .page-banner-custom{
+    padding: 0 0 2.5rem;
+    position: relative;
+  }
+  .video-custom{
+    header{
+      display:none;
+    }
+    video{
+      width:100%!important;
+      height:auto!important;
+    }
+    .field--type-entity-reference{
+      margin:0;
+    }
+  }
+  .content-text-facilitator-custom{
+    clear: both;
+    float:none;
+    margin-top:-6px;
+    padding-bottom:2.5rem;
+    min-height: 175px;
+    .introductory-text{
+      background: $bg-color-grey-light-3;
+      padding: 1.25rem 1.875rem 0.625rem 5rem;
+      min-height: 175px;
+      width: 76%;
+      float:left
+    }
+    .facilitator-guidance{
+      width: 24%;
+      float:right;
+      color: $text-color-white;
+      padding: 0.625rem;
+      border-radius: 0 0 1.875rem 1.875rem;
+      text-align: center;
+      background: $bg-color-blue;
+      font-size: 1.125rem;
+      .title-box{
+        font-weight: bold;
+        margin: 1.25rem 0 0.625rem;
+      }
+      .text-box{}
+      .link-box{
+        margin-bottom:0.625rem;
+        a{
+          position: relative;
+          background-image: url(/sites/napo/themes/custom/napo_theme/images/home-see-more.png) ;
+          background-position: right top;
+          background-repeat: no-repeat;
+          right: -11px;
+          bottom: -20px;
+          font-size: 1rem;
+          min-height: 3.125rem;
+          color:$text-color-white;
+          padding: 0rem 3.75rem 0rem 0rem;
+          text-align: right;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          line-height: 16px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .content-accordions-download-custom{
+    margin-top: 3.75rem;
+    padding: 0rem 3% 1.25rem 3%;
+
+    h2{
+      font-size:1.875rem;
+      padding:0rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .detail--text--block{
+      display:flex;
+      flex-direction: row;
+
+    }
+    .accordions{
+      width:76%;
+      flex:0 0 76%;
+      padding: 0rem 5rem 0rem 0rem;
+      margin-top: 1.25rem;
+      position: relative;
+      .accordion-item{
+        border-radius: 1.875rem;
+        padding: 0rem;
+        margin-bottom: 0.75rem;
+        border: 2px solid $bg-color-blue-light-2;
+        .field--type-entity-reference{
+          margin:0rem;
+        }
+        &.active{
+          border-color:$bg-color-blue;
+          .field__label{
+            background-color: $bg-color-blue;
+            color:$text-color-white;
+            background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-language-up.png)  ;
+
+          }
+        }
+      }
+      .field__label{
+        background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-language.png)  ;
+        background-repeat: no-repeat;
+        background-position: 97% 12px;
+        background-color: $bg-color-blue-light-2;
+        border-radius: 1.875rem;
+        padding: 0.625rem 1.25rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        position: relative;
+        z-index: 10;
+        margin: 0rem;
+        width:100%;
+        cursor: pointer;
+      }
+      .field__item{
+        border: 0rem;
+        padding: 1.25rem 1.875rem 1.875rem;
+        position: relative;
+        display: none;
+        color: $text-color-grey-3;
+        ul{
+          padding-inline-start: 40px;
+          font-size:1.125rem;
+          li{
+            strong{
+              width: auto;
+              padding: 2px 0 2px 1.875rem;
+              display: inline-block;
+              color: $text-color-grey-3;
+            }
+            &:nth-child(1) {
+              strong {
+                background-image: url(/sites/napo/themes/custom/napo_theme/images/star-rating.svg) ;
+                background-repeat: no-repeat;
+                background-size: 25px 25px;
+              }
+            }
+            &:nth-child(2) {
+              strong {
+                background-image: url(/sites/napo/themes/custom/napo_theme/images/star-rating-silver.svg) ;
+                background-repeat: no-repeat;
+                background-size: 25px 25px;
+              }
+            }
+            &:nth-child(3) {
+              strong {
+                background-image: url(/sites/napo/themes/custom/napo_theme/images/star-rating-bronze.svg) ;
+                background-repeat: no-repeat;
+                background-size: 25px 25px;
+              }
+            }
+          }
+        }
+        h4{
+          color:$text-color-blue;
+          font-size: 1.125rem;
+          margin: 1.25rem 0rem 0.875rem;
+        }
+      }
+    }
+    .download-box{
+      width:24%;
+      flex: 0 0 24%;
+      position:relative;
+      top:-2.25rem;
+      .download-title{
+        font-size: 1.125rem;
+        font-weight:bold;
+      }
+      ul{
+        margin: 1.25rem 0rem 0rem 0rem;
+        padding: 0rem;
+        list-style-type: none;
+        li{
+          border-bottom: 1px solid $bg-color-blue;
+          &:last-child{
+            border: none;
+            background: $bg-color-blue;
+            color: $text-color-white;
+            border-radius: 0rem 0rem 1.25rem 1.25rem;
+            a{
+              display: block;
+              color: $text-color-white;
+              padding: 0.625rem 1.25rem;
+              background-image: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png) ;
+              background-position: 96% 50%;
+              background-repeat: no-repeat;
+              text-transform: uppercase;
+            }
+          }
+          a{
+            padding: 0.625rem 2.5rem 0.625rem 1.25rem;
+            display: block;
+            background-image: url(/sites/napo/themes/custom/napo_theme/images/btn-download.png) ;
+            background-position: 96% 50%;
+            background-repeat: no-repeat;
+            font-size: 1.125rem;
+            &:hover{
+              text-decoration: none;
+              opacity: 0.6;
+
+              transition: all 0.6s;
+            }
+            &[target=_blank]:after{
+              display:none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .related{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 2.5rem 3%;
+    margin: 0rem 0rem 1.125rem 0rem;
+    background-image: url(/sites/napo/themes/custom/napo_theme/images/background-story.png) ;
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    h2{
+      flex-direction: row;
+      flex: 100%;
+      font-size: 1.875rem;
+      font-weight: bold;
+      margin: 0.625rem 0rem;
+    }
+  }
+
+  .back-button-custom {
+    position: relative;
+    z-index: 1;
+    top: 0rem;
+    right:auto;
+    left: 0rem;
+    margin-bottom:0.625rem;
+    a{
+      color: $text-color-blue;
+      height: auto;
+      font-size: 0.875rem;
+      font-weight: bold;
+      background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-back.png) ;
+      background-repeat: no-repeat;
+      background-position: left 50%;
+      background-color:transparent;
+      padding: 0.5rem 1rem;
+      background-size: auto 10px;
+    }
+  }
+}

@@ -11,7 +11,7 @@ dependencies:
 id: searchapi
 theme: napo_theme
 region: header_form
-weight: -8
+weight: -20
 provider: null
 plugin: 'simple_block:search_api'
 settings:

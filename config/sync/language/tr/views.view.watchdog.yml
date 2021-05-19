@@ -2,16 +2,29 @@ label: Bekçi
 description: 'Son günlük iletileri'
 display:
   default:
+    display_title: Master
     display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
             items_per_page_label: 'Sayfa başına öğe sayısı'
             items_per_page_options_all_label: '- Tümü -'
             offset_label: 'Başlangıç değeri'
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         nothing:
           admin_label: Simge
+        wid:
+          label: WID
         severity:
           label: 'Önem seviyesi'
         type:
@@ -20,8 +33,13 @@ display:
           label: Tarih
         message:
           label: İleti
+          alter:
+            alt: '{{ message }}'
         name:
           label: Kullanıcı
+          separator: ', '
+        link:
+          label: Operations
       filters:
         type:
           expose:
@@ -34,3 +52,5 @@ display:
         area:
           admin_label: 'Kayıt mesajı yok.'
           content: 'Kayıt mesajı yok.'
+  page:
+    display_title: Page

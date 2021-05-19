@@ -1,0 +1,25 @@
+uuid: dd432997-107a-4db8-96a7-1e7af7e9da40
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-social-media-menu
+  module:
+    - system
+  theme:
+    - napo_theme
+id: socialmediamenu
+theme: napo_theme
+region: footer_first
+weight: -13
+provider: null
+plugin: 'system_menu_block:menu-social-media-menu'
+settings:
+  id: 'system_menu_block:menu-social-media-menu'
+  label: 'Check us out in social media'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,13 @@
+tips:
+  search-api-index-fields-label:
+    label: Oznaka
+  search-api-index-fields-machine-name:
+    label: 'Stroju čitljiv naziv'
+  search-api-index-fields-type:
+    label: Vrsta
+  search-api-index-fields-edit:
+    label: 'Uredi polje'
+  search-api-index-fields-remove:
+    label: 'Ukloni polje'
+  search-api-index-fields-submit:
+    label: 'Spremi promjene'

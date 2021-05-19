@@ -1,0 +1,870 @@
+uuid: 5872566e-09ea-4551-82cd-6e7064d5c2bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+    - taxonomy
+    - node
+    - media
+    - file
+    - path
+    - search_api
+  config:
+    - field.storage.node.field_tags
+    - field.storage.node.field_archived
+    - field.storage.node.field_character_count
+    - field.storage.node.field_combined_tags
+    - field.storage.node.field_napo_film
+    - field.storage.node.field_download
+    - field.storage.taxonomy_term.field_excluded_from
+    - field.storage.node.field_main_tag
+    - field.storage.node.field_expiration_date
+    - field.storage.node.field_file_media
+    - field.storage.node.field_image
+    - field.storage.taxonomy_term.field_image
+    - field.storage.node.field_lesson_toolkit
+    - field.storage.node.field_lesson_video
+    - field.storage.media.field_media_oembed_video
+    - field.storage.node.field_video
+    - field.storage.media.field_media_video_file
+    - field.storage.node.field_msds_resources_required
+    - field.storage.node.field_msds_video
+    - field.storage.taxonomy_term.field_nace_changes
+    - field.storage.taxonomy_term.field_nace_code
+    - field.storage.node.field_nace_codes
+    - field.storage.taxonomy_term.field_nace_excludes
+    - field.storage.taxonomy_term.field_nace_includes
+    - field.storage.taxonomy_term.field_nace_includes_also
+    - field.storage.node.field_page_count
+    - field.storage.node.field_publication_date
+    - field.storage.taxonomy_term.field_tags_code
+    - field.storage.node.field_target_ages
+    - field.storage.node.field_thesaurus
+    - field.storage.taxonomy_term.field_thesaurus_code
+    - field.storage.node.field_video_type
+    - field.storage.node.body
+    - search_api.server.apache_solr
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    term_modifiers:
+      slop: 3
+      fuzzy: 1
+    advanced:
+      index_prefix: ''
+      collection: ''
+      timezone: ''
+id: default_multilingual_node_index
+name: 'Default multilingual node index'
+description: 'An automatically created search index for indexing multilingual node data. Might be configured to specific needs.'
+read_only: false
+field_settings:
+  aggregated_field:
+    label: 'Aggregated field categories'
+    property_path: aggregated_field
+    type: text
+    configuration:
+      type: union
+      fields:
+        - 'entity:node/field_combined_tags'
+  changed:
+    label: 'Tags » Taxonomy term » Changed'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:changed'
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  default_langcode:
+    label: 'Tags » Taxonomy term » Default translation'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:default_langcode'
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+  description:
+    label: 'Tags » Taxonomy term » Description'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:description'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+  field_archived:
+    label: 'Mark as outdated'
+    datasource_id: 'entity:node'
+    property_path: field_archived
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_archived
+  field_character_count:
+    label: 'Character count'
+    datasource_id: 'entity:node'
+    property_path: field_character_count
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_character_count
+  field_combined_tags:
+    label: Categories
+    datasource_id: 'entity:node'
+    property_path: field_combined_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_combined_tags
+  field_combined_tags_1:
+    label: 'Napo film » Content » Categories'
+    datasource_id: 'entity:node'
+    property_path: 'field_napo_film:entity:field_combined_tags'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_combined_tags
+        - field.storage.node.field_napo_film
+      module:
+        - node
+  field_combined_tags_2:
+    label: Categories
+    datasource_id: 'entity:node'
+    property_path: field_combined_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_combined_tags
+  field_download:
+    label: 'Napo film » Content » Download'
+    datasource_id: 'entity:node'
+    property_path: 'field_napo_film:entity:field_download'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_download
+        - field.storage.node.field_napo_film
+      module:
+        - node
+  field_excluded_from:
+    label: 'Tags » Taxonomy term » Excluded from'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:field_excluded_from'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+        - field.storage.taxonomy_term.field_excluded_from
+      module:
+        - taxonomy
+  field_excluded_from_1:
+    label: 'Main Category » Taxonomy term » Excluded from'
+    datasource_id: 'entity:node'
+    property_path: 'field_main_tag:entity:field_excluded_from'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_main_tag
+        - field.storage.taxonomy_term.field_excluded_from
+      module:
+        - taxonomy
+  field_expiration_date:
+    label: 'Expiration date'
+    datasource_id: 'entity:node'
+    property_path: field_expiration_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_expiration_date
+  field_file_media:
+    label: FIle
+    datasource_id: 'entity:node'
+    property_path: field_file_media
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_file_media
+  field_image:
+    label: Image
+    datasource_id: 'entity:node'
+    property_path: field_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_image
+  field_image_tags:
+    label: 'Tags » Taxonomy term » Image'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:field_image'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+        - field.storage.taxonomy_term.field_image
+      module:
+        - taxonomy
+  field_lesson_toolkit:
+    label: 'Lesson Toolkit'
+    datasource_id: 'entity:node'
+    property_path: field_lesson_toolkit
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_lesson_toolkit
+  field_lesson_video:
+    label: 'Lesson Video'
+    datasource_id: 'entity:node'
+    property_path: field_lesson_video
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_lesson_video
+  field_main_tag:
+    label: 'Main Category'
+    datasource_id: 'entity:node'
+    property_path: field_main_tag
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_main_tag
+  field_media_oembed_video:
+    label: 'Video » Media » Video URL'
+    datasource_id: 'entity:node'
+    property_path: 'field_video:entity:field_media_oembed_video'
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_media_oembed_video
+        - field.storage.node.field_video
+      module:
+        - media
+  field_media_video_file:
+    label: 'Video » Media » Video file'
+    datasource_id: 'entity:node'
+    property_path: 'field_video:entity:field_media_video_file'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.media.field_media_video_file
+        - field.storage.node.field_video
+      module:
+        - media
+  field_msds_resources_required:
+    label: 'Resources required'
+    datasource_id: 'entity:node'
+    property_path: field_msds_resources_required
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_msds_resources_required
+  field_msds_video:
+    label: 'MSDs Video'
+    datasource_id: 'entity:node'
+    property_path: field_msds_video
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_msds_video
+  field_nace_changes:
+    label: 'Tags » Taxonomy term » Changes'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:field_nace_changes'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+        - field.storage.taxonomy_term.field_nace_changes
+      module:
+        - taxonomy
+  field_nace_changes_1:
+    label: 'Main Category » Taxonomy term » Changes'
+    datasource_id: 'entity:node'
+    property_path: 'field_main_tag:entity:field_nace_changes'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_main_tag
+        - field.storage.taxonomy_term.field_nace_changes
+      module:
+        - taxonomy
+  field_nace_code:
+    label: 'Tags » Taxonomy term » Code'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:field_nace_code'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+        - field.storage.taxonomy_term.field_nace_code
+      module:
+        - taxonomy
+  field_nace_code_1:
+    label: 'Main Category » Taxonomy term » Code'
+    datasource_id: 'entity:node'
+    property_path: 'field_main_tag:entity:field_nace_code'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_main_tag
+        - field.storage.taxonomy_term.field_nace_code
+      module:
+        - taxonomy
+  field_nace_codes:
+    label: Nace
+    datasource_id: 'entity:node'
+    property_path: field_nace_codes
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_nace_codes
+  field_nace_excludes:
+    label: 'Tags » Taxonomy term » Excludes'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:field_nace_excludes'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+        - field.storage.taxonomy_term.field_nace_excludes
+      module:
+        - taxonomy
+  field_nace_excludes_1:
+    label: 'Main Category » Taxonomy term » Excludes'
+    datasource_id: 'entity:node'
+    property_path: 'field_main_tag:entity:field_nace_excludes'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_main_tag
+        - field.storage.taxonomy_term.field_nace_excludes
+      module:
+        - taxonomy
+  field_nace_includes:
+    label: 'Tags » Taxonomy term » Includes'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:field_nace_includes'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+        - field.storage.taxonomy_term.field_nace_includes
+      module:
+        - taxonomy
+  field_nace_includes_1:
+    label: 'Main Category » Taxonomy term » Includes'
+    datasource_id: 'entity:node'
+    property_path: 'field_main_tag:entity:field_nace_includes'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_main_tag
+        - field.storage.taxonomy_term.field_nace_includes
+      module:
+        - taxonomy
+  field_nace_includes_also:
+    label: 'Tags » Taxonomy term » Includes Also'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:field_nace_includes_also'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+        - field.storage.taxonomy_term.field_nace_includes_also
+      module:
+        - taxonomy
+  field_nace_includes_also_1:
+    label: 'Main Category » Taxonomy term » Includes Also'
+    datasource_id: 'entity:node'
+    property_path: 'field_main_tag:entity:field_nace_includes_also'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_main_tag
+        - field.storage.taxonomy_term.field_nace_includes_also
+      module:
+        - taxonomy
+  field_napo_film:
+    label: 'Napo film'
+    datasource_id: 'entity:node'
+    property_path: field_napo_film
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_napo_film
+  field_page_count:
+    label: 'Page count'
+    datasource_id: 'entity:node'
+    property_path: field_page_count
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_page_count
+  field_publication_date:
+    label: 'Publication date'
+    datasource_id: 'entity:node'
+    property_path: field_publication_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_publication_date
+  field_tags_code:
+    label: 'Tags » Taxonomy term » Code'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:field_tags_code'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+        - field.storage.taxonomy_term.field_tags_code
+      module:
+        - taxonomy
+  field_tags_code_1:
+    label: 'Main Category » Taxonomy term » Code'
+    datasource_id: 'entity:node'
+    property_path: 'field_main_tag:entity:field_tags_code'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_main_tag
+        - field.storage.taxonomy_term.field_tags_code
+      module:
+        - taxonomy
+  field_target_ages:
+    label: 'Target Ages'
+    datasource_id: 'entity:node'
+    property_path: field_target_ages
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_target_ages
+  field_thesaurus:
+    label: Thesaurus
+    datasource_id: 'entity:node'
+    property_path: field_thesaurus
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_thesaurus
+  field_thesaurus_code:
+    label: 'Tags » Taxonomy term » Code'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:field_thesaurus_code'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+        - field.storage.taxonomy_term.field_thesaurus_code
+      module:
+        - taxonomy
+  field_thesaurus_code_1:
+    label: 'Main Category » Taxonomy term » Code'
+    datasource_id: 'entity:node'
+    property_path: 'field_main_tag:entity:field_thesaurus_code'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_main_tag
+        - field.storage.taxonomy_term.field_thesaurus_code
+      module:
+        - taxonomy
+  field_video:
+    label: Video
+    datasource_id: 'entity:node'
+    property_path: field_video
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_video
+  field_video_type:
+    label: 'Video Type'
+    datasource_id: 'entity:node'
+    property_path: field_video_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_video_type
+  filemime:
+    label: 'Video » Media » Video file » File » File MIME type'
+    datasource_id: 'entity:node'
+    property_path: 'field_video:entity:field_media_video_file:entity:filemime'
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_media_video_file
+        - field.storage.node.field_video
+      module:
+        - file
+        - media
+  format:
+    label: 'Body » Text format'
+    datasource_id: 'entity:node'
+    property_path: 'body:format'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.body
+  language_with_fallback:
+    label: 'Language (with fallback)'
+    property_path: language_with_fallback
+    type: string
+  name:
+    label: 'Tags » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
+  parent:
+    label: 'Tags » Taxonomy term » Term Parents'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:parent'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+  parent_1:
+    label: 'Main Category » Taxonomy term » Term Parents'
+    datasource_id: 'entity:node'
+    property_path: 'field_main_tag:entity:parent'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_main_tag
+      module:
+        - taxonomy
+  path:
+    label: 'Tags » Taxonomy term » URL alias'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:path'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - path
+        - taxonomy
+  processed:
+    label: 'Body » Processed text'
+    datasource_id: 'entity:node'
+    property_path: 'body:processed'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  promote:
+    label: 'Promoted to front page'
+    datasource_id: 'entity:node'
+    property_path: promote
+    type: boolean
+    dependencies:
+      module:
+        - node
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        - anonymous
+      view_mode: {  }
+  revision_default:
+    label: 'Tags » Taxonomy term » Default revision'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:revision_default'
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
+  status_field_tags:
+    label: 'Tags » Taxonomy term » Published'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:status'
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+  summary:
+    label: 'Body » Summary'
+    datasource_id: 'entity:node'
+    property_path: 'body:summary'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.body
+  summary_processed:
+    label: 'Body » Processed summary'
+    datasource_id: 'entity:node'
+    property_path: 'body:summary_processed'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.body
+  tid:
+    label: 'Tags » Taxonomy term » Term ID'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:tid'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+  tid_1:
+    label: 'Main Category » Taxonomy term » Term ID'
+    datasource_id: 'entity:node'
+    property_path: 'field_main_tag:entity:tid'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_main_tag
+      module:
+        - taxonomy
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  uri:
+    label: 'Video » Media » Video file » File » URI'
+    datasource_id: 'entity:node'
+    property_path: 'field_video:entity:field_media_video_file:entity:uri'
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_media_video_file
+        - field.storage.node.field_video
+      module:
+        - file
+        - media
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+    configuration:
+      absolute: true
+  uuid:
+    label: UUID
+    datasource_id: 'entity:node'
+    property_path: uuid
+    type: string
+    dependencies:
+      module:
+        - node
+  uuid_tags:
+    label: 'Tags » Taxonomy term » UUID'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:uuid'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+  vid:
+    label: 'Revision ID'
+    datasource_id: 'entity:node'
+    property_path: vid
+    type: integer
+    dependencies:
+      module:
+        - node
+  vid_1:
+    label: 'Main Category » Taxonomy term » Vocabulary'
+    datasource_id: 'entity:node'
+    property_path: 'field_main_tag:entity:vid'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_main_tag
+      module:
+        - taxonomy
+  vid_tags:
+    label: 'Tags » Taxonomy term » Vocabulary'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:vid'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+  weight:
+    label: 'Tags » Taxonomy term » Weight'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:weight'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected:
+        - page
+        - panel
+        - webform
+    languages:
+      default: true
+      selected: {  }
+  'entity:search_api_task': {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  highlight:
+    highlight: always
+    highlight_partial: false
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<span class="highlighted">'
+    suffix: '</span>'
+    weights:
+      postprocess_query: 0
+  html_filter:
+    all_fields: true
+    fields:
+      - aggregated_field
+      - description
+      - field_download
+      - field_excluded_from
+      - field_excluded_from_1
+      - field_media_oembed_video
+      - field_nace_changes
+      - field_nace_changes_1
+      - field_nace_code
+      - field_nace_code_1
+      - field_nace_excludes
+      - field_nace_excludes_1
+      - field_nace_includes
+      - field_nace_includes_1
+      - field_nace_includes_also
+      - field_nace_includes_also_1
+      - field_page_count
+      - field_tags_code
+      - field_tags_code_1
+      - field_thesaurus_code
+      - field_thesaurus_code_1
+      - filemime
+      - format
+      - language_with_fallback
+      - name
+      - path
+      - processed
+      - rendered_item
+      - summary
+      - summary_processed
+      - title
+      - type
+      - uri
+      - url
+      - uuid
+      - uuid_tags
+      - vid_1
+      - vid_tags
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: apache_solr

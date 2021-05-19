@@ -1,0 +1,48 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reset
+      fields:
+        title:
+          label: Title
+        type:
+          label: Tip
+        status:
+          label: Published
+        name:
+          label: Author
+        changed:
+          label: 'Nazadnje posodobljeno'
+        edit_node:
+          label: Akcije
+          text: uredi
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Tip
+        status:
+          expose:
+            label: Published
+  block_1:
+    display_options:
+      filters:
+        status:
+          expose:
+            label: Published
+      fields:
+        title:
+          label: Title
+        type:
+          label: Tip
+        name:
+          label: Author
+        changed:
+          label: 'Nazadnje posodobljeno'
+        edit_node:
+          label: Akcije
+          text: uredi

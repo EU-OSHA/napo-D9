@@ -13,6 +13,7 @@ dependencies:
     - datetime
     - media
     - node
+    - pagerer
     - text
     - user
 id: napos_gallery
@@ -55,37 +56,32 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: full
+        type: pagerer
         options:
+          preset: custom_pagination
           items_per_page: 6
           offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+          id: '0'
+          total_pages: ''
           expose:
-            items_per_page: false
+            items_per_page: 0
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
+            items_per_page_options_all: 0
             items_per_page_options_all_label: '- All -'
-            offset: false
+            offset: 0
             offset_label: Offset
-          quantity: 7
       style:
         type: grid
         options:
-          uses_fields: false
+          grouping: {  }
           columns: 3
           automatic_width: true
           alignment: horizontal
           col_class_default: true
-          col_class_custom: ''
+          col_class_custom: 'col-sm-4 col-xs-12'
           row_class_default: true
-          row_class_custom: ''
+          row_class_custom: row
       row:
         type: fields
         options:
@@ -1074,10 +1070,10 @@ display:
         options:
           items_per_page: 1
           offset: 0
+      rendering_language: '***LANGUAGE_site_default***'
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
@@ -1093,6 +1089,22 @@ display:
       display_extenders:
         metatag_display_extender: {  }
       path: about-napo/napos-gallery
+      sorts:
+        field_publication_date_value:
+          id: field_publication_date_value
+          table: node__field_publication_date
+          field: field_publication_date_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          plugin_id: datetime
+      defaults:
+        sorts: false
     cache_metadata:
       max-age: -1
       contexts:

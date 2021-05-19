@@ -1,0 +1,84 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Rakenda
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Liik
+          separator: ', '
+        status:
+          label: Published
+          separator: ', '
+        name:
+          label: Author
+          separator: ', '
+        changed:
+          label: 'Viimati uuendatud'
+          separator: ', '
+        edit_node:
+          label: Toimingud
+          text: muuda
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Liik
+        status:
+          expose:
+            label: Published
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
+      filters:
+        status:
+          expose:
+            label: Published
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Liik
+          separator: ', '
+        name:
+          label: Author
+          separator: ', '
+        changed:
+          label: 'Viimati uuendatud'
+          separator: ', '
+        edit_node:
+          label: Toimingud
+          text: muuda

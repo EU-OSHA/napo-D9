@@ -1,0 +1,13 @@
+tips:
+  search-api-index-fields-label:
+    label: Etichetă
+  search-api-index-fields-machine-name:
+    label: 'Nume maşină'
+  search-api-index-fields-type:
+    label: Tip
+  search-api-index-fields-edit:
+    label: 'Modifică câmp'
+  search-api-index-fields-remove:
+    label: 'Elimină câmp'
+  search-api-index-fields-submit:
+    label: 'Salvare schimbări'

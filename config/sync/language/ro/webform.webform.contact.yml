@@ -1,2 +1,4 @@
+title: Contact
 settings:
   confirmation_message: 'Mesajul tău a fost trimis.'
+  confirmation_url: /using-napo/rights-and-permissions

@@ -1,0 +1,61 @@
+uuid: e6a2a9cb-07d9-4430-9f73-09c6a088eedb
+langcode: en
+status: true
+dependencies: {  }
+id: napo_and_friends
+label: 'Napo and friends'
+renderer: quick_tabs
+options:
+  quick_tabs:
+    class: ''
+    style: tabsbar
+    ajax: false
+hide_empty_tabs: false
+default_tab: 1
+configuration_data:
+  -
+    title: 'Reorder Napo and friends'
+    weight: -10
+    type: view_content
+    content:
+      qtabs_content:
+        options:
+          machine_name: napo_films
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: napo_and_friends
+          display: page_1
+          args: ''
+  -
+    title: View
+    weight: -9
+    type: view_content
+    content:
+      qtabs_content:
+        options:
+          machine_name: napo_films
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: napo_and_friends
+          display: page_2
+          args: ''

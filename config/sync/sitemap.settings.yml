@@ -1,0 +1,149 @@
+page_title: Sitemap
+message:
+  value: ''
+  format: plain_text
+plugins:
+  'menu:account':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'User account menu'
+      show_disabled: false
+  'menu:admin':
+    enabled: false
+    weight: 0
+    settings:
+      title: Administration
+      show_disabled: false
+  'menu:devel':
+    enabled: false
+    weight: 0
+    settings:
+      title: Development
+      show_disabled: false
+  'menu:footer':
+    enabled: false
+    weight: 0
+    settings:
+      title: Footer
+      show_disabled: false
+  'menu:main':
+    enabled: true
+    weight: 0
+    settings:
+      title: 'Main navigation'
+      show_disabled: false
+  'menu:menu-social-media-menu':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Social media menu'
+      show_disabled: false
+  'menu:tools':
+    enabled: false
+    weight: 0
+    settings:
+      title: Tools
+      show_disabled: false
+  frontpage:
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Front page'
+      rss: /rss.xml
+  'vocabulary:main_category':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Main Category'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:nace_codes':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Nace Codes'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:tags':
+    enabled: false
+    weight: 0
+    settings:
+      title: Tags
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:target_ages':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Target Ages'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:thesaurus':
+    enabled: false
+    weight: 0
+    settings:
+      title: Thesaurus
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:video_type':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Video Type'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  book:
+    enabled: false
+    weight: 0
+include_css: true
+_core:
+  default_config_hash: xu0yG13sSQJcXrOJJqsn44W_hUWAIFHVlphrzxT2ycU

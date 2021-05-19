@@ -1,0 +1,30 @@
+default_config:
+  tags:
+    page_breaker: …
+    pages:
+      prefix_label: Page
+      previous: ‹
+      next: ›
+      page_current_title: 'Jelenlegi oldal'
+      page_title: '@number. oldalra ugrás'
+      first_title: 'Ugrás az első oldalra'
+      previous_title: 'Ugrás az előző oldalra'
+      next_title: 'Ugrás a következő oldalra'
+      last_title: 'Ugrás az utolsó oldalra'
+      page_current_reader: 'Jelenlegi oldal'
+      page_reader: Page
+      first_reader: 'Első oldal'
+      previous_reader: 'Előző oldal'
+      next_reader: 'Következő oldal'
+      last_reader: 'Utolsó oldal'
+    items:
+      prefix_label: Tétel
+      previous: ‹
+      next: ›
+      page_reader: Tétel
+      first_reader: 'Első listaelem'
+    item_ranges:
+      prefix_label: Tételek
+      previous: ‹
+      next: ›
+      page_reader: Tételek

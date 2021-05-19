@@ -1,0 +1,18 @@
+uuid: abfff401-e353-4d46-9e0a-92e93c4339c9
+langcode: en
+status: true
+dependencies: {  }
+id: develop
+label: Develop
+description: ''
+folder: sites/napo/config/develop
+module:
+  search_api: 0
+  search_api_solr: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - search_api.server.apache_solr
+graylist_dependents: false
+graylist_skip_equal: true
+weight: 0

@@ -369,6 +369,45 @@ display:
             operator_limit_selection: false
             operator_list: {  }
           group: 1
+        field_download_value:
+          id: field_download_value
+          table: node__field_download
+          field: field_download_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: 'true'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: string
       sorts: {  }
       title: 'Download centre'
       header:
@@ -379,14 +418,25 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: true
-          tokenize: false
+          empty: false
+          tokenize: true
           content:
             value: "From this download centre, you can either download all the videos you have selected in one operation, or you can select from the list, and click on \"download selected\" to download only the chosen ones.\r\nYou can, as well, remove selected videos from the download centre list, by clicking on the \"X\" button, and select the format of the video, by clicking on the \"arrow\" button and selecting the format."
             format: full_html
           plugin_id: text
       footer: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: true
+          content: 'To download complete Napo films or selected scenes to your PC go to the Napo website (www.napofilm.net) and go to the film or the scene you want to download. You can either click on the ''Download'' button <span class="glyphicon napo-film-video-download-form-title inline-icon"></span>, or add your video to the download centre, by clicking on the ''Add to download centre'' button <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'
+          plugin_id: text_custom
       relationships: {  }
       arguments: {  }
       display_extenders: {  }

@@ -2,22 +2,35 @@ label: Sözlükçe
 description: 'Harfe göre tüm içerikler.'
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Uygula
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
             items_per_page_label: 'Sayfa başına öğe sayısı'
             items_per_page_options_all_label: '- Tümü -'
             offset_label: 'Başlangıç değeri'
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
+        title:
+          label: Title
+        name:
+          label: Author
         changed:
           label: 'Son güncelleme'
   attachment_1:
     display_title: Ek
   page_1:
+    display_title: Page
     display_options:
       menu:
         title: Sözlükçe

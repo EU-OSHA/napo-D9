@@ -1,0 +1,5 @@
+custom:
+  text_current: '{current} di {total}'
+  text_previous: '« Prec'
+  text_next: 'Succ »'
+  text_close: Chiudi

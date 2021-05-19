@@ -1,0 +1,47 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apstiprināt
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      fields:
+        title:
+          label: Title
+        type:
+          label: Veids
+        status:
+          label: Published
+        changed:
+          label: 'Pēdējo reizi atjaunināts'
+        uid:
+          label: Author
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Veids
+        status:
+          expose:
+            label: Published
+      arguments:
+        uid_revision:
+          exception:
+            title: Visi
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: '"'
+            next: '"'
+          expose:
+            items_per_page_options_all_label: '- Visi -'

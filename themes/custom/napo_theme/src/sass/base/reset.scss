@@ -4,6 +4,14 @@
   padding:0px;
 }
 
+*,
+button,
+a{
+  &:focus{
+    outline:none;
+  }
+}
+
 .clearfix{
   clear: both;
   float: none;
@@ -16,7 +24,8 @@ body{
 }
 
 body{
-  background: $bg-color-white;
+  font-family: 'Ubuntu',cursive;
+  color:$text-color-blue;
 }
 
 
@@ -29,3 +38,35 @@ body{
 .form-group {
   margin-bottom: 0rem;
 }
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.node__content{
+  margin: 0px;
+  font-size:inherit;
+}
+
+p{
+  font-size:1.125rem;
+}
+
+.block-system-main-block{
+  margin:0px;
+  padding:0px!important;
+}
+
+a{
+  color:$text-color-blue;
+  &:hover{
+    color:$text-color-blue;
+  }
+}
+div.pagerer-container{
+  margin:0px;
+  padding:0px;
+}
+

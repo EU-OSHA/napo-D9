@@ -5,12 +5,20 @@
 @import 'base/variables';
 
 @import 'components/accordion';
+@import 'components/breadcrumb';
 @import 'components/buttons';
+@import 'components/carousel';
+@import 'components/colorbox';
+@import 'components/form-fields';
 @import 'components/grid';
 @import 'components/headings';
 @import 'components/helper';
 @import 'components/links';
 @import 'components/modal';
+@import 'components/pager';
+@import 'components/select';
+@import 'components/table';
+@import 'components/tabs';
 
 @import 'layout/body';
 @import 'layout/footer';
@@ -19,11 +27,30 @@
 @import 'layout/menu';
 @import 'layout/section';
 
+@import 'display/facets';
+@import 'display/faqs';
+@import 'display/lessons-item';
+@import 'display/napo-film-episodes';
+@import 'display/napo-film-list-view';
+@import 'display/napo-for-teachers';
+@import 'display/napo-gallery';
+@import 'display/napo-workplaces';
+@import 'display/recommended-films';
+@import 'display/search-form';
+@import 'display/search-results';
+@import 'display/share-this-on';
+@import 'display/sitemap';
 
-@import 'block/blockfooter-social';
-@import 'block/consortium-partners';
-@import 'block/faqs';
+@import 'pages/coming-soon';
+@import 'pages/download-centre';
+@import 'pages/napo-films';
+@import 'pages/napo-in-the-workplace-and-teachers';
+@import 'pages/napo-story';
+@import 'pages/node--type-lesson-and-activities';
+@import 'pages/node--type-napo-video';
+@import 'pages/photo-gallery-detail';
 
 @import 'responsive/common/common-responsive';
+@import 'responsive/desktop/desktop-responsive';
 @import 'responsive/mobile/mobile-responsive';
 @import 'responsive/tablet/tablet-responsive';

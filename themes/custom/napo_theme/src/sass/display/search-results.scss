@@ -1,0 +1,25 @@
+.node_search-results{
+  .list-group{
+    &-item{
+      padding: 0 1.125rem 1.125rem 1.125rem;
+      border:none;
+      &:hover{
+        background: url(/sites/napo/themes/custom/napo_theme/images/napo-search-results-background.png) repeat;
+      }
+      h3{
+        margin:0;
+        padding:0;
+        a{
+          color: $text-color-grey-dark;
+          font-weight: bold;
+          font-size: 1rem;
+          margin-bottom: 0.625rem;
+          margin-top: 1.25rem;
+          line-height: 1;
+          display: block;
+        }
+      }
+      p{}
+    }
+  }
+}

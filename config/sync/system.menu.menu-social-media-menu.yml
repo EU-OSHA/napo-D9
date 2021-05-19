@@ -1,0 +1,8 @@
+uuid: 05591e3e-4580-4321-a773-87aa9c7f453f
+langcode: en
+status: true
+dependencies: {  }
+id: menu-social-media-menu
+label: 'Social media menu'
+description: ''
+locked: false

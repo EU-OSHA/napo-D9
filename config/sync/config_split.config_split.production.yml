@@ -1,0 +1,25 @@
+uuid: 20e2b87e-aebc-4aad-a983-cc03d8cc5889
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: ''
+folder: sites/napo/config/production
+module:
+  authorization: 0
+  ldap_authentication: 0
+  ldap_authorization: 0
+  ldap_query: 0
+  ldap_servers: 0
+  ldap_user: 0
+  matomo: 0
+  externalauth: 10
+theme: {  }
+blacklist: {  }
+graylist:
+  - matomo.settings
+  - ultimate_cron.job.matomo_cron
+graylist_dependents: false
+graylist_skip_equal: true
+weight: 0

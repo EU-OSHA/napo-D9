@@ -1,0 +1,23 @@
+uuid: 23cd5e1c-6c78-4351-8875-53ab87bd14ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.duplicate_of_duplicate_of_categories
+  module:
+    - facets
+  theme:
+    - napo_theme
+id: duplicateofduplicateofcategories
+theme: napo_theme
+region: content
+weight: -10
+provider: null
+plugin: 'facet_block:duplicate_of_duplicate_of_categories'
+settings:
+  id: 'facet_block:duplicate_of_duplicate_of_categories'
+  label: 'Duplicate of Duplicate of Categories'
+  provider: facets
+  label_display: visible
+  block_id: duplicateofduplicateofcategories
+visibility: {  }

@@ -1,3 +1,4 @@
 title: Tengiliður
 settings:
   confirmation_message: 'Skilaboð þín hafa verið send.'
+  confirmation_url: /using-napo/rights-and-permissions

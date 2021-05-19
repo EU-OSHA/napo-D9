@@ -1,3 +1,4 @@
 title: Kapcsolat
 settings:
   confirmation_message: 'Az üzenet elküldve.'
+  confirmation_url: /using-napo/rights-and-permissions

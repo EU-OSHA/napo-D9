@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Sækja um'
+      title: 'Napo á vinnustaðnum'
+      header:
+        result:
+          content: '<h2>Skilningur á stoðkerfisvandamálum <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Engar niðurstöður'

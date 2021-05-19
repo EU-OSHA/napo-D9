@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pieteikt
+      title: 'Napo darbavietā'
+      header:
+        result:
+          content: '<h2>Izpratne par balsta un kustību aparāta slimībām <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Nav rezultātu'

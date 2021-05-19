@@ -1,0 +1,5 @@
+tips:
+  search-api-server-form-name:
+    label: 'Название сервера'
+  search-api-server-form-description:
+    label: 'Описание сервера'

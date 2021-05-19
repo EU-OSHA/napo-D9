@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Lancer la recherche'
+      title: 'Napo sur le lieu du travail'
+      header:
+        result:
+          content: '<h2>Comprendre les TMS <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Pas de résultats'

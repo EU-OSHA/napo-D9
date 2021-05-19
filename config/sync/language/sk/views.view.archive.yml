@@ -5,6 +5,7 @@ display:
       exposed_form:
         options:
           submit_button: Použiť
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -14,6 +15,9 @@ display:
             items_per_page_label: 'Položiek na stránku'
             items_per_page_options_all_label: '- Všetko -'
             offset_label: 'Zobraziť od'
+          tags:
+            previous: ‹‹
+            next: ››
   block_1:
     display_title: Blok
   page_1:
