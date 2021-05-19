@@ -1,14 +1,14 @@
-uuid: 468bbb0c-a4e6-4812-9889-1f89bfe56b79
+uuid: 65cd5e38-c73c-4fbd-a273-951533614175
 langcode: en
 status: true
 dependencies:
   module:
-    - matomo
+    - ldap_user
 title: 'Default cron handler'
-id: matomo_cron
+id: ldap_user_cron
 weight: 0
-module: matomo
-callback: matomo_cron
+module: ldap_user
+callback: ldap_user_cron
 scheduler:
   id: simple
 launcher:
