@@ -65,6 +65,11 @@ module:
   layout_builder: 0
   layout_discovery: 0
   layoutcomponents: 0
+  ldap_authentication: 0
+  ldap_authorization: 0
+  ldap_query: 0
+  ldap_servers: 0
+  ldap_user: 0
   link: 0
   locale: 0
   mailsystem: 0
