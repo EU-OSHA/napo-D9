@@ -1,0 +1,40 @@
+.breadcrumb{
+  margin:0;
+  padding:0;
+  background-color: $bg-color-white;
+  .navigation{
+    line-height:1;
+  }
+  ol{
+    font-size: 0.875rem;
+    padding: 1rem 0.625rem;
+  }
+  &-item{
+    padding:0;
+    & + .breadcrumb-item{
+      padding:0;
+      &:before{
+        padding:0 0.25rem;
+        color: $text-color-blue;
+        content: "»";
+      }
+    }
+    &:not(:first-of-type){
+      a{
+        cursor:default;
+        pointer-events: none;
+      }
+    }
+    &:first-of-type{
+      a{
+        font-weight: bold;
+        border-bottom: 1px solid $text-color-yellow;
+        &:hover{
+          border-color:transparent;
+          color: $text-color-grey-3;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

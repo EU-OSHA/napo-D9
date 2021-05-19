@@ -1,13 +1,4 @@
 
-.pagerer{
-  &-container{}
-  &-panes{}
-  &-left-pane{}
-  &-center-pane{}
-  &-right-pane{}
-  &-pager-standard{}
-
-}
 
 .pager{
   &__items{
@@ -15,8 +6,8 @@
     flex-direction: row;
     list-style: none;
     justify-content: center;
-    padding:0px;
-    margin:20px 0 0 0;
+    padding:0rem;
+    margin:1.125rem 0rem 0rem 0rem;
     background: $bg-color-grey-light;
     align-items: center;
   }
@@ -24,7 +15,7 @@
     display:inline-block;
     vertical-align: middle;
     line-height: 1;
-    padding: 4px;
+    padding: 0.25rem;
     &--first{
       margin-right:9px;
       a{
@@ -88,95 +79,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-/***********************************************************/
-
-
-
-/*.pagination{
-  background: #f2f1f2;
-  margin: 20px 0 0 0;
-  text-align: center;
-  justify-content: center;
-
-  .first,
-  .prev,
-  .last,
-  .pager__item--next{
-    margin:0 0.5rem;
-    .sr-only{
-      display:none;
-    }
-    span{
-      color:transparent;
-      width: 24px;
-      height: 25px;
-      display: block;
-      overflow: hidden;
-    }
-  .page-link{
-    padding:4px;
-  }
-  }
-}
-.page{
-  &-item{
-    display:inline-block;
-    &.active{
-      .page-link{
-        background: transparent;
-        text-decoration: underline;
-        color: $text-color-blue;
-      }
-    }
-    &.first{
-      span{
-        background: url(/sites/napo/themes/custom/napo_theme/images/pagination-first.png) no-repeat;
-      }
-    }
-    &.prev{
-      span{
-        background: url(/sites/napo/themes/custom/napo_theme/images/pagination-previous.png) no-repeat;
-      }
-    }
-    &.last{
-      span{
-        background: url(/sites/napo/themes/custom/napo_theme/images/pagination-last.png) no-repeat;
-      }
-    }
-  }
-  &-link{
-    background: transparent;
-    border: 1px;
-    font-weight: bold;
-    padding: 5px ;
-    font-size:1.125rem;
-    color: $text-color-blue;
-    display: block;
-    &:hover{
-      color: $text-color-blue;
-      text-decoration: none;
-      background-color: transparent;
-      border-color: transparent;
-    }
-    &:focus{
-      box-shadow: none;
-    }
-  }
-}
-.pager__item{
-  &--next{
-    span{
-      background: url(/sites/napo/themes/custom/napo_theme/images/pagination-next.png) no-repeat;
-    }
-
-  }
-}
-*/

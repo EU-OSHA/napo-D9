@@ -10,9 +10,9 @@
     vertical-align:bottom;
     background-color: $bg-color-blue-light;
     border:none;
-    padding:0px;
-    margin:0px;
-    height:26px;
+    padding:0rem;
+    margin:0rem;
+    height:1.625rem;
     &.active{
       background-color: $bg-color-yellow;
       z-index: 2;
@@ -43,6 +43,5 @@
       background-repeat: no-repeat;
     }
   }
-  .quicktabs-loaded{}
 
 }

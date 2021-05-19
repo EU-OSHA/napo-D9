@@ -82,7 +82,7 @@
        background: $bg-color-white;
        padding: 0 ;
        border-bottom: 1px solid $bg-color-grey-light-4 ;
-       border-radius: 0;
+       border-radius: 0rem;
        text-align: left;
        margin: 0 ;
        flex-direction: column;
@@ -109,7 +109,7 @@
            border-bottom: 1px solid $bg-color-blue;
            &.dropdown-toggle{
              &:after {
-               border-top: 0;
+               border-top: 0rem;
                border-right: .3em solid transparent;
                border-bottom: .3em solid;
                border-left: .3em solid transparent;
@@ -134,7 +134,7 @@
            content: "";
            border-top: .3em solid;
            border-right: .3em solid transparent;
-           border-bottom: 0;
+           border-bottom: 0rem;
            border-left: .3em solid transparent;
            background: none;
            width: auto;
@@ -248,7 +248,7 @@
     background: $bg-color-blue;
     color: $text-color-white;
     font-size: 1.125rem;
-    margin: 0;
+    margin: 0rem;
     padding: 0 0.625rem;
     line-height:1.5;
     width:136px!important;
@@ -296,7 +296,7 @@
     overflow: hidden;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
-    opacity: 0;
+    opacity: 0rem;
     &.in{
       width: 80%;
       opacity: 1;
@@ -312,7 +312,7 @@
           width:calc(100% - 40px);
         }
         input{
-          border-radius: 0;
+          border-radius: 0rem;
           width: 100%;
           padding: 1.25rem;
           border-bottom: 1px dotted $bg-color-white;
@@ -372,7 +372,7 @@
          width: 100%;
         flex: 0 0 100%;
         padding: 0 ;
-        margin-top: 0;
+        margin-top: 0rem;
       }
       .download-box {
         .download-title{
@@ -387,7 +387,7 @@
             &:last-child{
               flex: 100%;
               text-align: center;
-              margin: 1rem 0 0;
+              margin: 1rem 0rem 0rem;
             }
           }
         }
@@ -408,12 +408,14 @@
   }
   .napos-films-coming-soon{
     .field--name-field-image{
+      float:none;
       img{
         margin:0 auto;
       }
     }
     .field--name-body{
       width:100%;
+      padding:0;
     }
   }
   .napo-story {
@@ -425,6 +427,66 @@
       margin-bottom:1.125rem;
     }
   }
+  .view-napo-and-friends{
+    .views-row{
+      padding:50px 65px;
+    }
+    .views-slideshow-controls-top{
+      display:none;
+    }
+    .views_slideshow_cycle_main{
+      .views-row{
+        padding-top:0;
+      }
+      .views-field-field-image {
+        float: none;
+        .image-style-large{
+          padding-bottom:0;
+        }
+      }
+    }
+    .skin-default{
+      width:100%;
+    }
+    .views_slideshow_slide{
+      width:100%!important;
+    }
+    .views-slideshow-controls-bottom {
+      .views_slideshow_controls_text_previous{
+        top:7%;
+      }
+      .views_slideshow_controls_text_next{
+        top:7%;
+        right:0;
+        left:222px;
+      }
+    }
+  }
+  .node--type-napo-album {
+    .field--type-text-with-summary{
+      width:100%;
+      p{
+        margin:0;
+      }
+    }
+    #share-this-on{
+      padding-top:0;
+    }
+  }
+
+  .napo-film-list-view,
+  .napo-film-list-view {
+    .views-view-grid {
+      .view-scenes,
+      .view-video{
+        position:relative;
+        margin:0;
+        left:initial;
+        width:100%;
+        margin-top:0.75rem;
+      }
+    }
+  }
 }
 
 
@@ -433,6 +495,130 @@
   .view-napo-workplaces {
     .views-row{
       width:100%;
+    }
+  }
+  .napo-film-list-view{
+    .views-col{
+      padding:0px;
+    }
+   .views-view-grid {
+     .napo-film-content-container{
+       position:relative;
+       transform: none;
+       bottom:initial;
+       left:initial;
+     }
+   }
+  }
+  .napos-films-films{
+    .block-page-title-block h1{
+      margin-top:5rem;
+    }
+    .block-views-exposed-filter-blocknapo-films-index-page-1{
+      top:-7rem;
+      right:0;
+      padding:0 1rem;
+      .form-group{
+        max-width:calc(100% - 51px);
+      }
+      .form-row{
+        margin:0;
+      }
+    }
+    .block-facet--links.facet-active {
+      top:-7rem;
+      & + .block-views-exposed-filter-blocknapo-films-index-page-1{
+
+        top:-4.25rem;
+      }
+    }
+  }
+
+  .search-facet-active-custom{
+    &.napos-films-films{
+      .block-page-title-block h1{
+        margin-top:7rem;
+      }
+      .block-facet--links.facet-active {
+        top:-9rem;
+        right:0;
+        padding:0 1rem;
+        width:100%;;
+        .item-list__links{
+          width:100%;
+        }
+        & + .block-views-exposed-filter-blocknapo-films-index-page-1{
+          top:-6.5rem;
+        }
+      }
+    }
+  }
+  .node--type-napo-video {
+    .conten-video-info {
+      .napo-film-video-download-form{
+        position:relative;
+        background-color:$bg-color-grey-light;
+        .download{
+          margin-left:auto;
+        }
+      }
+    }
+    .conten-video-info-tags {
+      .categories {
+        .field--type-entity-reference{
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .content-page-content{
+    &>.col-12{
+      padding:0;
+      .napo-story &,
+      .page-view-napos-gallery &,
+      .node--type-napo-album &,
+      .path-napos-films &,
+      .napos-films-coming-soon &{
+        padding:0 1rem;
+      }
+    }
+  }
+
+
+  .node--type-napo-video {
+    .conten-video-info-tags {
+      padding-right:1.5rem;
+    }
+  }
+  .node--type-lesson ,
+  .node--type-msds-activities{
+    .content-accordions-download-custom{
+      .download-box {
+        ul{
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .node--type-napo-video{
+    .block-page-title-block {
+      h1{
+        margin-top:5rem;
+      }
+    }
+    &.user-logged-in {
+      .back-button-custom{
+        top:-152px;
+        width:100%;
+        a{
+          display:block;
+        }
+      }
+    }
+  }
+  .quicktabs-tabs.list-group {
+    .list-group-item{
+      flex:1;
     }
   }
 }
