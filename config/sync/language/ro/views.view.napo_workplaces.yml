@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Start
+      title: 'Napo la locul de muncă'
+      header:
+        result:
+          content: '<h2>Ce sunt afecțiunile musculo-scheletice <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Niciun rezultat'

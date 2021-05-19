@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Applika
+      title: 'Napo fuq il-post tax-xogħol'
+      header:
+        result:
+          content: '<h2>Nifhmu l-MSDs <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'L-ebda riżultati'

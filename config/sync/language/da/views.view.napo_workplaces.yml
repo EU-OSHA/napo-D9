@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Søg
+      header:
+        result:
+          content: '<h2>Forstå muskel- og skeletbesvær <span class="lessons-available">[@total]</span></h2>'
+      title: 'Napo på arbejdspladsen'
+      empty:
+        area_text_custom:
+          content: 'Ingen resultater'

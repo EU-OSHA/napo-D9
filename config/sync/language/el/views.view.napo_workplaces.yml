@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Έναρξη αναζήτησης'
+      title: 'Ο Napo στον χώρο εργασίας'
+      header:
+        result:
+          content: '<h2>Κατανόηση των Μυοσκελετικών Παθήσεων <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Δεν υπάρχουν αποτελέσματα'

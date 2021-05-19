@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Vyhledat
+      header:
+        result:
+          content: '<h2>Porozumění muskuloskeletárním poruchám <span class="lessons-available">[@total]</span></h2>'
+      title: 'Napo na pracovišti'
+      empty:
+        area_text_custom:
+          content: 'Žádné výsledky'

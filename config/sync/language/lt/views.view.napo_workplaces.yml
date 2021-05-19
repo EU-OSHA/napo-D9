@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Ieškoti
+      title: 'Napas darbo vietoje'
+      header:
+        result:
+          content: '<h2>Raumenų ir kaulų sistemos sutrikimų suvokimas <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Rezultatų nerasta'

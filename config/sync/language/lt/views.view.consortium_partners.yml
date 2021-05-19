@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Ieškoti
+      title: 'Napas yra ... iniciatyva'
+  block_1:
+    display_options:
+      title: 'Napas yra Napo konsorciumo iniciatyva'

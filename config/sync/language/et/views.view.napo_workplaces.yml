@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Otsi
+      title: 'Napo töökohal'
+      header:
+        result:
+          content: '<h2>Luu- ja lihaskonna vaevuste mõistmine <span class="lessons-available">[@total]</span></h2>'
+      empty:
+        area_text_custom:
+          content: 'Tulemusi ei ole'

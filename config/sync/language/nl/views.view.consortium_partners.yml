@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Toepassen
+      title: 'Napo is een initiatief van:'
+  block_1:
+    display_options:
+      title: 'Napo is een initiatief van het Napo-consortium.'
