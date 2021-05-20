@@ -11,3 +11,7 @@ display:
       empty:
         area_text_custom:
           content: 'Nema rezultata'
+      filters:
+        combine:
+          expose:
+            placeholder: Pretraživanje...

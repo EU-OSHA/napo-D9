@@ -11,3 +11,7 @@ display:
       empty:
         area_text_custom:
           content: 'Žádné výsledky'
+      filters:
+        combine:
+          expose:
+            placeholder: Vyhledávání...

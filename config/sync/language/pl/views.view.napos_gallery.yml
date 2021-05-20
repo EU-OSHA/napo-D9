@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Wyślij
+      title: 'Galeria zdjęć'

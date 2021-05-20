@@ -11,3 +11,7 @@ display:
       empty:
         area_text_custom:
           content: 'Inga resultat'
+      filters:
+        combine:
+          expose:
+            placeholder: Sök...
