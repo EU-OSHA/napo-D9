@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      filters:
+        combine:
+          expose:
+            placeholder: Cerca...
+      title: 'Materials d''estudi per als professors'

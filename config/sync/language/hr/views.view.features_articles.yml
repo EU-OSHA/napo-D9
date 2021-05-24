@@ -4,3 +4,7 @@ display:
       exposed_form:
         options:
           submit_button: Primijeni
+      fields:
+        title_1:
+          alter:
+            text: 'Vidi više'

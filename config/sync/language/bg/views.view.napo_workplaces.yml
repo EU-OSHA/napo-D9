@@ -11,3 +11,7 @@ display:
       empty:
         area_text_custom:
           content: 'Няма резултати'
+      filters:
+        combine:
+          expose:
+            placeholder: Търсене...

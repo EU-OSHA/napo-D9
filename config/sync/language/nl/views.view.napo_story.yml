@@ -1,0 +1,14 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Toepassen
+      fields:
+        view_node:
+          text: 'Meer weergeven'
+      footer:
+        area:
+          content:
+            value: "<p><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/QCQowf79bfU\" title=\"YouTube video player\" width=\"560\"></iframe></p>\r\n"
+            format: full_html

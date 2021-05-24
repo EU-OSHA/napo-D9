@@ -11,3 +11,7 @@ display:
       empty:
         area_text_custom:
           content: 'Nav rezultātu'
+      filters:
+        combine:
+          expose:
+            placeholder: Meklēšana...

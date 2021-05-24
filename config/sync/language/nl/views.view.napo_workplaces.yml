@@ -11,3 +11,7 @@ display:
       empty:
         area_text_custom:
           content: 'Geen resultaten'
+      filters:
+        combine:
+          expose:
+            placeholder: Zoeken...

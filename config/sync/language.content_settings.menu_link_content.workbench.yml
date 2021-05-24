@@ -1,0 +1,18 @@
+uuid: 1e18cb80-27ea-4e05-a592-949e3f716a0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.workbench
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.workbench
+target_entity_type_id: menu_link_content
+target_bundle: workbench
+default_langcode: site_default
+language_alterable: false

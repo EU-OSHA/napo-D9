@@ -1,0 +1,25 @@
+sids:
+  osha: osha
+  osha_write: '0'
+authenticationMode: mixed
+loginUIUsernameTxt: ''
+loginUIPasswordTxt: ''
+ldapUserHelpLinkUrl: ''
+ldapUserHelpLinkText: 'Logon Help'
+emailOption: allow
+emailUpdate: update_notify
+emailTemplateHandling: if_empty
+emailTemplate: '@username@fake-domain.com'
+emailTemplateUsageResolveConflict: false
+emailTemplateUsageNeverUpdate: false
+emailTemplateUsagePromptUser: false
+emailTemplateUsageRedirectOnLogin: false
+emailTemplateUsagePromptRegex: '.*@fake-domain\.com'
+passwordOption: allow
+allowOnlyIfTextInDn: {  }
+excludeIfTextInDn: {  }
+excludeIfNoAuthorizations: false
+skipAdministrators: false
+langcode: en
+_core:
+  default_config_hash: 9DgabkLztscclWQDjei_mAOpxP6xdbp_Iu5L5z6Nsbg

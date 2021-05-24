@@ -4,3 +4,7 @@ display:
       exposed_form:
         options:
           submit_button: Vyhledat
+      fields:
+        title_1:
+          alter:
+            text: 'Zobrazit více informací'
