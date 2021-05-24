@@ -1,0 +1,17 @@
+uuid: 8dd93e8c-85e3-4add-bf52-a841cb823a1d
+langcode: en
+status: true
+dependencies:
+  module:
+    - matomo
+title: 'Default cron handler'
+id: matomo_cron
+weight: 0
+module: matomo
+callback: matomo_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database
