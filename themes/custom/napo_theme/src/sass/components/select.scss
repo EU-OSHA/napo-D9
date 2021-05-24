@@ -29,8 +29,51 @@
     right: 0px;
     top: 5px;
     pointer-events: none;
-    background: url(/sites/napo/themes/custom/napo_theme/images/arrow-language.png) no-repeat 2px 6px transparent;
     box-sizing: border-box;
   }
-
 }
+
+.chosen-container-single,
+.chosen-container-active.chosen-with-drop {
+  text-align: left;
+  .chosen{
+    &-single{
+      border:none;
+      background:none;
+      color:$text-color-blue;
+      text-align: left;
+      padding:0;
+      font-weight:bold;
+      box-shadow: none;
+      background-color: $bg-color-yellow;
+      background: url(/sites/napo/themes/custom/napo_theme/images/arrow-language.png) ;
+      background-repeat: no-repeat;
+      background-position: right center;
+      div,
+      b{
+        display:none;
+      }
+    }
+    &-search{
+      display:none;
+    }
+    &-drop{
+      border:1px solid $text-color-grey-3;
+      left:0;
+    }
+    &-results{
+      background: $bg-color-yellow;
+      color:$text-color-blue;
+      margin:0;
+      padding:0;
+      li{
+        padding:5px 14px;
+        &:hover{
+          background: $bg-color-orange;
+          color:$text-color-white;
+        }
+      }
+    }
+  }
+}
+

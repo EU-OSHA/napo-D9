@@ -568,8 +568,57 @@ a[target=_blank]:after {
   right: 0px;
   top: 5px;
   pointer-events: none;
-  background: url(/sites/napo/themes/custom/napo_theme/images/arrow-language.png) no-repeat 2px 6px transparent;
   box-sizing: border-box;
+}
+
+.chosen-container-single,
+.chosen-container-active.chosen-with-drop {
+  text-align: left;
+}
+.chosen-container-single .chosen-single,
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: none;
+  background: none;
+  color: #1f3695;
+  text-align: left;
+  padding: 0;
+  font-weight: bold;
+  box-shadow: none;
+  background-color: #f7e235;
+  background: url(/sites/napo/themes/custom/napo_theme/images/arrow-language.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.chosen-container-single .chosen-single div,
+.chosen-container-single .chosen-single b,
+.chosen-container-active.chosen-with-drop .chosen-single div,
+.chosen-container-active.chosen-with-drop .chosen-single b {
+  display: none;
+}
+.chosen-container-single .chosen-search,
+.chosen-container-active.chosen-with-drop .chosen-search {
+  display: none;
+}
+.chosen-container-single .chosen-drop,
+.chosen-container-active.chosen-with-drop .chosen-drop {
+  border: 1px solid #666;
+  left: 0;
+}
+.chosen-container-single .chosen-results,
+.chosen-container-active.chosen-with-drop .chosen-results {
+  background: #f7e235;
+  color: #1f3695;
+  margin: 0;
+  padding: 0;
+}
+.chosen-container-single .chosen-results li,
+.chosen-container-active.chosen-with-drop .chosen-results li {
+  padding: 5px 14px;
+}
+.chosen-container-single .chosen-results li:hover,
+.chosen-container-active.chosen-with-drop .chosen-results li:hover {
+  background: #e95420;
+  color: #FFF;
 }
 
 table {
