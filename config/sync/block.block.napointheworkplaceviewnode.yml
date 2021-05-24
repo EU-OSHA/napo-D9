@@ -2,10 +2,7 @@ uuid: dff9acd9-5418-4b02-b6db-b4c4e289236d
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:block_node_views:3d4a180d-4d0a-47d9-b51d-311416e36b05'
   module:
-    - block_content
     - system
   theme:
     - napo_theme
