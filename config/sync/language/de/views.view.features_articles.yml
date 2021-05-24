@@ -4,3 +4,7 @@ display:
       exposed_form:
         options:
           submit_button: Starten
+      fields:
+        title_1:
+          alter:
+            text: 'Mehr anzeigen'

@@ -4,3 +4,7 @@ display:
       exposed_form:
         options:
           submit_button: 'Sækja um'
+      fields:
+        title_1:
+          alter:
+            text: 'Sjá meira'

@@ -11,3 +11,7 @@ display:
       empty:
         area_text_custom:
           content: 'Δεν υπάρχουν αποτελέσματα'
+      filters:
+        combine:
+          expose:
+            placeholder: Αναζήτηση...

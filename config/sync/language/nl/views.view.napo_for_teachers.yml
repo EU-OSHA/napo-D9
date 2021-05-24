@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Toepassen
+      filters:
+        combine:
+          expose:
+            placeholder: Zoeken...
+      title: 'Napo voor leerkrachten'
+      header:
+        result:
+          content: '<h2> Lessen <span class="lessons-available"> [@total] </span> </h2>'
+      empty:
+        area_text_custom:
+          content: 'Geen resultaten'
+      fields:
+        nothing:
+          alter:
+            text: "<div class=\"lessons-item\">\r\n <a href=\"{{ view_node }}\">{{field_image}}</a>\r\n <div class=\"lessons-item-content\">\r\n   <h3>{{ title }}</h3>\r\n   <p class=\"keyword-list\">\r\n  Trefwoord: {{field_tags}}\r\n </p>\r\n </div>\r\n \r\n</div>"
