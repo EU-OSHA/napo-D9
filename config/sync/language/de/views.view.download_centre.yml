@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Starten
+      title: Download-Center
+      header:
+        area:
+          content:
+            value: "<p>Von diesem Download-Center können Sie entweder alle Videos, die Sie ausgewählt haben, in einem Vorgang herunterladen oder ein oder mehrere Videos aus der Liste auswählen und herunterladen, indem Sie auf &amp;bdquo;download selected&amp;ldquo; (Auswahl herunterladen) klicken. Darüber hinaus können Sie ausgewählte Videos von der Liste im Download-Center entfernen. Klicken Sie hierzu auf die Schaltfläche &amp;bdquo;X&amp;ldquo;, dann auf die Pfeil-Schaltfläche und wählen Sie das Format des Videos aus.</p>\r\n"
+            format: full_html
+      empty:
+        area_text_custom:
+          content: 'Um Napo-Filme in ganzer Länge oder ausgewählte Szenen daraus auf Ihren PC herunterzuladen, gehen Sie auf die Napo-Website (www.napofilm.net) und weiter zu dem Film bzw. der Szene, den/die Sie herunterladen möchten. Klicken Sie entweder auf die Schaltfläche „Download“ (herunterladen)  <span class="glyphicon napo-film-video-download-form-title inline-icon"></span> oder auf die Schaltfläche „Add to download centre“, um Ihr Video zum Download-Center hinzuzufügen <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

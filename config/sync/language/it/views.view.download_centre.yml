@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Applica
+      title: 'Centro download'
+      header:
+        area:
+          content:
+            value: "<p>Da questa area download puoi scaricare tutti i video che hai selezionato in un&amp;apos;unica operazione o puoi effettuare una selezione dall&amp;apos;elenco e cliccare su &amp;quot;download selected&amp;quot; (scarica i video selezionati) per scaricare solo quelli scelti. Puoi anche rimuovere i video selezionati dall&amp;apos;elenco dell&amp;apos;area download, cliccando sul pulsante &amp;quot;X&amp;quot;, e selezionare il formato del video cliccando sul pulsante &amp;quot;freccia&amp;quot; e selezionando il formato.</p>\r\n"
+            format: full_html
+      empty:
+        area_text_custom:
+          content: 'Per scaricare i filmati di Napo integralmente o alcune loro scene sul tuo PC, vai sul sito web di Napo (www.napofilm.net) e seleziona il filmato o la scena che desideri scaricare. Puoi cliccare sul pulsante «Download» (scarica) <span class="glyphicon napo-film-video-download-form-title inline-icon"></span> o aggiungere il tuo video all’area download cliccando sul pulsante «Add to download centre» (aggiungi all’area download) <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

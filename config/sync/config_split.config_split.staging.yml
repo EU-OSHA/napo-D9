@@ -13,7 +13,6 @@ module:
   migrate_file_to_media: 0
   migrate_plus: 0
   migrate_tools: 0
-  matomo: 0
   search_api: 0
   search_api_solr: 0
   authorization: 0
@@ -23,7 +22,6 @@ module:
   ldap_query: 0
   ldap_servers: 0
   ldap_user: 0
-  smtp: 0
 theme: {  }
 blacklist: {  }
 graylist:

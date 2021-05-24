@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Applika
+      title: 'Ċentru tat-tniżżil'
+      header:
+        area:
+          content:
+            value: "<p>Minn dan iċ-ċentru tat-tniżżil (download centre), tista&amp;apos; jew tniżżel il-vidjows kollha li għażilt f&amp;apos;operazzjoni waħda, jew tista&amp;apos; tagħżel mil-lista, u tikklikkja fuq &amp;quot;niżżel il-magħżula&amp;quot; biex tniżżel biss dawk magħżula. Tista&amp;apos; wkoll tneħħi l-vidjows magħżula mil-lista taċ-ċentru tat-tniżżil, billi tikklikkja fuq il-buttuna &amp;quot;X&amp;quot;, u tagħżel il-format tal-vidjow, billi tikklikkja fuq il-buttuna &amp;quot;vleġġa&amp;quot; u tagħżel il-format.</p>\r\n"
+            format: full_html
+      empty:
+        area_text_custom:
+          content: 'Biex tniżżel il-films Napo kompleti jew xeni magħżula fuq il-PC tiegħek mur fuq is-sit web ta’ Napo (www.napofilm.net) u mur fuq il-film jew ix-xena li trid tniżżel. Tista’ jew tikklikkja fuq il-buttuna ‘Niżżel’ <span class="glyphicon napo-film-video-download-form-title inline-icon"></span>, jew iżżid il-vidjo tiegħek maċ-ċentru tat-tniżżil, billi tikklikkja fuq il-buttuna ‘Żid maċ-ċentru tat-tniżżil'' <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

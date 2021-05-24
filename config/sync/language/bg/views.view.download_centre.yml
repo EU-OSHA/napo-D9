@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Изпълни
+      title: 'Център за изтегляне'
+      header:
+        area:
+          content:
+            value: "<p>От &amp;bdquo;Файлове за сваляне&amp;ldquo; можете да свалите всички избрани видеофайлове с едно действие или да изберете от списъка и да кликнете върху &amp;bdquo;Сваляне на избрани&amp;ldquo;, за да свалите само избраните файлове. Също така можете да премахвате избрани видеофайлове от списъка, като кликнете върху бутона със знака &amp;bdquo;Х&amp;ldquo;, и да избирате формат на видеофайла, като кликнете върху бутона със стрелката и изберете формат.</p>\r\n"
+            format: full_html
+      empty:
+        area_text_custom:
+          content: 'За да изтеглите филмите за Напо или избрани сцени от тях, отворете уебсайта на Напо (www.napofilm.net) и намерете филма или сцената, които желаете да изтеглите. Можете или да кликнете върху бутона „Сваляне на файл“ <span class="glyphicon napo-film-video-download-form-title inline-icon"></span>, или да добавите видеофайла към файлове за изтегляне, като кликнете върху бутона „Файлове за изтегляне“ <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

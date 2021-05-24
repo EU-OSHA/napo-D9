@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Start
+      title: 'Centru de descărcări'
+      header:
+        area:
+          content:
+            value: "<p>Din acest centru de descărcare puteți descărca dintr-o singură operațiune toate filmele pe care le-ați selectat sau puteți să selectați din listă și să faceți clic pe &amp;bdquo;descărcare selecție&amp;quot; pentru a le descărca numai pe cele care le-ați ales. Puteți și să eliminați anumite filme de pe lista centrului de descărcare făcând clic pe butonul &amp;bdquo;X&amp;rdquo; și să selectați formatul filmului făcând clic pe butonul &amp;bdquo;săgeată&amp;rdquo; și alegând formatul.</p>\r\n"
+            format: full_html
+      empty:
+        area_text_custom:
+          content: 'Pentru a descărca pe calculatorul dumneavoastră filme complete cu Napo sau numai anumite scene, mergeți pe site-ul Napo (www.napofilm.net) la filmul sau scena pe care vreți să o descărcați. Faceți clic pe butonul „Download” (Descărcare) <span class="glyphicon napo-film-video-download-form-title inline-icon"></span> sau adăugați filmul la centrul de descărcare făcând clic pe butonul „Add to download centre” (Adăugare la centrul de descărcare) <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

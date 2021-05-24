@@ -12,7 +12,7 @@ bundle: block_node_views
 label: 'Node ID'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

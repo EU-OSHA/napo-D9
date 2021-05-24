@@ -4,7 +4,7 @@ display:
       exposed_form:
         options:
           submit_button: Изпълни
-      title: 'Напо е инициатива на:'
+      title: 'Napo je iniciativa těchto organizací:'
   block_1:
     display_options:
       title: 'Напо е инициатива на консорциума „Напо“'

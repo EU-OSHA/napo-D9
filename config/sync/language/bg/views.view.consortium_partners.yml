@@ -4,7 +4,7 @@ display:
       exposed_form:
         options:
           submit_button: Vyhledat
-      title: 'Napo je iniciativa těchto organizací:'
+      title: 'Напо е инициатива на:'
   block_1:
     display_options:
       title: 'Napo je iniciativa konsorcia Napo.'
