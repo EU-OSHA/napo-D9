@@ -11,3 +11,7 @@ display:
       empty:
         area_text_custom:
           content: 'Nessun risultato'
+      filters:
+        combine:
+          expose:
+            placeholder: Ricerca...

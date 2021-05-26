@@ -28,7 +28,6 @@ module:
   crop: 0
   csv_serialization: 0
   ctools: 0
-  custom_migrations: 0
   date_popup: 0
   datetime: 0
   dblog: 0
@@ -36,7 +35,6 @@ module:
   draggableviews: 0
   dynamic_entity_reference: 0
   dynamic_page_cache: 0
-  easy_install: 0
   editor: 0
   entity: 0
   entity_browser: 0
@@ -78,11 +76,6 @@ module:
   meta_position: 0
   metatag: 0
   metatag_views: 0
-  migrate: 0
-  migrate_drupal: 0
-  migrate_file_to_media: 0
-  migrate_plus: 0
-  migrate_tools: 0
   node: 0
   options: 0
   page_cache: 0

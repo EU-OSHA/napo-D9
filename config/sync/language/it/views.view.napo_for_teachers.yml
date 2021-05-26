@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Applica
+      filters:
+        combine:
+          expose:
+            placeholder: Ricerca...
+      title: 'Napo per gli insegnanti'
+      header:
+        result:
+          content: '<h2> Lezioni <span class="lessons-available"> [@total] </span> </h2>'
+      empty:
+        area_text_custom:
+          content: 'Nessun risultato'
+      fields:
+        nothing:
+          alter:
+            text: "<div class=\"lessons-item\">\r\n <a href=\"{{ view_node }}\">{{field_image}}</a>\r\n <div class=\"lessons-item-content\">\r\n   <h3>{{ title }}</h3>\r\n   <p class=\"keyword-list\">\r\n  Parola chiave: {{field_tags}}\r\n </p>\r\n </div>\r\n \r\n</div>"

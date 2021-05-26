@@ -4,3 +4,7 @@ display:
       exposed_form:
         options:
           submit_button: Изпълни
+      fields:
+        title_1:
+          alter:
+            text: 'Вижте още'

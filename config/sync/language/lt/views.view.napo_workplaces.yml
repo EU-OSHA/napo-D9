@@ -11,3 +11,7 @@ display:
       empty:
         area_text_custom:
           content: 'Rezultatų nerasta'
+      filters:
+        combine:
+          expose:
+            placeholder: Ieškoti...

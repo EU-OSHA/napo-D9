@@ -11,3 +11,7 @@ display:
       empty:
         area_text_custom:
           content: 'Brak wyników'
+      filters:
+        combine:
+          expose:
+            placeholder: Wyszukaj...
