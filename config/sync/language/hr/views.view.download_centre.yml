@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primijeni
+      title: 'Preuzmi centar'
+      header:
+        area:
+          content:
+            value: "<p>Video datoteke u ovom centru za preuzimanje možete preuzeti odabirom u jednom koraku ili odabirom u popisu datoteka nakon čega je za samo odabrane datoteke potrebno kliknuti na gumb &amp;quot;Preuzmi odabrane&amp;quot;. Osim toga, klikom na gumb &amp;quot;X&amp;quot; odabrane video datoteke možete ukloniti s popisa u centru za preuzimanje, tj. klikom na gumb sa strelicom i odabirom formata možete odabrati odgovarajući format video sadržaja.</p>\r\n"
+            format: full_html
+      empty:
+        area_text_custom:
+          content: 'Želite li na svoje računalo preuzeti filmove o Napu u cijelosti ili samo odabrane prizore iz njih, posjetite posebno mrežno mjesto (www.napofilm.net) i odaberite željeni film ili prizor. Za preuzimanje kliknite na ikonu <span class="glyphicon napo-film-video-download-form-title inline-icon"></span> ili dodajte željeni video u centar za preuzimanje klikom na ikonu <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

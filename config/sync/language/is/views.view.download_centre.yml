@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Sækja um'
+      title: Niðurhaldsver
+      header:
+        area:
+          content:
+            value: "<p>Í þessari niðurhalsmiðstöð geturðu sótt öll myndskeiðin sem þú valdir í einu eða valið tiltekin myndskeið af listanum og smellt á &amp;bdquo;download selected&amp;ldquo; til að sækja bara þau myndskeið sem þú valdir. Þú getur líka fjarlægt valin myndskeið af listanum með því að smella á X-hnappinn og valið snið myndskeiðsins með því að smella á örvahnappinn og velja sniðið.</p>\r\n"
+            format: full_html
+      empty:
+        area_text_custom:
+          content: 'Ef þú vilt sækja heilar Napó-myndir eða valdar senur á tölvuna þína skaltu fara á vefsvæði Napó (www.napofilm.net) og fara á þá mynd eða senu sem þú vilt sækja. Þú getur smellt á hnappinn „download“ <span class="glyphicon napo-film-video-download-form-title inline-icon"></span>, eða bætt þínu myndskeiði við niðurhalsmiðstöðina með því að smella á hnappinn „download centre“ <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

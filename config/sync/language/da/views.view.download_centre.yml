@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Søg
+      title: Downloadcenter
+      header:
+        area:
+          content:
+            value: "<p>Fra dette downloadcenter kan du downloade alle dine valgte videoer på én gang, eller du kan vælge de film, du vil downloade fra denne liste og klikke på &amp;quot;download selected&amp;quot; (download valgte). Du kan også fjerne valgte videoer fra listen i downloadcentret ved at klikke på knappen &amp;quot;X&amp;quot;. Filmformatet kan du vælge med &amp;quot;pile&amp;quot;-knappen.</p>\r\n"
+            format: full_html
+      empty:
+        area_text_custom:
+          content: 'For at downloade hele eller udvalgte scener fra Napo-film kan du gå til Napo-webstedet (www.napofilm.net) og browse til den film eller scene, du ønsker at downloade. Du kan enten klikke på knappen "Download" <span class="glyphicon napo-film-video-download-form-title inline-icon"></span>, eller føje din video til downloadcentret ved at klikke på knappen "Føj til downloadcenter" <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

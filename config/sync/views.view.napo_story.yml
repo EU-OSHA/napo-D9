@@ -284,7 +284,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
           group: 1
           exposed: false
           expose:
@@ -416,7 +416,7 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
-      rendering_language: '***LANGUAGE_site_default***'
+      rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:

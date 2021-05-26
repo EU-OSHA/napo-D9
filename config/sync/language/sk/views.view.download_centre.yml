@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Použiť
+      title: 'Stredisko na preberania'
+      header:
+        area:
+          content:
+            value: "<p>Z preberacieho centra môžete prevziať všetky označené videá naraz alebo si môžete urobiť výber zo zoznamu, kliknúť na &amp;bdquo;prebrať vybrané&amp;ldquo; a prebrať iba tie. Rovnako môžete zo zoznamu preberacieho centra aj odstrániť vybrané videá kliknutím na tlačidlo &amp;bdquo;X&amp;ldquo; a kliknutím na tlačidlo &amp;bdquo;šípka&amp;ldquo; a zvoliť formát videa.</p>\r\n"
+            format: full_html
+      empty:
+        area_text_custom:
+          content: 'Ak chcete prevziať filmy alebo úryvky z filmov o Napovi na svoj počítač, choďte na webovú stránku o Napovi (www.napofilm.net) a potom na film alebo úryvok, ktorý chcete prevziať. Môžete kliknúť na tlačidlo Prevziať (Download) <span class="glyphicon napo-film-video-download-form-title inline-icon"></span>, alebo si kliknutím na tlačidlo Pridať do strediska preberania <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span> pridať video do strediska preberania.'

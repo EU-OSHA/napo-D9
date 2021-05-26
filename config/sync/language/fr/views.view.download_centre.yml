@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Lancer la recherche'
+      title: 'Centre de téléchargement'
+      header:
+        area:
+          content:
+            value: "<p>À partir de ce centre de téléchargement, vous pouvez soit télécharger en une seule opération toutes les vidéos que vous avez sélectionnées, soit effectuer une sélection dans la liste et cliquer sur «Télécharger la sélection» pour ne télécharger que les vidéos choisies. Vous pouvez également supprimer des vidéos de la sélection dans la liste du centre de téléchargement en cliquant sur le bouton «X» et choisir le format de la vidéo en cliquant sur le bouton «flèche» et en sélectionnant le format.</p>\r\n"
+            format: full_html
+      empty:
+        area_text_custom:
+          content: 'Pour télécharger l''intégralité des films Napo ou certaines scènes sur votre ordinateur, rendez-vous sur le site web Napo (www.napofilm.net) et sélectionnez le film ou la scène que vous souhaitez télécharger. Vous pouvez soit cliquer sur le bouton «Télécharger» <span class="glyphicon napo-film-video-download-form-title inline-icon"></span>, soit ajouter votre vidéo au centre de téléchargement en cliquant sur le bouton «Ajouter au centre de téléchargement» <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

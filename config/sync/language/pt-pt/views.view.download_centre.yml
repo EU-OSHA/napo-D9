@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+      title: 'Centro de transferências (<i>download</i>)'
+      header:
+        area:
+          content:
+            value: "<p>A partir deste centro de transferências poderá descarregar todos os vídeos que tenha selecionado de uma só vez ou selecionar da lista apenas os vídeos que pretende descarregar clicando em «descarregar vídeo(s) selecionado(s)». Poderá igualmente remover os vídeos selecionados da lista do centro de transferências clicando no botão «X», e selecionar o formato do vídeo clicando no botão da «seta» e selecionando o formato.</p>\r\n"
+            format: full_html
+      empty:
+        area_text_custom:
+          content: 'Para descarregar filmes Napo na íntegra ou determinadas cenas para o seu computador, aceda ao sítio Web do Napo (www.napofilm.net) e procure o filme ou cena que pretende descarregar. Poderá clicar no botão «descarregar» <span class="glyphicon napo-film-video-download-form-title inline-icon"></span> ou adicionar o seu vídeo ao centro de transferências clicando no botão «Adicionar ao centro de transferências» <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

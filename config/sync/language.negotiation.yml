@@ -3,7 +3,7 @@ session:
 url:
   source: path_prefix
   prefixes:
-    en: ''
+    en: en
     cs: cs
     bg: bg
     da: da
