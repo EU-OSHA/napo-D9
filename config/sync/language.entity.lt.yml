@@ -5,5 +5,5 @@ dependencies: {  }
 id: lt
 label: Lithuanian
 direction: ltr
-weight: 16
+weight: 0
 locked: false

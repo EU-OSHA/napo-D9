@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Indítás
+      title: 'Letöltési központ'
+      header:
+        area:
+          content:
+            value: "<p>Ebben a letöltési központban egy művelettel letöltheti valamennyi kiválasztott videót, illetve választhat a listáról is, majd a &amp;bdquo;kiválasztottak letöltése&amp;rdquo; opcióra kattintva a kiválasztott videók töltődnek le. A kiválasztott videókat el is távolíthatja a letöltési központ listájáról, ha az &amp;bdquo;X&amp;rdquo; gombra kattint, majd a &amp;bdquo;nyíl&amp;rdquo; gombra kattintva kiválasztja a videó formátumát.</p>\r\n"
+            format: full_html
+      empty:
+        area_text_custom:
+          content: 'Teljes Napo filmek vagy kiválasztott jelenetek letöltéséhez navigáljon a Napo weboldalra (www.napofilm.net), majd a letölteni kívánt filmhez vagy jelenethez. Kattinthat a „Letöltés” gombra <span class="glyphicon napo-film-video-download-form-title inline-icon"></span>, vagy a „Letöltési központba” gombra kattintva a letöltési központba rakhatja videóját <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

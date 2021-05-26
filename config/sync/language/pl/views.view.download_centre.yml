@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Wyślij
+      title: 'Centrum pobierania'
+      header:
+        area:
+          content:
+            value: "<p>W centrum pobierania możesz za jednym razem pobrać wszystkie wybrane filmy albo wybrać filmy z listy i kliknąć &amp;bdquo;pobierz wybrane&amp;rdquo;, aby pobrać tylko niektóre. Możesz także usunąć wybrane filmy z centrum pobierania, klikając przycisk &amp;bdquo;X&amp;rdquo;, oraz wybrać format filmu, klikając przycisk ze strzałką i wybierając format.</p>\r\n"
+            format: full_html
+      empty:
+        area_text_custom:
+          content: 'Aby pobrać całe filmy o Napo lub wybrane sceny na swój komputer, wejdź na stronę internetową o Napo (www.napofilm.net) i przejdź do filmu lub sceny, które chcesz pobrać. Możesz albo kliknąć przycisk „download” (pobierz) <span class="glyphicon napo-film-video-download-form-title inline-icon"></span>, albo dodać film do centrum pobierania, klikając przycisk „Add to download centre” (dodaj co centrum pobierania) <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'
