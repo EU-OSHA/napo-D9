@@ -7,25 +7,30 @@ label: Staging
 description: ''
 folder: sites/napo/config/staging
 module:
-  custom_migrations: 0
-  migrate: 0
-  migrate_drupal: 0
-  migrate_file_to_media: 0
-  migrate_plus: 0
-  migrate_tools: 0
-  search_api: 0
-  search_api_solr: 0
   authorization: 0
-  externalauth: 0
   ldap_authentication: 0
   ldap_authorization: 0
   ldap_query: 0
   ldap_servers: 0
   ldap_user: 0
+  search_api: 0
+  search_api_solr: 0
+  externalauth: 10
+  custom_migrations: 0
+  migrate: 0
+  matomo: 0
+  migrate_drupal: 0
+  migrate_file_to_media: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  smtp: 0
 theme: {  }
 blacklist: {  }
 graylist:
+  - matomo.settings
+  - smtp.settings
   - search_api.server.apache_solr
+  - ultimate_cron.job.matomo_cron
 graylist_dependents: false
 graylist_skip_equal: true
 weight: 0
