@@ -328,8 +328,11 @@
     .view-filters{
       padding:0;
       width:100%;
+      margin:1rem 0;
+      position:static;
     }
   }
+
   .views-exposed-form{
     .form-item-search{
       width:100%;
@@ -487,11 +490,58 @@
       }
     }
   }
+  .napo-film-list-view {
+    .item-list{
+      .cart,
+      .download-video{
+        display:none;
+      }
+      .napo-film-list-image,
+      .group-right{
+        width:100%;
+        padding:0;
+      }
+
+      .napo-film-list-image{
+        a,
+        img{
+          width:100%;
+        }
+      }
+    }
+  }
+  .view-napo-s-film-episodes{
+    .views-row{
+      padding-left:0;
+      .col-sm-3,
+      .col-sm-9{
+        max-width:100%;
+        flex: 0 0 100%;
+      }
+    }
+  }
+  .form-item-search{
+    .form-control{
+      padding:1.875rem;
+    }
+  }
 }
 
 
 @media only screen and (max-width: 525px){
 
+  .header{
+    .region-header-logo {
+      img{
+        max-width: 80%;
+      }
+    }
+    &_nav{
+      width: 90%;
+      margin: auto;
+      margin-bottom: 1.5rem;
+    }
+  }
   .view-napo-workplaces {
     .views-row{
       width:100%;

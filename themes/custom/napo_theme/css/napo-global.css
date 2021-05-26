@@ -1409,10 +1409,12 @@ tr th {
   min-height: 245px;
 }
 .block-views-blockfeatures-articles-block .views-row:nth-child(1) h3 a {
+  font-weight: bold;
   padding: 1.5rem 0 0rem 4rem;
   background: url(/sites/napo/themes/custom/napo_theme/images/workplace-icon.png) left -1px no-repeat;
 }
 .block-views-blockfeatures-articles-block .views-row:nth-child(2) h3 a {
+  font-weight: bold;
   padding: 1.5rem 0 0rem 4.625rem;
   background: url(/sites/napo/themes/custom/napo_theme/images/teachers-icon.png) left -1px no-repeat;
 }
@@ -1616,6 +1618,9 @@ tr th {
 .view-napo-s-film-episodes .views-row > div {
   margin: 0rem;
   padding: 0rem;
+}
+.view-napo-s-film-episodes .views-row > div.views-field-field-combined-tags {
+  display: none;
 }
 .view-napo-s-film-episodes .col-sm-3 > div {
   height: 144px;
@@ -2970,6 +2975,10 @@ tr th {
   .napo-film-list-view .item-list .group-right h3 {
     margin-top: 0.625rem;
   }
+
+  .block-views-blockfeatures-articles-block .views-row .featured-article-body {
+    padding-bottom: 2.5rem;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .block-views-blockconsortium-partners-block .views-row {
@@ -3303,6 +3312,8 @@ tr th {
 .page-view-napo-for-teachers .view-filters {
     padding: 0;
     width: 100%;
+    margin: 1rem 0;
+    position: static;
   }
 
   .views-exposed-form .form-item-search {
@@ -3449,8 +3460,44 @@ tr th {
     width: 100%;
     margin-top: 0.75rem;
   }
+
+  .napo-film-list-view .item-list .cart,
+.napo-film-list-view .item-list .download-video {
+    display: none;
+  }
+  .napo-film-list-view .item-list .napo-film-list-image,
+.napo-film-list-view .item-list .group-right {
+    width: 100%;
+    padding: 0;
+  }
+  .napo-film-list-view .item-list .napo-film-list-image a,
+.napo-film-list-view .item-list .napo-film-list-image img {
+    width: 100%;
+  }
+
+  .view-napo-s-film-episodes .views-row {
+    padding-left: 0;
+  }
+  .view-napo-s-film-episodes .views-row .col-sm-3,
+.view-napo-s-film-episodes .views-row .col-sm-9 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .form-item-search .form-control {
+    padding: 1.875rem;
+  }
 }
 @media only screen and (max-width: 525px) {
+  .header .region-header-logo img {
+    max-width: 80%;
+  }
+  .header_nav {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
+
   .view-napo-workplaces .views-row {
     width: 100%;
   }
@@ -3560,7 +3607,7 @@ tr th {
     padding-bottom: 2.5rem;
   }
 }
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .header-logo {
     flex: 0 0 100%;
     max-width: 100%;
@@ -3589,6 +3636,11 @@ tr th {
   }
   .navbar-nav .dropdown-menu {
     position: absolute;
+  }
+
+  .header .region-header-logo img {
+    width: auto;
+    margin: auto;
   }
 }
 
