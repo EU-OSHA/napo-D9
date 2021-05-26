@@ -1,0 +1,9 @@
+display:
+  default:
+    display_options:
+      title: 'Descargar centro'
+      header:
+        area:
+          content:
+            value: "<p>From this download centre, you can either download all the videos you have selected in one operation, or you can select from the list, and click on \"download selected\" to download only the chosen ones. You can, as well, remove selected videos from the download centre list, by clicking on the \"X\" button, and select the format of the video, by clicking on the \"arrow\" button and selecting the format.</p>\r\n"
+            format: full_html

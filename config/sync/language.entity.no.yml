@@ -5,5 +5,5 @@ dependencies: {  }
 id: 'no'
 label: Norsk
 direction: ltr
-weight: 28
+weight: 11
 locked: false
