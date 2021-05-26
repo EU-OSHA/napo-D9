@@ -5,5 +5,5 @@ dependencies: {  }
 id: pt-pt
 label: 'Portuguese, Portugal'
 direction: ltr
-weight: 20
+weight: 3
 locked: false
