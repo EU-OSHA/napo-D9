@@ -4,7 +4,3 @@ display:
       exposed_form:
         options:
           submit_button: Wyślij
-      fields:
-        title_1:
-          alter:
-            text: 'Zobacz więcej'
