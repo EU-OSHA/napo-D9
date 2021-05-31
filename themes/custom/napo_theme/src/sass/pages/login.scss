@@ -4,7 +4,7 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 3rem;
-  padding: 1.25rem 0;
+  padding: 1.25rem 0.75rem;
   width: 500px;
   .form{
     &-group{
@@ -46,7 +46,8 @@
 }
 
 .user-register-form{
-  width: 800px;
+  max-width: 800px;
+  width:100%;
   .form{
     &-group{
       #edit-user-picture-0--label{
@@ -104,6 +105,54 @@
   small{
     display: block;
   }
+  .image-widget{
+    display:flex;
+    flex-direction: row;
+    max-width:100%;
+    align-items: center;
+    .image-preview,
+    &-data{
+      float:none;
+      display:inline-flex;
+    }
+    .image-preview{
+      padding:0;
+      margin-right:1rem;
+      img{
+        margin:0;
+      }
+    }
+    &-data{
+      flex-direction: row;
+      max-width:100%;
+      align-items: center;
+      #edit-user-picture-0-upload{
+        min-height:3rem;
+      }
+      .form-submit,
+      input::-webkit-file-upload-button{
+        border-radius: 5px;
+        color: $text-color-grey-dark;
+        background: $bg-color-yellow;
+        font-weight: bold;
+        border: 0px solid transparent;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        width:auto;
+      }
+      .form-submit{
+        display:none;
+        &[value="Remove"]{
+          display:inline-block;
+          margin-left:1rem;
+        }
+
+      }
+      input::-webkit-file-upload-button{
+        height:2rem;
+      }
+    }
+  }
 }
 
 .user-pass{
@@ -113,5 +162,3 @@
     color:$text-color-grey-4;
   }
 }
-
-

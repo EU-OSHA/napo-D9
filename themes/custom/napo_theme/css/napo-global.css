@@ -2337,7 +2337,7 @@ tr th {
   display: block;
   margin: 0 auto;
   margin-bottom: 3rem;
-  padding: 1.25rem 0;
+  padding: 1.25rem 0.75rem;
   width: 500px;
 }
 .user-login-form .form-group,
@@ -2389,7 +2389,8 @@ tr th {
 }
 
 .user-register-form {
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
 }
 .user-register-form .form-group #edit-user-picture-0--label {
   font-weight: 700;
@@ -2459,11 +2460,126 @@ tr th {
 .user-register-form small {
   display: block;
 }
+.user-register-form .image-widget {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  align-items: center;
+}
+.user-register-form .image-widget .image-preview, .user-register-form .image-widget-data {
+  float: none;
+  display: inline-flex;
+}
+.user-register-form .image-widget .image-preview {
+  padding: 0;
+  margin-right: 1rem;
+}
+.user-register-form .image-widget .image-preview img {
+  margin: 0;
+}
+.user-register-form .image-widget-data {
+  flex-direction: row;
+  max-width: 100%;
+  align-items: center;
+}
+.user-register-form .image-widget-data #edit-user-picture-0-upload {
+  min-height: 3rem;
+}
+.user-register-form .image-widget-data .form-submit,
+.user-register-form .image-widget-data input::-webkit-file-upload-button {
+  border-radius: 5px;
+  color: #585759;
+  background: #f7e235;
+  font-weight: bold;
+  border: 0px solid transparent;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: auto;
+}
+.user-register-form .image-widget-data .form-submit {
+  display: none;
+}
+.user-register-form .image-widget-data .form-submit[value=Remove] {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.user-register-form .image-widget-data input::-webkit-file-upload-button {
+  height: 2rem;
+}
 
 .user-pass p {
   font-size: 80%;
   font-weight: 400;
   color: #6c757d;
+}
+
+.view-napo-and-friends .views-form {
+  width: 100%;
+}
+.view-napo-and-friends .views-form table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1.25rem;
+}
+.view-napo-and-friends .views-form table > tbody > tr > td {
+  padding: 8px;
+  line-height: 2.75rem;
+  vertical-align: top;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+.view-napo-and-friends .views-form table > tbody > tr > td.views-field-title {
+  color: #1f3695;
+  background: url(/sites/napo/themes/custom/napo_theme/images/background-yellow.png) repeat-x;
+  padding-left: 17px;
+  font-weight: bold;
+  height: 29px;
+  font-size: 1.125rem;
+}
+.view-napo-and-friends .views-form table > tbody > tr > td.views-field-title:hover {
+  border-bottom: 5px solid #1f3695;
+}
+.view-napo-and-friends .views-form table > tbody > tr > td a {
+  color: #1f3695;
+  text-decoration: none;
+}
+.view-napo-and-friends .views-form table > tbody > tr > td a div {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  height: 0;
+}
+.view-napo-and-friends .draggable a.tabledrag-handle {
+  height: auto;
+}
+.view-napo-and-friends .btn-primary {
+  color: #FFF;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+.view-napo-and-friends .form-group {
+  margin-bottom: 1rem;
+}
+.view-napo-and-friends .form-actions {
+  padding: 0 1rem;
+}
+.view-napo-and-friends .tabledrag-toggle-weight {
+  color: #1f3695;
+  text-decoration: none;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.125rem;
+}
+.view-napo-and-friends .tabledrag-toggle-weight:hover, .view-napo-and-friends .tabledrag-toggle-weight:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.view-napo-and-friends .tabledrag-toggle-weight-wrapper {
+  text-align: left;
 }
 
 .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 {
@@ -3087,6 +3203,7 @@ tr th {
     max-width: 100%;
   }
 
+  /******  Header  ******/
   .container.header_navbar_container {
     max-width: 100%;
     margin-top: 1.25rem;
@@ -3104,6 +3221,7 @@ tr th {
   }
 }
 @media only screen and (max-width: 991px) {
+  /******  Napo Film  ******/
   .napo-film-list-view .item-list .item {
     flex-direction: column;
     align-items: flex-end;
@@ -3138,6 +3256,7 @@ tr th {
   }
 }
 @media (min-width: 992px) {
+  /******  Header  ******/
   #header .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0;
   }
@@ -3184,6 +3303,7 @@ tr th {
   .header_nav {
     text-align: left;
     padding: 0px;
+    position: relative;
   }
   .show-menu .header_nav {
     margin-bottom: 1.5rem;
@@ -3313,15 +3433,42 @@ tr th {
     font-weight: normal;
     font-size: 1.25rem;
   }
+  .header-blocks {
+    position: absolute;
+    z-index: 200;
+    top: 0.75rem;
+    right: 5%;
+    padding-right: 1.25rem;
+    width: calc(100% - 140px);
+  }
+  .header-blocks .region-header-form {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .header_top_bar {
+    display: none;
+  }
+  .header .block-simple-blocksearch-api .form-row {
+    width: 100%;
+    height: auto;
+  }
+  .header .block-simple-blocksearch-api .form-row .form-group {
+    width: calc(100% - 40px);
+  }
+  .header .block-simple-blocksearch-api .form-row input {
+    border-radius: 0rem;
+    width: 100%;
+    padding: 1.25rem;
+    border-bottom: 1px dotted #FFF;
+  }
+  .header .block-simple-blocksearch-api .form-actions {
+    display: none;
+  }
 
   .block-views-blockfrontpage-custom-video-block video {
     max-height: 350px;
   }
   .block-views-blockfrontpage-custom-video-block .frontpage-video-title {
-    display: none;
-  }
-
-  .header_top_bar {
     display: none;
   }
 
@@ -3362,23 +3509,6 @@ tr th {
 
   .container.header_navbar_container {
     padding: 0px;
-  }
-
-  .header_nav {
-    position: relative;
-  }
-
-  .header-blocks {
-    position: absolute;
-    z-index: 200;
-    top: 0.75rem;
-    right: 5%;
-    padding-right: 1.25rem;
-    width: calc(100% - 140px);
-  }
-  .header-blocks .region-header-form {
-    display: flex;
-    flex-direction: row-reverse;
   }
 
   .custom-select {
@@ -3442,23 +3572,6 @@ tr th {
     width: 80%;
     opacity: 1;
     transition: all 0.6s;
-  }
-
-  .header .block-simple-blocksearch-api .form-row {
-    width: 100%;
-    height: auto;
-  }
-  .header .block-simple-blocksearch-api .form-row .form-group {
-    width: calc(100% - 40px);
-  }
-  .header .block-simple-blocksearch-api .form-row input {
-    border-radius: 0rem;
-    width: 100%;
-    padding: 1.25rem;
-    border-bottom: 1px dotted #FFF;
-  }
-  .header .block-simple-blocksearch-api .form-actions {
-    display: none;
   }
 
   .learning-with-napo-napo-in-the-workplace .view-filters,
@@ -3771,6 +3884,12 @@ tr th {
     top: -6.5rem;
   }
 
+  .node--type-napo-video .conten-video-info-tags {
+    padding-right: 1.5rem;
+  }
+  .node--type-napo-video .conten-video-info-tags .categories .field--type-entity-reference {
+    flex-direction: column;
+  }
   .node--type-napo-video .conten-video-info .napo-film-video-download-form {
     position: relative;
     background-color: #f2f1f2;
@@ -3778,19 +3897,12 @@ tr th {
   .node--type-napo-video .conten-video-info .napo-film-video-download-form .download {
     margin-left: auto;
   }
-  .node--type-napo-video .conten-video-info-tags .categories .field--type-entity-reference {
-    flex-direction: column;
-  }
 
   .content-page-content > .col-12 {
     padding: 0;
   }
   .napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12 {
     padding: 0 1rem;
-  }
-
-  .node--type-napo-video .conten-video-info-tags {
-    padding-right: 1.5rem;
   }
 
   .node--type-lesson .content-accordions-download-custom .download-box ul,
@@ -3826,6 +3938,7 @@ tr th {
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+  /******  Header  ******/
   .header-logo {
     flex: 0 0 100%;
     max-width: 100%;

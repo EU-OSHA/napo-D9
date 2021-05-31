@@ -27,6 +27,7 @@
    &_nav {
      text-align: left;
      padding:0px;
+     position:relative;
      .show-menu &{
        margin-bottom:1.5rem;
      }
@@ -74,7 +75,6 @@
      margin: 0 auto;
 
    }
-
    .nav{
      padding: 0 ;
      &-item{
@@ -166,7 +166,40 @@
         }
       }
     }
- }
+    &-blocks{
+      position:absolute;
+      z-index:200;
+      top:0.75rem;
+      right: 5%;
+      padding-right: 1.25rem;
+      width:calc(100% - 140px);
+      .region-header-form{
+        display:flex;
+        flex-direction: row-reverse;
+      }
+    }
+    &_top_bar{
+      display:none;
+    }
+    .block-simple-blocksearch-api {
+      .form-row{
+        width:100%;
+        height:auto;
+        .form-group{
+          width:calc(100% - 40px);
+        }
+        input{
+          border-radius: 0rem;
+          width: 100%;
+          padding: 1.25rem;
+          border-bottom: 1px dotted $bg-color-white;
+        }
+      }
+      .form-actions{
+        display:none;
+      }
+    }
+  }
   .block-views-blockfrontpage-custom-video-block{
     video{
       max-height:350px;
@@ -174,9 +207,6 @@
     .frontpage-video-title{
       display:none;
     }
-  }
-  .header_top_bar{
-    display:none;
   }
   .block-views-blockconsortium-partners-block{
     .views{
@@ -226,21 +256,6 @@
   .container.header_navbar_container{
     padding:0px;
   }
-  .header_nav{
-    position:relative;
-  }
-  .header-blocks{
-    position:absolute;
-    z-index:200;
-    top:0.75rem;
-    right: 5%;
-    padding-right: 1.25rem;
-    width:calc(100% - 140px);
-    .region-header-form{
-      display:flex;
-      flex-direction: row-reverse;
-    }
-  }
   .custom-select {
     background: $bg-color-blue;
     color: $text-color-white;
@@ -275,10 +290,12 @@
       background-size: 1.875rem;
     }
   }
-  #block-languagedropdownswitcher .content{
-    display:flex;
-    flex-direction: row;
-    align-items:center;
+  #block-languagedropdownswitcher{
+    .content{
+      display:flex;
+      flex-direction: row;
+      align-items:center;
+    }
   }
   .lang-dropdown-form{
     margin-right:1.25rem;
@@ -298,26 +315,6 @@
       width: 80%;
       opacity: 1;
       transition: all 0.6s;
-    }
-  }
-  .header{
-    .block-simple-blocksearch-api {
-      .form-row{
-        width:100%;
-        height:auto;
-        .form-group{
-          width:calc(100% - 40px);
-        }
-        input{
-          border-radius: 0rem;
-          width: 100%;
-          padding: 1.25rem;
-          border-bottom: 1px dotted $bg-color-white;
-        }
-      }
-      .form-actions{
-        display:none;
-      }
     }
   }
   .learning-with-napo-napo-in-the-workplace,
@@ -690,18 +687,19 @@
   }
   .node--type-napo-video {
     .conten-video-info {
+      &-tags {
+        padding-right:1.5rem;
+        .categories {
+          .field--type-entity-reference{
+            flex-direction: column;
+          }
+        }
+      }
       .napo-film-video-download-form{
         position:relative;
         background-color:$bg-color-grey-light;
         .download{
           margin-left:auto;
-        }
-      }
-    }
-    .conten-video-info-tags {
-      .categories {
-        .field--type-entity-reference{
-          flex-direction: column;
         }
       }
     }
@@ -718,12 +716,7 @@
       }
     }
   }
-  .node--type-napo-video {
-    .conten-video-info-tags {
-      padding-right:1.5rem;
-    }
-  }
-  .node--type-lesson ,
+  .node--type-lesson,
   .node--type-msds-activities{
     .content-accordions-download-custom{
       .download-box {
