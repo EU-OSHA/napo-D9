@@ -21,7 +21,8 @@
   }
 }
 
-@media only screen and (max-width: 1023px) and (min-width: 768px){
+@media (min-width: 768px) and (max-width: 1023px){
+
   .header-logo{
     flex: 0 0 100%;
     max-width: 100%;
@@ -45,6 +46,14 @@
     flex-direction: row;
     .dropdown-menu{
       position:absolute;
+    }
+  }
+  .header {
+    .region-header-logo{
+      img{
+        width: auto ;
+        margin: auto;
+      }
     }
   }
 }

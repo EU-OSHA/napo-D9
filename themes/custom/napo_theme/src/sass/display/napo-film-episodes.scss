@@ -8,6 +8,9 @@
     &>div {
       margin: 0rem;
       padding: 0rem;
+      &.views-field-field-combined-tags{
+        display:none;
+      }
     }
   }
   .col-sm-3{

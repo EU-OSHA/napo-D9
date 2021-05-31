@@ -41,9 +41,6 @@
       line-height: 1.25rem;
       margin-top: -2px;
     }
-    &-search{
-
-    }
   }
   .details-wrapper{
     width:100%;
@@ -67,46 +64,6 @@
       margin-top:0.5rem;
       margin-left: 22%;
       font-style: italic;
-    }
-  }
-
-  .custom-switch {
-    margin-bottom: 0.25rem;
-    .custom-control{
-      &-label{
-        font-size:1rem;
-        font-weight: normal;
-        line-height: 1.25rem;
-        cursor:pointer;
-        &:before{
-          height:1.25rem;
-          width:2rem;
-          top:0;
-          left:-2.5rem;
-        }
-        &:after{
-          top: calc(0.125rem + 1px);
-          left: calc(-2.5rem + 2px);
-          width: calc(1.125rem - 4px);
-          height: calc(1.125rem - 4px);
-          background-color:$bg-color-blue-light-hover;
-          border-radius: 50%;
-        }
-      }
-      &-input{
-        &:checked{
-          ~.custom-control-label{
-            &:before{
-              background-color:$bg-color-blue-light-hover;
-              border-color:$bg-color-blue-light-hover;
-            }
-            &:after{
-              transform: translateX(.875rem);
-              background-color:$bg-color-white;
-            }
-          }
-        }
-      }
     }
   }
   .fieldset-legend{
