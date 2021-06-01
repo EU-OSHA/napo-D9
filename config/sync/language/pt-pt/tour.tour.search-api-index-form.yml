@@ -1,9 +1,0 @@
-tips:
-  search-api-index-form-name:
-    label: 'Nome do índice'
-  search-api-index-form-tracker:
-    label: Tracker
-  search-api-index-form-server:
-    label: Servidor
-  search-api-index-form-options:
-    label: 'Definições avançadas'

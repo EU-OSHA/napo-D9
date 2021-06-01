@@ -1,9 +1,0 @@
-tips:
-  search-api-server-status:
-    label: Status
-  search-api-server-backend:
-    label: 'Háttérrendszer osztály'
-  search-api-server-indexes:
-    label: 'Keresési indexek'
-  search-api-server-clear:
-    label: 'Az összes indexelt adat törlése'

@@ -1,7 +1,11 @@
 uuid: 6da86b76-aa73-42d5-adc4-3eb2bb871e84
 langcode: en
-status: false
+status: true
 dependencies:
+  content:
+    - 'block_content:basic:5ff80d27-b28f-46c4-ab41-280714f50966'
+  module:
+    - block_content
   theme:
     - napo_theme
 id: logonapo
