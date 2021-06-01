@@ -8,20 +8,27 @@ description: ''
 folder: sites/napo/config/production
 module:
   authorization: 0
+  authorization_drupal_roles: 0
   ldap_authentication: 0
   ldap_authorization: 0
   ldap_query: 0
   ldap_servers: 0
   ldap_user: 0
   matomo: 0
-  externalauth: 10
   smtp: 0
+  externalauth: 10
 theme: {  }
 blacklist: {  }
 graylist:
+  - authorization.authorization_profile.osha
   - authorization.settings
+  - ldap_authentication.settings
+  - ldap_servers.server.osha
+  - ldap_servers.server.osha_write
+  - ldap_servers.settings
+  - ldap_user.settings
   - matomo.settings
-  - smtp.settings
+  - ultimate_cron.job.ldap_user_cron
   - ultimate_cron.job.matomo_cron
 graylist_dependents: false
 graylist_skip_equal: true

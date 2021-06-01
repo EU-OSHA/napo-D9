@@ -1,0 +1,48 @@
+uuid: dff6933e-41cb-4e9a-a735-df0393905d65
+langcode: en
+status: true
+dependencies: {  }
+id: osha
+label: Osha
+description: null
+provider: ldap_provider
+consumer: authorization_drupal_roles
+provider_config:
+  status:
+    server: osha
+    only_ldap_authenticated: true
+  filter_and_mappings:
+    use_first_attr_as_groupid: false
+provider_mappings:
+  -
+    query: 'cn=ADMIN,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=APPROVE,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=EDIT,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=PM,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=REVIEW,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+consumer_config: {  }
+consumer_mappings:
+  -
+    role: administrator
+  -
+    role: approver
+  -
+    role: editor
+  -
+    role: project_manager
+  -
+    role: reviewer
+synchronization_modes:
+  user_logon: user_logon
+synchronization_actions:
+  revoke_provider_provisioned: revoke_provider_provisioned
+  create_consumers: create_consumers

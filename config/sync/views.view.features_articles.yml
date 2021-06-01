@@ -38,7 +38,7 @@ display:
         type: views_query
         options:
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_comment: ''
           query_tags: {  }
@@ -55,13 +55,137 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 2
+          items_per_page: 0
           offset: 0
       style:
         type: default
       row:
         type: fields
       fields:
+        entityqueue_relationship_position:
+          id: entityqueue_relationship_position
+          table: node_field_data
+          field: entityqueue_relationship_position
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ','
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
+          entity_type: node
+          plugin_id: entity_queue_position
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '{{ langcode__value }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: language
+          settings:
+            link_to_entity: false
+            native_language: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: langcode
+          plugin_id: field
         field_icon:
           id: field_icon
           table: node__field_icon
@@ -126,10 +250,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
           relationship: none
           group_type: group
           admin_label: ''
@@ -137,13 +261,13 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ title }}'
-            make_link: true
-            path: '/learning-with-napo/{{ title__value }}'
+            text: "{% if(entityqueue_relationship_position==0) %} \r\n\r\n<h3 class=\"field-content featured-article-header\"><a href=\"/{{ langcode }}/learning-with-napo/napo-in-the-workplace\">{{ \"Napo in the workplace\" | trans}}</a></h3>\r\n\r\n{% elseif(entityqueue_relationship_position==1) %}\r\n\r\n\r\n<h3 class=\"field-content featured-article-header\"><a href=\"/{{ langcode }}/learning-with-napo/napo-for-teachers\">{{ \"Napo for teachers\" | trans}}</a></h3>\r\n\r\n\r\n{% endif %}\r\n\r\n"
+            make_link: false
+            path: ''
             absolute: false
             external: false
-            replace_spaces: true
-            path_case: lower
+            replace_spaces: false
+            path_case: none
             trim_whitespace: false
             alt: ''
             rel: ''
@@ -162,35 +286,19 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h3
-          element_class: 'field-content featured-article-header'
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
+          hide_alter_empty: false
+          plugin_id: custom
         body:
           id: body
           table: node__body
@@ -227,8 +335,8 @@ display:
             trim: true
             preserve_tags: ''
             html: false
-          element_type: div
-          element_class: featured-article-body
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -264,13 +372,13 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: 'see more'
-            make_link: true
-            path: '/learning-with-napo/{{ title_1__value }}'
+            text: "{% if(entityqueue_relationship_position==0) %} \r\n\r\n<a href=\"{{langcode}}/learning-with-napo/napo-in-the-workplace\">{{ \"see more\" | trans}}</a>\r\n\r\n{% elseif(entityqueue_relationship_position==1) %}\r\n\r\n\r\n<a href=\"{{langcode}}/learning-with-napo/napo-ifor-teachers\">{{ \"see more\" | trans}}</a>\r\n\r\n\r\n{% endif %}"
+            make_link: false
+            path: ''
             absolute: false
             external: false
-            replace_spaces: true
-            path_case: lower
+            replace_spaces: false
+            path_case: none
             trim_whitespace: false
             alt: ''
             rel: ''
@@ -383,50 +491,9 @@ display:
           admin_label: ''
           operator: in
           value:
+            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
             '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
           group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: langcode
-          plugin_id: language
-        langcode_1:
-          id: langcode_1
-          table: node_field_data
-          field: langcode
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            en: en
-          group: 2
           exposed: false
           expose:
             operator_id: ''
@@ -490,12 +557,13 @@ display:
           plugin_id: entity_queue
       arguments: {  }
       display_extenders: {  }
-      show_admin_links: false
+      show_admin_links: true
       filter_groups:
         operator: OR
         groups:
           1: AND
-          2: AND
+          2: OR
+      use_ajax: true
     cache_metadata:
       max-age: -1
       contexts:
