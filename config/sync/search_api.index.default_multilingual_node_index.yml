@@ -562,6 +562,16 @@ field_settings:
         - field.storage.node.field_tags
       module:
         - taxonomy
+  name_1:
+    label: 'Main Category » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_main_tag:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_main_tag
+      module:
+        - taxonomy
   nid:
     label: ID
     datasource_id: 'entity:node'
@@ -570,6 +580,13 @@ field_settings:
     dependencies:
       module:
         - node
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
   parent:
     label: 'Tags » Taxonomy term » Term Parents'
     datasource_id: 'entity:node'
@@ -640,6 +657,8 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: status
     type: boolean
+    indexed_locked: true
+    type_locked: true
     dependencies:
       module:
         - node
@@ -702,6 +721,16 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: type
     type: string
+    dependencies:
+      module:
+        - node
+  uid:
+    label: uid
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
     dependencies:
       module:
         - node
@@ -794,14 +823,26 @@ datasource_settings:
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
   highlight:
     highlight: always
     highlight_partial: false
     excerpt: true
     excerpt_length: 256
-    exclude_fields: {  }
-    prefix: '<span class="highlighted">'
-    suffix: '</span>'
+    exclude_fields:
+      - aggregated_field
+      - field_nace_changes
+      - field_nace_changes_1
+      - field_nace_excludes
+      - field_nace_excludes_1
+      - field_nace_includes
+      - field_nace_includes_1
+      - field_nace_includes_also
+      - field_nace_includes_also_1
+    prefix: '<strong><span class="highlighted">'
+    suffix: '</span></strong>'
     weights:
       postprocess_query: 0
   html_filter:
@@ -833,6 +874,7 @@ processor_settings:
       - format
       - language_with_fallback
       - name
+      - name_1
       - path
       - processed
       - rendered_item
