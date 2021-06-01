@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.article.field_guidance_file
     - field.field.node.article.field_icon
     - field.field.node.article.field_image
+    - field.field.node.article.field_image2
     - field.field.node.article.field_list_of_activities
     - field.field.node.article.field_nace_codes
     - field.field.node.article.field_page_count
@@ -49,11 +50,13 @@ content:
       link: true
     third_party_settings: {  }
 hidden:
+  breadcrumbs: true
   field_character_count: true
   field_expiration_date: true
   field_glossary: true
   field_guidance_file: true
   field_icon: true
+  field_image2: true
   field_list_of_activities: true
   field_nace_codes: true
   field_page_count: true

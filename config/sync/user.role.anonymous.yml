@@ -24,6 +24,7 @@ permissions:
   - 'use Search Autocomplete'
   - 'use exclude node title'
   - 'use manualcrop'
+  - 'use search autocomplete'
   - 'use text format filtered_html'
   - 'view files'
   - 'view media'
