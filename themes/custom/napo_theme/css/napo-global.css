@@ -461,6 +461,45 @@ a[target=_blank]:after {
   font-weight: bold;
 }
 
+.sliding-popup-top#sliding-popup {
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/background-cookies.png);
+  background-repeat: repeat;
+  height: auto !important;
+  background-color: transparent;
+  position: fixed;
+}
+.sliding-popup-top .eu-cookie-compliance-message, .sliding-popup-top .eu-cookie-compliance-buttons {
+  float: none;
+  max-width: 100%;
+  text-align: center;
+}
+.sliding-popup-top .eu-cookie-compliance-message {
+  margin: 1rem 0;
+}
+.sliding-popup-top .eu-cookie-compliance-secondary-button, .sliding-popup-top .eu-cookie-compliance-default-button {
+  border: 1px solid #ddd;
+  text-shadow: 1px 1px 0 #FFF;
+  cursor: pointer;
+  margin-right: 0.25rem;
+  margin-top: 1rem;
+  vertical-align: middle;
+  overflow: visible;
+  width: auto;
+  box-shadow: inset 0 1px 0 0 #FFF;
+  background-color: #ededed;
+  background-image: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  border-radius: 6px;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+}
+.sliding-popup-top .adding-in-eu-compilance-module {
+  display: none;
+}
+
 .pager__items {
   display: flex;
   flex-direction: row;
