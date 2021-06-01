@@ -1,8 +1,9 @@
-uuid: ffdca123-0387-48ba-98eb-8926383d798f
+uuid: 381d20b3-06fb-48b0-bea6-a4a8961c28ee
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_results
     - field.field.node.napo_video.body
     - field.field.node.napo_video.field_archived
     - field.field.node.napo_video.field_combined_tags
@@ -18,13 +19,18 @@ dependencies:
     - node.type.napo_video
   module:
     - ds
+    - layout_builder
     - media
     - smart_trim
     - user
-id: node.napo_video.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.napo_video.search_results
 targetEntityType: node
 bundle: napo_video
-mode: default
+mode: search_results
 content:
   addtoany:
     weight: 2
