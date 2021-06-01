@@ -8,6 +8,7 @@ description: ''
 folder: sites/napo/config/staging
 module:
   authorization: 0
+  authorization_drupal_roles: 0
   custom_migrations: 0
   ldap_authentication: 0
   ldap_authorization: 0
@@ -25,13 +26,11 @@ module:
 theme: {  }
 blacklist: {  }
 graylist:
-  - ldap_authentication.settings
-  - ldap_servers.server.osha
-  - ldap_servers.server.osha_write
-  - ldap_servers.settings
-  - ldap_user.settings
-  - matomo.settings
   - migrate_drupal.settings
+  - migrate_plus.migration.migrate_file_to_media_example_article_images_step1
+  - migrate_plus.migration.migrate_file_to_media_example_article_images_step1_de
+  - migrate_plus.migration.migrate_file_to_media_example_article_images_step1_rokka
+  - migrate_plus.migration.migrate_file_to_media_example_article_images_step2
   - migrate_plus.migration.napo_node_article
   - migrate_plus.migration.napo_node_article_i18n
   - migrate_plus.migration.napo_node_article_media_documents_1
@@ -213,14 +212,7 @@ graylist:
   - migrate_plus.migration_group.napo_migrate
   - migrate_plus.migration_group.napo_migrate_media
   - migrate_plus.migration_group.napo_migrate_node
-  - migrate_plus.migration.migrate_file_to_media_example_article_images_step1
-  - migrate_plus.migration.migrate_file_to_media_example_article_images_step1_de
-  - migrate_plus.migration.migrate_file_to_media_example_article_images_step1_rokka
-  - migrate_plus.migration.migrate_file_to_media_example_article_images_step2
   - search_api.server.apache_solr
-  - smtp.settings
-  - ultimate_cron.job.ldap_user_cron
-  - ultimate_cron.job.matomo_cron
 graylist_dependents: false
 graylist_skip_equal: true
 weight: 0

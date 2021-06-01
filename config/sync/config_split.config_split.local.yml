@@ -8,6 +8,7 @@ description: ''
 folder: sites/napo/config/local
 module:
   custom_migrations: 0
+  devel: 0
   easy_install: 0
   migrate: 0
   migrate_drupal: 0
@@ -19,7 +20,19 @@ module:
 theme: {  }
 blacklist: {  }
 graylist:
+  - core.base_field_override.menu_link_content.devel.changed
+  - core.base_field_override.menu_link_content.devel.description
+  - core.base_field_override.menu_link_content.devel.metatag
+  - core.base_field_override.menu_link_content.devel.title
+  - core.base_field_override.menu_link_content.devel.view_mode
+  - devel.settings
+  - devel.toolbar.settings
+  - language.content_settings.menu_link_content.devel
   - migrate_drupal.settings
+  - migrate_plus.migration.migrate_file_to_media_example_article_images_step1
+  - migrate_plus.migration.migrate_file_to_media_example_article_images_step1_de
+  - migrate_plus.migration.migrate_file_to_media_example_article_images_step1_rokka
+  - migrate_plus.migration.migrate_file_to_media_example_article_images_step2
   - migrate_plus.migration.napo_node_article
   - migrate_plus.migration.napo_node_article_i18n
   - migrate_plus.migration.napo_node_article_media_documents_1
@@ -202,10 +215,7 @@ graylist:
   - migrate_plus.migration_group.napo_migrate_media
   - migrate_plus.migration_group.napo_migrate_node
   - search_api.server.apache_solr
-  - migrate_plus.migration.migrate_file_to_media_example_article_images_step1
-  - migrate_plus.migration.migrate_file_to_media_example_article_images_step1_de
-  - migrate_plus.migration.migrate_file_to_media_example_article_images_step1_rokka
-  - migrate_plus.migration.migrate_file_to_media_example_article_images_step2
+  - system.menu.devel
 graylist_dependents: false
 graylist_skip_equal: true
 weight: 0

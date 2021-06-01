@@ -3,6 +3,6 @@ home_link: Home
 current_page: true
 current_page_link: false
 trim_title: 0
-admin_pages_disable: false
+admin_pages_disable: true
 _core:
   default_config_hash: 2BF8x2Fv0I1OZDKbYxh5yHJHJ5QmMb-_oIt12YF7I84
