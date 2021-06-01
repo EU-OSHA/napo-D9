@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+          tags:
+            previous: '‹ fyrri'
+            next: 'næsta ›'
+            first: '« fremsta'
+            last: 'aftasta »'
+      fields:
+        user_picture:
+          separator: ', '
+        name:
+          separator: ', '
+        uid:
+          separator: ', '

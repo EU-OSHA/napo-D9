@@ -6,9 +6,7 @@ id: develop
 label: Develop
 description: ''
 folder: sites/napo/config/develop
-module:
-  search_api: 0
-  search_api_solr: 0
+module: {  }
 theme: {  }
 blacklist: {  }
 graylist:

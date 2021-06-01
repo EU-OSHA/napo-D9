@@ -1,0 +1,17 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reset
+      pager:
+        options:
+          tags:
+            previous: '‹ prejšnja'
+            next: 'naslednja ›'
+            first: '« prva'
+            last: 'zadnja »'
+      filters:
+        title:
+          expose:
+            label: Title

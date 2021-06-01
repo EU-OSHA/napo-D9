@@ -1,10 +1,10 @@
-uuid: 27a20bc5-6288-4636-8cac-8f5c87bdb065
+uuid: a4c02554-d687-44b3-b6f6-83bc3695ce9d
 langcode: en
 status: true
 dependencies: {  }
 id: osha_write
 label: 'Osha write'
-type: default
+type: openldap
 account_name_attr: ''
 address: 194.30.35.128
 basedn:
@@ -12,7 +12,7 @@ basedn:
   - 'ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
 bind_method: service_account
 binddn: 'cn=Reader,dc=osha,dc=europa,dc=eu'
-bindpw: '1234'
+bindpw: null
 encryption: none
 grp_derive_from_dn_attr: ''
 grp_derive_from_dn: false
