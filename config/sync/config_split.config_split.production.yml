@@ -8,6 +8,7 @@ description: ''
 folder: sites/napo/config/production
 module:
   authorization: 0
+  authorization_drupal_roles: 0
   ldap_authentication: 0
   ldap_authorization: 0
   ldap_query: 0
@@ -27,7 +28,6 @@ graylist:
   - ldap_servers.settings
   - ldap_user.settings
   - matomo.settings
-  - smtp.settings
   - ultimate_cron.job.ldap_user_cron
   - ultimate_cron.job.matomo_cron
 graylist_dependents: false
