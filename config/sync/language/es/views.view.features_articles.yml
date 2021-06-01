@@ -4,7 +4,3 @@ display:
       exposed_form:
         options:
           submit_button: 'Presentar solicitud'
-      fields:
-        title_1:
-          alter:
-            text: 'Ver más'

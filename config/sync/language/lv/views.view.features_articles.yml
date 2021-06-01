@@ -4,7 +4,3 @@ display:
       exposed_form:
         options:
           submit_button: Pieteikt
-      fields:
-        title_1:
-          alter:
-            text: 'Skatīt vairāk'

@@ -4,7 +4,3 @@ display:
       exposed_form:
         options:
           submit_button: Toepassen
-      fields:
-        title_1:
-          alter:
-            text: 'Meer weergeven'
