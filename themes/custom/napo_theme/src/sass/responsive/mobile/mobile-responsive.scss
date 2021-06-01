@@ -2,6 +2,9 @@
   .content-node-view{
     margin:0;
   }
+
+  /******  Header  ******/
+
   .header{
    &-logo {
      padding:0px;
@@ -200,59 +203,6 @@
       }
     }
   }
-  .block-views-blockfrontpage-custom-video-block{
-    video{
-      max-height:350px;
-    }
-    .frontpage-video-title{
-      display:none;
-    }
-  }
-  .block-views-blockconsortium-partners-block{
-    .views{
-      &-row{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: stretch;
-      }
-      &-col{
-
-        margin: 10px;
-      }
-    }
-
-    h2{
-      display:none;
-    }
-  }
-  .footer {
-    .nav{
-      &-item {
-        display: block;
-      }
-      &-link{
-        padding:0.375rem;
-        &:after{
-          display:none;
-        }
-      }
-    }
-  }
-  .block-views-blockfeatures-articles-block{
-    .views-row{
-      width:100%;
-      margin-bottom: 1.25rem;
-    }
-  }
-  .block-views-blocknapo-story-block-1{
-    .view-napo-story{
-      flex-direction: column-reverse;
-    }
-    .view-content,
-    .view-footer{
-      flex: 100%;
-    }
-  }
   .container.header_navbar_container{
     padding:0px;
   }
@@ -317,6 +267,181 @@
       transition: all 0.6s;
     }
   }
+
+  /******  Frontpage  ******/
+
+  .block-views-blockfrontpage-custom-video-block{
+    video{
+      max-height:350px;
+    }
+    .frontpage-video-title{
+      display:none;
+    }
+  }
+  .block-views-blockfeatures-articles-block{
+    .views-row{
+      width:100%;
+      margin-bottom: 1.25rem;
+    }
+  }
+  .block-views-blocknapo-story-block-1{
+    .view-napo-story{
+      flex-direction: column-reverse;
+    }
+    .view-content,
+    .view-footer{
+      flex: 100%;
+    }
+  }
+  .block-views-blockconsortium-partners-block{
+    .views{
+      &-row{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+      }
+      &-col{
+        margin: 10px;
+      }
+    }
+    h2{
+      display:none;
+    }
+  }
+
+  /******  Napo Film  ******/
+
+  .napo-film-list-view {
+    .views-view-grid {
+      .view-scenes,
+      .view-video{
+        position:relative;
+        margin:0;
+        left:initial;
+        width:100%;
+        margin-top:0.75rem;
+      }
+    }
+    .item-list{
+      .cart,
+      .download-video{
+        display:none;
+      }
+      .napo-film-list-image,
+      .group-right{
+        width:100%;
+        padding:0;
+      }
+
+      .napo-film-list-image{
+        a,
+        img{
+          width:100%;
+        }
+      }
+    }
+  }
+  .napos-films-films{
+    h1{
+      margin-top:3rem;
+    }
+    .block-views-exposed-filter-blocknapo-films-index-page-1{
+      top:-6.625rem;
+      .form-row{
+        margin:0;
+        .form-group{
+          &:nth-child(1){
+            width:calc(100% - 50px);
+          }
+          &:nth-child(2){
+            width:auto;
+          }
+        }
+      }
+    }
+    .block-facets,
+    .block-views-exposed-filter-blocknapo-films-index-page-1{
+      width: calc(100% - 30px);
+      left: 15px;
+    }
+    .block-facet{
+      &--links{
+        .item-list{
+          &__links{
+            width:100%;
+          }
+        }
+      }
+    }
+    &.search-facet-active-custom{
+      h1{
+        margin-top:4.5rem;
+      }
+
+      .block-facet--links{
+        position:absolute;
+        right:0.75rem;
+        top:-9rem;
+        z-index:200;
+        &.facet-active + .block-views-exposed-filter-blocknapo-films-index-page-1{
+          top:-6.625rem;
+        }
+      }
+    }
+  }
+  .quicktabs-tabs.list-group {
+    .list-group-item{
+      flex:1;
+    }
+  }
+
+  /******  Napo Film - Episodes  ******/
+
+  .view-napo-s-film-episodes{
+    .views-row{
+      padding-left:0;
+      .col-sm-3,
+      .col-sm-9{
+        max-width:100%;
+        flex: 0 0 100%;
+      }
+    }
+  }
+  .recommended-films{
+    .view-recommended-films{
+      .view-content {
+        flex-direction: column;
+        .views-row{
+          flex:0 0 100%;
+          max-width:100%;
+          margin:0.5rem 0;
+          .views-field-field-image,
+          .views-field-title{
+            max-width:50%;
+            flex:0 0 50%;
+          }
+        }
+      }
+    }
+  }
+
+  /******  Coming Soon  ******/
+
+  .napos-films-coming-soon{
+    .field--name-field-image{
+      float:none;
+      img{
+        margin:0 auto;
+      }
+    }
+    .field--name-body{
+      width:100%;
+      padding:0;
+    }
+  }
+
+  /******  Napo In The Workplace And For Teachers  ******/
+
   .learning-with-napo-napo-in-the-workplace,
   .learning-with-napo-Napo-in-the-workplace,
   .page-view-napo-for-teachers {
@@ -337,6 +462,14 @@
       width:45%;
     }
   }
+  .form-item-search{
+    .form-control{
+      padding:1.875rem;
+    }
+  }
+
+  /******  Napo In The Workplace And For Teachers - Detail  ******/
+
   .node--type-lesson,
   .node--type-msds-activities {
     .page-banner-custom{
@@ -403,18 +536,27 @@
       }
     }
   }
-  .napos-films-coming-soon{
-    .field--name-field-image{
-      float:none;
-      img{
-        margin:0 auto;
-      }
-    }
-    .field--name-body{
-      width:100%;
-      padding:0;
-    }
-  }
+  .node--type-napo-video{
+     .video-custom{
+       iframe{
+         width:100%;
+         height:auto;
+       }
+     }
+     .conten-video-info{
+       .napo-film-video-download-form{
+         .download{
+           display:none;
+         }
+         .share-links-node{
+           margin-left:auto;
+         }
+       }
+     }
+   }
+
+  /******  Napo Story  ******/
+
   .napo-story {
     iframe{
       float:none;
@@ -424,6 +566,9 @@
       margin-bottom:1.125rem;
     }
   }
+
+  /******  Napo And Frineds  ******/
+
   .view-napo-and-friends{
     .views-row{
       padding:50px 65px;
@@ -459,6 +604,9 @@
       }
     }
   }
+
+  /******  Napo Gallery - Detail  ******/
+
   .node--type-napo-album {
     .field--type-text-with-summary{
       width:100%;
@@ -477,135 +625,18 @@
       }
     }
   }
-  .napo-film-list-view {
-    .views-view-grid {
-      .view-scenes,
-      .view-video{
-        position:relative;
-        margin:0;
-        left:initial;
-        width:100%;
-        margin-top:0.75rem;
-      }
-    }
-    .item-list{
-      .cart,
-      .download-video{
-        display:none;
-      }
-      .napo-film-list-image,
-      .group-right{
-        width:100%;
-        padding:0;
-      }
 
-      .napo-film-list-image{
-        a,
-        img{
-          width:100%;
-        }
+  /******  Footer  ******/
+
+  .footer {
+    .nav{
+      &-item {
+        display: block;
       }
-    }
-  }
-  .view-napo-s-film-episodes{
-    .views-row{
-      padding-left:0;
-      .col-sm-3,
-      .col-sm-9{
-        max-width:100%;
-        flex: 0 0 100%;
-      }
-    }
-  }
-  .form-item-search{
-    .form-control{
-      padding:1.875rem;
-    }
-  }
-  .node--type-napo-video{
-    .video-custom{
-      iframe{
-        width:100%;
-        height:auto;
-      }
-    }
-    .conten-video-info{
-      .napo-film-video-download-form{
-        .download{
+      &-link{
+        padding:0.375rem;
+        &:after{
           display:none;
-        }
-        .share-links-node{
-          margin-left:auto;
-        }
-      }
-    }
-  }
-  .napos-films-films{
-    h1{
-      margin-top:3rem;
-    }
-    .block-views-exposed-filter-blocknapo-films-index-page-1{
-      top:-6.625rem;
-      .form-row{
-        margin:0;
-        .form-group{
-          &:nth-child(1){
-            width:calc(100% - 50px);
-          }
-          &:nth-child(2){
-            width:auto;
-          }
-        }
-      }
-    }
-    .block-facets,
-    .block-views-exposed-filter-blocknapo-films-index-page-1{
-      width: calc(100% - 30px);
-      left: 15px;
-    }
-    .block-facet{
-      &--links{
-        .item-list{
-          &__links{
-            width:100%;
-          }
-        }
-      }
-    }
-    &.search-facet-active-custom{
-      h1{
-        margin-top:4.5rem;
-      }
-
-      .block-facet--links{
-        position:absolute;
-        right:0.75rem;
-        top:-9rem;
-        z-index:200;
-        &.facet-active + .block-views-exposed-filter-blocknapo-films-index-page-1{
-          top:-6.625rem;
-        }
-      }
-    }
-  }
-  .quicktabs-tabs.list-group {
-    .list-group-item{
-      flex:1;
-    }
-  }
-  .recommended-films{
-    .view-recommended-films{
-      .view-content {
-        flex-direction: column;
-        .views-row{
-          flex:0 0 100%;
-          max-width:100%;
-          margin:0.5rem 0;
-          .views-field-field-image,
-          .views-field-title{
-            max-width:50%;
-            flex:0 0 50%;
-          }
         }
       }
     }
@@ -613,6 +644,8 @@
 }
 
 @media only screen and (max-width: 525px){
+
+  /******  Header  ******/
 
   .header{
     .region-header-logo {
@@ -625,23 +658,21 @@
       margin: auto;
     }
   }
-  .view-napo-workplaces {
-    .views-row{
-      width:100%;
-    }
-  }
+
+  /******  Napo Film  ******/
+
   .napo-film-list-view{
     .views-col{
       padding:0px;
     }
-   .views-view-grid {
-     .napo-film-content-container{
-       position:relative;
-       transform: none;
-       bottom:initial;
-       left:initial;
-     }
-   }
+    .views-view-grid {
+      .napo-film-content-container{
+        position:relative;
+        transform: none;
+        bottom:initial;
+        left:initial;
+      }
+    }
   }
   .napos-films-films{
     .block-page-title-block h1{
@@ -685,6 +716,17 @@
       }
     }
   }
+
+  /******  Napo In The Workplace And For Teachers  ******/
+  .page-view-napo-for-teachers,
+  .view-napo-workplaces {
+    .views-row{
+      width:100%;
+    }
+  }
+
+  /******  Napo In The Workplace And For Teachers - Detail  ******/
+
   .node--type-napo-video {
     .conten-video-info {
       &-tags {
@@ -703,30 +745,6 @@
         }
       }
     }
-  }
-  .content-page-content{
-    &>.col-12{
-      padding:0;
-      .napo-story &,
-      .page-view-napos-gallery &,
-      .node--type-napo-album &,
-      .path-napos-films &,
-      .napos-films-coming-soon &{
-        padding:0 1rem;
-      }
-    }
-  }
-  .node--type-lesson,
-  .node--type-msds-activities{
-    .content-accordions-download-custom{
-      .download-box {
-        ul{
-          flex-direction: column;
-        }
-      }
-    }
-  }
-  .node--type-napo-video{
     .block-page-title-block {
       h1{
         margin-top:5rem;
@@ -742,4 +760,29 @@
       }
     }
   }
+  .node--type-lesson,
+  .node--type-msds-activities{
+    .content-accordions-download-custom{
+      .download-box {
+        ul{
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+
+  .content-page-content{
+    &>.col-12{
+      padding:0;
+      .napo-story &,
+      .page-view-napos-gallery &,
+      .node--type-napo-album &,
+      .path-napos-films &,
+      .napos-films-coming-soon &{
+        padding:0 1rem;
+      }
+    }
+  }
+
 }
