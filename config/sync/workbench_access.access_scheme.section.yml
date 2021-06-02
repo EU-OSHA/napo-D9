@@ -1,0 +1,16 @@
+uuid: 20714a81-07f4-4a81-9059-15e4ce132b90
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.page
+    - system.menu.main
+id: section
+label: Section
+plural_label: Sections
+scheme: menu
+scheme_settings:
+  menus:
+    - main
+  bundles:
+    - page

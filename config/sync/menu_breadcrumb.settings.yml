@@ -28,8 +28,8 @@ menu_breadcrumb_menus:
     taxattach: 0
     langhandle: 0
   footer:
+    enabled: 1
     weight: 0
-    enabled: 0
     taxattach: 0
     langhandle: 0
   menu-social-media-menu:
