@@ -14,7 +14,7 @@ bundle: napo_video
 label: 'Publication date'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     default_date_type: now
