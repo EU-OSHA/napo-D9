@@ -1,0 +1,59 @@
+.node--view-mode-napo-video-from-msd-video{
+
+  @media screen and (min-width:0\0) and (min-resolution: +72dpi) {
+    /**  IE9 and Above  **/
+    .video-custom-avi,
+    .video-custom-ogv,
+    .video-custom-webm,
+    .video-custom-wmv{
+      display:none;
+    }
+    .video-custom-mp4{
+      display:block;
+    }
+  }
+
+
+  @supports (-ms-ime-align:auto) {
+    /**  Edge  **/
+    .video-custom-avi,
+    .video-custom-ogv,
+    .video-custom-webm,
+    .video-custom-wmv{
+      display:none;
+    }
+    .video-custom-mp4{
+      display:block;
+    }
+  }
+
+
+  @-moz-document url-prefix() {
+    /**  Firefox  **/
+    .video-custom-avi,
+    .video-custom-ogv,
+    .video-custom-wmv,
+    .video-custom-mp4{
+      display:none;
+    }
+    .video-custom-webm{
+      display:block;
+    }
+  }
+
+
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    /**  Chrome And Safari  **/
+    .video-custom-avi,
+    .video-custom-ogv,
+    .video-custom-webm,
+    .video-custom-wmv{
+      display:none;
+    }
+    .video-custom-mp4{
+      display:block;
+    }
+  }
+
+
+}

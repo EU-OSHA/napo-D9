@@ -83,6 +83,14 @@
     });
   });
 
-})(jQuery, Drupal);
 
+  /** Add class to the video parent fo just to show it in the supported browser **/
+  jQuery(document).ready(function () {
+    $('.field--name-field-msds-video').find('video').each(function(){
+      let videoSource =  $(this).find('source').attr('src');
+      let videoSourceFormat = videoSource.split('.');
+      $(this).closest('.field--name-field-media-video-file').closest('.field__item').addClass('video-custom-'+videoSourceFormat[1]);
+    });
+  });
+})(jQuery, Drupal);
 
