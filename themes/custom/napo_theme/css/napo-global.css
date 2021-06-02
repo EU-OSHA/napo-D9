@@ -2389,6 +2389,63 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   font-size: 1.125rem;
 }
 
+@media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) {
+  .node--view-mode-napo-video-from-msd-video {
+    /**  IE9 and Above  **/
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-avi,
+.node--view-mode-napo-video-from-msd-video .video-custom-ogv,
+.node--view-mode-napo-video-from-msd-video .video-custom-webm,
+.node--view-mode-napo-video-from-msd-video .video-custom-wmv {
+    display: none;
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-mp4 {
+    display: block;
+  }
+}
+@supports (-ms-ime-align: auto) {
+  .node--view-mode-napo-video-from-msd-video {
+    /**  Edge  **/
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-avi,
+.node--view-mode-napo-video-from-msd-video .video-custom-ogv,
+.node--view-mode-napo-video-from-msd-video .video-custom-webm,
+.node--view-mode-napo-video-from-msd-video .video-custom-wmv {
+    display: none;
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-mp4 {
+    display: block;
+  }
+}
+@-moz-document url-prefix() {
+  .node--view-mode-napo-video-from-msd-video {
+    /**  Firefox  **/
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-avi,
+.node--view-mode-napo-video-from-msd-video .video-custom-ogv,
+.node--view-mode-napo-video-from-msd-video .video-custom-wmv,
+.node--view-mode-napo-video-from-msd-video .video-custom-mp4 {
+    display: none;
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-webm {
+    display: block;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .node--view-mode-napo-video-from-msd-video {
+    /**  Chrome And Safari  **/
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-avi,
+.node--view-mode-napo-video-from-msd-video .video-custom-ogv,
+.node--view-mode-napo-video-from-msd-video .video-custom-webm,
+.node--view-mode-napo-video-from-msd-video .video-custom-wmv {
+    display: none;
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-mp4 {
+    display: block;
+  }
+}
+
 .napos-films-coming-soon .slick--less {
   display: inline-block;
   float: left;
