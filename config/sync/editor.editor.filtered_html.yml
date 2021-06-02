@@ -1,14 +1,12 @@
-uuid: 99be54ba-cac1-45b8-b667-bceb986517f2
+uuid: a0b7552e-0c62-4189-8365-61c64e01c345
 langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.full_html
+    - filter.format.filtered_html
   module:
     - ckeditor
-_core:
-  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
-format: full_html
+format: filtered_html
 editor: ckeditor
 settings:
   toolbar:
@@ -21,26 +19,21 @@ settings:
             - Italic
             - Underline
             - Strike
-            - JustifyBlock
-            - '-'
+        -
+          name: Links
+          items:
+            - Link
+            - Unlink
         -
           name: Lists
           items:
             - BulletedList
             - NumberedList
-        -
-          name: Linking
-          items:
-            - Link
-            - Unlink
             - Anchor
         -
           name: Media
           items:
             - DrupalImage
-        -
-          name: 'Block Formatting'
-          items:
             - Format
             - Font
             - FontSize
@@ -51,19 +44,18 @@ settings:
             - Cut
             - Copy
             - Paste
-            - PasteText
             - PasteFromWord
+            - PasteText
         -
           name: Table
           items:
             - Table
         -
-          name: 'Media extra'
+          name: Extra
           items:
             - SpecialChar
             - DrupalMediaLibrary
-            - Accordion
-            - ShowBlocks
+            - Maximize
             - Resize
   plugins:
     stylescombo:
@@ -85,9 +77,9 @@ settings:
       count_line_breaks: false
       max_words: -1
       max_chars: -1
-      hard_limit: 1
+      hard_limit: 0
 image_upload:
-  status: true
+  status: false
   scheme: public
   directory: inline-images
   max_size: ''
