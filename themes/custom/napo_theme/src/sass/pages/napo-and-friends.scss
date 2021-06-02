@@ -1,0 +1,76 @@
+.view-napo-and-friends{
+  .views-form{
+    width:100%;
+    table{
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin-bottom:1.25rem;
+      >tbody{
+        >tr{
+          >td{
+            padding: 8px;
+            line-height:2.75rem;
+            vertical-align: top;
+            border:none;
+            border-top: 1px solid $bg-color-grey-light-5;
+
+            &.views-field-title{
+              color: $text-color-blue;
+              background: url(/sites/napo/themes/custom/napo_theme/images/background-yellow.png) repeat-x;
+              padding-left: 17px;
+              font-weight: bold;
+              height: 29px;
+              font-size: 1.125rem;
+              &:hover{
+                border-bottom: 5px solid $text-color-blue;
+              }
+            }
+            a{
+              color: $text-color-blue;
+              text-decoration: none;
+              div{
+                background: transparent;
+                padding:0;
+                margin:0;
+                width:0;
+                height:0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .draggable a.tabledrag-handle{
+    height:auto;
+  }
+  .btn-primary{
+    color: $text-color-white;
+    background-color: $bg-color-green;
+    border-color: $bg-color-green;
+  }
+  .form-group{
+    margin-bottom:1rem;
+  }
+  .form-actions{
+    padding:0 1rem;
+  }
+  .tabledrag-toggle-weight{
+    color: $text-color-blue;
+    text-decoration: none;
+    box-shadow: none;
+    border:none;
+    outline:none;
+    background-color:transparent;
+    font-size:1.125rem;
+    &:hover,
+    &:focus{
+      box-shadow: none;
+      border:none;
+      outline:none;
+    }
+    &-wrapper{
+      text-align: left;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-uuid: e86e018c-a894-4e4b-b586-9c15f537bc63
+uuid: 6f81bb5c-079c-48e8-bb5c-fae8ab19cb5c
 langcode: en
 status: true
 dependencies: {  }
@@ -12,7 +12,7 @@ basedn:
   - 'ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
 bind_method: service_account
 binddn: 'cn=Reader,dc=osha,dc=europa,dc=eu'
-bindpw: '1234'
+bindpw: null
 encryption: none
 grp_derive_from_dn_attr: ''
 grp_derive_from_dn: false

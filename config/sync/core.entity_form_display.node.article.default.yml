@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_guidance_file
     - field.field.node.article.field_icon
     - field.field.node.article.field_image
+    - field.field.node.article.field_image2
     - field.field.node.article.field_list_of_activities
     - field.field.node.article.field_nace_codes
     - field.field.node.article.field_page_count
@@ -216,6 +217,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_image2: true
   promote: true
   status: true
   sticky: true

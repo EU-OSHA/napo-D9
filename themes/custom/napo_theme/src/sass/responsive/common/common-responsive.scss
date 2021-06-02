@@ -1,9 +1,10 @@
 @media only screen and (max-width: 1199px){
 
   .container{
-
     max-width: 100%;
   }
+
+  /******  Header  ******/
 
   .container.header_navbar_container {
     max-width: 100%;
@@ -25,6 +26,8 @@
 }
 
 @media only screen and (max-width: 991px){
+
+  /******  Napo Film  ******/
 
   .napo-film-list-view{
     .item-list{
@@ -55,4 +58,11 @@
 
 
 
+  .block-views-blockfeatures-articles-block{
+    .views-row {
+      .featured-article-body{
+        padding-bottom:2.5rem;
+      }
+    }
+  }
 }

@@ -1,8 +1,6 @@
 @import 'base/colors';
-@import 'base/mixins';
 @import 'base/reset';
 @import 'base/utils';
-@import 'base/variables';
 
 @import 'components/accordion';
 @import 'components/breadcrumb';
@@ -12,20 +10,17 @@
 @import 'components/form-fields';
 @import 'components/grid';
 @import 'components/headings';
-@import 'components/helper';
 @import 'components/links';
 @import 'components/modal';
 @import 'components/pager';
 @import 'components/select';
+@import 'components/switch';
 @import 'components/table';
 @import 'components/tabs';
 
-@import 'layout/body';
 @import 'layout/footer';
 @import 'layout/header';
 @import 'layout/home';
-@import 'layout/menu';
-@import 'layout/section';
 
 @import 'display/facets';
 @import 'display/faqs';
@@ -37,12 +32,16 @@
 @import 'display/napo-workplaces';
 @import 'display/recommended-films';
 @import 'display/search-form';
+@import 'display/search-autocomplete';
 @import 'display/search-results';
 @import 'display/share-this-on';
 @import 'display/sitemap';
+@import 'display/video-support';
 
 @import 'pages/coming-soon';
 @import 'pages/download-centre';
+@import 'pages/login';
+@import 'pages/napo-and-friends';
 @import 'pages/napo-films';
 @import 'pages/napo-in-the-workplace-and-teachers';
 @import 'pages/napo-story';

@@ -461,6 +461,45 @@ a[target=_blank]:after {
   font-weight: bold;
 }
 
+.sliding-popup-top#sliding-popup {
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/background-cookies.png);
+  background-repeat: repeat;
+  height: auto !important;
+  background-color: transparent;
+  position: fixed;
+}
+.sliding-popup-top .eu-cookie-compliance-message, .sliding-popup-top .eu-cookie-compliance-buttons {
+  float: none;
+  max-width: 100%;
+  text-align: center;
+}
+.sliding-popup-top .eu-cookie-compliance-message {
+  margin: 1rem 0;
+}
+.sliding-popup-top .eu-cookie-compliance-secondary-button, .sliding-popup-top .eu-cookie-compliance-default-button {
+  border: 1px solid #ddd;
+  text-shadow: 1px 1px 0 #FFF;
+  cursor: pointer;
+  margin-right: 0.25rem;
+  margin-top: 1rem;
+  vertical-align: middle;
+  overflow: visible;
+  width: auto;
+  box-shadow: inset 0 1px 0 0 #FFF;
+  background-color: #ededed;
+  background-image: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  border-radius: 6px;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+}
+.sliding-popup-top .adding-in-eu-compilance-module {
+  display: none;
+}
+
 .pager__items {
   display: flex;
   flex-direction: row;
@@ -619,6 +658,38 @@ a[target=_blank]:after {
 .chosen-container-active.chosen-with-drop .chosen-results li:hover {
   background: #e95420;
   color: #FFF;
+}
+
+.custom-switch {
+  margin-bottom: 0.25rem;
+}
+.custom-switch .custom-control-label {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
+.custom-switch .custom-control-label:before {
+  height: 1.25rem;
+  width: 2rem;
+  top: 0;
+  left: -2.5rem;
+}
+.custom-switch .custom-control-label:after {
+  top: calc(0.125rem + 1px);
+  left: calc(-2.5rem + 2px);
+  width: calc(1.125rem - 4px);
+  height: calc(1.125rem - 4px);
+  background-color: #506B9E;
+  border-radius: 50%;
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label:before {
+  background-color: #506B9E;
+  border-color: #506B9E;
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label:after {
+  transform: translateX(0.875rem);
+  background-color: #FFF;
 }
 
 table {
@@ -1409,10 +1480,12 @@ tr th {
   min-height: 245px;
 }
 .block-views-blockfeatures-articles-block .views-row:nth-child(1) h3 a {
+  font-weight: bold;
   padding: 1.5rem 0 0rem 4rem;
   background: url(/sites/napo/themes/custom/napo_theme/images/workplace-icon.png) left -1px no-repeat;
 }
 .block-views-blockfeatures-articles-block .views-row:nth-child(2) h3 a {
+  font-weight: bold;
   padding: 1.5rem 0 0rem 4.625rem;
   background: url(/sites/napo/themes/custom/napo_theme/images/teachers-icon.png) left -1px no-repeat;
 }
@@ -1616,6 +1689,9 @@ tr th {
 .view-napo-s-film-episodes .views-row > div {
   margin: 0rem;
   padding: 0rem;
+}
+.view-napo-s-film-episodes .views-row > div.views-field-field-combined-tags {
+  display: none;
 }
 .view-napo-s-film-episodes .col-sm-3 > div {
   height: 144px;
@@ -2054,6 +2130,7 @@ tr th {
   line-height: 1rem;
   display: block;
   margin-left: 0.5rem;
+  font-weight: bold;
 }
 
 .search-form {
@@ -2119,37 +2196,6 @@ tr th {
   margin-left: 22%;
   font-style: italic;
 }
-.search-form .custom-switch {
-  margin-bottom: 0.25rem;
-}
-.search-form .custom-switch .custom-control-label {
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.25rem;
-  cursor: pointer;
-}
-.search-form .custom-switch .custom-control-label:before {
-  height: 1.25rem;
-  width: 2rem;
-  top: 0;
-  left: -2.5rem;
-}
-.search-form .custom-switch .custom-control-label:after {
-  top: calc(0.125rem + 1px);
-  left: calc(-2.5rem + 2px);
-  width: calc(1.125rem - 4px);
-  height: calc(1.125rem - 4px);
-  background-color: #506B9E;
-  border-radius: 50%;
-}
-.search-form .custom-switch .custom-control-input:checked ~ .custom-control-label:before {
-  background-color: #506B9E;
-  border-color: #506B9E;
-}
-.search-form .custom-switch .custom-control-input:checked ~ .custom-control-label:after {
-  transform: translateX(0.875rem);
-  background-color: #FFF;
-}
 .search-form .fieldset-legend {
   font-weight: bold;
 }
@@ -2182,6 +2228,80 @@ tr th {
 
 #edit-lang-fieldset #edit-language {
   columns: 2;
+}
+
+ul[data-sa-theme=basic-blue] {
+  left: -195px !important;
+  padding-bottom: 5px;
+  border: 2px solid #d8d9d9;
+  box-shadow: none;
+}
+ul[data-sa-theme=basic-blue] > div.ui-autocomplete-field-group {
+  display: none;
+}
+ul[data-sa-theme=basic-blue] > *,
+ul[data-sa-theme=basic-blue] > *:hover {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+ul[data-sa-theme=basic-blue] > li.ui-menu-item {
+  padding: 1px 5px;
+}
+ul[data-sa-theme=basic-blue] > li.ui-menu-item:first-of-type {
+  margin-top: 10px;
+}
+ul[data-sa-theme=basic-blue] > li.ui-menu-item:hover {
+  background-color: #FFF;
+}
+ul[data-sa-theme=basic-blue] > li.ui-menu-item:not(:last-of-type) > .ui-menu-item-wrapper:hover {
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/view-episodes-yellow.png);
+  background-repeat: no-repeat;
+  background-position: 99% center;
+  background-color: #f7e235;
+  border: 0px !important;
+  border-radius: 0px;
+  padding-right: 30px !important;
+  color: #1f3695;
+  transition: background 0.4s ease-in;
+}
+ul[data-sa-theme=basic-blue] > li.ui-menu-item > .ui-menu-item-wrapper > .ui-autocomplete-fields {
+  padding: 5px 0;
+}
+ul[data-sa-theme=basic-blue] .ui-autocomplete-fields > * {
+  display: none;
+}
+ul[data-sa-theme=basic-blue] .ui-autocomplete-fields > *:first-child {
+  display: block;
+  color: #1f3695;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+ul[data-sa-theme=basic-blue] > div.ui-autocomplete-field-group.no_results + li.ui-menu-item, ul[data-sa-theme=basic-blue] > div.ui-autocomplete-field-group.more_results + li.ui-menu-item {
+  background: #a5b8db !important;
+  margin: 0px 5px 0px 5px !important;
+  width: 97% !important;
+}
+ul[data-sa-theme=basic-blue] > div.ui-autocomplete-field-group.no_results + li.ui-menu-item ui-autocomplete-fields > *:first-child, ul[data-sa-theme=basic-blue] > div.ui-autocomplete-field-group.more_results + li.ui-menu-item ui-autocomplete-fields > *:first-child {
+  color: #FFF !important;
+  text-transform: uppercase !important;
+  color: #FFF;
+  font-style: initial;
+  font-weight: bold;
+}
+
+ul[data-sa-theme=basic-blue] > div.ui-autocomplete-field-group.no_results + li.ui-menu-item .ui-autocomplete-fields > *:first-child, ul[data-sa-theme=basic-blue] > div.ui-autocomplete-field-group.more_results + li.ui-menu-item .ui-autocomplete-fields > *:first-child {
+  color: #FFF !important;
+  text-transform: uppercase !important;
+  color: #FFF;
+  font-style: initial;
+  font-weight: bold;
+  text-align: left;
+}
+
+ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-fields > *, ul[data-sa-theme=basic-blue] > li.ui-menu-item:hover .ui-autocomplete-fields > * {
+  color: #1f3695;
 }
 
 .node_search-results .list-group-item {
@@ -2269,6 +2389,63 @@ tr th {
   font-size: 1.125rem;
 }
 
+@media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) {
+  .node--view-mode-napo-video-from-msd-video {
+    /**  IE9 and Above  **/
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-avi,
+.node--view-mode-napo-video-from-msd-video .video-custom-ogv,
+.node--view-mode-napo-video-from-msd-video .video-custom-webm,
+.node--view-mode-napo-video-from-msd-video .video-custom-wmv {
+    display: none;
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-mp4 {
+    display: block;
+  }
+}
+@supports (-ms-ime-align: auto) {
+  .node--view-mode-napo-video-from-msd-video {
+    /**  Edge  **/
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-avi,
+.node--view-mode-napo-video-from-msd-video .video-custom-ogv,
+.node--view-mode-napo-video-from-msd-video .video-custom-webm,
+.node--view-mode-napo-video-from-msd-video .video-custom-wmv {
+    display: none;
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-mp4 {
+    display: block;
+  }
+}
+@-moz-document url-prefix() {
+  .node--view-mode-napo-video-from-msd-video {
+    /**  Firefox  **/
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-avi,
+.node--view-mode-napo-video-from-msd-video .video-custom-ogv,
+.node--view-mode-napo-video-from-msd-video .video-custom-wmv,
+.node--view-mode-napo-video-from-msd-video .video-custom-mp4 {
+    display: none;
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-webm {
+    display: block;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .node--view-mode-napo-video-from-msd-video {
+    /**  Chrome And Safari  **/
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-avi,
+.node--view-mode-napo-video-from-msd-video .video-custom-ogv,
+.node--view-mode-napo-video-from-msd-video .video-custom-webm,
+.node--view-mode-napo-video-from-msd-video .video-custom-wmv {
+    display: none;
+  }
+  .node--view-mode-napo-video-from-msd-video .video-custom-mp4 {
+    display: block;
+  }
+}
+
 .napos-films-coming-soon .slick--less {
   display: inline-block;
   float: left;
@@ -2322,6 +2499,257 @@ tr th {
   background-image: url(/sites/napo/themes/custom/napo_theme/images/download-center.png);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.user-login-form,
+.user-register-form,
+.user-pass {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding: 1.25rem 0.75rem;
+  width: 500px;
+}
+.user-login-form .form-group,
+.user-register-form .form-group,
+.user-pass .form-group {
+  margin-bottom: 0.25rem;
+}
+.user-login-form .form-required,
+.user-register-form .form-required,
+.user-pass .form-required {
+  font-weight: 700;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.user-login-form .form-required:after,
+.user-register-form .form-required:after,
+.user-pass .form-required:after {
+  color: #1f3695;
+}
+.user-login-form .form-control,
+.user-register-form .form-control,
+.user-pass .form-control {
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.375rem;
+  border: 1px solid rgba(31, 54, 149, 0);
+  width: 100%;
+  border-radius: 0;
+  background-color: #e8f0fe;
+}
+.user-login-form .form-actions,
+.user-register-form .form-actions,
+.user-pass .form-actions {
+  margin-top: 2rem;
+}
+.user-login-form .form-submit,
+.user-register-form .form-submit,
+.user-pass .form-submit {
+  text-decoration: none;
+  background: #337ab7;
+  color: #FFF;
+  font-size: 1.25rem;
+  padding: 0.5rem 1.75rem;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+}
+
+.user-register-form {
+  max-width: 800px;
+  width: 100%;
+}
+.user-register-form .form-group #edit-user-picture-0--label {
+  font-weight: 700;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.user-register-form .form-group #edit-user-picture-0--label:after {
+  color: #1f3695;
+}
+.user-register-form #edit-contact,
+.user-register-form #edit-field-metatag-0,
+.user-register-form #edit-field-metatag-0-basic,
+.user-register-form #edit-field-metatag-0-advanced {
+  border-radius: 1.875rem;
+  padding: 0rem;
+  margin-top: 0.75rem;
+  border: 2px solid #b9c3e0;
+}
+.user-register-form #edit-contact summary,
+.user-register-form #edit-field-metatag-0 summary,
+.user-register-form #edit-field-metatag-0-basic summary,
+.user-register-form #edit-field-metatag-0-advanced summary {
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-language.png);
+  background-repeat: no-repeat;
+  background-position: 97% 12px;
+  background-color: #b9c3e0;
+  border-radius: 1.875rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+  margin: 0rem;
+  width: 100%;
+  cursor: pointer;
+}
+.user-register-form #edit-contact summary::-webkit-details-marker,
+.user-register-form #edit-field-metatag-0 summary::-webkit-details-marker,
+.user-register-form #edit-field-metatag-0-basic summary::-webkit-details-marker,
+.user-register-form #edit-field-metatag-0-advanced summary::-webkit-details-marker {
+  display: none;
+}
+.user-register-form #edit-contact[open],
+.user-register-form #edit-field-metatag-0[open],
+.user-register-form #edit-field-metatag-0-basic[open],
+.user-register-form #edit-field-metatag-0-advanced[open] {
+  border-color: #1f3695;
+}
+.user-register-form #edit-contact[open] summary,
+.user-register-form #edit-field-metatag-0[open] summary,
+.user-register-form #edit-field-metatag-0-basic[open] summary,
+.user-register-form #edit-field-metatag-0-advanced[open] summary {
+  background-color: #1f3695;
+  color: #FFF;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-language-up.png);
+}
+.user-register-form #edit-contact .details-wrapper,
+.user-register-form #edit-field-metatag-0 .details-wrapper,
+.user-register-form #edit-field-metatag-0-basic .details-wrapper,
+.user-register-form #edit-field-metatag-0-advanced .details-wrapper {
+  border: 0rem;
+  padding: 1.25rem 1.875rem 1.875rem;
+  position: relative;
+  color: #666;
+}
+.user-register-form small {
+  display: block;
+}
+.user-register-form .image-widget {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  align-items: center;
+}
+.user-register-form .image-widget .image-preview, .user-register-form .image-widget-data {
+  float: none;
+  display: inline-flex;
+}
+.user-register-form .image-widget .image-preview {
+  padding: 0;
+  margin-right: 1rem;
+}
+.user-register-form .image-widget .image-preview img {
+  margin: 0;
+}
+.user-register-form .image-widget-data {
+  flex-direction: row;
+  max-width: 100%;
+  align-items: center;
+}
+.user-register-form .image-widget-data #edit-user-picture-0-upload {
+  min-height: 3rem;
+}
+.user-register-form .image-widget-data .form-submit,
+.user-register-form .image-widget-data input::-webkit-file-upload-button {
+  border-radius: 5px;
+  color: #585759;
+  background: #f7e235;
+  font-weight: bold;
+  border: 0px solid transparent;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: auto;
+}
+.user-register-form .image-widget-data .form-submit {
+  display: none;
+}
+.user-register-form .image-widget-data .form-submit[value=Remove] {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.user-register-form .image-widget-data input::-webkit-file-upload-button {
+  height: 2rem;
+}
+
+.user-pass p {
+  font-size: 80%;
+  font-weight: 400;
+  color: #6c757d;
+}
+
+.view-napo-and-friends .views-form {
+  width: 100%;
+}
+.view-napo-and-friends .views-form table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1.25rem;
+}
+.view-napo-and-friends .views-form table > tbody > tr > td {
+  padding: 8px;
+  line-height: 2.75rem;
+  vertical-align: top;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+.view-napo-and-friends .views-form table > tbody > tr > td.views-field-title {
+  color: #1f3695;
+  background: url(/sites/napo/themes/custom/napo_theme/images/background-yellow.png) repeat-x;
+  padding-left: 17px;
+  font-weight: bold;
+  height: 29px;
+  font-size: 1.125rem;
+}
+.view-napo-and-friends .views-form table > tbody > tr > td.views-field-title:hover {
+  border-bottom: 5px solid #1f3695;
+}
+.view-napo-and-friends .views-form table > tbody > tr > td a {
+  color: #1f3695;
+  text-decoration: none;
+}
+.view-napo-and-friends .views-form table > tbody > tr > td a div {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  height: 0;
+}
+.view-napo-and-friends .draggable a.tabledrag-handle {
+  height: auto;
+}
+.view-napo-and-friends .btn-primary {
+  color: #FFF;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+.view-napo-and-friends .form-group {
+  margin-bottom: 1rem;
+}
+.view-napo-and-friends .form-actions {
+  padding: 0 1rem;
+}
+.view-napo-and-friends .tabledrag-toggle-weight {
+  color: #1f3695;
+  text-decoration: none;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.125rem;
+}
+.view-napo-and-friends .tabledrag-toggle-weight:hover, .view-napo-and-friends .tabledrag-toggle-weight:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.view-napo-and-friends .tabledrag-toggle-weight-wrapper {
+  text-align: left;
 }
 
 .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 {
@@ -2392,11 +2820,13 @@ tr th {
 }
 
 .learning-with-napo-napo-in-the-workplace .view-napo-workplaces,
+.learning-with-napo-Napo-in-the-workplace .view-napo-workplaces,
 .page-view-napo-for-teachers .view-napo-workplaces {
   display: flex;
   flex-direction: column;
 }
 .learning-with-napo-napo-in-the-workplace .content-page-content,
+.learning-with-napo-Napo-in-the-workplace .content-page-content,
 .page-view-napo-for-teachers .content-page-content {
   background-color: #f2f1f2;
   background-image: url(/sites/napo/themes/custom/napo_theme/images/nav-bar-borderx2.png);
@@ -2409,6 +2839,7 @@ tr th {
   flex-wrap: wrap;
 }
 .learning-with-napo-napo-in-the-workplace .view-filters,
+.learning-with-napo-Napo-in-the-workplace .view-filters,
 .page-view-napo-for-teachers .view-filters {
   position: absolute;
   z-index: 1;
@@ -2418,10 +2849,12 @@ tr th {
   width: 28%;
 }
 .learning-with-napo-napo-in-the-workplace .view-filters .form-actions,
+.learning-with-napo-Napo-in-the-workplace .view-filters .form-actions,
 .page-view-napo-for-teachers .view-filters .form-actions {
   display: none;
 }
 .learning-with-napo-napo-in-the-workplace .node--view-mode-header-view-node,
+.learning-with-napo-Napo-in-the-workplace .node--view-mode-header-view-node,
 .page-view-napo-for-teachers .node--view-mode-header-view-node {
   padding: 0 3% 2.5rem;
   position: relative;
@@ -2429,14 +2862,17 @@ tr th {
   flex-direction: row;
 }
 .learning-with-napo-napo-in-the-workplace .node--view-mode-header-view-node .field--name-field-image,
+.learning-with-napo-Napo-in-the-workplace .node--view-mode-header-view-node .field--name-field-image,
 .page-view-napo-for-teachers .node--view-mode-header-view-node .field--name-field-image {
   flex: 50%;
 }
 .learning-with-napo-napo-in-the-workplace .node--view-mode-header-view-node .field--name-field-image img,
+.learning-with-napo-Napo-in-the-workplace .node--view-mode-header-view-node .field--name-field-image img,
 .page-view-napo-for-teachers .node--view-mode-header-view-node .field--name-field-image img {
   width: 100% !important;
 }
 .learning-with-napo-napo-in-the-workplace .node--view-mode-header-view-node .field--type-text-with-summary,
+.learning-with-napo-Napo-in-the-workplace .node--view-mode-header-view-node .field--type-text-with-summary,
 .page-view-napo-for-teachers .node--view-mode-header-view-node .field--type-text-with-summary {
   flex: 50%;
   padding: 0.625rem 2.5rem;
@@ -2454,6 +2890,10 @@ tr th {
   font-size: 1.125rem;
 }
 
+.node--type-lesson .block-page-title-block,
+.node--type-msds-activities .block-page-title-block {
+  margin-top: 3rem;
+}
 .node--type-lesson .page-banner-custom,
 .node--type-msds-activities .page-banner-custom {
   padding: 0 0 2.5rem;
@@ -2712,11 +3152,11 @@ tr th {
 }
 .node--type-lesson .back-button-custom,
 .node--type-msds-activities .back-button-custom {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  top: 0rem;
+  top: -6.5rem;
   right: auto;
-  left: 0rem;
+  left: 15px;
   margin-bottom: 0.625rem;
 }
 .node--type-lesson .back-button-custom a,
@@ -2933,6 +3373,7 @@ tr th {
     max-width: 100%;
   }
 
+  /******  Header  ******/
   .container.header_navbar_container {
     max-width: 100%;
     margin-top: 1.25rem;
@@ -2950,6 +3391,7 @@ tr th {
   }
 }
 @media only screen and (max-width: 991px) {
+  /******  Napo Film  ******/
   .napo-film-list-view .item-list .item {
     flex-direction: column;
     align-items: flex-end;
@@ -2970,6 +3412,10 @@ tr th {
   .napo-film-list-view .item-list .group-right h3 {
     margin-top: 0.625rem;
   }
+
+  .block-views-blockfeatures-articles-block .views-row .featured-article-body {
+    padding-bottom: 2.5rem;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .block-views-blockconsortium-partners-block .views-row {
@@ -2980,6 +3426,7 @@ tr th {
   }
 }
 @media (min-width: 992px) {
+  /******  Header  ******/
   #header .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0;
   }
@@ -2998,10 +3445,11 @@ tr th {
   }
 }
 @media only screen and (max-width: 767px) {
-  .header .region-header-logo img {
-    margin: auto;
+  .content-node-view {
+    margin: 0;
   }
 
+  /******  Header  ******/
   .header-logo {
     padding: 0px;
   }
@@ -3017,14 +3465,19 @@ tr th {
     margin: auto;
     display: block;
   }
-
-  .region-header-logo {
+  .header .region-header-logo {
     margin: 0px;
   }
-
+  .header .region-header-logo img {
+    margin: auto;
+  }
   .header_nav {
     text-align: left;
     padding: 0px;
+    position: relative;
+  }
+  .show-menu .header_nav {
+    margin-bottom: 1.5rem;
   }
   .header .menu--main {
     width: 100%;
@@ -3068,7 +3521,7 @@ tr th {
     margin: 0 auto;
   }
   .header .nav {
-    padding: 0 1rem;
+    padding: 0;
   }
   .header .nav-item {
     min-width: 100%;
@@ -3151,61 +3604,6 @@ tr th {
     font-weight: normal;
     font-size: 1.25rem;
   }
-
-  .block-views-blockfrontpage-custom-video-block video {
-    max-height: 350px;
-  }
-  .block-views-blockfrontpage-custom-video-block .frontpage-video-title {
-    display: none;
-  }
-
-  .header_top_bar {
-    display: none;
-  }
-
-  .block-views-blockconsortium-partners-block .views-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: stretch;
-  }
-  .block-views-blockconsortium-partners-block .views-col {
-    margin: 10px;
-  }
-  .block-views-blockconsortium-partners-block h2 {
-    display: none;
-  }
-
-  .footer .nav-item {
-    display: block;
-  }
-  .footer .nav-link {
-    padding: 0.375rem;
-  }
-  .footer .nav-link:after {
-    display: none;
-  }
-
-  .block-views-blockfeatures-articles-block .views-row {
-    width: 100%;
-    margin-bottom: 1.25rem;
-  }
-
-  .block-views-blocknapo-story-block-1 .view-napo-story {
-    flex-direction: column-reverse;
-  }
-  .block-views-blocknapo-story-block-1 .view-content,
-.block-views-blocknapo-story-block-1 .view-footer {
-    flex: 100%;
-  }
-
-  .container.header_navbar_container {
-    padding: 0px;
-  }
-
-  .header_nav {
-    position: relative;
-  }
-
   .header-blocks {
     position: absolute;
     z-index: 200;
@@ -3217,6 +3615,29 @@ tr th {
   .header-blocks .region-header-form {
     display: flex;
     flex-direction: row-reverse;
+  }
+  .header_top_bar {
+    display: none;
+  }
+  .header .block-simple-blocksearch-api .form-row {
+    width: 100%;
+    height: auto;
+  }
+  .header .block-simple-blocksearch-api .form-row .form-group {
+    width: calc(100% - 40px);
+  }
+  .header .block-simple-blocksearch-api .form-row input {
+    border-radius: 0rem;
+    width: 100%;
+    padding: 1.25rem;
+    border-bottom: 1px dotted #FFF;
+  }
+  .header .block-simple-blocksearch-api .form-actions {
+    display: none;
+  }
+
+  .container.header_navbar_container {
+    padding: 0px;
   }
 
   .custom-select {
@@ -3274,7 +3695,7 @@ tr th {
     overflow: hidden;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
-    opacity: 0rem;
+    opacity: 0;
   }
   #block-searchapi.in {
     width: 80%;
@@ -3282,27 +3703,146 @@ tr th {
     transition: all 0.6s;
   }
 
-  .header .block-simple-blocksearch-api .form-row {
-    width: 100%;
-    height: auto;
+  /******  Frontpage  ******/
+  .block-views-blockfrontpage-custom-video-block video {
+    max-height: 350px;
   }
-  .header .block-simple-blocksearch-api .form-row .form-group {
-    width: calc(100% - 40px);
-  }
-  .header .block-simple-blocksearch-api .form-row input {
-    border-radius: 0rem;
-    width: 100%;
-    padding: 1.25rem;
-    border-bottom: 1px dotted #FFF;
-  }
-  .header .block-simple-blocksearch-api .form-actions {
+  .block-views-blockfrontpage-custom-video-block .frontpage-video-title {
     display: none;
   }
 
+  .block-views-blockfeatures-articles-block .views-row {
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+
+  .block-views-blocknapo-story-block-1 .view-napo-story {
+    flex-direction: column-reverse;
+  }
+  .block-views-blocknapo-story-block-1 .view-content,
+.block-views-blocknapo-story-block-1 .view-footer {
+    flex: 100%;
+  }
+
+  .block-views-blockconsortium-partners-block .views-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+  .block-views-blockconsortium-partners-block .views-col {
+    margin: 10px;
+  }
+  .block-views-blockconsortium-partners-block h2 {
+    display: none;
+  }
+
+  /******  Napo Film  ******/
+  .napo-film-list-view .views-view-grid .view-scenes,
+.napo-film-list-view .views-view-grid .view-video {
+    position: relative;
+    margin: 0;
+    left: initial;
+    width: 100%;
+    margin-top: 0.75rem;
+  }
+  .napo-film-list-view .item-list .cart,
+.napo-film-list-view .item-list .download-video {
+    display: none;
+  }
+  .napo-film-list-view .item-list .napo-film-list-image,
+.napo-film-list-view .item-list .group-right {
+    width: 100%;
+    padding: 0;
+  }
+  .napo-film-list-view .item-list .napo-film-list-image a,
+.napo-film-list-view .item-list .napo-film-list-image img {
+    width: 100%;
+  }
+
+  .napos-films-films h1 {
+    margin-top: 3rem;
+  }
+  .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 {
+    top: -6.625rem;
+  }
+  .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-row {
+    margin: 0;
+  }
+  .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-row .form-group:nth-child(1) {
+    width: calc(100% - 50px);
+  }
+  .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-row .form-group:nth-child(2) {
+    width: auto;
+  }
+  .napos-films-films .block-facets,
+.napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 {
+    width: calc(100% - 30px);
+    left: 15px;
+  }
+  .napos-films-films .block-facet--links .item-list__links {
+    width: 100%;
+  }
+  .napos-films-films.search-facet-active-custom h1 {
+    margin-top: 4.5rem;
+  }
+  .napos-films-films.search-facet-active-custom .block-facet--links {
+    position: absolute;
+    right: 0.75rem;
+    top: -9rem;
+    z-index: 200;
+  }
+  .napos-films-films.search-facet-active-custom .block-facet--links.facet-active + .block-views-exposed-filter-blocknapo-films-index-page-1 {
+    top: -6.625rem;
+  }
+
+  .quicktabs-tabs.list-group .list-group-item {
+    flex: 1;
+  }
+
+  /******  Napo Film - Episodes  ******/
+  .view-napo-s-film-episodes .views-row {
+    padding-left: 0;
+  }
+  .view-napo-s-film-episodes .views-row .col-sm-3,
+.view-napo-s-film-episodes .views-row .col-sm-9 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .recommended-films .view-recommended-films .view-content {
+    flex-direction: column;
+  }
+  .recommended-films .view-recommended-films .view-content .views-row {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0.5rem 0;
+  }
+  .recommended-films .view-recommended-films .view-content .views-row .views-field-field-image,
+.recommended-films .view-recommended-films .view-content .views-row .views-field-title {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  /******  Coming Soon  ******/
+  .napos-films-coming-soon .field--name-field-image {
+    float: none;
+  }
+  .napos-films-coming-soon .field--name-field-image img {
+    margin: 0 auto;
+  }
+  .napos-films-coming-soon .field--name-body {
+    width: 100%;
+    padding: 0;
+  }
+
+  /******  Napo In The Workplace And For Teachers  ******/
   .learning-with-napo-napo-in-the-workplace .view-filters,
+.learning-with-napo-Napo-in-the-workplace .view-filters,
 .page-view-napo-for-teachers .view-filters {
     padding: 0;
     width: 100%;
+    margin: 1rem 0;
+    position: static;
   }
 
   .views-exposed-form .form-item-search {
@@ -3313,6 +3853,11 @@ tr th {
     width: 45%;
   }
 
+  .form-item-search .form-control {
+    padding: 1.875rem;
+  }
+
+  /******  Napo In The Workplace And For Teachers - Detail  ******/
   .node--type-lesson .page-banner-custom,
 .node--type-msds-activities .page-banner-custom {
     padding: 0;
@@ -3380,17 +3925,18 @@ tr th {
     top: 0rem;
   }
 
-  .napos-films-coming-soon .field--name-field-image {
-    float: none;
-  }
-  .napos-films-coming-soon .field--name-field-image img {
-    margin: 0 auto;
-  }
-  .napos-films-coming-soon .field--name-body {
+  .node--type-napo-video .video-custom iframe {
     width: 100%;
-    padding: 0;
+    height: auto;
+  }
+  .node--type-napo-video .conten-video-info .napo-film-video-download-form .download {
+    display: none;
+  }
+  .node--type-napo-video .conten-video-info .napo-film-video-download-form .share-links-node {
+    margin-left: auto;
   }
 
+  /******  Napo Story  ******/
   .napo-story iframe {
     float: none;
     width: 100%;
@@ -3399,6 +3945,7 @@ tr th {
     margin-bottom: 1.125rem;
   }
 
+  /******  Napo And Frineds  ******/
   .view-napo-and-friends .views-row {
     padding: 50px 65px;
   }
@@ -3429,6 +3976,7 @@ tr th {
     left: 222px;
   }
 
+  /******  Napo Gallery - Detail  ******/
   .node--type-napo-album .field--type-text-with-summary {
     width: 100%;
   }
@@ -3438,23 +3986,36 @@ tr th {
   .node--type-napo-album #share-this-on {
     padding-top: 0;
   }
+  .node--type-napo-album .back-button-custom {
+    position: static;
+  }
+  .node--type-napo-album .back-button-custom a {
+    display: block;
+    margin-bottom: 1rem;
+  }
 
-  .napo-film-list-view .views-view-grid .view-scenes,
-.napo-film-list-view .views-view-grid .view-video,
-.napo-film-list-view .views-view-grid .view-scenes,
-.napo-film-list-view .views-view-grid .view-video {
-    position: relative;
-    margin: 0;
-    left: initial;
-    width: 100%;
-    margin-top: 0.75rem;
+  /******  Footer  ******/
+  .footer .nav-item {
+    display: block;
+  }
+  .footer .nav-link {
+    padding: 0.375rem;
+  }
+  .footer .nav-link:after {
+    display: none;
   }
 }
 @media only screen and (max-width: 525px) {
-  .view-napo-workplaces .views-row {
-    width: 100%;
+  /******  Header  ******/
+  .header .region-header-logo img {
+    max-width: 80%;
+  }
+  .header_nav {
+    width: 90%;
+    margin: auto;
   }
 
+  /******  Napo Film  ******/
   .napo-film-list-view .views-col {
     padding: 0px;
   }
@@ -3502,6 +4063,19 @@ tr th {
     top: -6.5rem;
   }
 
+  /******  Napo In The Workplace And For Teachers  ******/
+  .page-view-napo-for-teachers .views-row,
+.view-napo-workplaces .views-row {
+    width: 100%;
+  }
+
+  /******  Napo In The Workplace And For Teachers - Detail  ******/
+  .node--type-napo-video .conten-video-info-tags {
+    padding-right: 1.5rem;
+  }
+  .node--type-napo-video .conten-video-info-tags .categories .field--type-entity-reference {
+    flex-direction: column;
+  }
   .node--type-napo-video .conten-video-info .napo-film-video-download-form {
     position: relative;
     background-color: #f2f1f2;
@@ -3509,26 +4083,6 @@ tr th {
   .node--type-napo-video .conten-video-info .napo-film-video-download-form .download {
     margin-left: auto;
   }
-  .node--type-napo-video .conten-video-info-tags .categories .field--type-entity-reference {
-    flex-direction: column;
-  }
-
-  .content-page-content > .col-12 {
-    padding: 0;
-  }
-  .napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12 {
-    padding: 0 1rem;
-  }
-
-  .node--type-napo-video .conten-video-info-tags {
-    padding-right: 1.5rem;
-  }
-
-  .node--type-lesson .content-accordions-download-custom .download-box ul,
-.node--type-msds-activities .content-accordions-download-custom .download-box ul {
-    flex-direction: column;
-  }
-
   .node--type-napo-video .block-page-title-block h1 {
     margin-top: 5rem;
   }
@@ -3540,8 +4094,16 @@ tr th {
     display: block;
   }
 
-  .quicktabs-tabs.list-group .list-group-item {
-    flex: 1;
+  .node--type-lesson .content-accordions-download-custom .download-box ul,
+.node--type-msds-activities .content-accordions-download-custom .download-box ul {
+    flex-direction: column;
+  }
+
+  .content-page-content > .col-12 {
+    padding: 0;
+  }
+  .napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12 {
+    padding: 0 1rem;
   }
 }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
@@ -3560,7 +4122,8 @@ tr th {
     padding-bottom: 2.5rem;
   }
 }
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  /******  Header  ******/
   .header-logo {
     flex: 0 0 100%;
     max-width: 100%;
@@ -3589,6 +4152,11 @@ tr th {
   }
   .navbar-nav .dropdown-menu {
     position: absolute;
+  }
+
+  .header .region-header-logo img {
+    width: auto;
+    margin: auto;
   }
 }
 

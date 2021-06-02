@@ -11,28 +11,30 @@ dependencies:
     - field.field.node.article.field_guidance_file
     - field.field.node.article.field_icon
     - field.field.node.article.field_image
+    - field.field.node.article.field_image2
     - field.field.node.article.field_list_of_activities
     - field.field.node.article.field_nace_codes
     - field.field.node.article.field_page_count
     - field.field.node.article.field_publication_date
     - field.field.node.article.field_tags
     - field.field.node.article.field_thesaurus
-    - image.style.large
+    - image.style.thumbnail
     - node.type.article
   module:
+    - ds
     - field_group
     - layout_builder
-    - slick
-    - text
+    - media
+    - smart_trim
     - user
 third_party_settings:
   field_group:
     group_buttons_group:
       children:
-        - field_list_of_activities
         - field_glossary
+        - field_list_of_activities
       parent_name: ''
-      weight: 5
+      weight: 17
       format_type: html_element
       region: hidden
       format_settings:
@@ -56,72 +58,54 @@ targetEntityType: node
 bundle: article
 mode: search_results
 content:
-  body:
-    type: text_default
-    weight: 1
+  addtoany:
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-    label: hidden
-  field_image:
-    type: slick_media
-    weight: 0
+  body:
+    type: smart_trim
+    weight: 2
     region: content
     settings:
-      image_style: large
-      thumbnail: ''
-      optionset_thumbnail: ''
-      skin_thumbnail: ''
-      thumbnail_caption: ''
-      thumbnail_effect: ''
-      thumbnail_position: ''
-      optionset: default
-      override: false
-      overridables: {  }
-      skin: ''
-      skin_arrows: ''
-      skin_dots: ''
-      cache: 0
-      current_view_mode: ''
-      fx: ''
-      style: ''
-      icon: ''
-      layout: ''
-      view_mode: ''
-      background: false
-      box_caption: ''
-      box_caption_custom: ''
-      box_media_style: ''
-      caption: {  }
-      responsive_image_style: ''
-      box_style: ''
-      media_switch: ''
-      ratio: ''
-      thumbnail_style: ''
-      _uri: ''
-      breakpoints: {  }
-      sizes: ''
-      grid_header: ''
-      preserve_keys: false
-      visible_items: 0
-      grid: 0
-      grid_medium: 0
-      grid_small: 0
-      class: ''
-      id: ''
-      image: ''
-      link: ''
-      overlay: ''
-      title: ''
-      vanilla: false
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_link: true
+      more_text: 'Read more'
+      more_class: more-link
+      summary_handler: trim
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
     third_party_settings: {  }
     label: hidden
+  field_image:
+    type: media_thumbnail
+    weight: 1
+    region: content
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    label: hidden
+  search_api_excerpt:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  breadcrumbs: true
   field_character_count: true
   field_expiration_date: true
   field_glossary: true
   field_guidance_file: true
   field_icon: true
+  field_image2: true
   field_list_of_activities: true
   field_nace_codes: true
   field_page_count: true
@@ -130,4 +114,3 @@ hidden:
   field_thesaurus: true
   langcode: true
   links: true
-  search_api_excerpt: true

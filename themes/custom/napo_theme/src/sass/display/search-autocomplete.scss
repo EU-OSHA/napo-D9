@@ -1,0 +1,113 @@
+
+
+
+ul[data-sa-theme="basic-blue"]{
+  left: -195px !important;
+  padding-bottom: 5px;
+  border: 2px solid #d8d9d9;
+  box-shadow: none;
+  > div{
+    &.ui-autocomplete-field-group{
+      display:none;
+    }
+  }
+  >*,
+  >*:hover{
+    border:none;
+    margin: 0;
+    padding: 0;
+  }
+  > li.ui-menu-item{
+    padding:1px 5px;
+    &:first-of-type{
+      margin-top: 10px;
+    }
+    &:hover{
+      background-color: $bg-color-white;
+    }
+
+    &:not(:last-of-type){
+      >.ui-menu-item-wrapper{
+        &:hover{
+          background-image: url(/sites/napo/themes/custom/napo_theme/images/view-episodes-yellow.png);
+          background-repeat: no-repeat;
+          background-position: 99% center;
+          background-color: $bg-color-yellow ;
+          border: 0px!important;
+          border-radius: 0px;
+          padding-right: 30px!important;
+          color:$text-color-blue;
+          transition: background 0.4s ease-in;
+        }
+      }
+    }
+    >.ui-menu-item-wrapper{
+      >.ui-autocomplete-fields{
+        padding:5px 0;
+      }
+    }
+  }
+  .ui-autocomplete-fields {
+    > *{
+      display:none;
+      &:first-child{
+        display:block;
+        color:$text-color-blue;
+        font-weight:bold;
+        font-size:0.75rem;
+        line-height:1.125rem;
+      }
+    }
+  }
+  > div.ui-autocomplete-field-group{
+    &.no_results,
+    &.more_results{
+      + li.ui-menu-item{
+        background: #a5b8db!important;
+        margin: 0px 5px 0px 5px!important;
+        width: 97%!important;
+
+        ui-autocomplete-fields > *:first-child{
+          color: #FFF!important;
+          text-transform: uppercase!important;
+          color:$text-color-white;
+          font-style:initial ;
+          font-weight:bold;
+        }
+      }
+    }
+  }
+}
+
+ul[data-sa-theme="basic-blue"]{
+  > div.ui-autocomplete-field-group{
+    &.no_results,
+    &.more_results {
+      + li.ui-menu-item{
+        .ui-autocomplete-fields{
+          > *:first-child{
+            color: #FFF!important;
+            text-transform: uppercase!important;
+            color:$text-color-white;
+            font-style:initial ;
+            font-weight:bold;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+ul[data-sa-theme="basic-blue"] {
+  > li.ui-menu-item{
+    &.ui-state-focus,
+    &:hover{
+      .ui-autocomplete-fields{
+        > *{
+          color:$text-color-blue;
+        }
+      }
+    }
+  }
+}

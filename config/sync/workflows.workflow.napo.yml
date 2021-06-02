@@ -1,0 +1,101 @@
+uuid: e937edfb-a8f7-483d-a6f6-1f08ca60c40e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.faq
+    - node.type.lesson
+    - node.type.lesson_resources
+    - node.type.msds_activities
+    - node.type.msds_resources
+    - node.type.napo_friend
+    - node.type.napo_video
+  module:
+    - content_moderation
+id: napo
+label: Napo
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -2
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 0
+    ready_to_publish:
+      published: false
+      default_revision: false
+      label: 'Ready to Publish'
+      weight: -1
+  transitions:
+    from_draft_to_draft:
+      label: 'From Draft to Draft'
+      from:
+        - draft
+      to: draft
+      weight: -3
+    from_draft_to_published:
+      label: 'From  Draft to Published'
+      from:
+        - draft
+      to: published
+      weight: -1
+    from_draft_to_ready_to_publish:
+      label: 'From Draft to  Ready to Publish'
+      from:
+        - draft
+      to: ready_to_publish
+      weight: -2
+    from_published_to_draft:
+      label: 'From Published to Draft'
+      from:
+        - published
+      to: draft
+      weight: 3
+    from_published_to_published:
+      label: 'From Published to Published'
+      from:
+        - published
+      to: published
+      weight: 5
+    from_published_to_ready_to_publish:
+      label: 'From Published to Ready to Publish'
+      from:
+        - published
+      to: ready_to_publish
+      weight: 4
+    from_ready_to_publish_to_draft:
+      label: 'From Ready to Publish to  Draft'
+      from:
+        - ready_to_publish
+      to: draft
+      weight: 0
+    from_ready_to_publish_to_published:
+      label: 'From Ready to Publish to  Published'
+      from:
+        - ready_to_publish
+      to: published
+      weight: 2
+    from_ready_to_publish_to_ready_to_publish:
+      label: 'From Ready to Publish to Ready to Publish'
+      from:
+        - ready_to_publish
+      to: ready_to_publish
+      weight: 1
+  entity_types:
+    node:
+      - article
+      - faq
+      - lesson
+      - lesson_resources
+      - msds_activities
+      - msds_resources
+      - napo_friend
+      - napo_video
+  default_moderation_state: draft

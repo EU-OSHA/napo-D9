@@ -1,0 +1,15 @@
+uuid: f6f8f383-b0d2-4afe-8995-902dd2b9aa1f
+langcode: en
+status: true
+dependencies: {  }
+id: search_page
+label: 'Search page'
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: '<nolink>'
+breadcrumbTitles: 'Search results '
+type: '2'
+pathPattern: /search
+extraCacheContexts: ''

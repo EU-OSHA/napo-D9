@@ -4,7 +4,3 @@ display:
       exposed_form:
         options:
           submit_button: Applica
-      fields:
-        title_1:
-          alter:
-            text: 'Vedi altro'

@@ -14,5 +14,5 @@ third_party_settings:
 id: node.msds_activities
 target_entity_type_id: node
 target_bundle: msds_activities
-default_langcode: site_default
-language_alterable: false
+default_langcode: en
+language_alterable: true

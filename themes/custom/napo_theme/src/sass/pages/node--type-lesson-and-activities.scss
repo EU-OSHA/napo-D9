@@ -1,5 +1,8 @@
 .node--type-lesson,
 .node--type-msds-activities{
+  .block-page-title-block{
+    margin-top:3rem;
+  }
   .page-banner-custom{
     padding: 0 0 2.5rem;
     position: relative;
@@ -236,11 +239,11 @@
   }
 
   .back-button-custom {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    top: 0rem;
+    top: -6.5rem;
     right:auto;
-    left: 0rem;
+    left: 15px;
     margin-bottom:0.625rem;
     a{
       color: $text-color-blue;

@@ -33,7 +33,8 @@ features:
   comment_user_verification: 1
   favicon: 1
 logo:
-  use_default: 1
+  use_default: 0
+  path: ''
 favicon:
   use_default: 1
 bootstrap_barrio_source: '0'
@@ -98,3 +99,9 @@ bootstrap_barrio_google_fonts: ''
 bootstrap_barrio_bootstrap_icons: 0
 bootstrap_barrio_icons: ''
 bootstrap_barrio_table_head: ''
+bootstrap_barrio_region_clean_header_logo: 0
+bootstrap_barrio_region_class_header_logo: row
+bootstrap_barrio_region_clean_home_page: 0
+bootstrap_barrio_region_class_home_page: row
+bootstrap_barrio_region_clean_node_view: 0
+bootstrap_barrio_region_class_node_view: row
