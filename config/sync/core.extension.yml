@@ -133,6 +133,7 @@ module:
   workflows: 0
   ds: 1
   pathauto: 1
+  xmlsitemap: 1
   content_translation: 10
   views: 10
   linked_field: 100
