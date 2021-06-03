@@ -2,8 +2,11 @@ uuid: 54ee1205-1354-4f4b-805c-553e98309b65
 langcode: en
 status: true
 dependencies:
+  config:
+    - taxonomy.vocabulary.video_type
   module:
     - node
+    - taxonomy
     - user
 _core:
   default_config_hash: P7F4DFe8BL31DRVqsvS-ix9KZZqvvaPjZ7zEvGo9yNM
@@ -651,7 +654,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Content type'
+            label: Type
             description: ''
             use_operator: false
             operator: type_op
@@ -664,11 +667,14 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              editor: '0'
-              reviewer: '0'
-              project_manager: '0'
-              approver: '0'
               administrator: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              review_manager: '0'
+              internal_translator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -685,6 +691,116 @@ display:
           plugin_id: bundle
           entity_type: node
           entity_field: type
+        field_video_type_target_id:
+          id: field_video_type_target_id
+          table: node__field_video_type
+          field: field_video_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_video_type_target_id_op
+            label: 'Video Type'
+            description: ''
+            use_operator: false
+            operator: field_video_type_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_video_type_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              review_manager: '0'
+              internal_translator: '0'
+            reduce: false
+            chosen_override: 0
+            disable_search: 0
+            search_contains: 0
+            placeholder_text_multiple: 'Choose some options'
+            placeholder_text_single: 'Choose an option'
+            no_results_text: 'No results match'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: video_type
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        uid:
+          id: uid
+          table: users_field_data
+          field: uid
+          relationship: uid
+          group_type: group
+          admin_label: ''
+          operator: in
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: uid_op
+            label: Author
+            description: ''
+            use_operator: false
+            operator: uid_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: uid
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              review_manager: '0'
+              internal_translator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: user
+          entity_field: uid
+          plugin_id: user_name
         status:
           id: status
           table: node_field_data
