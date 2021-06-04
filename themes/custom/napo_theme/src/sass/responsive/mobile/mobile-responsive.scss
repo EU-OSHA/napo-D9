@@ -445,6 +445,12 @@
   .learning-with-napo-napo-in-the-workplace,
   .learning-with-napo-Napo-in-the-workplace,
   .page-view-napo-for-teachers {
+    .node--view-mode-header-view-node{
+      flex-direction: column;
+      .field--type-text-with-summary{
+        padding:0;
+      }
+    }
     .view-filters{
       padding:0;
       width:100%;
