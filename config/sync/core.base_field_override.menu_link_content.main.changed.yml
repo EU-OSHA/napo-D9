@@ -11,7 +11,7 @@ bundle: main
 label: Changed
 description: 'The time that the menu link was last edited.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

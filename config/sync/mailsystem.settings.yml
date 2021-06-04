@@ -1,6 +1,11 @@
 theme: current
 defaults:
-  sender: htmlmail
+  sender: SMTPMailSystem
   formatter: htmlmail
 _core:
   default_config_hash: IhwTepsVwtbtbcT5GzQKhCXDCRvbk3MNkWqPiuiZ10s
+modules:
+  htmlmail:
+    none:
+      formatter: htmlmail
+      sender: SMTPMailSystem

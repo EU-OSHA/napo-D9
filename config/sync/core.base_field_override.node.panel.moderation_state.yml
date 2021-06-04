@@ -1,0 +1,18 @@
+uuid: ec40b234-1b71-431a-a60a-2885795c2bc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.panel
+id: node.panel.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: panel
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

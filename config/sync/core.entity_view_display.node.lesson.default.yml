@@ -114,6 +114,7 @@ content:
     region: content
 hidden:
   addtoany: true
+  breadcrumbs: true
   field_tags: true
   langcode: true
   links: true

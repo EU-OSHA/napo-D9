@@ -1,0 +1,18 @@
+uuid: c047d269-ea61-4c4d-acde-7540f2d31359
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_album
+id: node.napo_album.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: napo_album
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

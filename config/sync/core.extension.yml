@@ -3,6 +3,7 @@ module:
   addtoany: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  anchor_link: 0
   automated_cron: 0
   big_pipe: 0
   blazy: 0
@@ -14,6 +15,10 @@ module:
   chosen_field: 0
   chosen_lib: 0
   ckeditor: 0
+  ckeditor_accordion: 0
+  ckeditor_font: 0
+  ckeditor_resize: 0
+  ckwordcount: 0
   color: 0
   color_field: 0
   colorbox: 0
@@ -26,6 +31,7 @@ module:
   content_moderation: 0
   contextual: 0
   crop: 0
+  csrf_checks: 0
   csv_serialization: 0
   ctools: 0
   custom_breadcrumbs: 0
@@ -41,6 +47,7 @@ module:
   entity_reference_revisions: 0
   entityqueue: 0
   facets: 0
+  fakeobjects: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -79,11 +86,13 @@ module:
   metatag: 0
   metatag_views: 0
   node: 0
+  notification: 0
   options: 0
   page_cache: 0
   pagerer: 0
   path: 0
   path_alias: 0
+  pathologic: 0
   printfriendly: 0
   quickedit: 0
   quicktabs: 0
@@ -104,7 +113,10 @@ module:
   slick_ui: 0
   slick_views: 0
   sliderwidget: 0
+  smart_trim: 0
+  smtp: 0
   social_media_links: 0
+  spamspan: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -131,6 +143,7 @@ module:
   workflows: 0
   ds: 1
   pathauto: 1
+  xmlsitemap: 1
   content_translation: 10
   views: 10
   linked_field: 100

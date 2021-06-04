@@ -1,5 +1,5 @@
 determine_menu: true
-disable_admin_page: true
+disable_admin_page: false
 append_current_page: true
 current_page_as_link: false
 stop_on_first_match: false
@@ -28,8 +28,8 @@ menu_breadcrumb_menus:
     taxattach: 0
     langhandle: 0
   footer:
+    enabled: 1
     weight: 0
-    enabled: 0
     taxattach: 0
     langhandle: 0
   menu-social-media-menu:

@@ -1,0 +1,88 @@
+uuid: a0b7552e-0c62-4189-8365-61c64e01c345
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - ckeditor
+format: filtered_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - Strike
+        -
+          name: Links
+          items:
+            - Link
+            - Unlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+            - Anchor
+        -
+          name: Media
+          items:
+            - DrupalImage
+            - Format
+            - Font
+            - FontSize
+        -
+          name: Tools
+          items:
+            - Source
+            - Cut
+            - Copy
+            - Paste
+            - PasteFromWord
+            - PasteText
+        -
+          name: Table
+          items:
+            - Table
+        -
+          name: Extra
+          items:
+            - SpecialChar
+            - DrupalMediaLibrary
+            - Maximize
+            - Resize
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+    font:
+      font_names: ''
+      font_sizes: ''
+    wordcount:
+      enable: true
+      show_remaining: false
+      show_paragraphs: false
+      show_word_count: true
+      show_char_count: true
+      count_bytes: false
+      count_spaces: false
+      count_html: 0
+      count_line_breaks: false
+      max_words: -1
+      max_chars: -1
+      hard_limit: 0
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

@@ -12,7 +12,7 @@ bundle: article
 label: 'Character count'
 description: 'Automatically calculated when saving. The count of characters found in the default language text (English).'
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: 0

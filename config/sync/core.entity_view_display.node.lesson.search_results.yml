@@ -1,6 +1,6 @@
 uuid: 87aa2e5c-9f45-442a-bd6c-1301c93fc7df
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_results
@@ -20,16 +20,16 @@ dependencies:
   module:
     - field_group
     - layout_builder
-    - text
+    - smart_trim
     - user
 third_party_settings:
   field_group:
     group_left:
       children: {  }
       parent_name: ''
-      weight: 0
+      weight: 18
       format_type: details
-      region: content
+      region: hidden
       format_settings:
         description: ''
         open: true
@@ -39,9 +39,9 @@ third_party_settings:
     group_right:
       children: {  }
       parent_name: ''
-      weight: 8
+      weight: 17
       format_type: details
-      region: content
+      region: hidden
       format_settings:
         description: ''
         open: true
@@ -56,91 +56,47 @@ targetEntityType: node
 bundle: lesson
 mode: search_results
 content:
+  addtoany:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   body:
-    label: hidden
-    type: text_default
-    weight: 11
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_activities:
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_assessment:
-    weight: 4
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_curriculum_links:
-    weight: 5
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_file:
-    type: entity_reference_entity_view
-    weight: 9
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
-  field_learning_objectives:
+    type: smart_trim
     weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_lesson_intro_text:
-    weight: 7
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_lesson_toolkit:
-    weight: 10
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_lesson_video:
-    weight: 12
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_resources_required:
-    type: entity_reference_label
-    weight: 6
     region: content
     label: hidden
     settings:
-      link: true
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_link: true
+      more_text: 'Read more'
+      more_class: more-link
+      summary_handler: trim
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
     third_party_settings: {  }
-  field_starter:
+  search_api_excerpt:
     weight: 2
-    label: hidden
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
 hidden:
-  addtoany: true
+  breadcrumbs: true
+  field_activities: true
+  field_assessment: true
+  field_curriculum_links: true
+  field_file: true
+  field_learning_objectives: true
+  field_lesson_intro_text: true
+  field_lesson_toolkit: true
+  field_lesson_video: true
+  field_resources_required: true
+  field_starter: true
   field_tags: true
   langcode: true
   links: true
-  search_api_excerpt: true

@@ -14,10 +14,12 @@ dependencies:
     - field.field.node.napo_video.field_video
     - field.field.node.napo_video.field_video_type
     - field.field.node.napo_video.field_youtube
+    - image.style.thumbnail
     - node.type.napo_video
   module:
     - ds
-    - text
+    - media
+    - smart_trim
     - user
 id: node.napo_video.default
 targetEntityType: node
@@ -25,51 +27,55 @@ bundle: napo_video
 mode: default
 content:
   addtoany:
-    weight: 4
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   body:
     label: hidden
-    type: text_default
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_combined_tags:
-    weight: 2
-    label: inline
+    type: smart_trim
+    weight: 1
     settings:
-      link: true
-      view_mode: default
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_text: 'Read more'
+      more_class: more-link
+      summary_handler: trim
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
     region: content
-  field_video:
+  field_image:
+    type: media_thumbnail
     weight: 0
+    region: content
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_style: thumbnail
+      image_link: ''
     third_party_settings:
       ds:
         ds_limit: ''
-    type: entity_reference_entity_view
-    region: content
-  links:
-    weight: 1
+  search_api_excerpt:
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   breadcrumbs: true
   field_archived: true
-  field_image: true
+  field_combined_tags: true
   field_main_tag: true
   field_napo_film: true
   field_publication_date: true
   field_tags: true
+  field_video: true
   field_video_type: true
   field_youtube: true
   langcode: true
-  search_api_excerpt: true
+  links: true
