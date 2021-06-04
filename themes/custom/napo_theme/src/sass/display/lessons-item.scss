@@ -41,7 +41,10 @@
     }
   }
   .keyword-list{
-    color: $text-color-white;
+    color:$text-color-grey-blue;
     font-size: 0.875rem;
+    span{
+      color: $text-color-white;
+    }
   }
 }
