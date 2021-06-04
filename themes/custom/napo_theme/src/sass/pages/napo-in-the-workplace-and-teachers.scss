@@ -5,6 +5,11 @@
     display:flex;
     flex-direction:column;
   }
+  .view-header{
+    h2{
+      font-size:1.875rem;
+    }
+  }
   .content-page-content{
     background-color:$bg-color-grey-light;
     background-image: url(/sites/napo/themes/custom/napo_theme/images/nav-bar-borderx2.png);

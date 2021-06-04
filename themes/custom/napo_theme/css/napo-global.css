@@ -1675,8 +1675,11 @@ tr th {
   color: inherit;
 }
 .lessons-item .keyword-list {
-  color: #FFF;
+  color: #9FA8D1;
   font-size: 0.875rem;
+}
+.lessons-item .keyword-list span {
+  color: #FFF;
 }
 
 .view-napo-s-film-episodes .views-row {
@@ -2824,6 +2827,11 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 .page-view-napo-for-teachers .view-napo-workplaces {
   display: flex;
   flex-direction: column;
+}
+.learning-with-napo-napo-in-the-workplace .view-header h2,
+.learning-with-napo-Napo-in-the-workplace .view-header h2,
+.page-view-napo-for-teachers .view-header h2 {
+  font-size: 1.875rem;
 }
 .learning-with-napo-napo-in-the-workplace .content-page-content,
 .learning-with-napo-Napo-in-the-workplace .content-page-content,
