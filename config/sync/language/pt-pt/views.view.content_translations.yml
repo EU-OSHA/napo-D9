@@ -1,0 +1,50 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        langcode:
+          label: De
+          separator: ', '
+        translation_target_language:
+          label: Para
+        translation_status:
+          label: 'Estado da tradução'
+        translation_changed:
+          label: Alterado
+      filters:
+        langcode:
+          expose:
+            label: 'Idioma fonte'
+        content_translation_outdated:
+          expose:
+            label: 'Tradução desatualizada'
+        translation_outdated:
+          expose:
+            label: Desatualizado
+        translation_status:
+          expose:
+            label: 'Estado da tradução'
+  page_1:
+    display_title: Page

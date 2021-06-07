@@ -12,17 +12,17 @@ definitions:
     enabled: true
     expanded: false
   workbench__content:
-    enabled: true
+    enabled: false
     menu_name: workbench
     parent: ''
     expanded: false
     weight: -48
   workbench__create_content:
-    weight: -47
+    weight: -46
     menu_name: workbench
     parent: ''
-    expanded: false
     enabled: true
+    expanded: false
   workbench__my_edited:
     enabled: false
     menu_name: workbench
@@ -36,10 +36,10 @@ definitions:
     expanded: false
     weight: -50
   workbench__configure:
-    weight: -45
+    weight: -40
     menu_name: workbench
     parent: ''
     expanded: false
-    enabled: true
+    enabled: false
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ

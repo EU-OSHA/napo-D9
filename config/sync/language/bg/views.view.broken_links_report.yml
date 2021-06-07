@@ -1,0 +1,20 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Reset
+      fields:
+        url:
+          label: URL
+        error:
+          label: Грешка
+        operations:
+          label: Operations
+      filters:
+        url:
+          expose:
+            label: URL
+  page_1:
+    display_title: Page

@@ -1,0 +1,53 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Toepassen
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        langcode:
+          label: Van
+          separator: ', '
+        translation_target_language:
+          label: Naar
+        translation_status:
+          label: Vertalingsstatus
+        translation_changed:
+          label: Gewijzigd
+      filters:
+        langcode:
+          expose:
+            label: Brontaal
+        content_translation_outdated:
+          expose:
+            label: 'Vertaling is achterhaald'
+        translation_target_language:
+          expose:
+            label: Doeltaal
+        translation_outdated:
+          expose:
+            label: Gedateerd
+        translation_status:
+          expose:
+            label: Vertalingsstatus
+  page_1:
+    display_title: Page
