@@ -29,6 +29,7 @@ module:
   config_translation: 0
   contact: 0
   content_moderation: 0
+  content_moderation_notifications: 0
   contextual: 0
   crop: 0
   csrf_checks: 0
@@ -73,6 +74,7 @@ module:
   layout_discovery: 0
   layoutcomponents: 0
   link: 0
+  linkchecker: 0
   locale: 0
   mailsystem: 0
   media: 0
@@ -124,6 +126,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  translation_views: 0
   twig_tweak: 0
   ultimate_cron: 0
   update: 0

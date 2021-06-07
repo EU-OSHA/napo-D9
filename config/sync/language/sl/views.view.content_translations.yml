@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reset
+      fields:
+        title:
+          label: Title
+        langcode:
+          label: Od
+        translation_target_language:
+          label: Za
+  page_1:
+    display_title: Page
