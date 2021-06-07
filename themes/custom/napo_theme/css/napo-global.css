@@ -3361,7 +3361,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 }
 
 .node--type-napo-album .field--name-field-media-image img {
-  margin: 0;
+  margin: 0 auto;
 }
 .node--type-napo-album .field--type-text-with-summary {
   padding: 1.125rem 0em;
@@ -3393,6 +3393,18 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+.node--type-napo-album .back-button-custom {
+  text-align: right;
+  margin-top: -53px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0px;
+}
+.node--type-napo-album .main-image-banner {
+  background-color: #000;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1199px) {

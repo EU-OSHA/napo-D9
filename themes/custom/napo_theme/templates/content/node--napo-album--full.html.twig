@@ -76,9 +76,10 @@
 <div class="back-button-custom"><a href="/about-napo/napos-gallery">{{ 'Back to Photo gallery' | trans }}</a></div>
 
 <!-- Duplicate the first image in Album  -->
+<div class="main-image-banner">
   {{ content.field_images.0 }}
+</div>
 <!-- END Duplicate the first image in Album  -->
-
 <article{{ attributes.addClass(classes) }}>
   <header>
     {{ title_prefix }}
