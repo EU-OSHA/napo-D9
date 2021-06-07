@@ -22,9 +22,14 @@
         &.show{
           transition: all 0.1s;
           background: $bg-color-blue-light-hover;
-          border-radius: 1.875rem 1.875rem 0rem 0rem;
-          .dropdown-menu{
-            display: block;
+        }
+        &.dropdown{
+          &:hover,
+          &.show{
+            border-radius: 1.875rem 1.875rem 0rem 0rem;
+            .dropdown-menu{
+              display: block;
+            }
           }
         }
       }

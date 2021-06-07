@@ -3472,9 +3472,11 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   #header .nav-item:hover, #header .nav-item.show {
     transition: all 0.1s;
     background: #506B9E;
+  }
+  #header .nav-item.dropdown:hover, #header .nav-item.dropdown.show {
     border-radius: 1.875rem 1.875rem 0rem 0rem;
   }
-  #header .nav-item:hover .dropdown-menu, #header .nav-item.show .dropdown-menu {
+  #header .nav-item.dropdown:hover .dropdown-menu, #header .nav-item.dropdown.show .dropdown-menu {
     display: block;
   }
 }
