@@ -2896,15 +2896,16 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   padding: 0.625rem 2.5rem;
 }
 
-.napo-story iframe {
+.about-napo-the-napo-story iframe {
   float: left;
   padding-right: 1.125rem;
   margin-bottom: 1.125rem;
 }
-.napo-story h3 {
+.about-napo-the-napo-story h3 {
   font-size: 1.375rem;
+  font-weight: bold;
 }
-.napo-story p {
+.about-napo-the-napo-story p {
   font-size: 1.125rem;
 }
 
