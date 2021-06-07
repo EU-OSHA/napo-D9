@@ -73,4 +73,17 @@
       text-align: left;
     }
   }
+  #tmgmt-9{
+    a{
+      &:after{
+        display:inline-block;
+        vertical-align: baseline;
+        content:'';
+        background: url(/sites/napo/themes/custom/napo_theme/images/external_link_napo.png) no-repeat center rgba(0,0,0,0);
+        margin-left: 0.5rem;
+        width: 0.875rem;
+        height: 0.875rem;
+      }
+    }
+  }
 }

@@ -19,45 +19,78 @@ settings:
           items:
             - Bold
             - Italic
+            - Underline
             - Strike
-            - Superscript
-            - Subscript
+            - JustifyBlock
             - '-'
-            - RemoveFormat
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
         -
           name: Lists
           items:
             - BulletedList
             - NumberedList
         -
+          name: Linking
+          items:
+            - Link
+            - Unlink
+            - Anchor
+        -
           name: Media
           items:
-            - Blockquote
             - DrupalImage
-            - Table
-            - HorizontalRule
         -
           name: 'Block Formatting'
           items:
             - Format
+            - Font
+            - FontSize
         -
           name: Tools
           items:
-            - ShowBlocks
             - Source
+            - Cut
+            - Copy
+            - Paste
+            - PasteText
+            - PasteFromWord
+        -
+          name: Table
+          items:
+            - Table
+        -
+          name: 'Media extra'
+          items:
+            - SpecialChar
+            - DrupalMediaLibrary
+            - Accordion
+            - ShowBlocks
+            - Resize
   plugins:
     stylescombo:
       styles: ''
+    language:
+      language_list: un
+    font:
+      font_names: ''
+      font_sizes: ''
+    wordcount:
+      enable: true
+      show_remaining: false
+      show_paragraphs: false
+      show_word_count: true
+      show_char_count: true
+      count_bytes: false
+      count_spaces: false
+      count_html: 0
+      count_line_breaks: false
+      max_words: -1
+      max_chars: -1
+      hard_limit: 1
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null
