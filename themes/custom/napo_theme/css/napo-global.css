@@ -2052,10 +2052,15 @@ tr th {
   float: none;
 }
 .view-napos-gallery .views-field-field-images a {
-  display: block;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
 .view-napos-gallery .views-field-field-images img {
-  margin: 0 auto;
+  margin: auto;
+  margin-top: -50px;
 }
 
 .view-napo-workplaces .views-row {
