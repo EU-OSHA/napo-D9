@@ -1,0 +1,19 @@
+uuid: 7d39822b-ca0d-463d-aff7-dc2a8047d306
+langcode: en
+status: true
+dependencies: {  }
+id: from_published_to_draft
+workflow: napo
+transitions:
+  from_published_to_draft: from_published_to_draft
+roles:
+  administrator: administrator
+  review_manager: review_manager
+author: false
+site_mail: false
+emails: ''
+subject: '[[site:name] Website] CMW: ([node:nid]) [node:title]'
+body:
+  value: "<p>Dear [user:account-name],</p>\r\n\r\n<p>No action is required. This message is just to inform you that there has been a status change (from <strong>published</strong> to <strong>draft</strong>) on page <a href=\"[current-page:url:absolute]\"> [current-page:title] </a><br />\r\nThank you,</p>\r\n"
+  format: full_html
+label: 'From Published to Draft'

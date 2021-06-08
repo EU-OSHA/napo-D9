@@ -7,7 +7,7 @@ test:
   to: user@example.com
   subject: 'subject test'
   body:
-    value: "<p>body test</p>\r\n"
+    value: "<p>body <strong>test</strong></p>\r\n"
     format: full_html
   class: SMTPMailSystem
 _core:
