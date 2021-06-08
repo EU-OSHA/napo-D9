@@ -1,17 +1,15 @@
 uuid: 6a67bf25-c8bf-493d-8175-6a5fac2a1fde
 langcode: en
 status: true
-dependencies:
-  config:
-    - crop.type.crop_and_scale_1140x410
-  module:
-    - crop
+dependencies: {  }
 name: napo_cover
 label: 'Napo Cover (1140x408)'
 effects:
-  53cbb6b2-1a5f-46b2-94f9-598a47b8b2a2:
-    uuid: 53cbb6b2-1a5f-46b2-94f9-598a47b8b2a2
-    id: crop_crop
-    weight: 1
+  f4683a0a-3afe-495e-b14e-bb7877156f1d:
+    uuid: f4683a0a-3afe-495e-b14e-bb7877156f1d
+    id: image_scale_and_crop
+    weight: 2
     data:
-      crop_type: crop_and_scale_1140x410
+      width: 1140
+      height: 550
+      anchor: center-top
