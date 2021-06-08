@@ -1,0 +1,47 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicare
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        langcode:
+          label: 'De la'
+          separator: ', '
+        translation_target_language:
+          label: Către
+        translation_status:
+          label: 'Stare traducere'
+        translation_changed:
+          label: Schimbat
+      filters:
+        langcode:
+          expose:
+            label: 'Limbă sursă'
+        content_translation_outdated:
+          expose:
+            label: 'Traducere expirată'
+        translation_status:
+          expose:
+            label: 'Stare traducere'
+  page_1:
+    display_title: Page

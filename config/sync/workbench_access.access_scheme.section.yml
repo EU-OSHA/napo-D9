@@ -3,7 +3,10 @@ langcode: es
 status: true
 dependencies:
   config:
+    - node.type.consortium_partner
     - node.type.page
+    - node.type.panel
+    - node.type.webform
     - system.menu.main
 id: section
 label: Section
@@ -13,4 +16,7 @@ scheme_settings:
   menus:
     - main
   bundles:
+    - consortium_partner
     - page
+    - panel
+    - webform

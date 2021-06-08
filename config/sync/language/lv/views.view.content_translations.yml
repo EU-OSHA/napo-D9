@@ -1,0 +1,36 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apstiprināt
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '"'
+            next: '"'
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      fields:
+        title:
+          label: Title
+        langcode:
+          label: 'No'
+        translation_target_language:
+          label: Kam
+        translation_status:
+          label: 'Tulkojuma statuss'
+        translation_changed:
+          label: Labots
+      filters:
+        translation_outdated:
+          expose:
+            label: Novecojis
+        translation_status:
+          expose:
+            label: 'Tulkojuma statuss'
+  page_1:
+    display_title: Page

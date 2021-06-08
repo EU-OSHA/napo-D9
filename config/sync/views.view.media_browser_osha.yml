@@ -1,6 +1,6 @@
 uuid: c6544571-9df9-4a09-92c3-1adb0ff948d8
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
@@ -613,14 +613,16 @@ display:
       tags:
         - 'config:core.entity_view_display.media.audio.default'
         - 'config:core.entity_view_display.media.audio.media_library'
-        - 'config:core.entity_view_display.media.document.default'
-        - 'config:core.entity_view_display.media.document.media_library'
         - 'config:core.entity_view_display.media.image.default'
         - 'config:core.entity_view_display.media.image.media_library'
         - 'config:core.entity_view_display.media.remote_video.default'
         - 'config:core.entity_view_display.media.remote_video.media_library'
         - 'config:core.entity_view_display.media.video.default'
         - 'config:core.entity_view_display.media.video.media_library'
+        - 'config:core.entity_view_display.media.document.default'
+        - 'config:core.entity_view_display.media.document.media_library'
+        - 'config:core.entity_view_display.media.image_and_link.default'
+        - 'config:core.entity_view_display.media.image_and_link.media_library'
   page:
     display_plugin: page
     id: page
@@ -875,6 +877,8 @@ display:
         - 'config:core.entity_view_display.media.document.media_library'
         - 'config:core.entity_view_display.media.image.default'
         - 'config:core.entity_view_display.media.image.media_library'
+        - 'config:core.entity_view_display.media.image_and_link.default'
+        - 'config:core.entity_view_display.media.image_and_link.media_library'
         - 'config:core.entity_view_display.media.remote_video.default'
         - 'config:core.entity_view_display.media.remote_video.media_library'
         - 'config:core.entity_view_display.media.video.default'
@@ -1016,6 +1020,8 @@ display:
         - 'config:core.entity_view_display.media.document.media_library'
         - 'config:core.entity_view_display.media.image.default'
         - 'config:core.entity_view_display.media.image.media_library'
+        - 'config:core.entity_view_display.media.image_and_link.default'
+        - 'config:core.entity_view_display.media.image_and_link.media_library'
         - 'config:core.entity_view_display.media.remote_video.default'
         - 'config:core.entity_view_display.media.remote_video.media_library'
         - 'config:core.entity_view_display.media.video.default'

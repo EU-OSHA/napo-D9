@@ -1,0 +1,71 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Udfør
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      fields:
+        entity_field:
+          label: Entitetsfelt
+          separator: ', '
+        entity_langcode:
+          label: Entity-sprog
+          separator: ', '
+        url:
+          label: URL
+          separator: ', '
+        last_check:
+          label: 'Sidst tjekket'
+          separator: ', '
+        method:
+          label: Metode
+          separator: ', '
+        code:
+          separator: ', '
+        error:
+          label: Fejl
+          separator: ', '
+        fail_count:
+          separator: ', '
+        status:
+          separator: ', '
+        operations:
+          label: Operations
+      filters:
+        url:
+          expose:
+            label: URL
+        code_1:
+          group_info:
+            label: Resultat
+            group_items:
+              1:
+                title: Mislykkedes
+        entity_langcode:
+          expose:
+            label: Entity-sprog
+      footer:
+        result:
+          content: 'Viser @start - @end af @total'
+  page_1:
+    display_title: Page
+    display_options:
+      menu:
+        title: 'Brudte links'
+        description: 'Viser en liste over brudte links i indhold.'

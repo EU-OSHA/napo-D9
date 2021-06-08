@@ -1,0 +1,67 @@
+label: 'Lista rikkinäisistä linkeistä'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Käytä
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
+      fields:
+        entity_field:
+          label: 'Entiteetin kenttä'
+          separator: ', '
+        entity_langcode:
+          label: 'Kokonaisuuden kieli'
+          separator: ', '
+        url:
+          label: URL
+          separator: ', '
+        last_check:
+          label: 'Tarkistettu viimeksi'
+          separator: ', '
+        method:
+          label: Tapa
+          separator: ', '
+        code:
+          separator: ', '
+        error:
+          label: Virhe
+          separator: ', '
+        fail_count:
+          separator: ', '
+        status:
+          separator: ', '
+        operations:
+          label: Operations
+      filters:
+        url:
+          expose:
+            label: URL
+        code_1:
+          group_info:
+            label: Tulos
+        entity_langcode:
+          expose:
+            label: 'Kokonaisuuden kieli'
+      title: 'Lista rikkinäisistä linkeistä'
+  page_1:
+    display_title: Page
+    display_options:
+      menu:
+        title: 'Rikkinäiset linkit'
+        description: 'Näyttää listan rikkinäisistä linkeistä sisällössä.'

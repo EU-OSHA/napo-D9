@@ -1,0 +1,50 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Alkalmaz
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '– Mind –'
+            offset_label: Eltolás
+      fields:
+        title:
+          label: Title
+          separator: ', '
+        langcode:
+          label: Honnan
+          separator: ', '
+        translation_target_language:
+          label: Hova
+        translation_status:
+          label: 'Fordítás állapota'
+        translation_changed:
+          label: Módosítva
+      filters:
+        langcode:
+          expose:
+            label: 'Forrás nyelve'
+        content_translation_outdated:
+          expose:
+            label: 'A fordítás elavult'
+        translation_outdated:
+          expose:
+            label: Elavult
+        translation_status:
+          expose:
+            label: 'Fordítás állapota'
+  page_1:
+    display_title: Page
