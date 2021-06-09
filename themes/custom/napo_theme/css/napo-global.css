@@ -2052,10 +2052,15 @@ tr th {
   float: none;
 }
 .view-napos-gallery .views-field-field-images a {
-  display: block;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
 .view-napos-gallery .views-field-field-images img {
-  margin: 0 auto;
+  margin: auto;
+  margin-top: -50px;
 }
 
 .view-napo-workplaces .views-row {
@@ -2896,15 +2901,16 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   padding: 0.625rem 2.5rem;
 }
 
-.napo-story iframe {
+.about-napo-the-napo-story iframe {
   float: left;
   padding-right: 1.125rem;
   margin-bottom: 1.125rem;
 }
-.napo-story h3 {
+.about-napo-the-napo-story h3 {
   font-size: 1.375rem;
+  font-weight: bold;
 }
-.napo-story p {
+.about-napo-the-napo-story p {
   font-size: 1.125rem;
 }
 
@@ -3350,9 +3356,17 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   font-weight: bold;
   font-size: 1.125rem;
 }
+.node--type-napo-video .back-button-custom {
+  text-align: right;
+  margin-top: -53px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0px;
+}
 
 .node--type-napo-album .field--name-field-media-image img {
-  margin: 0;
+  margin: 0 auto;
 }
 .node--type-napo-album .field--type-text-with-summary {
   padding: 1.125rem 0em;
@@ -3384,6 +3398,18 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+.node--type-napo-album .back-button-custom {
+  text-align: right;
+  margin-top: -53px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0px;
+}
+.node--type-napo-album .main-image-banner {
+  background-color: #000;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -3451,15 +3477,22 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   #header .nav-item:hover, #header .nav-item.show {
     transition: all 0.1s;
     background: #506B9E;
+  }
+  #header .nav-item.dropdown:hover, #header .nav-item.dropdown.show {
     border-radius: 1.875rem 1.875rem 0rem 0rem;
   }
-  #header .nav-item:hover .dropdown-menu, #header .nav-item.show .dropdown-menu {
+  #header .nav-item.dropdown:hover .dropdown-menu, #header .nav-item.dropdown.show .dropdown-menu {
     display: block;
   }
 }
 @media (min-width: 768px) {
   .block-simple-blocksearch-api .form-row > div {
     display: none;
+  }
+
+  .header_nav,
+.header-logo {
+    padding: 0;
   }
 }
 @media only screen and (max-width: 767px) {

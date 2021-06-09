@@ -5,7 +5,4 @@ defaults:
 _core:
   default_config_hash: IhwTepsVwtbtbcT5GzQKhCXDCRvbk3MNkWqPiuiZ10s
 modules:
-  htmlmail:
-    none:
-      formatter: htmlmail
-      sender: SMTPMailSystem
+  htmlmail: {  }

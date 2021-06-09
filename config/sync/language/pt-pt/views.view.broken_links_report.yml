@@ -1,0 +1,67 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+      fields:
+        entity_field:
+          label: 'Campo de entidade'
+          separator: ', '
+        entity_langcode:
+          label: 'Idioma da entidade'
+          separator: ', '
+        url:
+          label: URL
+          separator: ', '
+        last_check:
+          label: 'Verificado pela última vez em'
+          separator: ', '
+        method:
+          label: Método
+          separator: ', '
+        code:
+          separator: ', '
+        error:
+          label: Erro
+          separator: ', '
+        fail_count:
+          separator: ', '
+        status:
+          separator: ', '
+        operations:
+          label: Operations
+      filters:
+        url:
+          expose:
+            label: URL
+        code_1:
+          group_info:
+            label: Resultado
+            group_items:
+              1:
+                title: Falhou
+        entity_langcode:
+          expose:
+            label: 'Idioma da entidade'
+      footer:
+        result:
+          content: 'Exibindo @start - @end of @total'
+  page_1:
+    display_title: Page

@@ -1,0 +1,77 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Alkalmaz
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '– Mind –'
+            offset_label: Eltolás
+      fields:
+        entity_field:
+          label: 'Entitás mező'
+          separator: ', '
+        entity_langcode:
+          label: Entitásnyelv
+          separator: ', '
+        url:
+          label: Webcím
+          separator: ', '
+        last_check:
+          label: 'Utoljára ellenőrizve'
+          separator: ', '
+        method:
+          label: Mód
+          separator: ', '
+        code:
+          label: Állapotkód
+          separator: ', '
+        error:
+          label: Hiba
+          separator: ', '
+        fail_count:
+          separator: ', '
+        status:
+          separator: ', '
+        operations:
+          label: Operations
+      filters:
+        url:
+          expose:
+            label: Webcím
+        code_1:
+          expose:
+            label: Állapotkód
+          group_info:
+            label: Eredmény
+            group_items:
+              1:
+                title: Sikertelen
+        code:
+          expose:
+            label: Állapotkód
+        entity_langcode:
+          expose:
+            label: Entitásnyelv
+      footer:
+        result:
+          content: '@start - @end / @total megjelenítése'
+  page_1:
+    display_title: Page
+    display_options:
+      menu:
+        title: 'Sérült hivatkozások'
+        description: 'Megmutatja a tartalmakban található sérült hivatkozások listáját.'

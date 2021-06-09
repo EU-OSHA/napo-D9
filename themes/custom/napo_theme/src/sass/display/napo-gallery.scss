@@ -71,10 +71,15 @@
 
   .views-field-field-images{
     a{
-      display:block;
+      display:flex;
+      overflow: hidden;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
     }
     img{
-      margin:0 auto;
+      margin: auto;
+      margin-top:-50px;
     }
   }
 }

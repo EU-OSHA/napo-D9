@@ -1,0 +1,24 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        title:
+          label: Title
+        langcode:
+          label: Nuo
+        translation_target_language:
+          label: Kam
+        translation_changed:
+          label: Pakeista
+  page_1:
+    display_title: Page

@@ -92,6 +92,7 @@ permissions:
   - 'use media wysiwyg'
   - 'use text format filtered_html'
   - 'use text format full_html'
+  - 'use workbench access'
   - 'use workbench_moderation my drafts tab'
   - 'view all unpublished content'
   - 'view files'
