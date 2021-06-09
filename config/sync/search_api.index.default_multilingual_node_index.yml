@@ -21,9 +21,9 @@ dependencies:
     - field.storage.node.field_lesson_video
     - field.storage.node.field_main_tag
     - field.storage.taxonomy_term.field_nace_changes
-    - field.storage.taxonomy_term.field_nace_code
-    - field.storage.taxonomy_term.field_tags_code
     - field.storage.taxonomy_term.field_thesaurus_code
+    - field.storage.taxonomy_term.field_tags_code
+    - field.storage.taxonomy_term.field_nace_code
     - field.storage.taxonomy_term.field_excluded_from
     - field.storage.taxonomy_term.field_nace_excludes
     - field.storage.taxonomy_term.field_nace_includes
@@ -640,8 +640,25 @@ field_settings:
     type: text
     configuration:
       roles:
-        - anonymous
-      view_mode: {  }
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          article: default
+          consortium_partner: ''
+          faq: ''
+          home_video: ''
+          lesson: default
+          lesson_resources: ''
+          lesson_toolkit: ''
+          lesson_video: ''
+          msds_activities: ''
+          msds_resources: ''
+          napo_album: ''
+          napo_friend: ''
+          napo_image: ''
+          napo_video: default
+        'entity:search_api_task':
+          search_api_task: ''
   revision_default:
     label: 'Tags » Taxonomy term » Default revision'
     datasource_id: 'entity:node'
