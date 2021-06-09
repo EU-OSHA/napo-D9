@@ -86,6 +86,11 @@ div.pagerer-container {
   float: left;
 }
 
+.highlighted {
+  font-weight: bold;
+  background-color: #f7e235;
+}
+
 .ui-accordion .ui-accordion-header {
   display: block;
   cursor: pointer;
@@ -2142,14 +2147,17 @@ tr th {
   font-weight: bold;
 }
 
-.search-form {
+.search-form,
+.views-exposed-form {
   position: relative;
 }
-.search-form .form-group label {
+.search-form .form-group label,
+.views-exposed-form .form-group label {
   font-weight: bold;
   font-size: 1.125rem;
 }
-.search-form .form-control {
+.search-form .form-control,
+.views-exposed-form .form-control {
   display: block;
   width: auto;
   height: 34px;
@@ -2164,15 +2172,19 @@ tr th {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-.search-form .form-type-search, .search-form .form-actions {
+.search-form .form-type-search, .search-form .form-actions,
+.views-exposed-form .form-type-search,
+.views-exposed-form .form-actions {
   display: inline-block;
   vertical-align: baseline;
 }
-.search-form .form-actions {
+.search-form .form-actions,
+.views-exposed-form .form-actions {
   padding-top: 0.25rem;
   margin-top: 5px;
 }
-.search-form .form-submit {
+.search-form .form-submit,
+.views-exposed-form .form-submit {
   border-radius: 5px;
   color: #585759;
   background: #f7e235;
@@ -2182,7 +2194,8 @@ tr th {
   line-height: 1.25rem;
   margin-top: -2px;
 }
-.search-form .details-wrapper {
+.search-form .details-wrapper,
+.views-exposed-form .details-wrapper {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -2190,22 +2203,27 @@ tr th {
   background-color: #EEEDEE;
   margin-top: 1rem;
 }
-.search-form .action {
+.search-form .action,
+.views-exposed-form .action {
   margin-left: auto;
   margin-top: 1.5rem;
 }
-.search-form .search-help-link {
+.search-form .search-help-link,
+.views-exposed-form .search-help-link {
   display: none;
 }
-.search-form .search-advanced {
+.search-form .search-advanced,
+.views-exposed-form .search-advanced {
   margin-bottom: 2rem;
 }
-.search-form .search-advanced summary {
+.search-form .search-advanced summary,
+.views-exposed-form .search-advanced summary {
   margin-top: 0.5rem;
   margin-left: 22%;
   font-style: italic;
 }
-.search-form .fieldset-legend {
+.search-form .fieldset-legend,
+.views-exposed-form .fieldset-legend {
   font-weight: bold;
 }
 
@@ -2333,6 +2351,58 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   line-height: 1;
   display: block;
 }
+.node--view-mode-search-results {
+  display: block;
+  width: 100%;
+  min-height: 127px;
+  padding: 0 1rem 1rem 1rem;
+}
+.node--view-mode-search-results:hover {
+  background: url(/sites/napo/themes/custom/napo_theme/images/napo-search-results-background.png) repeat;
+  padding: 0 1em 1em 1em;
+}
+.node--view-mode-search-results:hover #share-this-on {
+  display: flex;
+}
+.node--view-mode-search-results[typeof="schema:Article"] header {
+  background: url(/sites/napo/themes/custom/napo_theme/images/search-node-others.png) no-repeat 0px 20px transparent;
+  padding-bottom: 0.375rem;
+  padding-top: 0.375rem;
+}
+.node--view-mode-search-results h2 {
+  padding-left: 2.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.625rem;
+}
+.node--view-mode-search-results h2 a {
+  color: #585759;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+.node--view-mode-search-results .field--name-field-image {
+  float: left;
+  padding-right: 1rem;
+  margin-bottom: 0.375rem;
+}
+.node--view-mode-search-results .field--type-text-with-summary {
+  clear: none;
+  padding-left: 2.5rem;
+  background: transparent;
+  padding-bottom: 2rem;
+  min-height: 127px;
+}
+.node--view-mode-search-results #share-this-on {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.node--view-mode-search-results .node__content {
+  padding-left: 2.5rem;
+}
+
 #share-this-on {
   display: flex;
   flex-direction: row;
@@ -3410,6 +3480,12 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 .node--type-napo-album .main-image-banner {
   background-color: #000;
   text-align: center;
+}
+
+.page-view-search .view-search .row {
+  margin: 0;
+  width: 100%;
+  display: block;
 }
 
 @media only screen and (max-width: 1199px) {

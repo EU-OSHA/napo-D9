@@ -23,3 +23,59 @@
     }
   }
 }
+
+
+.node--view-mode-search-results{
+  display:block;
+  width:100%;
+  min-height: 127px;
+  padding: 0 1rem 1rem 1rem;
+  &:hover{
+    background: url(/sites/napo/themes/custom/napo_theme/images/napo-search-results-background.png) repeat;
+    padding: 0 1em 1em 1em;
+    #share-this-on{
+      display: flex;
+    }
+  }
+  &[typeof="schema:Article"]{
+    header{
+      background: url(/sites/napo/themes/custom/napo_theme/images/search-node-others.png) no-repeat 0px 20px transparent;
+      padding-bottom: 0.375rem;
+      padding-top: 0.375rem;
+    }
+  }
+  h2{
+    padding-left: 2.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.625rem;
+    a{
+      color: $text-color-grey-dark;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+    }
+  }
+  .field--name-field-image{
+    float: left;
+    padding-right: 1rem;
+    margin-bottom: 0.375rem;
+  }
+  .field--type-text-with-summary{
+    clear:none;
+    padding-left: 2.5rem;
+    background: transparent;
+    padding-bottom: 2rem;
+    min-height: 127px;
+    //display:none;
+  }
+  #share-this-on{
+    position:absolute;
+    top:0;
+    right:0;
+    display:none;
+  }
+  .node__content{
+    padding-left: 2.5rem;
+  }
+}
