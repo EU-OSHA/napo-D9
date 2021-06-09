@@ -11,6 +11,10 @@
   }
   &-item{
     padding:0;
+    color: $text-color-blue;
+    &.active{
+      color: $text-color-blue;
+    }
     & + .breadcrumb-item{
       padding:0;
       &:before{

@@ -140,6 +140,10 @@ div.pagerer-container {
 }
 .breadcrumb-item {
   padding: 0;
+  color: #1f3695;
+}
+.breadcrumb-item.active {
+  color: #1f3695;
 }
 .breadcrumb-item + .breadcrumb-item {
   padding: 0;
