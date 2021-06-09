@@ -311,7 +311,9 @@ display:
             group_items: {  }
           parse_mode: direct
           min_length: null
-          fields: {  }
+          fields:
+            - processed
+            - title
           plugin_id: search_api_fulltext
       sorts:
         search_api_relevance:
