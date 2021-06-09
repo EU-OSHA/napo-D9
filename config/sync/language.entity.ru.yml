@@ -5,5 +5,5 @@ dependencies: {  }
 id: ru
 label: Russian
 direction: ltr
-weight: 9
+weight: 12
 locked: false
