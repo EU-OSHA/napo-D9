@@ -8,7 +8,7 @@ smtp_timeout: 30
 smtp_username: edcd9091fabfd1
 smtp_password: 6e5881519cd09a
 smtp_from: ''
-smtp_fromname: ''
+smtp_fromname: NAPO
 smtp_client_hostname: ''
 smtp_client_helo: ''
 smtp_allowhtml: '1'

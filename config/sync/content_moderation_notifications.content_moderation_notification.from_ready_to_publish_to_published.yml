@@ -1,0 +1,19 @@
+uuid: 000c822b-8e01-468c-8b1b-c678fd07c6fd
+langcode: en
+status: true
+dependencies: {  }
+id: from_ready_to_publish_to_published
+workflow: napo
+transitions:
+  from_ready_to_publish_to_published: from_ready_to_publish_to_published
+roles:
+  administrator: administrator
+  review_manager: review_manager
+author: false
+site_mail: false
+emails: ''
+subject: '[[site:name] Website] CMW: ([node:nid]) [node:title]'
+body:
+  value: "<p>Dear [user:account-name],</p>\r\n\r\n<p>No action is required. This message is just to inform you that there has been a status change (from <strong>ready_to_publish</strong> to <strong>published</strong>) on page <a href=\"[current-page:url:absolute]\"> [current-page:title] </a><br />\r\nThank you,</p>\r\n"
+  format: full_html
+label: 'From Ready to Publish to Published'
