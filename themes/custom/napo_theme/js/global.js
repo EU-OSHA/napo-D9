@@ -34,7 +34,7 @@
   $(window).on('load', function() {
 
     /* Add custom class to facet parent when child is-active */
-    if ($(".facet-active a.is-active")[0]){
+    if ($(".facet-active a").hasClass('is-active')){
       $(".facet-active a.is-active").parent().addClass('active-custom', true);
       $("body").addClass('search-facet-active-custom');
     }

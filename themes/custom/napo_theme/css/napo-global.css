@@ -2168,16 +2168,16 @@ tr th {
 }
 
 .search-form,
-.views-exposed-form {
+#views-exposed-form-search-page-1 {
   position: relative;
 }
 .search-form .form-group label,
-.views-exposed-form .form-group label {
+#views-exposed-form-search-page-1 .form-group label {
   font-weight: bold;
   font-size: 1.125rem;
 }
 .search-form .form-control,
-.views-exposed-form .form-control {
+#views-exposed-form-search-page-1 .form-control {
   display: block;
   width: auto;
   height: 34px;
@@ -2193,18 +2193,18 @@ tr th {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 .search-form .form-type-search, .search-form .form-actions,
-.views-exposed-form .form-type-search,
-.views-exposed-form .form-actions {
+#views-exposed-form-search-page-1 .form-type-search,
+#views-exposed-form-search-page-1 .form-actions {
   display: inline-block;
   vertical-align: baseline;
 }
 .search-form .form-actions,
-.views-exposed-form .form-actions {
+#views-exposed-form-search-page-1 .form-actions {
   padding-top: 0.25rem;
   margin-top: 5px;
 }
 .search-form .form-submit,
-.views-exposed-form .form-submit {
+#views-exposed-form-search-page-1 .form-submit {
   border-radius: 5px;
   color: #585759;
   background: #f7e235;
@@ -2215,7 +2215,7 @@ tr th {
   margin-top: -2px;
 }
 .search-form .details-wrapper,
-.views-exposed-form .details-wrapper {
+#views-exposed-form-search-page-1 .details-wrapper {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -2224,26 +2224,26 @@ tr th {
   margin-top: 1rem;
 }
 .search-form .action,
-.views-exposed-form .action {
+#views-exposed-form-search-page-1 .action {
   margin-left: auto;
   margin-top: 1.5rem;
 }
 .search-form .search-help-link,
-.views-exposed-form .search-help-link {
+#views-exposed-form-search-page-1 .search-help-link {
   display: none;
 }
 .search-form .search-advanced,
-.views-exposed-form .search-advanced {
+#views-exposed-form-search-page-1 .search-advanced {
   margin-bottom: 2rem;
 }
 .search-form .search-advanced summary,
-.views-exposed-form .search-advanced summary {
+#views-exposed-form-search-page-1 .search-advanced summary {
   margin-top: 0.5rem;
   margin-left: 22%;
   font-style: italic;
 }
 .search-form .fieldset-legend,
-.views-exposed-form .fieldset-legend {
+#views-exposed-form-search-page-1 .fieldset-legend {
   font-weight: bold;
 }
 
@@ -2381,13 +2381,16 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   background: url(/sites/napo/themes/custom/napo_theme/images/napo-search-results-background.png) repeat;
   padding: 0 1em 1em 1em;
 }
-.node--view-mode-search-results:hover #share-this-on {
+.node--view-mode-search-results:hover #share-this-on,
+.node--view-mode-search-results:hover .more-link {
   display: flex;
+}
+.node--view-mode-search-results header {
+  padding-bottom: 0.375rem;
+  padding-top: 0.375rem;
 }
 .node--view-mode-search-results[typeof="schema:Article"] header {
   background: url(/sites/napo/themes/custom/napo_theme/images/search-node-others.png) no-repeat 0px 20px transparent;
-  padding-bottom: 0.375rem;
-  padding-top: 0.375rem;
 }
 .node--view-mode-search-results h2 {
   padding-left: 2.5rem;
@@ -2421,6 +2424,21 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 }
 .node--view-mode-search-results .node__content {
   padding-left: 2.5rem;
+}
+.node--view-mode-search-results .more-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  display: none;
+}
+.node--view-mode-search-results .more-link a {
+  color: #f7e235;
+  width: auto;
+  padding: 0.25rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #1f3695;
 }
 
 #share-this-on {
@@ -2895,6 +2913,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 }
 .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-actions {
   padding: 0px;
+  margin: 0;
 }
 .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 button#edit-submit-napo-films-index--2 {
   color: transparent;
