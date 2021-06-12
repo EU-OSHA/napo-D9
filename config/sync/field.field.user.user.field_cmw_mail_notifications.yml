@@ -1,0 +1,24 @@
+uuid: 426dea86-7e37-4a16-a92b-311d0d0ec479
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_cmw_mail_notifications
+  module:
+    - user
+id: user.user.field_cmw_mail_notifications
+field_name: field_cmw_mail_notifications
+entity_type: user
+bundle: user
+label: 'Receive Workflow notifications via e-mail?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
