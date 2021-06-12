@@ -16,7 +16,7 @@ definitions:
     menu_name: workbench
     parent: ''
     expanded: false
-    weight: -48
+    weight: -50
   workbench__create_content:
     weight: -46
     menu_name: workbench
@@ -24,17 +24,17 @@ definitions:
     enabled: true
     expanded: false
   workbench__my_edited:
+    weight: -48
+    parent: ''
     enabled: false
     menu_name: workbench
-    parent: ''
-    weight: -49
     expanded: false
   workbench__all_content:
-    enabled: false
+    weight: -49
     menu_name: workbench
     parent: ''
     expanded: false
-    weight: -50
+    enabled: false
   workbench__configure:
     weight: -40
     menu_name: workbench
