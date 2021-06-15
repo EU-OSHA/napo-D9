@@ -1913,6 +1913,7 @@ tr th {
   position: relative;
   overflow: hidden;
   margin-top: 2rem;
+  height: calc(100% - 2rem);
 }
 .napo-film-list-view .views-view-grid .views-field-nothing:hover .napo-film-content-container {
   transform: translateY(0);
