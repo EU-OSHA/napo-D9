@@ -66,8 +66,11 @@
       color:$text-color-blue;
       margin:0;
       padding:0;
+      max-height: 330px;
+
       li{
         padding:5px 14px;
+        font-weight: 400;
         &:hover{
           background: $bg-color-orange;
           color:$text-color-white;

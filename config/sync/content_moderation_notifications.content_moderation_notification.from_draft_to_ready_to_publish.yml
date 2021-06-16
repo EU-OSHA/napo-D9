@@ -14,6 +14,6 @@ site_mail: false
 emails: ''
 subject: '[[site:name] Website] CMW: ([node:nid]) [node:title]'
 body:
-  value: "<p>Dear [user:account-name],</p>\r\n\r\n<p>No action is required. This message is just to inform you that there has been a status change (from <strong>draft</strong> to <strong>ready_to_publish)</strong> on page <a href=\"[current-page:url:absolute]\"> [current-page:title] </a><br />\r\nThank you,</p>\r\n"
+  value: "<p>Dear [user:account-name],</p>\r\n\r\n<p>No action is required. This message is just to inform you that there has been a status change (from draft&nbsp;to ready_to_publish) on page&nbsp;[node:title] ([node:edit-url])</p>\r\n\r\n<p>Thank you,</p>\r\n"
   format: full_html
 label: 'From Draft to Ready to Publish'

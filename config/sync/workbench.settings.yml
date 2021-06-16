@@ -1,4 +1,4 @@
-overview_left: 'workbench_current_user:block_1'
+overview_left: 'workbench_edited:block_1'
 overview_right: 'workbench_edited:block_1'
 overview_main: 'osh_workflow_admin:my_content'
 edits_main: 'workbench_edited:embed_1'
