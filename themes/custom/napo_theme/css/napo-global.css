@@ -1659,8 +1659,20 @@ tr th {
 }
 .block-views-blockfaqs-block .ui-accordion-content p {
   padding-left: 2.2rem;
+  font-size: 1rem;
 }
-
+.block-views-blockfaqs-block .view-footer .node__title {
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 20px;
+  margin-top: 36px;
+  border-bottom: 1px solid #EEEDEE;
+  color: #1f3695;
+  background: #f2f1f2;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.1;
+  width: 100%;
+}
 .lessons-item {
   border-radius: 0rem 0rem 1.25rem 1.25rem;
   overflow: hidden;
