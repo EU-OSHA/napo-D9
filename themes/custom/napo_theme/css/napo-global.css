@@ -2576,6 +2576,17 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   }
 }
 
+.accessibility-info h2 {
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #1f3695;
+}
+.accessibility-info h3 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #1f3695;
+}
+
 .napos-films-coming-soon .slick--less {
   display: inline-block;
   float: left;
