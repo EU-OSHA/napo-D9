@@ -87,6 +87,7 @@ module:
   meta_position: 0
   metatag: 0
   metatag_views: 0
+  napo_content_cart: 0
   node: 0
   notification: 0
   options: 0
@@ -121,6 +122,8 @@ module:
   spamspan: 0
   system: 0
   taxonomy: 0
+  taxonomy_access_fix: 0
+  taxonomy_manager: 0
   text: 0
   text_resize: 0
   token: 0

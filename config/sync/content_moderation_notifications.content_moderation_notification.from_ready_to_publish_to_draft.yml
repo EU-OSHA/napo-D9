@@ -10,10 +10,10 @@ roles:
   administrator: administrator
   review_manager: review_manager
 author: false
-site_mail: true
+site_mail: false
 emails: ''
 subject: '[[site:name] Website] CMW: ([node:nid]) [node:title]'
 body:
-  value: "<p>Dear [user:account-name],</p>\r\n\r\n<p>No action is required. This message is just to inform you that there has been a status change (from <strong>ready_to_ publish</strong> to <strong>draft</strong>) on page <a href=\"[current-page:url:absolute]\"> [current-page:title] </a><br />\r\nThank you,</p>\r\n"
+  value: "<p>Dear [user:account-name],</p>\r\n\r\n<p>No action is required. This message is just to inform you that there has been a status change (from ready_to_publish to draft) on page [node:title] ([node:edit-url])</p>\r\n\r\n<p>Thank you,</p>\r\n"
   format: full_html
 label: ' From Ready to Publish to Draft'

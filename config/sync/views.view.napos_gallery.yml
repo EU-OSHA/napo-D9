@@ -1070,7 +1070,7 @@ display:
         options:
           items_per_page: 1
           offset: 0
-      rendering_language: '***LANGUAGE_site_default***'
+      rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:
