@@ -35,3 +35,50 @@
     }
   }
 }
+
+.download-centre{
+  table{
+    th{
+      background-color: transparent;
+      color:$text-color-blue;
+    }
+    tr,
+    th,
+    td{
+      border:none;
+    }
+    tr{
+      &:nth-of-type(odd){
+        background-color: transparent;
+      }
+      &:hover{
+        background-color: transparent;
+      }
+    }
+    td {
+      a{
+        font-size:1.125rem;
+        color:$text-color-blue;
+        font-weight: bold;
+      }
+      .container{
+        .row{
+          >div{
+            &:nth-of-type(2){
+              background-color: $bg-color-grey-light;
+              padding: 1.125rem 2.25rem 1.125rem 2.25rem;
+            }
+          }
+        }
+        p{
+          color:$text-color-blue;
+        }
+        .ncc-content-cart-download{
+          font-size: 1.125rem;
+          font-weight: 700;
+          color:$text-color-grey-dark;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.ui-dialog{
+  position:fixed;
+  top:2rem!important;
+  right:1.5rem!important;
+  left:initial!important;
+  z-index:9999999;
+  padding:1rem;
+  width:274px!important;
+  &[aria-describedby="add-cart"]{
+    background-color: $bg-color-blue;
+  }
+  &[aria-describedby="remove-cart"]{
+    background-color: $bg-color-yellow;
+  }
+  .ui-dialog{
+    &-titlebar{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      display:block;
+      text-align: right;
+      padding:0;
+      background-color: transparent;
+      border:none;
+      .ui-dialog-titlebar-close{
+        border:none;
+        background-color: transparent;
+        box-shadow: none;
+        outline:none;
+        top:0;
+        right:0;
+        margin:0;
+        width:16px;
+        height:16px;
+        color:$text-color-white;
+        &:hover,
+        &:focus{
+          border:none;
+          background-color: transparent;
+          box-shadow: none;
+          outline:none;
+          color:$text-color-white;
+        }
+      }
+    }
+    &-content{
+      background-color: $bg-color-white;
+      padding:1rem;
+
+    }
+  }
+  .row{
+    margin:0.75rem 0;
+  }
+  .ncc{
+    &-message{
+      font-size:0.875rem;
+      color:$text-color-grey-4;
+    }
+    &-image{
+      padding:0;
+      img{
+        margin:0;
+      }
+    }
+    &-title{
+      font-size:0.875rem;
+      color:$text-color-blue;
+      padding:0 0.375rem;
+    }
+    &-button{
+      margin:1rem 0 0 0;
+      border-top:2px dashed $text-color-blue;
+      padding-top:1rem;
+      .btn{
+        background-color: $bg-color-blue;
+        color:$text-color-white;
+        font-size:0.875rem;
+        display: block;
+        font-weight:bold;
+        padding:0.5rem;
+        text-align: center;
+        &:hover,
+        &focus{
+          outline:none;
+          border:none;
+        }
+      }
+    }
+  }
+}

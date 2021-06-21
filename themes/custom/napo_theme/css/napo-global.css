@@ -371,6 +371,92 @@ div.pagerer-container {
   display: none !important;
 }
 
+.ui-dialog {
+  position: fixed;
+  top: 2rem !important;
+  right: 1.5rem !important;
+  left: initial !important;
+  z-index: 9999999;
+  padding: 1rem;
+  width: 274px !important;
+}
+.ui-dialog[aria-describedby=add-cart] {
+  background-color: #1f3695;
+}
+.ui-dialog[aria-describedby=remove-cart] {
+  background-color: #f7e235;
+}
+.ui-dialog .ui-dialog-titlebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  text-align: right;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  color: #FFF;
+}
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close:focus {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  color: #FFF;
+}
+.ui-dialog .ui-dialog-content {
+  background-color: #FFF;
+  padding: 1rem;
+}
+.ui-dialog .row {
+  margin: 0.75rem 0;
+}
+.ui-dialog .ncc-message {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+.ui-dialog .ncc-image {
+  padding: 0;
+}
+.ui-dialog .ncc-image img {
+  margin: 0;
+}
+.ui-dialog .ncc-title {
+  font-size: 0.875rem;
+  color: #1f3695;
+  padding: 0 0.375rem;
+}
+.ui-dialog .ncc-button {
+  margin: 1rem 0 0 0;
+  border-top: 2px dashed #1f3695;
+  padding-top: 1rem;
+}
+.ui-dialog .ncc-button .btn {
+  background-color: #1f3695;
+  color: #FFF;
+  font-size: 0.875rem;
+  display: block;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+}
+.ui-dialog .ncc-button .btn:hover, .ui-dialog .ncc-button .btnfocus {
+  outline: none;
+  border: none;
+}
+
 .form-item-search .form-control {
   display: block;
   width: 100%;
@@ -2651,6 +2737,39 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   background-image: url(/sites/napo/themes/custom/napo_theme/images/download-center.png);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.download-centre table th {
+  background-color: transparent;
+  color: #1f3695;
+}
+.download-centre table tr,
+.download-centre table th,
+.download-centre table td {
+  border: none;
+}
+.download-centre table tr:nth-of-type(odd) {
+  background-color: transparent;
+}
+.download-centre table tr:hover {
+  background-color: transparent;
+}
+.download-centre table td a {
+  font-size: 1.125rem;
+  color: #1f3695;
+  font-weight: bold;
+}
+.download-centre table td .container .row > div:nth-of-type(2) {
+  background-color: #f2f1f2;
+  padding: 1.125rem 2.25rem 1.125rem 2.25rem;
+}
+.download-centre table td .container p {
+  color: #1f3695;
+}
+.download-centre table td .container .ncc-content-cart-download {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #585759;
 }
 
 .user-login-form,
