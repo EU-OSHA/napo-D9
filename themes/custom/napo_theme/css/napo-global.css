@@ -2608,6 +2608,17 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   float: left;
 }
 
+.disclaimer h2 {
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #1f3695;
+}
+.disclaimer h3 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #1f3695;
+}
+
 .page-view-download-centre .content-page-content .col-12 {
   margin: 0;
   padding: 0;
