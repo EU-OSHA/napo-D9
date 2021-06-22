@@ -2739,6 +2739,21 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   background-repeat: no-repeat;
 }
 
+.download-centre .ncc-submit {
+  padding-bottom: 0.875rem;
+  padding-top: 0.875rem;
+  padding-right: 2.875rem;
+  padding-left: 0.75rem;
+  color: #FFF;
+  border-radius: 0px;
+  border: 1px solid transparent;
+  font-weight: bold;
+  font-size: 0.875rem;
+  background: url(/sites/napo/themes/custom/napo_theme/images/video-download.png) no-repeat 96% 12px #1f3695;
+}
+.download-centre .table-responsive {
+  overflow: initial;
+}
 .download-centre table th {
   background-color: transparent;
   color: #1f3695;
@@ -2754,22 +2769,98 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 .download-centre table tr:hover {
   background-color: transparent;
 }
+.download-centre table tr.selected td {
+  background-color: transparent;
+}
+.download-centre table th {
+  font-size: 1.125rem;
+}
+.download-centre table td .custom-switch {
+  margin: 0;
+  padding: 0;
+  min-height: 0;
+}
+.download-centre table td .custom-switch .custom-control-input {
+  opacity: 1;
+  position: static;
+  height: auto;
+  width: auto;
+  z-index: 1;
+}
+.download-centre table td .custom-switch .custom-control-label {
+  display: none;
+}
 .download-centre table td a {
   font-size: 1.125rem;
   color: #1f3695;
   font-weight: bold;
 }
-.download-centre table td .container .row > div:nth-of-type(2) {
+.download-centre table td .container {
+  padding: 0;
+}
+.download-centre table td .container > .row > div:nth-of-type(2) {
   background-color: #f2f1f2;
   padding: 1.125rem 2.25rem 1.125rem 2.25rem;
 }
 .download-centre table td .container p {
   color: #1f3695;
 }
+.download-centre table td .container .field--type-image {
+  padding-right: 2rem;
+}
+.download-centre table td .container .field--type-image img {
+  margin: 0;
+}
 .download-centre table td .container .ncc-content-cart-download {
   font-size: 1.125rem;
   font-weight: 700;
   color: #585759;
+}
+.download-centre table td .container .ncc-content-cart-download .row {
+  align-items: center;
+}
+.download-centre table td .container .ncc-content-cart-download .row > div:first-of-type span {
+  background: #bbc2df;
+  color: #1f3695;
+  font-weight: bold;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  text-transform: uppercase;
+  min-height: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+.download-centre table td .container .ncc-content-cart-download ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+.download-centre table td .container .ncc-content-cart-download ul li + li {
+  margin-left: 0.75rem;
+}
+.download-centre table td .container .ncc-content-cart-download .napo-cart-download-mp4 {
+  padding: 10px;
+  display: block;
+  width: 52px;
+  height: 50px;
+  color: transparent;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png);
+}
+.download-centre table td .container .ncc-content-cart-download a[class*=napo-cart-delete] {
+  padding: 10px;
+  display: block;
+  width: 52px;
+  height: 50px;
+  color: transparent;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/remove.png);
 }
 
 .user-login-form,
@@ -3097,6 +3188,9 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 }
 .napos-films-films .node--type-article header,
 .napos-films-films .node--type-article #share-this-on {
+  display: none;
+}
+.napos-films-films .ajax-progress {
   display: none;
 }
 
@@ -4426,6 +4520,20 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   .node--type-lesson .content-accordions-download-custom .download-box ul,
 .node--type-msds-activities .content-accordions-download-custom .download-box ul {
     flex-direction: column;
+  }
+
+  /******  Download Centre  ******/
+  .download-centre #ncc-download-centre-form {
+    padding: 0 1rem;
+  }
+  .download-centre table td .container > .row > div:first-of-type {
+    padding: 0;
+  }
+  .download-centre table td .container .field--type-image {
+    padding-right: 0;
+  }
+  .download-centre table td .container .ncc-content-cart-download ul {
+    margin-top: 1rem;
   }
 
   .content-page-content > .col-12 {

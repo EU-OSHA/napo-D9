@@ -37,6 +37,21 @@
 }
 
 .download-centre{
+  .ncc-submit{
+    padding-bottom: 0.875rem;
+    padding-top: 0.875rem;
+    padding-right: 2.875rem;
+    padding-left:0.75rem;
+    color: $text-color-white;
+    border-radius: 0px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    font-size:0.875rem;
+    background: url(/sites/napo/themes/custom/napo_theme/images/video-download.png) no-repeat 96% 12px $bg-color-blue;
+  }
+  .table-responsive{
+    overflow: initial;
+  }
   table{
     th{
       background-color: transparent;
@@ -54,15 +69,41 @@
       &:hover{
         background-color: transparent;
       }
+      &.selected{
+        td{
+          background-color: transparent;
+        }
+      }
+    }
+    th{
+      font-size: 1.125rem;
     }
     td {
+      .custom-switch{
+        margin:0;
+        padding:0;
+        min-height: 0;
+        .custom-control{
+          &-input{
+            opacity:1;
+            position:static;
+            height:auto;
+            width:auto;
+            z-index:1;
+          }
+          &-label{
+            display:none;
+          }
+        }
+      }
       a{
         font-size:1.125rem;
         color:$text-color-blue;
         font-weight: bold;
       }
       .container{
-        .row{
+        padding:0;
+        >.row{
           >div{
             &:nth-of-type(2){
               background-color: $bg-color-grey-light;
@@ -73,10 +114,66 @@
         p{
           color:$text-color-blue;
         }
+        .field--type-image{
+          padding-right:2rem;
+          img{
+            margin:0;
+          }
+        }
         .ncc-content-cart-download{
           font-size: 1.125rem;
           font-weight: 700;
           color:$text-color-grey-dark;
+          .row{
+            align-items: center;
+            >div{
+              &:first-of-type{
+                span{
+                  background: $bg-color-blue-light;
+                  color: $text-color-blue;
+                  font-weight: bold;
+                  padding-left: 0.625rem;
+                  padding-right: 0.625rem;
+                  text-transform: uppercase;
+                  min-height: 20px;
+                  display: inline-block;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          ul{
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            justify-content: flex-end;
+            list-style:none;
+            li+li{
+              margin-left:0.75rem;
+            }
+          }
+          .napo-cart-download-mp4{
+            padding: 10px;
+            display: block;
+            width: 52px;
+            height: 50px;
+            color:transparent;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png);
+          }
+          a[class*=napo-cart-delete]{
+            padding: 10px;
+            display: block;
+            width: 52px;
+            height: 50px;
+            color:transparent;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(/sites/napo/themes/custom/napo_theme/images/remove.png);
+          }
         }
       }
     }

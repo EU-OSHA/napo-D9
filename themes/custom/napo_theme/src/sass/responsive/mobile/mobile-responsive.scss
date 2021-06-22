@@ -779,6 +779,37 @@
   }
 
 
+  /******  Download Centre  ******/
+
+  .download-centre{
+    #ncc-download-centre-form{
+      padding:0 1rem;
+    }
+    table{
+      td{
+        .container{
+          >.row{
+            >div{
+              &:first-of-type{
+                padding:0;
+              }
+            }
+          }
+          .field--type-image{
+            padding-right:0;
+          }
+          .ncc-content-cart-download{
+            ul{
+              margin-top:1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
   .content-page-content{
     &>.col-12{
       padding:0;

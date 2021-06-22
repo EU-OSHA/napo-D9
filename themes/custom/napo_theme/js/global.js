@@ -30,6 +30,25 @@
   })
 
 
+  // Counter for Download Centre Button
+  $('#ncc-download-centre-form').each(function(){
+    let selectedItems=0;
+    $(this).find('.custom-control-input').on('change', function(){
+      if(this.checked){
+        selectedItems++;
+      }
+      else{
+        selectedItems--;
+      }
+      let $downloadButton=$(this).closest('#ncc-download-centre-form').find('#edit-submit');
+      let downloadButtonText=$downloadButton.html();
+      let splitDownloadButtonText=downloadButtonText.split('(');
+      let newDownloadButtonText=splitDownloadButtonText[0]+'('+selectedItems+')';
+      $downloadButton.html(newDownloadButtonText);
+    });
+  });
+
+
 
   $(window).on('load', function() {
 
@@ -48,13 +67,28 @@
       $('#block-searchapi .form-item-search-api-fulltext').after('<div class="btn-search-custom-mobile"></div>');
     }
 
+    // // Hide ui-dialog
+    // $('.download-videos').each(function(){
+    //   $(this).on('click', 'a', function(e){
+    //     e.preventDefault;
+    //     alert('a');
+    //   })
+    // });
+
+
   });
-
-
-  $('#header').on('click','.btn-search-custom-mobile',function(){
-    $('#block-searchapi').toggleClass('in');
-  });
-
+  // jQuery(document).ready(function () {
+  //   // Hide ui-dialog
+  //       $('body').each(function () {
+  //         $(this).on('click', '.download-videos a', function () {
+  //           alert('a');
+  //         })
+  //       });
+  //
+  //       $('#header').on('click', '.btn-search-custom-mobile', function () {
+  //         $('#block-searchapi').toggleClass('in');
+  //       });
+  // });
 
 
   /** ACCORDION **/
