@@ -1,0 +1,15 @@
+uuid: bb81344d-1863-4f5d-9f53-90657112bcb1
+langcode: en
+status: true
+dependencies: {  }
+name: napo_large_800_
+label: 'Napo Large (800)'
+effects:
+  824b3407-059a-41be-b84f-d5f0356ce45a:
+    uuid: 824b3407-059a-41be-b84f-d5f0356ce45a
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: 800
+      upscale: false

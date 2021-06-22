@@ -5,8 +5,11 @@ dependencies:
   config:
     - field.field.node.napo_image.body
     - field.field.node.napo_image.field_image
+    - image.style.napo_large_800_
     - node.type.napo_image
   module:
+    - ds
+    - media
     - text
     - user
 id: node.napo_image.default
@@ -23,13 +26,18 @@ content:
     region: content
   field_image:
     weight: 2
-    label: above
+    label: hidden
     settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+      image_style: napo_large_800_
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: media_thumbnail
     region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
   langcode: true
   links: true
   search_api_excerpt: true
