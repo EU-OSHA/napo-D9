@@ -9,7 +9,7 @@
 
   Drupal.behaviors.napo_theme = {
     attach: function (context, settings) {
-
+      // Hide ui-dialog
       $('.download-videos a[class*="napo-cart-add"]').each(function(){
         $(this).click(function(){
           $('.ui-dialog[aria-describedby="add-cart"]').stop().fadeOut(0);
@@ -89,18 +89,7 @@
       $('#block-searchapi .form-item-search-api-fulltext').after('<div class="btn-search-custom-mobile"></div>');
     }
 
-    // // Hide ui-dialog
-    // $('.download-videos').each(function(){
-    //   $(this).on('click', 'a', function(){
-    //   })
-    // });
-
-
-
-
   });
-
-
 
 
   jQuery(document).ready(function () {
