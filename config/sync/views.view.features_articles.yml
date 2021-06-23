@@ -372,7 +372,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if(entityqueue_relationship_position==0) %} \r\n\r\n<a href=\"{{langcode}}/learning-with-napo/napo-in-the-workplace\">{{ \"see more\" | trans}}</a>\r\n\r\n{% elseif(entityqueue_relationship_position==1) %}\r\n\r\n\r\n<a href=\"{{langcode}}/learning-with-napo/napo-ifor-teachers\">{{ \"see more\" | trans}}</a>\r\n\r\n\r\n{% endif %}"
+            text: "{% if(entityqueue_relationship_position==0) %} \r\n\r\n<a href=\"{{langcode}}/learning-with-napo/napo-in-the-workplace\">{{ \"see more\" | trans}}</a>\r\n\r\n{% elseif(entityqueue_relationship_position==1) %}\r\n\r\n\r\n<a href=\"{{langcode}}/learning-with-napo/napo-for-teachers\">{{ \"see more\" | trans}}</a>\r\n\r\n\r\n{% endif %}"
             make_link: false
             path: ''
             absolute: false

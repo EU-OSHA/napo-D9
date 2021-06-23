@@ -98,22 +98,38 @@
     <div class="content-accordions-download-custom">
       <h2>{{ 'Activity' | trans }}</h2>
       <div class="detail--text--block">
+{{ dpm(content) }}
         <div class="accordions">
+          {% if (content.field_learning_objectives | length > 2) %}
           <div class="accordion-item">
-            {{ content.field_learning_objectives }}
+            {{ content.field_learning_objectives  }}
           </div>
+          {% endif %}
+
+          {% if (content.field_activities | length > 2) %}
           <div class="accordion-item">
             {{ content.field_activities }}
           </div>
+          {% endif %}
+
+          {%  if(content.field_concluding_questions | length > 2) %}
           <div class="accordion-item">
             {{ content.field_concluding_questions }}
           </div>
+          {% endif %}
+
+          {% if(content.field_assessment | length > 2 ) %}
           <div class="accordion-item">
             {{ content.field_assessment }}
           </div>
+          {% endif %}
+
+          {% if(content.field_msds_resources_required | length > 2) %}
           <div class="accordion-item">
             {{ content.field_msds_resources_required }}
           </div>
+          {% endif %}
+
         </div>
         <div class="download-box">
           <div class="download-title">
@@ -121,9 +137,9 @@
           </div>
           <!-- TODO Download -->
           <ul>
-            <li><a href="to-do">{{ 'Video' | trans }}Video <span class="related_size">(84.25 MB)</span></a></li>
+            <li><a href="to-do">{{ 'Video' | trans }} {{ content.field_msds_video.0.value}}<span class="related_size">(84.25 MB)</span></a></li>
             <li><a href="to-do" target="_blank">{{ 'Activity' | trans }} <span class="related_size">(86.96 KB)</span></a></li>
-            <li><a href="to-do">{{ 'Facilitator guidance' | trans }}Facilitator guidance</a></li>
+            <li><a href="to-do">{{ 'Facilitator guidance' | trans }}</a></li>
             <li><a href="to-do">{{ 'Download all' | trans }}</a></li>
           </ul>
           <!-- END TODO Download -->

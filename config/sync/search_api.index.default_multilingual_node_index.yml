@@ -22,8 +22,8 @@ dependencies:
     - field.storage.node.field_main_tag
     - field.storage.taxonomy_term.field_nace_changes
     - field.storage.taxonomy_term.field_thesaurus_code
-    - field.storage.taxonomy_term.field_tags_code
     - field.storage.taxonomy_term.field_nace_code
+    - field.storage.taxonomy_term.field_tags_code
     - field.storage.taxonomy_term.field_excluded_from
     - field.storage.taxonomy_term.field_nace_excludes
     - field.storage.taxonomy_term.field_nace_includes
@@ -45,6 +45,7 @@ dependencies:
     - field.storage.media.field_media_video_file
     - field.storage.media.field_media_oembed_video
     - search_api.server.apache_solr
+    - core.entity_view_mode.node.search_result
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -176,7 +177,7 @@ field_settings:
     label: Categories
     datasource_id: 'entity:node'
     property_path: field_combined_tags
-    type: integer
+    type: text
     dependencies:
       config:
         - field.storage.node.field_combined_tags
@@ -556,7 +557,7 @@ field_settings:
     label: 'Tags » Taxonomy term » Name'
     datasource_id: 'entity:node'
     property_path: 'field_tags:entity:name'
-    type: string
+    type: text
     dependencies:
       config:
         - field.storage.node.field_tags
@@ -570,6 +571,16 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_main_tag
+      module:
+        - taxonomy
+  name_2:
+    label: 'Categories » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_combined_tags:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_combined_tags
       module:
         - taxonomy
   nid:
@@ -643,20 +654,20 @@ field_settings:
         anonymous: anonymous
       view_mode:
         'entity:node':
-          article: default
-          consortium_partner: ''
-          faq: ''
-          home_video: ''
-          lesson: default
-          lesson_resources: ''
-          lesson_toolkit: ''
-          lesson_video: ''
-          msds_activities: ''
-          msds_resources: ''
-          napo_album: ''
-          napo_friend: ''
-          napo_image: ''
-          napo_video: default
+          article: search_result
+          consortium_partner: search_result
+          faq: search_result
+          home_video: search_result
+          lesson: search_result
+          lesson_resources: search_result
+          lesson_toolkit: search_result
+          lesson_video: search_result
+          msds_activities: search_result
+          msds_resources: search_result
+          napo_album: search_result
+          napo_friend: search_result
+          napo_image: search_result
+          napo_video: search_result
         'entity:search_api_task':
           search_api_task: ''
   revision_default:
@@ -867,6 +878,7 @@ processor_settings:
     fields:
       - aggregated_field
       - description
+      - field_combined_tags_2
       - field_download
       - field_excluded_from
       - field_excluded_from_1
@@ -892,6 +904,7 @@ processor_settings:
       - language_with_fallback
       - name
       - name_1
+      - name_2
       - path
       - processed
       - rendered_item
