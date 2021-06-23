@@ -12,23 +12,23 @@
 
       $('.download-videos a[class*="napo-cart-add"]').each(function(){
         $(this).click(function(){
-          $('.ui-dialog[aria-describedby="add-cart"]').fadeOut(0);
-          $('.ui-dialog[aria-describedby="remove-cart"]').fadeOut(0);
-          $('.ui-dialog[aria-describedby="add-cart"]').fadeIn(0);
+          $('.ui-dialog[aria-describedby="add-cart"]').stop().fadeOut(0);
+          $('.ui-dialog[aria-describedby="remove-cart"]').stop().fadeOut(0);
+          $('.ui-dialog[aria-describedby="add-cart"]').stop().fadeIn();
           setTimeout(function(){
-            $('.ui-dialog[aria-describedby="add-cart"]').fadeOut();
-          }, 3000);
+            $('.ui-dialog[aria-describedby="add-cart"]').stop().fadeOut();
+          }, 2000);
         });
       });
 
-      $('.download-videos a[class*="napo-cart-delete"]').each(function(){
+      $('.download-videos a[class*="napo-cart-delete"], .ncc-content-cart-download a[class*="napo-cart-delete"]').each(function(){
         $(this).click(function(){
-          $('.ui-dialog[aria-describedby="add-cart"]').fadeOut(0);
-          $('.ui-dialog[aria-describedby="remove-cart"]').fadeOut(0);
-          $('.ui-dialog[aria-describedby="remove-cart"]').fadeIn(0);
+          $('.ui-dialog[aria-describedby="add-cart"]').stop().fadeOut(0);
+          $('.ui-dialog[aria-describedby="remove-cart"]').stop().fadeOut(0);
+          $('.ui-dialog[aria-describedby="remove-cart"]').stop().fadeIn();
           setTimeout(function(){
-            $('.ui-dialog[aria-describedby="remove-cart"]').fadeOut();
-          }, 3000);
+            $('.ui-dialog[aria-describedby="remove-cart"]').stop().fadeOut();
+          }, 2000);
         });
       });
 
