@@ -10,6 +10,28 @@
   Drupal.behaviors.napo_theme = {
     attach: function (context, settings) {
 
+      $('.download-videos a[class*="napo-cart-add"]').each(function(){
+        $(this).click(function(){
+          $('.ui-dialog[aria-describedby="add-cart"]').fadeOut(0);
+          $('.ui-dialog[aria-describedby="remove-cart"]').fadeOut(0);
+          $('.ui-dialog[aria-describedby="add-cart"]').fadeIn(0);
+          setTimeout(function(){
+            $('.ui-dialog[aria-describedby="add-cart"]').fadeOut();
+          }, 3000);
+        });
+      });
+
+      $('.download-videos a[class*="napo-cart-delete"]').each(function(){
+        $(this).click(function(){
+          $('.ui-dialog[aria-describedby="add-cart"]').fadeOut(0);
+          $('.ui-dialog[aria-describedby="remove-cart"]').fadeOut(0);
+          $('.ui-dialog[aria-describedby="remove-cart"]').fadeIn(0);
+          setTimeout(function(){
+            $('.ui-dialog[aria-describedby="remove-cart"]').fadeOut();
+          }, 3000);
+        });
+      });
+
     }
   };
 
@@ -69,26 +91,27 @@
 
     // // Hide ui-dialog
     // $('.download-videos').each(function(){
-    //   $(this).on('click', 'a', function(e){
-    //     e.preventDefault;
-    //     alert('a');
+    //   $(this).on('click', 'a', function(){
     //   })
     // });
 
 
+
+
   });
-  // jQuery(document).ready(function () {
-  //   // Hide ui-dialog
-  //       $('body').each(function () {
-  //         $(this).on('click', '.download-videos a', function () {
-  //           alert('a');
-  //         })
-  //       });
-  //
-  //       $('#header').on('click', '.btn-search-custom-mobile', function () {
-  //         $('#block-searchapi').toggleClass('in');
-  //       });
-  // });
+
+
+
+
+  jQuery(document).ready(function () {
+    $('body').on('click', '.cart a', function(){
+      alert('b');
+    })
+
+    $('#header').on('click', '.btn-search-custom-mobile', function () {
+      $('#block-searchapi').toggleClass('in');
+    });
+  });
 
 
   /** ACCORDION **/
