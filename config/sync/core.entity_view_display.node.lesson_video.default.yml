@@ -13,6 +13,8 @@ dependencies:
     - node.type.lesson_video
   module:
     - ds
+    - file_download_link_media
+    - media
     - text
     - user
 id: node.lesson_video.default
@@ -23,47 +25,43 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content
   field_body_revamp:
-    weight: 2
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_image:
-    weight: 3
-    label: above
+    weight: 1
+    label: hidden
     settings:
-      link: true
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_poster_image:
-    weight: 4
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+    type: media_thumbnail
     region: content
   field_video:
-    weight: 0
-    label: above
+    type: file_download_link_media
+    weight: 2
+    region: content
+    label: hidden
     settings:
-      view_mode: default
-      link: false
+      link_text: '[media:name] ([file:size])'
+      new_tab: true
+      force_download: true
+      link_title: ''
+      custom_classes: ''
     third_party_settings:
       ds:
         ds_limit: ''
-    type: entity_reference_entity_view
-    region: content
   field_youtube:
-    weight: 5
-    label: above
+    weight: 3
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -71,6 +69,8 @@ content:
     region: content
 hidden:
   addtoany: true
+  breadcrumbs: true
+  field_poster_image: true
   field_tags: true
   langcode: true
   links: true

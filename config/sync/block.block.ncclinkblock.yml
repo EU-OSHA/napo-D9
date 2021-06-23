@@ -1,0 +1,20 @@
+uuid: 3c85bd94-374f-4a3d-80f0-48ee99c23480
+langcode: en
+status: true
+dependencies:
+  module:
+    - napo_content_cart
+  theme:
+    - napo_theme
+id: ncclinkblock
+theme: napo_theme
+region: top_header
+weight: 0
+provider: null
+plugin: ncc_link_block
+settings:
+  id: ncc_link_block
+  label: 'Ncc Link Block'
+  provider: napo_content_cart
+  label_display: '0'
+visibility: {  }

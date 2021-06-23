@@ -9,6 +9,28 @@
 
   Drupal.behaviors.napo_theme = {
     attach: function (context, settings) {
+      // Hide ui-dialog
+      $('.download-videos a[class*="napo-cart-add"]').each(function(){
+        $(this).click(function(){
+          $('.ui-dialog[aria-describedby="add-cart"]').stop().fadeOut(0);
+          $('.ui-dialog[aria-describedby="remove-cart"]').stop().fadeOut(0);
+          $('.ui-dialog[aria-describedby="add-cart"]').stop().fadeIn();
+          setTimeout(function(){
+            $('.ui-dialog[aria-describedby="add-cart"]').stop().fadeOut();
+          }, 2000);
+        });
+      });
+
+      $('.download-videos a[class*="napo-cart-delete"], .ncc-content-cart-download a[class*="napo-cart-delete"]').each(function(){
+        $(this).click(function(){
+          $('.ui-dialog[aria-describedby="add-cart"]').stop().fadeOut(0);
+          $('.ui-dialog[aria-describedby="remove-cart"]').stop().fadeOut(0);
+          $('.ui-dialog[aria-describedby="remove-cart"]').stop().fadeIn();
+          setTimeout(function(){
+            $('.ui-dialog[aria-describedby="remove-cart"]').stop().fadeOut();
+          }, 2000);
+        });
+      });
 
     }
   };
@@ -28,6 +50,25 @@
 
     $('html').css('font-size', newFontSize+'px')
   })
+
+
+  // Counter for Download Centre Button
+  $('#ncc-download-centre-form').each(function(){
+    let selectedItems=0;
+    $(this).find('.custom-control-input').on('change', function(){
+      if(this.checked){
+        selectedItems++;
+      }
+      else{
+        selectedItems--;
+      }
+      let $downloadButton=$(this).closest('#ncc-download-centre-form').find('#edit-submit');
+      let downloadButtonText=$downloadButton.html();
+      let splitDownloadButtonText=downloadButtonText.split('(');
+      let newDownloadButtonText=splitDownloadButtonText[0]+'('+selectedItems+')';
+      $downloadButton.html(newDownloadButtonText);
+    });
+  });
 
 
 
@@ -51,10 +92,15 @@
   });
 
 
-  $('#header').on('click','.btn-search-custom-mobile',function(){
-    $('#block-searchapi').toggleClass('in');
-  });
+  jQuery(document).ready(function () {
+    $('body').on('click', '.cart a', function(){
+      alert('b');
+    })
 
+    $('#header').on('click', '.btn-search-custom-mobile', function () {
+      $('#block-searchapi').toggleClass('in');
+    });
+  });
 
 
   /** ACCORDION **/

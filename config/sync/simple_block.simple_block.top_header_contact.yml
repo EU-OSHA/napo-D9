@@ -7,5 +7,5 @@ dependencies:
 id: top_header_contact
 title: 'Header - Contact'
 content:
-  value: "<p><a class=\"header-contact\" href=\"/contact-us\">Contact us &amp; faqs</a></p>\r\n"
+  value: "<p><a class=\"header-contact\" href=\"/en/en/contact-us\">Contact us &amp; faqs</a></p>\r\n"
   format: full_html

@@ -17,6 +17,7 @@ dependencies:
     - datetime
     - file
     - media
+    - napo_content_cart
     - pagerer
     - search_api
     - user
@@ -738,17 +739,9 @@ display:
           min_length: null
           fields:
             - aggregated_field
-            - description
-            - field_nace_changes
-            - field_nace_changes_1
-            - field_nace_excludes
-            - field_nace_excludes_1
-            - field_nace_includes
-            - field_nace_includes_1
-            - field_nace_includes_also
-            - field_nace_includes_also_1
+            - field_combined_tags_2
+            - name
             - processed
-            - rendered_item
             - title
           plugin_id: search_api_fulltext
         type_1:
@@ -1026,18 +1019,8 @@ display:
           parse_mode: terms
           min_length: null
           fields:
-            - aggregated_field
-            - description
-            - field_nace_changes
-            - field_nace_changes_1
-            - field_nace_excludes
-            - field_nace_excludes_1
-            - field_nace_includes
-            - field_nace_includes_1
-            - field_nace_includes_also
-            - field_nace_includes_also_1
+            - name
             - processed
-            - rendered_item
             - title
           plugin_id: search_api_fulltext
         search_api_language:
@@ -1816,6 +1799,55 @@ display:
             multi_type: separator
             multi_separator: ', '
           plugin_id: search_api_field
+        ncc_download:
+          id: ncc_download
+          table: views
+          field: ncc_download
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          plugin_id: ncc_download
         nothing:
           id: nothing
           table: views
@@ -1827,7 +1859,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"item\">\r\n    <div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\"><a target=\"_blank\" href=\"{{ uri}}\">Download video</a></div>\r\n         <div class=\"cart\">{{content_cart}}<a href=\"#\">Add to download centre</a></div>\r\n    </div>\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n        <div class=\"view-scenes\"><a href=\"/napo-s-film-episodes/{{nid}}\">View scenes</a></div>\r\n    </div>\r\n</div>"
+            text: "<div class=\"item\">\r\n    <div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\"><a target=\"_blank\" href=\"{{ uri}}\">Download video</a></div>\r\n         <div class=\"cart\">{{ ncc_download }}</div>\r\n    </div>\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n        <div class=\"view-scenes\"><a href=\"/napo-s-film-episodes/{{nid}}\">View scenes</a></div>\r\n    </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -1968,15 +2000,8 @@ display:
           min_length: null
           fields:
             - aggregated_field
-            - description
-            - field_nace_changes
-            - field_nace_changes_1
-            - field_nace_excludes
-            - field_nace_excludes_1
-            - field_nace_includes
-            - field_nace_includes_1
-            - field_nace_includes_also
-            - field_nace_includes_also_1
+            - field_combined_tags_2
+            - name
             - processed
             - rendered_item
             - title
@@ -2115,7 +2140,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
           group: 1
           exposed: false
           expose:

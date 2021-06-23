@@ -18,6 +18,7 @@ dependencies:
     - node.type.napo_video
   module:
     - ds
+    - file_download_link_media
     - layout_builder
     - user
 third_party_settings:
@@ -29,20 +30,29 @@ targetEntityType: node
 bundle: napo_video
 mode: napo_video_from_msd_video
 content:
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_video:
     weight: 0
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      link_text: Download
+      link_title: null
+      new_tab: true
+      force_download: true
+      custom_classes: ''
     third_party_settings:
       ds:
         ds_limit: ''
-    type: entity_reference_entity_view
+    type: file_download_link_media
     region: content
 hidden:
   addtoany: true
   body: true
+  breadcrumbs: true
   field_archived: true
   field_combined_tags: true
   field_image: true
