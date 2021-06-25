@@ -4359,7 +4359,13 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   }
 
   /******  Napo Story  ******/
-  .napo-story iframe {
+  .about-napo-the-napo-story .layout-main-wrapper > .container {
+    padding: 0;
+  }
+  .about-napo-the-napo-story .content-page-content {
+    margin: 0;
+  }
+  .about-napo-the-napo-story iframe {
     float: none;
     width: 100%;
     padding: 0;
@@ -4539,7 +4545,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   .content-page-content > .col-12 {
     padding: 0;
   }
-  .napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12 {
+  .about-napo-the-napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12 {
     padding: 0 1rem;
   }
 }
