@@ -58,4 +58,16 @@
       }
     }
   }
+
+  /******  Sitemap  ******/
+
+  .sitemap-item--menu-main {
+    .navbar-nav{
+      flex-direction: column;
+      .dropdown-menu{
+        position: static;
+        float: none;
+      }
+    }
+  }
 }

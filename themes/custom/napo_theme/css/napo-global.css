@@ -4601,6 +4601,15 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
     width: auto;
     margin: auto;
   }
+
+  /******  Sitemap  ******/
+  .sitemap-item--menu-main .navbar-nav {
+    flex-direction: column;
+  }
+  .sitemap-item--menu-main .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+  }
 }
 
 /*# sourceMappingURL=napo-global.css.map */
