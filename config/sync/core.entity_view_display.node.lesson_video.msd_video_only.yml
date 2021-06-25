@@ -1,8 +1,9 @@
-uuid: fb0663a9-d78b-41e1-9f20-54196c5eca32
+uuid: 91f13b6d-d9da-4d4c-9c88-94eaa608d23f
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.msd_video_only
     - field.field.node.lesson_video.body
     - field.field.node.lesson_video.field_body_revamp
     - field.field.node.lesson_video.field_image
@@ -12,51 +13,38 @@ dependencies:
     - field.field.node.lesson_video.field_youtube
     - node.type.lesson_video
   module:
-    - media
-    - text
+    - ds
+    - layout_builder
     - user
-id: node.lesson_video.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.lesson_video.msd_video_only
 targetEntityType: node
 bundle: lesson_video
-mode: default
+mode: msd_video_only
 content:
-  body:
-    label: hidden
-    type: text_default
+  field_video:
+    type: entity_reference_entity_view
     weight: 0
-    settings: {  }
-    third_party_settings: {  }
     region: content
-  field_body_revamp:
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_image:
-    weight: 1
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: media_thumbnail
-    region: content
-  field_youtube:
-    weight: 2
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
+      view_mode: default
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
 hidden:
   addtoany: true
+  body: true
   breadcrumbs: true
+  field_body_revamp: true
+  field_image: true
   field_poster_image: true
   field_tags: true
-  field_video: true
+  field_youtube: true
   langcode: true
   links: true
   search_api_excerpt: true

@@ -36,6 +36,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_activities:
     weight: 5
     label: above
@@ -92,7 +97,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      view_mode: napo_video_from_msd_video
+      view_mode: msd_video_only
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
