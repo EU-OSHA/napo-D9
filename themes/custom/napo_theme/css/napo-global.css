@@ -1729,6 +1729,9 @@ tr th {
   display: none;
 }
 
+.block-views-blockfaqs-block .ui-widget {
+  font-family: Verdana, Arial, sans-serif !important;
+}
 .block-views-blockfaqs-block .ui-accordion-header {
   border: none;
   background: transparent;
@@ -1759,6 +1762,10 @@ tr th {
   line-height: 1.1;
   width: 100%;
 }
+.block-views-blockfaqs-block .view-footer a {
+  font-weight: 700;
+}
+
 .lessons-item {
   border-radius: 0rem 0rem 1.25rem 1.25rem;
   overflow: hidden;
