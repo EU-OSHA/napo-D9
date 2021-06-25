@@ -4565,7 +4565,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
     padding-bottom: 2.5rem;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /******  Header  ******/
   .header-logo {
     flex: 0 0 100%;
