@@ -74,10 +74,10 @@
 
 %}
 {% set lang = url | split('/') %}
-{{ dpm(content.field_lesson_video.0) }}
+{#{{ dpm(content.field_lesson_video.0) }}#}
 
 
-{{ path('entity.node.canonical', {'node':  node.id}) }}
+{#{{ path('entity.node.canonical', {'node':  node.id}) }}#}
 
 
 <div class="back-button-custom"><a href="/learning-with-napo/napo-for-teachers">{{ 'Back to Napo for teachers' | trans }}</a></div>
@@ -88,7 +88,7 @@
     </div>
     <div class="content-text-facilitator-custom">
       <div class="introductory-text">
-        {{ content.field_introductory_text }}
+        {{  	field_lesson_intro_text}}
       </div>
       <div class="facilitator-guidance">
         <div class="title-box">
@@ -145,8 +145,10 @@
       </div>
     </div>
   </div>
+
   <div class="related">
-  <h2>{{ 'Related lesson' | trans }}</h2>
-    <h1>- TO DO - </h1>
+    <h2><b>{{ 'Related lesson' | trans }}</b></h2>
+    {{ drupal_view('lesson_related_lesson', 'block_related_lessons') }}
   </div>
+
 </article>
