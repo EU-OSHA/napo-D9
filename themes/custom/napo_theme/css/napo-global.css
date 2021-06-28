@@ -246,6 +246,9 @@ div.pagerer-container {
   margin: 10px 7px 25px 0;
   float: left;
 }
+.views-slideshow-controls-top .views_slideshow_pager_field_item:hover .views-field-title:after {
+  display: inline-block;
+}
 .views-slideshow-controls-top .views-field-title {
   color: #1f3695;
   background: url(/sites/napo/themes/custom/napo_theme/images/background-yellow.png) repeat-x;
@@ -255,6 +258,18 @@ div.pagerer-container {
   padding-top: 2px;
   font-size: 17px;
   cursor: pointer;
+  position: relative;
+}
+.views-slideshow-controls-top .views-field-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  width: 100%;
+  height: 0.25rem;
+  background-color: #1f3695;
 }
 .views-slideshow-controls-top .views-field-field-image {
   cursor: pointer;
@@ -1729,6 +1744,9 @@ tr th {
   display: none;
 }
 
+.block-views-blockfaqs-block .ui-widget {
+  font-family: Verdana, Arial, sans-serif !important;
+}
 .block-views-blockfaqs-block .ui-accordion-header {
   border: none;
   background: transparent;
@@ -1759,6 +1777,10 @@ tr th {
   line-height: 1.1;
   width: 100%;
 }
+.block-views-blockfaqs-block .view-footer a {
+  font-weight: 700;
+}
+
 .lessons-item {
   border-radius: 0rem 0rem 1.25rem 1.25rem;
   overflow: hidden;
@@ -4119,6 +4141,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   .block-views-blockfeatures-articles-block .views-row {
     width: 100%;
     margin-bottom: 1.25rem;
+    min-height: 280px;
   }
 
   .block-views-blocknapo-story-block-1 .view-napo-story {
@@ -4352,7 +4375,13 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   }
 
   /******  Napo Story  ******/
-  .napo-story iframe {
+  .about-napo-the-napo-story .layout-main-wrapper > .container {
+    padding: 0;
+  }
+  .about-napo-the-napo-story .content-page-content {
+    margin: 0;
+  }
+  .about-napo-the-napo-story iframe {
     float: none;
     width: 100%;
     padding: 0;
@@ -4532,7 +4561,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   .content-page-content > .col-12 {
     padding: 0;
   }
-  .napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12 {
+  .about-napo-the-napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12 {
     padding: 0 1rem;
   }
 }
@@ -4552,7 +4581,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
     padding-bottom: 2.5rem;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /******  Header  ******/
   .header-logo {
     flex: 0 0 100%;
@@ -4587,6 +4616,15 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   .header .region-header-logo img {
     width: auto;
     margin: auto;
+  }
+
+  /******  Sitemap  ******/
+  .sitemap-item--menu-main .navbar-nav {
+    flex-direction: column;
+  }
+  .sitemap-item--menu-main .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
   }
 }
 

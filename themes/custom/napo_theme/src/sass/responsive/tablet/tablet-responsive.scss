@@ -21,7 +21,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1024px){
 
   /******  Header  ******/
 
@@ -55,6 +55,18 @@
       img{
         width: auto ;
         margin: auto;
+      }
+    }
+  }
+
+  /******  Sitemap  ******/
+
+  .sitemap-item--menu-main {
+    .navbar-nav{
+      flex-direction: column;
+      .dropdown-menu{
+        position: static;
+        float: none;
       }
     }
   }
