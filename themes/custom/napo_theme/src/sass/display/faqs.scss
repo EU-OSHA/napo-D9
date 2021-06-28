@@ -1,4 +1,9 @@
 .block-views-blockfaqs-block{
+
+    .ui-widget{
+      font-family: Verdana,Arial,sans-serif!important;
+    }
+
   .ui-accordion{
     &-header{
       border: none;
@@ -32,6 +37,9 @@
       line-height: 1.1;
       width:100%;
       .field--name-title{}
+    }
+    a{
+      font-weight: 700;
     }
   }
 }

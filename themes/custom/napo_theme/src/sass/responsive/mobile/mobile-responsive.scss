@@ -282,8 +282,10 @@
     .views-row{
       width:100%;
       margin-bottom: 1.25rem;
+      min-height:280px;
     }
   }
+
   .block-views-blocknapo-story-block-1{
     .view-napo-story{
       flex-direction: column-reverse;
@@ -563,7 +565,15 @@
 
   /******  Napo Story  ******/
 
-  .napo-story {
+  .about-napo-the-napo-story{
+    .layout-main-wrapper{
+      >.container{
+        padding:0;
+      }
+    }
+    .content-page-content{
+      margin:0;
+    }
     iframe{
       float:none;
       width:100%;
@@ -813,7 +823,7 @@
   .content-page-content{
     &>.col-12{
       padding:0;
-      .napo-story &,
+      .about-napo-the-napo-story &,
       .page-view-napos-gallery &,
       .node--type-napo-album &,
       .path-napos-films &,
