@@ -1,0 +1,10 @@
+uuid: 816b2694-583c-493b-a736-f9410f16b128
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.msd_video_only
+label: 'MSD video only'
+targetEntityType: node
+cache: true

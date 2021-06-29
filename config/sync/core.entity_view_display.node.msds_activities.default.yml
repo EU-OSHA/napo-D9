@@ -24,43 +24,48 @@ targetEntityType: node
 bundle: msds_activities
 mode: default
 content:
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_activities:
     type: text_default
-    weight: 3
+    weight: 4
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_assessment:
-    weight: 5
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_concluding_questions:
-    weight: 4
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_introductory_text:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_learning_objectives:
-    weight: 2
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_msds_resources_required:
-    weight: 6
+    weight: 7
     label: above
     settings:
       link: true
@@ -68,16 +73,16 @@ content:
     type: entity_reference_label
     region: content
   field_msds_video:
-    weight: 0
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
     label: hidden
     settings:
-      view_mode: napo_video_from_msd_video
+      view_mode: msd_video_only
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: content
   field_resources_related:
-    weight: 7
+    weight: 8
     label: above
     settings:
       link: true
@@ -86,6 +91,7 @@ content:
     region: content
 hidden:
   addtoany: true
+  breadcrumbs: true
   field_activity: true
   field_conversation_started: true
   field_conversation_starters_cove: true

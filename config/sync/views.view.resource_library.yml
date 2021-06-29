@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_file
     - field.storage.node.field_video
     - node.type.lesson
+    - node.type.lesson_resources
   module:
     - node
     - user
@@ -54,7 +55,18 @@ display:
           items_per_page: 99
           offset: 0
       style:
-        type: default
+        type: html_list
+        options:
+          grouping:
+            -
+              field: title
+              rendered: true
+              rendered_strip: false
+          row_class: ''
+          default_row_class: true
+          type: ul
+          wrapper_class: item-list
+          class: ''
       row:
         type: fields
         options:
@@ -132,7 +144,7 @@ display:
           id: field_file
           table: node__field_file
           field: field_file
-          relationship: none
+          relationship: field_resources_required
           group_type: group
           admin_label: ''
           label: ''
@@ -258,7 +270,7 @@ display:
           id: title_1
           table: node_field_data
           field: title
-          relationship: none
+          relationship: field_resources_required
           group_type: group
           admin_label: ''
           label: ''
@@ -409,6 +421,7 @@ display:
           operator: in
           value:
             lesson: lesson
+            lesson_resources: lesson_resources
           group: 1
           exposed: false
           expose:
@@ -441,10 +454,52 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
       sorts:
         created:
           id: created
-          table: taxonomy_index
+          table: node_field_data
           field: created
           relationship: none
           group_type: group
@@ -454,32 +509,32 @@ display:
           expose:
             label: ''
           granularity: second
+          entity_type: node
+          entity_field: created
           plugin_id: date
       title: 'Resource library'
       header: {  }
       footer: {  }
       empty: {  }
       relationships:
-        reverse__node__field_resources_required:
-          id: reverse__node__field_resources_required
-          table: node_field_data
-          field: reverse__node__field_resources_required
+        field_resources_required:
+          id: field_resources_required
+          table: node__field_resources_required
+          field: field_resources_required
           relationship: none
           group_type: group
-          admin_label: resources_required
+          admin_label: 'field_resources_required: Content'
           required: true
-          entity_type: node
-          plugin_id: entity_reverse
-        reverse__node__field_lesson_video:
-          id: reverse__node__field_lesson_video
-          table: node_field_data
-          field: reverse__node__field_lesson_video
+          plugin_id: standard
+        field_lesson_video:
+          id: field_lesson_video
+          table: node__field_lesson_video
+          field: field_lesson_video
           relationship: none
           group_type: group
-          admin_label: lesson_video
+          admin_label: 'field_lesson_video: Content'
           required: false
-          entity_type: node
-          plugin_id: entity_reverse
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
       show_admin_links: false
@@ -502,10 +557,10 @@ display:
       display_extenders:
         metatag_display_extender: {  }
       path: learning-with-napo/napo-for-teachers/resource-library
+      rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions

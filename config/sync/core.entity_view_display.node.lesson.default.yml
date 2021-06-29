@@ -36,6 +36,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_activities:
     weight: 5
     label: above
@@ -82,17 +87,18 @@ content:
     region: content
   field_lesson_toolkit:
     weight: 12
-    label: hidden
+    label: above
     settings:
-      link: true
+      view_mode: msd_video_only
+      link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   field_lesson_video:
     weight: 1
     label: hidden
     settings:
-      view_mode: napo_video_from_msd_video
+      view_mode: msd_video_only
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view

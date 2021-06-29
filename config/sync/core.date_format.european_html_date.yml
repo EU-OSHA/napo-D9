@@ -1,0 +1,8 @@
+uuid: 05d82448-a6f8-46c1-bb61-5ee974434962
+langcode: en
+status: true
+dependencies: {  }
+id: european_html_date
+label: 'European HTML Date'
+locked: false
+pattern: d/m/Y
