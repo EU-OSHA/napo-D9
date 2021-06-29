@@ -1779,6 +1779,8 @@ tr th {
 }
 .block-views-blockfaqs-block .view-footer a {
   font-weight: 700;
+  pointer-events: none;
+  cursor: text;
 }
 
 .lessons-item {
