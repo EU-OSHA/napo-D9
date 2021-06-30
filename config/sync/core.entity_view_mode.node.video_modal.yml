@@ -1,0 +1,10 @@
+uuid: 3826d5c2-4e22-4be8-b7d4-b267b7808aa9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.video_modal
+label: 'Video Modal'
+targetEntityType: node
+cache: true
