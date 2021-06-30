@@ -126,23 +126,7 @@
           {{ content.field_resources_required }}
         </div>
       </div>
-      <div class="download-box">
-        <div class="download-title">
-          {{ 'Download' | trans }}
-        </div>
-        <!-- TODO Download -->
-        <ul>
-          <li><a href="">{{ 'Video' | trans }} <span class="related_size">(84.25 MB)</span></a></li>
-          <li><a href="/sites/napo/files/videos/napo_video/Napo19_02_Positive-Position.mp4" class="file-download file-download-video file-download-mp4" target="_blank" download="">Download</a></li>
-          <li><a href="" target="_blank">{{ 'Lesson' | trans }} <span class="related_size">(86.96 KB)</span></a></li>
-          <li>
-            <a href="/sites/napo/files/documents/articles/Teachers-guidance_{{ lang[1]|upper }}.pdf" class="file-download file-download-application file-download-pdf download-videofield field--name-field-media-document field--type-file field--label-hidden field__item" download="">{{ "Teachers guidance" | trans }}</a>
-          </li>
-
-          <li><a href="">{{ 'Related resources' | trans }}</a></li>
-        </ul>
-        <!-- END TODO Download -->
-      </div>
+      {{ drupal_block('nma_download_block') }}
     </div>
   </div>
 
