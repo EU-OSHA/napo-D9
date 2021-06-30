@@ -16,7 +16,9 @@ dependencies:
     - field.field.node.msds_activities.field_resources_related
     - field.field.node.msds_activities.field_tags
     - node.type.msds_activities
+    - workflows.workflow.napo
   module:
+    - content_moderation
     - path
     - text
 id: node.msds_activities.default
@@ -112,13 +114,9 @@ content:
     region: content
   field_msds_video:
     weight: 125
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_resources_related:
     weight: 121
@@ -146,6 +144,12 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
     third_party_settings: {  }
   path:
     type: path
@@ -181,6 +185,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

@@ -246,6 +246,9 @@ div.pagerer-container {
   margin: 10px 7px 25px 0;
   float: left;
 }
+.views-slideshow-controls-top .views_slideshow_pager_field_item:hover .views-field-title:after {
+  display: inline-block;
+}
 .views-slideshow-controls-top .views-field-title {
   color: #1f3695;
   background: url(/sites/napo/themes/custom/napo_theme/images/background-yellow.png) repeat-x;
@@ -255,6 +258,18 @@ div.pagerer-container {
   padding-top: 2px;
   font-size: 17px;
   cursor: pointer;
+  position: relative;
+}
+.views-slideshow-controls-top .views-field-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  width: 100%;
+  height: 0.25rem;
+  background-color: #1f3695;
 }
 .views-slideshow-controls-top .views-field-field-image {
   cursor: pointer;
@@ -455,6 +470,16 @@ div.pagerer-container {
 .ui-dialog .ncc-button .btn:hover, .ui-dialog .ncc-button .btnfocus {
   outline: none;
   border: none;
+}
+
+.napo-films-modal {
+  top: 50% !important;
+  left: 50% !important;
+  right: initial !important;
+  width: 100% !important;
+  max-width: 60%;
+  height: auto;
+  transform: translate(-50%, -50%);
 }
 
 .form-item-search .form-control {
@@ -1700,6 +1725,65 @@ tr th {
   width: 100% !important;
 }
 
+.content-moderation-entity-moderation-form .entity-moderation-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fffbd9;
+  padding: 1rem;
+  border: none;
+}
+.content-moderation-entity-moderation-form .entity-moderation-form__item {
+  margin: 0;
+  display: block;
+}
+.content-moderation-entity-moderation-form .entity-moderation-form__item:last-child {
+  align-self: flex-start;
+}
+.content-moderation-entity-moderation-form .entity-moderation-form__item fieldset,
+.content-moderation-entity-moderation-form .entity-moderation-form__item label {
+  color: #666;
+  font-size: 1rem;
+}
+.content-moderation-entity-moderation-form .entity-moderation-form__item fieldset {
+  font-style: italic;
+}
+.content-moderation-entity-moderation-form .entity-moderation-form__item label {
+  font-style: normal;
+}
+.content-moderation-entity-moderation-form .entity-moderation-form__item .custom-select {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #1f3695;
+  background: initial;
+  background-color: #bbc2df;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-weight: 400;
+  margin: 1rem 0;
+  appearance: auto;
+}
+.content-moderation-entity-moderation-form .entity-moderation-form__item .form-submit {
+  border-radius: 5px;
+  color: #585759;
+  background: #f7e235;
+  font-weight: bold;
+  border: 0px solid transparent;
+  padding: 6px 12px 9px;
+  font-style: italic;
+}
+.content-moderation-entity-moderation-form .entity-moderation-form__item .form-item-revision-log {
+  display: none;
+}
+
+.node--unpublished {
+  padding: 0;
+}
+
 .block-facets .item-list__links {
   list-style: none;
 }
@@ -1729,6 +1813,9 @@ tr th {
   display: none;
 }
 
+.block-views-blockfaqs-block .ui-widget {
+  font-family: Verdana, Arial, sans-serif !important;
+}
 .block-views-blockfaqs-block .ui-accordion-header {
   border: none;
   background: transparent;
@@ -1759,7 +1846,16 @@ tr th {
   line-height: 1.1;
   width: 100%;
 }
-.lessons-item {
+.block-views-blockfaqs-block .view-footer .node__title a {
+  pointer-events: none;
+  cursor: text;
+}
+.block-views-blockfaqs-block .view-footer a {
+  font-weight: 700;
+}
+
+.lessons-item,
+.related-lessons-item {
   border-radius: 0rem 0rem 1.25rem 1.25rem;
   overflow: hidden;
   min-height: 17.5rem;
@@ -1767,16 +1863,21 @@ tr th {
   border: 2px solid #1f3695;
   height: 100%;
 }
-.lessons-item > a img:hover {
+.lessons-item > a img:hover,
+.related-lessons-item > a img:hover {
   opacity: 0.6;
   filter: grayscale(1);
   transform: scale(1.2);
   transition: all 1.5s;
 }
-.lessons-item img {
+.lessons-item img,
+.related-lessons-item img {
   width: 100%;
 }
-.lessons-item-content {
+.lessons-item .lessons-item-content,
+.lessons-item .related-item-content,
+.related-lessons-item .lessons-item-content,
+.related-lessons-item .related-item-content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1789,21 +1890,58 @@ tr th {
   text-align: center;
   padding: 1.25rem 1.25rem 0;
 }
-.lessons-item-content h3 {
+.lessons-item .lessons-item-content h3,
+.lessons-item .related-item-content h3,
+.related-lessons-item .lessons-item-content h3,
+.related-lessons-item .related-item-content h3 {
   font-size: 1rem;
   font-weight: bold;
   color: #FFF;
   margin: 0.625rem 0;
 }
-.lessons-item-content a {
+.lessons-item .lessons-item-content a,
+.lessons-item .related-item-content a,
+.related-lessons-item .lessons-item-content a,
+.related-lessons-item .related-item-content a {
   color: inherit;
 }
-.lessons-item .keyword-list {
+.lessons-item .keyword-list,
+.related-lessons-item .keyword-list {
   color: #9FA8D1;
   font-size: 0.875rem;
 }
-.lessons-item .keyword-list span {
+.lessons-item .keyword-list .label-keyword,
+.lessons-item .keyword-list .keyword-label,
+.related-lessons-item .keyword-list .label-keyword,
+.related-lessons-item .keyword-list .keyword-label {
   color: #FFF;
+}
+.lessons-item .keyword-list .keyword-tag,
+.related-lessons-item .keyword-list .keyword-tag {
+  margin-left: 0.25rem;
+}
+
+.related-lessons-item {
+  height: 18.75rem;
+  flex: 0 0 30%;
+  max-width: 30%;
+  margin: 1rem;
+}
+.related-lessons-item > a {
+  height: 177px;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+}
+.related-lessons-item > a img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  transform: translateY(-10%);
+}
+
+.related .views-element-container {
+  width: 100%;
 }
 
 .view-napo-s-film-episodes .views-row {
@@ -3341,6 +3479,10 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   line-height: 16px;
   font-weight: bold;
 }
+.node--type-lesson .content-text-facilitator-custom .facilitator-guidance .link-box a:after,
+.node--type-msds-activities .content-text-facilitator-custom .facilitator-guidance .link-box a:after {
+  display: none;
+}
 .node--type-lesson .content-accordions-download-custom,
 .node--type-msds-activities .content-accordions-download-custom {
   margin-top: 3.75rem;
@@ -3449,8 +3591,6 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 }
 .node--type-lesson .content-accordions-download-custom .download-box,
 .node--type-msds-activities .content-accordions-download-custom .download-box {
-  width: 24%;
-  flex: 0 0 24%;
   position: relative;
   top: -2.25rem;
 }
@@ -3695,6 +3835,10 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   align-items: baseline;
   margin-bottom: 1.125rem;
 }
+.node--type-napo-video .conten-video-info-tags .categories .field__items {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
 .node--type-napo-video .conten-video-info-tags .categories .field__items .field__item h2 {
   font-size: 1.125rem;
   margin: 0;
@@ -3760,10 +3904,67 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   text-align: center;
 }
 
+.learning-with-napo-napo-for-teachers-resource-library .view-resource-library {
+  padding: 0 3% 2rem;
+}
+.learning-with-napo-napo-for-teachers-resource-library .view-resource-library > .view-content {
+  flex-direction: column;
+}
+.learning-with-napo-napo-for-teachers-resource-library .item-list h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.learning-with-napo-napo-for-teachers-resource-library .item-list h3 a {
+  font-size: 1.375rem;
+  font-weight: bold;
+  pointer-events: none;
+  text-decoration: none;
+  cursor: text;
+}
+.learning-with-napo-napo-for-teachers-resource-library .item-list ul li a {
+  font-size: 1.125rem;
+}
+
 .page-view-search .view-search .row {
   margin: 0;
   width: 100%;
   display: block;
+}
+
+.learning-with-napo-napo-for-teachers-teacher-guidance .field--name-field-image {
+  float: left;
+  display: inline-block;
+}
+.learning-with-napo-napo-for-teachers-teacher-guidance .field--name-body {
+  display: inline-block;
+  padding: 1rem 0rem;
+}
+.learning-with-napo-napo-for-teachers-teacher-guidance .media__image {
+  padding-bottom: 0.625rem;
+  padding-right: 1.125rem;
+}
+.learning-with-napo-napo-for-teachers-teacher-guidance p {
+  font-size: 1.125rem;
+}
+.learning-with-napo-napo-for-teachers-teacher-guidance p a {
+  text-decoration: underline;
+}
+.learning-with-napo-napo-for-teachers-teacher-guidance p a:after {
+  display: none;
+}
+.learning-with-napo-napo-for-teachers-teacher-guidance .content .field--type-entity-reference {
+  position: absolute;
+  top: 0;
+  left: calc(100% - 28px);
+  z-index: 3;
+  margin-top: -120px;
+}
+.learning-with-napo-napo-for-teachers-teacher-guidance .content .field--type-entity-reference a {
+  color: transparent;
+  background: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png) no-repeat center;
+  display: block;
+  width: 42px;
+  height: 40px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -4119,6 +4320,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   .block-views-blockfeatures-articles-block .views-row {
     width: 100%;
     margin-bottom: 1.25rem;
+    min-height: 280px;
   }
 
   .block-views-blocknapo-story-block-1 .view-napo-story {
@@ -4352,7 +4554,13 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   }
 
   /******  Napo Story  ******/
-  .napo-story iframe {
+  .about-napo-the-napo-story .layout-main-wrapper > .container {
+    padding: 0;
+  }
+  .about-napo-the-napo-story .content-page-content {
+    margin: 0;
+  }
+  .about-napo-the-napo-story iframe {
     float: none;
     width: 100%;
     padding: 0;
@@ -4532,7 +4740,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   .content-page-content > .col-12 {
     padding: 0;
   }
-  .napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12 {
+  .about-napo-the-napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12 {
     padding: 0 1rem;
   }
 }
@@ -4552,7 +4760,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
     padding-bottom: 2.5rem;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /******  Header  ******/
   .header-logo {
     flex: 0 0 100%;
@@ -4587,6 +4795,15 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   .header .region-header-logo img {
     width: auto;
     margin: auto;
+  }
+
+  /******  Sitemap  ******/
+  .sitemap-item--menu-main .navbar-nav {
+    flex-direction: column;
+  }
+  .sitemap-item--menu-main .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
   }
 }
 

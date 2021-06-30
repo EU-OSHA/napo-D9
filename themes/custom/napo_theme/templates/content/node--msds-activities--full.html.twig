@@ -72,10 +72,14 @@
     'clearfix',
   ]
 %}
+
+
+
+
 <div class="back-button-custom"><a href="/learning-with-napo/napo-in-the-workplace">{{ 'Back to Napo in the workplace' | trans }}</a></div>
 <article{{ attributes.addClass(classes) }}>
   <div class="page-banner-custom">
-  <div class="video-custom">
+  <div class="video-custom" id="js-video">
     {{ content.field_msds_video }}
   </div>
   <div class="content-text-facilitator-custom">
@@ -126,29 +130,18 @@
 
           {% if(content.field_msds_resources_required | length > 2) %}
           <div class="accordion-item">
+
             {{ content.field_msds_resources_required }}
           </div>
           {% endif %}
 
         </div>
-        <div class="download-box">
-          <div class="download-title">
-            {{ 'Download' | trans }}
-          </div>
-          <!-- TODO Download -->
-          <ul>
-            <li><a href="to-do">{{ 'Video' | trans }} {{ content.field_msds_video.0.value}}<span class="related_size">(84.25 MB)</span></a></li>
-            <li><a href="to-do" target="_blank">{{ 'Activity' | trans }} <span class="related_size">(86.96 KB)</span></a></li>
-            <li><a href="to-do">{{ 'Facilitator guidance' | trans }}</a></li>
-            <li><a href="to-do">{{ 'Download all' | trans }}</a></li>
-          </ul>
-          <!-- END TODO Download -->
-        </div>
+        {{ drupal_block('nma_download_block') }}
       </div>
     </div>
     <div class="related">
       <h2>{{ 'Related resources' | trans }}</h2>
-        <h1>- TO DO - </h1>
+      {{ drupal_view('msd_related_resources', 'block_related_resources') }}
     </div>
 
 </article>

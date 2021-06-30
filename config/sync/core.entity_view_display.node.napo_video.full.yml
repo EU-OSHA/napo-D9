@@ -1,0 +1,101 @@
+uuid: bd14bbee-aceb-493e-8ac5-5b0cef9d75d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.napo_video.body
+    - field.field.node.napo_video.field_archived
+    - field.field.node.napo_video.field_combined_tags
+    - field.field.node.napo_video.field_image
+    - field.field.node.napo_video.field_main_tag
+    - field.field.node.napo_video.field_napo_film
+    - field.field.node.napo_video.field_publication_date
+    - field.field.node.napo_video.field_tags
+    - field.field.node.napo_video.field_video
+    - field.field.node.napo_video.field_video_type
+    - field.field.node.napo_video.field_youtube
+    - image.style.thumbnail
+    - node.type.napo_video
+  module:
+    - ds
+    - layout_builder
+    - media
+    - smart_trim
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.napo_video.full
+targetEntityType: node
+bundle: napo_video
+mode: full
+content:
+  addtoany:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 2
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_text: 'Read more'
+      more_class: more-link
+      summary_handler: trim
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_combined_tags:
+    type: entity_reference_label
+    weight: 5
+    region: content
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  field_image:
+    type: media_thumbnail
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  search_api_excerpt:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  breadcrumbs: true
+  field_archived: true
+  field_main_tag: true
+  field_napo_film: true
+  field_publication_date: true
+  field_tags: true
+  field_video: true
+  field_video_type: true
+  field_youtube: true
+  langcode: true
+  links: true

@@ -35,7 +35,7 @@ display:
         type: views_query
         options:
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_comment: ''
           query_tags: {  }
@@ -63,7 +63,7 @@ display:
           id: view_node
           table: node
           field: view_node
-          relationship: reverse__node__field_lesson_toolkit_1
+          relationship: reverse__node__field_lesson_toolkit
           group_type: group
           admin_label: ''
           label: ''
@@ -108,15 +108,15 @@ display:
           empty_zero: false
           hide_alter_empty: true
           text: ''
-          output_url_as_text: false
-          absolute: false
+          output_url_as_text: true
+          absolute: true
           entity_type: node
           plugin_id: entity_link
         field_image:
           id: field_image
           table: node__field_image
           field: field_image
-          relationship: reverse__node__field_lesson_video
+          relationship: field_lesson_video
           group_type: group
           admin_label: ''
           label: ''
@@ -180,7 +180,7 @@ display:
           id: title
           table: node_field_data
           field: title
-          relationship: reverse__node__field_lesson_toolkit_1
+          relationship: reverse__node__field_lesson_toolkit
           group_type: group
           admin_label: ''
           label: ''
@@ -245,7 +245,7 @@ display:
           id: field_tags
           table: node__field_tags
           field: field_tags
-          relationship: reverse__node__field_lesson_toolkit_1
+          relationship: reverse__node__field_lesson_toolkit
           group_type: group
           admin_label: ''
           label: Keyword
@@ -292,7 +292,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -315,7 +315,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<a href=\"__link__\">{{ field_image }} </a>\r\n<div class=\"related-item-content\">\r\n<h3>{{ title }}</h3>\r\n<p class=\"keyword-list\">\r\n<span class=\"keyword-label\"><label>Keyword:</label></span><span class=\"keyword-tag\">{{ field_tags }} </span>\r\n</p>\r\n</div>"
+            text: "<a href=\"{{ view_node }}\">{{ field_image }} </a>\r\n<div class=\"related-item-content\">\r\n<h3>{{ title }}</h3>\r\n<p class=\"keyword-list\">\r\n<span class=\"keyword-label\"><label>Keyword:</label></span><span class=\"keyword-tag\">{{ field_tags }} </span>\r\n</p>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -409,6 +409,48 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
       sorts:
         created:
           id: created
@@ -428,39 +470,37 @@ display:
       footer: {  }
       empty: {  }
       relationships:
+        field_lesson_toolkit:
+          id: field_lesson_toolkit
+          table: node__field_lesson_toolkit
+          field: field_lesson_toolkit
+          relationship: none
+          group_type: group
+          admin_label: 'field_lesson_toolkit: Content'
+          required: true
+          plugin_id: standard
         reverse__node__field_lesson_toolkit:
           id: reverse__node__field_lesson_toolkit
           table: node_field_data
           field: reverse__node__field_lesson_toolkit
-          relationship: none
-          group_type: group
-          admin_label: field_lesson_toolkit
-          required: true
-          entity_type: node
-          plugin_id: entity_reverse
-        reverse__node__field_lesson_toolkit_1:
-          id: reverse__node__field_lesson_toolkit_1
-          table: node_field_data
-          field: reverse__node__field_lesson_toolkit
-          relationship: reverse__node__field_lesson_toolkit
+          relationship: field_lesson_toolkit
           group_type: group
           admin_label: lesson_related_lesson
           required: false
           entity_type: node
           plugin_id: entity_reverse
-        reverse__node__field_lesson_video:
-          id: reverse__node__field_lesson_video
-          table: node_field_data
-          field: reverse__node__field_lesson_video
-          relationship: reverse__node__field_lesson_toolkit_1
+        field_lesson_video:
+          id: field_lesson_video
+          table: node__field_lesson_video
+          field: field_lesson_video
+          relationship: reverse__node__field_lesson_toolkit
           group_type: group
-          admin_label: video
+          admin_label: 'field_lesson_video: Content'
           required: false
-          entity_type: node
-          plugin_id: entity_reverse
+          plugin_id: standard
       arguments:
-        nid:
-          id: nid
+        nid_1:
+          id: nid_1
           table: node_field_data
           field: nid
           relationship: none
@@ -495,8 +535,8 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: node_nid
-        nid_1:
-          id: nid_1
+        nid:
+          id: nid
           table: node_field_data
           field: nid
           relationship: reverse__node__field_lesson_toolkit
@@ -544,18 +584,19 @@ display:
       tags:
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_tags'
-  block:
+  block_related_lessons:
     display_plugin: block
-    id: block
+    id: block_related_lessons
     display_title: Block
     position: 1
     display_options:
       display_extenders:
         metatag_display_extender: {  }
+      rendering_language: '***LANGUAGE_language_interface***'
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'

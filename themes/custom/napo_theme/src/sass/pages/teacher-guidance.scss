@@ -1,0 +1,41 @@
+.learning-with-napo-napo-for-teachers-teacher-guidance{
+
+  .field--name-field-image{
+    float:left;
+    display:inline-block;
+  }
+  .field--name-body {
+    display:inline-block;
+    padding:1rem 0rem;
+  }
+
+  .media__image{
+    padding-bottom:0.625rem;
+    padding-right:1.125rem;
+  }
+  p{
+    font-size:1.125rem;
+    a{
+      text-decoration: underline;
+      &:after{
+        display:none;
+      }
+    }
+  }
+  .content{
+    .field--type-entity-reference{
+      position: absolute;
+      top: 0;
+      left: calc(100% - 28px);
+      z-index: 3;
+      margin-top: -120px;
+      a{
+        color: transparent;
+        background: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png) no-repeat center;
+        display: block;
+        width: 42px;
+        height: 40px;
+      }
+    }
+  }
+}

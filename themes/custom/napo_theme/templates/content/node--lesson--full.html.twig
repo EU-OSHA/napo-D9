@@ -71,8 +71,16 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     'clearfix',
   ]
+
 %}
-<div class="back-button-custom"><a href="/learning-with-napo/napo-in-the-workplace">{{ 'Back to Napo for teachers' | trans }}</a></div>
+{% set lang = url | split('/') %}
+{#{{ dpm(content.field_lesson_video.0) }}#}
+
+
+{#{{ path('entity.node.canonical', {'node':  node.id}) }}#}
+
+
+<div class="back-button-custom"><a href="/learning-with-napo/napo-for-teachers">{{ 'Back to Napo for teachers' | trans }}</a></div>
 <article{{ attributes.addClass(classes) }}>
   <div class="page-banner-custom">
     <div class="video-custom">
@@ -80,7 +88,7 @@
     </div>
     <div class="content-text-facilitator-custom">
       <div class="introductory-text">
-        {{ content.field_introductory_text }}
+        {{  	field_lesson_intro_text}}
       </div>
       <div class="facilitator-guidance">
         <div class="title-box">
@@ -90,7 +98,7 @@
           {{ 'Do you need help to organise a learning activity in your classroom?' | trans }}
         </div>
         <div class="link-box">
-          <a href="TO-DO">{{ 'Find out more here' | trans }}</a>
+          <a href="/{{ lang[1] }}/learning-with-napo/napo-for-teachers/teacher-guidance" target="_blank">{{ 'Find out more here' | trans }}</a>
         </div>
       </div>
     </div>
@@ -118,23 +126,13 @@
           {{ content.field_resources_required }}
         </div>
       </div>
-      <div class="download-box">
-        <div class="download-title">
-          {{ 'Download' | trans }}
-        </div>
-        <!-- TODO Download -->
-        <ul>
-          <li><a href="">{{ 'Video' | trans }}Video <span class="related_size">(84.25 MB)</span></a></li>
-          <li><a href="" target="_blank">{{ 'Activity' | trans }} <span class="related_size">(86.96 KB)</span></a></li>
-          <li><a href="">{{ 'Facilitator guidance' | trans }}Facilitator guidance</a></li>
-          <li><a href="">{{ 'Download all' | trans }}</a></li>
-        </ul>
-        <!-- END TODO Download -->
-      </div>
+      {{ drupal_block('nma_download_block') }}
     </div>
   </div>
+
   <div class="related">
-  <h2>{{ 'Related lesson' | trans }}</h2>
-    <h1>- TO DO - </h1>
+    <h2><b>{{ 'Related lesson' | trans }}</b></h2>
+    {{ drupal_view('lesson_related_lesson', 'block_related_lessons') }}
   </div>
+
 </article>

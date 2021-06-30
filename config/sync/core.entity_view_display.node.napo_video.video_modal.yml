@@ -1,0 +1,56 @@
+uuid: de9c6c2f-f288-43a1-98ba-c6c35f2cd092
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.video_modal
+    - field.field.node.napo_video.body
+    - field.field.node.napo_video.field_archived
+    - field.field.node.napo_video.field_combined_tags
+    - field.field.node.napo_video.field_image
+    - field.field.node.napo_video.field_main_tag
+    - field.field.node.napo_video.field_napo_film
+    - field.field.node.napo_video.field_publication_date
+    - field.field.node.napo_video.field_tags
+    - field.field.node.napo_video.field_video
+    - field.field.node.napo_video.field_video_type
+    - field.field.node.napo_video.field_youtube
+    - node.type.napo_video
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.napo_video.video_modal
+targetEntityType: node
+bundle: napo_video
+mode: video_modal
+content:
+  field_video:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  breadcrumbs: true
+  content_moderation_control: true
+  field_archived: true
+  field_combined_tags: true
+  field_image: true
+  field_main_tag: true
+  field_napo_film: true
+  field_publication_date: true
+  field_tags: true
+  field_video_type: true
+  field_youtube: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
