@@ -472,6 +472,16 @@ div.pagerer-container {
   border: none;
 }
 
+.napo-films-modal {
+  top: 50% !important;
+  left: 50% !important;
+  right: initial !important;
+  width: 100% !important;
+  max-width: 60%;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
 .form-item-search .form-control {
   display: block;
   width: 100%;
