@@ -1,4 +1,5 @@
-.lessons-item{
+.lessons-item,
+.related-lessons-item{
   border-radius: 0rem 0rem 1.25rem 1.25rem;
   overflow: hidden;
   min-height: 17.5rem;
@@ -18,7 +19,8 @@
   img{
     width:100%;
   }
-  &-content{
+  .lessons-item-content,
+  .related-item-content{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -43,8 +45,37 @@
   .keyword-list{
     color:$text-color-grey-blue;
     font-size: 0.875rem;
-    span{
+    .label-keyword,
+    .keyword-label{
       color: $text-color-white;
     }
+    .keyword-tag{
+      margin-left:0.25rem;
+    }
+  }
+}
+
+.related-lessons-item{
+  height: 18.75rem;
+  flex:0 0 30%;
+  max-width: 30%;
+  margin: 1rem;
+  >a{
+    height:177px;
+    overflow: hidden;
+    text-align: center;
+    display:block;
+    img{
+      width:100%;
+      height:auto;
+      position: relative;
+      transform: translateY(-10%);
+    }
+  }
+}
+
+.related{
+  .views-element-container{
+    width:100%;
   }
 }
