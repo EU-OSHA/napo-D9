@@ -1,0 +1,59 @@
+.content-moderation-entity-moderation-form{
+  .entity-moderation-form{
+    display:flex;
+    flex-direction: column;
+    background-color: $bg-color-light-yellow;
+    padding:1rem;
+    border:none;
+    &__item{
+      margin:0;
+      display:block;
+      &:last-child{
+        align-self: flex-start;
+      }
+      fieldset,
+      label{
+        color:$text-color-grey-3;
+        font-size: 1rem;
+      }
+      fieldset{
+        font-style: italic;
+      }
+      label{
+        font-style: normal;
+      }
+      .custom-select{
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: $text-color-blue;
+        background: initial;
+        background-color: $bg-color-blue-light;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        font-weight:400;
+        margin:1rem 0;
+        appearance: auto;
+      }
+      .form-submit{
+        border-radius: 5px;
+        color: $text-color-grey-dark;
+        background: $bg-color-yellow;
+        font-weight: bold;
+        border: 0px solid transparent;
+        padding: 6px 12px 9px;
+        font-style: italic;
+      }
+      .form-item-revision-log{
+        display:none;
+      }
+    }
+  }
+}
+.node--unpublished{
+  padding:0;
+}
