@@ -33,6 +33,7 @@ content:
     weight: 0
     region: content
 hidden:
+  breadcrumbs: true
   created: true
   field_media_description: true
   field_nace_codes: true
