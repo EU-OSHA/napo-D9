@@ -102,6 +102,6 @@
   </div>
   <div class="recommended-films">
     <div>{{ 'Other films recommended for you' | trans }}</div>
-    {{ drupal_view('recommended_films', 'recommended_films_block') }}
+    {{ drupal_view('recommended_films', 'recommended_films_block', node.id) }}
   </div>
 </article>
