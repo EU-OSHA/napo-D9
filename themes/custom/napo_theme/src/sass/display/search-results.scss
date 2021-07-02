@@ -33,18 +33,36 @@
   &:hover{
     background: url(/sites/napo/themes/custom/napo_theme/images/napo-search-results-background.png) repeat;
     padding: 0 1em 1em 1em;
-    #share-this-on,
     .more-link{
       display: flex;
+    }
+    .action_group{
+      visibility: visible;
     }
   }
   header{
     padding-bottom: 0.375rem;
     padding-top: 0.375rem;
   }
-  &[typeof="schema:Article"]{
+  &.node--type-article{
     header{
       background: url(/sites/napo/themes/custom/napo_theme/images/search-node-others.png) no-repeat 0px 20px transparent;
+    }
+  }
+  &.video_typeFilm{
+    header{
+      background: url(/sites/napo/themes/custom/napo_theme/images/search-node-video.png) no-repeat 0px 20px  transparent;
+    }
+  }
+  &.node--type-lesson{
+    header{
+      background: url(/sites/napo/themes/custom/napo_theme/images/search-node-lesson.png) no-repeat 0px 20px  transparent;
+    }
+
+  }
+  &.video_typeEpisode{
+    header{
+      background: url(/sites/napo/themes/custom/napo_theme/images/search-node-episode.png) no-repeat 0px 20px  transparent;
     }
   }
   h2{
@@ -70,19 +88,44 @@
     background: transparent;
     padding-bottom: 2rem;
     min-height: 127px;
-    //display:none;
   }
-  #share-this-on{
-    position:absolute;
-    top:0;
-    right:0;
-    display:none;
+  .list{
+    list-style: none;
+    &--horizontal{
+      display:flex;
+      flex-direction: row;
+    }
+    &__item{
+      &.shareGroup{
+        position:relative;
+        display:flex;
+        &:hover{
+          #share-this-on{
+            display: flex;
+          }
+        }
+      }
+    }
   }
   .node__content{
     padding-left: 2.5rem;
   }
+
+  #share-this-on{
+    display:none;
+    position:absolute;
+    top:100%;
+    flex-direction: column;
+    left:0;
+    z-index:4;
+    padding:0;
+    background-color: $bg-color-white;
+  }
+
+  .action_group{
+    visibility: hidden;
+  }
   .more-link{
-    display:flex;
     flex-direction: row;
     justify-content: flex-end;
     display: none;
@@ -96,4 +139,39 @@
       background: $bg-color-blue;
     }
   }
+  .action_group{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .shareButton,
+  .downloadLink,
+  .detailLink{
+    color: transparent;
+    height: 43px;
+    width: 45px;
+    cursor: pointer;
+    border:none;
+    box-shadow: none;
+    display:inline-block;
+    margin-left:0.25rem;
+    &:hover,
+    &:active{
+      border:none;
+      box-shadow: none;
+      outline:none;
+    }
+  }
+  .body__content{
+    .more-link{
+      display:none;
+    }
+  }
+  .shareButton{
+    background: url(/sites/napo/themes/custom/napo_theme/images/share.png) no-repeat center $bg-color-blue;
+  }
+  .downloadLink{
+    background: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png) no-repeat center $bg-color-blue;}
+  .detailLink{
+    background: url(/sites/napo/themes/custom/napo_theme/images/play-featured-search.png) no-repeat center $bg-color-blue;}
 }

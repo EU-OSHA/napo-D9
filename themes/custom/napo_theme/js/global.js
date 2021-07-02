@@ -109,7 +109,6 @@
     function accordionOpen(elem){
       let contentDiv = jQuery(elem).next();
       let parentDiv = jQuery(elem).closest('.accordion-item');
-
       if ( parentDiv.hasClass("active")) {
         jQuery(contentDiv).slideUp(600).fadeOut(600);
         jQuery(parentDiv).removeClass('active');
