@@ -4,8 +4,8 @@ url:
   source: path_prefix
   prefixes:
     en: en
-    cs: cs
     bg: bg
+    cs: cs
     da: da
     de: de
     el: el
@@ -20,8 +20,10 @@ url:
     lv: lv
     lt: lt
     nl: nl
+    mt: mt
+    'no': 'no'
     pl: pl
-    pt-pt: pt-pt
+    pt-pt: pt
     ro: ro
     sk: sk
     sl: sl
@@ -29,12 +31,10 @@ url:
     ca: ca
     ru: ru
     tr: tr
-    'no': 'no'
-    mt: mt
   domains:
     en: ''
-    cs: ''
     bg: ''
+    cs: ''
     da: ''
     de: ''
     el: ''
@@ -49,6 +49,8 @@ url:
     lv: ''
     lt: ''
     nl: ''
+    mt: ''
+    'no': ''
     pl: ''
     pt-pt: ''
     ro: ''
@@ -58,8 +60,6 @@ url:
     ca: ''
     ru: ''
     tr: ''
-    'no': ''
-    mt: ''
 selected_langcode: site_default
 _core:
   default_config_hash: uEePITI9tV6WqzmsTb7MfPCi5yPWXSxAN1xeLcYFQbM
