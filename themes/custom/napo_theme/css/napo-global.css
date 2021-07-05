@@ -473,13 +473,66 @@ div.pagerer-container {
 }
 
 .napo-films-modal {
+  padding: 0;
   top: 50% !important;
   left: 50% !important;
   right: initial !important;
   width: 100% !important;
-  max-width: 60%;
+  max-width: 600px;
   height: auto;
   transform: translate(-50%, -50%);
+}
+.napo-films-modal iframe {
+  display: block;
+  width: 100%;
+  height: 318px;
+}
+.napo-films-modal .node--type-napo-video .conten-video-info .napo-film-video-download-form {
+  position: static;
+  justify-content: flex-end;
+  background-color: #e0e1e1;
+}
+.napo-films-modal .node--type-napo-video .conten-video-info .napo-film-title-2 {
+  padding: 1rem;
+  background-color: #f2f1f2;
+}
+.napo-films-modal .node--type-napo-video .view-scenes-custom {
+  background-color: #f2f1f2;
+}
+.napo-films-modal .node--type-napo-video .view-scenes-custom h2 {
+  font-size: 1rem;
+  background-position: 23px 0px;
+  padding: 0.125rem 1.5rem 0rem 3.5rem;
+}
+.napo-films-modal .node--type-napo-video .conten-video-info-tags {
+  padding: 1.125rem 0;
+}
+.napo-films-modal .html5-video-player .video-click-tracking,
+.napo-films-modal .html5-video-player .video-stream {
+  width: 100% !important;
+  height: auto !important;
+}
+.napo-films-modal .ui-dialog-titlebar {
+  z-index: 999;
+}
+.napo-films-modal .ui-dialog-titlebar .ui-dialog-titlebar-close {
+  color: #1f3695;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.napo-films-modal .ui-dialog-titlebar .ui-dialog-titlebar-close:hover, .napo-films-modal .ui-dialog-titlebar .ui-dialog-titlebar-close:focus {
+  color: #1f3695;
+}
+.napo-films-modal .ui-dialog-titlebar .ui-dialog-titlebar-close:after {
+  content: "x";
+}
+.napo-films-modal .ui-dialog-title {
+  float: none;
+  border: 1px solid red;
+  background-color: #1f3695;
+  color: #f7e235;
 }
 
 .form-item-search .form-control {
@@ -3689,46 +3742,60 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   width: 100%;
   cursor: pointer;
 }
-.node--type-lesson .content-accordions-download-custom .accordions .field__item,
-.node--type-msds-activities .content-accordions-download-custom .accordions .field__item {
+.node--type-lesson .content-accordions-download-custom .accordions .field--label-above > .accordion__body,
+.node--type-lesson .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--label-above > .accordion__body,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body {
   border: 0rem;
   padding: 1.25rem 1.875rem 1.875rem;
   position: relative;
   display: none;
   color: #666;
 }
-.node--type-lesson .content-accordions-download-custom .accordions .field__item ul,
-.node--type-msds-activities .content-accordions-download-custom .accordions .field__item ul {
+.node--type-lesson .content-accordions-download-custom .accordions .field--label-above > .accordion__body ul,
+.node--type-lesson .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body ul,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--label-above > .accordion__body ul,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body ul {
   padding-inline-start: 40px;
   font-size: 1.125rem;
 }
-.node--type-lesson .content-accordions-download-custom .accordions .field__item ul li strong,
-.node--type-msds-activities .content-accordions-download-custom .accordions .field__item ul li strong {
+.node--type-lesson .content-accordions-download-custom .accordions .field--label-above > .accordion__body ul li strong,
+.node--type-lesson .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body ul li strong,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--label-above > .accordion__body ul li strong,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body ul li strong {
   width: auto;
   padding: 2px 0 2px 1.875rem;
   display: inline-block;
   color: #666;
 }
-.node--type-lesson .content-accordions-download-custom .accordions .field__item ul li:nth-child(1) strong,
-.node--type-msds-activities .content-accordions-download-custom .accordions .field__item ul li:nth-child(1) strong {
+.node--type-lesson .content-accordions-download-custom .accordions .field--label-above > .accordion__body ul li:nth-child(1) strong,
+.node--type-lesson .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body ul li:nth-child(1) strong,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--label-above > .accordion__body ul li:nth-child(1) strong,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body ul li:nth-child(1) strong {
   background-image: url(/sites/napo/themes/custom/napo_theme/images/star-rating.svg);
   background-repeat: no-repeat;
   background-size: 25px 25px;
 }
-.node--type-lesson .content-accordions-download-custom .accordions .field__item ul li:nth-child(2) strong,
-.node--type-msds-activities .content-accordions-download-custom .accordions .field__item ul li:nth-child(2) strong {
+.node--type-lesson .content-accordions-download-custom .accordions .field--label-above > .accordion__body ul li:nth-child(2) strong,
+.node--type-lesson .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body ul li:nth-child(2) strong,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--label-above > .accordion__body ul li:nth-child(2) strong,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body ul li:nth-child(2) strong {
   background-image: url(/sites/napo/themes/custom/napo_theme/images/star-rating-silver.svg);
   background-repeat: no-repeat;
   background-size: 25px 25px;
 }
-.node--type-lesson .content-accordions-download-custom .accordions .field__item ul li:nth-child(3) strong,
-.node--type-msds-activities .content-accordions-download-custom .accordions .field__item ul li:nth-child(3) strong {
+.node--type-lesson .content-accordions-download-custom .accordions .field--label-above > .accordion__body ul li:nth-child(3) strong,
+.node--type-lesson .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body ul li:nth-child(3) strong,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--label-above > .accordion__body ul li:nth-child(3) strong,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body ul li:nth-child(3) strong {
   background-image: url(/sites/napo/themes/custom/napo_theme/images/star-rating-bronze.svg);
   background-repeat: no-repeat;
   background-size: 25px 25px;
 }
-.node--type-lesson .content-accordions-download-custom .accordions .field__item h4,
-.node--type-msds-activities .content-accordions-download-custom .accordions .field__item h4 {
+.node--type-lesson .content-accordions-download-custom .accordions .field--label-above > .accordion__body h4,
+.node--type-lesson .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body h4,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--label-above > .accordion__body h4,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body h4 {
   color: #1f3695;
   font-size: 1.125rem;
   margin: 1.25rem 0rem 0.875rem;

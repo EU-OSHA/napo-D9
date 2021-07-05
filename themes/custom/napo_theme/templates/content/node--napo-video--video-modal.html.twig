@@ -75,9 +75,14 @@
 
 {%  set video_url = node.field_youtube.value |split('=') %}
 
+{{ drupal_dump() }}
+
 <article{{ attributes.addClass(classes) }}>
+  <header class="dialog__header">
+    <h3 class="dialog__title"></h3>
+  </header>
   <div class="video-custom">
-    <iframe width="1110" height="641" src="https://www.youtube-nocookie.com/embed/{{ video_url[1] }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ video_url[1] }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="conten-video-info">
     <div class="napo-film-title-2"></div>
@@ -98,3 +103,4 @@
     {% endif %}
   </div>
 </article>
+
