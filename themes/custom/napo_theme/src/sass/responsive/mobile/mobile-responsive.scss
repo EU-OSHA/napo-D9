@@ -833,6 +833,25 @@
   }
 
 
+  /******  Napo For Teacher And Workplace ******/
+
+
+  .node--type-lesson,
+  .node--type-msds-activities{
+    .content-page-content{
+      >div{
+        position:static;
+      }
+    }
+    main{
+      position:relative;
+    }
+    .back-button-custom{
+      top:3rem;
+      padding-left:1.5rem;
+    }
+  }
+
   .content-page-content{
     &>.col-12{
       padding:0;
