@@ -74,7 +74,7 @@
 
   ]
 %}
-{#{{ drupal_dump(content.field_video_type.0['#title']) }}#}
+{{ drupal_dump() }}
 
 <article{{ attributes.addClass(classes) }}>
   <header>
@@ -116,7 +116,7 @@
             <a href="[download_video][path]" class="downloadLink"></a>
           </li>
           <li class="list__item">
-            <a href="{{ url }}" class="detailLink"></a>
+            <a href="{{ url }}" class="detailLink" title="{{ 'View detail'|t }}"></a>
           </li>
         </ul>
       </div>

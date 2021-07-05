@@ -819,6 +819,19 @@
   }
 
 
+  /******  Search Results  ******/
+
+  .path-search{
+    #main-wrapper{
+      >.container{
+        padding:0;
+      }
+      .view-filters{
+        padding:0 1rem;
+      }
+    }
+  }
+
 
   .content-page-content{
     &>.col-12{
@@ -827,7 +840,8 @@
       .page-view-napos-gallery &,
       .node--type-napo-album &,
       .path-napos-films &,
-      .napos-films-coming-soon &{
+      .napos-films-coming-soon &,
+      .path-search &{
         padding:0 1rem;
       }
     }

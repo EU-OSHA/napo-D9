@@ -4877,10 +4877,18 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
     margin-top: 1rem;
   }
 
+  /******  Search Results  ******/
+  .path-search #main-wrapper > .container {
+    padding: 0;
+  }
+  .path-search #main-wrapper .view-filters {
+    padding: 0 1rem;
+  }
+
   .content-page-content > .col-12 {
     padding: 0;
   }
-  .about-napo-the-napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12 {
+  .about-napo-the-napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12, .path-search .content-page-content > .col-12 {
     padding: 0 1rem;
   }
 }
