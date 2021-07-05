@@ -2702,6 +2702,9 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 .node--view-mode-search-results.node--type-article header {
   background: url(/sites/napo/themes/custom/napo_theme/images/search-node-others.png) no-repeat 0px 20px transparent;
 }
+.node--view-mode-search-results.node--type-article .list__item:nth-child(2) {
+  display: none;
+}
 .node--view-mode-search-results.video_typeFilm header {
   background: url(/sites/napo/themes/custom/napo_theme/images/search-node-video.png) no-repeat 0px 20px transparent;
 }
@@ -2730,7 +2733,6 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 }
 .node--view-mode-search-results .field--type-text-with-summary {
   clear: none;
-  padding-left: 2.5rem;
   background: transparent;
   padding-bottom: 2rem;
   min-height: 127px;
@@ -2741,6 +2743,9 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 .node--view-mode-search-results .list--horizontal {
   display: flex;
   flex-direction: row;
+}
+.node--view-mode-search-results .list__item:not(:first-of-type) {
+  margin-left: 0.25rem;
 }
 .node--view-mode-search-results .list__item.shareGroup {
   position: relative;
@@ -2794,7 +2799,6 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   border: none;
   box-shadow: none;
   display: inline-block;
-  margin-left: 0.25rem;
 }
 .node--view-mode-search-results .shareButton:hover, .node--view-mode-search-results .shareButton:active,
 .node--view-mode-search-results .downloadLink:hover,

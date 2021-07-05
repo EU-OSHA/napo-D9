@@ -48,6 +48,11 @@
     header{
       background: url(/sites/napo/themes/custom/napo_theme/images/search-node-others.png) no-repeat 0px 20px transparent;
     }
+    .list__item{
+      &:nth-child(2){
+        display:none;
+      }
+    }
   }
   &.video_typeFilm{
     header{
@@ -84,7 +89,6 @@
   }
   .field--type-text-with-summary{
     clear:none;
-    padding-left: 2.5rem;
     background: transparent;
     padding-bottom: 2rem;
     min-height: 127px;
@@ -96,6 +100,9 @@
       flex-direction: row;
     }
     &__item{
+      &:not(:first-of-type){
+        margin-left:0.25rem;
+      }
       &.shareGroup{
         position:relative;
         display:flex;
@@ -154,7 +161,6 @@
     border:none;
     box-shadow: none;
     display:inline-block;
-    margin-left:0.25rem;
     &:hover,
     &:active{
       border:none;
