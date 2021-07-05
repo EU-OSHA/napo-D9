@@ -30,7 +30,7 @@ body {
 }
 
 body {
-  font-family: "Ubuntu", cursive;
+  font-family: "Ubuntu", cursive !important;
   color: #1f3695;
 }
 
@@ -1814,7 +1814,7 @@ tr th {
 }
 
 .block-views-blockfaqs-block .ui-widget {
-  font-family: Verdana, Arial, sans-serif !important;
+  font-family: "Ubuntu", cursive !important;
 }
 .block-views-blockfaqs-block .ui-accordion-header {
   border: none;
