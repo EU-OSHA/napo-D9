@@ -1,0 +1,22 @@
+uuid: 44699840-ea89-4e0b-8bd0-28a9c73c6c5f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: napo_album
+label: 'Napo album'
+type: 'canonical_entities:node'
+pattern: '/meet-napo/napos-gallery/[node:title]'
+selection_criteria:
+  4f7920c5-56d4-41b3-8109-9ced7eaf002a:
+    id: node_type
+    bundles:
+      napo_album: napo_album
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4f7920c5-56d4-41b3-8109-9ced7eaf002a
+selection_logic: and
+weight: -5
+relationships: {  }
