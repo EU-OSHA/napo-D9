@@ -116,7 +116,7 @@
       } else {
         jQuery('.accordion-item').removeClass('active');
         jQuery('.accordion-item .field__label').removeClass('active');
-        jQuery('.accordion-item .field__item').slideUp(600);
+        jQuery('.accordion-item .field--label-above>.accordion__body,.accordion-item .field--type-text-long>.accordion__body').slideUp(600);
         jQuery(contentDiv).slideDown(600).fadeIn(600);
         jQuery(parentDiv).addClass('active');
         jQuery(elem).addClass('active');
