@@ -92,11 +92,88 @@
 }
 
 .napo-films-modal{
+  padding:0;
   top:50%!important;
   left:50%!important;
   right:initial!important;
   width:100%!important;
-  max-width:60%;
+  max-width:600px;
   height:auto;
   transform: translate(-50%, -50%);
+  iframe{
+    display: block;
+    width: 100%;
+    height:318px;
+  }
+  .node--type-napo-video {
+    .conten-video-info{
+      .napo-film-video-download-form{
+        position: static;
+        justify-content: flex-end;
+        background-color:$bg-color-grey-light-2;
+      }
+      .napo-film-title-2{
+        padding:1rem;
+        background-color:$bg-color-grey-light;
+      }
+    }
+  }
+  .node--type-napo-video{
+    .view-scenes-custom{
+      background-color:$bg-color-grey-light;
+      h2 {
+        font-size: 1rem;
+        background-position: 23px 0px;
+        padding:0.125rem 1.5rem 0rem 3.5rem;
+      }
+      .views-element-container {
+        padding: 0 22px;
+        padding-bottom: 20px;
+      }
+    }
+    .conten-video-info-tags{
+      padding:1.125rem 0;
+    }
+  }
+  .html5-video-player {
+    .video-click-tracking,
+    .video-stream{
+      width:100%!important;
+      height:auto!important;
+    }
+  }
+  .ui-dialog-titlebar{
+    background-color:$bg-color-blue;
+    color:$text-color-yellow;
+    padding: 1rem;
+    border-bottom: 1px solid $bg-color-grey-light-6;
+    min-height: 1rem;
+    text-align:left;
+    z-index: 999;
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    .ui-dialog-titlebar-close{
+      color:$text-color-yellow;
+      display:inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size:1.25rem;
+      position:static;
+      font-weight: bold;
+      &:hover,
+      &:focus{
+        color:$text-color-yellow;
+      }
+      &:after{
+        content:'x';
+      }
+    }
+    .ui-dialog-title{
+      float:none;
+      display: block;
+    }
+  }
 }
