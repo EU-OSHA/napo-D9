@@ -1233,7 +1233,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a class="use-ajax" data-target="napo-films" data-dialog-options="{&quot;width&quot;:800, &quot;dialogClass&quot;: &quot;napo-films-modal&quot;}" data-dialog-type="modal" href="/napos-films/{{ field_napo_film }}/scenes/show"> {{ "Scene" | trans }} 0{{ counter }}: {{ title_1 }} </a>'
+            text: '<a class="use-ajax" data-target="napo-films" data-dialog-options="{&quot;width&quot;:800, &quot;dialogClass&quot;: &quot;napo-films-modal&quot;, &quot;title&quot;:&quot;{{ ''Scene''| trans }}&nbsp;0{{ counter }}:&nbsp;{{ title_1 }}&quot;}" data-dialog-type="modal" href="/napos-films/{{ field_napo_film }}/scenes/show" > {{ "Scene" | trans }} 0{{ counter }}: {{ title_1 }} </a>'
             make_link: false
             path: ''
             absolute: false
