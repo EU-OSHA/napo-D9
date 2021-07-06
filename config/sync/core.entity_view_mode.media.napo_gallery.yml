@@ -1,0 +1,10 @@
+uuid: f723a3fe-0dac-4adb-9eb9-e4d3560fa8ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.napo_gallery
+label: 'Napo gallery'
+targetEntityType: media
+cache: true
