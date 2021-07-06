@@ -1,6 +1,6 @@
 home: true
 home_link: Home
-current_page: false
+current_page: true
 current_page_link: false
 trim_title: 0
 admin_pages_disable: true
