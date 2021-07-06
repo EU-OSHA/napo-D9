@@ -126,6 +126,10 @@
         background-position: 23px 0px;
         padding:0.125rem 1.5rem 0rem 3.5rem;
       }
+      .views-element-container {
+        padding: 0 22px;
+        padding-bottom: 20px;
+      }
     }
     .conten-video-info-tags{
       padding:1.125rem 0;
@@ -138,30 +142,38 @@
       height:auto!important;
     }
   }
-  .ui-dialog{
-    &-titlebar{
-      z-index: 999;
-      .ui-dialog-titlebar-close{
-        color:$text-color-blue;
-        display:inline-flex;
-        justify-content: center;
-        align-items: center;
-        font-size:1rem;
-        &:hover,
-        &:focus{
-          color:$text-color-blue;
-        }
-        &:after{
-          content:'x';
-        }
-      }
-    }
-  }
-  .ui-dialog-title{
-    float:none;
-    border:1px solid red;
+  .ui-dialog-titlebar{
     background-color:$bg-color-blue;
     color:$text-color-yellow;
-
+    padding: 1rem;
+    border-bottom: 1px solid $bg-color-grey-light-6;
+    min-height: 1rem;
+    text-align:left;
+    z-index: 999;
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    .ui-dialog-titlebar-close{
+      color:$text-color-yellow;
+      display:inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size:1.25rem;
+      position:static;
+      font-weight: bold;
+      &:hover,
+      &:focus{
+        color:$text-color-yellow;
+      }
+      &:after{
+        content:'x';
+      }
+    }
+    .ui-dialog-title{
+      float:none;
+      display: block;
+    }
   }
 }
