@@ -11,7 +11,6 @@ dependencies:
     - node.type.napo_album
   module:
     - datetime
-    - file
     - media
     - node
     - pagerer
@@ -1249,7 +1248,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1290,9 +1289,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: file_link
+          type: string
           settings:
-            link_to_entity: 0
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
