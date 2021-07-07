@@ -1,0 +1,25 @@
+uuid: 0b2b1f56-53a1-47bd-9de6-d7c04398b013
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - napo_theme
+id: quicktabsnapofilmsresults
+theme: napo_theme
+region: content
+weight: -14
+provider: null
+plugin: 'quicktabs_block:napo_films_results'
+settings:
+  id: 'quicktabs_block:napo_films_results'
+  label: 'QuickTabs - Napo films Results'
+  provider: quicktabs
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/napos-films/films\r\n/napos-films/films-list\r\n/napos-films/films-grid"
+    negate: false

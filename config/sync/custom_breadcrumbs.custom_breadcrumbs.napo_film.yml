@@ -1,0 +1,15 @@
+uuid: 49ea9eaa-1182-4d66-9912-04978c30fb8a
+langcode: en
+status: true
+dependencies: {  }
+id: napo_film
+label: 'Napo film'
+description: ''
+entityType: node
+entityBundle: napo_video
+language: und
+breadcrumbPaths: "<nolink>\r\n/napos-films/films/"
+breadcrumbTitles: "Napo's films\r\nFilms"
+type: '2'
+pathPattern: '/napos-films/*'
+extraCacheContexts: "Napo's films\r\nFilms"

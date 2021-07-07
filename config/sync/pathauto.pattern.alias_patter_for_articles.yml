@@ -3,29 +3,20 @@ langcode: en
 status: true
 dependencies:
   module:
-    - language
     - node
 id: alias_patter_for_articles
-label: 'Alias pattern for Articles'
+label: Article
 type: 'canonical_entities:node'
 pattern: '[node:menu-link:parent:title]/[node:title]'
 selection_criteria:
-  43279003-5ab5-45b3-aba5-5f07a63f4942:
+  6e1c6791-7ae0-49a4-891f-93ce208f894c:
     id: node_type
     bundles:
       article: article
     negate: false
     context_mapping:
       node: node
-    uuid: 43279003-5ab5-45b3-aba5-5f07a63f4942
-  ed3bf139-d250-4515-8732-c93e107c59f1:
-    id: language
-    langcodes:
-      en: en
-    negate: false
-    context_mapping:
-      language: 'node:langcode:language'
-    uuid: ed3bf139-d250-4515-8732-c93e107c59f1
+    uuid: 6e1c6791-7ae0-49a4-891f-93ce208f894c
 selection_logic: and
 weight: -5
 relationships:

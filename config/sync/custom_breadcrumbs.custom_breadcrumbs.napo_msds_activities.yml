@@ -1,0 +1,15 @@
+uuid: 79e07702-2024-4cc9-837d-ca720b9e6d1b
+langcode: en
+status: true
+dependencies: {  }
+id: napo_msds_activities
+label: 'Napo MSDS activities'
+description: ''
+entityType: node
+entityBundle: msds_activities
+language: und
+breadcrumbPaths: "<nolink>\r\n/learning-with-napo/napo-in-the-workplace"
+breadcrumbTitles: "Learning with Napo\r\nNapo in the workplace"
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

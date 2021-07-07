@@ -6,4 +6,17 @@
       display: block;
     }
   }
+  .excerpt-cotent{
+    display:none;
+  }
+  &.showResults{
+    .excerpt-cotent{
+      display:block;
+    }
+    .node--view-mode-search-results{
+      .field--type-text-with-summary{
+        display:none;
+      }
+    }
+  }
 }

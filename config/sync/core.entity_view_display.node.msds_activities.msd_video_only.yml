@@ -1,0 +1,107 @@
+uuid: f1092b73-a326-401e-8c94-78a81668a486
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.msd_video_only
+    - field.field.node.msds_activities.field_activities
+    - field.field.node.msds_activities.field_activity
+    - field.field.node.msds_activities.field_assessment
+    - field.field.node.msds_activities.field_concluding_questions
+    - field.field.node.msds_activities.field_conversation_started
+    - field.field.node.msds_activities.field_conversation_starters_cove
+    - field.field.node.msds_activities.field_introductory_text
+    - field.field.node.msds_activities.field_learning_objectives
+    - field.field.node.msds_activities.field_msds_resources_required
+    - field.field.node.msds_activities.field_msds_video
+    - field.field.node.msds_activities.field_resources_related
+    - field.field.node.msds_activities.field_tags
+    - node.type.msds_activities
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.msds_activities.msd_video_only
+targetEntityType: node
+bundle: msds_activities
+mode: msd_video_only
+content:
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_activities:
+    type: text_default
+    weight: 4
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_assessment:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_concluding_questions:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_introductory_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_learning_objectives:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_msds_resources_required:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_msds_video:
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_mode: msd_video_only
+      link: false
+    third_party_settings: {  }
+  field_resources_related:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  addtoany: true
+  breadcrumbs: true
+  field_activity: true
+  field_conversation_started: true
+  field_conversation_starters_cove: true
+  field_tags: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

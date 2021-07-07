@@ -1,0 +1,15 @@
+uuid: 3262344c-6ae2-4d74-a9a8-aaadf1a5638d
+langcode: en
+status: true
+dependencies: {  }
+id: napo_album
+label: 'Napo album'
+description: ''
+entityType: node
+entityBundle: napo_album
+language: und
+breadcrumbPaths: "<nolink>\r\n/en/about-napo/napos-gallery\r\n<nolink>"
+breadcrumbTitles: "About Napo\r\nPhoto gallery\r\n[current-page:title]"
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

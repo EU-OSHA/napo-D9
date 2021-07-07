@@ -1,0 +1,22 @@
+uuid: c9941a40-7adc-4000-96d1-7a935bdef6bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: napo_friend
+label: 'Napo friend'
+type: 'canonical_entities:node'
+pattern: '/meet-napo/napos-friends/[node:title]'
+selection_criteria:
+  fd9f1cbd-69d9-41d5-9ca5-2c1f47e1d4ac:
+    id: node_type
+    bundles:
+      napo_friend: napo_friend
+    negate: false
+    context_mapping:
+      node: node
+    uuid: fd9f1cbd-69d9-41d5-9ca5-2c1f47e1d4ac
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -31,9 +31,10 @@
           }, 2000);
         });
       });
-
     }
   };
+
+
 
 
   // Resize Font size
@@ -94,7 +95,6 @@
 
   jQuery(document).ready(function () {
     $('body').on('click', '.cart a', function(){
-      alert('b');
     })
 
     $('#header').on('click', '.btn-search-custom-mobile', function () {
@@ -109,7 +109,6 @@
     function accordionOpen(elem){
       let contentDiv = jQuery(elem).next();
       let parentDiv = jQuery(elem).closest('.accordion-item');
-
       if ( parentDiv.hasClass("active")) {
         jQuery(contentDiv).slideUp(600).fadeOut(600);
         jQuery(parentDiv).removeClass('active');
@@ -117,7 +116,7 @@
       } else {
         jQuery('.accordion-item').removeClass('active');
         jQuery('.accordion-item .field__label').removeClass('active');
-        jQuery('.accordion-item .field__item').slideUp(600);
+        jQuery('.accordion-item .field--label-above>.field__item,.accordion-item .field--type-text-long>.field__item,.accordion-item .field--label-above>.field__items,.accordion-item .field--type-text-long>.field__items').slideUp(600).addClass('closed-2');
         jQuery(contentDiv).slideDown(600).fadeIn(600);
         jQuery(parentDiv).addClass('active');
         jQuery(elem).addClass('active');
@@ -138,5 +137,29 @@
       $(this).closest('.field--name-field-media-video-file').closest('.field__item').addClass('video-custom-'+videoSourceFormat[1]);
     });
   });
+
+
+
+
+  // Show results in Napo Films
+  if($('body').find('#edit-search-api-fulltext--2').length>0){
+    let napoFilmsInputValue=$('#edit-search-api-fulltext--2').val();
+    let napoFilmsInputValueLength=napoFilmsInputValue.length;
+    if(napoFilmsInputValueLength>0){
+      $('body').addClass('showResults');
+    }
+  }
+
+  // Show results in General Search
+  if($('body').find('#views-exposed-form-search-page-1 input').length>0) {
+    let generalSearchInputValue = $('#views-exposed-form-search-page-1 input').val();
+    if (generalSearchInputValue.length > 0) {
+      $('body').addClass('showResults');
+    }
+  }
+
+
+
+
 })(jQuery, Drupal);
 

@@ -5,5 +5,5 @@ dependencies: {  }
 id: ca
 label: Catalan
 direction: ltr
-weight: 11
+weight: 10
 locked: false

@@ -34,7 +34,7 @@
                 content: " ";
                 background-image: url(/sites/napo/themes/custom/napo_theme/images/home-play-featured.png) ,url(/sites/napo/themes/custom/napo_theme/images/background-carousel.png) ;
                 background-repeat:no-repeat, no-repeat;
-                background-size: auto, contain;
+                background-size: auto, cover;
                 background-position: center,center;
                 display: block;
                 position: absolute;
@@ -62,6 +62,8 @@
             }
             img{
               margin:0;
+              height: 124px;
+
             }
           }
           &-title{
