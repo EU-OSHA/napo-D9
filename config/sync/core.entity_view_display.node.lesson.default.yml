@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.lesson.field_tags
     - node.type.lesson
   module:
+    - ds
     - layout_builder
     - text
     - user
@@ -80,7 +81,7 @@ content:
     region: content
   field_lesson_intro_text:
     weight: 9
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
@@ -109,8 +110,10 @@ content:
     region: content
     label: above
     settings:
-      link: true
-    third_party_settings: {  }
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
   field_starter:
     weight: 4
     label: above
