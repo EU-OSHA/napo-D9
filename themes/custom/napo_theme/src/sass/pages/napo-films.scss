@@ -78,4 +78,16 @@
   .ajax-progress{
     display:none;
   }
+  .block-quicktabs-blocknapo-films-results{
+    display:none;
+  }
+  &.showResults{
+    #block-quicktabsnapofilms,
+    .node--type-article{
+      display:none;
+    }
+    .block-quicktabs-blocknapo-films-results{
+      display:block;
+    }
+  }
 }
