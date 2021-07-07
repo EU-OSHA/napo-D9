@@ -130,6 +130,9 @@
         padding: 0 22px;
         padding-bottom: 20px;
       }
+      .slick__slide img{
+        width:145px!important;
+      }
     }
     .conten-video-info-tags{
       padding:1.125rem 0;
@@ -156,27 +159,19 @@
     justify-content: space-between;
     align-items: baseline;
     .ui-dialog-titlebar-close{
-      color:$text-color-yellow;
       display:inline-block;
-      text-indent:9999999px;
+      color:transparent;
       font-size:1.25rem;
       position:relative;
       font-weight: bold;
       overflow: hidden;
       width:1.5rem;
       height:1.5rem;
+      background: none;
       &:hover,
       &:focus{
-        color:$text-color-yellow;
-      }
-      &:after{
-        content:'x';
-        position:absolute;
-        display:inline-block;
-        z-index:4;
-        top:50%;
-        left:50%;
-        transform: translate(-50%, -50%);
+        color:transparent;
+
       }
     }
     .ui-dialog-title{
