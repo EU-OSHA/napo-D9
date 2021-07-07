@@ -3890,6 +3890,20 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   font-size: 1.125rem;
   margin: 1.25rem 0rem 0.875rem;
 }
+.node--type-lesson .content-accordions-download-custom .accordions .field--label-above > .field__item a[target=_blank]:after,
+.node--type-lesson .content-accordions-download-custom .accordions .field--label-above > .field__items a[target=_blank]:after,
+.node--type-lesson .content-accordions-download-custom .accordions .field--label-above > .accordion__body a[target=_blank]:after,
+.node--type-lesson .content-accordions-download-custom .accordions .field--type-text-long > .field__item a[target=_blank]:after,
+.node--type-lesson .content-accordions-download-custom .accordions .field--type-text-long > .field__items a[target=_blank]:after,
+.node--type-lesson .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body a[target=_blank]:after,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--label-above > .field__item a[target=_blank]:after,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--label-above > .field__items a[target=_blank]:after,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--label-above > .accordion__body a[target=_blank]:after,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--type-text-long > .field__item a[target=_blank]:after,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--type-text-long > .field__items a[target=_blank]:after,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body a[target=_blank]:after {
+  display: none;
+}
 .node--type-lesson .content-accordions-download-custom .download-box,
 .node--type-msds-activities .content-accordions-download-custom .download-box {
   position: relative;
@@ -3986,6 +4000,14 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   background-color: transparent;
   padding: 0.5rem 1rem;
   background-size: auto 10px;
+}
+
+.node--type-lesson .introductory-text {
+  width: 76%;
+  padding: 0rem 5rem 0rem 0rem;
+}
+.node--type-lesson .content-accordions-download-custom .download-box {
+  top: 0;
 }
 
 .node--type-napo-video .video-custom video {
