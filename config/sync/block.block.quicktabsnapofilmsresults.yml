@@ -17,7 +17,7 @@ settings:
   id: 'quicktabs_block:napo_films_results'
   label: 'QuickTabs - Napo films Results'
   provider: quicktabs
-  label_display: visible
+  label_display: '0'
 visibility:
   request_path:
     id: request_path
