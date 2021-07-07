@@ -1,0 +1,61 @@
+uuid: 3d22a3d5-60ae-49f2-95f8-4345823cb356
+langcode: en
+status: true
+dependencies: {  }
+id: napo_films_results
+label: 'Napo films Results'
+renderer: quick_tabs
+options:
+  quick_tabs:
+    class: ''
+    style: ''
+    ajax: false
+hide_empty_tabs: true
+default_tab: 1
+configuration_data:
+  -
+    title: 'List view'
+    weight: 0
+    type: view_content
+    content:
+      qtabs_content:
+        options:
+          machine_name: napo_and_friends
+      view_content:
+        options:
+          vid: napo_films_index
+          display: page_4
+          args: ''
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+  -
+    title: 'Gallery view'
+    weight: 0
+    type: view_content
+    content:
+      qtabs_content:
+        options:
+          machine_name: napo_and_friends
+      view_content:
+        options:
+          vid: napo_films_index
+          display: page_3
+          args: ''
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true

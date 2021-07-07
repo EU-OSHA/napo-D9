@@ -12,7 +12,7 @@ dependencies:
 id: categories
 theme: napo_theme
 region: content
-weight: -17
+weight: -18
 provider: null
 plugin: 'facet_block:categories'
 settings:
