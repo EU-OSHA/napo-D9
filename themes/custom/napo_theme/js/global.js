@@ -31,16 +31,23 @@
           }, 2000);
         });
       });
-
     }
   };
 
 
-  // Show results in Napo Films
-  let inputvalue=$('#edit-search-api-fulltext--2').val();
-  if(inputvalue.length>0){
+
+  // Show results in General Search
+  let generalSearchInputValue=$('#views-exposed-form-search-page-1 input').val();
+  if(generalSearchInputValue.length>0){
     $('body').addClass('showResults');
   }
+
+  // Show results in Napo Films
+  let napoFilmsInputValue=$('#edit-search-api-fulltext--2').val();
+  if(napoFilmsInputValue.length>0){
+    $('body').addClass('showResults');
+  }
+
 
 
   // Resize Font size

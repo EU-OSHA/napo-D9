@@ -100,7 +100,10 @@
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
       <div class="body__content clearfix">
         {{ content.field_image }}
-        {{ content.search_api_excerpt }}
+        {{ content.body }}
+        <div class="excerpt-cotent">
+          {{ content.search_api_excerpt }}
+        </div>
       </div>
       <div class="action_group">
         <ul class="list list--horizontal">
