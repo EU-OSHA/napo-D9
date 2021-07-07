@@ -3890,6 +3890,20 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   font-size: 1.125rem;
   margin: 1.25rem 0rem 0.875rem;
 }
+.node--type-lesson .content-accordions-download-custom .accordions .field--label-above > .field__item a[target=_blank]:after,
+.node--type-lesson .content-accordions-download-custom .accordions .field--label-above > .field__items a[target=_blank]:after,
+.node--type-lesson .content-accordions-download-custom .accordions .field--label-above > .accordion__body a[target=_blank]:after,
+.node--type-lesson .content-accordions-download-custom .accordions .field--type-text-long > .field__item a[target=_blank]:after,
+.node--type-lesson .content-accordions-download-custom .accordions .field--type-text-long > .field__items a[target=_blank]:after,
+.node--type-lesson .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body a[target=_blank]:after,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--label-above > .field__item a[target=_blank]:after,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--label-above > .field__items a[target=_blank]:after,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--label-above > .accordion__body a[target=_blank]:after,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--type-text-long > .field__item a[target=_blank]:after,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--type-text-long > .field__items a[target=_blank]:after,
+.node--type-msds-activities .content-accordions-download-custom .accordions .field--type-text-long > .accordion__body a[target=_blank]:after {
+  display: none;
+}
 .node--type-lesson .content-accordions-download-custom .download-box,
 .node--type-msds-activities .content-accordions-download-custom .download-box {
   position: relative;

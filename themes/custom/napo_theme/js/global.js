@@ -36,19 +36,6 @@
 
 
 
-  // Show results in General Search
-  let generalSearchInputValue=$('#views-exposed-form-search-page-1 input').val();
-  if(generalSearchInputValue.length>0){
-    $('body').addClass('showResults');
-  }
-
-  // Show results in Napo Films
-  let napoFilmsInputValue=$('#edit-search-api-fulltext--2').val();
-  if(napoFilmsInputValue.length>0){
-    $('body').addClass('showResults');
-  }
-
-
 
   // Resize Font size
   $('#text_resize_increase').on('click', function() {
@@ -108,7 +95,6 @@
 
   jQuery(document).ready(function () {
     $('body').on('click', '.cart a', function(){
-      alert('b');
     })
 
     $('#header').on('click', '.btn-search-custom-mobile', function () {
@@ -151,5 +137,29 @@
       $(this).closest('.field--name-field-media-video-file').closest('.field__item').addClass('video-custom-'+videoSourceFormat[1]);
     });
   });
+
+
+
+
+  // Show results in Napo Films
+  if($('body').find('#edit-search-api-fulltext--2').length>0){
+    let napoFilmsInputValue=$('#edit-search-api-fulltext--2').val();
+    let napoFilmsInputValueLength=napoFilmsInputValue.length;
+    if(napoFilmsInputValueLength>0){
+      $('body').addClass('showResults');
+    }
+  }
+
+  // Show results in General Search
+  if($('body').find('#views-exposed-form-search-page-1 input').length>0) {
+    let generalSearchInputValue = $('#views-exposed-form-search-page-1 input').val();
+    if (generalSearchInputValue.length > 0) {
+      $('body').addClass('showResults');
+    }
+  }
+
+
+
+
 })(jQuery, Drupal);
 
