@@ -1,1 +1,3 @@
-options: "Masculino: Masculino\nFeminino: Feminino\n"
+options: |
+  Masculino: Masculino
+  Feminino: Feminino

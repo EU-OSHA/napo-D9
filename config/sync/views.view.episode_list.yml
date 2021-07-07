@@ -71,6 +71,10 @@ display:
             nid: nid
             title_1: title_1
             field_image: field_image
+            counter: '0'
+            field_napo_film: '0'
+            view_node: '0'
+            nothing: '0'
           optionset_thumbnail: ''
           skin_thumbnail: ''
           thumbnail_position: ''
@@ -90,15 +94,15 @@ display:
           override: true
           overridables:
             arrows: arrows
+            variableWidth: variableWidth
             autoplay: '0'
             dots: '0'
             draggable: '0'
             infinite: '0'
             mouseWheel: '0'
             randomize: '0'
-            variableWidth: '0'
           cache: 0
-          current_view_mode: block
+          current_view_mode: scenes
           thumbnail_effect: ''
       row:
         type: fields
