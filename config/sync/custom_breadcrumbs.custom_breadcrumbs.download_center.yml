@@ -1,0 +1,15 @@
+uuid: 5a3a1e5f-5d6d-4e06-9f4c-4debbc29c9f8
+langcode: en
+status: true
+dependencies: {  }
+id: download_center
+label: 'Download center'
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: /download-centre
+breadcrumbTitles: 'Download centre'
+type: '2'
+pathPattern: /download-centre
+extraCacheContexts: ''

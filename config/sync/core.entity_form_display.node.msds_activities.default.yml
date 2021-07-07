@@ -19,6 +19,7 @@ dependencies:
     - workflows.workflow.napo
   module:
     - content_moderation
+    - media_library
     - path
     - text
 id: node.msds_activities.default
@@ -28,12 +29,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
   field_activities:
-    weight: 128
+    weight: 8
     settings:
       rows: 5
       placeholder: ''
@@ -41,17 +42,14 @@ content:
     type: text_textarea
     region: content
   field_activity:
-    weight: 124
+    weight: 4
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_assessment:
-    weight: 130
+    weight: 10
     settings:
       rows: 5
       placeholder: ''
@@ -59,7 +57,7 @@ content:
     type: text_textarea
     region: content
   field_concluding_questions:
-    weight: 129
+    weight: 9
     settings:
       rows: 5
       placeholder: ''
@@ -67,27 +65,21 @@ content:
     type: text_textarea
     region: content
   field_conversation_started:
-    weight: 122
+    weight: 2
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_conversation_starters_cove:
-    weight: 123
+    weight: 3
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_introductory_text:
-    weight: 126
+    weight: 6
     settings:
       rows: 5
       placeholder: ''
@@ -95,7 +87,7 @@ content:
     type: text_textarea
     region: content
   field_learning_objectives:
-    weight: 127
+    weight: 7
     settings:
       rows: 5
       placeholder: ''
@@ -103,97 +95,64 @@ content:
     type: text_textarea
     region: content
   field_msds_resources_required:
-    weight: 133
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 13
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_msds_video:
-    weight: 125
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_resources_related:
-    weight: 121
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 1
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_tags:
-    weight: 131
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 11
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 12
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 18
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 15
-    region: content
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 120
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 16
-    region: content
-    third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60
@@ -201,4 +160,7 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  promote: true
+  status: true
+  sticky: true

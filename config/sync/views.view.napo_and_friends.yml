@@ -7,6 +7,7 @@ dependencies:
     - field.storage.node.field_image
     - image.style.large
     - image.style.thumbnail
+    - image.style.thumbnail_sc_160x115
     - node.type.napo_friend
   module:
     - draggableviews
@@ -1104,7 +1105,7 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: thumbnail
+            image_style: thumbnail_sc_160x115
             image_link: ''
           group_column: target_id
           group_columns: {  }

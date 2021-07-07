@@ -73,7 +73,7 @@
   ]
 
 %}
-{% set lang = url | split('/') %}
+{% set lang = url | split('/')[1] %}
 {#{{ dpm(content.field_lesson_video.0) }}#}
 
 
@@ -88,7 +88,7 @@
     </div>
     <div class="content-text-facilitator-custom">
       <div class="introductory-text">
-        {{  	field_lesson_intro_text}}
+{{ content.field_lesson_video.0['#node'].body.value | striptags }}
       </div>
       <div class="facilitator-guidance">
         <div class="title-box">
@@ -98,13 +98,16 @@
           {{ 'Do you need help to organise a learning activity in your classroom?' | trans }}
         </div>
         <div class="link-box">
-          <a href="/{{ lang[1] }}/learning-with-napo/napo-for-teachers/teacher-guidance" target="_blank">{{ 'Find out more here' | trans }}</a>
+          <a href="/learning-with-napo/napo-for-teachers/teacher-guidance" target="_blank">{{ 'Find out more here' | trans }}</a>
         </div>
       </div>
     </div>
   </div>
   <div class="content-accordions-download-custom">
     <h2>{{ 'Lesson' | trans }}</h2>
+    <div class="introductory-text">
+      {{  	content.field_lesson_intro_text}}
+    </div>
     <div class="detail--text--block">
       <div class="accordions">
         <div class="accordion-item">
