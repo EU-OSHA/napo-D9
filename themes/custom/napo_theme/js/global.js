@@ -36,6 +36,13 @@
   };
 
 
+  // Show results in Napo Films
+  let inputvalue=$('#edit-search-api-fulltext--2').val();
+  if(inputvalue.length>0){
+    $('body').addClass('showResults');
+  }
+
+
   // Resize Font size
   $('#text_resize_increase').on('click', function() {
     let fontSize = $('html').css('font-size');

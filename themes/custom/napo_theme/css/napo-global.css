@@ -2237,6 +2237,10 @@ tr th {
   position: relative;
   z-index: 4;
 }
+.napo-film-list-view .views-view-grid .napo-film-list-image {
+  height: 281x;
+  overflow: hidden;
+}
 .napo-film-list-view .views-view-grid h3 {
   background-image: url(/sites/napo/themes/custom/napo_theme/images/background-blue.png);
   background-repeat: repeat-x;
@@ -3540,6 +3544,16 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 }
 .napos-films-films .ajax-progress {
   display: none;
+}
+.napos-films-films .block-quicktabs-blocknapo-films-results {
+  display: none;
+}
+.napos-films-films.showResults #block-quicktabsnapofilms,
+.napos-films-films.showResults .node--type-article {
+  display: none;
+}
+.napos-films-films.showResults .block-quicktabs-blocknapo-films-results {
+  display: block;
 }
 
 .learning-with-napo-napo-in-the-workplace .view-napo-workplaces,
