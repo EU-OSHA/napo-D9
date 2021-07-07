@@ -1,4 +1,4 @@
-uuid: b52a72ca-52e6-443f-a2b3-a3172767551f
+uuid: 0b2b1f56-53a1-47bd-9de6-d7c04398b013
 langcode: en
 status: true
 dependencies:
@@ -7,17 +7,17 @@ dependencies:
     - system
   theme:
     - napo_theme
-id: quicktabsnapofilms
+id: quicktabsnapofilmsresults
 theme: napo_theme
 region: content
-weight: -15
+weight: -14
 provider: null
-plugin: 'quicktabs_block:napo_films'
+plugin: 'quicktabs_block:napo_films_results'
 settings:
-  id: 'quicktabs_block:napo_films'
-  label: 'QuickTabs - Napo films'
+  id: 'quicktabs_block:napo_films_results'
+  label: 'QuickTabs - Napo films Results'
   provider: quicktabs
-  label_display: '0'
+  label_display: visible
 visibility:
   request_path:
     id: request_path

@@ -12,7 +12,7 @@ dependencies:
 id: exposedformnapo_films_indexpage_1
 theme: napo_theme
 region: content
-weight: -16
+weight: -17
 provider: null
 plugin: 'views_exposed_filter_block:napo_films_index-page_1'
 settings:
