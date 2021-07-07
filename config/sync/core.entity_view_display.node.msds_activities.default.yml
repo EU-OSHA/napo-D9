@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.msds_activities.field_tags
     - node.type.msds_activities
   module:
+    - ds
     - text
     - user
 id: node.msds_activities.default
@@ -109,14 +110,24 @@ content:
     weight: 7
     label: above
     settings:
+      view_mode: msd_video_only
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
+    region: content
+  field_tags:
+    type: entity_reference_label
+    weight: 12
+    region: content
+    label: above
+    settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
 hidden:
   addtoany: true
   breadcrumbs: true
-  field_tags: true
   langcode: true
   links: true
   search_api_excerpt: true

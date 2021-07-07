@@ -1,0 +1,22 @@
+uuid: 3cc0a1ad-be75-4e55-88ee-611b236340a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: napo_msds_activities
+label: 'Napo MSDS activities'
+type: 'canonical_entities:node'
+pattern: '/learning-with-napo/napo-in-the-workplace/[node:title]'
+selection_criteria:
+  7af104c4-d3f8-40aa-b73e-6a92979c6f63:
+    id: node_type
+    bundles:
+      msds_activities: msds_activities
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 7af104c4-d3f8-40aa-b73e-6a92979c6f63
+selection_logic: and
+weight: -5
+relationships: {  }

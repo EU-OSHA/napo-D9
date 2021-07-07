@@ -95,7 +95,7 @@ content:
     type: text_textarea
     region: content
   field_msds_resources_required:
-    weight: 12
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -114,17 +114,13 @@ content:
     region: content
   field_tags:
     weight: 11
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   langcode:
     type: language_select
-    weight: 13
+    weight: 12
     region: content
     settings:
       include_locked: true
