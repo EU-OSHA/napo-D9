@@ -1,0 +1,22 @@
+uuid: 1ab1683c-4516-4068-bf06-065ffcd06b39
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: napo_lessson
+label: 'Napo lessson'
+type: 'canonical_entities:node'
+pattern: '/learning-with-napo/napo-for-teachers/[node:title]'
+selection_criteria:
+  5b2e6615-19d4-465b-a398-8a31cdea4759:
+    id: node_type
+    bundles:
+      lesson: lesson
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5b2e6615-19d4-465b-a398-8a31cdea4759
+selection_logic: and
+weight: -5
+relationships: {  }

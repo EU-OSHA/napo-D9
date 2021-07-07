@@ -598,7 +598,7 @@ display:
           entity_field: nid
           plugin_id: node_nid
       display_extenders: {  }
-      show_admin_links: false
+      show_admin_links: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -620,6 +620,7 @@ display:
         metatag_display_extender: {  }
       block_description: 'MSD related resources'
       rendering_language: '***LANGUAGE_language_interface***'
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
