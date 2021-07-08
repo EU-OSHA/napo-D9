@@ -5,12 +5,20 @@
     clear: both;
     padding-left: 4.5rem;
     width: 100%;
+    position:relative;
     &>div {
       margin: 0rem;
       padding: 0rem;
       &.views-field-field-combined-tags{
         display:none;
       }
+    }
+    >.views-field-nothing-1{
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:200;
+      margin-left: 1rem;
     }
   }
   .col-sm-3{
@@ -55,6 +63,17 @@
     padding:0rem 1.125rem;
     background:$bg-color-grey-light;
     height: 51px;
+    position: relative;
+    .buttons{
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: 1rem;
+      .download-video{
+        margin-left:0.5rem;
+      }
+    }
   }
   .tags{
     float:left;
