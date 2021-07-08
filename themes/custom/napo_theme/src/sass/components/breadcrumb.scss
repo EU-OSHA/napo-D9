@@ -12,8 +12,17 @@
   &-item{
     padding:0;
     color: $text-color-blue;
+    white-space: nowrap;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
     &.active{
       color: $text-color-blue;
+      a{
+        cursor:default;
+        pointer-events: none;
+      }
     }
     & + .breadcrumb-item{
       padding:0;
@@ -23,13 +32,7 @@
         content: "»";
       }
     }
-    &:not(:first-of-type){
-      a{
-        cursor:default;
-        pointer-events: none;
-      }
-    }
-    &:first-of-type{
+    &:not(.active){
       a{
         font-weight: bold;
         border-bottom: 1px solid $text-color-yellow;
