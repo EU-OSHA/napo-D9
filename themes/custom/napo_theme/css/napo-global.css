@@ -2098,6 +2098,7 @@ tr th {
   clear: both;
   padding-left: 4.5rem;
   width: 100%;
+  position: relative;
 }
 .view-napo-s-film-episodes .views-row > div {
   margin: 0rem;
@@ -2105,6 +2106,13 @@ tr th {
 }
 .view-napo-s-film-episodes .views-row > div.views-field-field-combined-tags {
   display: none;
+}
+.view-napo-s-film-episodes .views-row > .views-field-nothing-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  margin-left: 1rem;
 }
 .view-napo-s-film-episodes .col-sm-3 > div {
   height: 144px;
@@ -2144,6 +2152,17 @@ tr th {
   padding: 0rem 1.125rem;
   background: #f2f1f2;
   height: 51px;
+  position: relative;
+}
+.view-napo-s-film-episodes .episode-list-details-container .buttons {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 1rem;
+}
+.view-napo-s-film-episodes .episode-list-details-container .buttons .download-video {
+  margin-left: 0.5rem;
 }
 .view-napo-s-film-episodes .tags {
   float: left;
