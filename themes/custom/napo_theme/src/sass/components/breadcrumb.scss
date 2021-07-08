@@ -12,6 +12,11 @@
   &-item{
     padding:0;
     color: $text-color-blue;
+    white-space: nowrap;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
     &.active{
       color: $text-color-blue;
       a{
