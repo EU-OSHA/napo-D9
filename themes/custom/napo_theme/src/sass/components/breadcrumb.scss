@@ -14,6 +14,10 @@
     color: $text-color-blue;
     &.active{
       color: $text-color-blue;
+      a{
+        cursor:default;
+        pointer-events: none;
+      }
     }
     & + .breadcrumb-item{
       padding:0;
@@ -23,13 +27,7 @@
         content: "»";
       }
     }
-    &:not(:first-of-type){
-      a{
-        cursor:default;
-        pointer-events: none;
-      }
-    }
-    &:first-of-type{
+    &:not(.active){
       a{
         font-weight: bold;
         border-bottom: 1px solid $text-color-yellow;

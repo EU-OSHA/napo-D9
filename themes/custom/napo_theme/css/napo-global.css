@@ -145,6 +145,10 @@ div.pagerer-container {
 .breadcrumb-item.active {
   color: #1f3695;
 }
+.breadcrumb-item.active a {
+  cursor: default;
+  pointer-events: none;
+}
 .breadcrumb-item + .breadcrumb-item {
   padding: 0;
 }
@@ -153,15 +157,11 @@ div.pagerer-container {
   color: #1f3695;
   content: "»";
 }
-.breadcrumb-item:not(:first-of-type) a {
-  cursor: default;
-  pointer-events: none;
-}
-.breadcrumb-item:first-of-type a {
+.breadcrumb-item:not(.active) a {
   font-weight: bold;
   border-bottom: 1px solid #f7e235;
 }
-.breadcrumb-item:first-of-type a:hover {
+.breadcrumb-item:not(.active) a:hover {
   border-color: transparent;
   color: #666;
   text-decoration: none;
