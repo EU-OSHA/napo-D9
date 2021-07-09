@@ -26,5 +26,6 @@ permissions:
   - 'use manualcrop'
   - 'use search autocomplete'
   - 'use text format filtered_html'
+  - 'view conditional fields'
   - 'view files'
   - 'view media'

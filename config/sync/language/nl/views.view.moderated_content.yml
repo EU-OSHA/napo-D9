@@ -2,7 +2,7 @@ label: 'Gemodereerde inhoud'
 description: 'Inhoud zoeken en modereren.'
 display:
   default:
-    display_title: Master
+    display_title: Standaard
     display_options:
       exposed_form:
         options:

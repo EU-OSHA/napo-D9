@@ -2,7 +2,7 @@ label: Archiv
 description: 'Veškerý obsah, dle měsíce.'
 display:
   default:
-    display_title: Master
+    display_title: Výchozí
     display_options:
       title: 'Měsíční archiv'
       exposed_form:

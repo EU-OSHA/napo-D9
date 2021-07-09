@@ -2,7 +2,7 @@ label: Arxiva
 description: 'Tot el contingut, per mes.'
 display:
   default:
-    display_title: Master
+    display_title: 'Per defecte'
     display_options:
       title: 'Arxiu mensual'
       exposed_form:

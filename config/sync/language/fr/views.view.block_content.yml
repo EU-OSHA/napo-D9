@@ -2,7 +2,7 @@ label: 'Bibliothèque de blocs personnalisés'
 description: 'Trouver et gérer les blocs personnalisés.'
 display:
   default:
-    display_title: Master
+    display_title: 'Par défaut'
     display_options:
       exposed_form:
         options:

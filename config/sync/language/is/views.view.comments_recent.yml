@@ -1,6 +1,7 @@
 label: 'Nýleg ummæli'
 display:
   default:
+    display_title: Sjálfgefið
     display_options:
       title: 'Nýleg ummæli'
       empty:

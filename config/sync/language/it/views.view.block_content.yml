@@ -2,7 +2,7 @@ label: 'Libreria di blocchi personalizzati'
 description: 'Trova e gestisci blocchi personalizzati.'
 display:
   default:
-    display_title: Master
+    display_title: Predefinito
     display_options:
       exposed_form:
         options:

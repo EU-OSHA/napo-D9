@@ -4,5 +4,6 @@ display:
       exposed_form:
         options:
           reset_button_label: Reset
+    display_title: Privzeto
   page_1:
     display_title: Page

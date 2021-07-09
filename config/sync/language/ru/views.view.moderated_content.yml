@@ -2,7 +2,7 @@ label: 'Модерируемые материалы'
 description: 'Найти и модерировать контент.'
 display:
   default:
-    display_title: Master
+    display_title: 'По умолчанию'
     display_options:
       exposed_form:
         options:

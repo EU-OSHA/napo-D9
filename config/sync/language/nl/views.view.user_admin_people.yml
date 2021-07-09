@@ -2,7 +2,7 @@ label: Personen
 description: 'Vind en beheer personen die gebruik maken van de website.'
 display:
   default:
-    display_title: Master
+    display_title: Standaard
     display_options:
       exposed_form:
         options:

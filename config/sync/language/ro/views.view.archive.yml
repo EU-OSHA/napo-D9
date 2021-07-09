@@ -2,7 +2,7 @@ label: Arhivă
 description: 'Tot conținutul, după lună.'
 display:
   default:
-    display_title: Master
+    display_title: Implicit
     display_options:
       title: 'Arhivă lunară'
       exposed_form:

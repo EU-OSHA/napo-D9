@@ -2,6 +2,7 @@ label: Používatelia
 description: 'Nájsť a spravovať ľudí, ktorí sú aktívni na vašich stránkach.'
 display:
   default:
+    display_title: Predvolené
     display_options:
       exposed_form:
         options:

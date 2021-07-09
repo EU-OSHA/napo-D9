@@ -1,7 +1,7 @@
 label: Ficheiro
 display:
   default:
-    display_title: Master
+    display_title: Predefinido
     display_options:
       title: 'Arquivo mensal'
       exposed_form:

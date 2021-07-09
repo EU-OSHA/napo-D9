@@ -2,7 +2,7 @@ label: Watchdog
 description: 'Recente logberichten'
 display:
   default:
-    display_title: Master
+    display_title: Standaard
     display_options:
       exposed_form:
         options:

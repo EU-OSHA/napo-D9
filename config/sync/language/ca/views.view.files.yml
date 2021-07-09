@@ -2,7 +2,7 @@ label: Fitxers
 description: 'Localitza i gestiona arxius.'
 display:
   default:
-    display_title: Master
+    display_title: 'Per defecte'
     display_options:
       exposed_form:
         options:

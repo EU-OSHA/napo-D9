@@ -2,6 +2,7 @@ label: 'Ποιοι γράφτηκαν τελευταία'
 description: 'Εμφανίζει μια λίστα με τους πιο νέους λογαριασμούς χρηστών του ιστοτόπου.'
 display:
   default:
+    display_title: Προεπιλεγμένο
     display_options:
       exposed_form:
         options:

@@ -2,7 +2,7 @@ label: Archief
 description: 'Alle inhoud, op maand.'
 display:
   default:
-    display_title: Master
+    display_title: Standaard
     display_options:
       title: 'Maandelijks archief'
       exposed_form:

@@ -2,7 +2,7 @@ label: 'Poslední komentáře'
 description: 'Nejnovější komentáře.'
 display:
   default:
-    display_title: Master
+    display_title: Výchozí
     display_options:
       title: 'Poslední komentáře'
       empty:

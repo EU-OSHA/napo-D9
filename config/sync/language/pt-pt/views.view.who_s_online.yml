@@ -2,7 +2,7 @@ label: 'Bloco quem está ligado'
 description: 'Mostra o nome de utilizador dos utilizadores ativos mais recentes, e o número total de utilizadores ativos.'
 display:
   default:
-    display_title: Master
+    display_title: Predefinido
     display_options:
       exposed_form:
         options:

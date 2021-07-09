@@ -1,0 +1,16 @@
+label: Buscar
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Buscar
+          exposed_sorts_label: 'Ordenar por'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Buscar
+      title: 'Resultados  '
+      empty:
+        area_text_custom:
+          content: 'Sin resultados'

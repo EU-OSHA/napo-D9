@@ -56,6 +56,7 @@ display:
       empty:
         area_text_custom:
           content: 'No content available.'
+    display_title: Προεπιλεγμένο
   page_1:
     display_options:
       menu:

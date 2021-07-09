@@ -2,7 +2,7 @@ label: Glossari
 description: 'Tot el contingut, per lletra.'
 display:
   default:
-    display_title: Master
+    display_title: 'Per defecte'
     display_options:
       exposed_form:
         options:
