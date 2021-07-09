@@ -2995,10 +2995,6 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   font-size: 1.125rem;
 }
 
-.node--view-mode-napo-video-from-msd-video .field--name-field-video > .field__item,
-.node--type-msds-activities .field--name-field-video > .field__item {
-  display: none;
-}
 @media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) {
   .node--view-mode-napo-video-from-msd-video .field--name-field-video,
 .node--type-msds-activities .field--name-field-video {
