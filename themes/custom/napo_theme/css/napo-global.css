@@ -2995,59 +2995,87 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   font-size: 1.125rem;
 }
 
+.node--view-mode-napo-video-from-msd-video .field--name-field-video > .field__item,
+.node--type-msds-activities .field--name-field-video > .field__item {
+  display: none;
+}
 @media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) {
-  .node--view-mode-napo-video-from-msd-video {
+  .node--view-mode-napo-video-from-msd-video .field--name-field-video,
+.node--type-msds-activities .field--name-field-video {
     /**  IE9 and Above  **/
   }
-  .node--view-mode-napo-video-from-msd-video .video-custom-avi,
-.node--view-mode-napo-video-from-msd-video .video-custom-ogv,
-.node--view-mode-napo-video-from-msd-video .video-custom-webm,
-.node--view-mode-napo-video-from-msd-video .video-custom-wmv {
+  .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-avi,
+.node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-ogv,
+.node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-webm,
+.node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-wmv,
+.node--type-msds-activities .field--name-field-video .video-custom-avi,
+.node--type-msds-activities .field--name-field-video .video-custom-ogv,
+.node--type-msds-activities .field--name-field-video .video-custom-webm,
+.node--type-msds-activities .field--name-field-video .video-custom-wmv {
     display: none;
   }
-  .node--view-mode-napo-video-from-msd-video .video-custom-mp4 {
+  .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-mp4,
+.node--type-msds-activities .field--name-field-video .video-custom-mp4 {
     display: block;
   }
 }
 @supports (-ms-ime-align: auto) {
-  .node--view-mode-napo-video-from-msd-video {
+  .node--view-mode-napo-video-from-msd-video .field--name-field-video,
+.node--type-msds-activities .field--name-field-video {
     /**  Edge  **/
   }
-  .node--view-mode-napo-video-from-msd-video .video-custom-avi,
-.node--view-mode-napo-video-from-msd-video .video-custom-ogv,
-.node--view-mode-napo-video-from-msd-video .video-custom-webm,
-.node--view-mode-napo-video-from-msd-video .video-custom-wmv {
+  .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-avi,
+.node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-ogv,
+.node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-webm,
+.node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-wmv,
+.node--type-msds-activities .field--name-field-video .video-custom-avi,
+.node--type-msds-activities .field--name-field-video .video-custom-ogv,
+.node--type-msds-activities .field--name-field-video .video-custom-webm,
+.node--type-msds-activities .field--name-field-video .video-custom-wmv {
     display: none;
   }
-  .node--view-mode-napo-video-from-msd-video .video-custom-mp4 {
+  .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-mp4,
+.node--type-msds-activities .field--name-field-video .video-custom-mp4 {
     display: block;
   }
 }
 @-moz-document url-prefix() {
-  .node--view-mode-napo-video-from-msd-video {
+  .node--view-mode-napo-video-from-msd-video .field--name-field-video,
+.node--type-msds-activities .field--name-field-video {
     /**  Firefox  **/
   }
-  .node--view-mode-napo-video-from-msd-video .video-custom-avi,
-.node--view-mode-napo-video-from-msd-video .video-custom-ogv,
-.node--view-mode-napo-video-from-msd-video .video-custom-wmv,
-.node--view-mode-napo-video-from-msd-video .video-custom-webm {
+  .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-avi,
+.node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-ogv,
+.node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-wmv,
+.node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-webm,
+.node--type-msds-activities .field--name-field-video .video-custom-avi,
+.node--type-msds-activities .field--name-field-video .video-custom-ogv,
+.node--type-msds-activities .field--name-field-video .video-custom-wmv,
+.node--type-msds-activities .field--name-field-video .video-custom-webm {
     display: none;
   }
-  .node--view-mode-napo-video-from-msd-video .video-custom-mp4 {
+  .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-mp4,
+.node--type-msds-activities .field--name-field-video .video-custom-mp4 {
     display: block;
   }
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .node--view-mode-napo-video-from-msd-video {
+  .node--view-mode-napo-video-from-msd-video .field--name-field-video,
+.node--type-msds-activities .field--name-field-video {
     /**  Chrome And Safari  **/
   }
-  .node--view-mode-napo-video-from-msd-video .video-custom-avi,
-.node--view-mode-napo-video-from-msd-video .video-custom-ogv,
-.node--view-mode-napo-video-from-msd-video .video-custom-webm,
-.node--view-mode-napo-video-from-msd-video .video-custom-wmv {
+  .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-avi,
+.node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-ogv,
+.node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-webm,
+.node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-wmv,
+.node--type-msds-activities .field--name-field-video .video-custom-avi,
+.node--type-msds-activities .field--name-field-video .video-custom-ogv,
+.node--type-msds-activities .field--name-field-video .video-custom-webm,
+.node--type-msds-activities .field--name-field-video .video-custom-wmv {
     display: none;
   }
-  .node--view-mode-napo-video-from-msd-video .video-custom-mp4 {
+  .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-mp4,
+.node--type-msds-activities .field--name-field-video .video-custom-mp4 {
     display: block;
   }
 }
