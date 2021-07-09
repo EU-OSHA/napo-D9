@@ -102,6 +102,8 @@
     {% endif %}
   </header>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-    {{ content }}
+{#    {{ content }}#}
+    {{ content.body }} {{ content.addtoany }}
   </div>
+  {{ drupal_view('napo_album_images', 'images') }}
 </article>

@@ -22,9 +22,3 @@ display:
         nothing:
           alter:
             text: "<div class=\"item\">\r\n    <div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\"><a target=\"_blank\" href=\"{{ uri}}\">Изтегли видеоматериала</a></div>\r\n         <div class=\"cart\">{{content_cart}}<a href=\"#\">Добави към центъра за изтегляне</a></div>\r\n    </div>\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n        <div class=\"view-scenes\"><a href=\"/napo-s-film-episodes/{{nid}}\">Гледайте епизодите</a></div>\r\n    </div>\r\n</div>"
-  page_list:
-    display_options:
-      fields:
-        nothing:
-          alter:
-            text: "<div class=\"item\">\r\n<div class=\"cart\">{{content_cart}}<a href=\"#\">Добави към центъра за изтегляне</a></div>\r\n<div class=\"napo-film-list-image\">{{field_image}}</div>\r\n<div class=\"group-right\">\r\n<h3>{{title}}</h3>\r\n<div>{{field_publication_date}}</div>\r\n<p>{{processed}}</p>\r\n<div class=\"napo-film-list-details-container\">\r\n<div class=\"\">{{ field_combined_tags }} </div>\r\n<div class=\"view-scenes\"><a href=\"/napo-s-film-episodes/{{nid}}\">Гледайте епизодите</a></div>\r\n<div class=\"view-video\">{{ url_1 }}</div>\r\n<div class=\"download-video\"><a target=\"_blank\" href=\"{{ uri}}\">Изтегли видеоматериала</a></div>\r\n\r\n</div>\r\n</div>\r\n</div>"
