@@ -340,7 +340,7 @@ display:
           expose:
             label: ''
           plugin_id: search_api
-      title: 'Search results {% if(filters.search_api_fulltext != "") %} for "{{ filters.search_api_fulltext }}" {%endif%}'
+      title: 'Search results '
       header: {  }
       footer: {  }
       empty:

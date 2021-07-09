@@ -8,8 +8,8 @@ description: ''
 entityType: node
 entityBundle: napo_video
 language: und
-breadcrumbPaths: "<nolink>\r\n/napos-films/films/"
-breadcrumbTitles: "Napo's films\r\nFilms"
+breadcrumbPaths: "<nolink>\r\n/napos-films/films/\r\n<nolink>"
+breadcrumbTitles: "Napo's films\r\nFilms\r\n[node:title]"
 type: '2'
 pathPattern: '/napos-films/*'
-extraCacheContexts: "Napo's films\r\nFilms"
+extraCacheContexts: ''
