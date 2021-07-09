@@ -2170,6 +2170,13 @@ tr th {
 .view-napo-s-film-episodes .tags a {
   font-size: 11px;
 }
+.view-napo-s-film-episodes .back-button-custom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, -100%);
+  margin-top: -1.75rem;
+}
 
 .napo-film-list-view:focus {
   outline: none;
