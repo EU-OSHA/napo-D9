@@ -21,7 +21,7 @@ display:
             next: 'Next ›'
             first: '« First'
             last: 'Last »'
-    display_title: Master
+    display_title: Oletus
   feed_1:
     display_title: Syöte
   page_1:

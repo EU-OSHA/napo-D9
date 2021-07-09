@@ -16,6 +16,7 @@ display:
           expose:
             items_per_page_label: 'Vienetų kiekis puslapyje'
             items_per_page_options_all_label: '- Visos -'
+    display_title: Numatytasis
   feed_1:
     display_title: Srautas
   page_1:

@@ -1,7 +1,7 @@
 label: 'Posljednji komentari'
 display:
   default:
-    display_title: Master
+    display_title: Zadano
     display_options:
       title: 'Posljednji komentari'
       empty:

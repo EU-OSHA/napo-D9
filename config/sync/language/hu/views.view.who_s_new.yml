@@ -2,7 +2,7 @@ label: 'Új felhasználók'
 description: 'Egy listát jelenít meg a webhely legfrissebb felhasználói fiókjairól.'
 display:
   default:
-    display_title: Master
+    display_title: Alapértelmezés
     display_options:
       exposed_form:
         options:

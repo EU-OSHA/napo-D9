@@ -1,5 +1,4 @@
 cancel_confirm:
-  body: "[user:display-name],\r\n\r\nFoi feito um pedido para cancelar a sua conta em [site:name].\r\n\r\nPoderá agora cancelar a sua conta no [site:url-brief]  ao clicar neste link ou copiá-lo e colá-lo no seu browser:\r\n\r\n[user:cancel-url]\r\n\r\nNOTA: O cancelamento da sua conta não é reversível.\r\n\r\nEste link expira num dia e nada acontecerá se não for usado.\r\n\r\n-- Equipa [site:name]"
   subject: 'Pedido de cancelamento de conta para [user:display-name] em [site:name]'
 password_reset:
   body: "[user:display-name],\r\n\r\nUm pedido para restabelecer a senha da sua conta foi feito em [site:name].\r\n\r\nPode agora iniciar sessão ao clicar neste link ou copiá-lo e colá-lo no seu browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nEste link pode apenas ser usado uma vez para inicio de sessão e irá direccioná-lo para uma página onde poderá definir a sua senha. Irá expirar após um dia e nada acontecerá se não for utilizada.\r\n\r\n--  Equipa [site:name]"

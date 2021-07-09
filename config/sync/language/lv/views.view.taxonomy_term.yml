@@ -1,6 +1,7 @@
 label: 'Taksonomijas termins'
 display:
   default:
+    display_title: 'Noklusētā vērtība'
     display_options:
       exposed_form:
         options:

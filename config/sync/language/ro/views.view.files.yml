@@ -2,7 +2,7 @@ label: Fişiere
 description: 'Găsiți și gestionați fișiere.'
 display:
   default:
-    display_title: Master
+    display_title: Implicit
     display_options:
       exposed_form:
         options:

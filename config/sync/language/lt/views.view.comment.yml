@@ -1,6 +1,7 @@
 label: Komentarai
 display:
   default:
+    display_title: Numatytasis
     display_options:
       exposed_form:
         options:

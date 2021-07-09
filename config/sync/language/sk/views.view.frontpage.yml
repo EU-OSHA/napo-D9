@@ -25,6 +25,7 @@ display:
             next: 'Next ›'
             first: '« First'
             last: 'Last »'
+    display_title: Predvolené
   feed_1:
     display_title: 'Kanál správ'
   page_1:

@@ -1,5 +1,4 @@
 cancel_confirm:
-  body: "[user:display-name],\r\n\r\nPožiadali ste o zrušenie vášho používateľského účtu na [site:name].\r\n\r\nTeraz môžete zrušiť váš účet na [site:url-brief] kliknutím na uvedený link alebo jeho skopírovaním a vložením do vášho prehliadača:\r\n\r\n[user:cancel-url]\r\n\r\nUPOZORNENIE: Zrušenie vášho účtu je nevratné.\r\n\r\nPlatnosť linku vyprší za jeden deň a ak ho nevyužijete, stav vášho účtu sa nezmení.\r\n\r\n--  Tím [site:name]"
   subject: 'Žiadosť o zrušenie účtu pre [user:display-name] na [site:name]'
 password_reset:
   body: "[user:display-name],\r\n\r\nPožiadali ste o reset hesla pre váš účet na [site:name].\r\n\r\nTeraz sa môžete prihlásiť kliknutím na uvedený link alebo jeho skopírovaním a vložením do vášho prehliadača:\r\n\r\n[user:one-time-login-url]\r\n\r\nTento prihlasovací link môže byť použitý iba raz a zavedie vás na stránku, na ktorej si môžete nastaviť nové heslo. Platnosť linku vyprší za jeden deň a ak ho nevyužijete, vaše prihlasovacie údaje sa nezmenia.\r\n\r\n--  Tím [site:name]"

@@ -2,7 +2,7 @@ label: 'Recente reacties'
 description: 'Recente reacties.'
 display:
   default:
-    display_title: Master
+    display_title: Standaard
     display_options:
       title: 'Recente reacties'
       empty:

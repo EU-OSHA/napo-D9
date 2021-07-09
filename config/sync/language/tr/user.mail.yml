@@ -1,5 +1,4 @@
 cancel_confirm:
-  body: "[user:display-name],\r\n\r\n[site:name] sitesindeki hesabınızı iptal etme isteğinde bulunuldu.\r\n\r\nBu bağlantıya tıklayarak ya da adresi kopyalayıp web tarayıcınıza yapıştırarak [site:url-brief] sitesindeki hesabınızı iptal edebilirsiniz:\r\n\r\n[user:cancel-url]\r\n\r\nNOT: Hesap iptal etme işlemi geri alınamaz.\r\n\r\nBu bağlantı bir gün sonra iptal olur ve kullanılmazsa herhangi bir işlem yapılmaz.\r\n\r\n--  [site:name] ekibi"
   subject: '[site:name] hesabı iptali [user:display-name]'
 password_reset:
   body: "[user:display-name],\r\n\r\n[site:name] sitesindeki hesabınızın parolasını sıfırlamak için bir istek yapıldı.\r\n\r\nŞimdi aşağıdaki bağlantıya tıklayarak veya kopyalayıp tarayıcınıza yapıştırarak giriş yapabilirsiniz:\r\n\r\n[user:one-time-login-url]\r\n\r\nBu bağlantı giriş yapmak için yalnızca bir defa kullanılabilir ve sizi parolanızı belirleyebileceğiniz bir sayfaya götürecektir. Bağlantı bir gün sonra iptal olur ve kullanılmazsa hiçbir şey olmaz.\r\n\r\n-- [site:name] ekibi"

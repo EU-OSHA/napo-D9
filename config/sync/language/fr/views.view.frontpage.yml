@@ -26,7 +26,7 @@ display:
             next: 'Next ›'
             first: '« First'
             last: 'Last »'
-    display_title: Master
+    display_title: 'Par défaut'
   feed_1:
     display_title: Flux
   page_1:

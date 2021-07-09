@@ -2,7 +2,7 @@ label: 'Blocul Cine este conectat'
 description: 'Afișează numele de utilizatori ale celor mai recenți utilizatori activi, precum și numărul total de utilizatori activi.'
 display:
   default:
-    display_title: Master
+    display_title: Implicit
     display_options:
       exposed_form:
         options:

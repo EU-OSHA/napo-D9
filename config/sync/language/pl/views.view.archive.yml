@@ -2,7 +2,7 @@ label: Archiwizuj
 description: 'Cała zawartość wg miesiąca.'
 display:
   default:
-    display_title: Master
+    display_title: Domyślny
     display_options:
       title: 'Archiwum miesięczne'
       exposed_form:

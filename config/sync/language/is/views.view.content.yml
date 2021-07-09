@@ -48,6 +48,7 @@ display:
           expose:
             label: Language
       title: Innihald
+    display_title: Sjálfgefið
   page_1:
     display_options:
       menu:

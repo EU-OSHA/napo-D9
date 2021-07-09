@@ -2,6 +2,7 @@ label: Komentáre
 description: 'Nájsť a spravovať komentáre.'
 display:
   default:
+    display_title: Predvolené
     display_options:
       exposed_form:
         options:

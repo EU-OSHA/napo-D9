@@ -2,6 +2,7 @@ label: Žmonės
 description: 'Surasti ir valdyti žmones, kurie dirba su jūsų svetaine.'
 display:
   default:
+    display_title: Numatytasis
     display_options:
       exposed_form:
         options:

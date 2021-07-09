@@ -2,7 +2,7 @@ label: Comentaris
 description: 'Cerqueu i gestioneu els comentaris.'
 display:
   default:
-    display_title: Master
+    display_title: 'Per defecte'
     display_options:
       exposed_form:
         options:

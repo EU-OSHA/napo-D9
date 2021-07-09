@@ -1,7 +1,7 @@
 label: Meediakogu
 display:
   default:
-    display_title: Master
+    display_title: Vaikimisi
     display_options:
       exposed_form:
         options:

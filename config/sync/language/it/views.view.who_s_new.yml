@@ -2,7 +2,7 @@ label: 'Nuovi utenti'
 description: 'Mostra un elenco dei più recenti profili utente sul sito.'
 display:
   default:
-    display_title: Master
+    display_title: Predefinito
     display_options:
       exposed_form:
         options:

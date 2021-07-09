@@ -2,7 +2,7 @@ label: Persone
 description: 'Trova e gestisci le persone che interagiscono con il tuo sito.'
 display:
   default:
-    display_title: Master
+    display_title: Predefinito
     display_options:
       exposed_form:
         options:

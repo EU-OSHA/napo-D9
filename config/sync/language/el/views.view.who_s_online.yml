@@ -2,6 +2,7 @@ label: 'Μπλοκ "Ποιός είναι online"'
 description: 'Δείχνει τα ονόματα χρηστών από τους πιο πρόσφατα ενεργούς χρήστες όπως και τον συνολικό αριθμό ενεργών χρηστών.'
 display:
   default:
+    display_title: Προεπιλεγμένο
     display_options:
       exposed_form:
         options:

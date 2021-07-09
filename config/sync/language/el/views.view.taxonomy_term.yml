@@ -2,6 +2,7 @@ label: 'Όρος ταξινόμισης'
 description: 'Περιεχόμενο που ανήκει σε ένα συγκεκριμένο όρο ταξινόμησης.'
 display:
   default:
+    display_title: Προεπιλεγμένο
     display_options:
       exposed_form:
         options:

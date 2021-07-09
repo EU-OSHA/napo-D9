@@ -1,5 +1,3 @@
-cancel_confirm:
-  body: "[user:display-name],\r\n\r\nBeiðni um að eyða aðgangi hjá [site:name] hefur verið sett í gang.\r\n\r\nÞú getur eytt aðgangnum hjá [site:url-brief] með því að smella á eftirfarandi slóð eða með því að afrita og líma hana inn vef-vafrann þinn:\r\n\r\n[user:cancel-url]\r\n\r\nATHUGIÐ: Að eyða aðgangi er óafturkræfanleg aðgerð.\r\n\r\nÞessi tengill gildir í 24 klst og engin aðgerð er framkvæmd ef hann er ekki notaður.\r\n\r\n--  Teymið hjá [site:name]"
 password_reset:
   body: "[user:display-name],\r\n\r\nBeiðni um endursetningu á lykilorði var framkvæmd fyrir aðgang að [site:name].\r\n\r\nÞú getur nú skráð þig inn með því að smella á eftirfarandi slóð eða með því að afrita og líma hana inn vef-vafrann þinn:\r\n\r\n[user:one-time-login-url]\r\n\r\nÞennan tengil er eingöngu hægt að nota einu sinni til að skrá inn og leiðir þig að síðunni þar sem þú breytir lykilorðinu þínu. Þessi tengill rennur út eftir 24 klst og engar breytingar eru framkvæmdar ef hann er ekki notaður. \r\n\r\n\r\n--  Teymið hjá  [site:name]"
 register_admin_created:

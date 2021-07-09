@@ -1,5 +1,4 @@
 cancel_confirm:
-  body: "[user:display-name],\r\n\r\nEen verzoek om uw gebruikersaccount te annuleren is ingediend bij [site:name].\r\n\r\nU kunt nu uw account annuleren op [site:url-brief] door op onderstaande link te klikken of deze te knippen en plakken in uw browser:\r\n\r\n[user:cancel-url]\r\n\r\nLet op: Het annuleren van uw account kan niet ongedaan worden gemaakt!\r\n\r\nDeze link verloopt binnen één dag. Er gebeurt niets als deze link niet binnen één dag wordt gebruikt.\r\n\r\n--  [site:name] team"
   subject: 'Verzoek om account te annuleren van [user:display-name] op [site:name]'
 password_reset:
   body: "[user:display-name],\r\n\r\nOp [site:name] is een verzoek gedaan voor een nieuw wachtwoord van uw account.\r\n\r\nU kunt nu inloggen door op onderstaande link te klikken of deze te kopiëren en te plakken in de adresbalk van uw browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nDeze link kan slechts één keer gebruikt worden en zal u doorverwijzen naar een pagina waar u uw wachtwoord opnieuw kunt instellen. De geldigheid van de link zal na één dag verlopen. Er zal niets gebeuren wanneer de link niet wordt gebruikt.\r\n\r\n--  [site:name] team"

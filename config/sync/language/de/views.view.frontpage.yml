@@ -26,7 +26,7 @@ display:
             next: 'Next ›'
             first: '« First'
             last: 'Last »'
-    display_title: Master
+    display_title: Standard
   feed_1:
     display_title: Newsfeed
   page_1:

@@ -2,7 +2,7 @@ label: 'Termo de taxonomia'
 description: 'Conteúdo pertencente a um certo termo de taxonomia.'
 display:
   default:
-    display_title: Master
+    display_title: Predefinido
     display_options:
       exposed_form:
         options:

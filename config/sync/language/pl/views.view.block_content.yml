@@ -2,7 +2,7 @@ label: 'Biblioteka własnych bloków'
 description: 'Znajdź i zarządzaj własnymi blokami.'
 display:
   default:
-    display_title: Master
+    display_title: Domyślny
     display_options:
       exposed_form:
         options:

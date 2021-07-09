@@ -1,5 +1,4 @@
 cancel_confirm:
-  body: "[user:display-name],\r\n\r\nPaskyros panaikinimo prašymas gautas iš [site:name].\r\n\r\nGalite panaikinti paskyra [site:url-brief] paspausdami šią nuorodą arba nukopijuotą nuorodą įterpkite į naršyklės adreso laukelį:\r\n\r\n[user:cancel-url]\r\n\r\nDĖMESIO: Panaikinę paskyra jos atkurti jau negalėsite.\r\n\r\nŠi nuoroda galios vieną dieną ir jei nebus panaudota nieko neatsitiks.\r\n\r\n--  [site:name] komanda"
   subject: 'Paskyros panaikinimas [user:display-name] - [site:name]'
 password_reset:
   body: "[user:display-name],\r\n\r\nJūsų paskyros slaptažodžio atkūrimo prašymas gautas iš [site:name].\r\n\r\nGalite prisijungti paspausdami šią nuorodą arba nukopijuotą nuorodą įterpkite į naršyklės adreso laukelį:\r\n\r\n[user:one-time-login-url]\r\n\r\nŠi nuoroda gali būti panaudota tik vieną kartą, ji jus nukreips į puslapį kur galėsite nustatyti savo slaptažodį. Ji galios vieną dieną ir jei nebus panaudota nieko neatsitiks.\r\n\r\n--  [site:name] komanda"
