@@ -2,7 +2,7 @@ label: 'Çevrimiçi kullanıcılar bloğu'
 description: 'Son zamanlarda en etkin kullanıcıların adlarını ve toplam etkin kullanıcı sayısını görüntüler.'
 display:
   default:
-    display_title: Master
+    display_title: Varsayılan
     display_options:
       exposed_form:
         options:

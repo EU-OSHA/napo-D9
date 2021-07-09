@@ -2,7 +2,7 @@ label: Vahtikoira
 description: 'Viimeisimmät lokimerkinnät'
 display:
   default:
-    display_title: Master
+    display_title: Oletus
     display_options:
       exposed_form:
         options:

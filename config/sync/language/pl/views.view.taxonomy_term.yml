@@ -2,7 +2,7 @@ label: 'Termin taksonomii'
 description: 'Zawartość należąca do konkretnego terminu taksonomii'
 display:
   default:
-    display_title: Master
+    display_title: Domyślny
     display_options:
       exposed_form:
         options:

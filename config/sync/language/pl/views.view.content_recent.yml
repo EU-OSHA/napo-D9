@@ -2,7 +2,7 @@ label: 'Ostatnio dodana zawartość'
 description: 'Ostatnio dodana zawartość.'
 display:
   default:
-    display_title: Master
+    display_title: Domyślny
     display_options:
       exposed_form:
         options:

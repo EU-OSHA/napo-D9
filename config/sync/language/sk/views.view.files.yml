@@ -2,6 +2,7 @@ label: Súbory
 description: 'Vyhľadať a spravovať súbory.'
 display:
   default:
+    display_title: Predvolené
     display_options:
       exposed_form:
         options:

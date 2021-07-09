@@ -2,6 +2,7 @@ label: Sargsuns
 description: 'Jaunākās žurnāla ziņas'
 display:
   default:
+    display_title: 'Noklusētā vērtība'
     display_options:
       exposed_form:
         options:

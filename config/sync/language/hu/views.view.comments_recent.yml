@@ -2,7 +2,7 @@ label: 'Friss hozzászólások'
 description: 'Legújabb hozzászólások.'
 display:
   default:
-    display_title: Master
+    display_title: Alapértelmezés
     display_options:
       title: 'Friss hozzászólások'
       empty:

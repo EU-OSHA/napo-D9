@@ -2,7 +2,7 @@ label: 'Blok <em>Kto jest online</em>'
 description: 'Prezentuje nazwy użytkowników którzy byli ostatnio aktywni, jak również liczbę wszystkich aktywnych użytkowników.'
 display:
   default:
-    display_title: Master
+    display_title: Domyślny
     display_options:
       exposed_form:
         options:

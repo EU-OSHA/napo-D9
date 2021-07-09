@@ -1,7 +1,7 @@
 label: 'Uusimmat kommentit'
 display:
   default:
-    display_title: Master
+    display_title: Oletus
     display_options:
       title: 'Uusimmat kommentit'
       empty:

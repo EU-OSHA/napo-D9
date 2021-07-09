@@ -23,7 +23,7 @@ display:
             next: 'Next ›'
             first: '« First'
             last: 'Last »'
-    display_title: Master
+    display_title: Výchozí
   feed_1:
     display_title: Zdroj
   page_1:

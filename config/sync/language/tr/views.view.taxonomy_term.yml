@@ -2,7 +2,7 @@ label: 'Sınıflandırma terimi'
 description: 'Belirli bir sınıflandırma terimine ait içerik.'
 display:
   default:
-    display_title: Master
+    display_title: Varsayılan
     display_options:
       exposed_form:
         options:

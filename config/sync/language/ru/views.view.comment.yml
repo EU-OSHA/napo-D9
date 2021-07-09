@@ -2,7 +2,7 @@ label: Комментарии
 description: 'Найти и управлять комментариями.'
 display:
   default:
-    display_title: Master
+    display_title: 'По умолчанию'
     display_options:
       exposed_form:
         options:

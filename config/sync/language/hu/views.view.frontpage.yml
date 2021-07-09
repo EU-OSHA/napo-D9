@@ -26,7 +26,7 @@ display:
             next: 'Next ›'
             first: '« First'
             last: 'Last »'
-    display_title: Master
+    display_title: Alapértelmezés
   feed_1:
     display_title: Hírcsatorna
   page_1:

@@ -2,6 +2,7 @@ label: 'Αρχειοθετημένο αρχείο'
 description: 'Όλο το περιεχόμενο, ανά μήνα.'
 display:
   default:
+    display_title: Προεπιλεγμένο
     display_options:
       title: 'Μηνιαίο αρχείο'
       exposed_form:

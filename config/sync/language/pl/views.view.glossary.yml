@@ -2,7 +2,7 @@ label: Słownik
 description: 'Cała zawartość, alfabetycznie'
 display:
   default:
-    display_title: Master
+    display_title: Domyślny
     display_options:
       exposed_form:
         options:

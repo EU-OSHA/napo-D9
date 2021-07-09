@@ -1,6 +1,7 @@
 label: 'Nedávne komentáre'
 display:
   default:
+    display_title: Predvolené
     display_options:
       title: 'Nedávne komentáre'
       empty:

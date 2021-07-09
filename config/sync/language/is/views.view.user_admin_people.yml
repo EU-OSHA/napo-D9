@@ -1,6 +1,7 @@
 label: Notendur
 display:
   default:
+    display_title: Sjálfgefið
     display_options:
       exposed_form:
         options:

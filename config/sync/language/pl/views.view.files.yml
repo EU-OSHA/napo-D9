@@ -2,7 +2,7 @@ label: Pliki
 description: 'Wyszukiwanie i zarządzanie plikami'
 display:
   default:
-    display_title: Master
+    display_title: Domyślny
     display_options:
       exposed_form:
         options:

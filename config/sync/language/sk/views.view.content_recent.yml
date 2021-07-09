@@ -1,6 +1,7 @@
 label: 'Najnovší obsah'
 display:
   default:
+    display_title: Predvolené
     display_options:
       exposed_form:
         options:

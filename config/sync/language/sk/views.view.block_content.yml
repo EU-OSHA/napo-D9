@@ -2,6 +2,7 @@ label: 'Vlastné bloky'
 description: 'Nájsť a spravovať vlastné bloky.'
 display:
   default:
+    display_title: Predvolené
     display_options:
       exposed_form:
         options:

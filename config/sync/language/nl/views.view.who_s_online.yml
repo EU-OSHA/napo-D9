@@ -2,7 +2,7 @@ label: '''Wie is online''-blok'
 description: 'Toont de gebruikersnamen van de meest recente actieve gebruikers, en het totale aantal actieve gebruikers.'
 display:
   default:
-    display_title: Master
+    display_title: Standaard
     display_options:
       exposed_form:
         options:

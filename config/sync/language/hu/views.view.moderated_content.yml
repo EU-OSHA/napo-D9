@@ -2,7 +2,7 @@ label: 'Moderálandó tartalmak'
 description: 'Tartalom keresése és moderálása.'
 display:
   default:
-    display_title: Master
+    display_title: Alapértelmezés
     display_options:
       exposed_form:
         options:

@@ -1,5 +1,4 @@
 cancel_confirm:
-  body: "[user:display-name],\r\n\r\nO cerere de anulare a contului dumneavoastră a fost făcută pe\r\n [site:name].\r\n\r\nPuteți anula acum contul dumneavoastră pe [site:url-brief] dacă faceți clic pe acest link sau dacă îl copiați și lipiți în browser-ul dumneavoastră:\r\n\r\n[user:cancel-url]\r\n\r\nNOTĂ: Anularea contului dumneavoastră este ireversibilă.\r\n\r\nAcest link expiră într-o zi și nimic nu se va întâmpla dacă nu va fi utilizat.\r\n\r\n--  Echipa [site:name]"
   subject: 'Cerere de anulare cont pentru [user:display-name] la [site:name]'
 password_reset:
   body: "[user:display-name],\r\n\r\n[site:name] a primit o cerere de inițializare a parolei contului dumneavoastră.\r\n\r\nVă puteți autentifica urmând această legătură sau copiind-o în browser-ul dumneavoastră:\r\n\r\n[user:one-time-login-url]\r\n\r\nAceastă legătură poate fi folosită o singură dată și vă va conduce pe o pagină unde vă veți introduce noua parolă. Expiră după o zi și nu se va întâmpla nimic dacă nu va fi folosită.\r\n\r\n--  [site:name] team"

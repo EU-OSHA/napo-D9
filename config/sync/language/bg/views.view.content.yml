@@ -39,6 +39,7 @@ display:
           expose:
             label: Language
       title: Съдържание
+    display_title: 'По подразбиране'
   page_1:
     display_options:
       menu:

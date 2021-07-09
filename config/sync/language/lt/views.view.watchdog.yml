@@ -2,6 +2,7 @@ label: Saugotojas
 description: 'Naujausios log žinutės'
 display:
   default:
+    display_title: Numatytasis
     display_options:
       exposed_form:
         options:

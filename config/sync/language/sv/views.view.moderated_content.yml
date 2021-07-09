@@ -2,7 +2,7 @@ label: 'Modererat innehåll'
 description: 'Hitta och moderera innehåll.'
 display:
   default:
-    display_title: Master
+    display_title: Förvald
     display_options:
       exposed_form:
         options:

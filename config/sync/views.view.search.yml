@@ -7,6 +7,7 @@ dependencies:
   module:
     - pagerer
     - search_api
+    - user
 id: search
 label: Search
 module: views
@@ -22,8 +23,9 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'access content'
       cache:
         type: none
         options: {  }
@@ -366,6 +368,7 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
+        - user.permissions
       tags:
         - 'config:search_api.index.default_multilingual_node_index'
   page_1:
@@ -384,5 +387,6 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
+        - user.permissions
       tags:
         - 'config:search_api.index.default_multilingual_node_index'

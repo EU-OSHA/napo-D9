@@ -2,7 +2,7 @@ label: Hozzászólások
 description: 'Hozzászólások keresése és kezelése.'
 display:
   default:
-    display_title: Master
+    display_title: Alapértelmezés
     display_options:
       exposed_form:
         options:

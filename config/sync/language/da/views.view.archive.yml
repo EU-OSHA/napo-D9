@@ -2,7 +2,7 @@ label: Arkiv
 description: 'Alt indhold, efter måned.'
 display:
   default:
-    display_title: Master
+    display_title: Standard
     display_options:
       title: Månedsarkiv
       exposed_form:

@@ -2,7 +2,7 @@ label: Arhiiv
 description: 'Kogu sisu, kuu kaupa.'
 display:
   default:
-    display_title: Master
+    display_title: Vaikimisi
     display_options:
       title: 'Igakuine arhiiv'
       exposed_form:

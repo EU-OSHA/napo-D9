@@ -2,6 +2,7 @@ label: Χρήστες
 description: 'Εύρεση και διαχείριση χρηστών που αλληλεπιδρούν με τον ιστοτόπο σας.'
 display:
   default:
+    display_title: Προεπιλεγμένο
     display_options:
       exposed_form:
         options:
