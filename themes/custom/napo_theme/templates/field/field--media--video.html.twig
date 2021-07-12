@@ -80,87 +80,87 @@
 {% endif %}
 
 
-<script>
-  /**
-   * @file
-   * Global utilities.
-   *
-   */
-  (function ($, Drupal) {
-    'use strict';
-    Drupal.behaviors.napo_theme = {
-      attach: function (context, settings) {
-      }
-    };
-    // // Home video controls
-    // $( document ).ready(function() {
-    //   let video=$('.block-views-blockfrontpage-custom-video-block').find('video');
-    //   let playVideo=false;
-    //   let soundVideo=true;
-    //   video.removeAttr('controls');
-    //
-    //   $('.block-views-blockfrontpage-custom-video-block').append('<div class="play-button-container"><span class="button-play"></span></div><div class="video-controls"><div class="sound-control"><div class="volumeBar"><div class="volume"></div></div><div class="mute-control"><button class="mute-button"></button></div></div><div class="time-control"><span class="video-duration"></span><span class="video-progress"></span></div></div><div class="progressBar"><div class="timeBar"></div></div>');
-    //
-    //   // Video Duration
-    //   let videoDuration;
-    //   let videoCurrentTime;
-    //   video[0].onloadedmetadata = function() {
-    //     videoDuration = this.duration;
-    //     let videoDurationMinutes  = Math.floor(videoDuration / 60);
-    //     videoDurationMinutes = (videoDurationMinutes >= 10) ? videoDurationMinutes : "0" + videoDurationMinutes;
-    //     let videoDurationSeconds = Math.floor(videoDuration % 60);
-    //     videoDurationSeconds = (videoDurationSeconds >= 10) ? videoDurationSeconds : "0" + videoDurationSeconds;
-    //
-    //     $('.block-views-blockfrontpage-custom-video-block').find('.video-duration').text(videoDurationMinutes +' : '+ videoDurationSeconds);
-    //     $('.block-views-blockfrontpage-custom-video-block').find('.video-progress').text('00 : 00');
-    //   };
-    //
-    //   // Video Current Time
-    //   video[0].ontimeupdate = function() {
-    //     videoCurrentTime=this.currentTime;
-    //     let videoCurrentTimeMinutes  = Math.floor(videoCurrentTime / 60);
-    //     videoCurrentTimeMinutes = (videoCurrentTimeMinutes >= 10) ? videoCurrentTimeMinutes : "0" + videoCurrentTimeMinutes;
-    //     let videoCurrentTimeSeconds = Math.floor(videoCurrentTime % 60);
-    //     videoCurrentTimeSeconds = (videoCurrentTimeSeconds >= 10) ? videoCurrentTimeSeconds : "0" + videoCurrentTimeSeconds;
-    //
-    //     $('.block-views-blockfrontpage-custom-video-block').find('.video-progress').text(videoCurrentTimeMinutes +' : '+ videoCurrentTimeSeconds);
-    //   };
-    //
-    //   // Video Play/Pause
-    //   $('.block-views-blockfrontpage-custom-video-block').on('click','.play-button-container', function(){
-    //    if(playVideo==false){
-    //      video.get()[0].play();
-    //      $('.block-views-blockfrontpage-custom-video-block').stop().addClass('video-run');
-    //      playVideo=true;
-    //    }
-    //    else if(playVideo==true){
-    //      video.get()[0].pause();
-    //      $('.block-views-blockfrontpage-custom-video-block').stop().removeClass('video-run');
-    //      playVideo=false;
-    //    }
-    //   })
-    //
-    //   // Video Mute
-    //   $('.block-views-blockfrontpage-custom-video-block').on('click','.mute-button', function(){
-    //     if(soundVideo==true) {
-    //       video.prop('muted', true);
-    //       soundVideo=false;
-    //     }
-    //     else if(soundVideo==false) {
-    //       video.prop('muted', false);
-    //       soundVideo=true;
-    //     }
-    //   });
-    //
-    //   //Volume control clicked
-    //   $('.volumeBar').on('mousedown', function(e) {
-    //     let position = e.pageX - volume.offset().left;
-    //     let percentage = 100 * position / volume.width();
-    //     $('.volumeBar').css('width', percentage+'%');
-    //     video[0].volume = percentage / 100;
-    //   });
-    //
-    //
-    // })
-  })(jQuery, Drupal);
-</script>
+{#<script>#}
+{#  /**#}
+{#   * @file#}
+{#   * Global utilities.#}
+{#   *#}
+{#   */#}
+{#  (function ($, Drupal) {#}
+{#    'use strict';#}
+{#    Drupal.behaviors.napo_theme = {#}
+{#      attach: function (context, settings) {#}
+{#      }#}
+{#    };#}
+{#    // Home video controls#}
+{#    $( document ).ready(function() {#}
+{#      let video=$('.block-views-blockfrontpage-custom-video-block').find('video');#}
+{#      let playVideo=false;#}
+{#      let soundVideo=true;#}
+{#      video.removeAttr('controls');#}
+
+{#      $('.block-views-blockfrontpage-custom-video-block').append('<div class="play-button-container"><span class="button-play"></span></div><div class="video-controls"><div class="sound-control"><div class="volumeBar"><div class="volume"></div></div><div class="mute-control"><button class="mute-button"></button></div></div><div class="time-control"><span class="video-duration"></span><span class="video-progress"></span></div></div><div class="progressBar"><div class="timeBar"></div></div>');#}
+
+{#      // Video Duration#}
+{#      let videoDuration;#}
+{#      let videoCurrentTime;#}
+{#      video[0].onloadedmetadata = function() {#}
+{#        videoDuration = this.duration;#}
+{#        let videoDurationMinutes  = Math.floor(videoDuration / 60);#}
+{#        videoDurationMinutes = (videoDurationMinutes >= 10) ? videoDurationMinutes : "0" + videoDurationMinutes;#}
+{#        let videoDurationSeconds = Math.floor(videoDuration % 60);#}
+{#        videoDurationSeconds = (videoDurationSeconds >= 10) ? videoDurationSeconds : "0" + videoDurationSeconds;#}
+
+{#        $('.block-views-blockfrontpage-custom-video-block').find('.video-duration').text(videoDurationMinutes +' : '+ videoDurationSeconds);#}
+{#        $('.block-views-blockfrontpage-custom-video-block').find('.video-progress').text('00 : 00');#}
+{#      };#}
+
+{#      // Video Current Time#}
+{#      video[0].ontimeupdate = function() {#}
+{#        videoCurrentTime=this.currentTime;#}
+{#        let videoCurrentTimeMinutes  = Math.floor(videoCurrentTime / 60);#}
+{#        videoCurrentTimeMinutes = (videoCurrentTimeMinutes >= 10) ? videoCurrentTimeMinutes : "0" + videoCurrentTimeMinutes;#}
+{#        let videoCurrentTimeSeconds = Math.floor(videoCurrentTime % 60);#}
+{#        videoCurrentTimeSeconds = (videoCurrentTimeSeconds >= 10) ? videoCurrentTimeSeconds : "0" + videoCurrentTimeSeconds;#}
+
+{#        $('.block-views-blockfrontpage-custom-video-block').find('.video-progress').text(videoCurrentTimeMinutes +' : '+ videoCurrentTimeSeconds);#}
+{#      };#}
+
+{#      // Video Play/Pause#}
+{#      $('.block-views-blockfrontpage-custom-video-block').on('click','.play-button-container', function(){#}
+{#       if(playVideo==false){#}
+{#         video.get()[0].play();#}
+{#         $('.block-views-blockfrontpage-custom-video-block').stop().addClass('video-run');#}
+{#         playVideo=true;#}
+{#       }#}
+{#       else if(playVideo==true){#}
+{#         video.get()[0].pause();#}
+{#         $('.block-views-blockfrontpage-custom-video-block').stop().removeClass('video-run');#}
+{#         playVideo=false;#}
+{#       }#}
+{#      })#}
+
+{#      // Video Mute#}
+{#      $('.block-views-blockfrontpage-custom-video-block').on('click','.mute-button', function(){#}
+{#        if(soundVideo==true) {#}
+{#          video.prop('muted', true);#}
+{#          soundVideo=false;#}
+{#        }#}
+{#        else if(soundVideo==false) {#}
+{#          video.prop('muted', false);#}
+{#          soundVideo=true;#}
+{#        }#}
+{#      });#}
+
+{#      //Volume control clicked#}
+{#      $('.volumeBar').on('mousedown', function(e) {#}
+{#        let position = e.pageX - volume.offset().left;#}
+{#        let percentage = 100 * position / volume.width();#}
+{#        $('.volumeBar').css('width', percentage+'%');#}
+{#        video[0].volume = percentage / 100;#}
+{#      });#}
+
+
+{#    })#}
+{#  })(jQuery, Drupal);#}
+{#</script>#}

@@ -59,7 +59,16 @@
  * @see template_preprocess_node()
  */
 #}
+
+
 {{ attach_library('bootstrap_barrio/node') }}
+
+
+
+{% set videoId = content.field_msds_video['#items'].0.target_id  %}
+{% set videoEntity = drupal_entity('node',videoId) %}
+{% set imageTarget = videoEntity['#node'].field_image.0.entity.label  %}
+
 
 {%
   set classes = [
@@ -73,14 +82,13 @@
   ]
 %}
 
-
-
-
 <div class="back-button-custom"><a href="/learning-with-napo/napo-in-the-workplace">{{ 'Back to Napo in the workplace' | trans }}</a></div>
 <article{{ attributes.addClass(classes) }}>
   <div class="page-banner-custom">
   <div class="video-custom" id="js-video">
     {{ content.field_msds_video }}
+    <img src="/sites/napo/files/images/napo_video/{{ imageTarget }}" class="video-custom__image" />
+    <button type="button" class="video-custom__playButton playButton-1" id="videoPlayCustomButton"></button>
   </div>
   <div class="content-text-facilitator-custom">
     <div class="introductory-text">
@@ -99,49 +107,49 @@
     </div>
   </div>
   </div>
-    <div class="content-accordions-download-custom">
-      <h2>{{ 'Activity' | trans }}</h2>
-      <div class="detail--text--block">
+  <div class="content-accordions-download-custom">
+    <h2>{{ 'Activity' | trans }}</h2>
+    <div class="detail--text--block">
 
-        <div class="accordions">
-          {% if (content.field_learning_objectives | length > 2) %}
-          <div class="accordion-item">
-            {{ content.field_learning_objectives  }}
-          </div>
-          {% endif %}
-
-          {% if (content.field_activities | length > 2) %}
-          <div class="accordion-item">
-            {{ content.field_activities }}
-          </div>
-          {% endif %}
-
-          {%  if(content.field_concluding_questions | length > 2) %}
-          <div class="accordion-item">
-            {{ content.field_concluding_questions }}
-          </div>
-          {% endif %}
-
-          {% if(content.field_assessment | length > 2 ) %}
-          <div class="accordion-item">
-            {{ content.field_assessment }}
-          </div>
-          {% endif %}
-
-          {% if(content.field_msds_resources_required | length > 2) %}
-          <div class="accordion-item">
-
-            {{ content.field_msds_resources_required }}
-          </div>
-          {% endif %}
-
+      <div class="accordions">
+        {% if (content.field_learning_objectives | length > 2) %}
+        <div class="accordion-item">
+          {{ content.field_learning_objectives  }}
         </div>
-        {{ drupal_block('nma_download_block') }}
+        {% endif %}
+
+        {% if (content.field_activities | length > 2) %}
+        <div class="accordion-item">
+          {{ content.field_activities }}
+        </div>
+        {% endif %}
+
+        {%  if(content.field_concluding_questions | length > 2) %}
+        <div class="accordion-item">
+          {{ content.field_concluding_questions }}
+        </div>
+        {% endif %}
+
+        {% if(content.field_assessment | length > 2 ) %}
+        <div class="accordion-item">
+          {{ content.field_assessment }}
+        </div>
+        {% endif %}
+
+        {% if(content.field_msds_resources_required | length > 2) %}
+        <div class="accordion-item">
+
+          {{ content.field_msds_resources_required }}
+        </div>
+        {% endif %}
+
       </div>
+      {{ drupal_block('nma_download_block') }}
     </div>
-    <div class="related">
-      <h2>{{ 'Related resources' | trans }}</h2>
-      {{ drupal_view('msd_related_resources', 'block_related_resources') }}
-    </div>
+  </div>
+  <div class="related">
+    <h2>{{ 'Related resources' | trans }}</h2>
+    {{ drupal_view('msd_related_resources', 'block_related_resources') }}
+  </div>
 
 </article>

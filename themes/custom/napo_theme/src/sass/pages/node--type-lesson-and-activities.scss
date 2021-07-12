@@ -8,15 +8,73 @@
     position: relative;
   }
   .video-custom{
+    position: relative;
+    width: 100%;
+    height: 625px;
+    overflow: hidden;
     header{
       display:none;
     }
     video{
+      height:100%!important;
       width:100%!important;
-      height:auto!important;
     }
     .field--type-entity-reference{
       margin:0;
+    }
+    &__image{
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:4;
+      display:block;
+      width: 100%;
+      height: auto;
+      cursor:pointer;
+    }
+    &__playButton{
+      position:absolute;
+      top:50%;
+      left:50%;
+      z-index:10;
+      transform:translate(-50%, -50%);
+      display:inline-block;
+      border-radius:50%;
+      width:100px;
+      height:100px;
+      background: url(/sites/napo/themes/custom/napo_theme/images/play-video-big.png);
+      background-color: transparent;
+      background-position: center ;
+      background-repeat: no-repeat;
+      border:none;
+      box-shadow: none;
+      outline:none;
+      cursor:pointer;
+      &:active,
+      &:focus,
+      &:hover{
+        border:none;
+        box-shadow: none;
+        outline:none;
+      }
+    }
+  }
+  .playingVideoCustom{
+    .video-custom{
+      &__image,
+      &__playButton{
+       display:none;
+      }
+    }
+  }
+  .pauseVideoCustom{
+    .video-custom{
+      &__image{
+        display:none;
+      }
+      &__playButton{
+        display:inline-block;
+      }
     }
   }
   .content-text-facilitator-custom{
@@ -75,7 +133,6 @@
   .content-accordions-download-custom{
     margin-top: 3.75rem;
     padding: 0rem 3% 1.25rem 3%;
-
     h2{
       font-size:1.875rem;
       padding:0rem;
@@ -85,7 +142,6 @@
     .detail--text--block{
       display:flex;
       flex-direction: row;
-
     }
     .accordions{
       width:76%;
@@ -107,7 +163,6 @@
             background-color: $bg-color-blue;
             color:$text-color-white;
             background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-language-up.png)  ;
-
           }
         }
       }
@@ -273,7 +328,6 @@
   }
 }
 .node--type-lesson{
-
   .introductory-text{
     width:76%;
     padding: 0rem 5rem 0rem 0rem;

@@ -3697,18 +3697,77 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   padding: 0 0 2.5rem;
   position: relative;
 }
+.node--type-lesson .video-custom,
+.node--type-msds-activities .video-custom {
+  position: relative;
+  width: 100%;
+  height: 625px;
+  overflow: hidden;
+}
 .node--type-lesson .video-custom header,
 .node--type-msds-activities .video-custom header {
   display: none;
 }
 .node--type-lesson .video-custom video,
 .node--type-msds-activities .video-custom video {
+  height: 100% !important;
   width: 100% !important;
-  height: auto !important;
 }
 .node--type-lesson .video-custom .field--type-entity-reference,
 .node--type-msds-activities .video-custom .field--type-entity-reference {
   margin: 0;
+}
+.node--type-lesson .video-custom__image,
+.node--type-msds-activities .video-custom__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.node--type-lesson .video-custom__playButton,
+.node--type-msds-activities .video-custom__playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: url(/sites/napo/themes/custom/napo_theme/images/play-video-big.png);
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+.node--type-lesson .video-custom__playButton:active, .node--type-lesson .video-custom__playButton:focus, .node--type-lesson .video-custom__playButton:hover,
+.node--type-msds-activities .video-custom__playButton:active,
+.node--type-msds-activities .video-custom__playButton:focus,
+.node--type-msds-activities .video-custom__playButton:hover {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.node--type-lesson .playingVideoCustom .video-custom__image, .node--type-lesson .playingVideoCustom .video-custom__playButton,
+.node--type-msds-activities .playingVideoCustom .video-custom__image,
+.node--type-msds-activities .playingVideoCustom .video-custom__playButton {
+  display: none;
+}
+.node--type-lesson .pauseVideoCustom .video-custom__image,
+.node--type-msds-activities .pauseVideoCustom .video-custom__image {
+  display: none;
+}
+.node--type-lesson .pauseVideoCustom .video-custom__playButton,
+.node--type-msds-activities .pauseVideoCustom .video-custom__playButton {
+  display: inline-block;
 }
 .node--type-lesson .content-text-facilitator-custom,
 .node--type-msds-activities .content-text-facilitator-custom {
@@ -4633,7 +4692,8 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
     padding: 0px;
   }
 
-  .custom-select {
+  .custom-select,
+.lang-dropdown-select-element.form-select {
     background: #1f3695;
     color: #FFF;
     font-size: 1.125rem;
