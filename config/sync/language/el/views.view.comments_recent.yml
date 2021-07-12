@@ -2,6 +2,7 @@ label: 'Πρόσφατα σχόλια'
 description: 'Πρόσφατα σχόλια.'
 display:
   default:
+    display_title: Προεπιλεγμένο
     display_options:
       title: 'Πρόσφατα σχόλια'
       empty:

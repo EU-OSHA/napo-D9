@@ -1,5 +1,4 @@
 cancel_confirm:
-  body: "[user:display-name],\r\n\r\nZostała uruchomiona procedura anulowania Twojego konta na stronie  [site:name].\r\n\r\nMożesz anulować swoje konto na stronie [site:url-brief] klikając poniższy odnośnik bądź kopiując go w pole adresu przeglądarki:\r\n\r\n[user:cancel-url]\r\n\r\nUWAGA: anulowanie konta jest operacją nieodwracalną.\r\n\r\nOdnośnik straci ważność po jednym dniu.\r\n\r\n-- redakcja strony [site:name]"
   subject: 'Zgłoszenie anulowania konta [user:display-name] na [site:name]'
 password_reset:
   body: "[user:display-name],\r\n\r\nW serwisie [site:name] została uruchomiona procedura resetowania twojego hasła.\r\n\r\nMożesz się zalogować klikając poniższy odnośnik bądź kopiując go w pole adresu przeglądarki:\r\n\r\n[user:one-time-login-url]\r\n\r\nOdnośnik może zostać użyty tylko raz a jego użycie umożliwi wpisanie własnego hasła. Odnośnik straci ważność po jednym dniu.\r\n\r\n--  redakcja strony [site:name]"

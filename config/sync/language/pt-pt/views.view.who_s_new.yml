@@ -2,7 +2,7 @@ label: 'Novos utilizadores'
 description: 'Mostra uma lista de contas de utilizador mais recentes no sítio.'
 display:
   default:
-    display_title: Master
+    display_title: Predefinido
     display_options:
       exposed_form:
         options:

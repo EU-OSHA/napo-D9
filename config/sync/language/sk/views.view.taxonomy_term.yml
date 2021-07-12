@@ -2,6 +2,7 @@ label: 'Termín taxonómie'
 description: 'Obsah patriaci k určitému termínu taxonómie.'
 display:
   default:
+    display_title: Predvolené
     display_options:
       exposed_form:
         options:

@@ -2,7 +2,7 @@ label: 'Termen taxonomie'
 description: 'Conținut aparținând unui anumit termen dintr-o taxonomie.'
 display:
   default:
-    display_title: Master
+    display_title: Implicit
     display_options:
       exposed_form:
         options:

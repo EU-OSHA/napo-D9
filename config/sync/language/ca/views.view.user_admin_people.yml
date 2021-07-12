@@ -2,7 +2,7 @@ label: Gent
 description: 'Trobeu i gestioneu la gent que interacciona amb el vostre lloc.'
 display:
   default:
-    display_title: Master
+    display_title: 'Per defecte'
     display_options:
       exposed_form:
         options:

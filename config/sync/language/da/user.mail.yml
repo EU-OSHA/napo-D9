@@ -1,18 +1,4 @@
 cancel_confirm:
-  body: |-
-    [user:display-name],
-
-    Vi har modtaget en forespørgsel om at lukke din konto på [site:name].
-
-    Du kan lukke din konto på [site:url-brief] ved at klikke på linket eller ved at kopiere det og indsætte det i din browser:
-
-    [user:cancel-url]
-
-    BEMÆRK: Du kan ikke fortyde lukningen af din konto.
-
-    Linket udløber om én dag og der sker ikke noget hvis det ikke bruges.
-
-    --  Holdet bag [site:name]
   subject: 'Anmodning om opsigelse af konto for [user:display-name] på [site:name]'
 password_reset:
   body: |-

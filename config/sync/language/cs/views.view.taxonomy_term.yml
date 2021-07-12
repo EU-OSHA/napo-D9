@@ -2,7 +2,7 @@ label: 'Termín taxonomie'
 description: 'Obsah přiřazený k určitému termínu taxonomie.'
 display:
   default:
-    display_title: Master
+    display_title: Výchozí
     display_options:
       exposed_form:
         options:

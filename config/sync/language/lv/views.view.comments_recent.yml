@@ -1,6 +1,7 @@
 label: 'Jaunākie komentāri'
 display:
   default:
+    display_title: 'Noklusētā vērtība'
     display_options:
       title: 'Jaunākie komentāri'
       empty:

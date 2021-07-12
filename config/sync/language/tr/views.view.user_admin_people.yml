@@ -2,7 +2,7 @@ label: Kişiler
 description: 'Sitenizle etkileşim kuran kişileri arayın ve yönetin.'
 display:
   default:
-    display_title: Master
+    display_title: Varsayılan
     display_options:
       exposed_form:
         options:

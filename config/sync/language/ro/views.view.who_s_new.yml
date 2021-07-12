@@ -2,7 +2,7 @@ label: 'Cine e nou'
 description: 'Afișează o listă a celor mai noi conturi de utilizator de pe site.'
 display:
   default:
-    display_title: Master
+    display_title: Implicit
     display_options:
       exposed_form:
         options:

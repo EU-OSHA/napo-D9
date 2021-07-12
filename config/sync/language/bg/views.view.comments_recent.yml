@@ -1,6 +1,7 @@
 label: 'Последни коментари'
 display:
   default:
+    display_title: 'По подразбиране'
     display_options:
       title: 'Последни коментари'
       empty:

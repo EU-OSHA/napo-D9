@@ -2,7 +2,7 @@ label: 'Ostatnie komentarze'
 description: 'Ostatnie komentarze.'
 display:
   default:
-    display_title: Master
+    display_title: Domyślny
     display_options:
       title: 'Ostatnie komentarze'
       empty:

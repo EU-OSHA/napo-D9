@@ -2,7 +2,7 @@ label: 'Bloc de qui està en línia'
 description: 'Mostra els noms d''usuari dels usuaris actius més recentment i el nombre total d''usuaris actius.'
 display:
   default:
-    display_title: Master
+    display_title: 'Per defecte'
     display_options:
       exposed_form:
         options:

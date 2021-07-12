@@ -22,6 +22,7 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
+    display_title: Προεπιλεγμένο
   feed_1:
     display_title: Ροή
   page_1:

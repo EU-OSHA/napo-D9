@@ -1,5 +1,4 @@
 cancel_confirm:
-  body: "Kedves [user:display-name]!\r\n\r\n[site:name] webhelyen kezdeményezték a felhasználó törlését.\r\n\r\nA [site:url-brief] webhely felhasználója törölhető erre a hivatkozásra kattintva, vagy a böngésző címsorába másolva:\r\n\r\n[user:cancel-url]\r\n\r\nFIGYELMEZTETÉS: A felhasználó törlése nem visszavonható.\r\n\r\nA fenti hivatkozás egy napig érvényes, és ha nem lesz felhasználva, semmi nem történik.\r\n\r\n--  [site:name] csapata"
   subject: '[user:display-name] felhasználó fióktörlési kérelme [site:name] webhelyen'
 password_reset:
   body: "Kedves [user:display-name]!\r\n\r\n[site:name] webhelyen ennek a felhasználónak a nevében új jelszó lett kérve.\r\n\r\nErre a hivatkozásra kattintva, vagy a webcímet kimásolva és a böngésző címsorába beillesztve lehet bejelentkezni a webhelyre:\r\n\r\n[user:one-time-login-url]\r\n\r\nAz így megnyitott oldalon rögtön beállítható a jelszó.\r\n\r\nEz egy egyszer használható belépési mód. Egy nap után az érvényessége lejár, de semmilyen következménye nem lesz, ha nem használják fel.\r\n\r\n-- [site:name] csapata"

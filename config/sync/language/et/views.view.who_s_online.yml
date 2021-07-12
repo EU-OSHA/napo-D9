@@ -2,7 +2,7 @@ label: 'Sisseloginud kasutajate infoplokk'
 description: 'Kuvab aktiivsete kasutajate kogunumbrit ja viimati aktiivsete kasutajate kasutaja nimesid.'
 display:
   default:
-    display_title: Master
+    display_title: Vaikimisi
     display_options:
       exposed_form:
         options:

@@ -13,6 +13,7 @@ display:
             items_per_page_options_all_label: '- Allt -'
           tags:
             previous: '‹ Previous'
+    display_title: Sjálfgefið
   feed_1:
     display_title: Veita
   page_1:

@@ -2,7 +2,7 @@ label: Korisnici
 description: 'Pronađite i upravljajte korisnicima vaše mrežne lokacije.'
 display:
   default:
-    display_title: Master
+    display_title: Zadano
     display_options:
       exposed_form:
         options:

@@ -1,6 +1,7 @@
 label: 'Βιβλιοθήκη προσαρμοσμένου μπλοκ'
 display:
   default:
+    display_title: Προεπιλεγμένο
     display_options:
       exposed_form:
         options:

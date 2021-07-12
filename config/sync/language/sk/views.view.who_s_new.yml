@@ -1,6 +1,7 @@
 label: 'Kto je nový'
 display:
   default:
+    display_title: Predvolené
     display_options:
       exposed_form:
         options:

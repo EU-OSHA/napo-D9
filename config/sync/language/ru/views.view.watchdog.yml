@@ -2,7 +2,7 @@ label: Журнал
 description: 'Последние записи журнала'
 display:
   default:
-    display_title: Master
+    display_title: 'По умолчанию'
     display_options:
       exposed_form:
         options:

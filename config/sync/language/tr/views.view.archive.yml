@@ -2,7 +2,7 @@ label: Arşiv
 description: 'Aya göre tüm içerik.'
 display:
   default:
-    display_title: Master
+    display_title: Varsayılan
     display_options:
       title: 'Aylık arşiv'
       exposed_form:

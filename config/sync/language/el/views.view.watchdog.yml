@@ -2,6 +2,7 @@ label: Φύλακας
 description: 'Πρόσφατα μηνύματα ημερολογίου καταγραφής'
 display:
   default:
+    display_title: Προεπιλεγμένο
     display_options:
       exposed_form:
         options:

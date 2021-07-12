@@ -2,7 +2,7 @@ label: 'Nový obsah'
 description: 'Poslední obsah.'
 display:
   default:
-    display_title: Master
+    display_title: Výchozí
     display_options:
       exposed_form:
         options:

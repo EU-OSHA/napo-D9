@@ -2,7 +2,7 @@ label: File
 description: 'Trova e gestisci i file.'
 display:
   default:
-    display_title: Master
+    display_title: Predefinito
     display_options:
       exposed_form:
         options:

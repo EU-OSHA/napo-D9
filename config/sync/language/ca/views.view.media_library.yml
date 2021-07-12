@@ -1,6 +1,6 @@
 display:
   default:
-    display_title: Master
+    display_title: 'Per defecte'
     display_options:
       exposed_form:
         options:

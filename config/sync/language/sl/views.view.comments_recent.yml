@@ -1,6 +1,7 @@
 label: 'Nedavni komentarji'
 display:
   default:
+    display_title: Privzeto
     display_options:
       title: 'Nedavni komentarji'
       empty:

@@ -1,6 +1,7 @@
 label: Медия
 display:
   default:
+    display_title: 'По подразбиране'
     display_options:
       exposed_form:
         options:

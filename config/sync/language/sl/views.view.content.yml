@@ -42,6 +42,7 @@ display:
       empty:
         area_text_custom:
           content: 'No content available.'
+    display_title: Privzeto
   page_1:
     display_options:
       menu:

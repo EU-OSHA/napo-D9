@@ -1,5 +1,6 @@
 display:
   default:
+    display_title: Predvolené
     display_options:
       title: 'Mesačný archív'
       exposed_form:
