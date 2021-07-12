@@ -4340,6 +4340,9 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   background-color: #000;
   text-align: center;
 }
+.node--type-napo-album .views-view-grid > .views-row + .views-row {
+  margin-top: 1.5rem;
+}
 
 .learning-with-napo-napo-for-teachers-resource-library .view-resource-library {
   padding: 0 3% 2rem;

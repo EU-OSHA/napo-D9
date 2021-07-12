@@ -49,4 +49,12 @@
     background-color: $bg-color-black;
     text-align: center;
   }
+
+  .views-view-grid{
+    >.views-row{
+      & + .views-row{
+        margin-top:1.5rem;
+      }
+    }
+  }
 }
