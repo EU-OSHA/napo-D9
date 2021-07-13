@@ -1023,6 +1023,7 @@ tr th {
 }
 .block-views-blockconsortium-partners-block a:hover img {
   filter: grayscale(0%);
+  opacity: 1;
 }
 .block-views-blockconsortium-partners-block a:after {
   display: none;
