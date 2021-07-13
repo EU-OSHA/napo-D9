@@ -31,6 +31,31 @@
           }, 2000);
         });
       });
+
+
+
+
+      //Play home video
+      $( document ).ready(function() {
+
+        let homeVideo=$('.block-views-blockfrontpage-custom-video-block').find('video');
+        let playHomeVideo=false;
+
+        $('#block-views-block-frontpage-custom-video-block').append('<div class="play-button-container"><span class="button-play"></span></div>');
+
+        $('.block-views-blockfrontpage-custom-video-block').on('click','.play-button-container', function() {
+          if(playHomeVideo==false) {
+            homeVideo.get()[0].play();
+            $('.block-views-blockfrontpage-custom-video-block').stop().addClass('video-run');
+            playHomeVideo = true;
+          }
+          else if(playHomeVideo==true) {
+            homeVideo.get()[0].pause();
+            $('.block-views-blockfrontpage-custom-video-block').stop().removeClass('video-run');
+            playHomeVideo = false;
+          }
+        });
+      });
     }
   };
 
@@ -161,7 +186,7 @@
 
 
 
-  // Play videos
+  // Play "Napor for teachers" and "Napor in the workplace" videos
   $('.video-custom').each(function(){
     let $video=$(this).find('video');
     let playVideo=false;
@@ -194,6 +219,5 @@
       }
     });
   });
-
 })(jQuery, Drupal);
 
