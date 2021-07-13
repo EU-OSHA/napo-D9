@@ -74,84 +74,138 @@
   }
 }
 
-
-
-
-.view-lesson-related-lesson .views-field-nothing {
-  border-radius: 0rem 0rem 1.25rem 1.25rem;
-  overflow: hidden;
-  min-height: 17.5rem;
-  position: relative;
-  border: 2px solid $text-color-blue;
-  height:100%;
-  .field-content{
-    >a{
-      img{
-        &:hover{
-          opacity: 0.6;
-          filter: grayscale(1);
-          transform: scale(1.2);
-          transition: all 1.5s;
-        }
-      }
-    }}
-  img{
-    width:100%;
-  }
-
-  .related-item-content{
+.view-id-msds_resources_and_cs,
+.view-lesson-related-lesson {
+  .views-field-nothing {
+    border-radius: 0rem 0rem 1.25rem 1.25rem;
+    overflow: hidden;
+    min-height: 17.5rem;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    background-image: url(/sites/napo/themes/custom/napo_theme/images/background-items.png)  ;
-    background-repeat: repeat-x;
-    background-position: top left;
-    background-color: $bg-color-blue;
-    width: 100%;
-    min-height: 100%;
-    text-align: center;
-    padding: 1.25rem 1.25rem 0;
-    h3{
-      font-size: 1rem;
-      font-weight: bold;
-      color: $text-color-white;
-      margin: 0.625rem 0;
+    border: 2px solid $text-color-blue;
+    height:100%;
+    .field-content{
+      >a{
+        img{
+          &:hover{
+            opacity: 0.6;
+            filter: grayscale(1);
+            transform: scale(1.2);
+            transition: all 1.5s;
+          }
+        }
+      }}
+    img{
+      width:100%;
     }
-    a {
-      color:inherit;
+
+    .related-item-content{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-image: url(/sites/napo/themes/custom/napo_theme/images/background-items.png)  ;
+      background-repeat: repeat-x;
+      background-position: top left;
+      background-color: $bg-color-blue;
+      width: 100%;
+      min-height: 100%;
+      text-align: center;
+      padding: 1.25rem 1.25rem 0;
+      h3{
+        font-size: 1rem;
+        font-weight: bold;
+        color: $text-color-white;
+        margin: 0.625rem 0;
+      }
+      a {
+        color:inherit;
+      }
     }
-  }
-  .keyword-list{
-    color:$text-color-grey-blue;
-    font-size: 0.875rem;
-    .label-keyword,
-    .keyword-label{
-      color: $text-color-white;
-    }
-    .keyword-tag{
-      margin-left:0.25rem;
+    .keyword-list{
+      color:$text-color-grey-blue;
+      font-size: 0.875rem;
+      .label-keyword,
+      .keyword-label{
+        color: $text-color-white;
+      }
+      .keyword-tag{
+        margin-left:0.25rem;
+      }
     }
   }
 }
 
 
-.view-lesson-related-lesson .views-field-nothing {
-  height: 18.75rem;
-  flex:0 0 30%;
-  max-width: 30%;
-  margin: 1rem;
-  .field-content{
-    > a {
-      height: 177px;
-      overflow: hidden;
-      text-align: center;
-      display: block;
+.view-msds-resources-and-cs {
+    >.view-content{
+      >.views-row{
+        height: 18.75rem;
+        flex:0 0 50%;
+        max-width: 50%;
+        padding: 1rem 0.5rem;
+        margin-bottom:1rem;
+      }
+    }
+}
 
-      img {
-        width: 100%;
-        height: auto;
-        position: relative;
-        transform: translateY(-10%);
+
+
+.view-lesson-related-lesson {
+  .views-field-nothing {
+    height: 18.75rem;
+    flex:0 0 30%;
+    max-width: 30%;
+    margin: 1rem;
+    .field-content{
+      > a {
+        height: 177px;
+        overflow: hidden;
+        text-align: center;
+        display: block;
+
+        img {
+          width: 100%;
+          height: auto;
+          position: relative;
+          transform: translateY(-10%);
+        }
+      }
+    }
+  }
+}
+
+.view-id-msds_resources_and_cs{
+  .views-field-nothing {
+    height: 18.75rem;
+    margin: 1rem;
+    .field-content{
+      > a {
+        height: 177px;
+        overflow: hidden;
+        text-align: center;
+        display: block;
+
+        img {
+          width: 100%;
+          height: auto;
+          position: relative;
+          transform: translateY(-10%);
+        }
+      }
+    }
+  }
+}
+.view-id-msds_resources_and_cs{
+  display:flex;
+  flex-direction: row;
+  >.view-content{
+    flex:0 0 66%;
+  }
+  >.attachment-after{
+    display:none;
+    flex:0 0 33%;
+    .view-id-msds_resources_and_cs{
+      >.view-content{
+        flex:0 0 100%;
       }
     }
   }
