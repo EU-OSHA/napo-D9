@@ -105,6 +105,23 @@
       background: url(/sites/napo/themes/custom/napo_theme/images/a-plus.png);
       font-size:1.25rem;
     }
+    .block-napo-content-cart{
+      .header-download-centre{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        &:after{
+          content:'';
+          display:inline-block;
+          background: url(/sites/napo/themes/custom/napo_theme/images/download-icon.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 1.5rem;
+          height:1.5rem;
+          margin-left:0.5rem;
+        }
+      }
+    }
   }
   .region-header-logo{
     img{

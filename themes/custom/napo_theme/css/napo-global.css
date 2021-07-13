@@ -1219,6 +1219,21 @@ tr th {
   background: url(/sites/napo/themes/custom/napo_theme/images/a-plus.png);
   font-size: 1.25rem;
 }
+.header_top_bar .block-napo-content-cart .header-download-centre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header_top_bar .block-napo-content-cart .header-download-centre:after {
+  content: "";
+  display: inline-block;
+  background: url(/sites/napo/themes/custom/napo_theme/images/download-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+}
 .header .region-header-logo img {
   padding: 0rem 0.375rem 0.375rem 1.25rem;
   width: auto;
