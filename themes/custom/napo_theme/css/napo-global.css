@@ -3033,7 +3033,8 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 
 @media screen and (min-width: 0\0 ) and (min-resolution: 72dpi) {
   .node--view-mode-napo-video-from-msd-video .field--name-field-video,
-.node--type-msds-activities .field--name-field-video {
+.node--type-msds-activities .field--name-field-video,
+.node--type-lesson .field--name-field-video {
     /**  IE9 and Above  **/
   }
   .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-avi,
@@ -3043,17 +3044,25 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 .node--type-msds-activities .field--name-field-video .video-custom-avi,
 .node--type-msds-activities .field--name-field-video .video-custom-ogv,
 .node--type-msds-activities .field--name-field-video .video-custom-webm,
-.node--type-msds-activities .field--name-field-video .video-custom-wmv {
+.node--type-msds-activities .field--name-field-video .video-custom-wmv,
+.node--type-lesson .field--name-field-video .video-custom-avi,
+.node--type-lesson .field--name-field-video .video-custom-ogv,
+.node--type-lesson .field--name-field-video .video-custom-webm,
+.node--type-lesson .field--name-field-video .video-custom-wmv {
     display: none;
   }
   .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-mp4,
-.node--type-msds-activities .field--name-field-video .video-custom-mp4 {
+.node--type-msds-activities .field--name-field-video .video-custom-mp4,
+.node--type-lesson .field--name-field-video .video-custom-mp4 {
     display: block;
+    width: 100%;
+    height: 625px;
   }
 }
 @supports (-ms-ime-align: auto) {
   .node--view-mode-napo-video-from-msd-video .field--name-field-video,
-.node--type-msds-activities .field--name-field-video {
+.node--type-msds-activities .field--name-field-video,
+.node--type-lesson .field--name-field-video {
     /**  Edge  **/
   }
   .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-avi,
@@ -3063,17 +3072,25 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 .node--type-msds-activities .field--name-field-video .video-custom-avi,
 .node--type-msds-activities .field--name-field-video .video-custom-ogv,
 .node--type-msds-activities .field--name-field-video .video-custom-webm,
-.node--type-msds-activities .field--name-field-video .video-custom-wmv {
+.node--type-msds-activities .field--name-field-video .video-custom-wmv,
+.node--type-lesson .field--name-field-video .video-custom-avi,
+.node--type-lesson .field--name-field-video .video-custom-ogv,
+.node--type-lesson .field--name-field-video .video-custom-webm,
+.node--type-lesson .field--name-field-video .video-custom-wmv {
     display: none;
   }
   .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-mp4,
-.node--type-msds-activities .field--name-field-video .video-custom-mp4 {
+.node--type-msds-activities .field--name-field-video .video-custom-mp4,
+.node--type-lesson .field--name-field-video .video-custom-mp4 {
     display: block;
+    width: 100%;
+    height: 625px;
   }
 }
 @-moz-document url-prefix() {
   .node--view-mode-napo-video-from-msd-video .field--name-field-video,
-.node--type-msds-activities .field--name-field-video {
+.node--type-msds-activities .field--name-field-video,
+.node--type-lesson .field--name-field-video {
     /**  Firefox  **/
   }
   .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-avi,
@@ -3083,17 +3100,25 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 .node--type-msds-activities .field--name-field-video .video-custom-avi,
 .node--type-msds-activities .field--name-field-video .video-custom-ogv,
 .node--type-msds-activities .field--name-field-video .video-custom-wmv,
-.node--type-msds-activities .field--name-field-video .video-custom-webm {
+.node--type-msds-activities .field--name-field-video .video-custom-webm,
+.node--type-lesson .field--name-field-video .video-custom-avi,
+.node--type-lesson .field--name-field-video .video-custom-ogv,
+.node--type-lesson .field--name-field-video .video-custom-wmv,
+.node--type-lesson .field--name-field-video .video-custom-webm {
     display: none;
   }
   .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-mp4,
-.node--type-msds-activities .field--name-field-video .video-custom-mp4 {
+.node--type-msds-activities .field--name-field-video .video-custom-mp4,
+.node--type-lesson .field--name-field-video .video-custom-mp4 {
     display: block;
+    width: 100%;
+    height: 625px;
   }
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .node--view-mode-napo-video-from-msd-video .field--name-field-video,
-.node--type-msds-activities .field--name-field-video {
+.node--type-msds-activities .field--name-field-video,
+.node--type-lesson .field--name-field-video {
     /**  Chrome And Safari  **/
   }
   .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-avi,
@@ -3103,12 +3128,19 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 .node--type-msds-activities .field--name-field-video .video-custom-avi,
 .node--type-msds-activities .field--name-field-video .video-custom-ogv,
 .node--type-msds-activities .field--name-field-video .video-custom-webm,
-.node--type-msds-activities .field--name-field-video .video-custom-wmv {
+.node--type-msds-activities .field--name-field-video .video-custom-wmv,
+.node--type-lesson .field--name-field-video .video-custom-avi,
+.node--type-lesson .field--name-field-video .video-custom-ogv,
+.node--type-lesson .field--name-field-video .video-custom-webm,
+.node--type-lesson .field--name-field-video .video-custom-wmv {
     display: none;
   }
   .node--view-mode-napo-video-from-msd-video .field--name-field-video .video-custom-mp4,
-.node--type-msds-activities .field--name-field-video .video-custom-mp4 {
+.node--type-msds-activities .field--name-field-video .video-custom-mp4,
+.node--type-lesson .field--name-field-video .video-custom-mp4 {
     display: block;
+    width: 100%;
+    height: 625px;
   }
 }
 
@@ -3820,6 +3852,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   min-height: 175px;
   width: 76%;
   float: left;
+  font-size: 1.125rem;
 }
 .node--type-lesson .content-text-facilitator-custom .facilitator-guidance,
 .node--type-msds-activities .content-text-facilitator-custom .facilitator-guidance {

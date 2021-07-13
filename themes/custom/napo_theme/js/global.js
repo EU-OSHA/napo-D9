@@ -159,13 +159,26 @@
 
   /** Add class to the video parent fo just to show it in the supported browser **/
   jQuery(document).ready(function () {
+
     $('.field--name-field-msds-video').find('video').each(function(){
       let videoSource =  $(this).find('source').attr('src');
       let videoSourceFormat = videoSource.split('.');
-      $(this).closest('.contextual-region').parent().addClass('video-custom-'+videoSourceFormat[1]);
+      $(this).closest('.field--name-field-media-video-file').closest('.field__item').addClass('video-custom-'+videoSourceFormat[1]);
+    });
+
+    $('.node--type-lesson').find('video').each(function(){
+      let videoSource =  $(this).find('source').attr('src');
+      let videoSourceFormat = videoSource.split('.');
+      $(this).closest('.field--name-field-media-video-file').closest('.field__item').addClass('video-custom-'+videoSourceFormat[1]);
+    });
+
+    $('.node--type-msds-activities').find('video').each(function(){
+
+      let videoSource =  $(this).find('source').attr('src');
+      let videoSourceFormat = videoSource.split('.');
+      $(this).closest('.field--name-field-media-video-file').closest('.field__item').addClass('video-custom-'+videoSourceFormat[1]);
     });
   });
-
 
   // Show results in Napo Films
   if($('body').find('#edit-search-api-fulltext--2').length>0){
@@ -198,8 +211,11 @@
       }
     });
     $(this).on('click', 'video', function () {
-      if (playVideo==true) {
-        $(this).closest('.video-custom').stop().toggleClass('pauseVideoCustom');
+      if($video.get()[0].paused){
+        $(this).closest('.video-custom').stop().removeeClass('pauseVideoCustom');
+      }
+      else{
+        $(this).closest('.video-custom').stop().addClass('pauseVideoCustom');
       }
     });
     $(this).on('click', '.video-custom__playButton', function () {
@@ -208,14 +224,9 @@
         $(this).closest('.video-custom').stop().addClass('playingVideoCustom');
         playVideo=true;
       }
-      else if (playVideo==true) {
-        $(this).closest('.video-custom').stop().toggleClass('pauseVideoCustom');
-        if ($(this).closest('.video-custom').hasClass('pauseVideoCustom')) {
-          $video.get()[0].pause();
-        }
-        else{
-          $video.get()[0].play();
-        }
+      else{
+        $video.get()[0].play();
+        $(this).closest('.video-custom').stop().removeClass('pauseVideoCustom');
       }
     });
   });
