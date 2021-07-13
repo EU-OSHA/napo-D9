@@ -2201,6 +2201,9 @@ tr th {
   transform: translate(0, -100%);
   margin-top: -1.75rem;
 }
+.view-napo-s-film-episodes .node--view-mode-header-view-node header {
+  display: none;
+}
 
 .napo-film-list-view:focus {
   outline: none;

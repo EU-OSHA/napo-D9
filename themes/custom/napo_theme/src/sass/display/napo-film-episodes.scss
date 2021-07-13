@@ -88,4 +88,9 @@
     transform: translate(0, -100%);
     margin-top: -1.75rem;
   }
+  .node--view-mode-header-view-node{
+    header{
+      display:none;
+    }
+  }
 }
