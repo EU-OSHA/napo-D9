@@ -64,6 +64,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     label: hidden
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_image:
     type: slick_media
     weight: 0

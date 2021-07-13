@@ -1,0 +1,15 @@
+label: Søg
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Søg
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Søg
+      title: 'Søg efter resultater{% if(filters.search_api_fulltext != "") %} for "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Ingen resultater'

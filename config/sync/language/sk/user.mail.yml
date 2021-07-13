@@ -1,4 +1,5 @@
 cancel_confirm:
+  body: "[user:display-name],\r\n\r\nA request to cancel your account has been made at [site:name].\r\n\r\nYou may now cancel your account on [site:url-brief] by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:cancel-url]\r\n\r\nNOTE: The cancellation of your account is not reversible.\r\n\r\nThis link expires in one day and nothing will happen if it is not used.\r\n\r\n--  [site:name] team"
   subject: 'Žiadosť o zrušenie účtu pre [user:display-name] na [site:name]'
 password_reset:
   body: "[user:display-name],\r\n\r\nPožiadali ste o reset hesla pre váš účet na [site:name].\r\n\r\nTeraz sa môžete prihlásiť kliknutím na uvedený link alebo jeho skopírovaním a vložením do vášho prehliadača:\r\n\r\n[user:one-time-login-url]\r\n\r\nTento prihlasovací link môže byť použitý iba raz a zavedie vás na stránku, na ktorej si môžete nastaviť nové heslo. Platnosť linku vyprší za jeden deň a ak ho nevyužijete, vaše prihlasovacie údaje sa nezmenia.\r\n\r\n--  Tím [site:name]"
@@ -10,6 +11,7 @@ register_no_approval_required:
   body: "[user:display-name],\r\n\r\nĎakujeme vám za registráciu na [site:name]. Teraz sa môžete prihlásiť kliknutím na uvedený link alebo jeho skopírovaním a vložením do vášho prehliadača:\r\n\r\n[user:one-time-login-url]\r\n\r\nTento prihlasovací link môže byť použitý iba raz a zavedie vás na stránku, na ktorej si môžete nastaviť heslo.\r\n\r\nPo nastavení hesla sa budete môcť prihlásiť na [site:login-url] s nasledujúcimi údajmi:\r\n\r\nprihlasovacie meno: [user:name]\r\nheslo: Vaše heslo\r\n\r\n--  Tím [site:name]"
   subject: 'Detaily účtu pre [user:display-name] na [site:name]'
 register_pending_approval:
+  body: "[user:display-name],\r\n\r\nThank you for registering at [site:name]. Your application for an account is currently pending approval. Once it has been approved, you will receive another email containing information about how to log in, set your password, and other details.\r\n\r\n--  [site:name] team"
   subject: 'Detaily účtu pre [user:display-name] na [site:name] (čaká sa na schválenie administrátorom)'
 register_pending_approval_admin:
   body: "[user:display-name] požiadal o schválenie účtu.\r\n\r\n[user:edit-url]"

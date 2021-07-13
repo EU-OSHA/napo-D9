@@ -1,0 +1,15 @@
+label: Ieškoti
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Ieškoti
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Ieškoti
+      title: "{% if(filters.search_api_fulltext == \"\") %} paieškos rezultatai {%endif%}\r\n{% if(filters.search_api_fulltext != \"\") %} \"{{ filters.search_api_fulltext }}\" paieškos rezultatai{%endif%}"
+      empty:
+        area_text_custom:
+          content: 'Rezultatų nerasta'

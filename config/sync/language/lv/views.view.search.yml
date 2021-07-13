@@ -1,0 +1,15 @@
+label: Meklēšana
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Meklēšana
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Meklēšana
+      title: 'Meklēšanas rezultāti{% if(filters.search_api_fulltext != "") %} par  "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Nav rezultātu'

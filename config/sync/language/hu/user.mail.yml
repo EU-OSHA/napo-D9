@@ -1,4 +1,5 @@
 cancel_confirm:
+  body: "[user:display-name],\r\n\r\nA request to cancel your account has been made at [site:name].\r\n\r\nYou may now cancel your account on [site:url-brief] by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:cancel-url]\r\n\r\nNOTE: The cancellation of your account is not reversible.\r\n\r\nThis link expires in one day and nothing will happen if it is not used.\r\n\r\n--  [site:name] team"
   subject: '[user:display-name] felhasználó fióktörlési kérelme [site:name] webhelyen'
 password_reset:
   body: "Kedves [user:display-name]!\r\n\r\n[site:name] webhelyen ennek a felhasználónak a nevében új jelszó lett kérve.\r\n\r\nErre a hivatkozásra kattintva, vagy a webcímet kimásolva és a böngésző címsorába beillesztve lehet bejelentkezni a webhelyre:\r\n\r\n[user:one-time-login-url]\r\n\r\nAz így megnyitott oldalon rögtön beállítható a jelszó.\r\n\r\nEz egy egyszer használható belépési mód. Egy nap után az érvényessége lejár, de semmilyen következménye nem lesz, ha nem használják fel.\r\n\r\n-- [site:name] csapata"

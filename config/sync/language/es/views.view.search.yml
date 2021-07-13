@@ -10,7 +10,7 @@ display:
         search_api_fulltext:
           expose:
             label: Buscar
-      title: 'Resultados  '
+      title: 'Resultados de búsqueda  {% if(filters.search_api_fulltext != "") %} de "{{ filters.search_api_fulltext }}" {%endif%}'
       empty:
         area_text_custom:
           content: 'Sin resultados'

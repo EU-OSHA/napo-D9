@@ -1,4 +1,5 @@
 cancel_confirm:
+  body: "[user:display-name],\r\n\r\nA request to cancel your account has been made at [site:name].\r\n\r\nYou may now cancel your account on [site:url-brief] by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:cancel-url]\r\n\r\nNOTE: The cancellation of your account is not reversible.\r\n\r\nThis link expires in one day and nothing will happen if it is not used.\r\n\r\n--  [site:name] team"
   subject: 'Sol·licitud de cancel·lació del compte de [user:display-name] a [site:name]'
 password_reset:
   body: "[user:display-name],\r\n\r\nS'ha realitzat una sol·licitud per restablir la contrasenya del compte [site:name].\r\n\r\nAra podeu iniciar la sessió fent clic en aquest enllaç o copiant-lo i enganxant-lo al vostre navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nAquest enllaç només es pot utilitzar una vegada per iniciar sessió i us conduirà a una pàgina on podeu configurar la vostra contrasenya. Caduca en un dia i no passarà res si no s'utilitza.\r\n\r\n--  L'equip de [site:name]"
@@ -10,6 +11,7 @@ register_no_approval_required:
   body: "[user:display-name],\r\n\r\nGràcies per registrar-vos a [site:name]. Ara podeu iniciar sessió fent clic en aquest enllaç o copiant-lo i enganxant-lo al vostre navegador:\r\n\r\n[user:one-time-login-url]\r\n\r\nAquest enllaç només es pot utilitzar una vegada per iniciar sessió i us conduirà a una pàgina on podeu configurar la vostra contrasenya.\r\n\r\nDesprés d'establir la vostra contrasenya, podreu iniciar sessió a [site:login-url] utilitzant en el futur:\r\n\r\nnom d’usuari: [user:name]\r\ncontrasenya: La vostra contrasenya\r\n\r\n--  L'equip de [site:name]"
   subject: 'Detalls del compte per [user:display-name] a [site:name]'
 register_pending_approval:
+  body: "[user:display-name],\r\n\r\nThank you for registering at [site:name]. Your application for an account is currently pending approval. Once it has been approved, you will receive another email containing information about how to log in, set your password, and other details.\r\n\r\n--  [site:name] team"
   subject: 'Detalls del compte per [user:display-name] a [site:name] (pendent d''aprovació per part de l''administrador)'
 register_pending_approval_admin:
   body: "[user:display-name] ha demanat un compte.\r\n\r\n[user:edit-url]"

@@ -1,0 +1,15 @@
+label: Търсене
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Търсене
+      title: 'Резултати от търсенето{% if(filters.search_api_fulltext != "") %} за "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Няма резултати'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Търсене

@@ -1,0 +1,15 @@
+label: Pretraživanje
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pretraživanje
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Pretraživanje
+      title: 'Rezultati pretraživanja {% if(filters.search_api_fulltext != "") %} za "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Nema rezultata'

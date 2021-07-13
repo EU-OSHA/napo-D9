@@ -1,0 +1,15 @@
+label: Zoeken
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Zoeken
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Zoeken
+      title: 'Zoekresultaten {% if(filters.search_api_fulltext != "") %} voor  "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Geen resultaten'

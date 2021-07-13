@@ -1,0 +1,15 @@
+label: Sök
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Sök
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Sök
+      title: 'Sökresultat {% if(filters.search_api_fulltext != "") %} för "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Inga resultat'

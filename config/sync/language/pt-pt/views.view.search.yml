@@ -1,0 +1,15 @@
+label: Pesquisar
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pesquisar
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Pesquisar
+      title: 'Resultados da busca {% if(filters.search_api_fulltext != "") %} para "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Sem resultados'
