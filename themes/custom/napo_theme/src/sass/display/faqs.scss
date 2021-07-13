@@ -25,6 +25,11 @@
         display:inline-block;
       }
     }
+    .view-content{
+      >div{
+        width:100%;
+      }
+    }
   }
   .view-footer{
     .node__title{

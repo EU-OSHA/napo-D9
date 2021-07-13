@@ -1940,6 +1940,9 @@ tr th {
 .block-views-blockfaqs-block .ui-accordion-content img {
   display: inline-block;
 }
+.block-views-blockfaqs-block .ui-accordion .view-content > div {
+  width: 100%;
+}
 .block-views-blockfaqs-block .view-footer .node__title {
   padding: 0.25rem 0.5rem;
   margin-bottom: 20px;
