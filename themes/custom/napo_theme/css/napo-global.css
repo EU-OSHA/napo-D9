@@ -121,6 +121,10 @@ div.pagerer-container {
   left: 100%;
   transform: translateX(-100%);
 }
+.ui-accordion .ui-accordion-header .field-content {
+  width: calc(100% - 2rem);
+  display: block;
+}
 .ui-accordion .ui-accordion-content {
   padding: 1.25rem 2.75rem;
   height: auto !important;
