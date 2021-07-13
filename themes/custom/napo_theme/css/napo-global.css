@@ -4296,6 +4296,11 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   font-weight: bold;
   font-size: 1.125rem;
 }
+.node--type-napo-video .conten-video-info-tags .categories .field__items .field__item + .field__item:before {
+  content: "|";
+  display: inline-block;
+  margin: 0.25rem;
+}
 .node--type-napo-video .conten-video-info-tags .categories .field__items .field__item h2 {
   font-size: 1.125rem;
   margin: 0;

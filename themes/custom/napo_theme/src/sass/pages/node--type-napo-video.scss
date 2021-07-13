@@ -160,6 +160,13 @@
         font-weight:bold;
         font-size:1.125rem;
         .field__item{
+          & + .field__item{
+            &:before{
+              content:"|";
+              display:inline-block;
+              margin:0.25rem;
+            }
+          }
           h2{
             font-size:1.125rem;
             margin:0;
