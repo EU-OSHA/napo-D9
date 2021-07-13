@@ -112,7 +112,8 @@
       </div>
     </div>
   </div>
-  <div class="content-accordions-download-custom">
+  <div class="content-custom">
+    <div class="content-accordions-custom">
     <h2>{{ 'Lesson' | trans }}</h2>
     <div class="introductory-text">
       {{  	content.field_lesson_intro_text}}
@@ -138,7 +139,10 @@
           {{ content.field_resources_required }}
         </div>
       </div>
-      {{ drupal_block('nma_download_block') }}
+    </div>
+    </div>
+    <div class="content-download-custom">
+    {{ drupal_block('nma_download_block') }}
     </div>
   </div>
 
