@@ -55,7 +55,7 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{ attributes.addClass(classes, 'field__items row') }}>
+    <div{{ attributes.addClass(classes, 'field__iteview-scenes-customms row') }}>
       {% for item in items %}
         <div{{ item.attributes.addClass('field__item col-lg-4 col-md-6 col-12') }}>{{ item.content }}
           <p>{{ item.content['#media'].field_media_image.title }}</p></div>

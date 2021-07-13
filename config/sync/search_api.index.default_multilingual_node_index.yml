@@ -4,46 +4,46 @@ status: true
 dependencies:
   module:
     - search_api_solr
-    - node
     - taxonomy
-    - path
+    - node
     - media
     - file
+    - path
     - search_api
   config:
-    - field.storage.node.body
-    - field.storage.node.field_combined_tags
+    - field.storage.node.field_tags
+    - field.storage.node.field_archived
     - field.storage.node.field_character_count
+    - field.storage.node.field_combined_tags
+    - field.storage.node.field_napo_film
+    - field.storage.node.field_download
+    - field.storage.taxonomy_term.field_excluded_from
+    - field.storage.node.field_main_tag
     - field.storage.node.field_expiration_date
     - field.storage.node.field_file_media
     - field.storage.node.field_image
+    - field.storage.taxonomy_term.field_image
     - field.storage.node.field_lesson_toolkit
     - field.storage.node.field_lesson_video
-    - field.storage.node.field_main_tag
+    - field.storage.media.field_media_oembed_video
+    - field.storage.node.field_video
+    - field.storage.media.field_media_video_file
+    - field.storage.node.field_msds_resources_required
+    - field.storage.node.field_msds_video
     - field.storage.taxonomy_term.field_nace_changes
-    - field.storage.taxonomy_term.field_thesaurus_code
     - field.storage.taxonomy_term.field_nace_code
-    - field.storage.taxonomy_term.field_tags_code
-    - field.storage.taxonomy_term.field_excluded_from
+    - field.storage.node.field_nace_codes
     - field.storage.taxonomy_term.field_nace_excludes
     - field.storage.taxonomy_term.field_nace_includes
     - field.storage.taxonomy_term.field_nace_includes_also
-    - field.storage.node.field_archived
-    - field.storage.node.field_msds_video
-    - field.storage.node.field_nace_codes
-    - field.storage.node.field_napo_film
-    - field.storage.node.field_download
     - field.storage.node.field_page_count
     - field.storage.node.field_publication_date
-    - field.storage.node.field_msds_resources_required
-    - field.storage.node.field_tags
-    - field.storage.taxonomy_term.field_image
+    - field.storage.taxonomy_term.field_tags_code
     - field.storage.node.field_target_ages
     - field.storage.node.field_thesaurus
-    - field.storage.node.field_video
+    - field.storage.taxonomy_term.field_thesaurus_code
     - field.storage.node.field_video_type
-    - field.storage.media.field_media_video_file
-    - field.storage.media.field_media_oembed_video
+    - field.storage.node.body
     - search_api.server.apache_solr
     - core.entity_view_mode.node.search_result
 third_party_settings:
@@ -861,6 +861,8 @@ processor_settings:
     excerpt_length: 256
     exclude_fields:
       - aggregated_field
+      - description
+      - field_combined_tags_2
       - field_nace_changes
       - field_nace_changes_1
       - field_nace_excludes
@@ -869,6 +871,7 @@ processor_settings:
       - field_nace_includes_1
       - field_nace_includes_also
       - field_nace_includes_also_1
+      - url
     prefix: '<strong><span class="highlighted">'
     suffix: '</span></strong>'
     weights:

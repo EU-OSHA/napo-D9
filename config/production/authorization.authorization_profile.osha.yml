@@ -18,7 +18,7 @@ provider_mappings:
     query: 'cn=ADMIN,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
     is_regex: false
   -
-    query: 'cn=APPROVE,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
+    query: 'cn=APPROVER,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
     is_regex: false
   -
     query: 'cn=EDIT,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
@@ -27,20 +27,45 @@ provider_mappings:
     query: 'cn=PM,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
     is_regex: false
   -
-    query: 'cn=REVIEW,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
+    query: 'cn=RVMN,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=EVENTCOOR,ou=MainSite,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=EVENTEDT,ou=MainSite,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=LAYVAL,ou=MainSite,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=TRLIAS,ou=MainSite,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=TRLMN,ou=MainSite,ou=Sites,dc=osha,dc=europa,dc=eu'
     is_regex: false
 consumer_config: {  }
 consumer_mappings:
   -
     role: administrator
   -
-    role: approver
+    role: none
   -
-    role: editor
+    role: none
   -
     role: project_manager
   -
-    role: reviewer
+    role: review_manager
+  -
+    role: none
+  -
+    role: none
+  -
+    role: layout_validator
+  -
+    role: translation_liaison
+  -
+    role: translation_manager
 synchronization_modes:
   user_logon: user_logon
 synchronization_actions:

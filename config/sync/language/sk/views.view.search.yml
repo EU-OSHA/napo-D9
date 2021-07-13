@@ -1,1 +1,15 @@
 label: Vyhľadávanie
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Vyhľadávanie
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Vyhľadávanie
+      title: 'Výsledky vyhľadávania {% if(filters.search_api_fulltext != "") %} pre "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Žiadne výsledky'

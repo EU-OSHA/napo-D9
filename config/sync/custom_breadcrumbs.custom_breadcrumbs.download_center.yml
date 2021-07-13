@@ -9,7 +9,7 @@ entityType: _none
 entityBundle: _none
 language: und
 breadcrumbPaths: /download-centre
-breadcrumbTitles: 'Download centre'
+breadcrumbTitles: '[current-page:title]'
 type: '2'
 pathPattern: /download-centre
 extraCacheContexts: ''

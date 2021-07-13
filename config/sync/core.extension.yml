@@ -83,6 +83,7 @@ module:
   media: 0
   media_library: 0
   media_library_form_element: 0
+  memcache: 0
   menu_breadcrumb: 0
   menu_item_extras: 0
   menu_link_content: 0
@@ -122,7 +123,6 @@ module:
   slick_views: 0
   sliderwidget: 0
   smart_trim: 0
-  smtp: 0
   social_media_links: 0
   spamspan: 0
   system: 0

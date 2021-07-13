@@ -218,6 +218,16 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 1
+          4f06e584-2f20-4019-a4e9-b662966d26fa:
+            uuid: 4f06e584-2f20-4019-a4e9-b662966d26fa
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:article:content_moderation_control'
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
@@ -225,7 +235,12 @@ id: node.article.full
 targetEntityType: node
 bundle: article
 mode: full
-content: {  }
+content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: first
 hidden:
   addtoany: true
   body: true

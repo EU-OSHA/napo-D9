@@ -31,6 +31,10 @@
       height: 44px;
       left: 100%;transform: translateX(-100%);
     }
+    .field-content{
+      width:calc(100% - 2rem);
+      display:block;
+    }
   }
   & &-content{
     padding: 1.25rem 2.75rem;

@@ -123,6 +123,7 @@
         display: block;
         width: 72%;
         padding-right: 15px;
+        font-weight:bold;
       }
     }
     .cart{
@@ -159,6 +160,7 @@
       height: calc(100% - 100px);
       transform:translateY(calc(-100% - 100px));
       transition:transform 0.3s ease-in;
+      font-size: 1.125rem;
     }
     .views-field-nothing{
       position:relative;
@@ -250,6 +252,7 @@
     background-color: transparent;
     border-radius: 0px;
     display:block;
+    font-size: 1rem;
   }
 }
 .download-video{

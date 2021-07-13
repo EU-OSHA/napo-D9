@@ -1,1 +1,15 @@
 label: Išči
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Išči
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Išči
+      title: 'Rezultati iskanja {% if(filters.search_api_fulltext != "") %} za "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Ni zadetkov'

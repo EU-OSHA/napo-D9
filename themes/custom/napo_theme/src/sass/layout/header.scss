@@ -105,6 +105,23 @@
       background: url(/sites/napo/themes/custom/napo_theme/images/a-plus.png);
       font-size:1.25rem;
     }
+    .block-napo-content-cart{
+      .header-download-centre{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        &:after{
+          content:'';
+          display:inline-block;
+          background: url(/sites/napo/themes/custom/napo_theme/images/download-icon.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 1.5rem;
+          height:1.5rem;
+          margin-left:0.5rem;
+        }
+      }
+    }
   }
   .region-header-logo{
     img{
@@ -134,6 +151,9 @@
   }
   &_nav{
     text-align:right;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
   #navbar-main{
     padding:0rem;
@@ -156,14 +176,15 @@
       border-radius: 3.875rem;
       border: 0 ;
       min-height: 3.875rem;
-      margin-right: 0.625rem;
+      margin-right: 0.5rem;
       background: $bg-color-blue;
       height: 100%;
-      padding:0rem 1rem ;
+      padding:0rem 0.875rem ;
       vertical-align: middle;
       display: flex;
       align-items: center;
       cursor:pointer;
+      font-size:0.9375rem;
 
       &:first-of-type{
         width: 64px;

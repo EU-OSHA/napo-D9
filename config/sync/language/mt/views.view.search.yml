@@ -1,0 +1,15 @@
+label: Fittex
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Fittex
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Fittex
+      title: 'Fittex riżultati {% if(filters.search_api_fulltext != "") %} għal "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'L-ebda riżultati'

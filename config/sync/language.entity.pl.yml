@@ -5,5 +5,5 @@ dependencies: {  }
 id: pl
 label: Polish
 direction: ltr
-weight: 4
+weight: 5
 locked: false

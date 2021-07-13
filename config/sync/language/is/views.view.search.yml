@@ -1,0 +1,15 @@
+label: Leita
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Leita
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Leita
+      title: 'Leitarniðurstöður {% if(filters.search_api_fulltext != "") %} fyrir  "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Engar niðurstöður'
