@@ -5,5 +5,5 @@ dependencies: {  }
 id: es
 label: Spanish
 direction: ltr
-weight: -9
+weight: -8
 locked: false

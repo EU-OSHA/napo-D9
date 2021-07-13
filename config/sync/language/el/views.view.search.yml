@@ -1,0 +1,15 @@
+label: Αναζήτηση
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Αναζήτηση
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Αναζήτηση
+      title: 'Αναζήτηση αποτελεσμάτων {% if(filters.search_api_fulltext != "") %} για  "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Δεν υπάρχουν αποτελέσματα'

@@ -1,0 +1,15 @@
+label: Keresés
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Keresés
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Keresés
+      title: 'Keresési eredmények{% if(filters.search_api_fulltext != "") %} fa következőre: "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Nincs eredmény'

@@ -7,7 +7,7 @@ dependencies:
     - field.storage.node.body
     - node.type.faq
   content:
-    - 'node:article:381ad751-a099-4043-8652-a6555f77b1e7'
+    - 'node:article:b756b539-f4a4-41e1-9ab9-eb44951fe013'
   module:
     - draggableviews
     - node
@@ -422,7 +422,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          target: 381ad751-a099-4043-8652-a6555f77b1e7
+          target: b756b539-f4a4-41e1-9ab9-eb44951fe013
           view_mode: default
           bypass_access: false
           plugin_id: entity

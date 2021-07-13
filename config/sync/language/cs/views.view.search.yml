@@ -1,0 +1,15 @@
+label: Vyhledávání
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Vyhledávání
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Vyhledávání
+      title: 'Výsledky vyhledávání{% if(filters.search_api_fulltext != "") %} pro "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Žádné výsledky'

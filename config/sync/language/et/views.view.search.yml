@@ -1,0 +1,15 @@
+label: Otsing
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Otsing
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Otsing
+      title: "{% if(filters.search_api_fulltext == \"\") %}  Otsingu tulemused {%endif%}\r\n{% if(filters.search_api_fulltext != \"\") %}  Otsingu  \"{{ filters.search_api_fulltext }}\" tulemused{%endif%}"
+      empty:
+        area_text_custom:
+          content: 'Tulemusi ei ole'

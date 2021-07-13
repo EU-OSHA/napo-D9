@@ -6,13 +6,13 @@ id: osha_write
 label: 'Osha write'
 type: openldap
 account_name_attr: ''
-address: 194.30.35.128
+address: 194.30.34.30
 basedn:
   - 'ou=people,dc=osha,dc=europa,dc=eu'
   - 'ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
 bind_method: service_account
 binddn: 'cn=Reader,dc=osha,dc=europa,dc=eu'
-bindpw: null
+bindpw: xiy5kup4je.3
 encryption: none
 grp_derive_from_dn_attr: ''
 grp_derive_from_dn: false

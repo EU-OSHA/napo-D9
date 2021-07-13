@@ -892,7 +892,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<div class="cart">{{content_cart}}<a href="#">Add to download centre</a></div>'
+            text: "<div class=\"cart\">{{content_cart}}<a href=\"#\">Add to download centre</a></div>\r\n<div class=\"cart\">{{ ncc_download }}</div>"
             make_link: false
             path: ''
             absolute: false

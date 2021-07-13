@@ -1,0 +1,15 @@
+label: Hae
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Hae
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Hae
+      title: 'Tulokset haulle {% if(filters.search_api_fulltext != "") %}  "{{ filters.search_api_fulltext }}" {%endif%}'
+      empty:
+        area_text_custom:
+          content: 'Ei tuloksia'
