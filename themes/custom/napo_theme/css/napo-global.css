@@ -1937,6 +1937,12 @@ tr th {
   padding-left: 2.2rem;
   font-size: 1rem;
 }
+.block-views-blockfaqs-block .ui-accordion-content img {
+  display: inline-block;
+}
+.block-views-blockfaqs-block .ui-accordion .view-content > div {
+  width: 100%;
+}
 .block-views-blockfaqs-block .view-footer .node__title {
   padding: 0.25rem 0.5rem;
   margin-bottom: 20px;
@@ -2043,6 +2049,7 @@ tr th {
   transform: translateY(-10%);
 }
 
+.view-id-msds_resources_and_cs .views-field-nothing,
 .view-lesson-related-lesson .views-field-nothing {
   border-radius: 0rem 0rem 1.25rem 1.25rem;
   overflow: hidden;
@@ -2051,15 +2058,18 @@ tr th {
   border: 2px solid #1f3695;
   height: 100%;
 }
+.view-id-msds_resources_and_cs .views-field-nothing .field-content > a img:hover,
 .view-lesson-related-lesson .views-field-nothing .field-content > a img:hover {
   opacity: 0.6;
   filter: grayscale(1);
   transform: scale(1.2);
   transition: all 1.5s;
 }
+.view-id-msds_resources_and_cs .views-field-nothing img,
 .view-lesson-related-lesson .views-field-nothing img {
   width: 100%;
 }
+.view-id-msds_resources_and_cs .views-field-nothing .related-item-content,
 .view-lesson-related-lesson .views-field-nothing .related-item-content {
   position: relative;
   display: flex;
@@ -2073,25 +2083,39 @@ tr th {
   text-align: center;
   padding: 1.25rem 1.25rem 0;
 }
+.view-id-msds_resources_and_cs .views-field-nothing .related-item-content h3,
 .view-lesson-related-lesson .views-field-nothing .related-item-content h3 {
   font-size: 1rem;
   font-weight: bold;
   color: #FFF;
   margin: 0.625rem 0;
 }
+.view-id-msds_resources_and_cs .views-field-nothing .related-item-content a,
 .view-lesson-related-lesson .views-field-nothing .related-item-content a {
   color: inherit;
 }
+.view-id-msds_resources_and_cs .views-field-nothing .keyword-list,
 .view-lesson-related-lesson .views-field-nothing .keyword-list {
   color: #9FA8D1;
   font-size: 0.875rem;
 }
+.view-id-msds_resources_and_cs .views-field-nothing .keyword-list .label-keyword,
+.view-id-msds_resources_and_cs .views-field-nothing .keyword-list .keyword-label,
 .view-lesson-related-lesson .views-field-nothing .keyword-list .label-keyword,
 .view-lesson-related-lesson .views-field-nothing .keyword-list .keyword-label {
   color: #FFF;
 }
+.view-id-msds_resources_and_cs .views-field-nothing .keyword-list .keyword-tag,
 .view-lesson-related-lesson .views-field-nothing .keyword-list .keyword-tag {
   margin-left: 0.25rem;
+}
+
+.view-msds-resources-and-cs > .view-content > .views-row {
+  height: 18.75rem;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 1rem 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .view-lesson-related-lesson .views-field-nothing {
@@ -2111,6 +2135,38 @@ tr th {
   height: auto;
   position: relative;
   transform: translateY(-10%);
+}
+
+.view-id-msds_resources_and_cs .views-field-nothing {
+  height: 18.75rem;
+  margin: 1rem;
+}
+.view-id-msds_resources_and_cs .views-field-nothing .field-content > a {
+  height: 177px;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+}
+.view-id-msds_resources_and_cs .views-field-nothing .field-content > a img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  transform: translateY(-10%);
+}
+
+.view-id-msds_resources_and_cs {
+  display: flex;
+  flex-direction: row;
+}
+.view-id-msds_resources_and_cs > .view-content {
+  flex: 0 0 66%;
+}
+.view-id-msds_resources_and_cs > .attachment-after {
+  display: none;
+  flex: 0 0 33%;
+}
+.view-id-msds_resources_and_cs > .attachment-after .view-id-msds_resources_and_cs > .view-content {
+  flex: 0 0 100%;
 }
 
 .related .views-element-container,
