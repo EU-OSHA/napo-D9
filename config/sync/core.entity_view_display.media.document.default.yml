@@ -10,7 +10,7 @@ dependencies:
     - field.field.media.document.field_thesaurus
     - media.type.document
   module:
-    - file
+    - file_download_link
     - text
 _core:
   default_config_hash: DXitcriWmE5QHvGvk2OzWouaSnXD5uipkRdAG6_pnkg
@@ -28,9 +28,14 @@ content:
     region: content
   field_media_document:
     label: visually_hidden
-    settings: {  }
+    settings:
+      link_text: '[media:name]'
+      force_download: true
+      link_title: ''
+      custom_classes: ''
+      new_tab: false
     third_party_settings: {  }
-    type: file_default
+    type: file_download_link
     weight: 1
     region: content
   field_nace_codes:
@@ -58,6 +63,7 @@ content:
     type: entity_reference_label
     region: content
 hidden:
+  breadcrumbs: true
   created: true
   langcode: true
   name: true
