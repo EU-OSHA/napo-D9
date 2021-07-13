@@ -1259,6 +1259,8 @@ tr th {
 .header_nav {
   text-align: right;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 .header #navbar-main {
   padding: 0rem;

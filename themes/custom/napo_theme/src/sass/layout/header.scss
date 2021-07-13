@@ -152,6 +152,8 @@
   &_nav{
     text-align:right;
     display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
   #navbar-main{
     padding:0rem;
