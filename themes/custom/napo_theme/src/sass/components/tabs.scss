@@ -6,13 +6,15 @@
   margin-top: 45px;
   border-radius:0;
   .list-group-item{
-    display:inline-block;
+    display:inline-flex;
     vertical-align:bottom;
     background-color: $bg-color-blue-light;
     border:none;
     padding:0rem;
     margin:0rem;
     height:1.625rem;
+    flex-direction: row;
+    align-items: center;
     &.active{
       background-color: $bg-color-yellow;
       z-index: 2;

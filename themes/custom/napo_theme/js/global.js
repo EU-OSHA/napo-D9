@@ -31,6 +31,31 @@
           }, 2000);
         });
       });
+
+
+
+
+      //Play home video
+      $( document ).ready(function() {
+
+        let homeVideo=$('.block-views-blockfrontpage-custom-video-block').find('video');
+        let playHomeVideo=false;
+
+        $('#block-views-block-frontpage-custom-video-block').append('<div class="play-button-container"><span class="button-play"></span></div>');
+
+        $('.block-views-blockfrontpage-custom-video-block').on('click','.play-button-container', function() {
+          if(playHomeVideo==false) {
+            homeVideo.get()[0].play();
+            $('.block-views-blockfrontpage-custom-video-block').stop().addClass('video-run');
+            playHomeVideo = true;
+          }
+          else if(playHomeVideo==true) {
+            homeVideo.get()[0].pause();
+            $('.block-views-blockfrontpage-custom-video-block').stop().removeClass('video-run');
+            playHomeVideo = false;
+          }
+        });
+      });
     }
   };
 
@@ -90,6 +115,8 @@
       $('#block-searchapi .form-item-search-api-fulltext').after('<div class="btn-search-custom-mobile"></div>');
     }
 
+
+
   });
 
 
@@ -100,6 +127,7 @@
     $('#header').on('click', '.btn-search-custom-mobile', function () {
       $('#block-searchapi').toggleClass('in');
     });
+
   });
 
 
@@ -134,11 +162,9 @@
     $('.field--name-field-msds-video').find('video').each(function(){
       let videoSource =  $(this).find('source').attr('src');
       let videoSourceFormat = videoSource.split('.');
-      $(this).closest('.field--name-field-media-video-file').closest('.field__item').addClass('video-custom-'+videoSourceFormat[1]);
+      $(this).closest('.contextual-region').parent().addClass('video-custom-'+videoSourceFormat[1]);
     });
   });
-
-
 
 
   // Show results in Napo Films
@@ -160,6 +186,38 @@
 
 
 
-
+  // Play "Napor for teachers" and "Napor in the workplace" videos
+  $('.video-custom').each(function(){
+    let $video=$(this).find('video');
+    let playVideo=false;
+    $(this).on('click', '.video-custom__image', function () {
+      if (playVideo==false && !$(this).closest('.video-custom').hasClass('playingVideoCustom')) {
+        $video.get()[0].play();
+        $(this).closest('.video-custom').stop().addClass('playingVideoCustom');
+        playVideo=true;
+      }
+    });
+    $(this).on('click', 'video', function () {
+      if (playVideo==true) {
+        $(this).closest('.video-custom').stop().toggleClass('pauseVideoCustom');
+      }
+    });
+    $(this).on('click', '.video-custom__playButton', function () {
+      if (playVideo==false && !$(this).closest('.video-custom').hasClass('playingVideoCustom')) {
+        $video.get()[0].play();
+        $(this).closest('.video-custom').stop().addClass('playingVideoCustom');
+        playVideo=true;
+      }
+      else if (playVideo==true) {
+        $(this).closest('.video-custom').stop().toggleClass('pauseVideoCustom');
+        if ($(this).closest('.video-custom').hasClass('pauseVideoCustom')) {
+          $video.get()[0].pause();
+        }
+        else{
+          $video.get()[0].play();
+        }
+      }
+    });
+  });
 })(jQuery, Drupal);
 

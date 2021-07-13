@@ -61,6 +61,11 @@
 #}
 {{ attach_library('bootstrap_barrio/node') }}
 
+
+{% set videoId = content.field_lesson_video ['#items'].0.target_id  %}
+{% set videoEntity = drupal_entity('node',videoId) %}
+{% set imageTarget = videoEntity['#node'].field_image.0.entity.label  %}
+
 {%
   set classes = [
     'node',
@@ -79,18 +84,22 @@
 
 {#{{ path('entity.node.canonical', {'node':  node.id}) }}#}
 
+{#{{ drupal_dump (content.field_lesson_video) }}#}
+
 
 <div class="back-button-custom"><a href="/learning-with-napo/napo-for-teachers">{{ 'Back to Napo for teachers' | trans }}</a></div>
 <article{{ attributes.addClass(classes) }}>
   <div class="page-banner-custom">
     <div class="video-custom" id="videoCustom">
       {{ content.field_lesson_video }}
+      <img src="/sites/napo/files/images/lesson_video/{{ imageTarget }}" class="video-custom__image" />
+      <button type="button" class="video-custom__playButton playButton-1" id="videoPlayCustomButton"></button>
     </div>
     <div class="content-text-facilitator-custom">
       <div class="introductory-text">
 {{ content.field_lesson_video.0['#node'].body.value | striptags }}
       </div>
-      <div class="facilitator-guidance">-item{}
+      <div class="facilitator-guidance">
         <div class="title-box">
           {{ 'Teacher guidance' | trans }}
         </div>

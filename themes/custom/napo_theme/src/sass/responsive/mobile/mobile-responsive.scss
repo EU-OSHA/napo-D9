@@ -206,7 +206,8 @@
   .container.header_navbar_container{
     padding:0px;
   }
-  .custom-select {
+  .custom-select,
+  .lang-dropdown-select-element.form-select{
     background: $bg-color-blue;
     color: $text-color-white;
     font-size: 1.125rem;
