@@ -12,7 +12,7 @@ basedn:
   - 'ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
 bind_method: service_account
 binddn: 'cn=Reader,dc=osha,dc=europa,dc=eu'
-bindpw: xiy5kup4je.3
+bindpw: null
 encryption: none
 grp_derive_from_dn_attr: ''
 grp_derive_from_dn: false
