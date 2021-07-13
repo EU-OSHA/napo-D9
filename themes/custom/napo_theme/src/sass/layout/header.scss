@@ -151,6 +151,7 @@
   }
   &_nav{
     text-align:right;
+    display:flex;
   }
   #navbar-main{
     padding:0rem;
@@ -173,14 +174,15 @@
       border-radius: 3.875rem;
       border: 0 ;
       min-height: 3.875rem;
-      margin-right: 0.625rem;
+      margin-right: 0.5rem;
       background: $bg-color-blue;
       height: 100%;
-      padding:0rem 1rem ;
+      padding:0rem 0.875rem ;
       vertical-align: middle;
       display: flex;
       align-items: center;
       cursor:pointer;
+      font-size:0.9375rem;
 
       &:first-of-type{
         width: 64px;

@@ -1258,6 +1258,7 @@ tr th {
 }
 .header_nav {
   text-align: right;
+  display: flex;
 }
 .header #navbar-main {
   padding: 0rem;
@@ -1280,14 +1281,15 @@ tr th {
   border-radius: 3.875rem;
   border: 0;
   min-height: 3.875rem;
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
   background: #1f3695;
   height: 100%;
-  padding: 0rem 1rem;
+  padding: 0rem 0.875rem;
   vertical-align: middle;
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-size: 0.9375rem;
 }
 .header .nav-item:first-of-type {
   width: 64px;
