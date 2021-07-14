@@ -2049,7 +2049,7 @@ tr th {
   transform: translateY(-10%);
 }
 
-.view-id-msds_resources_and_cs .views-field-nothing,
+/*** Related Lessons  ***/
 .view-lesson-related-lesson .views-field-nothing {
   border-radius: 0rem 0rem 1.25rem 1.25rem;
   overflow: hidden;
@@ -2058,18 +2058,15 @@ tr th {
   border: 2px solid #1f3695;
   height: 100%;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .field-content > a img:hover,
-.view-lesson-related-lesson .views-field-nothing .field-content > a img:hover {
+.view-lesson-related-lesson .views-field-nothing .field-content a img:hover {
   opacity: 0.6;
   filter: grayscale(1);
   transform: scale(1.2);
   transition: all 1.5s;
 }
-.view-id-msds_resources_and_cs .views-field-nothing img,
 .view-lesson-related-lesson .views-field-nothing img {
   width: 100%;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .related-item-content,
 .view-lesson-related-lesson .views-field-nothing .related-item-content {
   position: relative;
   display: flex;
@@ -2083,39 +2080,25 @@ tr th {
   text-align: center;
   padding: 1.25rem 1.25rem 0;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .related-item-content h3,
 .view-lesson-related-lesson .views-field-nothing .related-item-content h3 {
   font-size: 1rem;
   font-weight: bold;
   color: #FFF;
   margin: 0.625rem 0;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .related-item-content a,
 .view-lesson-related-lesson .views-field-nothing .related-item-content a {
   color: inherit;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .keyword-list,
 .view-lesson-related-lesson .views-field-nothing .keyword-list {
   color: #9FA8D1;
   font-size: 0.875rem;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .keyword-list .label-keyword,
-.view-id-msds_resources_and_cs .views-field-nothing .keyword-list .keyword-label,
 .view-lesson-related-lesson .views-field-nothing .keyword-list .label-keyword,
 .view-lesson-related-lesson .views-field-nothing .keyword-list .keyword-label {
   color: #FFF;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .keyword-list .keyword-tag,
 .view-lesson-related-lesson .views-field-nothing .keyword-list .keyword-tag {
   margin-left: 0.25rem;
-}
-
-.view-msds-resources-and-cs > .view-content > .views-row {
-  height: 18.75rem;
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding: 1rem 0.5rem;
-  margin-bottom: 1rem;
 }
 
 .view-lesson-related-lesson .views-field-nothing {
@@ -2137,41 +2120,118 @@ tr th {
   transform: translateY(-10%);
 }
 
-.view-id-msds_resources_and_cs .views-field-nothing {
-  height: 18.75rem;
-  margin: 1rem;
+.related .views-element-container,
+.view-lesson-related-lesson .views-row {
+  width: 100%;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .field-content > a {
+
+/*** Related Resources  ***/
+.related .views-field-nothing {
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
+  overflow: hidden;
+  min-height: 17.5rem;
+  position: relative;
+  border: 2px solid #1f3695;
+  height: 100%;
+  background-color: #1f3695;
+}
+.related .views-field-nothing .field-content a img:hover,
+.related .views-field-nothing .field-content .related-lessons-item-cs a img:hover {
+  opacity: 0.6;
+  filter: grayscale(1);
+  transform: scale(1.2);
+  transition: all 1.5s;
+}
+.related .views-field-nothing img {
+  width: 100%;
+}
+.related .views-field-nothing .related-item-content,
+.related .views-field-nothing .related-item-content-cs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/background-items.png);
+  background-repeat: repeat-x;
+  background-position: top left;
+  background-color: #1f3695;
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  padding: 1.25rem 1.25rem 0;
+}
+.related .views-field-nothing .related-item-content h3,
+.related .views-field-nothing .related-item-content-cs h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFF;
+  margin: 0.625rem 0;
+}
+.related .views-field-nothing .related-item-content a,
+.related .views-field-nothing .related-item-content-cs a {
+  color: inherit;
+}
+.related .views-field-nothing .related-item-content a[target=_blank],
+.related .views-field-nothing .related-item-content-cs a[target=_blank] {
+  display: flex;
+  align-items: center;
+  line-height: 1.5rem;
+}
+.related .views-field-nothing .related-item-content a[target=_blank]:after,
+.related .views-field-nothing .related-item-content-cs a[target=_blank]:after {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png) center no-repeat;
+}
+.related .views-field-nothing .keyword-list {
+  color: #9FA8D1;
+  font-size: 0.875rem;
+}
+.related .views-field-nothing .keyword-list .label-keyword,
+.related .views-field-nothing .keyword-list .keyword-label {
+  color: #FFF;
+}
+.related .views-field-nothing .keyword-list .keyword-tag {
+  margin-left: 0.25rem;
+}
+
+.related .views-field-nothing {
+  height: 18.75rem;
+  margin: 1rem 0;
+}
+.related .views-field-nothing .field-content > a {
   height: 177px;
   overflow: hidden;
   text-align: center;
   display: block;
+  background-color: #FFF;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .field-content > a img {
+.related .views-field-nothing .field-content > a img {
   width: 100%;
   height: auto;
   position: relative;
   transform: translateY(-10%);
 }
+.related .views-field-nothing .field-content .related-lessons-item-cs > a {
+  height: 177px;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  background-color: #FFF;
+}
+.related .views-field-nothing .field-content .related-lessons-item-cs > a img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  transform: translateY(0%);
+}
 
 .view-id-msds_resources_and_cs {
   display: flex;
   flex-direction: row;
-}
-.view-id-msds_resources_and_cs > .view-content {
-  flex: 0 0 66%;
-}
-.view-id-msds_resources_and_cs > .attachment-after {
-  display: none;
-  flex: 0 0 33%;
-}
-.view-id-msds_resources_and_cs > .attachment-after .view-id-msds_resources_and_cs > .view-content {
-  flex: 0 0 100%;
-}
-
-.related .views-element-container,
-.view-lesson-related-lesson .views-row {
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .view-napo-s-film-episodes .views-row {

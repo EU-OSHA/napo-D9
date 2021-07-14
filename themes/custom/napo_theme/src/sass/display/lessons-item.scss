@@ -74,7 +74,9 @@
   }
 }
 
-.view-id-msds_resources_and_cs,
+
+/*** Related Lessons  ***/
+
 .view-lesson-related-lesson {
   .views-field-nothing {
     border-radius: 0rem 0rem 1.25rem 1.25rem;
@@ -84,7 +86,7 @@
     border: 2px solid $text-color-blue;
     height:100%;
     .field-content{
-      >a{
+      a{
         img{
           &:hover{
             opacity: 0.6;
@@ -97,7 +99,6 @@
     img{
       width:100%;
     }
-
     .related-item-content{
       position: relative;
       display: flex;
@@ -133,22 +134,6 @@
     }
   }
 }
-
-
-.view-msds-resources-and-cs {
-    >.view-content{
-      >.views-row{
-        height: 18.75rem;
-        flex:0 0 50%;
-        max-width: 50%;
-        padding: 1rem 0.5rem;
-        margin-bottom:1rem;
-      }
-    }
-}
-
-
-
 .view-lesson-related-lesson {
   .views-field-nothing {
     height: 18.75rem;
@@ -172,17 +157,99 @@
     }
   }
 }
+.related .views-element-container,
+.view-lesson-related-lesson .views-row{
+  width:100%;
+}
 
-.view-id-msds_resources_and_cs{
+
+
+/*** Related Resources  ***/
+
+.related{
+  .views-field-nothing {
+    border-radius: 0rem 0rem 1.25rem 1.25rem;
+    overflow: hidden;
+    min-height: 17.5rem;
+    position: relative;
+    border: 2px solid $text-color-blue;
+    height:100%;
+    background-color: $bg-color-blue;
+    .field-content,
+    .field-content .related-lessons-item-cs{
+      a{
+        img{
+          &:hover{
+            opacity: 0.6;
+            filter: grayscale(1);
+            transform: scale(1.2);
+            transition: all 1.5s;
+          }
+        }
+      }}
+    img{
+      width:100%;
+    }
+    .related-item-content,
+    .related-item-content-cs{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-image: url(/sites/napo/themes/custom/napo_theme/images/background-items.png)  ;
+      background-repeat: repeat-x;
+      background-position: top left;
+      background-color: $bg-color-blue;
+      width: 100%;
+      min-height: 100%;
+      text-align: center;
+      padding: 1.25rem 1.25rem 0;
+      h3{
+        font-size: 1rem;
+        font-weight: bold;
+        color: $text-color-white;
+        margin: 0.625rem 0;
+      }
+      a {
+        color:inherit;
+        &[target="_blank"]{
+          display:flex;
+          align-items: center;
+          line-height: 1.5rem;
+          &:after{
+            content:"";
+            display:inline-block;
+            width:1.5rem;
+            height: 1.5rem;
+            background: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png) center no-repeat;
+          }
+        }
+      }
+    }
+    .keyword-list{
+      color:$text-color-grey-blue;
+      font-size: 0.875rem;
+      .label-keyword,
+      .keyword-label{
+        color: $text-color-white;
+      }
+      .keyword-tag{
+        margin-left:0.25rem;
+      }
+    }
+  }
+}
+
+.related {
   .views-field-nothing {
     height: 18.75rem;
-    margin: 1rem;
+    margin: 1rem 0;
     .field-content{
       > a {
         height: 177px;
         overflow: hidden;
         text-align: center;
         display: block;
+        background-color: $bg-color-white;
 
         img {
           width: 100%;
@@ -192,27 +259,30 @@
         }
       }
     }
-  }
-}
-.view-id-msds_resources_and_cs{
-  display:flex;
-  flex-direction: row;
-  >.view-content{
-    flex:0 0 66%;
-  }
-  >.attachment-after{
-    display:none;
-    flex:0 0 33%;
-    .view-id-msds_resources_and_cs{
-      >.view-content{
-        flex:0 0 100%;
+
+    .field-content .related-lessons-item-cs{
+      > a {
+        height: 177px;
+        overflow: hidden;
+        text-align: center;
+        display: block;
+        background-color: $bg-color-white;
+
+        img {
+          width: 100%;
+          height: auto;
+          position: relative;
+          transform: translateY(0%);
+        }
       }
     }
   }
 }
 
-
-.related .views-element-container,
-.view-lesson-related-lesson .views-row{
+.view-id-msds_resources_and_cs {
+  display:flex;
+  flex-direction: row;
   width:100%;
+  flex-wrap: wrap;
+
 }
