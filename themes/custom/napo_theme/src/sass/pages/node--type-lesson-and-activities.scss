@@ -322,11 +322,20 @@
       margin: 0.625rem 0rem;
     }
   }
-
+  #main-wrapper{
+    >.container{
+      position:relative;
+      .content-page-content{
+        >.col-12{
+          position:static;
+        }
+      }
+    }
+  }
   .back-button-custom {
     position: absolute;
     z-index: 1;
-    top: -6.5rem;
+    top:3rem;
     right:auto;
     left: 15px;
     margin-bottom:0.625rem;

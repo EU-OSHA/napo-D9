@@ -1,12 +1,14 @@
 .disclaimer{
-  h2{
-    font-size:1.625rem;
-    font-weight:700;
-    color:$text-color-blue;
-  }
-  h3{
-    font-size:1.375rem;
-    font-weight:700;
-    color:$text-color-blue;
+  #main-wrapper {
+    h2{
+      font-size:1.625rem;
+      font-weight:700;
+      color:$text-color-blue;
+    }
+    h3{
+      font-size:1.375rem;
+      font-weight:700;
+      color:$text-color-blue;
+    }
   }
 }
