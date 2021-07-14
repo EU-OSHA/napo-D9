@@ -2049,7 +2049,7 @@ tr th {
   transform: translateY(-10%);
 }
 
-.view-id-msds_resources_and_cs .views-field-nothing,
+/*** Related Lessons  ***/
 .view-lesson-related-lesson .views-field-nothing {
   border-radius: 0rem 0rem 1.25rem 1.25rem;
   overflow: hidden;
@@ -2058,18 +2058,15 @@ tr th {
   border: 2px solid #1f3695;
   height: 100%;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .field-content > a img:hover,
-.view-lesson-related-lesson .views-field-nothing .field-content > a img:hover {
+.view-lesson-related-lesson .views-field-nothing .field-content a img:hover {
   opacity: 0.6;
   filter: grayscale(1);
   transform: scale(1.2);
   transition: all 1.5s;
 }
-.view-id-msds_resources_and_cs .views-field-nothing img,
 .view-lesson-related-lesson .views-field-nothing img {
   width: 100%;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .related-item-content,
 .view-lesson-related-lesson .views-field-nothing .related-item-content {
   position: relative;
   display: flex;
@@ -2083,39 +2080,25 @@ tr th {
   text-align: center;
   padding: 1.25rem 1.25rem 0;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .related-item-content h3,
 .view-lesson-related-lesson .views-field-nothing .related-item-content h3 {
   font-size: 1rem;
   font-weight: bold;
   color: #FFF;
   margin: 0.625rem 0;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .related-item-content a,
 .view-lesson-related-lesson .views-field-nothing .related-item-content a {
   color: inherit;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .keyword-list,
 .view-lesson-related-lesson .views-field-nothing .keyword-list {
   color: #9FA8D1;
   font-size: 0.875rem;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .keyword-list .label-keyword,
-.view-id-msds_resources_and_cs .views-field-nothing .keyword-list .keyword-label,
 .view-lesson-related-lesson .views-field-nothing .keyword-list .label-keyword,
 .view-lesson-related-lesson .views-field-nothing .keyword-list .keyword-label {
   color: #FFF;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .keyword-list .keyword-tag,
 .view-lesson-related-lesson .views-field-nothing .keyword-list .keyword-tag {
   margin-left: 0.25rem;
-}
-
-.view-msds-resources-and-cs > .view-content > .views-row {
-  height: 18.75rem;
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding: 1rem 0.5rem;
-  margin-bottom: 1rem;
 }
 
 .view-lesson-related-lesson .views-field-nothing {
@@ -2137,41 +2120,118 @@ tr th {
   transform: translateY(-10%);
 }
 
-.view-id-msds_resources_and_cs .views-field-nothing {
-  height: 18.75rem;
-  margin: 1rem;
+.related .views-element-container,
+.view-lesson-related-lesson .views-row {
+  width: 100%;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .field-content > a {
+
+/*** Related Resources  ***/
+.related .views-field-nothing {
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
+  overflow: hidden;
+  min-height: 17.5rem;
+  position: relative;
+  border: 2px solid #1f3695;
+  height: 100%;
+  background-color: #1f3695;
+}
+.related .views-field-nothing .field-content a img:hover,
+.related .views-field-nothing .field-content .related-lessons-item-cs a img:hover {
+  opacity: 0.6;
+  filter: grayscale(1);
+  transform: scale(1.2);
+  transition: all 1.5s;
+}
+.related .views-field-nothing img {
+  width: 100%;
+}
+.related .views-field-nothing .related-item-content,
+.related .views-field-nothing .related-item-content-cs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/background-items.png);
+  background-repeat: repeat-x;
+  background-position: top left;
+  background-color: #1f3695;
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  padding: 1.25rem 1.25rem 0;
+}
+.related .views-field-nothing .related-item-content h3,
+.related .views-field-nothing .related-item-content-cs h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFF;
+  margin: 0.625rem 0;
+}
+.related .views-field-nothing .related-item-content a,
+.related .views-field-nothing .related-item-content-cs a {
+  color: inherit;
+}
+.related .views-field-nothing .related-item-content a[target=_blank],
+.related .views-field-nothing .related-item-content-cs a[target=_blank] {
+  display: flex;
+  align-items: center;
+  line-height: 1.5rem;
+}
+.related .views-field-nothing .related-item-content a[target=_blank]:after,
+.related .views-field-nothing .related-item-content-cs a[target=_blank]:after {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png) center no-repeat;
+}
+.related .views-field-nothing .keyword-list {
+  color: #9FA8D1;
+  font-size: 0.875rem;
+}
+.related .views-field-nothing .keyword-list .label-keyword,
+.related .views-field-nothing .keyword-list .keyword-label {
+  color: #FFF;
+}
+.related .views-field-nothing .keyword-list .keyword-tag {
+  margin-left: 0.25rem;
+}
+
+.related .views-field-nothing {
+  height: 18.75rem;
+  margin: 1rem 0;
+}
+.related .views-field-nothing .field-content > a {
   height: 177px;
   overflow: hidden;
   text-align: center;
   display: block;
+  background-color: #FFF;
 }
-.view-id-msds_resources_and_cs .views-field-nothing .field-content > a img {
+.related .views-field-nothing .field-content > a img {
   width: 100%;
   height: auto;
   position: relative;
   transform: translateY(-10%);
 }
+.related .views-field-nothing .field-content .related-lessons-item-cs > a {
+  height: 177px;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  background-color: #FFF;
+}
+.related .views-field-nothing .field-content .related-lessons-item-cs > a img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  transform: translateY(0%);
+}
 
 .view-id-msds_resources_and_cs {
   display: flex;
   flex-direction: row;
-}
-.view-id-msds_resources_and_cs > .view-content {
-  flex: 0 0 66%;
-}
-.view-id-msds_resources_and_cs > .attachment-after {
-  display: none;
-  flex: 0 0 33%;
-}
-.view-id-msds_resources_and_cs > .attachment-after .view-id-msds_resources_and_cs > .view-content {
-  flex: 0 0 100%;
-}
-
-.related .views-element-container,
-.view-lesson-related-lesson .views-row {
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .view-napo-s-film-episodes .views-row {
@@ -3211,33 +3271,33 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   color: #1f3695;
 }
 
-.napos-films-coming-soon .slick--less {
+.napos-films-coming-soon #main-wrapper .slick--less {
   display: inline-block;
   float: left;
   clear: none;
 }
-.napos-films-coming-soon .field--name-body {
+.napos-films-coming-soon #main-wrapper .field--name-body {
   display: inline-block;
   width: calc(100% - 432px);
   padding: 1rem 0rem;
 }
-.napos-films-coming-soon .media__image {
+.napos-films-coming-soon #main-wrapper .media__image {
   padding-bottom: 0.625rem;
   padding-right: 1.125rem;
 }
-.napos-films-coming-soon p {
+.napos-films-coming-soon #main-wrapper p {
   font-size: 1.125rem;
 }
-.napos-films-coming-soon .field--name-field-image {
+.napos-films-coming-soon #main-wrapper .field--name-field-image {
   float: left;
 }
 
-.disclaimer h2 {
+.disclaimer #main-wrapper h2 {
   font-size: 1.625rem;
   font-weight: 700;
   color: #1f3695;
 }
-.disclaimer h3 {
+.disclaimer #main-wrapper h3 {
   font-size: 1.375rem;
   font-weight: 700;
   color: #1f3695;
@@ -3663,6 +3723,10 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-row {
   align-items: center;
 }
+.napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-row > fieldset,
+.napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-row > div {
+  padding-right: 0;
+}
 .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-group {
   padding: 0px;
 }
@@ -3704,6 +3768,30 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 }
 .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 button#edit-reset--2 {
   display: none;
+  position: absolute;
+  display: inline-block;
+  width: 1.125rem;
+  height: 1.125rem;
+  color: transparent;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: none;
+  background-color: transparent;
+  top: 50%;
+  right: 2rem;
+  transform: translate(0, -100%);
+}
+.napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 button#edit-reset--2:after {
+  content: "X";
+  color: #1f3695;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-weight: bold;
 }
 .napos-films-films .block-facet--links {
   position: absolute;
@@ -3799,16 +3887,19 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   padding: 0.625rem 2.5rem;
 }
 
-.about-napo-the-napo-story iframe {
+.about-napo-the-napo-story iframe,
+.about-napo-napo-story iframe {
   float: left;
   padding-right: 1.125rem;
   margin-bottom: 1.125rem;
 }
-.about-napo-the-napo-story h3 {
+.about-napo-the-napo-story h3,
+.about-napo-napo-story h3 {
   font-size: 1.375rem;
   font-weight: bold;
 }
-.about-napo-the-napo-story p {
+.about-napo-the-napo-story p,
+.about-napo-napo-story p {
   font-size: 1.125rem;
 }
 
@@ -4235,11 +4326,19 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   font-weight: bold;
   margin: 0.625rem 0rem;
 }
+.node--type-lesson #main-wrapper > .container,
+.node--type-msds-activities #main-wrapper > .container {
+  position: relative;
+}
+.node--type-lesson #main-wrapper > .container .content-page-content > .col-12,
+.node--type-msds-activities #main-wrapper > .container .content-page-content > .col-12 {
+  position: static;
+}
 .node--type-lesson .back-button-custom,
 .node--type-msds-activities .back-button-custom {
   position: absolute;
   z-index: 1;
-  top: -6.5rem;
+  top: 3rem;
   right: auto;
   left: 15px;
   margin-bottom: 0.625rem;
@@ -4491,24 +4590,24 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   margin-top: 1.5rem;
 }
 
-.learning-with-napo-napo-for-teachers-resource-library .view-resource-library {
+.view-resource-library {
   padding: 0 3% 2rem;
 }
-.learning-with-napo-napo-for-teachers-resource-library .view-resource-library > .view-content {
+.view-resource-library > .view-content {
   flex-direction: column;
 }
-.learning-with-napo-napo-for-teachers-resource-library .item-list h3 {
+.view-resource-library .item-list h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.learning-with-napo-napo-for-teachers-resource-library .item-list h3 a {
+.view-resource-library .item-list h3 a {
   font-size: 1.375rem;
   font-weight: bold;
   pointer-events: none;
   text-decoration: none;
   cursor: text;
 }
-.learning-with-napo-napo-for-teachers-resource-library .item-list ul li a {
+.view-resource-library .item-list ul li a {
   font-size: 1.125rem;
 }
 
@@ -4527,41 +4626,41 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   display: none;
 }
 
-.learning-with-napo-napo-for-teachers-teacher-guidance .field--name-field-image {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .field--name-field-image {
   float: left;
   display: inline-block;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance .field--name-body {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .field--name-body {
   display: inline-block;
   padding: 1rem 0rem;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance .media__image {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .media__image {
   padding-bottom: 0.625rem;
   padding-right: 1.125rem;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance p {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper p {
   font-size: 1.125rem;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance p a {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper p a {
   text-decoration: underline;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance p a:after {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper p a:after {
   display: none;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance .file-download {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .file-download {
   color: transparent;
   background: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png) no-repeat center;
   display: block;
   width: 42px;
   height: 40px;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .container {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper #main-wrapper .container {
   position: relative;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .container .content-page-content .col-12 {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper #main-wrapper .container .content-page-content .col-12 {
   position: static;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance .field--name-field-guidance-file {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .field--name-field-guidance-file {
   position: absolute;
   top: 0;
   z-index: 3;
