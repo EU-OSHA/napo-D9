@@ -4566,41 +4566,41 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   display: none;
 }
 
-.learning-with-napo-napo-for-teachers-teacher-guidance .field--name-field-image {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .field--name-field-image {
   float: left;
   display: inline-block;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance .field--name-body {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .field--name-body {
   display: inline-block;
   padding: 1rem 0rem;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance .media__image {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .media__image {
   padding-bottom: 0.625rem;
   padding-right: 1.125rem;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance p {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper p {
   font-size: 1.125rem;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance p a {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper p a {
   text-decoration: underline;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance p a:after {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper p a:after {
   display: none;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance .file-download {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .file-download {
   color: transparent;
   background: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png) no-repeat center;
   display: block;
   width: 42px;
   height: 40px;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .container {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper #main-wrapper .container {
   position: relative;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .container .content-page-content .col-12 {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper #main-wrapper .container .content-page-content .col-12 {
   position: static;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance .field--name-field-guidance-file {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .field--name-field-guidance-file {
   position: absolute;
   top: 0;
   z-index: 3;
