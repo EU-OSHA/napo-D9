@@ -1,28 +1,28 @@
-.learning-with-napo-napo-for-teachers-resource-library{
+
   .view-resource-library{
     padding: 0 3% 2rem;
     >.view-content{
       flex-direction: column;
     }
-  }
-  .item-list{
-    h3{
-      margin-top: 20px;
-      margin-bottom: 10px;
-      a{
-        font-size:1.375rem;
-        font-weight:bold;
-        pointer-events: none;
-        text-decoration: none;
-        cursor:text;
-      }
-    }
-    ul{
-      li{
+    .item-list{
+      h3{
+        margin-top: 20px;
+        margin-bottom: 10px;
         a{
-          font-size: 1.125rem;
+          font-size:1.375rem;
+          font-weight:bold;
+          pointer-events: none;
+          text-decoration: none;
+          cursor:text;
+        }
+      }
+      ul{
+        li{
+          a{
+            font-size: 1.125rem;
+          }
         }
       }
     }
   }
-}
+
