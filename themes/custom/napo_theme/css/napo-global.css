@@ -4266,11 +4266,19 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   font-weight: bold;
   margin: 0.625rem 0rem;
 }
+.node--type-lesson #main-wrapper > .container,
+.node--type-msds-activities #main-wrapper > .container {
+  position: relative;
+}
+.node--type-lesson #main-wrapper > .container .content-page-content > .col-12,
+.node--type-msds-activities #main-wrapper > .container .content-page-content > .col-12 {
+  position: static;
+}
 .node--type-lesson .back-button-custom,
 .node--type-msds-activities .back-button-custom {
   position: absolute;
   z-index: 1;
-  top: -6.5rem;
+  top: 3rem;
   right: auto;
   left: 15px;
   margin-bottom: 0.625rem;
