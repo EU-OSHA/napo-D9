@@ -59,7 +59,7 @@
   {% endif %}
   <div>
     <div class="row">
-
+      {% set viewfooter = footer.view %}
       {% if rows %}
         {% for row in rows.0['#rows'] %}
             <div class="col-4 custom">
@@ -67,34 +67,21 @@
             </div>
         {% endfor %}
       {% endif %}
+      {% if footer %}
+          {{ viewfooter }}
+      {% endif %}
+
     </div>
   </div>
-
-  {% if attachment_after %}
-{#    {{ drupal_dump(rows.0) }}#}
-
-    <div class="attachment attachment-after">
-      {{ attachment_after }}
-    </div>
-  {% endif %}
 
   {% if pager %}
     {{ pager }}
   {% endif %}
-{#  {% if attachment_after %}#}
 
-{#    <div class="attachment attachment-after">#}
-{#      {{ attachment_after }}#}
-{#    </div>#}
-{#  {% endif %}#}
   {% if more %}
     {{ more }}
   {% endif %}
-  {% if footer %}
-    <div class="view-footer">
-      {{ footer }}
-    </div>
-  {% endif %}
+
   {% if feed_icons %}
     <div class="feed-icons">
       {{ feed_icons }}
