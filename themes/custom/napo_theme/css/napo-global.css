@@ -3211,24 +3211,24 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   color: #1f3695;
 }
 
-.napos-films-coming-soon .slick--less {
+.napos-films-coming-soon #main-wrapper .slick--less {
   display: inline-block;
   float: left;
   clear: none;
 }
-.napos-films-coming-soon .field--name-body {
+.napos-films-coming-soon #main-wrapper .field--name-body {
   display: inline-block;
   width: calc(100% - 432px);
   padding: 1rem 0rem;
 }
-.napos-films-coming-soon .media__image {
+.napos-films-coming-soon #main-wrapper .media__image {
   padding-bottom: 0.625rem;
   padding-right: 1.125rem;
 }
-.napos-films-coming-soon p {
+.napos-films-coming-soon #main-wrapper p {
   font-size: 1.125rem;
 }
-.napos-films-coming-soon .field--name-field-image {
+.napos-films-coming-soon #main-wrapper .field--name-field-image {
   float: left;
 }
 
