@@ -1280,6 +1280,7 @@ tr th {
   background: none;
   font-size: 1rem;
   font-weight: bold;
+  flex-wrap: nowrap;
 }
 .header .nav-item {
   border-radius: 3.875rem;
@@ -1294,6 +1295,7 @@ tr th {
   align-items: center;
   cursor: pointer;
   font-size: 0.9375rem;
+  justify-content: center;
 }
 .header .nav-item:first-of-type {
   width: 64px;
@@ -1327,6 +1329,8 @@ tr th {
   color: #FFF;
   display: block;
   padding: 0rem;
+  white-space: normal;
+  text-align: center;
 }
 .header .nav-link:focus {
   outline: none;
@@ -1371,6 +1375,7 @@ tr th {
   font-weight: bold;
   display: block;
   font-size: 0.875rem;
+  white-space: initial;
 }
 .header .dropdown-menu .dropdown-item a:hover {
   text-decoration: none;

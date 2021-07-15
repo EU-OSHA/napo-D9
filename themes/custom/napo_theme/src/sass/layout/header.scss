@@ -172,6 +172,7 @@
     background: none;
     font-size: 1rem;
     font-weight: bold;
+    flex-wrap: nowrap;
     &-item{
       border-radius: 3.875rem;
       border: 0 ;
@@ -185,7 +186,7 @@
       align-items: center;
       cursor:pointer;
       font-size:0.9375rem;
-
+      justify-content: center;
       &:first-of-type{
         width: 64px;
         justify-content: center;
@@ -219,6 +220,8 @@
       color: $text-color-white;
       display: block;
       padding:0rem;
+      white-space: normal;
+      text-align: center;
       &:focus{
         outline: none;
       }
@@ -267,6 +270,7 @@
         font-weight:bold;
         display:block;
         font-size:0.875rem;
+        white-space: initial;
         &:hover{
           text-decoration: none;
           background: #506b9e url(/sites/napo/themes/custom/napo_theme/images/arrow-menu-hover.png) 97% 50% no-repeat;
