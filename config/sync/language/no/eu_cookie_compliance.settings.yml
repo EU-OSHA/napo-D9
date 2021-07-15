@@ -1,0 +1,4 @@
+popup_agree_button_message: 'Jeg samtykker'
+popup_info:
+  value: "<h2>Dette nettstedet bruker cookies for å samle informasjon som er nødvendig for å surfe på nettsider, i henhold til våre retningslinjer varsel.</h2>\r\n<p>Ved å klikke på en link på websidene du gir ditt samtykke til bruk av informasjonskapsler</p>"
+disagree_button_label: 'Nei, gi meg mer informasjon'

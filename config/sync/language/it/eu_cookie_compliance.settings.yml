@@ -1,10 +1,10 @@
 popup_agreed:
   value: '<h2>Grazie per aver accettato i cookie.</h2><p>Se vuoi puoi chiudere questo messaggio oppure puoi approfondire l''argomento sulla nostra informativa.</p>'
-popup_agree_button_message: 'OK, I agree'
+popup_agree_button_message: 'Sì, acconsento'
 popup_more_info_button_message: 'Maggiori informazioni'
 popup_find_more_button_message: 'Maggiori informazioni'
 popup_hide_button_message: Nascondi
 popup_info:
-  value: "<h2>This website uses cookies to gather information necessary for browsing the website, in accordance with our privacy notice.</h2>\r\n\r\n<p>&nbsp;</p>\r\n"
+  value: "<h2>Questo sito web utilizza i cookie per raccogliere informazioni necessarie per la consultazione del sito web, conformemente all nostro avviso di privacy.</h2>\r\n\r\n<p>Facendo clic su qualsiasi link nelle pagine web si acconsente all'utilizzo dei cookie.</p>\r\n"
 popup_link: /using-napo/rights-and-permissions
-disagree_button_label: Decline
+disagree_button_label: 'No, dammi maggiori informazioni'

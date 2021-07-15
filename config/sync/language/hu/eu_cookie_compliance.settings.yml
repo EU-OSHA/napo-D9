@@ -1,15 +1,15 @@
 popup_agreed:
   value: '<h2>Köszönjük a sütik elfogadását</h2><p>A használt sütikről további tudnivalók is olvashatók, de akár el is rejthető ez az üzenet.</p>'
-popup_agree_button_message: Elfogadás
+popup_agree_button_message: Elfogadom
 popup_more_info_button_message: 'További információk'
 popup_find_more_button_message: 'További információk'
 popup_hide_button_message: Elrejtés
 popup_info:
-  value: '<h2>A felhasználói élmény javítása érdekében a webhelyen sütiket használunk</h2><p>Az „Elfogadás” gombra kattintva hozzájárul a sütik létrehozásához.</p>'
+  value: "<h2>Ez a weboldal cookie-kat használ, hogy információkat gyűjtsön szükséges böngészi a honlapot, összhangban az adatvédelmi nyilatkozat.</h2>\r\n<p>Ha rákattint minden kapcsolatot a weboldalakat hozzájárulását adja a a cookie-k használatát.</p>"
 mobile_popup_info:
   value: '<h2>A felhasználói élmény javítása érdekében a webhelyen sütiket használunk</h2><p>Az „Elfogadás” gomb megérintésével hozzájárul a sütik létrehozásához.</p>'
 popup_link: /using-napo/rights-and-permissions
-disagree_button_label: 'Köszönöm, nem'
+disagree_button_label: 'További információt kérek'
 withdraw_message:
   value: '<h2>A felhasználói élmény javítása érdekében a webhelyen sütiket használunk</h2><p>Hozzájárult, hogy sütiket hozzunk létre.</p>'
 withdraw_tab_button_label: 'Adatvédelmi beállítások'

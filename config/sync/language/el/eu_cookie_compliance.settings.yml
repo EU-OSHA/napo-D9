@@ -1,10 +1,10 @@
 popup_agreed:
   value: '<h2> Σας ευχαριστούμε για την αποδοχή των cookies </h2> <p> Μπορείτε τώρα να κρύψετε αυτό το μήνυμα ή να μάθετε περισσότερα σχετικά με τα cookies. </p>'
-popup_agree_button_message: 'OK, I agree'
+popup_agree_button_message: 'ΟΚ, συμφωνώ'
 popup_more_info_button_message: 'Περισσότερες πληροφορίες'
 popup_find_more_button_message: 'Περισσότερες πληροφορίες'
 popup_hide_button_message: Απόκρυψη
 popup_info:
-  value: "<h2>This website uses cookies to gather information necessary for browsing the website, in accordance with our privacy notice.</h2>\r\n\r\n<p>&nbsp;</p>\r\n"
+  value: "<h2>Αυτή η ιστοσελίδα χρησιμοποιεί cookies για να συγκεντρώσει τις πληροφορίες που απαιτούνται για την περιήγηση στην ιστοσελίδα, σύμφωνα με ανακοίνωση της ιδιωτικής </h2>\r\n\r\n<p>Κάνοντας κλικ σε οποιοδήποτε σύνδεσμο στις ιστοσελίδες δίνετε τη συγκατάθεσή σας για την η χρήση των cookies.</p>\r\n"
 popup_link: /using-napo/rights-and-permissions
-disagree_button_label: Decline
+disagree_button_label: 'Όχι, χρειάζομαι περισσότερες πληροφορίες'

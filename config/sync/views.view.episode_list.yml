@@ -938,19 +938,7 @@ display:
         metatag_display_extender:
           metatags: {  }
       block_category: 'Lists (Views)'
-      sorts:
-        weight:
-          id: weight
-          table: draggableviews_structure
-          field: weight
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: 'DraggableViews Weight'
-          plugin_id: standard
+      sorts: {  }
       defaults:
         sorts: false
         title: false
