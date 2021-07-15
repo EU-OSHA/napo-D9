@@ -1,10 +1,10 @@
 popup_agreed:
   value: "<h2>Thank you for accepting cookies</h2>\r\n\r\n<p>You can now hide this message or find out more about cookies.</p>\r\n"
-popup_agree_button_message: 'OK, I agree'
+popup_agree_button_message: 'Strinjam se'
 popup_more_info_button_message: 'More info'
 popup_find_more_button_message: 'More info'
 popup_hide_button_message: Skrij
 popup_info:
-  value: "<h2>This website uses cookies to gather information necessary for browsing the website, in accordance with our privacy notice.</h2>\r\n\r\n<p>&nbsp;</p>\r\n"
+  value: "<h2>Ta spletna stran uporablja piškotke za zbiranje informacij, potrebnih za brskanje po spletni strani, v skladu z našim obvestilom o zasebnosti.</h2>\r\n\r\n<p>S klikom na katero koli povezavo na spletnih straneh, ki jih daje svoje soglasje za uporaba piškotkov.</p>\r\n"
 popup_link: /using-napo/rights-and-permissions
-disagree_button_label: Decline
+disagree_button_label: 'Ne, želim podrobnejše informacije'

@@ -1,15 +1,15 @@
 popup_agreed:
   value: '<h2>Tack för att du accepterade cookies</h2><p>Nu kan du dölja det här meddelandet eller ta reda på mer om cookies.</p>'
-popup_agree_button_message: Accepterar
+popup_agree_button_message: 'OK, jag samtycker'
 popup_more_info_button_message: 'Mer information'
 popup_find_more_button_message: 'Mer information'
 popup_hide_button_message: Dölj
 popup_info:
-  value: '<h2>Vi använder cookies på denna webbplats för att förbättra din användarupplevelse</h2><p>Genom att klicka på knappen "acceptera" godkänner du att vi gör det.</p>'
+  value: "<h2>Denna webbplats använder cookies för att samla in information som är nödvändig för att surfa på webbplatsen, i enlighet med vår sekretesspolicy.</h2>\r\n<p>Genom att klicka på en länk i webbsidorna du ger ditt medgivande för användningen av cookies.</p>"
 mobile_popup_info:
   value: '<h2>Vi använder cookies på denna webbplats för att förbättra din användarupplevelse.</h2><p>Genom att trycka på knappen "acceptera" godkänner du att vi gör det.</p>'
 popup_link: /using-napo/rights-and-permissions
-disagree_button_label: 'Nej, tack'
+disagree_button_label: 'Nej, ge mig mer info'
 withdraw_message:
   value: '<h2>Vi använder cookies på denna webbplats för att förbättra din användarupplevelse.</h2><p>Du har gett ditt samtycke för oss att ställa in cookies.</p>'
 withdraw_action_button_label: 'Återkalla samtycke'

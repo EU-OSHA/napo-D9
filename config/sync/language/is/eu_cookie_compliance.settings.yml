@@ -1,10 +1,10 @@
 popup_agreed:
   value: "<h2>Thank you for accepting cookies</h2>\r\n\r\n<p>You can now hide this message or find out more about cookies.</p>\r\n"
-popup_agree_button_message: 'OK, I agree'
+popup_agree_button_message: 'Í lagi, ég samþykki'
 popup_more_info_button_message: 'More info'
 popup_find_more_button_message: 'More info'
 popup_hide_button_message: Fela
 popup_info:
-  value: "<h2>This website uses cookies to gather information necessary for browsing the website, in accordance with our privacy notice.</h2>\r\n\r\n<p>&nbsp;</p>\r\n"
+  value: "<h2>Þessi vefsíða notar fótspor til að safna upplýsingum sem nauðsynlegar eru til að skoða vefsíðu, í samræmi við persónuvernd.</h2>\r\n\r\n<p>Með því að smella á allir hlekkur í the vefur blaðsíða þú ert að gefa samþykki þitt fyrir notkun kex.</p>\r\n"
 popup_link: /using-napo/rights-and-permissions
-disagree_button_label: Decline
+disagree_button_label: 'Nei, gefðu mér meiri upplýsingar'
