@@ -1,0 +1,15 @@
+uuid: 3c7a139d-ab87-4e34-b307-03a958096d01
+langcode: en
+status: true
+dependencies: {  }
+id: lesson
+label: Lesson
+description: ''
+entityType: node
+entityBundle: lesson
+language: und
+breadcrumbPaths: "<nolink>\r\n/learning-with-napo/napo-for-teachers\r\n<nolink>"
+breadcrumbTitles: "Learning with Napo\r\nNapo for teachers\r\n[current-page:title]"
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

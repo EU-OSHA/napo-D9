@@ -1,0 +1,50 @@
+uuid: 5aabeff5-aade-496c-9e71-0759761308b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.file_link_only
+    - field.field.media.document.field_media_description
+    - field.field.media.document.field_media_document
+    - field.field.media.document.field_nace_codes
+    - field.field.media.document.field_tags
+    - field.field.media.document.field_thesaurus
+    - media.type.document
+  module:
+    - file_download_link
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+_core:
+  default_config_hash: DXitcriWmE5QHvGvk2OzWouaSnXD5uipkRdAG6_pnkg
+id: media.document.file_link_only
+targetEntityType: media
+bundle: document
+mode: file_link_only
+content:
+  field_media_document:
+    label: visually_hidden
+    settings:
+      link_text: ''
+      force_download: true
+      link_title: ''
+      custom_classes: ''
+      new_tab: false
+    third_party_settings: {  }
+    type: file_download_link
+    weight: 0
+    region: content
+hidden:
+  breadcrumbs: true
+  created: true
+  field_media_description: true
+  field_nace_codes: true
+  field_tags: true
+  field_thesaurus: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
