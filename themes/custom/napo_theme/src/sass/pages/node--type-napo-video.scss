@@ -179,6 +179,13 @@
         }
       }
     }
+    .body{
+      strong,
+      span{
+        color:$text-color-blue!important;
+        background-color: transparent!important;
+      }
+    }
   }
   .back-button-custom{
     text-align: right;
