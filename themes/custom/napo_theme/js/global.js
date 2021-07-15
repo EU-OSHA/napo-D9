@@ -212,7 +212,7 @@
     });
     $(this).on('click', 'video', function () {
       if($video.get()[0].paused){
-        $(this).closest('.video-custom').stop().removeeClass('pauseVideoCustom');
+        $(this).closest('.video-custom').stop().removeClass('pauseVideoCustom');
       }
       else{
         $(this).closest('.video-custom').stop().addClass('pauseVideoCustom');
