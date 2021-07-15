@@ -1,10 +1,10 @@
 popup_agreed:
   value: "<h2>Thank you for accepting cookies</h2>\r\n\r\n<p>You can now hide this message or find out more about cookies.</p>\r\n"
-popup_agree_button_message: 'OK, I agree'
+popup_agree_button_message: 'Jā, es piekrītu'
 popup_more_info_button_message: 'More info'
 popup_find_more_button_message: 'More info'
 popup_hide_button_message: Apslēpt
 popup_info:
-  value: "<h2>This website uses cookies to gather information necessary for browsing the website, in accordance with our privacy notice.</h2>\r\n\r\n<p>&nbsp;</p>\r\n"
+  value: "<h2>Šī mājas lapa izmanto sīkdatnes, lai vāktu informāciju, kas nepieciešama, lai pārlūkošanas mājas lapā, saskaņā ar mūsu konfidencialitātes paziņojumā..</h2>\r\n\r\n<p>Noklikšķinot uz jebkuras saites šajā interneta lapas, jūs piekrītat sīkdatņu izmantošanai.</p>\r\n"
 popup_link: /using-napo/rights-and-permissions
-disagree_button_label: Decline
+disagree_button_label: 'Nē, lūdzu, sniedziet plašāku informāciju'
