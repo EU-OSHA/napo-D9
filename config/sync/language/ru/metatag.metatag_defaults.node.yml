@@ -1,5 +1,0 @@
-label: Содержимое
-tags:
-  title: '[node:title] | [site:name]'
-  description: '[node:summary]'
-  canonical_url: '[current-page:url:absolute]'

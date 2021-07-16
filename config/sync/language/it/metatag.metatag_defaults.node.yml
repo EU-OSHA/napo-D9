@@ -1,5 +1,0 @@
-label: Contenuto
-tags:
-  title: '[node:title_field] | [site:name]'
-  description: '[node:summary][node:body]'
-  canonical_url: '[current-page:url:absolute]'

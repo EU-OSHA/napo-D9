@@ -7,11 +7,11 @@ _core:
 id: node
 label: Content
 tags:
-  keywords: '[node:field_tags][node:field_main_tag][node:field_combined_tags]'
-  abstract: '[node:summary]'
-  content_language: en
-  shortlink: '[current-page:url:unaliased]'
-  title: '[node:title_field] | [site:name]'
-  image_src: '[node:field_image]'
-  canonical_url: '[current-page:url:absolute]'
   description: '[node:summary][node:body]'
+  canonical_url: '[current-page:url:absolute]'
+  title: '[node:title] | [site:name]'
+  keywords: '[node:field_tags][node:field_main_tag][node:field_combined_tags]'
+  shortlink: '[current-page:url:unaliased]'
+  content_language: en
+  abstract: '[node:summary]'
+  image_src: '[node:field_image]'
