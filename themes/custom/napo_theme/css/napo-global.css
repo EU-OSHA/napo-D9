@@ -4709,6 +4709,9 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   display: none;
 }
 
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper article {
+  position: static;
+}
 .learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .field--name-field-image {
   float: left;
   display: inline-block;
@@ -4737,10 +4740,10 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   width: 42px;
   height: 40px;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper #main-wrapper .container {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .container {
   position: relative;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper #main-wrapper .container .content-page-content .col-12 {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .container .content-page-content .col-12 {
   position: static;
 }
 .learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .field--name-field-guidance-file {
