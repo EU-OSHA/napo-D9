@@ -63,8 +63,6 @@
 
 {{ attach_library('bootstrap_barrio/node') }}
 
-
-
 {% set videoId = content.field_msds_video['#items'].0.target_id  %}
 {% set videoEntity = drupal_entity('node',videoId) %}
 {% set imageTarget = videoEntity['#node'].field_image.0.entity.label  %}
@@ -82,12 +80,14 @@
   ]
 %}
 
+
 <div class="back-button-custom"><a href="/learning-with-napo/napo-in-the-workplace">{{ 'Back to Napo in the workplace' | trans }}</a></div>
 <article{{ attributes.addClass(classes) }}>
   <div class="page-banner-custom">
   <div class="video-custom" id="js-video">
     {{ content.field_msds_video }}
     <img src="/sites/napo/files/images/napo_video/{{ imageTarget }}" class="video-custom__image" />
+
     <button type="button" class="video-custom__playButton playButton-1" id="videoPlayCustomButton"></button>
   </div>
   <div class="content-text-facilitator-custom">
