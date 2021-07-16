@@ -1,5 +1,8 @@
 .learning-with-napo-napo-for-teachers-teacher-guidance{
   #main-wrapper {
+    article{
+      position:static;
+    }
     .field--name-field-image {
       float: left;
       display: inline-block;
@@ -28,13 +31,11 @@
       width: 42px;
       height: 40px;
     }
-    #main-wrapper {
-      .container {
-        position: relative;
-        .content-page-content {
-          .col-12 {
-            position: static;
-          }
+    .container {
+      position: relative;
+      .content-page-content {
+        .col-12 {
+          position: static;
         }
       }
     }
