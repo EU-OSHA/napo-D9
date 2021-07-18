@@ -18,6 +18,12 @@ display:
         nid:
           fallback_options:
             format_plural_string: !!binary MQNAY291bnQD
+        url_1:
+          alter:
+            text: 'Přehrát film'
+        nothing:
+          alter:
+            text: "<div class=\"item\">\r\n    <div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\"><a target=\"_blank\" href=\"{{ uri}}\">Download video</a></div>\r\n         <div class=\"cart\">{{ ncc_download }}</div>\r\n    </div>\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n       <div class=\"view-scenes\">\r\n<a href=\"/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">Zobrazit scény</a></div>\r\n    </div>\r\n</div>"
   page_3:
     display_options:
       filters:

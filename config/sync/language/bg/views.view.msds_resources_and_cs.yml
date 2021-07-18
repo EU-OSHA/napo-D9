@@ -1,1 +1,8 @@
 label: 'MSDS resources and cs bg'
+display:
+  block_1:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "<a href=\"{{ view_node }}\">{{ field_image }}</a>\r\n<div class=\"related-item-content\">\r\n<h3>{{ title }}</h3>\r\n<p class=\"keyword-list\">\r\n<span class=\"keyword-label\"><label><b>Ключови думи: </b></label></span><span class=\"keyword-tag\">{{ field_tags }} </span>\r\n</p>\r\n</div>"

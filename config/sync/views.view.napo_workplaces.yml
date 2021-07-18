@@ -274,7 +274,7 @@ display:
           id: field_tags
           table: node__field_tags
           field: field_tags
-          relationship: field_msds_video
+          relationship: none
           group_type: group
           admin_label: ''
           label: ''
