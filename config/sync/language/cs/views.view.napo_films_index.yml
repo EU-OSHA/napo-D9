@@ -1,0 +1,50 @@
+display:
+  default:
+    display_options:
+      fields:
+        nid:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+  page_1:
+    display_options:
+      title: "Filmy o\_Napovi"
+  page_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          group_info:
+            description: ''
+      fields:
+        nid:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+  page_3:
+    display_options:
+      filters:
+        search_api_fulltext:
+          group_info:
+            description: ''
+      fields:
+        nid:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+  page_4:
+    display_options:
+      filters:
+        search_api_fulltext:
+          group_info:
+            description: ''
+      fields:
+        nid:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+  page_list:
+    display_options:
+      filters:
+        search_api_fulltext:
+          group_info:
+            description: ''
+      fields:
+        nid:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
