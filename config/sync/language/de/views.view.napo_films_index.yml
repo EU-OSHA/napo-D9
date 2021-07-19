@@ -1,0 +1,28 @@
+display:
+  page_1:
+    display_options:
+      title: 'Napos Filme'
+  page_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          group_info:
+            description: ''
+  page_3:
+    display_options:
+      filters:
+        search_api_fulltext:
+          group_info:
+            description: ''
+  page_4:
+    display_options:
+      filters:
+        search_api_fulltext:
+          group_info:
+            description: ''
+  page_list:
+    display_options:
+      filters:
+        search_api_fulltext:
+          group_info:
+            description: ''
