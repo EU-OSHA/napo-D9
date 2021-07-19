@@ -1,4 +1,4 @@
-label: Содержимое
+label: Content
 description: 'Find and manage content.'
 display:
   default:
@@ -54,7 +54,7 @@ display:
         langcode:
           expose:
             label: Language
-      title: Содержимое
+      title: Content
       empty:
         area_text_custom:
           content: 'No content available.'
@@ -62,8 +62,8 @@ display:
   page_1:
     display_options:
       menu:
-        title: Содержимое
+        title: Content
       tab_options:
-        title: Содержимое
+        title: Content
         description: 'Find and manage content'
     display_title: Page

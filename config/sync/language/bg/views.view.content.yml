@@ -1,4 +1,4 @@
-label: Съдържание
+label: Content
 display:
   default:
     display_options:
@@ -38,12 +38,12 @@ display:
         langcode:
           expose:
             label: Language
-      title: Съдържание
+      title: Content
     display_title: 'По подразбиране'
   page_1:
     display_options:
       menu:
-        title: Съдържание
+        title: Content
       tab_options:
-        title: Съдържание
+        title: Content
     display_title: Page

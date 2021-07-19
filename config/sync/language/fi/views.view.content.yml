@@ -1,4 +1,4 @@
-label: Sisältö
+label: Content
 description: 'Find and manage content.'
 display:
   default:
@@ -54,7 +54,7 @@ display:
         langcode:
           expose:
             label: Language
-      title: Sisältö
+      title: Content
       empty:
         area_text_custom:
           content: 'No content available.'
@@ -62,7 +62,7 @@ display:
   page_1:
     display_options:
       menu:
-        title: Sisältö
+        title: Content
       tab_options:
-        title: Sisältö
+        title: Content
     display_title: Page

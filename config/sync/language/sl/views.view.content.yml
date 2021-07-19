@@ -1,4 +1,4 @@
-label: Vsebine
+label: Content
 display:
   default:
     display_options:
@@ -38,7 +38,7 @@ display:
         langcode:
           expose:
             label: Language
-      title: Vsebine
+      title: Content
       empty:
         area_text_custom:
           content: 'No content available.'
@@ -46,7 +46,7 @@ display:
   page_1:
     display_options:
       menu:
-        title: Vsebine
+        title: Content
       tab_options:
-        title: Vsebine
+        title: Content
     display_title: Page

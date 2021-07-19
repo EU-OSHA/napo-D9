@@ -1,4 +1,4 @@
-label: Zawartość
+label: Content
 description: 'Find and manage content.'
 display:
   default:
@@ -54,7 +54,7 @@ display:
         langcode:
           expose:
             label: Language
-      title: Zawartość
+      title: Content
       empty:
         area_text_custom:
           content: 'No content available.'
@@ -62,8 +62,8 @@ display:
   page_1:
     display_options:
       menu:
-        title: Zawartość
+        title: Content
       tab_options:
-        title: Zawartość
+        title: Content
         description: 'Find and manage content'
     display_title: Page
