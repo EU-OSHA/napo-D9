@@ -1,4 +1,4 @@
-label: Sadržaj
+label: Content
 description: 'Find and manage content.'
 display:
   default:
@@ -43,7 +43,7 @@ display:
         langcode:
           expose:
             label: Language
-      title: Sadržaj
+      title: Content
       empty:
         area_text_custom:
           content: 'No content available.'
@@ -51,7 +51,7 @@ display:
   page_1:
     display_options:
       menu:
-        title: Sadržaj
+        title: Content
       tab_options:
-        title: Sadržaj
+        title: Content
     display_title: Page

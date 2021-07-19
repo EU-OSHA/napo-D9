@@ -1,4 +1,4 @@
-label: Innihald
+label: Content
 display:
   default:
     display_options:
@@ -47,12 +47,12 @@ display:
         langcode:
           expose:
             label: Language
-      title: Innihald
+      title: Content
     display_title: Sjálfgefið
   page_1:
     display_options:
       menu:
-        title: Innihald
+        title: Content
       tab_options:
-        title: Innihald
+        title: Content
     display_title: Page
