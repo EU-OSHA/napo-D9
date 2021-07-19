@@ -62,7 +62,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: osha-d9-pord-solr.mainstrat.com
+    host: osha-d9-prod-solr.mainstrat.com
     port: 8080
     path: /
     core: Napo

@@ -121,6 +121,8 @@
     }
     .addtoany_list{
       display:none;
+      position: absolute;
+      z-index: 200;
     }
     .share-links-node{
       margin-left:0.5rem;

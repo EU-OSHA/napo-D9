@@ -17,6 +17,7 @@ dependencies:
     - node.type.napo_video
     - workflows.workflow.napo
   module:
+    - conditional_fields
     - content_moderation
     - datetime
     - media_library
@@ -124,7 +125,25 @@ content:
     weight: 8
     region: content
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        b507bfda-232a-4b4e-beda-399284ec0ace:
+          dependee: field_video_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '2727'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: napo_video
   field_video:
     weight: 6
     settings:

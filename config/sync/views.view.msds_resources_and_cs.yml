@@ -1014,7 +1014,7 @@ display:
           id: nid
           table: node_field_data
           field: nid
-          relationship: field_msds_video
+          relationship: reverse__node__field_resources_related
           group_type: group
           admin_label: ''
           operator: '!='

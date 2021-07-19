@@ -274,7 +274,7 @@ display:
           id: field_tags
           table: node__field_tags
           field: field_tags
-          relationship: field_msds_video
+          relationship: none
           group_type: group
           admin_label: ''
           label: ''
@@ -782,7 +782,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"lessons-item\">\r\n  {{field_image}}\r\n  <div class=\"lessons-item-content\">\r\n    <h3>{{ title }}</h3>\r\n    <p class=\"keyword-list\">\r\n      <span class=\"label-keyword\">Keyword:</span> {{ field_tags }} \r\n    </p>\r\n  </div>\r\n</div>"
+            text: "<div class=\"lessons-item\">\r\n  {{field_image}}\r\n  <div class=\"lessons-item-content\">\r\n    <h3>{{ title }}</h3>\r\n    <p class=\"keyword-list\">\r\n      <span class=\"label-keyword\"><b>Keyword:</b></span> {{ field_tags }} \r\n    </p>\r\n  </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -973,7 +973,22 @@ display:
           entity_type: node
           entity_field: langcode
           plugin_id: language
-      sorts: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          entity_type: node
+          entity_field: created
+          plugin_id: date
       title: 'Napo in the workplace'
       header:
         result:

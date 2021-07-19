@@ -15,3 +15,7 @@ display:
         combine:
           expose:
             placeholder: Meklēšana...
+      fields:
+        nothing:
+          alter:
+            text: "<div class=\"lessons-item\">\r\n  {{field_image}}\r\n  <div class=\"lessons-item-content\">\r\n    <h3>{{ title }}</h3>\r\n    <p class=\"keyword-list\">\r\n      <span class=\"label-keyword\"><b>Atslēgvārds:</b></span> {{ field_tags }} \r\n    </p>\r\n  </div>\r\n</div>"

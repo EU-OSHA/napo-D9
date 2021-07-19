@@ -8,8 +8,8 @@ description: ''
 entityType: node
 entityBundle: msds_activities
 language: und
-breadcrumbPaths: "<nolink>\r\n/learning-with-napo/napo-in-the-workplace"
-breadcrumbTitles: "Learning with Napo\r\nNapo in the workplace"
+breadcrumbPaths: "<nolink>\r\n/learning-with-napo/napo-in-the-workplace\r\n<nolink>"
+breadcrumbTitles: "Learning with Napo\r\nNapo in the workplace\r\n[node:title]"
 type: '1'
 pathPattern: ''
 extraCacheContexts: ''

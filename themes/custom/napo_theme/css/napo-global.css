@@ -556,6 +556,18 @@ div.pagerer-container {
 .napo-films-modal .ui-dialog-titlebar .ui-dialog-titlebar-close:hover, .napo-films-modal .ui-dialog-titlebar .ui-dialog-titlebar-close:focus {
   color: transparent;
 }
+.napo-films-modal .ui-dialog-titlebar .ui-dialog-titlebar-close:after {
+  content: "X";
+  color: #f7e235;
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .napo-films-modal .ui-dialog-titlebar .ui-dialog-title {
   float: none;
   display: block;
@@ -3459,6 +3471,79 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   background-image: url(/sites/napo/themes/custom/napo_theme/images/remove.png);
 }
 
+.learning-with-napo-facilitator-guidance #main-wrapper .field--type-entity-reference {
+  float: left;
+}
+.learning-with-napo-facilitator-guidance #main-wrapper article {
+  position: static;
+}
+.learning-with-napo-facilitator-guidance #main-wrapper .container {
+  position: relative;
+}
+.learning-with-napo-facilitator-guidance #main-wrapper .container .content-page-content .col-12 {
+  position: static;
+}
+.learning-with-napo-facilitator-guidance #main-wrapper .field--name-field-guidance-file {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  right: 0;
+  transform: translate(0px, 53px);
+}
+.learning-with-napo-facilitator-guidance #main-wrapper .field--name-field-guidance-file .file-download {
+  color: transparent;
+  background: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png) no-repeat center;
+  display: block;
+  width: 42px;
+  height: 40px;
+}
+.learning-with-napo-facilitator-guidance #main-wrapper .group-buttons-facilitator-guidance {
+  display: flex;
+  justify-content: center;
+}
+.learning-with-napo-facilitator-guidance #main-wrapper .group-buttons-facilitator-guidance .field--name-field-list-of-activities,
+.learning-with-napo-facilitator-guidance #main-wrapper .group-buttons-facilitator-guidance .field--name-field-glossary {
+  margin-right: 1rem;
+  background: url(/sites/napo/themes/custom/napo_theme/images/background-blue.png) repeat-x;
+  color: #FFF;
+  width: 15.625rem;
+  padding: 0.625rem 1.25rem;
+  position: relative;
+}
+.learning-with-napo-facilitator-guidance #main-wrapper .group-buttons-facilitator-guidance .field--name-field-list-of-activities > .field__label,
+.learning-with-napo-facilitator-guidance #main-wrapper .group-buttons-facilitator-guidance .field--name-field-glossary > .field__label {
+  background: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png) no-repeat center right;
+  padding: 8px 0 0 0;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  margin: 0;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+.learning-with-napo-facilitator-guidance #main-wrapper .group-buttons-facilitator-guidance .field--name-field-list-of-activities > .field__item,
+.learning-with-napo-facilitator-guidance #main-wrapper .group-buttons-facilitator-guidance .field--name-field-glossary > .field__item {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.learning-with-napo-facilitator-guidance #main-wrapper .group-buttons-facilitator-guidance .field--name-field-list-of-activities a,
+.learning-with-napo-facilitator-guidance #main-wrapper .group-buttons-facilitator-guidance .field--name-field-glossary a {
+  color: transparent;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.learning-with-napo-facilitator-guidance #main-wrapper .group-buttons-facilitator-guidance .field--name-field-list-of-activities:hover > .field__label,
+.learning-with-napo-facilitator-guidance #main-wrapper .group-buttons-facilitator-guidance .field--name-field-glossary:hover > .field__label {
+  text-decoration: underline;
+}
+
 .user-login-form,
 .user-register-form,
 .user-pass {
@@ -4484,6 +4569,8 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 }
 .node--type-napo-video .conten-video-info .addtoany_list {
   display: none;
+  position: absolute;
+  z-index: 200;
 }
 .node--type-napo-video .conten-video-info .share-links-node {
   margin-left: 0.5rem;
@@ -4609,6 +4696,11 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 .view-resource-library .item-list h3 {
   margin-top: 20px;
   margin-bottom: 10px;
+  font-size: 1.375rem;
+  font-weight: bold;
+  pointer-events: none;
+  text-decoration: none;
+  cursor: text;
 }
 .view-resource-library .item-list h3 a {
   font-size: 1.375rem;
@@ -4636,6 +4728,9 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   display: none;
 }
 
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper article {
+  position: static;
+}
 .learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .field--name-field-image {
   float: left;
   display: inline-block;
@@ -4664,10 +4759,10 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   width: 42px;
   height: 40px;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper #main-wrapper .container {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .container {
   position: relative;
 }
-.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper #main-wrapper .container .content-page-content .col-12 {
+.learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .container .content-page-content .col-12 {
   position: static;
 }
 .learning-with-napo-napo-for-teachers-teacher-guidance #main-wrapper .field--name-field-guidance-file {

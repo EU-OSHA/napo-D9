@@ -173,6 +173,18 @@
         color:transparent;
 
       }
+      &:after{
+        content:"X";
+        color:$text-color-yellow;
+        position:absolute;
+        z-index:10;
+        display:inline-block;
+        font-size: 1.125rem;
+        font-weight: bold;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+      }
     }
     .ui-dialog-title{
       float:none;

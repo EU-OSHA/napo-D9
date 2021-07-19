@@ -81,7 +81,7 @@
   // Counter for Download Centre Button
   $('#ncc-download-centre-form').each(function(){
     let selectedItems=0;
-    $(this).find('.custom-control-input').on('change', function(){
+    $(this).find('.form-checkbox').on('change', function(){
       if(this.checked){
         selectedItems++;
       }
