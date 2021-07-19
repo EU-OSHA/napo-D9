@@ -1,0 +1,53 @@
+label: Omdirigera
+description: 'Lista över omdirigeringar'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ föregående'
+            next: 'nästa ›'
+            first: '« första'
+            last: 'sista »'
+          expose:
+            items_per_page_label: 'Inlägg per sida'
+            items_per_page_options_all_label: '- Alla -'
+            offset_label: Kompensera
+      fields:
+        redirect_bulk_form:
+          action_title: 'Med urval'
+        redirect_source__path:
+          label: Från
+          separator: ', '
+        created:
+          label: Skapad
+      filters:
+        redirect_source__path:
+          expose:
+            label: Från
+        redirect_redirect__uri:
+          expose:
+            label: Till
+        status_code:
+          expose:
+            label: Statuskod
+          group_info:
+            label: Statuskod
+        language:
+          expose:
+            label: Ursprungsspråk
+      title: Omdirigera
+      empty:
+        area_text_custom:
+          content: 'Det finns ingen omdirigering ännu.'
+  page_1:
+    display_title: Page

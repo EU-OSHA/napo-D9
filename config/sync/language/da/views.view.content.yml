@@ -1,4 +1,4 @@
-label: Indhold
+label: Content
 description: 'Find and manage content.'
 display:
   default:
@@ -54,7 +54,7 @@ display:
         langcode:
           expose:
             label: Language
-      title: Indhold
+      title: Content
       empty:
         area_text_custom:
           content: 'No content available.'
@@ -62,8 +62,8 @@ display:
   page_1:
     display_options:
       menu:
-        title: Indhold
+        title: Content
       tab_options:
-        title: Indhold
+        title: Content
         description: 'Find and manage content'
     display_title: Page

@@ -1,0 +1,62 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ anterior'
+            next: 'següent ›'
+            first: '« primer'
+            last: 'últim »'
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+      fields:
+        redirect_bulk_form:
+          action_title: 'Amb la selecció'
+        redirect_source__path:
+          label: De
+          separator: ', '
+        created:
+          label: Creat
+      filters:
+        redirect_source__path:
+          expose:
+            label: De
+        redirect_redirect__uri:
+          expose:
+            label: Per
+        status_code:
+          expose:
+            label: 'Codi d''estat'
+          group_info:
+            label: 'Codi d''estat'
+            group_items:
+              1:
+                title: '300 Múltiples Opcions'
+              2:
+                title: '301 Mogut permanentment'
+              3:
+                title: '302 Trobat'
+              4:
+                title: '303 Veieu d''Altres'
+              5:
+                title: '304 Sense Modificació'
+              6:
+                title: '305 Utilitza Proxy'
+              7:
+                title: '307 Redirecció Temporal'
+        language:
+          expose:
+            label: 'Llengua original'
+  page_1:
+    display_title: Page
