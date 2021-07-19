@@ -556,6 +556,18 @@ div.pagerer-container {
 .napo-films-modal .ui-dialog-titlebar .ui-dialog-titlebar-close:hover, .napo-films-modal .ui-dialog-titlebar .ui-dialog-titlebar-close:focus {
   color: transparent;
 }
+.napo-films-modal .ui-dialog-titlebar .ui-dialog-titlebar-close:after {
+  content: "X";
+  color: #f7e235;
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .napo-films-modal .ui-dialog-titlebar .ui-dialog-title {
   float: none;
   display: block;
@@ -4557,6 +4569,8 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 }
 .node--type-napo-video .conten-video-info .addtoany_list {
   display: none;
+  position: absolute;
+  z-index: 200;
 }
 .node--type-napo-video .conten-video-info .share-links-node {
   margin-left: 0.5rem;
