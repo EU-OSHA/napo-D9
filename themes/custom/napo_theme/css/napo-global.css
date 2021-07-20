@@ -3325,6 +3325,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   padding: 1.125rem;
   font-weight: bold;
   font-size: 1.125rem;
+  border-top: 5px solid #1f3695;
 }
 .download-centre .download-centre-empty .inline-icon {
   position: relative;
