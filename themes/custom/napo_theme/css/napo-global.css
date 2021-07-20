@@ -4628,6 +4628,8 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 .node--type-napo-video .conten-video-info-tags .body span {
   color: #1f3695 !important;
   background-color: transparent !important;
+  font-size: 1.125rem !important;
+  line-height: 1.625rem !important;
 }
 .node--type-napo-video .back-button-custom {
   text-align: right;
