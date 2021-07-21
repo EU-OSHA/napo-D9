@@ -207,7 +207,8 @@
     padding:0px;
   }
   .custom-select,
-  .lang-dropdown-select-element.form-select{
+  .lang-dropdown-select-element.form-select,
+  #edit-lang-dropdown-select{
     background: $bg-color-blue;
     color: $text-color-white;
     font-size: 1.125rem;

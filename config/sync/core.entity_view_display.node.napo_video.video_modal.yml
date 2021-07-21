@@ -28,6 +28,11 @@ targetEntityType: node
 bundle: napo_video
 mode: video_modal
 content:
+  addtoany:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_video:
     type: entity_reference_entity_view
     weight: 0
@@ -38,7 +43,6 @@ content:
       view_mode: default
     third_party_settings: {  }
 hidden:
-  addtoany: true
   body: true
   breadcrumbs: true
   content_moderation_control: true
