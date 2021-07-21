@@ -56,6 +56,17 @@
           }
         });
       });
+
+
+      //AccesKey
+
+      jQuery(document).ready(function () {
+        $('#edit-search-api-fulltext').attr('accessKey', 'Q');
+
+        $(' #edit-lang-dropdown-select').attr('accessKey', 'L');
+
+        $('.header .nav-item:first-of-type a').attr('accessKey', '0');
+      });
     }
   };
 
@@ -121,8 +132,6 @@
 
 
   jQuery(document).ready(function () {
-    $('body').on('click', '.cart a', function(){
-    })
 
     $('#header').on('click', '.btn-search-custom-mobile', function () {
       $('#block-searchapi').toggleClass('in');
@@ -230,5 +239,7 @@
       }
     });
   });
+
+
 })(jQuery, Drupal);
 

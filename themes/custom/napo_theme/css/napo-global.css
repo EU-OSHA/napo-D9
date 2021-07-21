@@ -876,6 +876,33 @@ a[target=_blank]:after {
   color: #FFF;
 }
 
+#lang_dropdown_form_lang-dropdown-form fieldset {
+  width: 100%;
+}
+
+#edit-lang-dropdown-select {
+  visibility: visible !important;
+  position: static !important;
+  width: 100% !important;
+  border: none !important;
+  line-height: 18px;
+  border: none;
+  height: 31px !important;
+  appearance: none;
+  box-sizing: border-box;
+  background: #f7e235;
+  cursor: pointer;
+  border-radius: 3.75rem;
+  margin-top: 3px;
+  font-weight: bold;
+  padding: 4px 16px;
+  font-size: 13px;
+}
+
+#edit_lang_dropdown_select_chosen {
+  display: none !important;
+}
+
 .custom-switch {
   margin-bottom: 0.25rem;
 }
