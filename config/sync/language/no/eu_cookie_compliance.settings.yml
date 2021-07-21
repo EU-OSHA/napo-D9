@@ -1,4 +1,9 @@
+popup_agreed:
+  value: "<h2>Thank you for accepting cookies</h2>\r\n\r\n<p>You can now hide this message or find out more about cookies.</p>\r\n"
 popup_agree_button_message: 'Jeg samtykker'
+popup_more_info_button_message: 'More info'
+popup_find_more_button_message: 'More info'
 popup_info:
   value: "<h2>Dette nettstedet bruker cookies for å samle informasjon som er nødvendig for å surfe på nettsider, i henhold til våre retningslinjer varsel.</h2>\r\n<p>Ved å klikke på en link på websidene du gir ditt samtykke til bruk av informasjonskapsler</p>"
+popup_link: /using-napo/rights-and-permissions
 disagree_button_label: 'Nei, gi meg mer informasjon'

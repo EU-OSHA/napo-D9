@@ -876,6 +876,10 @@ a[target=_blank]:after {
   color: #FFF;
 }
 
+#block-languagedropdownswitcher {
+  width: 100%;
+}
+
 #lang_dropdown_form_lang-dropdown-form fieldset {
   width: 100%;
 }
@@ -890,13 +894,17 @@ a[target=_blank]:after {
   height: 31px !important;
   appearance: none;
   box-sizing: border-box;
-  background: #f7e235;
+  background-color: #f7e235;
   cursor: pointer;
   border-radius: 3.75rem;
   margin-top: 3px;
   font-weight: bold;
   padding: 4px 16px;
   font-size: 13px;
+  color: #1f3695;
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-language.png);
+  background-repeat: no-repeat;
+  background-position: 92% center;
 }
 
 #edit_lang_dropdown_select_chosen {
@@ -5083,7 +5091,8 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   }
 
   .custom-select,
-.lang-dropdown-select-element.form-select {
+.lang-dropdown-select-element.form-select,
+#edit-lang-dropdown-select {
     background: #1f3695;
     color: #FFF;
     font-size: 1.125rem;
