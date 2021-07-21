@@ -4418,6 +4418,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   color: #1f3695;
   font-size: 1.125rem;
   margin: 1.25rem 0rem 0.875rem;
+  font-weight: bold;
 }
 .node--type-lesson .content-custom .content-accordions-custom .accordions .field--label-above > .field__item a[target=_blank]:after,
 .node--type-lesson .content-custom .content-accordions-custom .accordions .field--label-above > .field__items a[target=_blank]:after,
