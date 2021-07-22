@@ -1,0 +1,49 @@
+.download-video{
+  position:relative;
+  &:before{
+    content:'';
+    width: 44px;
+    height: 43px;
+    background-image: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border-radius: 0px;
+    display: block;
+  }
+  .download-items{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    z-index:20;
+    display:none;
+    a{
+      display: block;
+      width: 60px;
+      height: auto;
+      background: $bg-color-blue-light;
+      color: $text-color-blue;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:1.125rem;
+      padding: 5px 0px;
+      text-align: center;
+      text-transform: uppercase;
+      &:after{
+        display:none;
+      }
+      &:hover{
+        background: $bg-color-yellow;
+        color: $text-color-blue;
+        text-decoration: none;
+      }
+    }
+  }
+  &:hover{
+    .download-items{
+      display:block;
+    }
+  }
+}
+
