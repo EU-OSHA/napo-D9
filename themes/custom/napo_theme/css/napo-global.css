@@ -4743,6 +4743,10 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   right: 0px;
 }
 
+.node--type-napo-video .napo-films-modal .view-scenes-custom .slick__slide img {
+  width: 145px;
+}
+
 .node--type-napo-album .field--name-field-media-image img {
   margin: 0 auto;
 }
