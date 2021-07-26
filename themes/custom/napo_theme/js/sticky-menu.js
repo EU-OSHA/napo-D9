@@ -8,9 +8,17 @@ jQuery( document ).ready(function($) {
   $('#header').css({'min-height':headerHeight});
   $(window).scroll(function(event){
     let windowScrollTop = $(this).scrollTop();
-    if(windowScrollTop<headerHeight){
+    if(windowScrollTop==0){
       if($('#navbar').hasClass('show-menu')){
         $('#navbar').stop().removeClass('show-menu');
+      }
+      else if($('#navbar').hasClass('hide-menu')){
+        $('#navbar').stop().removeClass('hide-menu');
+      }
+    }
+    if(windowScrollTop<headerHeight){
+      if($('#navbar').hasClass('show-menu')){
+        $('#navbar').stop().removeClass('show-menu')
       }
     }
     else if (windowScrollTop > lastScroll && windowScrollTop>headerHeight){

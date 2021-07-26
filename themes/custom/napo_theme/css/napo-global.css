@@ -3441,7 +3441,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
 .ncc-download-centre-form table td {
   border: none;
 }
-.ncc-download-centre-form table tr:nth-of-type(odd) {
+.ncc-download-centre-form table tr:nth-of-type(odd), .ncc-download-centre-form table tr.odd {
   background-color: transparent;
 }
 .ncc-download-centre-form table tr:hover {

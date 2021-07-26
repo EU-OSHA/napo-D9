@@ -77,9 +77,7 @@
             $(this).text(linkHrefSplit[linkHrefSplit.length-1]);
           });
         });
-
       });
-
     }
   };
 
