@@ -5,11 +5,3 @@ display:
         options:
           submit_button: Ieškoti
       title: 'Atsisiuntimų centras'
-      header:
-        area:
-          content:
-            value: "<p>Iš šio atsisiuntimų centro galite atsisiųsti visus vienu kartu pasirinktus vaizdo įrašus arba, jei norite atsisiųsti tik pasirinktus vaizdo įrašus, galite pasirinkti iš sąrašo ir paspausti &amp;bdquo;Atsisiųsti pasirinktus&amp;ldquo;. Be to, paspaudę mygtuką &amp;bdquo;X&amp;ldquo;, iš atsisiuntimų centro sąrašo galite pašalinti pasirinktus vaizdo įrašus, o paspaudę mygtuką &amp;bdquo;arrow&amp;ldquo; ir pasirinkę pageidaujamą formatą, galite pasirinkti vaizdo įrašų formatą.</p>\r\n"
-            format: full_html
-      empty:
-        area_text_custom:
-          content: 'Norėdami į savo kompiuterį parsisiųsti Napo filmą ar pasirinktas filmo vietas, eikite į Napo filmams skirtą svetainę (www.napofilm.net) ir pasirinkite norimą filmą ar jo vietą. Spustelėkite mygtuką „Parsisiųsti“ <span class="glyphicon napo-film-video-download-form-title inline-icon"></span> arba įkelkite vaizdo įrašą į siuntų centrą spustelėdami mygtuką „Įkelti į siuntų centrą“<span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

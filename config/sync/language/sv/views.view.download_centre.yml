@@ -5,11 +5,3 @@ display:
         options:
           submit_button: Sök
       title: Nedladdningscenter
-      header:
-        area:
-          content:
-            value: "<p>Från det här nedladdningscentret kan du hämta alla valda filmer på en och samma gång. Eller också väljer du de filmer du vill hämta i listan och klickar på &amp;rdquo;download selected&amp;rdquo; (ladda ner valda filmer). Du kan även ta bort valda filmer från listan i nedladdningscentret genom att klicka på knappen X. Filmformat väljer du med pilknappen.</p>\r\n"
-            format: full_html
-      empty:
-        area_text_custom:
-          content: 'För att ladda ner hela Napofilmerna eller valda delar av en film går du till webbplatsen för Napofilmerna (www.napofilm.net) och till den film eller det filmavsnitt som du vill hämta. Du kan välja att klicka på knappen för nedladdning <span class="glyphicon napo-film-video-download-form-title inline-icon"></span>, eller på knappen för nedladdningscentret. I det sistnämnda fallet läggs filmen till i nedladdningscentret <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

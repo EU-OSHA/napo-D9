@@ -5,11 +5,3 @@ display:
         options:
           submit_button: Toepassen
       title: Downloadcentrum
-      header:
-        area:
-          content:
-            value: "<p>Via dit downloadcentrum kunt u in één beweging alle door u gekozen filmpjes downloaden of kunt u een selectie maken uit de lijst en die vervolgens downloaden door op &amp;apos;Selectie downloaden&amp;apos; te klikken. U kunt ook geselecteerde filmpjes uit de lijst van het downloadcentrum verwijderen door op de knop &amp;apos;X&amp;apos; te klikken, alsook een bestandsformaat kiezen door op de &amp;apos;pijl&amp;apos;-knop te klikken en het gewenste formaat te selecteren.</p>\r\n"
-            format: full_html
-      empty:
-        area_text_custom:
-          content: 'Om volledige Napo-films of bepaalde scènes naar uw computer te downloaden, gaat u naar de Napo-website (www.napofilm.net) en vervolgens naar de film of scène die u wilt downloaden. U kunt ofwel op de downloadknop klikken <span class="glyphicon napo-film-video-download-form-title inline-icon"></span>, ofwel het filmpje aan het downloadcentrum toevoegen door op de downloadcentrumknop te klikken <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

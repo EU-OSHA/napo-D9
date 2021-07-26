@@ -5,11 +5,3 @@ display:
         options:
           submit_button: Otsi
       title: Allalaadimiskeskus
-      header:
-        area:
-          content:
-            value: "<p>Allalaadimiskeskusest saate alla laadida kas kõik videod, mille olete ühe toimingu käigus valinud, või saate valida loetelust ja klõpsata &amp;bdquo;Allalaadimine valitud&amp;rdquo;, et laadida alla vaid valitud videod. Kui klõpsate nuppu &amp;bdquo;X&amp;rdquo;, saate eemaldada valitud videod allalaadimiskeskuse loetelust, kui klõpsate noolenuppu, saate valida video formaadi.</p>\r\n"
-            format: full_html
-      empty:
-        area_text_custom:
-          content: 'Et Napo filme või filmistseene oma personaalarvutisse alla laadida, minge Napo veebilehele (www.napofilm.net) ja otsige üles film või stseen, mida soovite alla laadida. Saate kas klõpsata nuppu „Laadi alla“ <span class="glyphicon napo-film-video-download-form-title inline-icon"></span> või lisada videod allalaadimiskeskusse, klõpsates  allalaadimiskeskusse lisamise nuppu <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'
