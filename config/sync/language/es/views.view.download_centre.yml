@@ -5,11 +5,3 @@ display:
         options:
           submit_button: 'Presentar solicitud'
       title: 'Centro de descargas'
-      header:
-        area:
-          content:
-            value: "<p>En este centro de descargas podrá descargar todos los vídeos que ha seleccionado en bloque o seleccionarlos por separado en la lista y hacer después clic en «descargar selección» para descargar solamente los que haya elegido. También puede eliminar de la lista del centro de descargas los vídeos seleccionados que desee: bien haciendo clic en el botón «X» y seleccionando después el formato del vídeo, bien haciendo clic en el botón de «flecha» y seleccionando después el formato.</p>\r\n"
-            format: full_html
-      empty:
-        area_text_custom:
-          content: 'Para descargase todas las películas de Napo o algunas escenas en el ordenador vaya al sitio web de Napo (www.napofilm.net) y después a la película o escena que desee descargar. Puede hacer clic en el botón «descargar» <span class="glyphicon napo-film-video-download-form-title inline-icon"></span> o agregar el vídeo al centro de descargas haciendo clic en el botón «Añadir al centro de descargas» <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'
