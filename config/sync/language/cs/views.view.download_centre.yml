@@ -2,14 +2,6 @@ display:
   default:
     display_options:
       title: 'Centrum stahování'
-      header:
-        area:
-          content:
-            value: "<p>Z tohoto centra stahování si můžete videa stáhnout buď všechna najednou, nebo si z jejich seznamu vybrat ta, o která máte zájem, a stáhnout si je kliknutím na možnost &amp;bdquo;stáhnout vybrané&amp;ldquo;.&nbsp; Vybraná videa můžete rovněž ze seznamu v centru stahování odstranit kliknutím na tlačítko &amp;bdquo;X&amp;ldquo;. Kliknutím na &amp;bdquo;šipku&amp;ldquo; si můžete zvolit formát videa.</p>\r\n"
-            format: full_html
       exposed_form:
         options:
           submit_button: Vyhledat
-      empty:
-        area_text_custom:
-          content: 'Chcete-li si do svého počítače stáhnout celé filmy o Napovi nebo vybrané scény z nich, přejděte na internetové stránky o Napovi (www.napofilm.net) a vyberte si film nebo scénu, které si přejete stáhnout. Můžete buď kliknout na tlačítko „Stáhnout“ <span class="glyphicon napo-film-video-download-form-title inline-icon"></span>, nebo kliknutím na tlačítko „Přidat do centra stahování“ přidejte zvolené video do centra stahování  <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"</span>.'

@@ -5,11 +5,3 @@ display:
         options:
           submit_button: Bruk
       title: Nedlastingsseksjon
-      header:
-        area:
-          content:
-            value: "<p>Fra dette nedlastingssenteret kan du laste ned alle videoene du har valgt i én operasjon, du kan også velge fra listen og klikke «last ned valgte» for å bare laste ned de du har valgt. Du kan i tillegg fjerne valgte videoer fra listen i nedlastingssenteret. Det gjør du ved å første klikke på «X»-knappen, deretter velger du videoformat ved å klikke «pil»-knappen og til slutt velger du format.</p>\r\n"
-            format: full_html
-      empty:
-        area_text_custom:
-          content: 'For å late ned fullstendige Napo-filmer eller utvalgte scener til PC-en, kan du gå til Napos nettsted (www.napofilm.net) og gå til filmen eller scenen du vil laste ned. Du kan enten klikke på «last ned»-knappen <span class="glyphicon napo-film-video-download-form-title inline-icon"></span> eller legge videoen til nedlastingssenteret ved å klikke «nedlastingssenter»-knappen <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

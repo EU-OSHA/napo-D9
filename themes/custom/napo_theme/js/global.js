@@ -66,6 +66,15 @@
             $(this).text(linkTextSplit[linkTextSplit.length-1]);
           });
         });
+
+
+        //Text of the link to the video in Lessons and activities
+        if($('#linkToVideoCustom').length>0){
+          $('#linkToVideoCustom').each(function(){
+            let linkText= $(this).closest('#main-wrapper').find('h1').text();
+            $(this).text(linkText);
+          });
+        }
       });
     }
   };

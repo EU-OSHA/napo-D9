@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_combined_tags
     - field.storage.node.field_image
     - field.storage.node.field_publication_date
+    - field.storage.node.field_video
     - image.style.large
     - node.type.napo_video
     - taxonomy.vocabulary.video_type
@@ -16,6 +17,7 @@ dependencies:
     - datetime
     - draggableviews
     - media
+    - napo_content_cart
     - node
     - taxonomy
     - user
@@ -815,6 +817,55 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
+        ncc_download:
+          id: ncc_download
+          table: views
+          field: ncc_download
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          plugin_id: ncc_download
         nid:
           id: nid
           table: node_field_data
@@ -892,7 +943,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"cart\">{{content_cart}}<a href=\"#\">Add to download centre</a></div>\r\n<div class=\"cart\">{{ ncc_download }}</div>"
+            text: '<div class="cart">{{ ncc_download }}</div>'
             make_link: false
             path: ''
             absolute: false
@@ -1289,6 +1340,69 @@ display:
           absolute: true
           entity_type: node
           plugin_id: entity_link
+        field_video:
+          id: field_video
+          table: node__field_video
+          field: field_video
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         nothing:
           id: nothing
           table: views
@@ -1300,7 +1414,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h3> <b>{{ title }}</b></h3>\r\n{{ field_publication_date }} \r\n<div class=\"episode-list-details-container\">\r\n<div class=\"napo-film-list-details-container\">\r\n<div class=\"tags\">{{ field_combined_tags }} </div>\r\n<div class=\"buttons\">\r\n<div class=\"view-video\">{{ view_node }}</div>\r\n<div class=\"download-video\"><a target=\"_blank\" href=\"{{ uri}}\">Download video</a></div>\r\n</div>\r\n</div>\r\n</div>"
+            text: "<h3> <b>{{ title }}</b></h3>\r\n{{ field_publication_date }} \r\n<div class=\"episode-list-details-container\">\r\n<div class=\"napo-film-list-details-container\">\r\n<div class=\"tags\">{{ field_combined_tags }} </div>\r\n<div class=\"buttons\">\r\n<div class=\"view-video\">{{ view_node }}</div>\r\n<div class=\"download-video\">\r\n            <div class=\"download-items\">\r\n                {% for link in field_video|split(',') %}\r\n                <a target=\"_blank\" href=\"/napos-films/{{ nid }}/video/download\">{{link}}</a>\r\n                {% endfor %}\r\n            </div>\r\n        </div>\r\n</div>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -1588,3 +1702,4 @@ display:
         - 'config:field.storage.node.field_combined_tags'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_publication_date'
+        - 'config:field.storage.node.field_video'

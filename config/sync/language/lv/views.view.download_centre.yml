@@ -5,11 +5,3 @@ display:
         options:
           submit_button: Pieteikt
       title: 'Lejupielādes centrs'
-      header:
-        area:
-          content:
-            value: "<p>Šajā lejupielādes centrā Jūs varat vienā piegājienā lejupielādēt visus atlasītos video ierakstus, vai arī varat izvēlēties no saraksta, uzklikšķinot uz &amp;quot;lejupielādēt atlasītos&amp;quot;, lai lejupielādētu tikai atlasītos video. Jūs varat arī dzēst atlasītos video ierakstus no lejupielādes centra saraksta, uzklikšķinot uz pogas &amp;ldquo;X&amp;rdquo;, un izvēlēties video formātu, uzklikšķinot uz pogas &amp;ldquo;&lt;i&gt;Arrow&lt;/i&gt;&amp;rdquo; (bulta) un izvēloties formātu.</p>\r\n"
-            format: full_html
-      empty:
-        area_text_custom:
-          content: 'Lai savā datorā lejupielādētu visas Napo filmas vai izvēlētās epizodes, dodieties uz Napo tīmekļa vietni www.napofilm.net un izvēlieties filmu vai epizodi, ko vēlaties lejupielādēt. Jūs varat vai nu klikšķināt uz taustiņa “Lejupielādēt” <span class="glyphicon napo-film-video-download-form-title inline-icon"></span>, vai pievienot savu videomateriālu lejupielādes centram, klikšķinot uz taustiņa “Pievienot lejupielādes centram” <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'
