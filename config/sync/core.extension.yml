@@ -42,7 +42,6 @@ module:
   dblog: 0
   draggableviews: 0
   dynamic_entity_reference: 0
-  dynamic_page_cache: 0
   editor: 0
   entity: 0
   entity_browser: 0
@@ -101,6 +100,7 @@ module:
   pagerer: 0
   path: 0
   path_alias: 0
+  path_redirect_import: 0
   pathologic: 0
   printfriendly: 0
   quickedit: 0
