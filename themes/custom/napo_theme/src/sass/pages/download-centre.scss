@@ -55,7 +55,8 @@
       border:none;
     }
     tr{
-      &:nth-of-type(odd){
+      &:nth-of-type(odd),
+      &.odd{
         background-color: transparent;
       }
       &:hover{
