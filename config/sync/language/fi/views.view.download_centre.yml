@@ -5,11 +5,3 @@ display:
         options:
           submit_button: Valitse
       title: Latauskeskus
-      header:
-        area:
-          content:
-            value: "<p>Tästä latauskeskuksesta voit joko ladata kaikki luetteloon lisäämäsi videofilmit yhdellä kertaa tai valita filmejä luettelosta ja näpäyttää painiketta &amp;quot;download selected&amp;quot; ladataksesi vain valitut filmit. Voit poistaa valitut videofilmit latauskeskuksen luettelosta näpäyttämällä painiketta &amp;quot;X&amp;quot; ja valita filmin formaatin näpäyttämällä nuolinäppäintä ja valitsemalla sitten formaatin.</p>\r\n"
-            format: full_html
-      empty:
-        area_text_custom:
-          content: 'Ladataksesi kokonaisia Napo-filmejä tai valittuja osia niistä tietokoneellesi mene Napo-sivustolle (www.napofilm.net) ja siihen filmiin tai filmin osaan, jonka haluat ladata. Voit joko näpäyttää "download"-näppäintä <span class="glyphicon napo-film-video-download-form-title inline-icon"></span> tai lisätä videofilmin latauskeskukseen näpäyttämällä painiketta "Add to download centre" <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

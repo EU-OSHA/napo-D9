@@ -1,17 +1,4 @@
 display:
-  default:
-    display_options:
-      exposed_form:
-        options:
-          submit_button: Zoeken
-      empty:
-        area_text_custom:
-          content: 'Geen resultaten'
-  page_1:
-    display_options:
-      exposed_form:
-        options:
-          submit_button: Zoeken
   page_2:
     display_options:
       fields:
@@ -20,4 +7,47 @@ display:
             text: 'Film bekijken'
         nothing:
           alter:
-            text: "<div class=\"item\">\r\n    <div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\"><a target=\"_blank\" href=\"{{ uri}}\">Video downloaden</a></div>\r\n         <div class=\"cart\">{{content_cart}}<a href=\"#\">Toevoegen aan downloadcentrum</a></div>\r\n    </div>\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n        <div class=\"view-scenes\"><a href=\"/napo-s-film-episodes/{{nid}}\">Afleveringen bekijken</a></div>\r\n    </div>\r\n</div>"
+            text: "<div class=\"item\">\r\n    <div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\">\r\n<div class=\"download-items\">\r\n{% for link in uri|split(',') %}\r\n<a target=\"_blank\" href=\"/napos-films/{{ nid }}/video/download\">{{ link }}</a>\r\n{% endfor %}\r\n\r\n</div>\r\n</div>\r\n         <div class=\"cart\">{{ ncc_download }}</div>\r\n    </div>\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n       {% if field_video_type  == 'Film video' %}\r\n<div class=\"view-scenes\"><a href=\"/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">Afleveringen bekijken</a></div>\r\n{% endif %}\r\n    </div>\r\n</div>\r\n"
+      filters:
+        search_api_fulltext:
+          group_info:
+            description: ''
+  page_3:
+    display_options:
+      fields:
+        url_1:
+          alter:
+            text: 'Film bekijken'
+        nothing:
+          alter:
+            text: "<div class=\"item\">\r\n<div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\">\r\n            <div class=\"download-items\">\r\n             {% for link in uri|split(',') %}\r\n             <a target=\"_blank\" href=\"/napos-films/{{ nid }}/video/download\">{{ link }}</a>\r\n            {% endfor %}\r\n         </div>\r\n</div>\r\n         \r\n<div class=\"cart\">{{ ncc_download }}</div>\r\n</div>\r\n\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n    {% if field_video_type  == 'Film video' %}\r\n<div class=\"view-scenes\"><a href=\"/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">Afleveringen bekijken</a></div>\r\n{% endif %}\r\n    </div>\r\n\r\n</div>"
+      filters:
+        search_api_fulltext:
+          group_info:
+            description: ''
+  page_4:
+    display_options:
+      fields:
+        url_1:
+          alter:
+            text: 'Film bekijken'
+        nothing:
+          alter:
+            text: "<div class=\"item {{ field_video_type }}\">\r\n  <div class=\"cart\">{{ ncc_download }}</div>\r\n  <div class=\"napo-film-list-image\">{{field_image}}</div>\r\n  <div class=\"group-right\">\r\n    <h3>{{title}}</h3>\r\n    <div>{{field_publication_date}}</div>\r\n    <p>{{processed}}</p>\r\n    <div class=\"napo-film-list-details-container\">\r\n      <div class=\"\">{{ field_combined_tags }}</div>\r\n     {% if field_video_type  == 'Film video' %}\r\n<div class=\"view-scenes\"><a href=\"/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">Afleveringen bekijken</a></div>\r\n{% endif %}\r\n      <div class=\"view-video\">{{ url_1 }}</div>\r\n      <div class=\"download-video\">\r\n        <div class=\"download-items\">\r\n        {% for link in uri|split(',') %}\r\n         <a target=\"_blank\" href=\"/napos-films/{{ nid }}/video/download\">{{ link }}</a>\r\n        {% endfor %}\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>\r\n</div>"
+      filters:
+        search_api_fulltext:
+          group_info:
+            description: ''
+  page_list:
+    display_options:
+      fields:
+        url_1:
+          alter:
+            text: 'Film bekijken'
+        nothing:
+          alter:
+            text: "<div class=\"item\">\r\n<div class=\"cart\">{{ ncc_download }}</div>\r\n<div class=\"napo-film-list-image\">{{field_image}}</div>\r\n<div class=\"group-right\">\r\n<h3>{{title}}</h3>\r\n<div>{{field_publication_date}}</div>\r\n<p>{{processed}}</p>\r\n<div class=\"napo-film-list-details-container\">\r\n<div class=\"\">{{ field_combined_tags }} </div>\r\n{% if field_video_type  == 'Film video' %}\r\n<div class=\"view-scenes\"><a href=\"/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">Afleveringen bekijken</a></div>\r\n{% endif %}\r\n<div class=\"view-video\">{{ url_1 }}</div>\r\n<div class=\"download-video\">\r\n<div class=\"download-items\">\r\n{% for link in uri|split(',') %}\r\n<a target=\"_blank\" href=\"/napos-films/{{ nid }}/video/download\">{{ link }}</a>\r\n{% endfor %}\r\n</div>\r\n</div>\r\n\r\n</div>\r\n</div>\r\n</div>"
+      filters:
+        search_api_fulltext:
+          group_info:
+            description: ''

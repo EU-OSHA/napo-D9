@@ -5,11 +5,3 @@ display:
         options:
           submit_button: Išči
       title: 'Središče za prenos'
-      header:
-        area:
-          content:
-            value: "<p>V središču za prenos lahko izbirate med možnostjo prenosa vseh videoposnetkov naenkrat ali možnostjo prenosa samo želenih videoposnetkov s seznama, pri čemer morate najprej izbrati želene zapise in nato klikniti gumb &amp;bdquo;Prenesi izbrano&amp;ldquo;. Izbrane videoposnetke lahko seveda s klikom na gumb &amp;bdquo;X&amp;ldquo; tudi odstranite s seznama za prenos, lahko pa izberete tudi obliko videoposnetka s klikom na puščico, s čimer nato izberete želeno obliko.</p>\r\n"
-            format: full_html
-      empty:
-        area_text_custom:
-          content: 'Za prenos filmov o Napu v celoti ali samo izbranih prizorov na vaš računalnik pojdite na spletišče Napo (www.napofilm.net), na katerem lahko izberete film ali prizor, ki ga želite prenesti. Kliknite gumb „Prenesi“ <span class="glyphicon napo-film-video-download-form-title inline-icon"></span> ali pa s klikom na gumb „Dodaj v središče za prenos“ želeni videoposnetek dodajte na seznam za prenos <span class="glyphicon content-cart-add-to-cart-btn inline-icon" aria-hidden="true"></span>.'

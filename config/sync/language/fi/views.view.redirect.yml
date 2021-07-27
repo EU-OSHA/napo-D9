@@ -1,3 +1,4 @@
+label: Redirect
 display:
   default:
     display_title: Master
@@ -55,5 +56,6 @@ display:
         language:
           expose:
             label: 'Alkuperäinen kieli'
+      title: Redirect
   page_1:
     display_title: Page

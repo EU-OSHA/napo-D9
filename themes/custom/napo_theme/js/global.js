@@ -58,14 +58,33 @@
       });
 
 
-      //AccesKey
 
       jQuery(document).ready(function () {
+
+        //AccesKey
+
         $('#edit-search-api-fulltext').attr('accessKey', 'Q');
-
         $(' #edit-lang-dropdown-select').attr('accessKey', 'L');
-
         $('.header .nav-item:first-of-type a').attr('accessKey', '0');
+
+
+        // Download format text
+        $('.download-video').each(function(){
+          $(this).find('.download-items a').each(function(){
+            let linkText= $(this).text();
+            let linkTextSplit= linkText.split('.');
+            $(this).text(linkTextSplit[linkTextSplit.length-1]);
+          });
+        });
+
+
+        //Text of the link to the video in Lessons and activities
+        if($('#linkToVideoCustom').length>0){
+          $('#linkToVideoCustom').each(function(){
+            let linkText= $(this).closest('#main-wrapper').find('h1').text();
+            $(this).text(linkText);
+          });
+        }
       });
     }
   };
@@ -208,7 +227,7 @@
 
 
 
-  // Play "Napor for teachers" and "Napor in the workplace" videos
+  // Play "Napo for teachers" and "Napo in the workplace" videos
   $('.video-custom').each(function(){
     let $video=$(this).find('video');
     let playVideo=false;
