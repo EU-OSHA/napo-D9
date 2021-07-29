@@ -4733,6 +4733,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   background-color: transparent !important;
   font-size: 1.125rem !important;
   line-height: 1.625rem !important;
+  font-family: "Ubuntu", cursive !important;
 }
 .node--type-napo-video .back-button-custom {
   text-align: right;
