@@ -186,10 +186,8 @@
     }
     .view-video,
     .view-scenes{
-      position:absolute;
-      z-index:200;
-      bottom:0rem;
-      margin-bottom:0.5rem;
+      float:left;
+      margin-top:0.5rem;
       a{
         text-indent: 1px;
         width: auto;
@@ -206,7 +204,7 @@
       }
     }
     .view-scenes{
-      left:140px;
+      margin-left:0.5rem;
     }
   }
 }
