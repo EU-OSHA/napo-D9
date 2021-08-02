@@ -22,6 +22,7 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'use advanced search'
   - 'use exclude node title'
   - 'use manualcrop'
   - 'use search autocomplete'
