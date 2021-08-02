@@ -3974,7 +3974,7 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   display: none;
 }
 .napos-films-films.showResults #block-quicktabsnapofilms,
-.napos-films-films.showResults .node--type-article {
+.napos-films-films.showResults .node--type-article .field--name-body {
   display: none;
 }
 .napos-films-films.showResults .block-quicktabs-blocknapo-films-results {

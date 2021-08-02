@@ -112,7 +112,7 @@
   }
   &.showResults{
     #block-quicktabsnapofilms,
-    .node--type-article{
+    .node--type-article .field--name-body {
       display:none;
     }
     .block-quicktabs-blocknapo-films-results{
