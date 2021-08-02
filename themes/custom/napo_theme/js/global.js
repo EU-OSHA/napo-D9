@@ -33,16 +33,12 @@
       });
 
 
+      jQuery(document).ready(function () {
 
-
-      //Play home video
-      $( document ).ready(function() {
-
+        //Play home video
         let homeVideo=$('.block-views-blockfrontpage-custom-video-block').find('video');
         let playHomeVideo=false;
-
         $('#block-views-block-frontpage-custom-video-block').append('<div class="play-button-container"><span class="button-play"></span></div>');
-
         $('.block-views-blockfrontpage-custom-video-block').on('click','.play-button-container', function() {
           if(playHomeVideo==false) {
             homeVideo.get()[0].play();
@@ -55,14 +51,8 @@
             playHomeVideo = false;
           }
         });
-      });
-
-
-
-      jQuery(document).ready(function () {
 
         //AccesKey
-
         $('#edit-search-api-fulltext').attr('accessKey', 'Q');
         $(' #edit-lang-dropdown-select').attr('accessKey', 'L');
         $('.header .nav-item:first-of-type a').attr('accessKey', '0');
@@ -90,20 +80,16 @@
   };
 
 
-
-
   // Resize Font size
   $('#text_resize_increase').on('click', function() {
     let fontSize = $('html').css('font-size');
     let newFontSize = parseInt(fontSize)+1;
-
     $('html').css('font-size', newFontSize+'px')
   })
 
   $('#text_resize_decrease').on('click', function() {
     let fontSize = $('html').css('font-size');
     let newFontSize = parseInt(fontSize)-1;
-
     $('html').css('font-size', newFontSize+'px')
   })
 
@@ -127,7 +113,6 @@
   });
 
 
-
   $(window).on('load', function() {
 
     /* Add custom class to facet parent when child is-active */
@@ -144,8 +129,6 @@
     if ($("#block-searchapi")[0]) {
       $('#block-searchapi .form-item-search-api-fulltext').after('<div class="btn-search-custom-mobile"></div>');
     }
-
-
 
   });
 

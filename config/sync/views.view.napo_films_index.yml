@@ -42,7 +42,7 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: none
+        type: search_api_tag
         options: {  }
       query:
         type: views_query
@@ -872,7 +872,8 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       cache:
-        type: none
+        type: search_api_tag
+        options: {  }
       enabled: true
     cache_metadata:
       max-age: -1
@@ -4991,7 +4992,8 @@ display:
       arguments: {  }
       relationships: {  }
       cache:
-        type: none
+        type: search_api_tag
+        options: {  }
       pager:
         type: pagerer
         options:
@@ -6385,7 +6387,8 @@ display:
       arguments: {  }
       relationships: {  }
       cache:
-        type: none
+        type: search_api_tag
+        options: {  }
       pager:
         type: pagerer
         options:
