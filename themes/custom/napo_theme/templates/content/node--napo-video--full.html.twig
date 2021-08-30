@@ -74,20 +74,37 @@
 %}
 
 
-{% if '=' in node.field_youtube.value %}
-  {%  set video_url = node.field_youtube.value |split('=') %}
+{% if '&' in node.field_youtube.value %}
+  {%  set video_url = node.field_youtube.value |split('&') %}
+  {%  set video_url = video_url[0] |split('=')  %}
   {%  set video_url = video_url[1] %}
 {% else %}
-  {%  set video_url = node.field_youtube.value |split('/') %}
-  {%  set video_url_last_array = video_url|length - 1 %}
-  {%  set video_url = video_url[video_url_last_array] %}
+  {%  set video_url = node.field_youtube.value |split('=') %}
+  {%  set video_url = video_url[1] %}
 {% endif %}
 
+{% if node.field_video_type[0].entity.label == "Episode video"  %}
+  {% set video_img =  node.field_video.entity.label %}
+  {% set video_img =  node.field_video.entity.label |split('.') %}
+  {% set video_img =  video_img[0] %}
+{% endif %}
 
 <div class="back-button-custom"><a href="/napos-films/films">{{ 'Back to Films' | trans }}</a></div>
 <article{{ attributes.addClass(classes) }}>
   <div class="video-custom">
-    <iframe width="1110" height="641" src="https://www.youtube-nocookie.com/embed/{{ video_url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    {% if node.field_video_type[0].entity.label == "Episode video"  %}
+      {% for item in node.field_video  %}
+        {% if item.entity.field_media_video_file.entity.getMimeType() == "video/mp4" %}
+          <div id="videoCustom" class="video-custom">
+            {{ drupal_entity("media", item.target_id) }}
+            <img src="/sites/napo/files/images/napo_video/{{ video_img }}.jpg" class="video-custom__image" />
+            <button type="button" class="video-custom__playButton playButton-1" id="videoPlayCustomButton"></button>
+          </div>
+        {% endif %}
+      {% endfor %}
+   {% else %}
+      <iframe width="1110" height="641" src="https://www.youtube-nocookie.com/embed/{{ video_url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    {% endif %}
   </div>
   {% if drupal_view_result('episode_list', 'scenes') is not empty %}
     <div class="view-scenes-custom">
