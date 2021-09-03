@@ -73,7 +73,9 @@
 ]
 %}
 
-{%  set video_url = node.field_youtube.value |split('=') %}
+{% set video_url = node.field_youtube.value |split('=') %}
+{% set parent = getParent(node.id) %}
+
 
 <article{{ attributes.addClass(classes) }}>
   <div class="video-custom">
@@ -90,10 +92,10 @@
     </div>
   </div>
   <div class="conten-video-info-tags">
-    {% if drupal_view_result('episode_list', 'scenes') is not empty %}
+    {% if drupal_view_result('episode_list', 'scenes', parent) is not empty %}
       <div class="view-scenes-custom">
         <h2>{{ 'Scenes'|t }}</h2>
-        {{ drupal_view('episode_list', 'scenes') }}
+        {{ drupal_view('episode_list', 'scenes', parent) }}
       </div>
     {% endif %}
   </div>
