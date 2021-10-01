@@ -78,10 +78,8 @@
   ]
 
 %}
-{% set lang = url | split('/')[1] %}
 
-
-<div class="back-button-custom"><a href="/learning-with-napo/napo-for-teachers">{{ 'Back to Napo for teachers' | trans }}</a></div>
+<div class="back-button-custom"><a href="{{ path('view.napo_for_teachers.page') }}">{{ 'Back to Napo for teachers' | trans }}</a></div>
 <article{{ attributes.addClass(classes) }}>
   <div class="page-banner-custom">
     <div class="video-custom" id="videoCustom">
@@ -101,7 +99,7 @@
           {{ 'Do you need help to organise a learning activity in your classroom?' | trans }}
         </div>
         <div class="link-box">
-          <a href="/learning-with-napo/napo-for-teachers/teacher-guidance" target="_blank">{{ 'Find out more here' | trans }}</a>
+          <a href="{{ url('entity.node.canonical', {'node': 407}) }}" target="_blank">{{ 'Find out more here' | trans }}</a>
         </div>
       </div>
     </div>
