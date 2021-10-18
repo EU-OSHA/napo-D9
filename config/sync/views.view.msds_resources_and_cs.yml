@@ -1206,9 +1206,9 @@ display:
           click_sort_column: target_id
           type: file_download_link
           settings:
-            link_text: ''
-            new_tab: true
-            force_download: true
+            link_text: '[media:field_media_document:description]'
+            new_tab: false
+            force_download: false
             link_title: ''
             custom_classes: ''
           group_column: ''
