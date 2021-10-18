@@ -968,6 +968,13 @@ tr th {
   padding: 0rem;
 }
 
+.accessibility-info table tr td {
+  padding: 0.9rem;
+}
+.accessibility-info table tr td p {
+  font-size: 1rem;
+}
+
 .quicktabs-tabs.list-group {
   width: 100%;
   flex-direction: row;
