@@ -9,6 +9,11 @@
 
   Drupal.behaviors.napo_theme = {
     attach: function (context, settings) {
+
+      //AccesKey
+      $('#edit-lang-dropdown-select').attr('accessKey', 'L');
+      $('#edit-search-api-fulltext').attr('accessKey', 'Q');
+
       // Hide ui-dialog
       $('.download-videos a[class*="napo-cart-add"]').each(function(){
         $(this).click(function(){
