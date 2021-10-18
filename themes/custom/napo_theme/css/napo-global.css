@@ -2627,6 +2627,10 @@ tr th {
   display: block;
 }
 
+a[class*=napo-cart-delete] {
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/download-center-selected.png);
+}
+
 .view-scenes a {
   color: #FFF;
   height: 43px;
