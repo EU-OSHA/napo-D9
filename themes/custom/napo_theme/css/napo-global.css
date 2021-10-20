@@ -968,6 +968,13 @@ tr th {
   padding: 0rem;
 }
 
+.accessibility-info table tr td {
+  padding: 0.9rem;
+}
+.accessibility-info table tr td p {
+  font-size: 1rem;
+}
+
 .quicktabs-tabs.list-group {
   width: 100%;
   flex-direction: row;
@@ -2255,7 +2262,7 @@ tr th {
   width: 100%;
   min-height: 100%;
   text-align: center;
-  padding: 1.25rem 1.25rem 0;
+  padding: 1.25rem 1rem 0;
 }
 .related .views-field-nothing .related-item-content h3,
 .related .views-field-nothing .related-item-content-cs h3 {
@@ -2625,6 +2632,10 @@ tr th {
   background-color: transparent;
   border-radius: 0px;
   display: block;
+}
+
+a[class*=napo-cart-delete] {
+  background-image: url(/sites/napo/themes/custom/napo_theme/images/download-center-selected.png);
 }
 
 .view-scenes a {
