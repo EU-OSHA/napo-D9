@@ -86,7 +86,7 @@
     <div class="napo-film-video-download-form">
       <div class="download">
         {% for item in node.field_video  %}
-          <a href="/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">{{ item.entity.field_media_video_file.entity.filename.0.value|split('.').1 }}</a>
+          <a href="/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">{{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}</a>
         {% endfor %}
       </div>
       <div class="share-links-node">
