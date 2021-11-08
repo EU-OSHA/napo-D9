@@ -1467,7 +1467,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h3> <b>{{ title }}</b></h3>\r\n{{ field_publication_date }} \r\n<div class=\"episode-list-details-container\">\r\n<div class=\"napo-film-list-details-container\">\r\n<div class=\"tags\">{{ field_combined_tags }} </div>\r\n<div class=\"buttons\">\r\n<div class=\"view-video\">{{ view_node }}</div>\r\n<div class=\"download-video\">\r\n            <div class=\"download-items\">\r\n                {% for link in field_video|split(',') %}\r\n                <a target=\"_blank\" href=\"/napos-films/{{ nid }}/video/download\">{{link}}</a>\r\n                {% endfor %}\r\n            </div>\r\n        </div>\r\n</div>\r\n</div>\r\n</div>"
+            text: "<h3> <b>{{ title }}</b></h3>\r\n{{ field_publication_date }} \r\n<div class=\"episode-list-details-container\">\r\n<div class=\"napo-film-list-details-container\">\r\n<div class=\"tags\">{{ field_combined_tags }} </div>\r\n<div class=\"buttons\">\r\n<div class=\"view-video\">{{ view_node }}</div>\r\n<div class=\"download-video\">\r\n            <div class=\"download-items\">\r\n                {% for link in field_video|split(',') %}\r\n                <a target=\"_blank\" href=\"/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{link}}</a>\r\n                {% endfor %}\r\n            </div>\r\n        </div>\r\n</div>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
