@@ -4633,10 +4633,10 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   color: transparent;
   background: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   padding: 10px;
   display: block;
-  width: 43px;
+  width: 100px;
   height: 45px;
 }
 .node--type-napo-video .conten-video-info .download a {
@@ -4651,10 +4651,9 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   padding: 5px 0px;
   text-align: center;
   text-transform: uppercase;
-  position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  width: 100px;
   z-index: 20;
 }
 .node--type-napo-video .conten-video-info .download a:after {
