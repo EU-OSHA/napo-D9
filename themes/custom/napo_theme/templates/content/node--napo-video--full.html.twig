@@ -92,7 +92,7 @@
 <div class="back-button-custom"><a href="/napos-films/films">{{ 'Back to Films' | trans }}</a></div>
 <article{{ attributes.addClass(classes) }}>
   <div class="video-custom">
-    {% if node.field_video_type[0].entity.label == "Episode video"  %}
+    {% if not node.field_video_type[0].entity.label == "Episode video"  %}
       {% for item in node.field_video  %}
         {% if item.entity.field_media_video_file.entity.getMimeType() == "video/mp4" %}
           <div id="videoCustom" class="video-custom">
