@@ -1,15 +1,15 @@
-uuid: 49ea9eaa-1182-4d66-9912-04978c30fb8a
+uuid: bc329901-7874-430b-9f07-ae186cb7385e
 langcode: en
 status: true
 dependencies: {  }
-id: napo_film
-label: 'Napo film'
+id: films
+label: Films
 description: ''
 entityType: node
 entityBundle: napo_video
 language: und
-breadcrumbPaths: "<nolink>\r\n/napos-films/films/\r\n<nolink>"
+breadcrumbPaths: "<nolink>\r\n/napos-films\r\n<nolink>"
 breadcrumbTitles: "Napo's films\r\nFilms\r\n[node:title]"
 type: '1'
-pathPattern: '/napos-films/*'
+pathPattern: /napos-films/
 extraCacheContexts: ''
