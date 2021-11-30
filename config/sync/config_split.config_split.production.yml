@@ -30,6 +30,8 @@ graylist:
   - matomo.settings
   - ultimate_cron.job.ldap_user_cron
   - ultimate_cron.job.matomo_cron
+  - xmlsitemap.settings
+  - xmlsitemap.xmlsitemap.g3XYqcXbSKPVBDODwnT6pq7oqhCFkPryj4vVqrl_Kfc
 graylist_dependents: false
 graylist_skip_equal: true
 weight: 0
