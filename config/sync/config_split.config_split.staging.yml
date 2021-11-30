@@ -213,6 +213,8 @@ graylist:
   - migrate_plus.migration_group.napo_migrate_media
   - migrate_plus.migration_group.napo_migrate_node
   - search_api.server.apache_solr
+  - xmlsitemap.settings
+  - xmlsitemap.xmlsitemap.g3XYqcXbSKPVBDODwnT6pq7oqhCFkPryj4vVqrl_Kfc
 graylist_dependents: false
 graylist_skip_equal: true
 weight: 0
