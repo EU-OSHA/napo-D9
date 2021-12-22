@@ -19,7 +19,7 @@ passwordOption: allow
 allowOnlyIfTextInDn: {  }
 excludeIfTextInDn: {  }
 excludeIfNoAuthorizations: false
-skipAdministrators: true
+skipAdministrators: false
 langcode: en
 _core:
   default_config_hash: 9DgabkLztscclWQDjei_mAOpxP6xdbp_Iu5L5z6Nsbg
