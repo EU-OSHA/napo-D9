@@ -21,8 +21,8 @@ settings:
     target_bundles:
       napo_video: napo_video
     sort:
-      field: _none
-      direction: ASC
+      field: changed
+      direction: DESC
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference
