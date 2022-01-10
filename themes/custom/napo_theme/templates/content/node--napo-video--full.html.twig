@@ -89,6 +89,10 @@
   {% set video_img =  video_img[0] %}
 {% endif %}
 
+{% set categories = node.field_combined_tags.value %}
+{% set main_category = node.field_main_tag.value %}
+{% set categories = categories.appendItem(main_category) %}
+
 <div class="back-button-custom"><a href="/napos-films/films">{{ 'Back to Films' | trans }}</a></div>
 <article{{ attributes.addClass(classes) }}>
   <div class="video-custom">
@@ -128,8 +132,43 @@
     </div>
   </div>
   <div class="conten-video-info-tags">
-    <div class="categories">{{ content.field_combined_tags }}</div>
+
+    <div class="categories">
+      {% if node.field_video_type[0].entity.label == "Film video" %}
+        {% set combined_categories = content.field_main_tag|merge(content.field_combined_tags) %}
+        <div class="field field--type-entity-reference field--label-inline">
+          <div class="field__label">{{ "Categories"|t }}</div>
+          <div class="field__items">
+            <div class="field__items">
+              {{ combined_categories }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      {% if node.field_video_type[0].entity.label == "Episode video"%}
+        {% set main_tag_tid = node.field_napo_film.entity.field_main_tag.getValue()[0]['target_id']  %}
+        {% set main_name =   drupal_field('name', 'taxonomy_term', main_tag_tid)  %}
+        {% set combined_categories = main_name|merge(content.field_combined_tags) %}
+        <div class="field field--type-entity-reference field--label-inline">
+
+          <div class="field__label">{{ "Categories"|t }}</div>
+
+          <div class="field__items">
+            <div class="field__items">
+              {{ combined_categories }}
+            </div>
+          </div>
+
+        </div>
+      {% endif %}
+
+
+
+    </div>
+
     <div class="body">{{ content.body }}</div>
+
   </div>
 
   {% if node.field_video_type[0].entity.label == "Film video" %}
