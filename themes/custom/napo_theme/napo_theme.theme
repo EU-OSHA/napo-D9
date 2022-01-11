@@ -56,3 +56,30 @@ function napo_theme_theme_suggestions_views_view_unformatted_alter(array &$sugge
     'views_view_unformatted__' . $variables['view']->id()
   ];
 }
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function napo_theme_preprocess_node(&$variables) {
+  $default_youtube = null;
+  $field_video_list = false;
+  if($variables['node']->bundle()== "napo_video"){
+    if(count($variables['node']->get('field_youtube')->getValue()) > 0){
+      $default_youtube = $variables['node']->get('field_youtube')->getValue()[0]['value'];
+    }
+    ksm($variables['node']->get('field_video')->getValue());
+    if(count($variables['node']->get('field_video')->getValue()) > 0){
+      $field_video_list = true;
+    }
+    if($default_youtube == null){
+      $default_youtube = $variables['node']->getUntranslated()->get('field_youtube')->getValue()[0]['value'];
+    }
+
+
+
+
+
+    $variables['default_youtube'] = $default_youtube;
+    $variables['field_video_list'] = $field_video_list;
+  }
+}
