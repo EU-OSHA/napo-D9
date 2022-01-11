@@ -36,9 +36,10 @@ function napo_theme_form_system_theme_settings_alter(&$form, FormStateInterface 
 /**
  * Add class url-alias in body tag
  */
-function napo_theme_preprocess_html(&$variables){
+function napo_theme_preprocess_html(&$variables) {
   $current_path = \Drupal::service('path.current')->getPath();
-  $path_alias = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+  $path_alias = \Drupal::service('path_alias.manager')
+    ->getAliasByPath($current_path);
   $path_alias = ltrim($path_alias, '/');
   $variables['attributes']['class'][] = \Drupal\Component\Utility\Html::cleanCssIdentifier($path_alias);
 }
@@ -53,7 +54,7 @@ function napo_theme_preprocess_html(&$variables){
  */
 function napo_theme_theme_suggestions_views_view_unformatted_alter(array &$suggestions, array $variables) {
   return [
-    'views_view_unformatted__' . $variables['view']->id()
+    'views_view_unformatted__' . $variables['view']->id(),
   ];
 }
 
@@ -61,25 +62,41 @@ function napo_theme_theme_suggestions_views_view_unformatted_alter(array &$sugge
  * Implements hook_preprocess_HOOK().
  */
 function napo_theme_preprocess_node(&$variables) {
-  $default_youtube = null;
-  $field_video_list = false;
-  if($variables['node']->bundle()== "napo_video"){
-    if(count($variables['node']->get('field_youtube')->getValue()) > 0){
-      $default_youtube = $variables['node']->get('field_youtube')->getValue()[0]['value'];
+  $default_youtube = NULL;
+  $field_video_list = "yes";
+  $numberItemOriginal = 0;
+  $videoNames = [];
+
+  if ($variables['node']->bundle() == "napo_video") {
+    if (count($variables['node']->get('field_youtube')->getValue()) > 0) {
+      $default_youtube = $variables['node']->get('field_youtube')
+        ->getValue()[0]['value'];
     }
-    ksm($variables['node']->get('field_video')->getValue());
-    if(count($variables['node']->get('field_video')->getValue()) > 0){
-      $field_video_list = true;
-    }
-    if($default_youtube == null){
-      $default_youtube = $variables['node']->getUntranslated()->get('field_youtube')->getValue()[0]['value'];
+    if ($default_youtube == NULL) {
+      $default_youtube = $variables['node']->getUntranslated()
+        ->get('field_youtube')
+        ->getValue()[0]['value'];
     }
 
+    if (count($variables['node']->get('field_video')->getValue()) == 0) {
+      $field_video_list = "no";
+      $numberItemOriginal = count($variables['node']->getUntranslated()
+        ->get('field_video')
+        ->getValue());
+      foreach ($variables['node']->getUntranslated()
+                 ->get('field_video')
+                 ->getValue() as $item) {
+        $storage = Drupal::entityTypeManager()->getStorage('media');
+        array_push($videoNames, $storage->load($item['target_id'])
+          ->get('name')
+          ->getValue()[0]['value']);
+      }
 
-
-
+    }
 
     $variables['default_youtube'] = $default_youtube;
     $variables['field_video_list'] = $field_video_list;
+    $variables['numberItemOriginal'] = $numberItemOriginal;
+    $variables['videoNames'] = $videoNames;
   }
 }
