@@ -74,12 +74,13 @@
 %}
 
 
-{% if '&' in node.field_youtube.value %}
-  {%  set video_url = node.field_youtube.value |split('&') %}
+
+{% if '&' in default_youtube %}
+  {%  set video_url = default_youtube |split('&') %}
   {%  set video_url = video_url[0] |split('=')  %}
   {%  set video_url = video_url[1] %}
 {% else %}
-  {%  set video_url = node.field_youtube.value |split('=') %}
+  {%  set video_url = default_youtube |split('=') %}
   {%  set video_url = video_url[1] %}
 {% endif %}
 
@@ -120,10 +121,19 @@
     <div class="napo-film-title-2">{{ label }}</div>
     <div class="napo-film-video-download-form">
       <div class="download">
+        {{ dpm(node.field_video) }}
         {% for item in node.field_video  %}
-          <a href="/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">{{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
+          {% if field_video_list == 1 %}
+          <a href="../napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">{{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
           </a>
+            {% endif %}
+        {% if field_video_list != 1 %}
+              <a href="/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">{{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
+              </a>
+          {% endif %}
         {% endfor %}
+
+
       </div>
       <div class="share-links-node">
         <div class="napo-share-widget"></div>
