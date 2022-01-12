@@ -73,9 +73,12 @@ function napo_theme_preprocess_node(&$variables) {
         ->getValue()[0]['value'];
     }
     if ($default_youtube == NULL) {
-      $default_youtube = $variables['node']->getUntranslated()
-        ->get('field_youtube')
-        ->getValue()[0]['value'];
+      $originalNode = $default_youtube = $variables['node']->getUntranslated();
+      if(isset($originalNode->get('field_youtube')->getValue()[0]['value'])){
+        $default_youtube = $variables['node']->getUntranslated()
+          ->get('field_youtube')
+          ->getValue()[0]['value'];
+      }
     }
 
     if (count($variables['node']->get('field_video')->getValue()) == 0) {
