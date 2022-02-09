@@ -9,6 +9,7 @@ folder: sites/napo/config/production
 module:
   authorization: 0
   authorization_drupal_roles: 0
+  externalauth: 0
   ldap_authentication: 0
   ldap_authorization: 0
   ldap_query: 0
@@ -16,10 +17,12 @@ module:
   ldap_user: 0
   matomo: 0
   smtp: 0
-  externalauth: 10
 theme: {  }
 blacklist: {  }
 graylist:
+  - reroute_email.settings
+  - xmlsitemap.settings
+  - xmlsitemap.xmlsitemap.g3XYqcXbSKPVBDODwnT6pq7oqhCFkPryj4vVqrl_Kfc
   - authorization.authorization_profile.osha
   - authorization.settings
   - ldap_authentication.settings
@@ -30,8 +33,6 @@ graylist:
   - matomo.settings
   - ultimate_cron.job.ldap_user_cron
   - ultimate_cron.job.matomo_cron
-  - xmlsitemap.settings
-  - xmlsitemap.xmlsitemap.g3XYqcXbSKPVBDODwnT6pq7oqhCFkPryj4vVqrl_Kfc
 graylist_dependents: false
 graylist_skip_equal: true
 weight: 0
