@@ -4,3 +4,10 @@ display:
       exposed_form:
         options:
           submit_button: Aplicar
+      fields:
+        nothing:
+          alter:
+            text: "{% if(entityqueue_relationship_position==0) %} \r\n\r\n<h3 class=\"field-content featured-article-header\"><a href=\"/pt/learning-with-napo/napo-in-the-workplace\">{{ \"Napo in the workplace\" | trans}}</a></h3>\r\n\r\n{% elseif(entityqueue_relationship_position==1) %}\r\n\r\n\r\n<h3 class=\"field-content featured-article-header\"><a href=\"/pt/learning-with-napo/napo-for-teachers\">{{ \"Napo for teachers\" | trans}}</a></h3>\r\n\r\n\r\n{% endif %}\r\n\r\n"
+        title_1:
+          alter:
+            text: "{% if(entityqueue_relationship_position==0) %} \r\n\r\n<a href=\"pt/learning-with-napo/napo-in-the-workplace\">{{ \"see more\" | trans}}</a>\r\n\r\n{% elseif(entityqueue_relationship_position==1) %}\r\n\r\n\r\n<a href=\"pt/learning-with-napo/napo-for-teachers\">{{ \"see more\" | trans}}</a>\r\n\r\n\r\n{% endif %}"
