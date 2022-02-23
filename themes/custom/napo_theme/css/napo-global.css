@@ -2830,6 +2830,10 @@ a[class*=napo-cart-delete] {
   font-weight: bold;
 }
 
+.recommended-films.hide-recommended-films {
+  display: none;
+}
+
 .search-form,
 #views-exposed-form-search-page-1 {
   position: relative;

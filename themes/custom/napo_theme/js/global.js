@@ -135,6 +135,14 @@
       $('#block-searchapi .form-item-search-api-fulltext').after('<div class="btn-search-custom-mobile"></div>');
     }
 
+    //Hide recommended videos if there isn't results
+    function isEmpty( el ){
+      return !$.trim(el.html())
+    }
+    if (isEmpty($('div.recommended-films .view-recommended-films'))) {
+      $('div.recommended-films').addClass('hide-recommended-films');
+    }
+
   });
 
 
