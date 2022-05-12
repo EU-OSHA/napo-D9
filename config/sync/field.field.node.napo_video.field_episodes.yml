@@ -1,0 +1,27 @@
+uuid: 576fe8cc-4eb3-4447-9607-0de097c0fe75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_episodes
+    - node.type.napo_video
+  module:
+    - entity_reference_revisions
+id: node.napo_video.field_episodes
+field_name: field_episodes
+entity_type: node
+bundle: napo_video
+label: Episodes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: list_of_napo_episodes
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference_revisions

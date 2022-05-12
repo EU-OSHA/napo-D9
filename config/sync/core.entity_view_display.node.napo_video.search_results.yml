@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.napo_video.body
     - field.field.node.napo_video.field_archived
     - field.field.node.napo_video.field_combined_tags
+    - field.field.node.napo_video.field_episodes
     - field.field.node.napo_video.field_image
     - field.field.node.napo_video.field_main_tag
     - field.field.node.napo_video.field_napo_film
@@ -25,70 +26,71 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: node.napo_video.search_results
 targetEntityType: node
 bundle: napo_video
 mode: search_results
 content:
   addtoany:
-    weight: 3
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 3
+    region: content
   body:
-    label: hidden
     type: smart_trim
-    weight: 2
+    label: hidden
     settings:
       trim_length: 600
       trim_type: chars
       trim_suffix: ...
+      wrap_output: false
       wrap_class: trimmed
-      more_text: 'Read more'
+      more_link: false
       more_class: more-link
+      more_text: 'Read more'
       summary_handler: trim
       trim_options:
         text: true
         trim_zero: false
-      wrap_output: false
-      more_link: false
     third_party_settings: {  }
+    weight: 2
     region: content
   content_moderation_control:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_image:
     type: media_thumbnail
-    weight: 1
-    region: content
     label: hidden
     settings:
-      image_style: thumbnail
       image_link: ''
+      image_style: thumbnail
     third_party_settings:
       ds:
         ds_limit: ''
+    weight: 1
+    region: content
   field_video_type:
     type: entity_reference_label
-    weight: 5
-    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
-  search_api_excerpt:
-    weight: 4
+    weight: 5
     region: content
+  search_api_excerpt:
     settings: {  }
     third_party_settings: {  }
+    weight: 4
+    region: content
 hidden:
   breadcrumbs: true
   field_archived: true
   field_combined_tags: true
+  field_episodes: true
   field_main_tag: true
   field_napo_film: true
   field_publication_date: true
