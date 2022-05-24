@@ -1,0 +1,21 @@
+_core:
+  default_config_hash: GLswejPT_b3G9TtpI4NKwR1mhIB_-FnysNn9QKc-01w
+general:
+  page_cache_maximum_age: '3600'
+  noise: ''
+  debug: '0'
+  logging: '1'
+  secret: 0028716d2934197d8de3ba6c60ea6fcc269a8c8c88d8638d88f4499f20a0b546
+  varnish_server: 'https://test.napofilm.net'
+  varnish_purger: true
+  purger_maintenance_mode: false
+  grace: '10'
+available:
+  enable_cache: true
+  authenticated_users: false
+  esi: false
+  esi_purge_user_blocks: false
+  excluded_urls: ''
+cache_control:
+  anonymous: '/user/logout|must-revalidate, no-cache, private'
+  authenticated: ''
