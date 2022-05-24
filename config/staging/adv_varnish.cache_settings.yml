@@ -4,12 +4,12 @@ general:
   page_cache_maximum_age: '3600'
   noise: ''
   debug: '0'
-  logging: '0'
-  secret: f347a7e991b17eb7b2c2a11e40bd14f90c1e9a658d98a347a092a59c7df3bf8c
-  varnish_server: 'https://napo.ddev.site'
+  logging: '1'
+  secret: 0028716d2934197d8de3ba6c60ea6fcc269a8c8c88d8638d88f4499f20a0b546
+  varnish_server: 'https://test.napofilm.net'
   varnish_purger: true
   purger_maintenance_mode: false
-  grace: '1800'
+  grace: '10'
 available:
   enable_cache: true
   authenticated_users: false

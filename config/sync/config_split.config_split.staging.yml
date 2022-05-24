@@ -5,8 +5,10 @@ dependencies: {  }
 id: staging
 label: Staging
 description: ''
+weight: 0
 folder: sites/napo/config/staging
 module:
+  adv_varnish: 0
   authorization: 0
   authorization_drupal_roles: 0
   custom_migrations: 0
@@ -217,4 +219,3 @@ graylist:
   - xmlsitemap.xmlsitemap.g3XYqcXbSKPVBDODwnT6pq7oqhCFkPryj4vVqrl_Kfc
 graylist_dependents: false
 graylist_skip_equal: true
-weight: 0
