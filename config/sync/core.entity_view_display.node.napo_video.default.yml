@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.napo_video.body
     - field.field.node.napo_video.field_archived
     - field.field.node.napo_video.field_combined_tags
+    - field.field.node.napo_video.field_episodes
     - field.field.node.napo_video.field_image
     - field.field.node.napo_video.field_main_tag
     - field.field.node.napo_video.field_napo_film
@@ -18,7 +19,9 @@ dependencies:
     - node.type.napo_video
   module:
     - ds
+    - entity_reference_revisions
     - media
+    - shs
     - text
     - user
 id: node.napo_video.default
@@ -27,49 +30,58 @@ bundle: napo_video
 mode: default
 content:
   addtoany:
-    weight: 3
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 3
+    region: content
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 2
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 2
     region: content
   content_moderation_control:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
-  field_combined_tags:
-    type: entity_reference_label
-    weight: 5
+    weight: 0
     region: content
+  field_combined_tags:
+    type: entity_reference_shs
     label: inline
     settings:
       link: false
     third_party_settings:
       ds:
         ds_limit: ''
+    weight: 5
+    region: content
+  field_episodes:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
   field_image:
     type: media_thumbnail
-    weight: 1
-    region: content
     label: hidden
     settings:
-      image_style: thumbnail
       image_link: ''
+      image_style: thumbnail
     third_party_settings:
       ds:
         ds_limit: ''
-  search_api_excerpt:
-    weight: 4
+    weight: 1
     region: content
+  search_api_excerpt:
     settings: {  }
     third_party_settings: {  }
+    weight: 4
+    region: content
 hidden:
   breadcrumbs: true
   field_archived: true

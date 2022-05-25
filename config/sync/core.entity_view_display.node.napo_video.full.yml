@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.napo_video.body
     - field.field.node.napo_video.field_archived
     - field.field.node.napo_video.field_combined_tags
+    - field.field.node.napo_video.field_episodes
     - field.field.node.napo_video.field_image
     - field.field.node.napo_video.field_main_tag
     - field.field.node.napo_video.field_napo_film
@@ -19,70 +20,80 @@ dependencies:
     - node.type.napo_video
   module:
     - ds
+    - entity_reference_revisions
     - layout_builder
     - media
     - text
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: node.napo_video.full
 targetEntityType: node
 bundle: napo_video
 mode: full
 content:
   addtoany:
+    settings: {  }
+    third_party_settings: {  }
     weight: 3
     region: content
-    settings: {  }
-    third_party_settings: {  }
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
   field_combined_tags:
     type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
     weight: 5
     region: content
-    label: hidden
+  field_episodes:
+    type: entity_reference_revisions_entity_view
+    label: above
     settings:
-      link: false
-    third_party_settings:
-      ds:
-        ds_limit: ''
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
   field_image:
     type: media_thumbnail
-    weight: 1
-    region: content
     label: hidden
     settings:
-      image_style: thumbnail
       image_link: ''
+      image_style: thumbnail
     third_party_settings:
       ds:
         ds_limit: ''
+    weight: 1
+    region: content
   field_main_tag:
     type: entity_reference_label
-    weight: 6
-    region: content
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
-  search_api_excerpt:
-    weight: 4
+    weight: 6
     region: content
+  search_api_excerpt:
     settings: {  }
     third_party_settings: {  }
+    weight: 4
+    region: content
 hidden:
   breadcrumbs: true
   field_archived: true
