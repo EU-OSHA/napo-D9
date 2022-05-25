@@ -1,0 +1,10 @@
+uuid: d2390ec9-5eaf-455c-81ff-f282fd45205a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.view_scenes_mode
+label: 'View scenes mode'
+targetEntityType: node
+cache: true

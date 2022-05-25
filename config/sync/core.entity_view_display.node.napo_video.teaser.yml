@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.napo_video.body
     - field.field.node.napo_video.field_archived
     - field.field.node.napo_video.field_combined_tags
+    - field.field.node.napo_video.field_episodes
     - field.field.node.napo_video.field_image
     - field.field.node.napo_video.field_main_tag
     - field.field.node.napo_video.field_napo_film
@@ -25,22 +26,29 @@ bundle: napo_video
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 101
     region: content
-  links:
-    weight: 100
+  content_moderation_control:
     settings: {  }
     third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   addtoany: true
+  breadcrumbs: true
   field_archived: true
   field_combined_tags: true
+  field_episodes: true
   field_image: true
   field_main_tag: true
   field_napo_film: true
