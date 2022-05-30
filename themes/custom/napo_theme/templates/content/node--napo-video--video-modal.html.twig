@@ -74,7 +74,6 @@
 %}
 
 {% set video_url = node.field_youtube.value |split('=') %}
-{% set parent = getParent(node.id) %}
 
 
 <article{{ attributes.addClass(classes) }}>
@@ -96,11 +95,10 @@
     </div>
   </div>
   <div class="conten-video-info-tags">
-    {{ fatherFilm }}
-    {% if drupal_view_result('episode_list', 'scenes',  'test napo film episodes' ) is not empty %}
+    {% if drupal_view_result('episode_list', 'scenes',  parent_title ) is not empty %}
       <div class="view-scenes-custom">
         <h2>{{ 'Scenes'|t }}</h2>
-        {{ drupal_view('episode_list', 'scenes',  'test napo film episodes'  ) }}
+        {{ drupal_view('episode_list', 'scenes',  parent_title ) }}
       </div>
     {% endif %}
   </div>

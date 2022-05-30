@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.napo_video.field_image
     - field.field.node.napo_video.field_main_tag
     - field.field.node.napo_video.field_napo_film
+    - field.field.node.napo_video.field_parent_title
     - field.field.node.napo_video.field_publication_date
     - field.field.node.napo_video.field_tags
     - field.field.node.napo_video.field_video
@@ -64,7 +65,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 7
+    weight: 6
     region: content
   field_image:
     type: media_thumbnail
@@ -87,6 +88,7 @@ hidden:
   field_archived: true
   field_main_tag: true
   field_napo_film: true
+  field_parent_title: true
   field_publication_date: true
   field_tags: true
   field_video: true
