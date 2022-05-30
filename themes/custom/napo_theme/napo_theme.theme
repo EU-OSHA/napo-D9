@@ -104,5 +104,10 @@ function napo_theme_preprocess_node(&$variables) {
     $variables['field_video_list'] = $field_video_list;
     $variables['numberItemOriginal'] = $numberItemOriginal;
     $variables['videoNames'] = $videoNames;
+
+    if($variables['node']->get('field_video_type')[0]->getValue()['target_id'] == 2726 ) {
+      $variables['parent_title'] = $variables['node']->get('field_parent_title')->getValue()[0]['value'];
+    }
+
   }
 }

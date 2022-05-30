@@ -1470,7 +1470,7 @@ display:
           id: view_node
           table: node
           field: view_node
-          relationship: none
+          relationship: field_episodes
           group_type: group
           admin_label: ''
           entity_type: node
