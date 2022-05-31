@@ -11,7 +11,7 @@ id: node.napo_video.field_episodes
 field_name: field_episodes
 entity_type: node
 bundle: napo_video
-label: Episodes
+label: 'Episodes Local'
 description: ''
 required: false
 translatable: false

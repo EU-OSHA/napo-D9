@@ -1,0 +1,28 @@
+uuid: 89245d42-175b-4603-bce8-3ede5aea0c49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_episodes
+    - node.type.napo_video
+id: node.napo_video.field_field_episodes
+field_name: field_field_episodes
+entity_type: node
+bundle: napo_video
+label: Episodes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      napo_video: napo_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

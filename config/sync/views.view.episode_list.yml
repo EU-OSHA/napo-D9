@@ -169,7 +169,7 @@ display:
           id: field_image
           table: node__field_image
           field: field_image
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           plugin_id: field
@@ -493,15 +493,15 @@ display:
           replica: false
           query_tags: {  }
       relationships:
-        field_episodes:
-          id: field_episodes
-          table: node__field_episodes
-          field: field_episodes
+        field_field_episodes:
+          id: field_field_episodes
+          table: node__field_field_episodes
+          field: field_field_episodes
           relationship: none
           group_type: group
-          admin_label: 'field_episodes: Content'
+          admin_label: 'field_field_episodes: Content'
           plugin_id: standard
-          required: true
+          required: false
       show_admin_links: false
       header: {  }
       footer: {  }
@@ -1086,7 +1086,7 @@ display:
           id: weight
           table: draggableviews_structure
           field: weight
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           plugin_id: numeric
@@ -1193,7 +1193,7 @@ display:
           id: nid
           table: node_field_data
           field: nid
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           entity_type: node
@@ -1259,7 +1259,7 @@ display:
           id: field_napo_film
           table: node__field_napo_film
           field: field_napo_film
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           plugin_id: field
@@ -1321,7 +1321,7 @@ display:
           id: view_node
           table: node
           field: view_node
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           entity_type: node
@@ -1374,7 +1374,7 @@ display:
           id: title_1
           table: node_field_data
           field: title
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           entity_type: node
@@ -1439,7 +1439,7 @@ display:
           id: field_image
           table: node__field_image
           field: field_image
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           plugin_id: field
@@ -1754,15 +1754,15 @@ display:
         filters: false
         filter_groups: false
       relationships:
-        field_episodes:
-          id: field_episodes
-          table: node__field_episodes
-          field: field_episodes
+        field_field_episodes:
+          id: field_field_episodes
+          table: node__field_field_episodes
+          field: field_field_episodes
           relationship: none
           group_type: group
-          admin_label: 'field_episodes: Content'
+          admin_label: 'field_field_episodes: Content'
           plugin_id: standard
-          required: true
+          required: false
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
       display_extenders:
