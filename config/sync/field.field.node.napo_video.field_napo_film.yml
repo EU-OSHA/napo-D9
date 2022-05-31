@@ -19,7 +19,7 @@ settings:
   handler: views
   handler_settings:
     view:
-      view_name: film_entity_references
-      display_name: entityreference_2
+      view_name: list_of_napo_films
+      display_name: entity_reference_1
       arguments: {  }
 field_type: entity_reference

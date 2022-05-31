@@ -867,7 +867,7 @@ display:
           id: nid
           table: node_field_data
           field: nid
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           entity_type: node
@@ -933,7 +933,7 @@ display:
           id: langcode
           table: node_field_data
           field: langcode
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           entity_type: node
@@ -1048,7 +1048,7 @@ display:
           id: field_image
           table: node__field_image
           field: field_image
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           plugin_id: field
@@ -1162,7 +1162,7 @@ display:
           id: view_node_1
           table: node
           field: view_node
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: 'Link to Scene'
           entity_type: node
@@ -1215,7 +1215,7 @@ display:
           id: title
           table: node_field_data
           field: title
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           entity_type: node
@@ -1280,7 +1280,7 @@ display:
           id: field_publication_date
           table: node__field_publication_date
           field: field_publication_date
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           plugin_id: field
@@ -1344,7 +1344,7 @@ display:
           id: field_main_tag
           table: node__field_main_tag
           field: field_main_tag
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           plugin_id: field
@@ -1407,7 +1407,7 @@ display:
           id: field_combined_tags
           table: node__field_combined_tags
           field: field_combined_tags
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           plugin_id: field
@@ -1470,7 +1470,7 @@ display:
           id: view_node
           table: node
           field: view_node
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           entity_type: node
@@ -1523,7 +1523,7 @@ display:
           id: field_video
           table: node__field_video
           field: field_video
-          relationship: field_episodes
+          relationship: field_field_episodes
           group_type: group
           admin_label: ''
           plugin_id: field
@@ -1784,15 +1784,15 @@ display:
         header: false
         footer: false
       relationships:
-        field_episodes:
-          id: field_episodes
-          table: node__field_episodes
-          field: field_episodes
+        field_field_episodes:
+          id: field_field_episodes
+          table: node__field_field_episodes
+          field: field_field_episodes
           relationship: none
           group_type: group
-          admin_label: 'field_episodes: Content'
+          admin_label: 'field_field_episodes: Content'
           plugin_id: standard
-          required: true
+          required: false
       header:
         entity_node:
           id: entity_node
