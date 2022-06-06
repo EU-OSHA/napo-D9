@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.napo_video.body
     - field.field.node.napo_video.field_archived
     - field.field.node.napo_video.field_combined_tags
-    - field.field.node.napo_video.field_episodes
+    - field.field.node.napo_video.field_field_episodes
     - field.field.node.napo_video.field_image
     - field.field.node.napo_video.field_main_tag
     - field.field.node.napo_video.field_napo_film
@@ -68,6 +68,7 @@ hidden:
   field_archived: true
   field_combined_tags: true
   field_episodes: true
+  field_field_episodes: true
   field_main_tag: true
   field_parent_title: true
   field_publication_date: true
