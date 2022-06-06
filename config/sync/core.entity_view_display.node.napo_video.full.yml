@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.napo_video.body
     - field.field.node.napo_video.field_archived
     - field.field.node.napo_video.field_combined_tags
-    - field.field.node.napo_video.field_episodes
     - field.field.node.napo_video.field_field_episodes
     - field.field.node.napo_video.field_image
     - field.field.node.napo_video.field_main_tag
@@ -22,7 +21,6 @@ dependencies:
     - node.type.napo_video
   module:
     - ds
-    - entity_reference_revisions
     - layout_builder
     - media
     - text
@@ -62,15 +60,6 @@ content:
       ds:
         ds_limit: ''
     weight: 5
-    region: content
-  field_episodes:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 7
     region: content
   field_field_episodes:
     type: entity_reference_label
