@@ -17,6 +17,6 @@ plugin: 'simple_block:search_api'
 settings:
   id: 'simple_block:search_api'
   label: 'Search API'
-  provider: simple_block
   label_display: '0'
+  provider: simple_block
 visibility: {  }

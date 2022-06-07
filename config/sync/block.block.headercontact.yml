@@ -17,6 +17,6 @@ plugin: 'simple_block:top_header_contact'
 settings:
   id: 'simple_block:top_header_contact'
   label: 'Header - Contact'
-  provider: simple_block
   label_display: '0'
+  provider: simple_block
 visibility: {  }

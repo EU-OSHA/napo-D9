@@ -11,12 +11,12 @@ pattern: '/napos-films/[node:field_napo_film:entity:title]/[node:title]'
 selection_criteria:
   6b098203-6976-4613-999f-9efad197df6c:
     id: node_type
-    bundles:
-      napo_video: napo_video
     negate: false
+    uuid: 6b098203-6976-4613-999f-9efad197df6c
     context_mapping:
       node: node
-    uuid: 6b098203-6976-4613-999f-9efad197df6c
+    bundles:
+      napo_video: napo_video
 selection_logic: and
 weight: -10
 relationships:

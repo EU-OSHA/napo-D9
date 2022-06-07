@@ -1,12 +1,11 @@
-uuid: 1f349027-ddd0-4ad3-a5c7-65ae116b7bdb
-langcode: en
-status: true
-dependencies: {  }
 _core:
   default_config_hash: GbwamktrK8GXKxWeEk8m8o_PWXbPj2vOiFqIANDYIEc
+langcode: en
 id: search_form_content
+uuid: 1f349027-ddd0-4ad3-a5c7-65ae116b7bdb
 label: 'Search Form (content tab)'
 selector: ''
+status: true
 minChar: 3
 autoSubmit: true
 autoRedirect: true
@@ -21,3 +20,4 @@ source: 'autocompletion_callbacks_words::words_autocompletion_callback'
 theme: basic-blue.css
 editable: true
 deletable: false
+dependencies: {  }

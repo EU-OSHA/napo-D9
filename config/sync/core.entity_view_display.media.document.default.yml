@@ -20,47 +20,47 @@ bundle: document
 mode: default
 content:
   field_media_description:
-    weight: 5
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 5
     region: content
   field_media_document:
+    type: file_download_link
     label: visually_hidden
     settings:
       link_text: '[media:name]'
-      force_download: true
       link_title: ''
-      custom_classes: ''
       new_tab: false
+      force_download: true
+      custom_classes: ''
     third_party_settings: {  }
-    type: file_download_link
     weight: 1
     region: content
   field_nace_codes:
-    weight: 4
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 4
     region: content
   field_tags:
-    weight: 2
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 2
     region: content
   field_thesaurus:
-    weight: 3
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 3
     region: content
 hidden:
   breadcrumbs: true

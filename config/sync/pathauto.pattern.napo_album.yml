@@ -11,12 +11,12 @@ pattern: '/meet-napo/napos-gallery/[node:title]'
 selection_criteria:
   4f7920c5-56d4-41b3-8109-9ced7eaf002a:
     id: node_type
-    bundles:
-      napo_album: napo_album
     negate: false
+    uuid: 4f7920c5-56d4-41b3-8109-9ced7eaf002a
     context_mapping:
       node: node
-    uuid: 4f7920c5-56d4-41b3-8109-9ced7eaf002a
+    bundles:
+      napo_album: napo_album
 selection_logic: and
 weight: -5
 relationships: {  }

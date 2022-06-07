@@ -9,8 +9,8 @@ _core:
   default_config_hash: WpWUAD3X2RwYxsRGzJeh2Imqi592ZcXwEkvcT4tgzQU
 id: default_frontpage
 name: default_frontpage
-label: 'Default frontpage'
 weight: -10
+label: 'Default frontpage'
 group: main
 skin: default
 breakpoints: 2
@@ -23,10 +23,10 @@ options:
     accessibility: true
     adaptiveHeight: false
     autoplay: false
-    autoplaySpeed: 3000
     pauseOnHover: true
     pauseOnDotsHover: false
     pauseOnFocus: true
+    autoplaySpeed: 3000
     arrows: true
     prevArrow: Previous
     nextArrow: Next
@@ -77,10 +77,10 @@ options:
         settings:
           adaptiveHeight: false
           autoplay: false
-          autoplaySpeed: 3000
           pauseOnHover: true
           pauseOnDotsHover: false
           pauseOnFocus: true
+          autoplaySpeed: 3000
           arrows: true
           centerMode: false
           centerPadding: 50px
@@ -114,10 +114,10 @@ options:
         settings:
           adaptiveHeight: false
           autoplay: false
-          autoplaySpeed: 3000
           pauseOnHover: true
           pauseOnDotsHover: false
           pauseOnFocus: true
+          autoplaySpeed: 3000
           arrows: true
           centerMode: false
           centerPadding: 50px

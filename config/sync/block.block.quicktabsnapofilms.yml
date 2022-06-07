@@ -16,10 +16,10 @@ plugin: 'quicktabs_block:napo_films'
 settings:
   id: 'quicktabs_block:napo_films'
   label: 'QuickTabs - Napo films'
-  provider: quicktabs
   label_display: '0'
+  provider: quicktabs
 visibility:
   request_path:
     id: request_path
-    pages: "/napos-films/films\r\n/napos-films/films-list\r\n/napos-films/films-grid"
     negate: false
+    pages: "/napos-films/films\r\n/napos-films/films-list\r\n/napos-films/films-grid"

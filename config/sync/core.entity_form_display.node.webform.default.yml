@@ -18,17 +18,17 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_download:
+    type: text_textfield
     weight: 121
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
-    region: content
   langcode:
     type: language_select
     weight: 2
@@ -36,48 +36,59 @@ content:
     settings:
       include_locked: true
     third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   promote:
     type: boolean_checkbox
+    weight: 15
+    region: content
     settings:
       display_label: true
-    weight: 15
     third_party_settings: {  }
-    region: content
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 120
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
+    weight: 16
+    region: content
     settings:
       display_label: true
-    weight: 16
     third_party_settings: {  }
-    region: content
   title:
     type: string_textfield
     weight: -5
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

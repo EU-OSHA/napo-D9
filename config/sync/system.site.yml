@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: en
 uuid: acff1b96-899b-4587-af0e-9d789fb40198
 name: NAPO
 mail: no-reply@osha.europa.eu
@@ -8,8 +11,5 @@ page:
   front: /node
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
 mail_notification: ''

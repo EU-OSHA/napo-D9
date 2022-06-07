@@ -16,18 +16,20 @@ bundle: lesson_toolkit
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
   field_target_ages: true
   langcode: true
   search_api_excerpt: true

@@ -18,11 +18,11 @@ plugin: 'views_exposed_filter_block:napo_films_index-page_1'
 settings:
   id: 'views_exposed_filter_block:napo_films_index-page_1'
   label: ''
-  provider: views
   label_display: '0'
+  provider: views
   views_label: ''
 visibility:
   request_path:
     id: request_path
-    pages: "/napos-films/films\r\n/napos-films/films-list\r\n/napos-films/films-grid\r\n/napo-films/node-films"
     negate: false
+    pages: "/napos-films/films\r\n/napos-films/films-list\r\n/napos-films/films-grid\r\n/napo-films/node-films"

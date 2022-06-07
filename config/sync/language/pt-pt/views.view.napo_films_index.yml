@@ -17,10 +17,6 @@ display:
         field_combined_tags:
           alter:
             text: '<a href="{{path}}/pt/napos-films/films?f[0]=categories:{{ field_combined_tags__target_id }}" >{{ field_combined_tags }}</a>'
-      filters:
-        search_api_fulltext:
-          group_info:
-            description: ''
   page_3:
     display_options:
       fields:
@@ -36,10 +32,6 @@ display:
         field_combined_tags:
           alter:
             text: '<a href="{{path}}/pt/napos-films/films?f[0]=categories:{{ field_combined_tags__target_id }}" >{{ field_combined_tags }}</a>'
-      filters:
-        search_api_fulltext:
-          group_info:
-            description: ''
   page_4:
     display_options:
       fields:
@@ -55,10 +47,6 @@ display:
         field_combined_tags:
           alter:
             text: "<a href=\"{{path}}/pt/napos-films/films?f[0]=categories:{{ field_combined_tags__target_id }}\" >{{ field_combined_tags }}</a>\r\n"
-      filters:
-        search_api_fulltext:
-          group_info:
-            description: ''
   page_list:
     display_options:
       fields:
@@ -74,7 +62,3 @@ display:
         field_combined_tags:
           alter:
             text: "<a href=\"{{path}}/pt/napos-films/films?f[0]=categories:{{ field_combined_tags__target_id }}\" >{{ field_combined_tags }}</a>\r\n"
-      filters:
-        search_api_fulltext:
-          group_info:
-            description: ''

@@ -5,6 +5,7 @@ dependencies: {  }
 id: develop
 label: Develop
 description: ''
+weight: 0
 folder: sites/napo/config/develop
 module: {  }
 theme: {  }
@@ -13,4 +14,3 @@ graylist:
   - search_api.server.apache_solr
 graylist_dependents: false
 graylist_skip_equal: true
-weight: 0

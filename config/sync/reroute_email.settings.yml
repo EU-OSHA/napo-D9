@@ -1,8 +1,8 @@
+_core:
+  default_config_hash: FWyW0pDoSvPRtqOVlIbk4PxTLiS9S_Ng7zS1JOflWVE
 enable: true
+address: mtarifa@bilbomatica.es
 description: true
 message: true
 mailkeys: ''
-_core:
-  default_config_hash: FWyW0pDoSvPRtqOVlIbk4PxTLiS9S_Ng7zS1JOflWVE
-address: mtarifa@bilbomatica.es
 whitelist: ''

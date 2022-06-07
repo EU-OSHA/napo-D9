@@ -24,16 +24,23 @@ targetEntityType: node
 bundle: lesson
 mode: teaser
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_file:
     type: entity_reference_label
-    weight: 0
-    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
+  addtoany: true
   body: true
+  breadcrumbs: true
   field_activities: true
   field_assessment: true
   field_curriculum_links: true

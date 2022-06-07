@@ -17,17 +17,17 @@ plugin: 'quicktabs_block:napo_and_friends'
 settings:
   id: 'quicktabs_block:napo_and_friends'
   label: 'QuickTabs - Napo and friends'
-  provider: quicktabs
   label_display: '0'
+  provider: quicktabs
 visibility:
   request_path:
     id: request_path
-    pages: "/about-napo/napo-and-friends\r\n/about-napo/napo-and-friends/view\r\n/about-napo/napo-and-friends/reorder"
     negate: false
+    pages: "/about-napo/napo-and-friends\r\n/about-napo/napo-and-friends/view\r\n/about-napo/napo-and-friends/reorder"
   user_role:
     id: user_role
-    roles:
-      administrator: administrator
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator

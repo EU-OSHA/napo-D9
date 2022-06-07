@@ -12,13 +12,13 @@ pattern: '/[term:vocabulary]/[term:name]'
 selection_criteria:
   1fc39445-86b6-4f6c-ac41-e2c5f4b5e1b6:
     id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 1fc39445-86b6-4f6c-ac41-e2c5f4b5e1b6
+    context_mapping:
+      taxonomy_term: taxonomy_term
     bundles:
       main_category: main_category
       video_type: video_type
-    negate: false
-    context_mapping:
-      taxonomy_term: taxonomy_term
-    uuid: 1fc39445-86b6-4f6c-ac41-e2c5f4b5e1b6
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -16,17 +16,19 @@ bundle: webform
 mode: default
 content:
   field_download:
-    weight: 101
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 101
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
   langcode: true
   search_api_excerpt: true

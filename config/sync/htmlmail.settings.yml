@@ -1,8 +1,10 @@
+_core:
+  default_config_hash: Jh_7Qy5GHQxxThw125M0lN5htchRjsy4fQtImF8RBd8
 debug: false
 theme: ''
 html_with_plain: false
-use_mail_mime: false
 postfilter: '0'
+use_mail_mime: false
 test:
   to: user@example.com
   subject: 'subject test'
@@ -10,5 +12,3 @@ test:
     value: "<p>body <strong>test</strong></p>\r\n"
     format: full_html
   class: SMTPMailSystem
-_core:
-  default_config_hash: Jh_7Qy5GHQxxThw125M0lN5htchRjsy4fQtImF8RBd8

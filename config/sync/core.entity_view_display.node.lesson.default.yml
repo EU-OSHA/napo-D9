@@ -23,103 +23,103 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: node.lesson.default
 targetEntityType: node
 bundle: lesson
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 13
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 13
     region: content
   content_moderation_control:
-    weight: -20
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: -20
+    region: content
   field_activities:
-    weight: 5
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 5
     region: content
   field_assessment:
-    weight: 6
+    type: text_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 6
     region: content
   field_curriculum_links:
-    weight: 7
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 7
     region: content
   field_file:
     type: entity_reference_entity_view
-    weight: 11
     label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 11
     region: content
   field_learning_objectives:
-    weight: 3
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 3
     region: content
   field_lesson_intro_text:
-    weight: 9
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 9
     region: content
   field_lesson_toolkit:
-    weight: 12
+    type: entity_reference_entity_view
     label: above
     settings:
       view_mode: msd_video_only
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 12
     region: content
   field_lesson_video:
-    weight: 1
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: msd_video_only
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 1
     region: content
   field_resources_required:
     type: entity_reference_label
-    weight: 8
-    region: content
     label: above
     settings:
       link: false
     third_party_settings:
       ds:
         ds_limit: ''
+    weight: 8
+    region: content
   field_starter:
-    weight: 4
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 4
     region: content
 hidden:
   addtoany: true

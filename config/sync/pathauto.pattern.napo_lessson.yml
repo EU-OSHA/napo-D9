@@ -11,12 +11,12 @@ pattern: '/learning-with-napo/napo-for-teachers/[node:title]'
 selection_criteria:
   5b2e6615-19d4-465b-a398-8a31cdea4759:
     id: node_type
-    bundles:
-      lesson: lesson
     negate: false
+    uuid: 5b2e6615-19d4-465b-a398-8a31cdea4759
     context_mapping:
       node: node
-    uuid: 5b2e6615-19d4-465b-a398-8a31cdea4759
+    bundles:
+      lesson: lesson
 selection_logic: and
 weight: -5
 relationships: {  }

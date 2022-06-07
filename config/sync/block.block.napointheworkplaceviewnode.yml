@@ -18,13 +18,13 @@ plugin: 'block_content:3d4a180d-4d0a-47d9-b51d-311416e36b05'
 settings:
   id: 'block_content:3d4a180d-4d0a-47d9-b51d-311416e36b05'
   label: 'Napo in the workplace view node'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /learning-with-napo/napo-in-the-workplace
     negate: false
+    pages: /learning-with-napo/napo-in-the-workplace
