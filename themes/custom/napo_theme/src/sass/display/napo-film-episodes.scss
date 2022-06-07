@@ -1,5 +1,7 @@
 .view-napo-s-film-episodes{
   .views-row {
+    display: flex;
+    flex-wrap: wrap;
     margin:0rem;
     margin-bottom: 1.125rem;
     clear: both;
@@ -23,7 +25,7 @@
   }
   .col-sm-3{
     &>div{
-      height: 144px;
+      height: 140px;
       overflow: hidden;
     }
     a{
