@@ -33,13 +33,14 @@ third_party_settings:
       children:
         - field_glossary
         - field_list_of_activities
+      label: 'Buttons Group'
       parent_name: ''
+      region: hidden
       weight: 17
       format_type: html_element
-      region: hidden
       format_settings:
-        id: ''
         classes: 'group-buttons-facilitator-guidance field-group-html-element'
+        id: ''
         element: div
         show_label: false
         label_element: div
@@ -47,10 +48,9 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'Buttons Group'
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.search_results
@@ -59,50 +59,50 @@ bundle: article
 mode: search_results
 content:
   addtoany:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   body:
     type: smart_trim
-    weight: 2
-    region: content
+    label: hidden
     settings:
       trim_length: 600
       trim_type: chars
       trim_suffix: ...
+      wrap_output: false
       wrap_class: trimmed
       more_link: true
-      more_text: 'Read more'
       more_class: more-link
+      more_text: 'Read more'
       summary_handler: trim
       trim_options:
         text: true
         trim_zero: false
-      wrap_output: false
     third_party_settings: {  }
-    label: hidden
+    weight: 2
+    region: content
   content_moderation_control:
-    weight: -20
     settings: {  }
     third_party_settings: {  }
+    weight: -20
     region: content
   field_image:
     type: media_thumbnail
-    weight: 1
-    region: content
+    label: hidden
     settings:
-      image_style: thumbnail
       image_link: ''
+      image_style: thumbnail
     third_party_settings:
       ds:
         ds_limit: ''
-    label: hidden
-  search_api_excerpt:
-    weight: 3
+    weight: 1
     region: content
+  search_api_excerpt:
     settings: {  }
     third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   breadcrumbs: true
   field_character_count: true

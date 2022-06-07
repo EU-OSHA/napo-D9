@@ -5,13 +5,13 @@ dependencies: {  }
 id: napo_films
 label: 'Napo films'
 renderer: quick_tabs
-options:
-  quick_tabs:
-    class: ''
-    style: ''
-    ajax: false
 hide_empty_tabs: true
 default_tab: 1
+options:
+  quick_tabs:
+    ajax: false
+    class: ''
+    style: ''
 configuration_data:
   -
     title: 'List view'

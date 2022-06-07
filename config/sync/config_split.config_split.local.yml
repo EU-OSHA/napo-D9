@@ -5,6 +5,7 @@ dependencies: {  }
 id: local
 label: Local
 description: ''
+weight: 0
 folder: sites/napo/config/local
 module:
   custom_migrations: 0
@@ -218,4 +219,3 @@ graylist:
   - system.menu.devel
 graylist_dependents: false
 graylist_skip_equal: true
-weight: 0

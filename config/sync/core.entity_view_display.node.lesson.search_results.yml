@@ -26,65 +26,70 @@ third_party_settings:
   field_group:
     group_left:
       children: {  }
+      label: Left
       parent_name: ''
+      region: hidden
       weight: 18
       format_type: details
-      region: hidden
       format_settings:
-        description: ''
-        open: true
-        id: ''
         classes: ''
-      label: Left
+        id: ''
+        open: true
+        description: ''
     group_right:
       children: {  }
+      label: Right
       parent_name: ''
+      region: hidden
       weight: 17
       format_type: details
-      region: hidden
       format_settings:
-        description: ''
-        open: true
-        id: ''
         classes: ''
-      label: Right
+        id: ''
+        open: true
+        description: ''
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: node.lesson.search_results
 targetEntityType: node
 bundle: lesson
 mode: search_results
 content:
   addtoany:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   body:
     type: smart_trim
-    weight: 1
-    region: content
     label: hidden
     settings:
       trim_length: 600
       trim_type: chars
       trim_suffix: ...
+      wrap_output: false
       wrap_class: trimmed
       more_link: true
-      more_text: 'Read more'
       more_class: more-link
+      more_text: 'Read more'
       summary_handler: trim
       trim_options:
         text: true
         trim_zero: false
-      wrap_output: false
     third_party_settings: {  }
-  search_api_excerpt:
-    weight: 2
+    weight: 1
     region: content
+  content_moderation_control:
     settings: {  }
     third_party_settings: {  }
+    weight: -20
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   breadcrumbs: true
   field_activities: true

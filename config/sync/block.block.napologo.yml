@@ -17,8 +17,8 @@ plugin: 'block_content:ac5fb4a3-9b34-41ac-be72-a1718df5a9a8'
 settings:
   id: 'block_content:ac5fb4a3-9b34-41ac-be72-a1718df5a9a8'
   label: 'Napo Logo'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

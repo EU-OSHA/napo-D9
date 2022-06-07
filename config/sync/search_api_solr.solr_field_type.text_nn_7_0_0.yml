@@ -82,9 +82,9 @@ field_type:
           words: stopwords_nn.txt
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_nn.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.NorwegianLightStemFilterFactory
           variant: nn
@@ -161,9 +161,9 @@ unstemmed_field_type:
           words: stopwords_nn.txt
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_nn.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.ScandinavianNormalizationFilterFactory
         -
@@ -429,9 +429,6 @@ text_files:
     vort
     varte
     vart
-  synonyms: |
-    drupal, durpal
-  nouns: ''
   protwords: ''
   accents: |
     # À => A
@@ -598,3 +595,6 @@ text_files:
     "\uFB05" => "st"
     # ﬆ => st
     "\uFB06" => "st"
+  synonyms: |
+    drupal, durpal
+  nouns: ''

@@ -17,27 +17,27 @@ bundle: napo_friend
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   content_moderation_control:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_image:
-    weight: 1
+    type: media_thumbnail
     label: hidden
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings:
       ds:
         ds_limit: ''
-    type: media_thumbnail
+    weight: 1
     region: content
 hidden:
   addtoany: true

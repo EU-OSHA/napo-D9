@@ -15,15 +15,17 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: node.home_video.osha_slideshow
 targetEntityType: node
 bundle: home_video
 mode: osha_slideshow
 content: {  }
 hidden:
+  addtoany: true
   body: true
+  breadcrumbs: true
   field_image: true
   field_poster_image: true
   field_url: true

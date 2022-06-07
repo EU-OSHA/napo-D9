@@ -28,56 +28,12 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: none
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: some
-        options:
-          items_per_page: 6
-          offset: 0
-      style:
-        type: default
-        options:
-          grouping: {  }
-          row_class: item
-          default_row_class: false
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline:
-            field_image: field_image
-            title: title
-          separator: ''
-          hide_empty: false
+      title: 'Frontpage Carousel Featured'
       fields:
         view_node:
           id: view_node
@@ -86,6 +42,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          plugin_id: entity_link
           label: ''
           exclude: true
           alter:
@@ -130,8 +88,6 @@ display:
           text: ''
           output_url_as_text: false
           absolute: false
-          entity_type: node
-          plugin_id: entity_link
         field_image:
           id: field_image
           table: node__field_image
@@ -139,6 +95,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -183,8 +140,8 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: slider_item
             image_link: ''
+            image_style: slider_item
           group_column: target_id
           group_columns: {  }
           group_rows: false
@@ -195,7 +152,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -203,6 +159,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -258,23 +217,59 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 6
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: none
+        options: {  }
+      empty: {  }
+      sorts:
+        entityqueue_relationship_in_queue:
+          id: entityqueue_relationship_in_queue
+          table: node_field_data
+          field: entityqueue_relationship_in_queue
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: node
-          entity_field: title
-          plugin_id: field
+          plugin_id: entity_queue_in_queue
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: entityqueue_relationship_in_queue
+          exposed: false
+      arguments: {  }
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
@@ -282,6 +277,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
           operator: in
           value:
             napo_video: napo_video
@@ -314,9 +312,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
         field_video_type_target_id:
           id: field_video_type_target_id
           table: node__field_video_type
@@ -324,6 +319,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             2727: 2727
@@ -363,30 +359,34 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: select
-          limit: true
           vid: video_type
+          type: select
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
-      sorts:
-        entityqueue_relationship_in_queue:
-          id: entityqueue_relationship_in_queue
-          table: node_field_data
-          field: entityqueue_relationship_in_queue
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          entity_type: node
-          plugin_id: entity_queue_in_queue
-      title: 'Frontpage Carousel Featured'
-      header: {  }
-      footer: {  }
-      empty: {  }
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: item
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline:
+            field_image: field_image
+            title: title
+          separator: ''
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
       relationships:
         entityqueue_relationship:
           id: entityqueue_relationship
@@ -395,13 +395,14 @@ display:
           relationship: none
           group_type: group
           admin_label: 'Content queue'
-          required: false
-          limit_queue: featured_videos
           entity_type: node
           plugin_id: entity_queue
-      arguments: {  }
-      display_extenders: {  }
+          required: false
+          limit_queue: featured_videos
       show_admin_links: false
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -416,105 +417,12 @@ display:
         - entity_field_info
         - views_data
   block:
-    display_plugin: block
     id: block
     display_title: Block
+    display_plugin: block
     position: 1
     display_options:
-      display_extenders:
-        metatag_display_extender: {  }
-      pager:
-        type: none
-        options:
-          offset: 0
-      defaults:
-        pager: false
-        title: false
-        sorts: false
-        style: false
-        row: false
-        fields: false
-        query: false
-        relationships: false
-        filters: false
-        filter_groups: false
       title: 'Napo''s films'
-      sorts:
-        entityqueue_relationship_in_queue:
-          id: entityqueue_relationship_in_queue
-          table: node_field_data
-          field: entityqueue_relationship_in_queue
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          entity_type: node
-          plugin_id: entity_queue_in_queue
-        entityqueue_relationship:
-          id: entityqueue_relationship
-          table: node_field_data
-          field: entityqueue_relationship
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          entity_type: node
-          plugin_id: entity_queue_position
-      style:
-        type: slick
-        options:
-          vanilla: true
-          optionset: default_frontpage
-          skin: classic
-          layout: ''
-          caption:
-            view_node: '0'
-            field_image: '0'
-            title: '0'
-          optionset_thumbnail: ''
-          skin_thumbnail: ''
-          thumbnail_position: ''
-          thumbnail_caption: ''
-          grid: null
-          grid_medium: null
-          grid_small: null
-          visible_items: null
-          preserve_keys: false
-          image: ''
-          thumbnail: ''
-          overlay: ''
-          title: ''
-          link: ''
-          class: ''
-          id: ''
-          override: true
-          overridables:
-            arrows: arrows
-            autoplay: '0'
-            dots: '0'
-            draggable: '0'
-            infinite: '0'
-            mouseWheel: '0'
-            randomize: '0'
-            variableWidth: '0'
-          cache: 0
-          current_view_mode: block
-          thumbnail_effect: ''
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline:
-            field_image: field_image
-            title: title
-          separator: ''
-          hide_empty: false
       fields:
         view_node:
           id: view_node
@@ -523,6 +431,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          plugin_id: entity_link
           label: ''
           exclude: true
           alter:
@@ -567,8 +477,6 @@ display:
           text: ''
           output_url_as_text: true
           absolute: true
-          entity_type: node
-          plugin_id: entity_link
         field_image:
           id: field_image
           table: node__field_image
@@ -576,6 +484,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -620,8 +529,8 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: slider_item
             image_link: ''
+            image_style: slider_item
           group_column: target_id
           group_columns: {  }
           group_rows: false
@@ -632,7 +541,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -640,6 +548,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -695,45 +606,53 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-      block_description: 'Napo''s films'
-      query:
-        type: views_query
+      pager:
+        type: none
         options:
-          disable_sql_rewrite: false
-          distinct: true
-          replica: false
-          query_comment: ''
-          query_tags: null
-      rendering_language: '***LANGUAGE_language_interface***'
-      relationships:
+          offset: 0
+      sorts:
+        entityqueue_relationship_in_queue:
+          id: entityqueue_relationship_in_queue
+          table: node_field_data
+          field: entityqueue_relationship_in_queue
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_queue_in_queue
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: entityqueue_relationship_in_queue
+          exposed: false
         entityqueue_relationship:
           id: entityqueue_relationship
           table: node_field_data
           field: entityqueue_relationship
           relationship: none
           group_type: group
-          admin_label: 'Content queue'
-          required: false
-          limit_queue: featured_videos
+          admin_label: ''
           entity_type: node
-          plugin_id: entity_queue
+          plugin_id: entity_queue_position
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: entityqueue_relationship
+          exposed: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
@@ -741,6 +660,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
           operator: in
           value:
             napo_video: napo_video
@@ -773,9 +695,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
         field_video_type_target_id:
           id: field_video_type_target_id
           table: node__field_video_type
@@ -783,6 +702,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             2727: 2727
@@ -822,16 +742,99 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: select
-          limit: true
           vid: video_type
+          type: select
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      style:
+        type: slick
+        options:
+          caption:
+            view_node: '0'
+            field_image: '0'
+            title: '0'
+          optionset: default_frontpage
+          class: ''
+          id: ''
+          image: ''
+          link: ''
+          overlay: ''
+          title: ''
+          vanilla: true
+          layout: ''
+          cache: 0
+          current_view_mode: block
+          skin: classic
+          grid: null
+          grid_medium: null
+          grid_small: null
+          overridables:
+            arrows: arrows
+            autoplay: '0'
+            dots: '0'
+            draggable: '0'
+            infinite: '0'
+            mouseWheel: '0'
+            randomize: '0'
+            variableWidth: '0'
+          thumbnail: ''
+          optionset_thumbnail: ''
+          skin_thumbnail: ''
+          thumbnail_caption: ''
+          thumbnail_effect: ''
+          thumbnail_position: ''
+          override: true
+          preserve_keys: false
+          visible_items: null
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline:
+            field_image: field_image
+            title: title
+          separator: ''
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: true
+          replica: false
+          query_tags: null
+      defaults:
+        query: false
+        title: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          entity_type: node
+          plugin_id: entity_queue
+          required: false
+          limit_queue: featured_videos
+      rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders:
+        metatag_display_extender: {  }
+      block_description: 'Napo''s films'
     cache_metadata:
       max-age: -1
       contexts:
@@ -845,35 +848,12 @@ display:
         - entity_field_info
         - views_data
   block_1:
-    display_plugin: block
     id: block_1
     display_title: 'Latest films'
+    display_plugin: block
     position: 2
     display_options:
-      display_extenders:
-        metatag_display_extender: {  }
-      sorts:
-        field_publication_date_value:
-          id: field_publication_date_value
-          table: node__field_publication_date
-          field: field_publication_date_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-          plugin_id: datetime
-      defaults:
-        sorts: false
-        fields: false
-        title: false
-        style: false
-        row: false
-        css_class: false
-        relationships: false
+      title: 'Napo''s films latest videos'
       fields:
         field_image:
           id: field_image
@@ -882,6 +862,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -926,8 +907,8 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: napo_featured
             image_link: content
+            image_style: napo_featured
           group_column: target_id
           group_columns: {  }
           group_rows: false
@@ -938,7 +919,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -946,6 +926,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -1001,37 +984,42 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-      title: 'Napo''s films latest videos'
+      sorts:
+        field_publication_date_value:
+          id: field_publication_date_value
+          table: node__field_publication_date
+          field: field_publication_date_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: datetime
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: field_publication_date_value
+          exposed: false
+          granularity: second
       style:
         type: slick
         options:
-          vanilla: true
-          optionset: default_frontpage
-          skin: classic
-          layout: ''
           caption:
             field_image: field_image
             title: '0'
-          optionset_thumbnail: ''
-          skin_thumbnail: ''
-          thumbnail_position: ''
-          thumbnail_caption: ''
+          optionset: default_frontpage
+          class: ''
+          id: ''
+          image: ''
+          link: title
+          overlay: ''
+          title: ''
+          vanilla: true
+          layout: ''
+          cache: 0
+          current_view_mode: block_1
+          skin: classic
           grid: null
           grid_medium: null
           grid_small: null
-          visible_items: 3
-          preserve_keys: false
-          image: ''
-          thumbnail: ''
-          overlay: ''
-          title: ''
-          link: title
-          class: ''
-          id: ''
-          override: false
           overridables:
             autoplay: autoplay
             arrows: '0'
@@ -1041,9 +1029,15 @@ display:
             mouseWheel: '0'
             randomize: '0'
             variableWidth: '0'
-          cache: 0
-          current_view_mode: block_1
+          thumbnail: ''
+          optionset_thumbnail: ''
+          skin_thumbnail: ''
+          thumbnail_caption: ''
           thumbnail_effect: ''
+          thumbnail_position: ''
+          override: false
+          preserve_keys: false
+          visible_items: 3
       row:
         type: fields
         options:
@@ -1053,11 +1047,21 @@ display:
             title: title
           separator: ''
           hide_empty: false
-      display_description: ''
-      css_class: napo-homepage-featured-films
+      defaults:
+        title: false
+        css_class: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
       relationships: {  }
-      block_description: 'Napo''s films latest videos'
+      css_class: napo-homepage-featured-films
+      display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders:
+        metatag_display_extender: {  }
+      block_description: 'Napo''s films latest videos'
     cache_metadata:
       max-age: -1
       contexts:

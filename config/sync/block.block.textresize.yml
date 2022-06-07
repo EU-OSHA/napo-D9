@@ -15,6 +15,6 @@ plugin: text_resize_block
 settings:
   id: text_resize_block
   label: 'Text Resize'
-  provider: text_resize
   label_display: '0'
+  provider: text_resize
 visibility: {  }

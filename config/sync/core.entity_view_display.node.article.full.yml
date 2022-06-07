@@ -26,8 +26,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: layoutcomponents_one_column
@@ -69,9 +69,11 @@ third_party_settings:
                 section_label: '11614948463'
                 section_delta: '0'
               structure:
+                section_structure_xs: none
                 section_structure_sm: '12'
                 section_structure: '12'
                 section_structure_lg: '1'
+                section_structure_xl: none
                 section_carousel: false
                 section_carousel_slick: none
             styles:
@@ -154,11 +156,14 @@ third_party_settings:
             configuration:
               id: 'field_block:node:article:title'
               label: Title
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
-                label: hidden
                 type: string
+                label: hidden
                 settings:
                   link_to_entity: false
                 third_party_settings:
@@ -178,22 +183,22 @@ third_party_settings:
                       rel: ''
                       text: ''
                     token: ''
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
             weight: 0
+            additional: {  }
           f942faa1-61e2-4583-8ef1-23f758c37ef9:
             uuid: f942faa1-61e2-4583-8ef1-23f758c37ef9
             region: first
             configuration:
               id: 'field_block:node:article:field_guidance_file'
               label: 'Guidance file'
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings:
@@ -213,21 +218,18 @@ third_party_settings:
                       rel: ''
                       text: ''
                     token: ''
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
             weight: 1
+            additional: {  }
           4f06e584-2f20-4019-a4e9-b662966d26fa:
             uuid: 4f06e584-2f20-4019-a4e9-b662966d26fa
             region: first
             configuration:
+              id: 'extra_field_block:node:article:content_moderation_control'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:node:article:content_moderation_control'
-            additional: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
@@ -237,9 +239,9 @@ bundle: article
 mode: full
 content:
   content_moderation_control:
-    weight: -20
     settings: {  }
     third_party_settings: {  }
+    weight: -20
     region: first
 hidden:
   addtoany: true

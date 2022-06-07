@@ -12,13 +12,14 @@ mode: default
 content:
   field_node_id:
     type: entity_reference_entity_view
-    weight: 0
-    region: content
     label: hidden
     settings:
       view_mode: header_view_node
       link: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
+  breadcrumbs: true
   langcode: true
   search_api_excerpt: true

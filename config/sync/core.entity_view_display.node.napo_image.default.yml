@@ -18,22 +18,22 @@ bundle: napo_image
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   field_image:
-    weight: 2
+    type: media_thumbnail
     label: hidden
     settings:
-      image_style: napo_large_800_
       image_link: ''
+      image_style: napo_large_800_
     third_party_settings:
       ds:
         ds_limit: ''
-    type: media_thumbnail
+    weight: 2
     region: content
 hidden:
   addtoany: true

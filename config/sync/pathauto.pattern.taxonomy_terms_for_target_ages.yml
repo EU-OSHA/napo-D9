@@ -12,12 +12,12 @@ pattern: '/using-napo/napo-for-teachers/[term:name]'
 selection_criteria:
   93e4260e-03d0-47d6-9d5b-46b6c69402ba:
     id: 'entity_bundle:taxonomy_term'
-    bundles:
-      target_ages: target_ages
     negate: false
+    uuid: 93e4260e-03d0-47d6-9d5b-46b6c69402ba
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: 93e4260e-03d0-47d6-9d5b-46b6c69402ba
+    bundles:
+      target_ages: target_ages
 selection_logic: and
 weight: -5
 relationships: {  }

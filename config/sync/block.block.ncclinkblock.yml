@@ -15,6 +15,6 @@ plugin: ncc_link_block
 settings:
   id: ncc_link_block
   label: 'Ncc Link Block'
-  provider: napo_content_cart
   label_display: '0'
+  provider: napo_content_cart
 visibility: {  }

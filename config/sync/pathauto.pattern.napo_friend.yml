@@ -11,12 +11,12 @@ pattern: '/meet-napo/napos-friends/[node:title]'
 selection_criteria:
   fd9f1cbd-69d9-41d5-9ca5-2c1f47e1d4ac:
     id: node_type
-    bundles:
-      napo_friend: napo_friend
     negate: false
+    uuid: fd9f1cbd-69d9-41d5-9ca5-2c1f47e1d4ac
     context_mapping:
       node: node
-    uuid: fd9f1cbd-69d9-41d5-9ca5-2c1f47e1d4ac
+    bundles:
+      napo_friend: napo_friend
 selection_logic: and
 weight: -5
 relationships: {  }

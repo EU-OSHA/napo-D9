@@ -5,13 +5,13 @@ dependencies: {  }
 id: napo_and_friends
 label: 'Napo and friends'
 renderer: quick_tabs
-options:
-  quick_tabs:
-    class: ''
-    style: tabsbar
-    ajax: false
 hide_empty_tabs: false
 default_tab: 1
+options:
+  quick_tabs:
+    ajax: false
+    class: ''
+    style: tabsbar
 configuration_data:
   -
     title: 'Reorder Napo and friends'
