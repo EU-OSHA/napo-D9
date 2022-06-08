@@ -9,8 +9,8 @@ _core:
   default_config_hash: WpWUAD3X2RwYxsRGzJeh2Imqi592ZcXwEkvcT4tgzQU
 id: default
 name: default
-label: Default
 weight: -10
+label: Default
 group: ''
 skin: default
 breakpoints: 0
@@ -23,10 +23,10 @@ options:
     accessibility: true
     adaptiveHeight: false
     autoplay: false
-    autoplaySpeed: 3000
     pauseOnHover: true
     pauseOnDotsHover: false
     pauseOnFocus: true
+    autoplaySpeed: 3000
     arrows: true
     prevArrow: Previous
     nextArrow: Next

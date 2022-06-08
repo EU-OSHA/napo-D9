@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.napo_video.body
     - field.field.node.napo_video.field_archived
     - field.field.node.napo_video.field_combined_tags
-    - field.field.node.napo_video.field_episodes
+    - field.field.node.napo_video.field_field_episodes
     - field.field.node.napo_video.field_image
     - field.field.node.napo_video.field_main_tag
     - field.field.node.napo_video.field_napo_film
@@ -19,9 +19,7 @@ dependencies:
     - node.type.napo_video
   module:
     - ds
-    - entity_reference_revisions
     - media
-    - shs
     - text
     - user
 id: node.napo_video.default
@@ -48,7 +46,7 @@ content:
     weight: 0
     region: content
   field_combined_tags:
-    type: entity_reference_shs
+    type: entity_reference_label
     label: inline
     settings:
       link: false
@@ -56,15 +54,6 @@ content:
       ds:
         ds_limit: ''
     weight: 5
-    region: content
-  field_episodes:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 7
     region: content
   field_image:
     type: media_thumbnail
@@ -85,8 +74,11 @@ content:
 hidden:
   breadcrumbs: true
   field_archived: true
+  field_episodes: true
+  field_field_episodes: true
   field_main_tag: true
   field_napo_film: true
+  field_parent_title: true
   field_publication_date: true
   field_tags: true
   field_video: true

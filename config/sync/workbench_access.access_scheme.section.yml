@@ -9,8 +9,8 @@ dependencies:
     - node.type.webform
     - system.menu.main
 id: section
-label: Section
 plural_label: Sections
+label: Section
 scheme: menu
 scheme_settings:
   menus:

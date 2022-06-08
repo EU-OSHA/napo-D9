@@ -32,13 +32,14 @@ third_party_settings:
       children:
         - field_list_of_activities
         - field_glossary
+      label: 'Buttons Group'
       parent_name: ''
+      region: hidden
       weight: 4
       format_type: html_element
-      region: hidden
       format_settings:
-        id: ''
         classes: 'group-buttons-facilitator-guidance field-group-html-element'
+        id: ''
         element: div
         show_label: false
         label_element: div
@@ -46,10 +47,9 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'Buttons Group'
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.view
@@ -59,60 +59,22 @@ mode: view
 content:
   body:
     type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
-    label: hidden
   content_moderation_control:
-    weight: -20
     settings: {  }
     third_party_settings: {  }
+    weight: -20
     region: content
   field_image:
     type: slick_media
-    weight: 0
-    region: content
+    label: hidden
     settings:
-      image_style: large
-      thumbnail: ''
-      optionset_thumbnail: ''
-      skin_thumbnail: ''
-      thumbnail_caption: ''
-      thumbnail_effect: ''
-      thumbnail_position: ''
-      optionset: default
-      override: false
-      overridables: {  }
-      skin: ''
-      skin_arrows: ''
-      skin_dots: ''
-      cache: 0
-      current_view_mode: ''
-      fx: ''
-      style: ''
-      icon: ''
-      layout: ''
-      view_mode: ''
-      background: false
-      box_caption: ''
-      box_caption_custom: ''
-      box_media_style: ''
       caption: {  }
-      responsive_image_style: ''
-      box_style: ''
-      media_switch: ''
-      ratio: ''
-      thumbnail_style: ''
-      _uri: ''
-      breakpoints: {  }
-      sizes: ''
-      grid_header: ''
-      preserve_keys: false
-      visible_items: 0
-      grid: 0
-      grid_medium: 0
-      grid_small: 0
+      optionset: default
       class: ''
       id: ''
       image: ''
@@ -120,8 +82,46 @@ content:
       overlay: ''
       title: ''
       vanilla: false
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      responsive_image_style: ''
+      box_style: ''
+      image_style: large
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: 0
+      grid_medium: 0
+      grid_small: 0
+      overridables: {  }
+      thumbnail: ''
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
+      skin_arrows: ''
+      skin_dots: ''
+      preserve_keys: false
+      visible_items: 0
     third_party_settings: {  }
-    label: hidden
+    weight: 0
+    region: content
 hidden:
   addtoany: true
   breadcrumbs: true

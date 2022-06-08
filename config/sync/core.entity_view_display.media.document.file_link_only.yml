@@ -15,8 +15,8 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 _core:
   default_config_hash: DXitcriWmE5QHvGvk2OzWouaSnXD5uipkRdAG6_pnkg
 id: media.document.file_link_only
@@ -25,15 +25,15 @@ bundle: document
 mode: file_link_only
 content:
   field_media_document:
+    type: file_download_link
     label: visually_hidden
     settings:
       link_text: ''
-      force_download: true
       link_title: ''
-      custom_classes: ''
       new_tab: false
+      force_download: true
+      custom_classes: ''
     third_party_settings: {  }
-    type: file_download_link
     weight: 0
     region: content
 hidden:

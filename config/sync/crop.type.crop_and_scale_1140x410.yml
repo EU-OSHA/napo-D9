@@ -2,8 +2,8 @@ uuid: a92c9897-827f-46e4-bdf9-54bb6ba0ee73
 langcode: en
 status: true
 dependencies: {  }
-id: crop_and_scale_1140x410
 label: 'Crop and scale 1140x410'
+id: crop_and_scale_1140x410
 description: ''
 aspect_ratio: ''
 soft_limit_width: 1140

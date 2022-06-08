@@ -30,47 +30,47 @@ third_party_settings:
         - group_general
         - group_m
         - group_r
+      label: info
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
-      region: content
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: horizontal
-      label: info
     group_general:
       children:
         - title
         - body
         - field_lesson_intro_text
+      label: General
+      region: content
       parent_name: group_info
       weight: 20
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: open
+        description: ''
         required_fields: true
-      label: General
     group_m:
       children:
         - field_lesson_toolkit
         - field_file
         - field_lesson_video
+      label: Media
+      region: content
       parent_name: group_info
       weight: 21
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Media
     group_r:
       children:
         - field_learning_objectives
@@ -80,17 +80,17 @@ third_party_settings:
         - field_curriculum_links
         - field_tags
         - field_resources_required
+      label: 'Related Information'
+      region: content
       parent_name: group_info
       weight: 22
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: 'Related Information'
 id: node.lesson.default
 targetEntityType: node
 bundle: lesson
@@ -137,12 +137,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_file:
+    type: media_library_widget
     weight: 5
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    type: media_library_widget
-    region: content
   field_learning_objectives:
     type: text_textarea
     weight: 9
@@ -198,8 +198,8 @@ content:
   moderation_state:
     type: moderation_state_default
     weight: 4
-    settings: {  }
     region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
@@ -224,6 +224,11 @@ content:
     third_party_settings: {  }
   translation:
     weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
     region: content
     settings: {  }
     third_party_settings: {  }

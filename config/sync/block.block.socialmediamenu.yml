@@ -17,8 +17,8 @@ plugin: 'system_menu_block:menu-social-media-menu'
 settings:
   id: 'system_menu_block:menu-social-media-menu'
   label: 'Check us out in social media'
-  provider: system
   label_display: visible
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false

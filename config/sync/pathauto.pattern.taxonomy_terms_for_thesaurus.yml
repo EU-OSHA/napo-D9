@@ -12,12 +12,12 @@ pattern: '/thesaurus/[term:field_thesaurus_code]'
 selection_criteria:
   902fb0e9-d25f-4ac4-967f-fea27b36eaef:
     id: 'entity_bundle:taxonomy_term'
-    bundles:
-      thesaurus: thesaurus
     negate: false
+    uuid: 902fb0e9-d25f-4ac4-967f-fea27b36eaef
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: 902fb0e9-d25f-4ac4-967f-fea27b36eaef
+    bundles:
+      thesaurus: thesaurus
 selection_logic: and
 weight: -5
 relationships: {  }

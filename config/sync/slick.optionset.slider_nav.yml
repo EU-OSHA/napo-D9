@@ -9,8 +9,8 @@ _core:
   default_config_hash: WpWUAD3X2RwYxsRGzJeh2Imqi592ZcXwEkvcT4tgzQU
 id: slider_nav
 name: slider_nav
-label: 'Slider nav'
 weight: -10
+label: 'Slider nav'
 group: ''
 skin: asnavfor
 breakpoints: 0
@@ -23,10 +23,10 @@ options:
     accessibility: true
     adaptiveHeight: true
     autoplay: false
-    autoplaySpeed: 3000
     pauseOnHover: true
     pauseOnDotsHover: false
     pauseOnFocus: true
+    autoplaySpeed: 3000
     arrows: false
     prevArrow: Previous
     nextArrow: Next

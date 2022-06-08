@@ -17,8 +17,8 @@ plugin: 'views_block:frontpage_custom_video-block'
 settings:
   id: 'views_block:frontpage_custom_video-block'
   label: ''
-  provider: views
   label_display: '0'
+  provider: views
   views_label: ''
   items_per_page: none
 visibility: {  }

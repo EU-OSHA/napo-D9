@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: QUZHrnAKd4ixgLLVtD3JrrBMlwbmJ6VU-qKcOMDKatw
 buttons_size: 32
 additional_html: "<div id=\"share-this-on\">\r\n  <a class=\"a2a_button_facebook\"></a>\r\n  <a class=\"a2a_button_twitter\"></a>\r\n  <a class=\"a2a_button_linkedin a2a_button_linkedin_share\"></a>\r\n</div>\r\n"
 additional_css: ''
@@ -24,5 +26,3 @@ entities:
   webform_submission: 0
   section_association: 0
   linkcheckerlink: 0
-_core:
-  default_config_hash: QUZHrnAKd4ixgLLVtD3JrrBMlwbmJ6VU-qKcOMDKatw

@@ -44,8 +44,8 @@ field_type:
           words: stopwords_ca.txt
         -
           class: solr.SnowballPorterFilterFactory
-          language: Catalan
           protected: protwords_ca.txt
+          language: Catalan
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
     -
@@ -75,13 +75,13 @@ field_type:
           words: stopwords_ca.txt
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_ca.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.SnowballPorterFilterFactory
-          language: Catalan
           protected: protwords_ca.txt
+          language: Catalan
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
 unstemmed_field_type:
@@ -145,9 +145,9 @@ unstemmed_field_type:
           words: stopwords_ca.txt
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_ca.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
 spellcheck_field_type: null
@@ -454,9 +454,6 @@ text_files:
     vostra
     vostre
     vostres
-  synonyms: |
-    drupal, durpal
-  nouns: ''
   protwords: ''
   accents: |
     # À => A
@@ -623,3 +620,6 @@ text_files:
     "\uFB05" => "st"
     # ﬆ => st
     "\uFB06" => "st"
+  synonyms: |
+    drupal, durpal
+  nouns: ''

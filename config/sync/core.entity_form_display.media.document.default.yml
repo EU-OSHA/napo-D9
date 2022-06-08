@@ -28,38 +28,38 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_media_description:
+    type: text_textarea
     weight: 1
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_media_document:
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
     type: file_generic
     weight: 0
     region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
   field_nace_codes:
+    type: chosen_select
     weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: chosen_select
-    region: content
   field_tags:
+    type: chosen_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: chosen_select
-    region: content
   field_thesaurus:
+    type: chosen_select
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: chosen_select
-    region: content
   langcode:
     type: language_select
     weight: 5
@@ -75,10 +75,10 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 10
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   translation:
     weight: 8
@@ -88,12 +88,12 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 6
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
-    region: content
     third_party_settings: {  }
 hidden:
   name: true

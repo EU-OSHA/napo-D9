@@ -25,112 +25,118 @@ third_party_settings:
   field_group:
     group_header:
       children: {  }
+      label: Header
       parent_name: ''
+      region: content
       weight: 0
       format_type: accordion
-      region: content
       format_settings:
-        id: ''
         classes: ''
+        id: ''
+        effect: none
         description: ''
         open: false
         required_fields: false
         direction: vertical
-        effect: none
-      label: Header
     group_left:
       children: {  }
+      label: Left
       parent_name: ''
+      region: content
       weight: 2
       format_type: details
-      region: content
       format_settings:
-        formatter: closed
-        id: ''
         classes: ''
+        id: ''
         open: false
         required_fields: false
-      label: Left
+        formatter: closed
     group_right:
       children: {  }
+      label: Right
       parent_name: ''
+      region: content
       weight: 10
       format_type: details
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         open: false
+        description: ''
         required_fields: false
-      label: Right
 id: node.lesson.full
 targetEntityType: node
 bundle: lesson
 mode: full
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_activities:
-    weight: 6
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 6
     region: content
   field_assessment:
-    weight: 7
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 7
     region: content
   field_curriculum_links:
-    weight: 8
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 8
     region: content
   field_learning_objectives:
-    weight: 4
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 4
     region: content
   field_lesson_intro_text:
-    weight: 3
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 3
     region: content
   field_lesson_video:
-    weight: 1
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: napo_video_from_msd_video
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 1
     region: content
   field_resources_required:
     type: entity_reference_label
-    weight: 9
-    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 9
+    region: content
   field_starter:
-    weight: 5
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 5
     region: content
 hidden:
   addtoany: true
   body: true
+  breadcrumbs: true
   field_file: true
   field_lesson_toolkit: true
   field_tags: true

@@ -20,12 +20,13 @@ content:
     type: image
     label: hidden
     settings:
-      image_style: medium
       image_link: ''
-    weight: 0
+      image_style: medium
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
+  breadcrumbs: true
   created: true
   field_external_link: true
   field_link_image: true

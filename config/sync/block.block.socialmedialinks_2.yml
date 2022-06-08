@@ -15,8 +15,8 @@ plugin: social_media_links_block
 settings:
   id: social_media_links_block
   label: 'Social Media Links'
-  provider: social_media_links
   label_display: '0'
+  provider: social_media_links
   platforms:
     contact:
       value: ''

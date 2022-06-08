@@ -17,6 +17,6 @@ plugin: 'simple_block:footer_social'
 settings:
   id: 'simple_block:footer_social'
   label: 'Footer - Social'
-  provider: simple_block
   label_display: '0'
+  provider: simple_block
 visibility: {  }

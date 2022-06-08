@@ -15,6 +15,6 @@ plugin: block_printfriendly
 settings:
   id: block_printfriendly
   label: 'Print friendly: '
-  provider: printfriendly
   label_display: visible
+  provider: printfriendly
 visibility: {  }

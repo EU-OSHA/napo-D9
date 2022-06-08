@@ -26,19 +26,19 @@ content:
     weight: 5
     region: content
   field_cmw_mail_notifications:
+    type: boolean_checkbox
     weight: 37
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_metatag:
+    type: metatag_firehose
     weight: 36
+    region: content
     settings:
       sidebar: true
     third_party_settings: {  }
-    type: metatag_firehose
-    region: content
   language:
     weight: 0
     region: content
@@ -53,11 +53,11 @@ content:
     region: content
   user_picture:
     type: image_image
+    weight: -1
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
-    region: content
 hidden:
   langcode: true

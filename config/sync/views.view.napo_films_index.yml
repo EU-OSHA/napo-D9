@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_combined_tags
-    - field.storage.node.field_episodes
+    - field.storage.node.field_field_episodes
     - field.storage.node.field_image
     - field.storage.node.field_main_tag
     - field.storage.node.field_publication_date
@@ -19,7 +19,6 @@ dependencies:
     - 'taxonomy_term:video_type:33916e48-b522-425d-be58-e9d58a83e7d8'
   module:
     - datetime
-    - entity_reference_revisions
     - file
     - media
     - napo_content_cart
@@ -2019,10 +2018,10 @@ display:
                 view_mode: default
               video_type:
                 display_method: label
-        field_episodes:
-          id: field_episodes
+        field_field_episodes:
+          id: field_field_episodes
           table: search_api_datasource_default_multilingual_node_index_entity_node
-          field: field_episodes
+          field: field_field_episodes
           relationship: none
           group_type: group
           admin_label: ''
@@ -2070,10 +2069,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_revisions_entity_view
+          type: entity_reference_label
           settings:
-            view_mode: default
-          group_column: ''
+            link: true
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -2084,12 +2083,64 @@ display:
           separator: ', '
           field_api_classes: false
           field_rendering: true
-          fallback_handler: search_api
+          fallback_handler: search_api_entity
           fallback_options:
             link_to_item: false
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
+            display_methods:
+              article:
+                display_method: label
+                view_mode: default
+              consortium_partner:
+                display_method: label
+                view_mode: default
+              faq:
+                display_method: label
+                view_mode: default
+              home_video:
+                display_method: label
+                view_mode: default
+              lesson:
+                display_method: label
+                view_mode: default
+              lesson_resources:
+                display_method: label
+                view_mode: default
+              lesson_toolkit:
+                display_method: label
+                view_mode: default
+              lesson_video:
+                display_method: label
+                view_mode: default
+              msds_activities:
+                display_method: label
+                view_mode: default
+              msds_resources:
+                display_method: label
+                view_mode: default
+              napo_album:
+                display_method: label
+                view_mode: default
+              napo_friend:
+                display_method: label
+                view_mode: default
+              napo_image:
+                display_method: label
+                view_mode: default
+              napo_video:
+                display_method: label
+                view_mode: default
+              page:
+                display_method: label
+                view_mode: default
+              panel:
+                display_method: label
+                view_mode: default
+              webform:
+                display_method: label
+                view_mode: default
         nothing:
           id: nothing
           table: views
@@ -2102,7 +2153,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"item\">\r\n    <div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\">\r\n<div class=\"download-items\">\r\n{% for link in uri|split(',') %}\r\n <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n{% endfor %}\r\n\r\n</div>\r\n</div>\r\n         <div class=\"cart\">{{ ncc_download }}</div>\r\n    </div>\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{field_main_tag}} | {{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n   {% if field_episodes != null  %}\r\n                      <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n{% endif%}\r\n    </div>\r\n</div>\r\n"
+            text: "<div class=\"item\">\r\n    <div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\">\r\n<div class=\"download-items\">\r\n{% for link in uri|split(',') %}\r\n <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n{% endfor %}\r\n\r\n</div>\r\n</div>\r\n         <div class=\"cart\">{{ ncc_download }}</div>\r\n    </div>\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{field_main_tag}} | {{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n        {% if field_field_episodes != null  %}\r\n            <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n        {% endif%}\r\n    </div>\r\n</div>\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -2415,7 +2466,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_combined_tags'
-        - 'config:field.storage.node.field_episodes'
+        - 'config:field.storage.node.field_field_episodes'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_main_tag'
         - 'config:field.storage.node.field_publication_date'
@@ -3553,6 +3604,129 @@ display:
           use_highlighting: false
           multi_type: separator
           multi_separator: ', '
+        field_field_episodes:
+          id: field_field_episodes
+          table: search_api_datasource_default_multilingual_node_index_entity_node
+          field: field_field_episodes
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              article:
+                display_method: label
+                view_mode: default
+              consortium_partner:
+                display_method: label
+                view_mode: default
+              faq:
+                display_method: label
+                view_mode: default
+              home_video:
+                display_method: label
+                view_mode: default
+              lesson:
+                display_method: label
+                view_mode: default
+              lesson_resources:
+                display_method: label
+                view_mode: default
+              lesson_toolkit:
+                display_method: label
+                view_mode: default
+              lesson_video:
+                display_method: label
+                view_mode: default
+              msds_activities:
+                display_method: label
+                view_mode: default
+              msds_resources:
+                display_method: label
+                view_mode: default
+              napo_album:
+                display_method: label
+                view_mode: default
+              napo_friend:
+                display_method: label
+                view_mode: default
+              napo_image:
+                display_method: label
+                view_mode: default
+              napo_video:
+                display_method: label
+                view_mode: default
+              page:
+                display_method: label
+                view_mode: default
+              panel:
+                display_method: label
+                view_mode: default
+              webform:
+                display_method: label
+                view_mode: default
         nothing:
           id: nothing
           table: views
@@ -3565,7 +3739,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"item\">\r\n<div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\">\r\n            <div class=\"download-items\">\r\n             {% for link in uri|split(',') %}\r\n             <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n            {% endfor %}\r\n         </div>\r\n</div>\r\n         \r\n<div class=\"cart\">{{ ncc_download }}</div>\r\n</div>\r\n\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{field_main_tag}} | {{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n       {% if field_video_type  == 'Film video' %}\r\n          {% if nid  == \"86\"  or  nid  == \"95\" or  nid  == \"104\"  or  nid  == \"113\"  or  nid  == \"124\"  or  nid  == \"134\" or  nid  == \"144\"  or  nid  == \"153\"  or  nid  == \"166\"\r\n           or  nid  == \"174\"  or  nid  == \"193\"  or  nid  == \"183\"  or  nid  == \"203\" or  nid  == \"212\"  or  nid  == \"223\"  or  nid  == \"270\"  or  nid  == \"306\"      \r\n          or  nid  == \"324\"  or  nid  == \"333\"  or  nid  == \"433\"  or  nid  == \"446\"  %}\r\n                      <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n{% endif%}\r\n{% endif %}\r\n    </div>\r\n\r\n</div>"
+            text: "<div class=\"item\">\r\n<div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\">\r\n            <div class=\"download-items\">\r\n             {% for link in uri|split(',') %}\r\n             <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n            {% endfor %}\r\n         </div>\r\n</div>\r\n         \r\n<div class=\"cart\">{{ ncc_download }}</div>\r\n</div>\r\n\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{field_main_tag}} | {{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n       {% if field_video_type  == 'Film video' %}\r\n        {% if field_field_episodes != null  %}\r\n            <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n        {% endif%}\r\n{% endif %}\r\n    </div>\r\n\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -3879,6 +4053,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_combined_tags'
+        - 'config:field.storage.node.field_field_episodes'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_main_tag'
         - 'config:field.storage.node.field_publication_date'
@@ -5016,6 +5191,129 @@ display:
           use_highlighting: false
           multi_type: separator
           multi_separator: ', '
+        field_field_episodes:
+          id: field_field_episodes
+          table: search_api_datasource_default_multilingual_node_index_entity_node
+          field: field_field_episodes
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              article:
+                display_method: label
+                view_mode: default
+              consortium_partner:
+                display_method: label
+                view_mode: default
+              faq:
+                display_method: label
+                view_mode: default
+              home_video:
+                display_method: label
+                view_mode: default
+              lesson:
+                display_method: label
+                view_mode: default
+              lesson_resources:
+                display_method: label
+                view_mode: default
+              lesson_toolkit:
+                display_method: label
+                view_mode: default
+              lesson_video:
+                display_method: label
+                view_mode: default
+              msds_activities:
+                display_method: label
+                view_mode: default
+              msds_resources:
+                display_method: label
+                view_mode: default
+              napo_album:
+                display_method: label
+                view_mode: default
+              napo_friend:
+                display_method: label
+                view_mode: default
+              napo_image:
+                display_method: label
+                view_mode: default
+              napo_video:
+                display_method: label
+                view_mode: default
+              page:
+                display_method: label
+                view_mode: default
+              panel:
+                display_method: label
+                view_mode: default
+              webform:
+                display_method: label
+                view_mode: default
         nothing:
           id: nothing
           table: views
@@ -5028,7 +5326,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"item {{ field_video_type }}\">\r\n  <div class=\"cart\">{{ ncc_download }}</div>\r\n  <div class=\"napo-film-list-image\">{{field_image}}</div>\r\n  <div class=\"group-right\">\r\n    <h3>{{title}}</h3>\r\n    <div>{{field_publication_date}}</div>\r\n    <p>{{processed}}</p>\r\n    <div class=\"napo-film-list-details-container\">\r\n      <div class=\"\">{{field_main_tag}} | {{ field_combined_tags }}</div>\r\n       {% if field_video_type  == 'Film video' %}\r\n          {% if nid  == \"86\"  or  nid  == \"95\" or  nid  == \"104\"  or  nid  == \"113\"  or  nid  == \"124\"  or  nid  == \"134\" or  nid  == \"144\"  or  nid  == \"153\"  or  nid  == \"166\"\r\n           or  nid  == \"174\"  or  nid  == \"193\"  or  nid  == \"183\"  or  nid  == \"203\"  or  nid  == \"212\"  or  nid  == \"223\"  or  nid  == \"270\"  or  nid  == \"306\"      \r\n          or  nid  == \"324\"  or  nid  == \"333\"  or  nid  == \"433\"  or  nid  == \"446\"  %}\r\n                      <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n{% endif%}\r\n{% endif %}\r\n      <div class=\"view-video\">{{ url_1 }}</div>\r\n      <div class=\"download-video\">\r\n        <div class=\"download-items\">\r\n        {% for link in uri|split(',') %}\r\n          <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n        {% endfor %}\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>\r\n</div>"
+            text: "<div class=\"item {{ field_video_type }}\">\r\n  <div class=\"cart\">{{ ncc_download }}</div>\r\n  <div class=\"napo-film-list-image\">{{field_image}}</div>\r\n  <div class=\"group-right\">\r\n    <h3>{{title}}</h3>\r\n    <div>{{field_publication_date}}</div>\r\n    <p>{{processed}}</p>\r\n    <div class=\"napo-film-list-details-container\">\r\n      <div class=\"\">{{field_main_tag}} | {{ field_combined_tags }}</div>\r\n       {% if field_video_type  == 'Film video' %}\r\n        {% if field_field_episodes != null  %}\r\n            <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n        {% endif%}\r\n\r\n{% endif %}\r\n      <div class=\"view-video\">{{ url_1 }}</div>\r\n      <div class=\"download-video\">\r\n        <div class=\"download-items\">\r\n        {% for link in uri|split(',') %}\r\n          <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n        {% endfor %}\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -5364,6 +5662,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_combined_tags'
+        - 'config:field.storage.node.field_field_episodes'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_main_tag'
         - 'config:field.storage.node.field_publication_date'
@@ -6501,6 +6800,129 @@ display:
                 view_mode: default
               video_type:
                 display_method: label
+        field_field_episodes:
+          id: field_field_episodes
+          table: search_api_datasource_default_multilingual_node_index_entity_node
+          field: field_field_episodes
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              article:
+                display_method: label
+                view_mode: default
+              consortium_partner:
+                display_method: label
+                view_mode: default
+              faq:
+                display_method: label
+                view_mode: default
+              home_video:
+                display_method: label
+                view_mode: default
+              lesson:
+                display_method: label
+                view_mode: default
+              lesson_resources:
+                display_method: label
+                view_mode: default
+              lesson_toolkit:
+                display_method: label
+                view_mode: default
+              lesson_video:
+                display_method: label
+                view_mode: default
+              msds_activities:
+                display_method: label
+                view_mode: default
+              msds_resources:
+                display_method: label
+                view_mode: default
+              napo_album:
+                display_method: label
+                view_mode: default
+              napo_friend:
+                display_method: label
+                view_mode: default
+              napo_image:
+                display_method: label
+                view_mode: default
+              napo_video:
+                display_method: label
+                view_mode: default
+              page:
+                display_method: label
+                view_mode: default
+              panel:
+                display_method: label
+                view_mode: default
+              webform:
+                display_method: label
+                view_mode: default
         nothing:
           id: nothing
           table: views
@@ -6513,7 +6935,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"item\">\r\n<div class=\"cart\">{{ ncc_download }}</div>\r\n<div class=\"napo-film-list-image\">{{field_image}}</div>\r\n<div class=\"group-right\">\r\n<h3>{{title}}</h3>\r\n<div>{{field_publication_date}}</div>\r\n<p>{{processed}}</p>\r\n<div class=\"napo-film-list-details-container\">\r\n<div class=\"\">{{field_main_tag}} | {{ field_combined_tags }} </div>\r\n       {% if field_video_type  == 'Film video' %}\r\n          {% if nid  == \"86\"  or  nid  == \"95\" or  nid  == \"104\"  or  nid  == \"113\"  or  nid  == \"124\"  or  nid  == \"134\" or  nid  == \"144\"  or  nid  == \"153\"  or  nid  == \"166\"\r\n           or  nid  == \"174\"  or  nid  == \"193\"  or  nid  == \"183\"  or  nid  == \"203\" or  nid  == \"212\"  or  nid  == \"223\"  or  nid  == \"270\"  or  nid  == \"306\"      \r\n          or  nid  == \"324\"  or  nid  == \"333\"  or  nid  == \"433\"  or  nid  == \"446\"  %}\r\n                      <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n{% endif%}\r\n{% endif %}\r\n<div class=\"view-video\">{{ url_1 }}</div>\r\n<div class=\"download-video\">\r\n<div class=\"download-items\">\r\n{% for link in uri|split(',') %}\r\n <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n{% endfor %}\r\n</div>\r\n</div>\r\n\r\n</div>\r\n</div>\r\n</div>"
+            text: "<div class=\"item\">\r\n<div class=\"cart\">{{ ncc_download }}</div>\r\n<div class=\"napo-film-list-image\">{{field_image}}</div>\r\n<div class=\"group-right\">\r\n<h3>{{title}}</h3>\r\n<div>{{field_publication_date}}</div>\r\n<p>{{processed}}</p>\r\n<div class=\"napo-film-list-details-container\">\r\n<div class=\"\">{{field_main_tag}} | {{ field_combined_tags }} </div>\r\n       {% if field_video_type  == 'Film video' %}\r\n              {% if field_field_episodes != null  %}\r\n                     <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2}}/view-scenes\">View scenes</a></div>\r\n              {% endif%}\r\n       {% endif %}\r\n<div class=\"view-video\">{{ url_1 }}</div>\r\n<div class=\"download-video\">\r\n<div class=\"download-items\">\r\n{% for link in uri|split(',') %}\r\n <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n{% endfor %}\r\n</div>\r\n</div>\r\n\r\n</div>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -6848,6 +7270,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_combined_tags'
+        - 'config:field.storage.node.field_field_episodes'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_main_tag'
         - 'config:field.storage.node.field_publication_date'

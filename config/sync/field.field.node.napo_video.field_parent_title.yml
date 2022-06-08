@@ -1,0 +1,19 @@
+uuid: c301e8e1-e151-4c12-92e3-44892118de6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parent_title
+    - node.type.napo_video
+id: node.napo_video.field_parent_title
+field_name: field_parent_title
+entity_type: node
+bundle: napo_video
+label: 'Parent title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

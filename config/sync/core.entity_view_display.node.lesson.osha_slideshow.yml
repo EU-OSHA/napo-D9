@@ -26,120 +26,126 @@ third_party_settings:
   field_group:
     group_left:
       children: {  }
+      label: Left
       parent_name: ''
+      region: content
       weight: 0
       format_type: details
-      region: content
       format_settings:
-        description: ''
-        open: true
-        id: ''
         classes: ''
-      label: Left
+        id: ''
+        open: true
+        description: ''
     group_right:
       children: {  }
+      label: Right
       parent_name: ''
+      region: content
       weight: 8
       format_type: details
-      region: content
       format_settings:
-        description: ''
-        open: true
-        id: ''
         classes: ''
-      label: Right
+        id: ''
+        open: true
+        description: ''
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: node.lesson.osha_slideshow
 targetEntityType: node
 bundle: lesson
 mode: osha_slideshow
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 11
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 11
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
     region: content
   field_activities:
-    weight: 3
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 3
     region: content
   field_assessment:
-    weight: 4
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 4
     region: content
   field_curriculum_links:
-    weight: 5
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 5
     region: content
   field_file:
     type: entity_reference_entity_view
-    weight: 9
     label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 9
     region: content
   field_learning_objectives:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_lesson_intro_text:
-    weight: 7
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 7
     region: content
   field_lesson_toolkit:
-    weight: 10
+    type: entity_reference_label
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 10
     region: content
   field_lesson_video:
-    weight: 12
+    type: entity_reference_label
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 12
     region: content
   field_resources_required:
     type: entity_reference_label
-    weight: 6
-    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 6
+    region: content
   field_starter:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
 hidden:
   addtoany: true
+  breadcrumbs: true
   field_tags: true
   langcode: true
   links: true

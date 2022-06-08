@@ -6,10 +6,11 @@ dependencies:
     - field.field.node.napo_video.body
     - field.field.node.napo_video.field_archived
     - field.field.node.napo_video.field_combined_tags
-    - field.field.node.napo_video.field_episodes
+    - field.field.node.napo_video.field_field_episodes
     - field.field.node.napo_video.field_image
     - field.field.node.napo_video.field_main_tag
     - field.field.node.napo_video.field_napo_film
+    - field.field.node.napo_video.field_parent_title
     - field.field.node.napo_video.field_publication_date
     - field.field.node.napo_video.field_tags
     - field.field.node.napo_video.field_video
@@ -21,7 +22,6 @@ dependencies:
     - conditional_fields
     - content_moderation
     - datetime
-    - entity_reference_revisions
     - media_library
     - path
     - text
@@ -50,34 +50,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_episodes:
-    type: entity_reference_revisions_autocomplete
-    weight: 51
+  field_field_episodes:
+    type: entity_reference_autocomplete
+    weight: 14
     region: content
     settings:
       match_operator: CONTAINS
       match_limit: 0
       size: 60
       placeholder: ''
-    third_party_settings:
-      conditional_fields:
-        b65af66f-d1a8-44bf-9735-fca1111a54bc:
-          entity_type: node
-          bundle: napo_video
-          dependee: field_video_type
-          settings:
-            state: visible
-            condition: value
-            grouping: AND
-            values_set: 1
-            value: ''
-            values: {  }
-            value_form:
-              -
-                target_id: '2727'
-            effect: show
-            effect_options: {  }
-            selector: ''
+    third_party_settings: {  }
   field_image:
     type: media_library_widget
     weight: 5
@@ -228,13 +210,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   created: true
   field_archived: true
+  field_parent_title: true
   field_tags: true
   promote: true
   status: true

@@ -18,8 +18,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: node.lesson_video.msd_video_only
 targetEntityType: node
 bundle: lesson_video
@@ -27,8 +27,6 @@ mode: msd_video_only
 content:
   field_video:
     type: entity_reference_entity_view
-    weight: 0
-    region: content
     label: hidden
     settings:
       view_mode: default
@@ -36,6 +34,8 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
+    weight: 0
+    region: content
 hidden:
   addtoany: true
   body: true

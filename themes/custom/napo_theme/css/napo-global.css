@@ -341,6 +341,51 @@ div.pagerer-container {
   z-index: 900;
 }
 
+.node--type-napo-video .slick, .node--type-napo-video .slick-wrapper {
+  max-width: 100%;
+  position: relative;
+}
+.node--type-napo-video .slick__arrow {
+  bottom: auto;
+  height: 2px;
+  left: 0;
+  margin-top: -1px;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 2;
+}
+.node--type-napo-video .slick-next {
+  right: 0;
+}
+.node--type-napo-video .slick-prev, .node--type-napo-video .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 40px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 99999;
+}
+.node--type-napo-video .slick button, .node--type-napo-video .slick--thumbnail .slick__slide img {
+  pointer-events: auto;
+}
+.node--type-napo-video .slick-prev.slick-disabled:before, .node--type-napo-video .slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
 #colorbox #cboxCurrent {
   display: none !important;
 }
@@ -2340,6 +2385,8 @@ tr th {
 }
 
 .view-napo-s-film-episodes .views-row {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0rem;
   margin-bottom: 1.125rem;
   clear: both;
@@ -2362,7 +2409,7 @@ tr th {
   margin-left: 1rem;
 }
 .view-napo-s-film-episodes .col-sm-3 > div {
-  height: 144px;
+  height: 140px;
   overflow: hidden;
 }
 .view-napo-s-film-episodes .col-sm-3 a:before {

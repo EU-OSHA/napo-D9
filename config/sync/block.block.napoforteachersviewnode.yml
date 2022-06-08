@@ -18,13 +18,13 @@ plugin: 'block_content:bc801612-9ae7-4a9f-8c1b-d6b6fe9636fe'
 settings:
   id: 'block_content:bc801612-9ae7-4a9f-8c1b-d6b6fe9636fe'
   label: 'Napo for teachers view node'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /learning-with-napo/napo-for-teachers
     negate: false
+    pages: /learning-with-napo/napo-for-teachers
