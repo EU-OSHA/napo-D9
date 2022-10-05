@@ -6,7 +6,9 @@ dependencies:
     - field.field.node.faq.body
     - field.field.node.faq.field_weight
     - node.type.faq
+    - workflows.workflow.napo
   module:
+    - content_moderation
     - text
 id: node.faq.default
 targetEntityType: node
@@ -25,7 +27,7 @@ content:
     third_party_settings: {  }
   field_weight:
     type: number
-    weight: 26
+    weight: 4
     region: content
     settings:
       placeholder: ''
@@ -39,7 +41,7 @@ content:
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -52,12 +54,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }

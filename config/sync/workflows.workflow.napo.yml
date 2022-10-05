@@ -33,61 +33,90 @@ type_settings:
       weight: -1
       published: false
       default_revision: false
+    unpublished:
+      label: Unpublished
+      weight: 1
+      published: false
+      default_revision: true
   transitions:
     from_draft_to_draft:
       label: 'From Draft to Draft'
       from:
         - draft
       to: draft
-      weight: -3
+      weight: -7
     from_draft_to_published:
       label: 'From  Draft to Published'
       from:
         - draft
       to: published
-      weight: -1
+      weight: -5
     from_draft_to_ready_to_publish:
       label: 'From Draft to  Ready to Publish'
       from:
         - draft
       to: ready_to_publish
-      weight: -2
+      weight: -6
     from_published_to_draft:
       label: 'From Published to Draft'
       from:
         - published
       to: draft
-      weight: 3
+      weight: -1
     from_published_to_published:
       label: 'From Published to Published'
       from:
         - published
       to: published
-      weight: 5
+      weight: 1
     from_published_to_ready_to_publish:
       label: 'From Published to Ready to Publish'
       from:
         - published
       to: ready_to_publish
-      weight: 4
+      weight: 0
+    from_published_to_unpublished_:
+      label: "From Published to Unpublished\t"
+      from:
+        - published
+      to: unpublished
+      weight: 2
     from_ready_to_publish_to_draft:
       label: 'From Ready to Publish to  Draft'
       from:
         - ready_to_publish
       to: draft
-      weight: 0
+      weight: -4
     from_ready_to_publish_to_published:
       label: 'From Ready to Publish to  Published'
       from:
         - ready_to_publish
       to: published
-      weight: 2
+      weight: -2
     from_ready_to_publish_to_ready_to_publish:
       label: 'From Ready to Publish to Ready to Publish'
       from:
         - ready_to_publish
       to: ready_to_publish
-      weight: 1
+      weight: -3
+    from_unpublished_to_draft:
+      label: 'From Unpublished to Draft'
+      from:
+        - unpublished
+      to: draft
+      weight: 3
+    from_unpublished_to_published:
+      label: 'From Unpublished to Published'
+      from:
+        - unpublished
+      to: published
+      weight: 5
+    from_unpublished_to_ready_to_publish:
+      label: 'From Unpublished to Ready to Publish'
+      from:
+        - unpublished
+      to: ready_to_publish
+      weight: 4
   entity_types:
     node:
       - article
