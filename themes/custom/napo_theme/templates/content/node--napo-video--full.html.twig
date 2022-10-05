@@ -107,15 +107,17 @@
           </div>
         {% endif %}
       {% endfor %}
-   {% else %}
+    {% else %}
       <iframe width="1110" height="641" src="https://www.youtube-nocookie.com/embed/{{ video_url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     {% endif %}
   </div>
-  {% if drupal_view_result('episode_list', 'scenes', node.label ) is not empty %}
-    <div class="view-scenes-custom">
-      <h2>{{ 'View scenes' | trans }}</h2>
-      {{ drupal_view('episode_list', 'scenes', node.label ) }}
-    </div>
+  {% if drupal_view_result('episode_list', 'scenes', node.label )[0]._relationship_entities.field_field_episodes is not empty %}
+    {% if drupal_view_result('episode_list', 'scenes', node.label ) is not empty %}
+      <div class="view-scenes-custom">
+        <h2>{{ 'View scenes' | trans }}</h2>
+        {{ drupal_view('episode_list', 'scenes', node.label ) }}
+      </div>
+    {% endif %}
   {% endif %}
   <div class="conten-video-info">
     <div class="napo-film-title-2">{{ label }}</div>
@@ -190,8 +192,8 @@
     {% if (node._referringItem.target_id != node.id) %}
       <div class="recommended-films">
         <div>{{ 'Other films recommended for you' | trans }}</div>
-          {{ drupal_view('recommended_films', 'recommended_films_block', node.id) }}
-        </div>
+        {{ drupal_view('recommended_films', 'recommended_films_block', node.id) }}
+      </div>
     {% endif %}
   {% endif %}
 
