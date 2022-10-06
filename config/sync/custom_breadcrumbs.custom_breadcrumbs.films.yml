@@ -8,7 +8,7 @@ description: ''
 entityType: node
 entityBundle: napo_video
 language: und
-breadcrumbPaths: "<nolink>\r\n/napos-films\r\n<nolink>"
+breadcrumbPaths: "<nolink>\r\n/napos-films/films?films=all\r\n<nolink>"
 breadcrumbTitles: "Napo's films\r\nFilms\r\n[node:title]"
 type: '1'
 pathPattern: /napos-films/
