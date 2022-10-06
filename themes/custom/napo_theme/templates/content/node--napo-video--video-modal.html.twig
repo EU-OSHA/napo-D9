@@ -74,6 +74,7 @@
 %}
 
 {% set video_url = node.field_youtube.value |split('=') %}
+{% set parent_title = node.field_parent_title[0].value %}
 
 
 <article{{ attributes.addClass(classes) }}>
