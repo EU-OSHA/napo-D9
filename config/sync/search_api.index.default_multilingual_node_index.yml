@@ -14,9 +14,9 @@ dependencies:
     - field.storage.node.field_lesson_video
     - field.storage.node.field_main_tag
     - field.storage.taxonomy_term.field_nace_changes
-    - field.storage.taxonomy_term.field_nace_code
-    - field.storage.taxonomy_term.field_tags_code
     - field.storage.taxonomy_term.field_thesaurus_code
+    - field.storage.taxonomy_term.field_tags_code
+    - field.storage.taxonomy_term.field_nace_code
     - field.storage.taxonomy_term.field_excluded_from
     - field.storage.taxonomy_term.field_nace_excludes
     - field.storage.taxonomy_term.field_nace_includes
@@ -38,7 +38,6 @@ dependencies:
     - field.storage.media.field_media_video_file
     - field.storage.media.field_media_oembed_video
     - search_api.server.apache_solr
-    - core.entity_view_mode.node.search_result
   module:
     - search_api_solr
     - node
@@ -654,31 +653,6 @@ field_settings:
     dependencies:
       module:
         - node
-  rendered_item:
-    label: 'Rendered HTML output'
-    property_path: rendered_item
-    type: text
-    configuration:
-      roles:
-        anonymous: anonymous
-      view_mode:
-        'entity:node':
-          article: search_result
-          consortium_partner: search_result
-          faq: search_result
-          home_video: search_result
-          lesson: search_result
-          lesson_resources: search_result
-          lesson_toolkit: search_result
-          lesson_video: search_result
-          msds_activities: search_result
-          msds_resources: search_result
-          napo_album: search_result
-          napo_friend: search_result
-          napo_image: search_result
-          napo_video: search_result
-        'entity:search_api_task':
-          search_api_task: ''
   revision_default:
     label: 'Tags » Taxonomy term » Default revision'
     datasource_id: 'entity:node'
@@ -922,7 +896,6 @@ processor_settings:
       - name_2
       - path
       - processed
-      - rendered_item
       - summary
       - summary_processed
       - title
