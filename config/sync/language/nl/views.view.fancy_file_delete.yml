@@ -1,0 +1,56 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Toepassen
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+      fields:
+        filename:
+          label: Bestandsnaam
+          separator: ', '
+        fid:
+          label: Bestand-ID
+          separator: ', '
+        entity_label:
+          label: Entiteitlabel
+  page_1:
+    display_title: 'Alle Bestanden'
+    display_options:
+      menu:
+        title: Lijst
+      title: 'Alle Bestanden'
+      fields:
+        filename:
+          label: Bestandsnaam
+          separator: ', '
+        fid:
+          label: Bestand-ID
+          separator: ', '
+        filename_1:
+          label: Bestandsnaam
+          separator: ', '
+  page_2:
+    display_options:
+      fields:
+        filename:
+          label: Bestandsnaam
+          separator: ', '
+        fid:
+          label: Bestand-ID
+          separator: ', '

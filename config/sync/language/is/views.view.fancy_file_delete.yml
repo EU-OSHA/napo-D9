@@ -1,0 +1,39 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      fields:
+        filename:
+          separator: ', '
+        fid:
+          separator: ', '
+  page_1:
+    display_options:
+      menu:
+        title: Listi
+      fields:
+        filename:
+          separator: ', '
+        fid:
+          separator: ', '
+        filename_1:
+          label: Skráarnafn
+          separator: ', '
+  page_2:
+    display_options:
+      fields:
+        filename:
+          separator: ', '
+        fid:
+          separator: ', '

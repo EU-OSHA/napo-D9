@@ -1,0 +1,33 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Anwenden
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elemente pro Seite'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Versatz
+      fields:
+        views_bulk_operations_bulk_form:
+          label: Ansichtsmassenverarbeitungsaktionen
+        unfid:
+          label: ID
+          separator: ', '
+        path:
+          label: Pfad
+          separator: ', '
+  page_1:
+    display_title: Page

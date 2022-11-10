@@ -1,0 +1,12 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Reset
+      fields:
+        path:
+          label: Път
+  page_1:
+    display_title: Page
