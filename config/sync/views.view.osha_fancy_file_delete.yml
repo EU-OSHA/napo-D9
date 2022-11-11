@@ -683,7 +683,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ filemime__value[:1] | upper ~ filemime__value[1:] | split(''/'')[0] }}'
+            text: "{% if \"application\" in filemime__value %}\r\n Document \r\n{% else %}\r\n{{ filemime__value[:1] | upper ~ filemime__value[1:] | split('/')[0] }}\r\n{% endif %}"
             make_link: false
             path: ''
             absolute: false
