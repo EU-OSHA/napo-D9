@@ -3,20 +3,29 @@ langcode: en
 status: true
 dependencies:
   module:
+    - language
     - node
 id: napos_videos
 label: 'Napo  video'
 type: 'canonical_entities:node'
 pattern: '/napos-films/[node:field_napo_film:entity:title]/[node:title]'
 selection_criteria:
-  6b098203-6976-4613-999f-9efad197df6c:
+  60b2c1dc-a754-4030-a683-756a3b6bf55e:
     id: node_type
     negate: false
-    uuid: 6b098203-6976-4613-999f-9efad197df6c
+    uuid: 60b2c1dc-a754-4030-a683-756a3b6bf55e
     context_mapping:
       node: node
     bundles:
       napo_video: napo_video
+  76176cf2-2fb8-47b9-9a2e-6a0489b72bee:
+    id: language
+    negate: false
+    uuid: 76176cf2-2fb8-47b9-9a2e-6a0489b72bee
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
 selection_logic: and
 weight: -10
 relationships:

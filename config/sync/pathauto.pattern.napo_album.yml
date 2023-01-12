@@ -3,20 +3,31 @@ langcode: en
 status: true
 dependencies:
   module:
+    - language
     - node
 id: napo_album
 label: 'Napo album'
 type: 'canonical_entities:node'
 pattern: '/meet-napo/napos-gallery/[node:title]'
 selection_criteria:
-  4f7920c5-56d4-41b3-8109-9ced7eaf002a:
+  6668ea28-1608-4754-94a1-8cd625c8312c:
     id: node_type
     negate: false
-    uuid: 4f7920c5-56d4-41b3-8109-9ced7eaf002a
+    uuid: 6668ea28-1608-4754-94a1-8cd625c8312c
     context_mapping:
       node: node
     bundles:
       napo_album: napo_album
+  3393bd5f-5ef3-4ef2-bc65-488fa32c9aed:
+    id: language
+    negate: false
+    uuid: 3393bd5f-5ef3-4ef2-bc65-488fa32c9aed
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
 selection_logic: and
 weight: -5
-relationships: {  }
+relationships:
+  'node:langcode:language':
+    label: Language
