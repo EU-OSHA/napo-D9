@@ -3,20 +3,31 @@ langcode: en
 status: true
 dependencies:
   module:
+    - language
     - node
 id: napo_friend
 label: 'Napo friend'
 type: 'canonical_entities:node'
 pattern: '/meet-napo/napos-friends/[node:title]'
 selection_criteria:
-  fd9f1cbd-69d9-41d5-9ca5-2c1f47e1d4ac:
+  0cac97ff-d9cc-469f-8bf1-6e4fc0d628b9:
     id: node_type
     negate: false
-    uuid: fd9f1cbd-69d9-41d5-9ca5-2c1f47e1d4ac
+    uuid: 0cac97ff-d9cc-469f-8bf1-6e4fc0d628b9
     context_mapping:
       node: node
     bundles:
       napo_friend: napo_friend
+  f8b3e4bf-3507-46b8-900f-7b5b07e4bc4d:
+    id: language
+    negate: false
+    uuid: f8b3e4bf-3507-46b8-900f-7b5b07e4bc4d
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
 selection_logic: and
 weight: -5
-relationships: {  }
+relationships:
+  'node:langcode:language':
+    label: Language
