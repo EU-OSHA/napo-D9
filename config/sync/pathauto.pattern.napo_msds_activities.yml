@@ -3,20 +3,31 @@ langcode: en
 status: true
 dependencies:
   module:
+    - language
     - node
 id: napo_msds_activities
 label: 'Napo MSDS activities'
 type: 'canonical_entities:node'
 pattern: '/learning-with-napo/napo-in-the-workplace/[node:title]'
 selection_criteria:
-  7af104c4-d3f8-40aa-b73e-6a92979c6f63:
+  b8761759-a6e6-4a38-997b-1e986fa52495:
     id: node_type
     negate: false
-    uuid: 7af104c4-d3f8-40aa-b73e-6a92979c6f63
+    uuid: b8761759-a6e6-4a38-997b-1e986fa52495
     context_mapping:
       node: node
     bundles:
       msds_activities: msds_activities
+  9b99382c-455f-4aab-a6d3-84adcd7a98e6:
+    id: language
+    negate: false
+    uuid: 9b99382c-455f-4aab-a6d3-84adcd7a98e6
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
 selection_logic: and
 weight: -5
-relationships: {  }
+relationships:
+  'node:langcode:language':
+    label: Language

@@ -3,20 +3,31 @@ langcode: en
 status: true
 dependencies:
   module:
+    - language
     - node
 id: napo_lessson
 label: 'Napo lessson'
 type: 'canonical_entities:node'
 pattern: '/learning-with-napo/napo-for-teachers/[node:title]'
 selection_criteria:
-  5b2e6615-19d4-465b-a398-8a31cdea4759:
+  4209c95a-2fbb-4a29-95d5-4b13c9d2586b:
     id: node_type
     negate: false
-    uuid: 5b2e6615-19d4-465b-a398-8a31cdea4759
+    uuid: 4209c95a-2fbb-4a29-95d5-4b13c9d2586b
     context_mapping:
       node: node
     bundles:
       lesson: lesson
+  cbc1de12-1916-490d-8cbd-b48eb1a4640c:
+    id: language
+    negate: false
+    uuid: cbc1de12-1916-490d-8cbd-b48eb1a4640c
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
 selection_logic: and
 weight: -5
-relationships: {  }
+relationships:
+  'node:langcode:language':
+    label: Language
