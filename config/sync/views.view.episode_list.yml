@@ -454,11 +454,11 @@ display:
           vanilla: true
           layout: ''
           cache: 0
-          current_view_mode: scenes
           skin: ''
           grid: null
           grid_medium: null
           grid_small: null
+          current_view_mode: scenes
           overridables:
             arrows: arrows
             variableWidth: variableWidth
@@ -1741,9 +1741,9 @@ display:
           query_comment: ''
           disable_sql_rewrite: false
           distinct: true
-          disable_automatic_base_fields: false
           replica: false
           query_tags: {  }
+          disable_automatic_base_fields: false
       defaults:
         query: false
         title: false

@@ -131,6 +131,8 @@ display:
           settings:
             image_link: ''
             image_style: autocompletion_style
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
