@@ -12,10 +12,11 @@
     background: none !important;
   }
 
-  .block-views-blockfrontpage-custom-video-block,
+  .block-views-blockfrontpage-custom-video-block .views-field-field-video,
 .block-views-blockfrontpage-carousel-featured-block,
 .header_top_bar,
 .header_nav,
+.header:after,
 .video-custom,
 .video-scenes-custom,
 .block-views-blocknapo-story-block-1 .view-footer,
@@ -34,16 +35,34 @@ div.pagerer-container,
 .view-scenes,
 .napo-film-list-view .item-list .napo-film-list-details-container,
 .napo-film-list-view .views-view-grid .view-video,
-.napo-film-list-view .views-view-grid .view-scenes {
+.napo-film-list-view .views-view-grid .view-scenes,
+#main-wrapper img,
+#navbar.show-menu:after {
     display: none;
   }
 
-  .block-views-blocknapo-story-block-1 .view-napo-story .row {
-    flex: 0 0 50%;
-    max-width: 50%;
+  .block-views-blockfrontpage-custom-video-block .frontpage-video-title {
+    position: static;
+    display: block !important;
+    padding: 0px 30px;
+    max-width: unset;
   }
-  .block-views-blocknapo-story-block-1 .views-row .views-field-view-node {
-    margin-top: 0;
+  .block-views-blockfrontpage-custom-video-block h2 {
+    padding: 0px;
+  }
+
+  .header {
+    min-height: unset !important;
+  }
+
+  .header {
+    position: static;
+  }
+
+  .hide-menu {
+    position: unset;
+    top: unset;
+    z-index: unset;
   }
 
   a,
@@ -53,6 +72,10 @@ h3,
 h4 {
     text-decoration: none !important;
     border: none !important;
+  }
+
+  .breadcrumb ol {
+    padding-left: 0px !important;
   }
 
   .views-view-grid .views-col {
@@ -156,6 +179,227 @@ h4 {
   .view-napo-s-film-episodes .episode-list-details-container {
     padding: 0 12px;
   }
+
+  .block-page-title-block h1 {
+    padding: 0.25rem 15px;
+  }
+
+  /**home page**/
+  .region-header-logo img {
+    display: block !important;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .block-views-blockfeatures-articles-block .view-content {
+    flex-direction: column;
+  }
+  .block-views-blockfeatures-articles-block .view-content .views-field-title-1 {
+    display: none;
+  }
+  .block-views-blockfeatures-articles-block .view-content .views-row {
+    padding: 0px;
+    width: 100%;
+    min-height: unset !important;
+  }
+  .block-views-blockfeatures-articles-block .views-row:nth-child(1) h3 a, .block-views-blockfeatures-articles-block .views-row:nth-child(2) h3 a {
+    padding: 0px !important;
+  }
+
+  .block-views-blocknapo-story-block-1 {
+    padding: 15px;
+    margin: 0px 0px 0px 15px;
+    padding-top: 0px;
+  }
+  .block-views-blocknapo-story-block-1 .views-field-view-node {
+    display: none;
+  }
+
+  /**End comment - home page**/
+  /**Napo's film**/
+  .napos-films-coming-soon-2023 .field--name-field-image img {
+    display: none;
+  }
+
+  .napo-film-list-view .views-view-grid.col {
+    padding: 0px;
+  }
+  .napo-film-list-view .views-view-grid.col .napo-film-content-container {
+    padding: 0px;
+  }
+  .napo-film-list-view .views-view-grid.col .napo-film-content-container h3 {
+    margin-bottom: 0px;
+  }
+  .napo-film-list-view .views-view-grid.col .views-field-nothing {
+    margin-top: 2rem;
+  }
+  .napo-film-list-view .views-view-grid.col .download-video {
+    display: none;
+  }
+  .napo-film-list-view .views-view-grid.col .napo-film-list-image {
+    display: none;
+  }
+  .napo-film-list-view .views-view-grid.col .grid.tags a, .napo-film-list-view .views-view-grid.col .grid.date time {
+    font-size: 0.9rem;
+  }
+  .napo-film-list-view .views-view-grid.col p.grid.text {
+    margin-bottom: 0px;
+  }
+
+  .napo-film-list-view .views-view-grid .views-col {
+    padding: 0px !important;
+  }
+
+  /**End comment - Napo's film**/
+  /**Learning with Napo**/
+  .page-view-napo-workplaces #block-napointheworkplaceviewnode .field--name-field-image {
+    display: none;
+  }
+  .page-view-napo-workplaces #block-napointheworkplaceviewnode .node--view-mode-header-view-node {
+    padding: 0px 15px;
+  }
+  .page-view-napo-workplaces .view-content {
+    flex-direction: column;
+  }
+  .page-view-napo-workplaces .view-content .views-row {
+    width: 100%;
+    margin-bottom: 0rem;
+  }
+  .page-view-napo-workplaces .view-content .views-row .lessons-item-content {
+    text-align: start;
+    padding: 0px 15px;
+  }
+  .page-view-napo-workplaces .view-content .views-row .lessons-item-content p.keyword-list {
+    margin-bottom: 0rem;
+  }
+  .page-view-napo-workplaces .view-content .lessons-item,
+.page-view-napo-workplaces .view-content .related-lessons-item {
+    border: none;
+    min-height: unset;
+  }
+  .page-view-napo-workplaces .view-content .lessons-item .related-item-content,
+.page-view-napo-workplaces .view-content .related-lessons-item .related-item-content {
+    padding: 0px 15px 5px 15px;
+  }
+  .page-view-napo-workplaces .view-content .lessons-item img,
+.page-view-napo-workplaces .view-content .related-lessons-item img {
+    display: none;
+  }
+
+  .learning-with-napo-napo-in-the-workplace .field--name-field-image,
+.learning-with-napo-Napo-in-the-workplace .field--name-field-image,
+.page-view-napo-for-teachers .field--name-field-image {
+    padding: 15px;
+  }
+  .learning-with-napo-napo-in-the-workplace .view-filters,
+.learning-with-napo-Napo-in-the-workplace .view-filters,
+.page-view-napo-for-teachers .view-filters {
+    display: none;
+  }
+  .learning-with-napo-napo-in-the-workplace .view-header h2,
+.learning-with-napo-Napo-in-the-workplace .view-header h2,
+.page-view-napo-for-teachers .view-header h2 {
+    margin-bottom: 0px;
+  }
+  .learning-with-napo-napo-in-the-workplace .node--view-mode-header-view-node .field--type-text-with-summary,
+.learning-with-napo-Napo-in-the-workplace .node--view-mode-header-view-node .field--type-text-with-summary,
+.page-view-napo-for-teachers .node--view-mode-header-view-node .field--type-text-with-summary {
+    flex: 100%;
+    padding: 0px !important;
+  }
+  .learning-with-napo-napo-in-the-workplace .node--view-mode-header-view-node .field--type-text-with-summary p,
+.learning-with-napo-Napo-in-the-workplace .node--view-mode-header-view-node .field--type-text-with-summary p,
+.page-view-napo-for-teachers .node--view-mode-header-view-node .field--type-text-with-summary p {
+    margin-bottom: 0rem;
+  }
+  .learning-with-napo-napo-in-the-workplace .content-page-content,
+.learning-with-napo-Napo-in-the-workplace .content-page-content,
+.page-view-napo-for-teachers .content-page-content {
+    padding: 0px;
+  }
+  .learning-with-napo-napo-in-the-workplace .field--type-entity-reference,
+.learning-with-napo-Napo-in-the-workplace .field--type-entity-reference,
+.page-view-napo-for-teachers .field--type-entity-reference {
+    margin: 0px;
+  }
+  .learning-with-napo-napo-in-the-workplace .block-page-title-block h1,
+.learning-with-napo-Napo-in-the-workplace .block-page-title-block h1,
+.page-view-napo-for-teachers .block-page-title-block h1 {
+    padding: 0px 15px;
+  }
+  .learning-with-napo-napo-in-the-workplace .node--view-mode-header-view-node,
+.learning-with-napo-Napo-in-the-workplace .node--view-mode-header-view-node,
+.page-view-napo-for-teachers .node--view-mode-header-view-node {
+    padding: 0px 15px;
+  }
+  .learning-with-napo-napo-in-the-workplace .field--name-field-image,
+.learning-with-napo-Napo-in-the-workplace .field--name-field-image,
+.page-view-napo-for-teachers .field--name-field-image {
+    display: none;
+  }
+  .learning-with-napo-napo-in-the-workplace .lessons--items--grid .view-content.row,
+.learning-with-napo-Napo-in-the-workplace .lessons--items--grid .view-content.row,
+.page-view-napo-for-teachers .lessons--items--grid .view-content.row {
+    flex-direction: column;
+  }
+  .learning-with-napo-napo-in-the-workplace .lessons--items--grid .view-content.row .views-row,
+.learning-with-napo-Napo-in-the-workplace .lessons--items--grid .view-content.row .views-row,
+.page-view-napo-for-teachers .lessons--items--grid .view-content.row .views-row {
+    width: 100%;
+    margin: 0px;
+  }
+  .learning-with-napo-napo-in-the-workplace .lessons--items--grid .view-content.row .views-row .lessons-item,
+.learning-with-napo-Napo-in-the-workplace .lessons--items--grid .view-content.row .views-row .lessons-item,
+.page-view-napo-for-teachers .lessons--items--grid .view-content.row .views-row .lessons-item {
+    border: none;
+    min-height: unset;
+    padding: 0px;
+  }
+  .learning-with-napo-napo-in-the-workplace .lessons--items--grid .view-content.row .views-row .lessons-item > a,
+.learning-with-napo-Napo-in-the-workplace .lessons--items--grid .view-content.row .views-row .lessons-item > a,
+.page-view-napo-for-teachers .lessons--items--grid .view-content.row .views-row .lessons-item > a {
+    display: none;
+  }
+  .learning-with-napo-napo-in-the-workplace .lessons--items--grid .view-content.row .views-row .lessons-item .related-item-content,
+.learning-with-napo-Napo-in-the-workplace .lessons--items--grid .view-content.row .views-row .lessons-item .related-item-content,
+.page-view-napo-for-teachers .lessons--items--grid .view-content.row .views-row .lessons-item .related-item-content {
+    padding: 0px 0px 0px 15px;
+  }
+  .learning-with-napo-napo-in-the-workplace .lessons--items--grid .view-content.row .views-row .lessons-item h3,
+.learning-with-napo-Napo-in-the-workplace .lessons--items--grid .view-content.row .views-row .lessons-item h3,
+.page-view-napo-for-teachers .lessons--items--grid .view-content.row .views-row .lessons-item h3 {
+    text-align: start;
+  }
+  .learning-with-napo-napo-in-the-workplace .lessons--items--grid .view-content.row .views-row .lessons-item .keyword-list,
+.learning-with-napo-Napo-in-the-workplace .lessons--items--grid .view-content.row .views-row .lessons-item .keyword-list,
+.page-view-napo-for-teachers .lessons--items--grid .view-content.row .views-row .lessons-item .keyword-list {
+    text-align: start;
+    margin-bottom: 0px;
+  }
+
+  /**End comment - Learning with Napo**/
+  /**About Napo**/
+  .about-napo-napo-story iframe, .page-view-napo-and-friends iframe, .about-napo-napos-gallery iframe {
+    display: none;
+  }
+  .about-napo-napo-story .views_slideshow_cycle_main .views-field-field-image, .page-view-napo-and-friends .views_slideshow_cycle_main .views-field-field-image, .about-napo-napos-gallery .views_slideshow_cycle_main .views-field-field-image {
+    display: none;
+  }
+  .about-napo-napo-story .views_slideshow_cycle_main .views-row, .page-view-napo-and-friends .views_slideshow_cycle_main .views-row, .about-napo-napos-gallery .views_slideshow_cycle_main .views-row {
+    padding: 15px;
+  }
+  .about-napo-napo-story .view-napos-gallery .napo-gallery-title-container, .page-view-napo-and-friends .view-napos-gallery .napo-gallery-title-container, .about-napo-napos-gallery .view-napos-gallery .napo-gallery-title-container {
+    padding-left: 0px;
+  }
+  .about-napo-napo-story .view-napos-gallery .attachment-before .views-element-container, .page-view-napo-and-friends .view-napos-gallery .attachment-before .views-element-container, .about-napo-napos-gallery .view-napos-gallery .attachment-before .views-element-container {
+    margin-bottom: 0px;
+  }
+
+  .page-view-napo-and-friends #tmgmt-9 {
+    display: none;
+  }
+
+  /**End comment - About Napo**/
 }
 
 /*# sourceMappingURL=napo-print-version.css.map */

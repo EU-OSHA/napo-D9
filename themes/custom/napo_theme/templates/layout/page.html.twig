@@ -3,7 +3,13 @@
   <div id="navbar" role="banner" class="{{ navbar_classes }}">
     <div class="header_top_bar">
       <div class="header_top_bar_content container">
-          {{ page.top_header }}
+        <section class="row region region-top-header">
+          {{ page.top_header.headercontact }}
+          {{ page.top_header.socialmedialinks_2 }}
+          <div><a href="#" onclick="if(window.print)window.print();" class="print-friendly" title="{{ 'Print friendly' | trans }}">{{ 'Print friendly:' | trans }}</a></div>
+          {{ page.top_header.textresize }}
+          {{ page.top_header.ncclinkblock }}
+        </section>
       </div>
     </div>
     <div class="header_navbar_container container">

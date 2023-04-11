@@ -1281,18 +1281,12 @@ tr th {
 .header_top_bar_content {
   text-align: center;
 }
-.header_top_bar .block-printfriendly {
-  color: #FFF;
-}
-.header_top_bar .block-printfriendly .printfriendly {
+.header_top_bar .print-friendly {
+  padding: 0.75rem 2rem 0.75rem 0rem;
   background-image: url(/sites/napo/themes/custom/napo_theme/images/print-icon.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 100% 50%;
   background-size: 25px;
-  padding: 0.75rem 1rem;
-}
-.header_top_bar .block-printfriendly .printfriendly img {
-  display: none;
 }
 .header_top_bar .block-text-resize-block:before {
   content: "Set font size";
