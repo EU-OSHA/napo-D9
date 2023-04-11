@@ -55,18 +55,14 @@
     &_content{
       text-align:center;
     }
-    .block-printfriendly{
-      color:$text-color-white;
-      .printfriendly{
-        background-image: url(/sites/napo/themes/custom/napo_theme/images/print-icon.svg) ;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 25px;
-        padding:0.75rem 1rem;
-        img{
-          display:none;
-        }
-      }
+    .print-friendly{
+      padding: 0.75rem 2rem 0.75rem 0rem;
+      background: {
+        image: url(/sites/napo/themes/custom/napo_theme/images/print-icon.svg);
+        repeat: no-repeat;
+        position: 100% 50%;
+        size: 25px;
+      };
     }
     .block-text-resize-block{
       &:before{

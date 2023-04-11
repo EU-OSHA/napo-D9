@@ -106,7 +106,6 @@ module:
   path_alias: 0
   path_redirect_import: 0
   pathologic: 0
-  printfriendly: 0
   quickedit: 0
   quicktabs: 0
   rdf: 0
