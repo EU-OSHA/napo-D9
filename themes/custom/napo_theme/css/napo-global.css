@@ -91,6 +91,15 @@ div.pagerer-container {
   background-color: #f7e235;
 }
 
+.skip-link {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  word-wrap: normal;
+}
+
 .ui-accordion .ui-accordion-header {
   display: block;
   cursor: pointer;
@@ -1096,6 +1105,7 @@ tr th {
 
 .site-footer {
   padding: 0rem;
+  background: transparent !important;
 }
 
 .site-footer .block-views-blockconsortium-partners-block {
@@ -2885,6 +2895,34 @@ a[class*=napo-cart-delete] {
 #views-exposed-form-search-page-1 {
   position: relative;
 }
+.search-form > .row,
+#views-exposed-form-search-page-1 > .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+.search-form > .row .form-type-textfield,
+#views-exposed-form-search-page-1 > .row .form-type-textfield {
+  padding-right: 5px;
+  padding-left: 5px;
+  flex: 0 1 auto;
+  width: auto;
+  max-width: none;
+}
+.search-form > .row #edit-actions,
+#views-exposed-form-search-page-1 > .row #edit-actions {
+  height: 34px;
+  padding-top: 0.25rem;
+  margin-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  flex: 0 1 auto;
+  width: auto;
+  max-width: none;
+}
 .search-form .form-group label,
 #views-exposed-form-search-page-1 .form-group label {
   font-weight: bold;
@@ -2926,7 +2964,7 @@ a[class*=napo-cart-delete] {
   border: 0px solid transparent;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  margin-top: -2px;
+  margin-top: -3px;
 }
 .search-form .details-wrapper,
 #views-exposed-form-search-page-1 .details-wrapper {
@@ -3258,37 +3296,24 @@ ul[data-sa-theme=basic-blue] > li.ui-menu-item.ui-state-focus .ui-autocomplete-f
   background: url(/sites/napo/themes/custom/napo_theme/images/link.png);
 }
 
-.sitemap-item--menu-main {
-  padding-left: 27px;
-  margin-bottom: 0.625rem;
-}
-.sitemap-item h2 {
-  display: none;
-}
-.sitemap-item .nav-item .dropdown-toggle {
-  padding: 0;
-}
-.sitemap-item .nav-item .dropdown-toggle:after {
-  display: none;
-}
-.sitemap-item .nav-item .dropdown-menu {
-  display: block;
-  padding: 0;
-  margin: 0;
-  border: none;
+.sitemap .sitemap-item {
   padding-left: 27px;
 }
-.sitemap-item .nav-item .dropdown-item {
-  padding: 0;
+.sitemap .sitemap-item h2 {
+  color: transparent;
+  display: none;
 }
-.sitemap-item .nav-item .dropdown-item:hover {
-  background-color: transparent;
+.sitemap .sitemap-item > div > ul {
+  list-style: none;
 }
-.sitemap-item .nav-item .dropdown-item a {
-  color: #1f3695;
-  font-size: 1.125rem;
+.sitemap .sitemap-item > div > ul > li {
+  padding: 5px 0rem;
 }
-.sitemap-item .nav-link {
+.sitemap .sitemap-item > div > ul > li ul {
+  list-style: none;
+  padding-left: 27px;
+}
+.sitemap .sitemap-item > div > ul-link {
   color: #1f3695;
   font-size: 1.125rem;
 }
