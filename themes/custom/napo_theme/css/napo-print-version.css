@@ -434,9 +434,12 @@ h4 {
     padding: 0px;
   }
   .node--type-lesson .content-custom .content-accordions-custom .accordions .accordion__body, .node--type-lesson .content-custom .content-accordions-custom .accordions .closed-2, .node--type-lesson .content-custom .content-accordions-custom .accordions .field__item, .node--type-lesson .content-custom .content-accordions-custom .accordions .field__items, .node--type-lesson .content-custom .content-accordions-custom .accordions li, .node--type-msds-activities .content-custom .content-accordions-custom .accordions .accordion__body, .node--type-msds-activities .content-custom .content-accordions-custom .accordions .closed-2, .node--type-msds-activities .content-custom .content-accordions-custom .accordions .field__item, .node--type-msds-activities .content-custom .content-accordions-custom .accordions .field__items, .node--type-msds-activities .content-custom .content-accordions-custom .accordions li {
-    padding: 0px 15px !important;
+    padding: 15px 15px 0px !important;
     display: block !important;
     font-size: 1.125rem;
+  }
+  .node--type-lesson .content-custom .content-accordions-custom .accordions .accordion__body p, .node--type-lesson .content-custom .content-accordions-custom .accordions .closed-2 p, .node--type-lesson .content-custom .content-accordions-custom .accordions .field__item p, .node--type-lesson .content-custom .content-accordions-custom .accordions .field__items p, .node--type-lesson .content-custom .content-accordions-custom .accordions li p, .node--type-msds-activities .content-custom .content-accordions-custom .accordions .accordion__body p, .node--type-msds-activities .content-custom .content-accordions-custom .accordions .closed-2 p, .node--type-msds-activities .content-custom .content-accordions-custom .accordions .field__item p, .node--type-msds-activities .content-custom .content-accordions-custom .accordions .field__items p, .node--type-msds-activities .content-custom .content-accordions-custom .accordions li p {
+    margin-bottom: 0px;
   }
   .node--type-lesson .block-nma-download-block, .node--type-msds-activities .block-nma-download-block {
     display: none;
