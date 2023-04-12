@@ -187,8 +187,6 @@ h4 {
   /**home page**/
   .region-header-logo img {
     display: block !important;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
   }
 
   .block-views-blockfeatures-articles-block .view-content {
@@ -400,6 +398,107 @@ h4 {
   }
 
   /**End comment - About Napo**/
+  /**Learning with napo activities**/
+  .node--type-lesson .page-banner-custom, .node--type-msds-activities .page-banner-custom {
+    padding: unset;
+  }
+  .node--type-lesson .content-text-facilitator-custom, .node--type-msds-activities .content-text-facilitator-custom {
+    padding-bottom: unset;
+    min-height: unset;
+  }
+  .node--type-lesson .content-text-facilitator-custom .introductory-text, .node--type-lesson .content-text-facilitator-custom .facilitator-guidance, .node--type-msds-activities .content-text-facilitator-custom .introductory-text, .node--type-msds-activities .content-text-facilitator-custom .facilitator-guidance {
+    padding: 0px;
+    width: 100%;
+    min-height: unset;
+  }
+  .node--type-lesson .content-text-facilitator-custom .facilitator-guidance, .node--type-msds-activities .content-text-facilitator-custom .facilitator-guidance {
+    float: unset;
+    text-align: start;
+  }
+  .node--type-lesson .content-text-facilitator-custom .facilitator-guidance .link-box, .node--type-msds-activities .content-text-facilitator-custom .facilitator-guidance .link-box {
+    display: none;
+  }
+  .node--type-lesson .content-custom .accordion-item, .node--type-msds-activities .content-custom .accordion-item {
+    border: unset !important;
+  }
+  .node--type-lesson .content-custom .content-accordions-custom, .node--type-msds-activities .content-custom .content-accordions-custom {
+    padding: unset !important;
+    margin: unset;
+    width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  .node--type-lesson .content-custom .content-accordions-custom h2, .node--type-msds-activities .content-custom .content-accordions-custom h2 {
+    padding: 0px;
+  }
+  .node--type-lesson .content-custom .content-accordions-custom .accordions .field__label, .node--type-msds-activities .content-custom .content-accordions-custom .accordions .field__label {
+    padding: 0px;
+  }
+  .node--type-lesson .content-custom .content-accordions-custom .accordions .accordion__body, .node--type-lesson .content-custom .content-accordions-custom .accordions .closed-2, .node--type-lesson .content-custom .content-accordions-custom .accordions .field__item, .node--type-lesson .content-custom .content-accordions-custom .accordions .field__items, .node--type-lesson .content-custom .content-accordions-custom .accordions li, .node--type-msds-activities .content-custom .content-accordions-custom .accordions .accordion__body, .node--type-msds-activities .content-custom .content-accordions-custom .accordions .closed-2, .node--type-msds-activities .content-custom .content-accordions-custom .accordions .field__item, .node--type-msds-activities .content-custom .content-accordions-custom .accordions .field__items, .node--type-msds-activities .content-custom .content-accordions-custom .accordions li {
+    padding: 0px 15px !important;
+    display: block !important;
+    font-size: 1rem;
+  }
+  .node--type-lesson .block-nma-download-block, .node--type-msds-activities .block-nma-download-block {
+    display: none;
+  }
+  .node--type-lesson .related, .node--type-msds-activities .related {
+    padding: 0px;
+  }
+  .node--type-lesson .related .views-field-nothing, .node--type-msds-activities .related .views-field-nothing {
+    margin: unset;
+  }
+  .node--type-lesson .related .views-field-nothing .field-content .related-lessons-item-cs > a, .node--type-msds-activities .related .views-field-nothing .field-content .related-lessons-item-cs > a {
+    height: unset;
+  }
+  .node--type-lesson .related .views-field-nothing .related-item-content-cs, .node--type-lesson .related .views-field-nothing .related-item-content, .node--type-msds-activities .related .views-field-nothing .related-item-content-cs, .node--type-msds-activities .related .views-field-nothing .related-item-content {
+    text-align: start !important;
+    padding: 0px;
+  }
+  .node--type-lesson .related .views-field-nothing .related-item-content a[target=_blank]:after, .node--type-lesson .related .views-field-nothing .related-item-content-cs a[target=_blank]:after, .node--type-msds-activities .related .views-field-nothing .related-item-content a[target=_blank]:after, .node--type-msds-activities .related .views-field-nothing .related-item-content-cs a[target=_blank]:after {
+    display: none !important;
+  }
+  .node--type-lesson .view-msds-resources-and-cs .row, .node--type-msds-activities .view-msds-resources-and-cs .row {
+    flex-direction: column;
+  }
+  .node--type-lesson .view-msds-resources-and-cs .row .col-4, .node--type-msds-activities .view-msds-resources-and-cs .row .col-4 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 30px;
+  }
+  .node--type-lesson .related .views-field-nothing, .node--type-msds-activities .related .views-field-nothing {
+    border: unset !important;
+    height: unset !important;
+    min-height: unset !important;
+  }
+  .node--type-lesson .related .views-field-nothing .field-content > a, .node--type-msds-activities .related .views-field-nothing .field-content > a {
+    height: unset !important;
+  }
+
+  /**End comment - learning with napo activities**/
+  /**Napo and friends**/
+  div#views_slideshow_cycle_teaser_section_napo_and_friends-page_3 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+  div#views_slideshow_cycle_teaser_section_napo_and_friends-page_3 .views_slideshow_cycle_no_display,
+div#views_slideshow_cycle_teaser_section_napo_and_friends-page_3 .views_slideshow_cycle_hidden,
+div#views_slideshow_cycle_teaser_section_napo_and_friends-page_3 .views_slideshow_cycle_controls,
+div#views_slideshow_cycle_teaser_section_napo_and_friends-page_3 .views_slideshow_cycle_image_count {
+    display: block !important;
+  }
+  div#views_slideshow_cycle_teaser_section_napo_and_friends-page_3 > div {
+    display: block !important;
+    position: static !important;
+    z-index: 1 !important;
+    width: auto !important;
+    opacity: unset !important;
+    height: auto !important;
+  }
+
+  /**End comment - Napo and friends**/
 }
 
 /*# sourceMappingURL=napo-print-version.css.map */
