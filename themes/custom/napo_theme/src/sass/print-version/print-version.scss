@@ -202,8 +202,6 @@
   .region-header-logo{
     img{
       display: block !important;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
     }
   }
   .block-views-blockfeatures-articles-block{
@@ -394,4 +392,111 @@
     }
   }
   /**End comment - About Napo**/
+  /**Learning with napo activities**/
+  .node--type-lesson, .node--type-msds-activities{
+    .page-banner-custom{
+      padding: unset;
+    }
+    .content-text-facilitator-custom{
+      padding-bottom: unset;
+      min-height: unset;
+      .introductory-text, .facilitator-guidance{
+        padding: 0px;
+        width: 100%;
+        min-height: unset;
+      }
+      .facilitator-guidance{
+        float: unset;
+        text-align: start;
+        .link-box{
+          display: none;
+        }
+      }
+    }
+    .content-custom{
+      .accordion-item{
+        border: unset !important;
+      }
+      .content-accordions-custom{
+        padding: unset !important;
+        margin: unset;
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        h2{
+          padding: 0px;
+        }
+        .accordions{
+          .field__label{
+            padding: 0px;
+          }
+          .accordion__body, .closed-2, .field__item, .field__items, li{
+            padding: 0px 15px !important;
+            display: block !important;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .block-nma-download-block{
+      display: none;
+    }
+    .related{
+      padding: 0px;
+      .views-field-nothing{
+        margin: unset;
+        .field-content .related-lessons-item-cs > a{
+          height: unset;
+        }
+        .related-item-content-cs, .related-item-content{
+          text-align: start !important;
+          padding: 0px;
+        }
+        .related-item-content a[target=_blank]:after, .related-item-content-cs a[target=_blank]:after{
+          display: none !important;
+        }
+      }
+    }
+    .view-msds-resources-and-cs{
+      .row{
+        flex-direction: column;
+        .col-4{
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding-left: 30px;
+        }
+      }
+    }
+    .related .views-field-nothing{
+      border: unset !important;
+      height: unset !important;
+      min-height: unset !important;
+      .field-content > a{
+        height: unset !important;
+      }
+    }
+  }
+  /**End comment - learning with napo activities**/
+  /**Napo and friends**/
+  div#views_slideshow_cycle_teaser_section_napo_and_friends-page_3{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    .views_slideshow_cycle_no_display,
+    .views_slideshow_cycle_hidden,
+    .views_slideshow_cycle_controls,
+    .views_slideshow_cycle_image_count{
+      display: block !important;
+    }
+    & > div{
+      display: block !important;
+      position: static !important;
+      z-index: 1 !important;
+      width: auto !important;
+      opacity: unset !important;
+      height: auto !important;
+    }
+  }
+  /**End comment - Napo and friends**/
 }
