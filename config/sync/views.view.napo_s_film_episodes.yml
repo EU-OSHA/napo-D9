@@ -364,10 +364,10 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        weight:
-          id: weight
-          table: draggableviews_structure
-          field: weight
+        delta:
+          id: delta
+          table: node__field_field_episodes
+          field: delta
           relationship: none
           group_type: group
           admin_label: ''
@@ -375,7 +375,7 @@ display:
           order: ASC
           expose:
             label: ''
-            field_identifier: weight
+            field_identifier: ''
           exposed: false
       arguments: {  }
       filters:
