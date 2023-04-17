@@ -58,6 +58,10 @@ settings:
             - Maximize
             - Resize
   plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
     font:
       font_names: ''
       font_sizes: ''
