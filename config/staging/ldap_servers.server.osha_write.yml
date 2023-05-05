@@ -11,7 +11,7 @@ timeout: 10
 encryption: none
 weight: null
 bind_method: service_account
-binddn: 'cn=Reader,dc=osha,dc=europa,dc=eu'
+binddn: 'cn=PwdWriterD9,dc=osha,dc=europa,dc=eu'
 bindpw: null
 basedn:
   - 'ou=people,dc=osha,dc=europa,dc=eu'
