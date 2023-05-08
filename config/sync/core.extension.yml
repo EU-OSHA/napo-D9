@@ -78,6 +78,7 @@ module:
   layout_builder: 0
   layout_discovery: 0
   layoutcomponents: 0
+  ldap_customize: 0
   link: 0
   locale: 0
   mailsystem: 0

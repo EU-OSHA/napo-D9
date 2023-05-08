@@ -22,4 +22,4 @@ passwordOption: allow
 allowOnlyIfTextInDn: {  }
 excludeIfTextInDn: {  }
 excludeIfNoAuthorizations: false
-skipAdministrators: false
+skipAdministrators: true
