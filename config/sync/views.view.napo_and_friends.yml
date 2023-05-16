@@ -349,11 +349,11 @@ display:
           vanilla: false
           layout: top
           cache: 0
-          current_view_mode: attachment_1
           skin: default
           grid: null
           grid_medium: null
           grid_small: null
+          current_view_mode: attachment_1
           overridables:
             variableWidth: variableWidth
             arrows: '0'
@@ -947,11 +947,11 @@ display:
           vanilla: true
           layout: ''
           cache: 0
-          current_view_mode: page_2
           skin: default
           grid: null
           grid_medium: null
           grid_small: null
+          current_view_mode: page_2
           overridables:
             arrows: arrows
             autoplay: '0'

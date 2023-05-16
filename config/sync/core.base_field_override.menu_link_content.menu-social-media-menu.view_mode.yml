@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - system.menu.menu-social-media-menu
+  module:
+    - menu_item_extras
 id: menu_link_content.menu-social-media-menu.view_mode
 field_name: view_mode
 entity_type: menu_link_content

@@ -1,96 +1,67 @@
-uuid: 99be54ba-cac1-45b8-b667-bceb986517f2
+uuid: 94327f6f-e48d-4816-9bd9-1ae1548e655c
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.full_html
   module:
-    - ckeditor
-_core:
-  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
+    - ckeditor5
 format: full_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Underline
-            - Strike
-            - JustifyBlock
-            - '-'
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Linking
-          items:
-            - Link
-            - Unlink
-            - Anchor
-        -
-          name: Media
-          items:
-            - DrupalImage
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-            - Font
-            - FontSize
-        -
-          name: Tools
-          items:
-            - Source
-            - Cut
-            - Copy
-            - Paste
-            - PasteText
-            - PasteFromWord
-        -
-          name: Table
-          items:
-            - Table
-        -
-          name: 'Media extra'
-          items:
-            - SpecialChar
-            - DrupalMediaLibrary
-            - Accordion
-            - ShowBlocks
-            - Resize
+    items:
+      - bold
+      - italic
+      - underline
+      - strikethrough
+      - alignment
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - link
+      - '|'
+      - drupalInsertImage
+      - '|'
+      - heading
+      - '|'
+      - codeBlock
+      - '|'
+      - sourceEditing
+      - '|'
+      - insertTable
+      - '|'
+      - specialCharacters
+      - drupalMedia
   plugins:
-    stylescombo:
-      styles: ''
-    language:
-      language_list: un
-    font:
-      font_names: ''
-      font_sizes: ''
-    wordcount:
-      enable: true
-      show_remaining: false
-      show_paragraphs: false
-      show_word_count: true
-      show_char_count: true
-      count_bytes: false
-      count_spaces: false
-      count_html: 0
-      count_line_breaks: false
-      max_words: -1
-      max_chars: -1
-      hard_limit: 1
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    ckeditor5_list:
+      reversed: true
+      startIndex: true
+    ckeditor5_alignment:
+      enabled_alignments:
+        - left
+        - center
+        - right
+        - justify
+    ckeditor5_imageResize:
+      allow_resize: true
+    media_media:
+      allow_view_mode_override: false
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0

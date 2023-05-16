@@ -82,13 +82,10 @@ content:
       overlay: ''
       title: ''
       vanilla: false
-      icon: ''
       layout: ''
       view_mode: ''
       cache: 0
-      current_view_mode: ''
       skin: ''
-      fx: ''
       style: ''
       background: false
       box_caption: ''
@@ -100,13 +97,15 @@ content:
       media_switch: ''
       ratio: ''
       thumbnail_style: ''
-      _uri: ''
+      grid: '0'
+      grid_medium: '0'
+      grid_small: '0'
       breakpoints: {  }
+      current_view_mode: ''
+      fx: ''
+      icon: ''
       sizes: ''
       grid_header: ''
-      grid: 0
-      grid_medium: 0
-      grid_small: 0
       overridables: {  }
       thumbnail: ''
       optionset_thumbnail: ''
@@ -119,6 +118,7 @@ content:
       skin_dots: ''
       preserve_keys: false
       visible_items: 0
+      _uri: ''
     third_party_settings: {  }
     weight: 0
     region: content

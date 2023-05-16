@@ -17,6 +17,7 @@ module:
   chosen_field: 0
   chosen_lib: 0
   ckeditor: 0
+  ckeditor5: 0
   ckeditor_accordion: 0
   ckeditor_font: 0
   ckeditor_resize: 0
@@ -95,6 +96,7 @@ module:
   metatag: 0
   metatag_views: 0
   migrate_source_csv: 0
+  mysql: 0
   napo_content_cart: 0
   napo_film: 0
   napo_msds_activities: 0

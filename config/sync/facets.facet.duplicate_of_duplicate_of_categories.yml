@@ -11,6 +11,8 @@ id: duplicate_of_duplicate_of_categories
 name: 'Duplicate of Duplicate of Categories'
 weight: 0
 min_count: 1
+missing: false
+missing_label: others
 url_alias: categories
 facet_source_id: 'search_api:views_page__napo_films_index__page_2'
 field_identifier: field_combined_tags
