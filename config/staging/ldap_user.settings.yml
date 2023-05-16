@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: hjgcuHpcsme6SW-7MKpZm3bhnR76f1yX2Y8Xe0STesw
 drupalAcctProvisionServer: osha
 ldapEntryProvisionServer: osha_write
 drupalAcctProvisionTriggers:
@@ -5,14 +7,15 @@ drupalAcctProvisionTriggers:
   - drupal_on_update_create
 ldapEntryProvisionTriggers:
   - ldap_on_update_create
-userUpdateCronQuery: none
-userUpdateCronInterval: always
 orphanedDrupalAcctBehavior: user_cancel_block
 orphanedCheckQty: 100
 orphanedAccountCheckInterval: weekly
 userConflictResolve: resolve
 manualAccountConflict: conflict_associate
 acctCreation: ldap_behaviour
+disableAdminPasswordField: false
+userUpdateCronQuery: none
+userUpdateCronInterval: always
 ldapUserSyncMappings:
   drupal:
     field-ldap_user_current_dn:
@@ -43,7 +46,6 @@ ldapUserSyncMappings:
       prov_module: ldap_user
       prov_events:
         - create_drupal_user
-        - sync_to_drupal_user
     field-ldap_user_puid_property:
       ldap_attr: dn
       user_attr: '[field.ldap_user_puid_property]'
@@ -53,6 +55,24 @@ ldapUserSyncMappings:
       prov_module: ldap_user
       prov_events:
         - create_drupal_user
-_core:
-  default_config_hash: hjgcuHpcsme6SW-7MKpZm3bhnR76f1yX2Y8Xe0STesw
-disableAdminPasswordField: false
+  ldap:
+    userPassword:
+      ldap_attr: '[userPassword]'
+      user_attr: '[password.user-only]'
+      convert: false
+      user_tokens: ''
+      config_module: ldap_user
+      prov_module: ldap_user
+      prov_events:
+        - create_ldap_entry
+        - sync_to_ldap_entry
+    dn:
+      ldap_attr: '[dn]'
+      user_attr: '[field.ldap_user_current_dn]'
+      convert: false
+      user_tokens: ''
+      config_module: ldap_user
+      prov_module: ldap_user
+      prov_events:
+        - create_ldap_entry
+        - sync_to_ldap_entry

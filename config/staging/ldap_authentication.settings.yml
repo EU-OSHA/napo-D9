@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: 9DgabkLztscclWQDjei_mAOpxP6xdbp_Iu5L5z6Nsbg
+langcode: en
 sids:
   osha: osha
   osha_write: '0'
@@ -20,6 +23,3 @@ allowOnlyIfTextInDn: {  }
 excludeIfTextInDn: {  }
 excludeIfNoAuthorizations: false
 skipAdministrators: false
-langcode: en
-_core:
-  default_config_hash: 9DgabkLztscclWQDjei_mAOpxP6xdbp_Iu5L5z6Nsbg
