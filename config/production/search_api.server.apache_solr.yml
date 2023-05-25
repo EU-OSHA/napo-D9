@@ -62,10 +62,10 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: osha-d9-prod-solr.mainstrat.com
-    port: 8080
+    host: osha-d10-prod-solr.mainstrat.com
+    port: 8983
     path: /
-    core: Napo
+    core: napo-d10
     timeout: 5
     index_timeout: 5
     optimize_timeout: 10
