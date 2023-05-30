@@ -170,7 +170,7 @@ module:
   standard: 1000
   eu_cookie_compliance: 1001
 theme:
-  seven: 0
   bootstrap_barrio: 0
   napo_theme: 0
+  claro: 0
 profile: standard
