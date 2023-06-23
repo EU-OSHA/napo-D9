@@ -34,6 +34,8 @@ settings:
       - '|'
       - specialCharacters
       - drupalMedia
+      - '|'
+      - removeFormat
   plugins:
     ckeditor5_heading:
       enabled_headings:
