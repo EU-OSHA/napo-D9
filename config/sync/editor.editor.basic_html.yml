@@ -25,6 +25,7 @@ settings:
       - heading
       - '|'
       - sourceEditing
+      - removeFormat
   plugins:
     ckeditor5_heading:
       enabled_headings:
@@ -36,9 +37,6 @@ settings:
     ckeditor5_sourceEditing:
       allowed_tags:
         - '<cite>'
-        - '<dl>'
-        - '<dt>'
-        - '<dd>'
         - '<span>'
         - '<a hreflang>'
         - '<blockquote cite>'
