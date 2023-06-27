@@ -3300,10 +3300,10 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
   right: 1rem;
   top: -3.625rem;
   z-index: 200; }
-  .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-row {
+  .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .d-flex {
     align-items: center; }
-    .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-row > fieldset,
-    .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-row > div {
+    .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .d-flex > fieldset,
+    .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .d-flex > div {
       padding-right: 0; }
   .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .form-group {
     padding: 0px; }
@@ -4828,7 +4828,16 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
   .content-page-content > .col-12 {
     padding: 0; }
     .about-napo-the-napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12, .path-search .content-page-content > .col-12 {
-      padding: 0 1rem; } }
+      padding: 0 1rem; }
+
+  /**Napo films**/ }
+@media only screen and (max-width: 525px) and (max-width: 500px) {
+  .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 {
+    padding: 0; }
+    .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 .d-flex .form-item-search-api-fulltext {
+      width: calc(100% - 50px); } }
+@media only screen and (max-width: 525px) {
+  /**End comment - Napo films**/ }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .collapse:not(.show) {
     display: flex; }
