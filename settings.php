@@ -780,13 +780,14 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 
+// BBDD connection.
 $databases['default']['default'] = [
-  'database' => 'napo',
-  'username' => 'root',
-  'password' => 'saretex1',
+  'database' => '', // Add name of database
+  'username' => '', // Add username of sql
+  'password' => '', // Add password of sql
   'prefix' => '',
   'host' => 'localhost',
-  'port' => '3306',
+  'port' => '', // Add the port of sql
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 ];
