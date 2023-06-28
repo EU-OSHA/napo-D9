@@ -1,0 +1,24 @@
+/**Update status message style**/
+.alert-wrapper{
+  .alert-dismissible{
+    gap: 1rem;
+    h2{
+      font : {
+        weight: 400;
+        size: 1.4rem;
+      }
+      margin-bottom: 10px;
+    }
+    & > div{
+      font-size: 1.2rem
+    }
+    button{
+      display: none;
+    }
+  }
+  svg[role="img"]{
+    max-height: 80px;
+    align-self: flex-start;
+  }
+}
+/**End comment - update status message style**/
