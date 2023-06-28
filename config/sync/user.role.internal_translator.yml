@@ -1,7 +1,33 @@
 uuid: a7ed6b00-b764-4313-a4cc-8e44318af3f2
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - filter.format.full_html
+    - node.type.article
+    - node.type.consortium_partner
+    - node.type.faq
+    - node.type.home_video
+    - node.type.lesson
+    - node.type.lesson_toolkit
+    - node.type.lesson_video
+    - node.type.napo_album
+    - node.type.napo_friend
+    - node.type.napo_image
+    - node.type.napo_video
+  module:
+    - content_moderation
+    - content_translation
+    - contextual
+    - filter
+    - node
+    - path
+    - search
+    - system
+    - toolbar
+    - workbench
+    - workbench_access
 id: internal_translator
 label: 'Internal translator'
 weight: 9
@@ -16,6 +42,7 @@ permissions:
   - 'access toolbar'
   - 'access workbench'
   - 'access workbench access by role'
+  - 'create content translations'
   - 'create url aliases'
   - 'delete own audio files'
   - 'delete own document files'
@@ -65,6 +92,11 @@ permissions:
   - 'moderate content from draft to ready_to_publish'
   - 'moderate content from ready_to_publish to published'
   - 'search content'
+  - 'translate editable entities'
+  - 'translate home_video node'
+  - 'translate lesson_video node'
+  - 'translate napo_video node'
+  - 'update content translations'
   - 'use Search Autocomplete'
   - 'use advanced search'
   - 'use media wysiwyg'
@@ -75,9 +107,12 @@ permissions:
   - 'view all unpublished content'
   - 'view any unpublished content'
   - 'view files'
+  - 'view home_video revisions'
   - 'view latest version'
+  - 'view lesson_video revisions'
   - 'view moderation history'
   - 'view moderation messages'
+  - 'view napo_video revisions'
   - 'view osh content tab'
   - 'view own files'
   - 'view own private files'
