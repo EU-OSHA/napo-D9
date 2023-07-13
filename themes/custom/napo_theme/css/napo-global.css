@@ -329,6 +329,13 @@ div.pagerer-container {
 .node--type-napo-video .slick-prev.slick-disabled:before, .node--type-napo-video .slick-next.slick-disabled:before {
   opacity: .25; }
 
+@media only screen and (min-width: 992px) {
+  #views_slideshow_cycle_teaser_section_napo_and_friends-page_3 {
+    width: 1022px !important;
+    height: 600px !important; } }
+@media only screen and (max-width: 992px) {
+  #views_slideshow_cycle_teaser_section_napo_and_friends-page_3 {
+    width: unset !important; } }
 #colorbox #cboxCurrent {
   display: none !important; }
 #colorbox #cboxTitle {

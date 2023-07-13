@@ -41,4 +41,12 @@ jQuery( document ).ready(function($) {
     lastScroll = windowScrollTop;
   });
 
+  /**When width is less than 992px, make the menu clickable**/
+  $(".navbar-nav .nav-link.dropdown-toggle").click(function (){
+    if(jQuery(window).width()<993){
+      $(this).attr("aria-expanded","true");
+      $(this).next().toggleClass("show");
+      $(this).parent().toggleClass("show");
+    }
+  });
 });
