@@ -214,6 +214,7 @@ graylist:
   - migrate_plus.migration_group.napo_migrate
   - migrate_plus.migration_group.napo_migrate_media
   - migrate_plus.migration_group.napo_migrate_node
+  - robotstxt.settings
   - search_api.server.apache_solr
   - xmlsitemap.settings
   - xmlsitemap.xmlsitemap.g3XYqcXbSKPVBDODwnT6pq7oqhCFkPryj4vVqrl_Kfc
