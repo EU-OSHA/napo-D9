@@ -871,20 +871,6 @@
     }
   }
 
-  .content-page-content{
-    &>.col-12{
-      padding:0;
-      .about-napo-the-napo-story &,
-      .page-view-napos-gallery &,
-      .node--type-napo-album &,
-      .path-napos-films &,
-      .napos-films-coming-soon &,
-      .path-search &{
-        padding:0 1rem;
-      }
-    }
-  }
-
 /**Napo films**/
   @media only screen and (max-width: 500px){
     .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1{

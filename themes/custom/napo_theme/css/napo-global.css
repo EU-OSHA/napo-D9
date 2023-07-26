@@ -4852,11 +4852,6 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
     top: 3rem;
     padding-left: 1.5rem; }
 
-  .content-page-content > .col-12 {
-    padding: 0; }
-    .about-napo-the-napo-story .content-page-content > .col-12, .page-view-napos-gallery .content-page-content > .col-12, .node--type-napo-album .content-page-content > .col-12, .path-napos-films .content-page-content > .col-12, .napos-films-coming-soon .content-page-content > .col-12, .path-search .content-page-content > .col-12 {
-      padding: 0 1rem; }
-
   /**Napo films**/ }
 @media only screen and (max-width: 525px) and (max-width: 500px) {
   .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 {
