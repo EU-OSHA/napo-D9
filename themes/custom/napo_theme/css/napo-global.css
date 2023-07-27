@@ -1401,6 +1401,10 @@ tr {
 
 .block-views-blockfrontpage-custom-video-block {
   position: relative; }
+  .block-views-blockfrontpage-custom-video-block h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #FFF; }
   .block-views-blockfrontpage-custom-video-block .frontpage-video-title {
     position: absolute;
     z-index: 1000;
