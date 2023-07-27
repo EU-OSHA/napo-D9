@@ -1,5 +1,12 @@
 .block-views-blockfrontpage-custom-video-block{
   position:relative;
+  h1{
+    font: {
+      size: 1.875rem;
+      weight: bold;
+    }
+    color:$text-color-white;
+  }
   .frontpage-video-title{
     position:absolute;
     z-index:1000;
