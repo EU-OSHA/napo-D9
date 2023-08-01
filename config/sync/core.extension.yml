@@ -138,7 +138,6 @@ module:
   taxonomy_access_fix: 0
   taxonomy_manager: 0
   text: 0
-  text_resize: 0
   token: 0
   toolbar: 0
   tour: 0
