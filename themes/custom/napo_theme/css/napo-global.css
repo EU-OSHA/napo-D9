@@ -1093,17 +1093,10 @@ tr {
       background-repeat: no-repeat;
       background-position: 100% 50%;
       background-size: 25px; }
-    .header_top_bar .block-text-resize-block:before {
-      content: "Set font size";
-      display: inline;
-      font-size: 0.875rem;
-      font-weight: bold;
+    .header_top_bar .font-size-print {
       color: #FFF; }
-    .header_top_bar .block-text-resize-block > .content > .content {
-      display: flex;
-      flex-direction: row-reverse; }
-    .header_top_bar a#text_resize_decrease,
-    .header_top_bar a#text_resize_increase {
+    .header_top_bar #_smallify a,
+    .header_top_bar #_biggify a {
       background-repeat: no-repeat;
       display: inline-block;
       text-indent: 0;
@@ -1112,16 +1105,18 @@ tr {
       margin: 0rem;
       height: 27px;
       margin-left: 4px; }
-      .header_top_bar a#text_resize_decrease sup,
-      .header_top_bar a#text_resize_increase sup {
+      .header_top_bar #_smallify a sup,
+      .header_top_bar #_biggify a sup {
         display: none; }
-    .header_top_bar #text_resize_decrease {
-      background: url(/sites/napo/themes/custom/napo_theme/images/a-minor.png);
+    .header_top_bar #_smallify a {
+      background: url(/sites/napo/themes/custom/napo_theme/images/a-minor.png) no-repeat;
       font-size: 1rem;
-      padding-top: 6px; }
-    .header_top_bar #text_resize_increase {
-      background: url(/sites/napo/themes/custom/napo_theme/images/a-plus.png);
-      font-size: 1.25rem; }
+      padding-top: 6px;
+      cursor: pointer; }
+    .header_top_bar #_biggify a {
+      background: url(/sites/napo/themes/custom/napo_theme/images/a-plus.png) no-repeat;
+      font-size: 1.25rem;
+      cursor: pointer; }
     .header_top_bar .block-napo-content-cart .header-download-centre {
       display: flex;
       flex-direction: row;

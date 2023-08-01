@@ -7,7 +7,11 @@
           {{ page.top_header.headercontact }}
           {{ page.top_header.socialmedialinks_2 }}
           <div><a href="#" onclick="if(window.print)window.print();" class="print-friendly" title="{{ 'Print friendly' | trans }}">{{ 'Print friendly:' | trans }}</a></div>
-          {{ page.top_header.textresize }}
+          <div class="font-size-print">
+            <span class="set-font">{{ 'Set fontsize'  | trans }}</span>
+            <span id="_biggify" class="a_big"><a title="Bigger text"><sup>+</sup>A</a></a></span>
+            <span id="_smallify" class="a_small"><a title="Smaller text"><sup>-</sup>A</a></span>
+          </div>
           {{ page.top_header.ncclinkblock }}
         </section>
       </div>

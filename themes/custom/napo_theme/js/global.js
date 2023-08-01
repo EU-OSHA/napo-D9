@@ -86,13 +86,13 @@
 
 
   // Resize Font size
-  $('#text_resize_increase').on('click', function() {
+  $('#_biggify').on('click', function() {
     let fontSize = $('html').css('font-size');
     let newFontSize = parseInt(fontSize)+1;
     $('html').css('font-size', newFontSize+'px')
   })
 
-  $('#text_resize_decrease').on('click', function() {
+  $('#_smallify').on('click', function() {
     let fontSize = $('html').css('font-size');
     let newFontSize = parseInt(fontSize)-1;
     $('html').css('font-size', newFontSize+'px')
