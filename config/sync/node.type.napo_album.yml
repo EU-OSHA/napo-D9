@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Napo Gallery'
 type: napo_album
-description: ''
+description: 'Only used for Napo website, it contains all the images in one collection.'
 help: ''
 new_revision: false
 preview_mode: 1
