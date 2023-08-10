@@ -64,7 +64,9 @@ ldapUserSyncMappings:
       user_tokens: ''
       config_module: ldap_user
       prov_module: ldap_user
-      prov_events: {}
+      prov_events:
+        - create_ldap_entry
+        - sync_to_ldap_entry
     dn:
       ldap_attr: '[dn]'
       user_attr: '[field.ldap_user_current_dn]'
@@ -72,4 +74,6 @@ ldapUserSyncMappings:
       user_tokens: ''
       config_module: ldap_user
       prov_module: ldap_user
-      prov_events: {}
+      prov_events:
+        - create_ldap_entry
+        - sync_to_ldap_entry
