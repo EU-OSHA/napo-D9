@@ -1,7 +1,35 @@
 uuid: 4d5455b9-6cd3-4853-b4bc-e7a56244d2d4
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - filter.format.full_html
+    - node.type.article
+    - node.type.consortium_partner
+    - node.type.faq
+    - node.type.home_video
+    - node.type.lesson
+    - node.type.lesson_toolkit
+    - node.type.napo_album
+    - node.type.napo_friend
+    - node.type.napo_image
+    - node.type.napo_video
+    - workflows.workflow.napo
+  module:
+    - content_moderation
+    - contextual
+    - filter
+    - media
+    - node
+    - path
+    - search
+    - system
+    - taxonomy
+    - taxonomy_manager
+    - toolbar
+    - workbench
+    - workbench_access
 id: review_manager
 label: 'Review Manager'
 weight: 8

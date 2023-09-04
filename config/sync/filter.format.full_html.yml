@@ -112,7 +112,7 @@ filters:
   filter_spamspan:
     id: filter_spamspan
     provider: spamspan
-    status: false
+    status: true
     weight: -42
     settings:
       spamspan_at: ' [at] '
