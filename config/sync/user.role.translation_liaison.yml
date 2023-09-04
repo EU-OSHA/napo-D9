@@ -1,7 +1,13 @@
 uuid: 40645d82-a75c-4ddf-af16-a58aec83cceb
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - system
+    - toolbar
 id: translation_liaison
 label: 'Translation Liaison'
 weight: 4

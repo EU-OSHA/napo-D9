@@ -1,7 +1,14 @@
 uuid: 4117047f-e97a-444b-9365-5b54b02cf1fe
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - locale
+    - system
+    - toolbar
 id: layout_validator
 label: 'Layout Validator'
 weight: 5

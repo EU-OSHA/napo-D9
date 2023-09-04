@@ -1,7 +1,21 @@
 uuid: 6d877a01-6b32-4d92-89af-ae0278226c2c
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - comment
+    - conditional_fields
+    - contact
+    - eu_cookie_compliance
+    - filter
+    - media
+    - search
+    - search_autocomplete
+    - sitemap
+    - system
+    - taxonomy_access_fix
 _core:
   default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
 id: anonymous

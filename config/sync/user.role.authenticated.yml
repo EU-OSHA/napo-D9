@@ -1,7 +1,20 @@
 uuid: 40bee9d7-d640-4a88-bdef-ef4de666fc87
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - comment
+    - conditional_fields
+    - eu_cookie_compliance
+    - filter
+    - media
+    - search
+    - search_autocomplete
+    - sitemap
+    - system
+    - taxonomy_access_fix
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
