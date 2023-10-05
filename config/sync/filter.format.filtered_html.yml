@@ -38,7 +38,7 @@ filters:
     status: true
     weight: -49
     settings:
-      allowed_html: '<br> <p> <cite> <span> <a name href> <img data-entity-type data-entity-uuid src alt height width> <drupal-media data-align data-caption title data-entity-type data-entity-uuid alt> <strong> <em> <u> <code> <s> <blockquote> <ul> <ol> <li> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
+      allowed_html: '<br> <p> <cite> <span> <a name href title class id target="_blank"> <img data-entity-type data-entity-uuid src alt height width> <drupal-media data-align data-caption title data-entity-type data-entity-uuid alt> <strong> <em> <u> <code> <s> <blockquote> <ul> <ol> <li> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_url:
