@@ -47,6 +47,12 @@ settings:
       allow_resize: true
     media_media:
       allow_view_mode_override: false
+    editor_advanced_link_link:
+      enabled_attributes:
+        - class
+        - id
+        - target
+        - title
 image_upload:
   status: false
   scheme: public
