@@ -1,7 +1,49 @@
 uuid: 24d90748-ddf0-40c6-a851-9a8c4438bf65
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - filter.format.full_html
+    - node.type.article
+    - node.type.consortium_partner
+    - node.type.napo_friend
+    - node.type.page
+    - node.type.panel
+  module:
+    - action
+    - addtoany
+    - block
+    - comment
+    - contact
+    - content_translation
+    - contextual
+    - devel
+    - draggableviews
+    - entityqueue
+    - facets
+    - filter
+    - htmlmail
+    - image
+    - language
+    - locale
+    - metatag
+    - node
+    - path
+    - pathauto
+    - quicktabs
+    - redirect
+    - reroute_email
+    - search
+    - search_api
+    - shortcut
+    - system
+    - taxonomy
+    - toolbar
+    - views_ui
+    - workbench
+    - workbench_access
+    - xmlsitemap
 _core:
   default_config_hash: Om6FEO7vZZMkPIbVvfxtdkWerQ2PvQM4sWUd6Q3ZnfI
 id: administrator

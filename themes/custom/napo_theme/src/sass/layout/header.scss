@@ -64,22 +64,11 @@
         size: 25px;
       };
     }
-    .block-text-resize-block{
-      &:before{
-        content:"Set font size";
-        display:inline;
-        font-size:0.875rem;
-        font-weight:bold;
-        color:$text-color-white;
-
-      }
-      &>.content>.content{
-        display:flex;
-        flex-direction: row-reverse;
-      }
+    .font-size-print{
+      color: #FFF;
     }
-    a#text_resize_decrease,
-    a#text_resize_increase{
+    #_smallify a,
+    #_biggify a{
       background-repeat: no-repeat;
       display:inline-block;
       text-indent: 0;
@@ -92,15 +81,18 @@
         display:none;
       }
     }
-    #text_resize_decrease{
-      background: url(/sites/napo/themes/custom/napo_theme/images/a-minor.png);
+    #_smallify a{
+      background: url(/sites/napo/themes/custom/napo_theme/images/a-minor.png) no-repeat;
       font-size:1rem;
       padding-top:6px;
+      cursor: pointer;
     }
-    #text_resize_increase{
-      background: url(/sites/napo/themes/custom/napo_theme/images/a-plus.png);
+    #_biggify a{
+      background: url(/sites/napo/themes/custom/napo_theme/images/a-plus.png) no-repeat;
       font-size:1.25rem;
+      cursor: pointer;
     }
+
     .block-napo-content-cart{
       .header-download-centre{
         display:flex;
@@ -119,6 +111,7 @@
       }
     }
   }
+
   .region-header-logo{
     img{
       padding:0rem 0.375rem 0.375rem 1.25rem;
@@ -446,3 +439,13 @@
     }
   }
 }
+
+.visually-hidden-focusable{
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px,1px,1px,1px);
+  width: 1px;
+  height: 1px;
+  word-wrap: normal;
+}
+

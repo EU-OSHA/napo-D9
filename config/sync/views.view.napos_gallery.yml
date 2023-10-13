@@ -541,12 +541,12 @@ display:
         type: grid
         options:
           grouping: {  }
-          columns: 3
-          automatic_width: true
+          columns: 12
+          automatic_width: false
           alignment: horizontal
           row_class_custom: row
           row_class_default: true
-          col_class_custom: 'col-sm-4 col-xs-12'
+          col_class_custom: 'col-12 col-md-6  col-lg-4'
           col_class_default: true
       row:
         type: fields
@@ -1669,7 +1669,9 @@ display:
       show_admin_links: true
       rendering_language: '***LANGUAGE_language_interface***'
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: about-napo/napos-gallery
     cache_metadata:
       max-age: -1

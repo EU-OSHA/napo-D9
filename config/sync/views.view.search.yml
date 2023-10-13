@@ -22,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Search results {% if(filters.search_api_fulltext != "") %} for "{{ filters.search_api_fulltext }}" {%endif%}'
+      title: 'Search results'
       fields:
         aggregated_field:
           id: aggregated_field
@@ -353,11 +353,11 @@ display:
             'entity:search_api_task':
               search_api_task: default
       query:
-        type: views_query
+        type: search_api_query
         options:
-          skip_access: 0
-          bypass_access: 0
-          preserve_facet_query_args: 1
+          bypass_access: false
+          skip_access: false
+          preserve_facet_query_args: true
       relationships: {  }
       css_class: Information
       header: {  }
@@ -373,6 +373,7 @@ display:
         - user.permissions
       tags:
         - 'config:search_api.index.default_multilingual_node_index'
+        - 'search_api_list:default_multilingual_node_index'
   page_1:
     id: page_1
     display_title: Page
@@ -395,3 +396,4 @@ display:
         - user.permissions
       tags:
         - 'config:search_api.index.default_multilingual_node_index'
+        - 'search_api_list:default_multilingual_node_index'

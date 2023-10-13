@@ -297,7 +297,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{{ title }} \r\n<div class=\"homepage-video-summary\">{{ body }}</div>\r\n<div class=\"homepage-video-body\">{{ body_1 }}</div>"
+            text: "<h1>{{ title }} </h1>\r\n<div class=\"homepage-video-summary\">{{ body }}</div>\r\n<div class=\"homepage-video-body\">{{ body_1 }}</div>"
             make_link: false
             path: ''
             absolute: false

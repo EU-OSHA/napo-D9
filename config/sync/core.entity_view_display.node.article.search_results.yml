@@ -72,13 +72,13 @@ content:
       trim_suffix: ...
       wrap_output: false
       wrap_class: trimmed
-      more_link: true
-      more_class: more-link
-      more_text: 'Read more'
       summary_handler: trim
       trim_options:
         text: true
         trim_zero: false
+      more_link: true
+      more_class: more-link
+      more_text: 'Read more'
     third_party_settings: {  }
     weight: 2
     region: content

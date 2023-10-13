@@ -1,88 +1,63 @@
-uuid: a0b7552e-0c62-4189-8365-61c64e01c345
+uuid: af4bd775-9a69-4fbb-8063-8a98752c349d
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.filtered_html
   module:
-    - ckeditor
+    - ckeditor5
 format: filtered_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Underline
-            - Strike
-        -
-          name: Links
-          items:
-            - Link
-            - Unlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-            - Anchor
-        -
-          name: Media
-          items:
-            - DrupalImage
-            - Format
-            - Font
-            - FontSize
-        -
-          name: Tools
-          items:
-            - Source
-            - Cut
-            - Copy
-            - Paste
-            - PasteFromWord
-            - PasteText
-        -
-          name: Table
-          items:
-            - Table
-        -
-          name: Extra
-          items:
-            - SpecialChar
-            - DrupalMediaLibrary
-            - Maximize
-            - Resize
+    items:
+      - bold
+      - italic
+      - underline
+      - strikethrough
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - drupalInsertImage
+      - '|'
+      - sourceEditing
+      - '|'
+      - insertTable
+      - '|'
+      - specialCharacters
+      - drupalMedia
+      - '|'
+      - blockQuote
+      - code
+      - link
+      - removeFormat
   plugins:
-    stylescombo:
-      styles: ''
-    language:
-      language_list: un
-    font:
-      font_names: ''
-      font_sizes: ''
-    wordcount:
-      enable: true
-      show_remaining: false
-      show_paragraphs: false
-      show_word_count: true
-      show_char_count: true
-      count_bytes: false
-      count_spaces: false
-      count_html: 0
-      count_line_breaks: false
-      max_words: -1
-      max_chars: -1
-      hard_limit: 0
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<span>'
+        - '<a name>'
+        - '<img data-entity-type data-entity-uuid>'
+        - '<drupal-media data-align data-caption title>'
+    ckeditor5_list:
+      reversed: false
+      startIndex: false
+    ckeditor5_imageResize:
+      allow_resize: true
+    media_media:
+      allow_view_mode_override: false
+    editor_advanced_link_link:
+      enabled_attributes:
+        - class
+        - id
+        - target
+        - title
 image_upload:
   status: false
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0

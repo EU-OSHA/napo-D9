@@ -1,15 +1,15 @@
-uuid: b06bc87d-1f3c-4353-8315-95b0aa9131de
+uuid: fdc53e78-4764-4767-9eb8-79ae265f18a4
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.workbench
+    - system.menu.devel
   module:
     - menu_item_extras
-id: menu_link_content.workbench.view_mode
+id: menu_link_content.devel.view_mode
 field_name: view_mode
 entity_type: menu_link_content
-bundle: workbench
+bundle: devel
 label: 'View mode'
 description: 'Per item view mode selector.'
 required: false

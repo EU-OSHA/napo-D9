@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - system.menu.main
+  module:
+    - menu_item_extras
 id: menu_link_content.main.view_mode
 field_name: view_mode
 entity_type: menu_link_content

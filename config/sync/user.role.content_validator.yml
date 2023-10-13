@@ -1,7 +1,13 @@
 uuid: 8646b52f-6389-4e92-bbab-b50c73c979c3
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - system
+    - toolbar
 id: content_validator
 label: 'Content Validator'
 weight: 6

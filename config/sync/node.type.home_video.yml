@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Home video'
 type: home_video
-description: ''
+description: 'Napo homepage video.'
 help: ''
 new_revision: false
 preview_mode: 1

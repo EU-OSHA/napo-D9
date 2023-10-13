@@ -1,38 +1,17 @@
 .sitemap{
-  &-item{
-    &--menu-main{
-      padding-left:27px;
-      margin-bottom:0.625rem;
-    }
+  .sitemap-item{
+    padding-left: 27px;
     h2{
-      display:none;
+      color: transparent;
+      display: none;
     }
-    .nav{
-      &-item{
-        .dropdown{
-          &-toggle{
-            padding:0;
-            &:after{
-              display:none;
-            }
-          }
-          &-menu{
-           display:block;
-            padding:0;
-            margin:0;
-            border:none;
-            padding-left:27px;
-          }
-          &-item{
-            padding:0;
-            &:hover{
-              background-color: transparent;
-            }
-            a{
-              color: $text-color-blue;
-              font-size:1.125rem;
-            }
-          }
+    & > div > ul{
+      list-style: none;
+      & > li{
+        padding: 5px 0rem;
+        ul{
+          list-style: none;
+          padding-left: 27px;
         }
       }
       &-link{

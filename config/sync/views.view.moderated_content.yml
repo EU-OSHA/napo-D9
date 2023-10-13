@@ -2,6 +2,23 @@ uuid: 79f27b55-4685-411d-a375-49821fe37c88
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.article
+    - node.type.consortium_partner
+    - node.type.faq
+    - node.type.home_video
+    - node.type.lesson
+    - node.type.lesson_resources
+    - node.type.lesson_toolkit
+    - node.type.lesson_video
+    - node.type.msds_activities
+    - node.type.msds_resources
+    - node.type.napo_album
+    - node.type.napo_friend
+    - node.type.napo_image
+    - node.type.napo_video
+    - node.type.page
+    - node.type.panel
   module:
     - content_moderation
     - node
@@ -548,7 +565,23 @@ display:
           entity_field: type
           plugin_id: bundle
           operator: in
-          value: {  }
+          value:
+            article: article
+            page: page
+            consortium_partner: consortium_partner
+            faq: faq
+            home_video: home_video
+            napo_image: napo_image
+            lesson: lesson
+            lesson_resources: lesson_resources
+            lesson_toolkit: lesson_toolkit
+            lesson_video: lesson_video
+            msds_activities: msds_activities
+            msds_resources: msds_resources
+            napo_album: napo_album
+            napo_friend: napo_friend
+            napo_video: napo_video
+            panel: panel
           group: 1
           exposed: true
           expose:
@@ -567,7 +600,14 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            reduce: false
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              review_manager: '0'
+              internal_translator: '0'
+            reduce: true
           is_grouped: false
           group_info:
             label: ''

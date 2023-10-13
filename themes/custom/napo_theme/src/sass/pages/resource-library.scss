@@ -27,6 +27,12 @@
           span{
             font-size: 1.125rem;
           }
+          span{
+            color: $text-color-black;
+          }
+          a{
+            text-decoration: underline;
+          }
         }
       }
     }

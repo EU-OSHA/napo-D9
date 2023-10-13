@@ -17,11 +17,11 @@ module:
   ldap_servers: 0
   ldap_user: 0
   matomo: 0
-  smtp: 0
-  externalauth: 10
   migrate: 0
   migrate_plus: 0
   migrate_tools: 0
+  smtp: 0
+  externalauth: 10
 theme: {  }
 blacklist: {  }
 graylist:
@@ -34,6 +34,7 @@ graylist:
   - ldap_user.settings
   - matomo.settings
   - reroute_email.settings
+  - robotstxt.settings
   - ultimate_cron.job.ldap_user_cron
   - ultimate_cron.job.matomo_cron
   - xmlsitemap.settings
