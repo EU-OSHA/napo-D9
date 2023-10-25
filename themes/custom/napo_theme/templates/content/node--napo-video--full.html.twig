@@ -168,19 +168,33 @@
 
       {% if node.field_video_type[0].entity.label == "Episode video"%}
         {% set main_tag_tid = node.field_napo_film.entity.field_main_tag.getValue()[0]['target_id']  %}
-        {% set main_name =   drupal_field('name', 'taxonomy_term', main_tag_tid)  %}
-        {% set combined_categories = main_name|merge(content.field_combined_tags) %}
-        <div class="field field--type-entity-reference field--label-inline">
-
-          <div class="field__label">{{ "Categories"|t }}</div>
-
-          <div class="field__items">
-            <div class="field__items">
-              {{ combined_categories }}
+        {% if main_tag_tid %}
+          {% set main_name = drupal_field('name', 'taxonomy_term', main_tag_tid)  %}
+          {% if main_name %}
+            {% set combined_categories = main_name|merge(content.field_combined_tags) %}
+              {% if combined_categories %}
+                <div class="field field--type-entity-reference field--label-inline">
+                  <div class="field__label">{{ "Categories"|t }}</div>
+                  <div class="field__items">
+                    <div class="field__items">
+                        {{ combined_categories }}
+                    </div>
+                  </div>
+                </div>
+            {% endif %}
+          {% endif %}
+        {% else %}
+          {% if content.field_combined_tags %}
+              <div class="field field--type-entity-reference field--label-inline">
+              <div class="field__label">{{ "Categories"|t }}</div>
+              <div class="field__items">
+                <div class="field__items">
+                    {{ content.field_combined_tags }}
+                </div>
+              </div>
             </div>
-          </div>
-
-        </div>
+          {% endif %}
+        {% endif %}
       {% endif %}
     </div>
 
