@@ -61,10 +61,11 @@
 #}
 {{ attach_library('bootstrap_barrio/node') }}
 
-
-{% set videoId = content.field_lesson_video ['#items'].0.target_id  %}
-{% set videoEntity = drupal_entity('node',videoId) %}
-{% set imageTarget = videoEntity['#node'].field_image.0.entity.label  %}
+{% if content.field_lesson_video['#items'] %}
+  {% set videoId = content.field_lesson_video['#items'].0.target_id  %}
+  {% set videoEntity = drupal_entity('node',videoId) %}
+  {% set imageTarget = videoEntity['#node'].field_image.0.entity.label  %}
+{% endif %}
 
 {%
   set classes = [
@@ -81,16 +82,33 @@
 
 <div class="back-button-custom"><a href="{{ path('view.napo_for_teachers.page') }}">{{ 'Back to Napo for teachers' | trans }}</a></div>
 <article{{ attributes.addClass(classes) }}>
+
+
+
   <div class="page-banner-custom">
     <div class="video-custom" id="videoCustom">
-      {{ content.field_lesson_video }}
-      <img src="/sites/napo/files/images/lesson_video/{{ imageTarget }}" class="video-custom__image" />
+      {% if content.field_lesson_video %}
+        {{ content.field_lesson_video }}
+      {% endif %}
+      {% if imageTarget %}
+        <img src="/sites/napo/files/images/lesson_video/{{ imageTarget }}" class="video-custom__image" />
+      {% endif %}
       <button type="button" class="video-custom__playButton playButton-1" id="videoPlayCustomButton"></button>
     </div>
     <div class="content-text-facilitator-custom">
-      <div class="introductory-text">
-{{ content.field_lesson_video.0['#node'].body.value | striptags }}
-      </div>
+      {% if content.field_lesson_video %}
+          {% if content.field_lesson_video.0['#node'].body.value %}
+            <div class="introductory-text">
+              {{ content.field_lesson_video.0['#node'].body.value | striptags }}
+            </div>
+          {% else %}
+            {% if content.field_lesson_video.0['#node'].getTranslation('en').body.value %}
+              <div class="introductory-text">
+                {{ content.field_lesson_video.0['#node'].getTranslation('en').body.value | striptags }}
+              </div>
+            {% endif %}
+          {% endif %}
+      {% endif %}
       <div class="facilitator-guidance">
         <div class="title-box">
           {{ 'Teacher guidance' | trans }}
@@ -108,7 +126,7 @@
     <div class="content-accordions-custom">
     <h2>{{ 'Lesson' | trans }}</h2>
     <div class="introductory-text">
-      {{  	content.field_lesson_intro_text}}
+      {{ content.field_lesson_intro_text}}
     </div>
     <div class="detail--text--block">
       <div class="accordions">
