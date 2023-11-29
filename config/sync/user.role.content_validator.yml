@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - filter.format.full_html
+    - workflows.workflow.napo
   module:
+    - content_moderation
     - filter
     - system
     - toolbar
@@ -18,6 +20,7 @@ permissions:
   - 'access toolbar'
   - 'preview layout validation'
   - 'use manualcrop'
+  - 'use napo transition from_published_to_published'
   - 'use text format full_html'
   - 'view needs content validation list'
   - 'view the administration theme'
