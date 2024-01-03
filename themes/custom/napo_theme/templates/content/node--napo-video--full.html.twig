@@ -94,7 +94,15 @@
 {% set main_category = node.field_main_tag.value %}
 {% set categories = categories.appendItem(main_category) %}
 
-<div class="back-button-custom"><a href="{{ path }}/{{ language }}/napos-films/films">{{ 'Back to Films' | trans }}</a></div>
+<div class="back-button-custom">
+{% if language == "pt-pt"  %}
+  <a href="{{ path }}/pt/napos-films/films?films=all">{{ 'Back to Films' | trans }}</a>
+{% else %}
+  <a href="{{ path }}/{{ language }}/napos-films/films">{{ 'Back to Films' | trans }}</a>
+{% endif %}
+</div>
+
+
 <article{{ attributes.addClass(classes) }}>
   <div class="video-custom">
     {% if not node.field_video_type[0].entity.label == "Episode video"  %}
@@ -129,15 +137,17 @@
             <a href="/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
               {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
             </a>
-            {% endif %}
-            {% if  language != "en" %}
+            {% elseif  language == "pt-pt" %}
+              <a href="{{ path }}/pt/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
+                {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
+              </a>
+            {% else %}
               <a href="{{ path }}/{{ language }}/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
                 {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
               </a>
             {% endif %}
           {% endfor %}
         {% endif %}
-
         {% if field_video_list == "no" %}
           {% for i in 0..numberItemOriginal-1 %}
             <a href="/napos-films/{{ node.id }}/video/download?number={{ i }}">{{ videoNames[i] | split('.')[1] }}</a>
