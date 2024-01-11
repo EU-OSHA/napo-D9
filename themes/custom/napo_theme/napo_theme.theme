@@ -63,6 +63,8 @@ function napo_theme_theme_suggestions_views_view_unformatted_alter(array &$sugge
  */
 function napo_theme_preprocess_node(&$variables) {
   $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  if ($language == "pt-pt")
+    $language = 'pt';
   $variables['language'] = $language;
 
   $default_youtube = NULL;
@@ -83,7 +85,6 @@ function napo_theme_preprocess_node(&$variables) {
           ->getValue()[0]['value'];
       }
     }
-
     if (count($variables['node']->get('field_video')->getValue()) == 0) {
       $field_video_list = "no";
       $numberItemOriginal = count($variables['node']->getUntranslated()
