@@ -484,7 +484,7 @@ div.pagerer-container {
     .napo-films-modal .node--type-napo-video .view-scenes-custom .views-element-container {
       padding: 0 22px;
       padding-bottom: 20px; }
-  .napo-films-modal .node--type-napo-video .conten-video-info-tags {
+  .napo-films-modal .node--type-napo-video .conten-video-info-description {
     padding: 1.125rem 0;
     padding-top: 3.125rem; }
   .napo-films-modal .html5-video-player .video-click-tracking,
@@ -612,6 +612,10 @@ h3 {
     font-weight: 600;
     line-height: 1.1;
     width: 100%; }
+
+.node--type-napo-video .block-page-title-block h1 {
+  border-bottom: unset;
+  background: unset; }
 
 a {
   color: #1f3695;
@@ -4017,39 +4021,12 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
     flex-direction: column;
     background-color: #FFF;
     padding: 0; }
-.node--type-napo-video .conten-video-info-tags {
+.node--type-napo-video .conten-video-info-description {
   background-color: #f2f1f2;
   margin-bottom: 0px;
   padding: 1.125rem 1.5rem; }
-  .node--type-napo-video .conten-video-info-tags .categories {
-    padding-bottom: 1.125rem; }
-    .node--type-napo-video .conten-video-info-tags .categories .field__label {
-      color: #585759;
-      font-weight: bold;
-      font-size: 1.125rem; }
-      .node--type-napo-video .conten-video-info-tags .categories .field__label:after {
-        content: ':'; }
-    .node--type-napo-video .conten-video-info-tags .categories .field--type-entity-reference {
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-      margin-bottom: 1.125rem; }
-    .node--type-napo-video .conten-video-info-tags .categories .field__items {
-      font-weight: bold;
-      font-size: 1.125rem; }
-      .node--type-napo-video .conten-video-info-tags .categories .field__items .field__item + .field__item:before {
-        content: "|";
-        display: inline-block;
-        margin: 0.25rem; }
-      .node--type-napo-video .conten-video-info-tags .categories .field__items .field__item h2 {
-        font-size: 1.125rem;
-        margin: 0; }
-        .node--type-napo-video .conten-video-info-tags .categories .field__items .field__item h2 a {
-          color: #1f3695;
-          font-weight: bold;
-          font-size: 1.125rem; }
-  .node--type-napo-video .conten-video-info-tags .body strong,
-  .node--type-napo-video .conten-video-info-tags .body span {
+  .node--type-napo-video .conten-video-info-description .body strong,
+  .node--type-napo-video .conten-video-info-description .body span {
     color: #1f3695 !important;
     background-color: transparent !important;
     font-size: 1.125rem !important;
