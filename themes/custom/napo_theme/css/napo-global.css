@@ -4021,6 +4021,33 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
     flex-direction: column;
     background-color: #FFF;
     padding: 0; }
+.node--type-napo-video .categories {
+  padding-bottom: 1.125rem; }
+  .node--type-napo-video .categories .field__label {
+    color: #585759;
+    font-weight: bold;
+    font-size: 1.125rem; }
+    .node--type-napo-video .categories .field__label:after {
+      content: ':'; }
+  .node--type-napo-video .categories .field--type-entity-reference {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 1.125rem; }
+  .node--type-napo-video .categories .field__items {
+    font-weight: bold;
+    font-size: 1.125rem; }
+    .node--type-napo-video .categories .field__items .field__item + .field__item:before {
+      content: "|";
+      display: inline-block;
+      margin: 0.25rem; }
+    .node--type-napo-video .categories .field__items .field__item h2 {
+      font-size: 1.125rem;
+      margin: 0; }
+      .node--type-napo-video .categories .field__items .field__item h2 a {
+        color: #1f3695;
+        font-weight: bold;
+        font-size: 1.125rem; }
 .node--type-napo-video .conten-video-info-description {
   background-color: #f2f1f2;
   margin-bottom: 0px;

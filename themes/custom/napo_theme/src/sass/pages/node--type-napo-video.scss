@@ -170,6 +170,45 @@
       padding:0;
     }
   }
+  .categories{
+    padding-bottom:1.125rem;
+    .field__label{
+      color: $text-color-grey-dark;
+      font-weight:bold;
+      font-size:1.125rem;
+      &:after{
+        content:':';
+      }
+    }
+    .field--type-entity-reference{
+      display:flex;
+      flex-direction: row;
+      align-items: baseline;
+      margin-bottom:1.125rem;
+    }
+    .field__items{
+      font-weight:bold;
+      font-size:1.125rem;
+      .field__item{
+        & + .field__item{
+          &:before{
+            content:"|";
+            display:inline-block;
+            margin:0.25rem;
+          }
+        }
+        h2{
+          font-size:1.125rem;
+          margin:0;
+          a{
+            color: $text-color-blue;
+            font-weight:bold;
+            font-size:1.125rem;
+          }
+        }
+      }
+    }
+  }
   .conten-video-info-description{
     background-color: $bg-color-grey-light;
     margin-bottom: 0px;
