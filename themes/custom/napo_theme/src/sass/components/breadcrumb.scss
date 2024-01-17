@@ -45,3 +45,93 @@
     }
   }
 }
+
+
+/**For Napo Films**/
+.breadcrumb-container{
+  .breadcrumb{
+    align-items: center;
+    justify-content: space-between;
+    ol{
+      padding: 1rem 0.625rem 1rem 0rem;
+    }
+  }
+}
+#block-socialshare{
+  .ecl-social-media-share{
+    display: flex;
+    & > h2{
+      float: left;
+      color: $text-color-black;
+      font: {
+        size: 0.9rem;
+        weight: 400;
+      }
+      margin-bottom: unset;
+      padding-right: 10px;
+      align-self: center;
+    }
+    .wtShareList{
+      display: flex;
+      align-items: center;
+      float: left;
+      margin: 0;
+      ul{
+        display: flex;
+        gap: 10px;
+        li{
+          float: left;
+          display: block;
+          width: 20px;
+          height: 25px;
+          min-width: auto;
+          a{
+            width: 22px !important;
+            min-width: auto;
+            border: 0;
+            padding: 0;
+            text-indent: -9999px;
+          }
+        }
+      }
+      ul{
+        > li:nth-child(1){
+          order: 2;
+          .wt_twitter {
+            background: url(../images/ico-twitter.png) no-repeat;
+            background-position-y: 1px;
+          }
+        }
+        > li:nth-child(2){
+          order: 1;
+          .wt_facebook {
+            background: url(../images/ico-facebook.png) no-repeat;
+          }
+        }
+        > li:nth-child(3){
+          order: 3;
+          .wt_linkedin {
+            background: url(../images/ico-linkedin.png) no-repeat;
+          }
+        }
+        > li:nth-child(4), > li:nth-child(5){
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .breadcrumb-container {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+@media screen and (min-width: 1430px) {
+  .breadcrumb-container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

@@ -162,41 +162,43 @@
       <iframe width="1110" height="641" src="https://www.youtube-nocookie.com/embed/{{ video_url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     {% endif %}
   </div>
-  <div class="conten-video-info">
-    <div class="napo-film-video-download-form">
-      <div class="download">
-        {% if field_video_list == "yes" %}
-          {% for item in node.field_video  %}
-            {% if language == "en" %}
-            <a href="/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
-              {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
-            </a>
-            {% elseif  language == "pt-pt" %}
-              <a href="{{ path }}/pt/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
-                {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
-              </a>
-            {% else %}
-              <a href="{{ path }}/{{ language }}/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
-                {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
-              </a>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-        {% if field_video_list == "no" %}
-          {% for i in 0..numberItemOriginal-1 %}
-            <a href="/napos-films/{{ node.id }}/video/download?number={{ i }}">{{ videoNames[i] | split('.')[1] }}</a>
-          {% endfor %}
-        {% endif %}
+  <div class="description-and-download">
+    <div class="conten-video-info-description">
+      <div class="body">{{ content.body }}</div>
+    </div>
+    <div class="conten-video-info">
+      <div class="napo-film-video-download-form">
+        <div class="download">
+          {% if field_video_list == "yes" %}
+            {% for item in node.field_video  %}
+              {% if language == "en" %}
+                <a href="/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
+                  {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
+                </a>
+              {% elseif  language == "pt-pt" %}
+                <a href="{{ path }}/pt/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
+                  {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
+                </a>
+              {% else %}
+                <a href="{{ path }}/{{ language }}/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
+                  {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
+                </a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          {% if field_video_list == "no" %}
+            {% for i in 0..numberItemOriginal-1 %}
+              <a href="/napos-films/{{ node.id }}/video/download?number={{ i }}">{{ videoNames[i] | split('.')[1] }}</a>
+            {% endfor %}
+          {% endif %}
 
-      </div>
-      <div class="share-links-node">
-        <div class="napo-share-widget"></div>
-        {{ content.addtoany }}
+        </div>
+        {#      <div class="share-links-node">#}
+        {#        <div class="napo-share-widget"></div>#}
+        {#        {{ content.addtoany }}#}
+        {#      </div>#}
       </div>
     </div>
-  </div>
-  <div class="conten-video-info-description">
-    <div class="body">{{ content.body }}</div>
   </div>
   {% if drupal_view_result('episode_list', 'scenes', node.label )[0]._relationship_entities.field_field_episodes is not empty %}
     {% if drupal_view_result('episode_list', 'scenes', node.label ) is not empty %}

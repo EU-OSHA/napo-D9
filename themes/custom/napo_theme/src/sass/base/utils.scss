@@ -23,3 +23,8 @@
   height: 1px;
   word-wrap: normal;
 }
+
+/**Hide the "share this on" layer which appears when selecting text**/
+.wtPopSelect{
+  display: none !important;
+}

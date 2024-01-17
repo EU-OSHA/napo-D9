@@ -558,9 +558,10 @@
   }
   .node--type-napo-video{
      .video-custom{
+       height: 40vw;
        iframe{
          width:100%;
-         height:auto;
+         height: inherit;
        }
      }
      .conten-video-info{
@@ -772,11 +773,6 @@
         .download{
           margin-left:auto;
         }
-      }
-    }
-    .block-page-title-block {
-      h1{
-        margin-top:5rem;
       }
     }
     &.user-logged-in {
