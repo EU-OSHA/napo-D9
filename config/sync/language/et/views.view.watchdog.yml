@@ -4,22 +4,7 @@ display:
   default:
     display_title: Vaikimisi
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Kirjeid lehel'
-            items_per_page_options_all_label: '- Kõik -'
-            offset_label: Nihe
-          tags:
-            previous: ‹‹
-            next: ››
+      title: 'Viimased logiteated'
       fields:
         nothing:
           admin_label: Ikoon
@@ -40,6 +25,26 @@ display:
           separator: ', '
         link:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area:
+          admin_label: 'Logis ei ole teateid.'
+          content: 'Logis ei ole teateid.'
       filters:
         type:
           expose:
@@ -47,10 +52,5 @@ display:
         severity:
           expose:
             label: Tõsidus
-      title: 'Viimased logiteated'
-      empty:
-        area:
-          admin_label: 'Logis ei ole teateid.'
-          content: 'Logis ei ole teateid.'
   page:
     display_title: Page

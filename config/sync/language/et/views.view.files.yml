@@ -4,22 +4,7 @@ display:
   default:
     display_title: Vaikimisi
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Kirjeid lehel'
-            items_per_page_options_all_label: '- Kõik -'
-            offset_label: Nihe
+      title: Failid
       fields:
         fid:
           label: Fid
@@ -41,6 +26,25 @@ display:
           label: 'Muutmise kuupäev'
         count:
           label: Kasutuskoht
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Ühtegi faili pole saadaval.'
       filters:
         filename:
           expose:
@@ -51,10 +55,6 @@ display:
         status:
           expose:
             label: Status
-      title: Failid
-      empty:
-        area_text_custom:
-          content: 'Ühtegi faili pole saadaval.'
   page_1:
     display_title: 'Failide ülevaade'
     display_options:
@@ -63,15 +63,7 @@ display:
   page_2:
     display_title: 'Faili kasutus'
     display_options:
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Kirjeid lehel'
-            items_per_page_options_all_label: '- Kõik -'
-            offset_label: Nihe
+      title: 'Faili kasutus'
       fields:
         entity_label:
           label: Olem
@@ -82,7 +74,15 @@ display:
         count:
           label: 'Kasutuse loendur'
           format_plural_string: !!binary MQNAY291bnQ=
-      title: 'Faili kasutus'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
       arguments:
         fid:
           exception:
