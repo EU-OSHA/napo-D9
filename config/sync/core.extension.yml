@@ -104,8 +104,6 @@ module:
   napo_msds_activities: 0
   node: 0
   notification: 0
-  oe_webtools: 0
-  oe_webtools_social_share: 0
   options: 0
   osha_matomo: 0
   page_cache: 0
