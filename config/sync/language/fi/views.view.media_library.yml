@@ -2,24 +2,32 @@ display:
   default:
     display_title: Oletus
     display_options:
+      title: Media
+      fields:
+        media_bulk_form:
+          action_title: Toiminto
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
       exposed_form:
         options:
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
+      empty:
+        area_text_custom:
+          content: 'Ei mediaa saatavilla.'
+      sorts:
+        created:
           expose:
-            items_per_page_label: 'Merkintöjä sivua kohti'
-            items_per_page_options_all_label: '- Kaikki -'
-            offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
-      fields:
-        media_bulk_form:
-          action_title: Toiminto
+            label: 'Uusin ensin'
       filters:
         status:
           expose:
@@ -42,14 +50,6 @@ display:
         langcode:
           expose:
             label: Language
-      sorts:
-        created:
-          expose:
-            label: 'Uusin ensin'
-      title: Media
-      empty:
-        area_text_custom:
-          content: 'Ei mediaa saatavilla.'
   page:
     display_title: Page
     display_options:
@@ -65,14 +65,14 @@ display:
   widget:
     display_title: Widgetti
     display_options:
-      filters:
-        name:
-          expose:
-            label: Nimi
       arguments:
         bundle:
           exception:
             title: Kaikki
+      filters:
+        name:
+          expose:
+            label: Nimi
       header:
         display_link_grid:
           label: Ruudukko
@@ -89,14 +89,14 @@ display:
           label: Author
         changed:
           label: Updated
-      filters:
-        name:
-          expose:
-            label: Nimi
       arguments:
         bundle:
           exception:
             title: Kaikki
+      filters:
+        name:
+          expose:
+            label: Nimi
       header:
         display_link_grid:
           label: Ruudukko

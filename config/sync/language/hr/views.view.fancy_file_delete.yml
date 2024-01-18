@@ -1,0 +1,38 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        filename:
+          separator: ', '
+        fid:
+          label: 'File ID'
+          separator: ', '
+  page_1:
+    display_options:
+      menu:
+        title: Popis
+      fields:
+        filename:
+          separator: ', '
+        fid:
+          label: 'File ID'
+          separator: ', '
+        filename_1:
+          label: 'Naziv datoteke'
+          separator: ', '
+  page_2:
+    display_options:
+      fields:
+        filename:
+          separator: ', '
+        fid:
+          label: 'File ID'
+          separator: ', '
