@@ -2,6 +2,19 @@ display:
   default:
     display_title: Predefinito
     display_options:
+      title: Media
+      fields:
+        media_bulk_form:
+          action_title: Azione
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Voci per pagina'
+            items_per_page_options_all_label: '- Tutto -'
+            offset_label: Scostamento
       exposed_form:
         options:
           submit_button: 'Applica filtri'
@@ -9,18 +22,13 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
+      empty:
+        area_text_custom:
+          content: 'Non è disponibile alcun contributo mediale.'
+      sorts:
+        created:
           expose:
-            items_per_page_label: 'Voci per pagina'
-            items_per_page_options_all_label: '- Tutto -'
-            offset_label: Scostamento
-          tags:
-            previous: ‹‹
-            next: ››
-      fields:
-        media_bulk_form:
-          action_title: Azione
+            label: 'Prima i più recenti'
       filters:
         status:
           expose:
@@ -38,14 +46,6 @@ display:
         langcode:
           expose:
             label: Language
-      sorts:
-        created:
-          expose:
-            label: 'Prima i più recenti'
-      title: Media
-      empty:
-        area_text_custom:
-          content: 'Non è disponibile alcun contributo mediale.'
   page:
     display_title: Page
     display_options:
@@ -61,14 +61,14 @@ display:
   widget:
     display_title: Widget
     display_options:
-      filters:
-        name:
-          expose:
-            label: Nome
       arguments:
         bundle:
           exception:
             title: Tutti
+      filters:
+        name:
+          expose:
+            label: Nome
       header:
         display_link_grid:
           label: Griglia
@@ -85,14 +85,14 @@ display:
           label: Author
         changed:
           label: Updated
-      filters:
-        name:
-          expose:
-            label: Nome
       arguments:
         bundle:
           exception:
             title: Tutti
+      filters:
+        name:
+          expose:
+            label: Nome
       header:
         display_link_grid:
           label: Griglia
