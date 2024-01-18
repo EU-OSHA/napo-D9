@@ -11,23 +11,21 @@ display:
           sort_desc_label: Desc
       pager:
         options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Položiek na stránku'
             items_per_page_options_all_label: '- Všetko -'
             offset_label: 'Zobraziť od'
-          tags:
-            previous: '‹ predchádzajúca'
-            next: 'nasledujúca ›'
-            first: '« prvá'
-            last: 'posledná »'
       fields:
-        user_picture:
+        unfid:
+          label: ID
           separator: ', '
-        name:
+        path:
+          label: Path
           separator: ', '
-        uid:
-          separator: ', '
-      filters:
-        name:
-          expose:
-            label: 'Názov (neformátorný)'
+  page_1:
+    display_title: Page
