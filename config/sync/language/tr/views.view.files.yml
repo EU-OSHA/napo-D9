@@ -4,22 +4,7 @@ display:
   default:
     display_title: Varsayılan
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Sayfa başına öğe sayısı'
-            items_per_page_options_all_label: '- Tümü -'
-            offset_label: 'Başlangıç değeri'
+      title: Dosyalar
       fields:
         fid:
           label: Fid
@@ -41,6 +26,25 @@ display:
           label: 'Değiştirilme tarihi'
         count:
           label: 'Şurada kullanılıyor'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Sayfa başına öğe sayısı'
+            items_per_page_options_all_label: '- Tümü -'
+            offset_label: 'Başlangıç değeri'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Dosya yok.'
       filters:
         filename:
           expose:
@@ -51,10 +55,6 @@ display:
         status:
           expose:
             label: Status
-      title: Dosyalar
-      empty:
-        area_text_custom:
-          content: 'Dosya yok.'
   page_1:
     display_title: 'Dosya Özeti'
     display_options:
@@ -63,15 +63,7 @@ display:
   page_2:
     display_title: 'Dosya kullanımı'
     display_options:
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Sayfa başına öğe sayısı'
-            items_per_page_options_all_label: '- Tümü -'
-            offset_label: 'Başlangıç değeri'
+      title: 'Dosya kullanımı'
       fields:
         entity_label:
           label: Nesne
@@ -81,7 +73,15 @@ display:
           label: 'Eklenti kayıt ediliyor'
         count:
           label: 'Kullanım sayısı'
-      title: 'Dosya kullanımı'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Sayfa başına öğe sayısı'
+            items_per_page_options_all_label: '- Tümü -'
+            offset_label: 'Başlangıç değeri'
       arguments:
         fid:
           exception:

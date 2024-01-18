@@ -4,6 +4,7 @@ display:
   default:
     display_title: Varsayılan
     display_options:
+      title: 'Kimler yeni'
       exposed_form:
         options:
           submit_button: Uygula
@@ -11,7 +12,6 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      title: 'Kimler yeni'
   block_1:
     display_title: 'Kimler yeni'
     display_options:

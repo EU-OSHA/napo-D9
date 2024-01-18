@@ -3,24 +3,7 @@ display:
   default:
     display_title: Varsayılan
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Sayfa başına öğe sayısı'
-            items_per_page_options_all_label: '- Tümü -'
-            offset_label: 'Başlangıç değeri'
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+      title: Medya
       fields:
         media_bulk_form:
           action_title: Eylem
@@ -39,14 +22,32 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Published
             format_custom_false: Unpublished
+            format_custom_true: Published
           separator: ', '
         changed:
           label: Updated
           separator: ', '
         operations:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Sayfa başına öğe sayısı'
+            items_per_page_options_all_label: '- Tümü -'
+            offset_label: 'Başlangıç değeri'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       filters:
         name:
           expose:
@@ -67,7 +68,6 @@ display:
         langcode:
           expose:
             label: Language
-      title: Medya
   media_page_list:
     display_title: Medya
     display_options:
