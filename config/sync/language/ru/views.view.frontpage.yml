@@ -2,12 +2,19 @@ label: 'Главная страница'
 description: 'Все материалы, выведенные на главную страницу.'
 display:
   default:
+    display_title: 'По умолчанию'
     display_options:
-      empty:
-        area_text_custom:
-          content: 'Материалов для отображения на главной странице еще не создано.<br>Следуйте <a target="_blank" href="https://www.drupal.org/ru/docs/user_guide/ru/index.html">Руководству Пользователя</a> для начала создания сайта.'
-        title:
-          title: 'Приветствуем на сайте [site:name]'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Элементов на страницу'
+            items_per_page_options_all_label: '- Все -'
+            offset_label: Пропустить
       exposed_form:
         options:
           submit_button: Применить
@@ -15,18 +22,11 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Элементов на страницу'
-            items_per_page_options_all_label: '- Все -'
-            offset_label: Пропустить
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-    display_title: 'По умолчанию'
+      empty:
+        area_text_custom:
+          content: 'Материалов для отображения на главной странице еще не создано.<br>Следуйте <a target="_blank" href="https://www.drupal.org/ru/docs/user_guide/ru/index.html">Руководству Пользователя</a> для начала создания сайта.'
+        title:
+          title: 'Приветствуем на сайте [site:name]'
   feed_1:
     display_title: 'Поток данных'
   page_1:
