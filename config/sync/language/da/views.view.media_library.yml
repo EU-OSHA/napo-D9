@@ -2,24 +2,32 @@ display:
   default:
     display_title: Standard
     display_options:
+      title: Media
+      fields:
+        media_bulk_form:
+          action_title: Handling
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
       exposed_form:
         options:
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
+      empty:
+        area_text_custom:
+          content: 'Ingen tilgængelige media'
+      sorts:
+        created:
           expose:
-            items_per_page_label: 'Antal elementer'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskydning
-          tags:
-            previous: ‹‹
-            next: ››
-      fields:
-        media_bulk_form:
-          action_title: Handling
+            label: 'Nyeste først'
       filters:
         status:
           expose:
@@ -42,14 +50,6 @@ display:
         langcode:
           expose:
             label: Language
-      sorts:
-        created:
-          expose:
-            label: 'Nyeste først'
-      title: Media
-      empty:
-        area_text_custom:
-          content: 'Ingen tilgængelige media'
   page:
     display_title: Page
     display_options:
@@ -65,14 +65,14 @@ display:
   widget:
     display_title: Widget
     display_options:
-      filters:
-        name:
-          expose:
-            label: Navn
       arguments:
         bundle:
           exception:
             title: Alle
+      filters:
+        name:
+          expose:
+            label: Navn
       header:
         display_link_grid:
           label: Gitter
@@ -89,14 +89,14 @@ display:
           label: Author
         changed:
           label: Updated
-      filters:
-        name:
-          expose:
-            label: Navn
       arguments:
         bundle:
           exception:
             title: Alle
+      filters:
+        name:
+          expose:
+            label: Navn
       header:
         display_link_grid:
           label: Gitter
