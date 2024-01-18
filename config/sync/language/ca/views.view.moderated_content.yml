@@ -4,24 +4,7 @@ display:
   default:
     display_title: 'Per defecte'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page_label: 'Elements per pàgina'
-            items_per_page_options_all_label: '- Tot -'
-            offset_label: Desplaçament
+      title: 'Contingut moderat'
       fields:
         title:
           label: Title
@@ -40,6 +23,27 @@ display:
           separator: ', '
         operations:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'No hi ha disponible contingut moderat. Només es llisten aquí les versions pendents de continguts, com poden ser els esborranys.'
       filters:
         title:
           expose:
@@ -53,9 +57,5 @@ display:
         langcode:
           expose:
             label: Language
-      title: 'Contingut moderat'
-      empty:
-        area_text_custom:
-          content: 'No hi ha disponible contingut moderat. Només es llisten aquí les versions pendents de continguts, com poden ser els esborranys.'
   moderated_content:
     display_title: 'Contingut moderat'

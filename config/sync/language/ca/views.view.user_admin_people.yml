@@ -4,24 +4,7 @@ display:
   default:
     display_title: 'Per defecte'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page_label: 'Elements per pàgina'
-            items_per_page_options_all_label: '- Tot -'
-            offset_label: Desplaçament
+      title: Gent
       fields:
         user_bulk_form:
           label: 'Actualització massiva'
@@ -30,8 +13,8 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Actiu
             format_custom_false: Bloquejat
+            format_custom_true: Actiu
         roles_target_id:
           label: Rols
         created:
@@ -42,6 +25,27 @@ display:
           label: Operations
         mail:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'No hi ha gent disponible.'
       filters:
         combine:
           expose:
@@ -60,10 +64,6 @@ display:
         permission:
           expose:
             label: Permís
-      title: Gent
-      empty:
-        area_text_custom:
-          content: 'No hi ha gent disponible.'
       use_more_text: més
   page_1:
     display_title: Page
