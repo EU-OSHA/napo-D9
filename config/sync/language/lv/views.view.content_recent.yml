@@ -3,13 +3,13 @@ display:
   default:
     display_title: 'Noklusētā vērtība'
     display_options:
+      title: 'Jaunākais saturs'
       exposed_form:
         options:
           submit_button: Apstiprināt
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_desc_label: Desc
-      title: 'Jaunākais saturs'
       empty:
         area_text_custom:
           content: 'No content available.'

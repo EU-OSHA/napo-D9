@@ -1,21 +1,23 @@
 display:
   default:
-    display_title: 'Noklusētā vērtība'
     display_options:
-      pager:
-        options:
-          expose:
-            items_per_page_options_all_label: '- Visi -'
       exposed_form:
         options:
           submit_button: Apstiprināt
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_desc_label: Desc
-      empty:
-        title:
-          title: 'Welcome to [site:name]'
-  feed_1:
-    display_title: Plūsma
+      pager:
+        options:
+          tags:
+            previous: '"'
+            next: '"'
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      fields:
+        unfid:
+          label: ID
+        path:
+          label: Path
   page_1:
     display_title: Page
