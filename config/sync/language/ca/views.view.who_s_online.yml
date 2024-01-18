@@ -4,6 +4,7 @@ display:
   default:
     display_title: 'Per defecte'
     display_options:
+      title: 'Qui està connectat'
       exposed_form:
         options:
           submit_button: Aplica
@@ -11,20 +12,19 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Actualment no hi ha cap usuari connectat.'
       filters:
         access:
           expose:
             label: 'Darrer accés'
             description: 'Un usuari es considera connectat per aquest temps des de que va veure per darrer cop una pàgina.'
-      title: 'Qui està connectat'
       header:
         result:
           content: 'Actualment hi ha @total usuaris en línia.'
-      empty:
-        area_text_custom:
-          content: 'Actualment no hi ha cap usuari connectat.'
   who_s_online_block:
     display_title: 'Qui està connectat'
     display_options:
-      block_description: 'Qui està connectat'
       display_description: 'Una llista d''usuaris que tenen actualment una sessió oberta.'
+      block_description: 'Qui està connectat'

@@ -2,18 +2,26 @@ display:
   default:
     display_title: Numatytasis
     display_options:
-      exposed_form:
-        options:
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+      title: Media
+      fields:
+        media_bulk_form:
+          action_title: Veiksmas
       pager:
         options:
           expose:
             items_per_page_label: 'Vienetų kiekis puslapyje'
             items_per_page_options_all_label: '- Visos -'
-      fields:
-        media_bulk_form:
-          action_title: Veiksmas
+      exposed_form:
+        options:
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      empty:
+        area_text_custom:
+          content: 'Nėra galimos media.'
+      sorts:
+        created:
+          expose:
+            label: 'Nauji pradžioj'
       filters:
         status:
           group_info:
@@ -29,14 +37,6 @@ display:
         langcode:
           expose:
             label: Language
-      sorts:
-        created:
-          expose:
-            label: 'Nauji pradžioj'
-      title: Media
-      empty:
-        area_text_custom:
-          content: 'Nėra galimos media.'
   page:
     display_title: Page
     display_options:
@@ -50,14 +50,14 @@ display:
   widget:
     display_title: Valdiklis
     display_options:
-      filters:
-        name:
-          expose:
-            label: Pavadinimas
       arguments:
         bundle:
           exception:
             title: Visi
+      filters:
+        name:
+          expose:
+            label: Pavadinimas
       header:
         display_link_grid:
           label: Tinklelis
@@ -74,14 +74,14 @@ display:
           label: Author
         changed:
           label: Updated
-      filters:
-        name:
-          expose:
-            label: Pavadinimas
       arguments:
         bundle:
           exception:
             title: Visi
+      filters:
+        name:
+          expose:
+            label: Pavadinimas
       header:
         display_link_grid:
           label: Tinklelis

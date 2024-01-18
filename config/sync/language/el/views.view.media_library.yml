@@ -2,24 +2,29 @@ display:
   default:
     display_title: Προεπιλεγμένο
     display_options:
+      title: Μέσα
+      fields:
+        media_bulk_form:
+          action_title: Ενέργεια
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
       exposed_form:
         options:
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
+      sorts:
+        created:
           expose:
-            items_per_page_label: 'Είδη ανά σελίδα'
-            items_per_page_options_all_label: '- Όλα -'
-            offset_label: Αντιστάθμιση
-          tags:
-            previous: ‹‹
-            next: ››
-      fields:
-        media_bulk_form:
-          action_title: Ενέργεια
+            label: 'Τα νεότερα πρώτα'
       filters:
         status:
           expose:
@@ -37,11 +42,6 @@ display:
         langcode:
           expose:
             label: Language
-      sorts:
-        created:
-          expose:
-            label: 'Τα νεότερα πρώτα'
-      title: Μέσα
   page:
     display_title: Page
     display_options:
@@ -57,14 +57,14 @@ display:
   widget:
     display_title: 'Γραφικό συστατικό'
     display_options:
-      filters:
-        name:
-          expose:
-            label: Όνομα
       arguments:
         bundle:
           exception:
             title: Όλες
+      filters:
+        name:
+          expose:
+            label: Όνομα
       header:
         display_link_grid:
           label: Πλέγμα
@@ -81,14 +81,14 @@ display:
           label: Author
         changed:
           label: Updated
-      filters:
-        name:
-          expose:
-            label: Όνομα
       arguments:
         bundle:
           exception:
             title: Όλες
+      filters:
+        name:
+          expose:
+            label: Όνομα
       header:
         display_link_grid:
           label: Πλέγμα

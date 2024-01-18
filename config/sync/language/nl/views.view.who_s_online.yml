@@ -4,6 +4,7 @@ display:
   default:
     display_title: Standaard
     display_options:
+      title: 'Wie is online'
       exposed_form:
         options:
           submit_button: Toepassen
@@ -11,20 +12,19 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Er zijn nu 0 gebruikers online.'
       filters:
         access:
           expose:
             label: 'Laatste toegang'
             description: 'Een gebruiker wordt online verondersteld voor deze tijd nadat hij voor een laatste keer een pagina heeft bekeken.'
-      title: 'Wie is online'
       header:
         result:
           content: 'Er zijn nu @total gebruikers online.'
-      empty:
-        area_text_custom:
-          content: 'Er zijn nu 0 gebruikers online.'
   who_s_online_block:
     display_title: 'Wie is online'
     display_options:
-      block_description: 'Wie is online'
       display_description: 'Een lijst van gebruikers die nu zijn ingelogd.'
+      block_description: 'Wie is online'

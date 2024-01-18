@@ -1,16 +1,9 @@
 label: Content
 display:
   default:
+    display_title: Sjálfgefið
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
+      title: Content
       fields:
         title:
           label: Title
@@ -22,12 +15,21 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Published
             format_custom_false: Unpublished
+            format_custom_true: Published
         changed:
           label: Updated
         operations:
           label: Operations
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       filters:
         title:
           expose:
@@ -47,12 +49,10 @@ display:
         langcode:
           expose:
             label: Language
-      title: Content
-    display_title: Sjálfgefið
   page_1:
+    display_title: Page
     display_options:
       menu:
         title: Content
       tab_options:
         title: Content
-    display_title: Page

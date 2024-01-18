@@ -2,12 +2,19 @@ label: 'Strona główna'
 description: 'Wszystkie treści promowane na stronie głównej.'
 display:
   default:
+    display_title: Domyślny
     display_options:
-      empty:
-        area_text_custom:
-          content: 'Nie utworzono jeszcze zawartości strony głównej. <br />Postępuj zgodnie z <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">Podręcznikiem Użytkownika</a> aby rozpocząć budowę swojej witryny.'
-        title:
-          title: 'Witaj na [site:name]'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
       exposed_form:
         options:
           submit_button: Zastosuj
@@ -15,18 +22,11 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Elementów na stronę'
-            items_per_page_options_all_label: '- Wszystko -'
-            offset_label: Przesunięcie
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-    display_title: Domyślny
+      empty:
+        area_text_custom:
+          content: 'Nie utworzono jeszcze zawartości strony głównej. <br />Postępuj zgodnie z <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">Podręcznikiem Użytkownika</a> aby rozpocząć budowę swojej witryny.'
+        title:
+          title: 'Witaj na [site:name]'
   feed_1:
     display_title: Zasób
   page_1:

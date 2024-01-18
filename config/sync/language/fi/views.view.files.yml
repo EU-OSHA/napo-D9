@@ -3,22 +3,7 @@ display:
   default:
     display_title: Oletus
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Merkintöjä sivua kohti'
-            items_per_page_options_all_label: '- Kaikki -'
-            offset_label: Offset
+      title: Tiedostot
       fields:
         fid:
           label: FId
@@ -40,6 +25,25 @@ display:
           label: Muutospäivämäärä
         count:
           label: Käytetään
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Tiedostoja ei ole saatavilla.'
       filters:
         filename:
           expose:
@@ -50,10 +54,6 @@ display:
         status:
           expose:
             label: Status
-      title: Tiedostot
-      empty:
-        area_text_custom:
-          content: 'Tiedostoja ei ole saatavilla.'
   page_1:
     display_options:
       menu:
@@ -61,15 +61,7 @@ display:
   page_2:
     display_title: 'Tiedoston käyttö'
     display_options:
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Merkintöjä sivua kohti'
-            items_per_page_options_all_label: '- Kaikki -'
-            offset_label: Offset
+      title: 'Tiedoston käyttö'
       fields:
         entity_label:
           label: Entiteetti
@@ -79,7 +71,15 @@ display:
           label: 'Käytön kirjannut moduuli'
         count:
           label: Käyttömäärä
-      title: 'Tiedoston käyttö'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
       arguments:
         fid:
           exception:

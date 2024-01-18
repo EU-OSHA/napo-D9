@@ -4,24 +4,7 @@ display:
   default:
     display_title: Varsayılan
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page_label: 'Sayfa başına öğe sayısı'
-            items_per_page_options_all_label: '- Tümü -'
-            offset_label: 'Başlangıç değeri'
+      title: Kişiler
       fields:
         user_bulk_form:
           label: 'Toplu güncelleme'
@@ -30,8 +13,8 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Etkin
             format_custom_false: Engellendi
+            format_custom_true: Etkin
         roles_target_id:
           label: Roller
         created:
@@ -42,6 +25,27 @@ display:
           label: Operations
         mail:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Sayfa başına öğe sayısı'
+            items_per_page_options_all_label: '- Tümü -'
+            offset_label: 'Başlangıç değeri'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Hiç kimse mevcut değil.'
       filters:
         combine:
           expose:
@@ -60,10 +64,6 @@ display:
         permission:
           expose:
             label: İzinler
-      title: Kişiler
-      empty:
-        area_text_custom:
-          content: 'Hiç kimse mevcut değil.'
       use_more_text: 'daha fazla'
   page_1:
     display_title: Page

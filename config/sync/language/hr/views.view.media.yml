@@ -3,13 +3,7 @@ display:
   default:
     display_title: Zadano
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+      title: Mediji
       fields:
         media_bulk_form:
           action_title: Akcija
@@ -34,6 +28,13 @@ display:
           separator: ', '
         operations:
           label: Operations
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       filters:
         bundle:
           expose:
@@ -48,7 +49,6 @@ display:
         langcode:
           expose:
             label: Language
-      title: Mediji
   media_page_list:
     display_title: Mediji
     display_options:

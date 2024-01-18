@@ -2,10 +2,6 @@ display:
   default:
     display_title: 'По подразбиране'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Търси
-          reset_button_label: Reset
       fields:
         info:
           label: 'Описание на блока'
@@ -13,6 +9,10 @@ display:
           label: Updated
         operations:
           label: Operations
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Reset
       filters:
         info:
           expose:

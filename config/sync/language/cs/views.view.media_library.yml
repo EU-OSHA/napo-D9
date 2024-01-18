@@ -2,24 +2,29 @@ display:
   default:
     display_title: Výchozí
     display_options:
+      title: Média
+      fields:
+        media_bulk_form:
+          action_title: Akce
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
       exposed_form:
         options:
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
+      sorts:
+        created:
           expose:
-            items_per_page_label: 'Položek na stránku'
-            items_per_page_options_all_label: '- Vše -'
-            offset_label: Posun
-          tags:
-            previous: ‹‹
-            next: ››
-      fields:
-        media_bulk_form:
-          action_title: Akce
+            label: 'Nejnovější první'
       filters:
         status:
           expose:
@@ -37,11 +42,6 @@ display:
         langcode:
           expose:
             label: Language
-      sorts:
-        created:
-          expose:
-            label: 'Nejnovější první'
-      title: Média
   page:
     display_title: Page
     display_options:
@@ -57,14 +57,14 @@ display:
   widget:
     display_title: Widget
     display_options:
-      filters:
-        name:
-          expose:
-            label: Jméno
       arguments:
         bundle:
           exception:
             title: Vše
+      filters:
+        name:
+          expose:
+            label: Jméno
       header:
         display_link_grid:
           label: Mřížka
@@ -81,14 +81,14 @@ display:
           label: Author
         changed:
           label: Updated
-      filters:
-        name:
-          expose:
-            label: Jméno
       arguments:
         bundle:
           exception:
             title: Vše
+      filters:
+        name:
+          expose:
+            label: Jméno
       header:
         display_link_grid:
           label: Mřížka

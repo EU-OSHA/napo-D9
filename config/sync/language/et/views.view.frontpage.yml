@@ -2,10 +2,19 @@ label: Avaleht
 description: 'Kogu avalehele määratud sisu.'
 display:
   default:
+    display_title: Vaikimisi
     display_options:
-      empty:
-        title:
-          title: 'Tere tulemast lehele [site:name]'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
       exposed_form:
         options:
           submit_button: Rakenda
@@ -13,18 +22,9 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Kirjeid lehel'
-            items_per_page_options_all_label: '- Kõik -'
-            offset_label: Nihe
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-    display_title: Vaikimisi
+      empty:
+        title:
+          title: 'Tere tulemast lehele [site:name]'
   feed_1:
     display_title: Andmevoog
   page_1:

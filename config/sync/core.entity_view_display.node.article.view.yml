@@ -106,6 +106,7 @@ content:
       icon: ''
       sizes: ''
       grid_header: ''
+      _uri: ''
       overridables: {  }
       thumbnail: ''
       optionset_thumbnail: ''
@@ -118,7 +119,6 @@ content:
       skin_dots: ''
       preserve_keys: false
       visible_items: 0
-      _uri: ''
     third_party_settings: {  }
     weight: 0
     region: content

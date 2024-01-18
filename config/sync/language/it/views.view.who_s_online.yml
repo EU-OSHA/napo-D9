@@ -4,6 +4,7 @@ display:
   default:
     display_title: Predefinito
     display_options:
+      title: 'Utenti on-line'
       exposed_form:
         options:
           submit_button: Applica
@@ -11,20 +12,19 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'In questo momento ci sono 0 utenti collegati.'
       filters:
         access:
           expose:
             label: 'Ultimo accesso'
             description: 'Un utente è considerato on-line per questo tempo dopo la sua ultima visita di una pagina.'
-      title: 'Utenti on-line'
       header:
         result:
           content: 'In questo momento ci sono @total utenti collegati.'
-      empty:
-        area_text_custom:
-          content: 'In questo momento ci sono 0 utenti collegati.'
   who_s_online_block:
     display_title: 'Utenti on-line'
     display_options:
-      block_description: 'Utenti on-line'
       display_description: 'Un elenco di utenti che sono in questo momento connessi.'
+      block_description: 'Utenti on-line'

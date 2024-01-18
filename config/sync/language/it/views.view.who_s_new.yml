@@ -4,6 +4,7 @@ display:
   default:
     display_title: Predefinito
     display_options:
+      title: 'Nuovi utenti'
       exposed_form:
         options:
           submit_button: Applica
@@ -11,7 +12,6 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      title: 'Nuovi utenti'
   block_1:
     display_title: 'Nuovi utenti'
     display_options:

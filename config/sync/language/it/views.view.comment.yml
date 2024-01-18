@@ -3,24 +3,7 @@ display:
   default:
     display_title: Predefinito
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ precedente'
-            next: 'seguente ›'
-            first: '« prima'
-            last: 'ultima »'
-          expose:
-            items_per_page_label: 'Voci per pagina'
-            items_per_page_options_all_label: '- Tutto -'
-            offset_label: Scostamento
+      title: Commenti
       fields:
         comment_bulk_form:
           action_title: Azione
@@ -42,6 +25,27 @@ display:
           label: Operations
         name_1:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'seguente ›'
+            previous: '‹ precedente'
+            first: '« prima'
+            last: 'ultima »'
+          expose:
+            items_per_page_label: 'Voci per pagina'
+            items_per_page_options_all_label: '- Tutto -'
+            offset_label: Scostamento
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nessun commento disponibile.'
       filters:
         subject:
           expose:
@@ -52,10 +56,6 @@ display:
         langcode:
           expose:
             label: Language
-      title: Commenti
-      empty:
-        area_text_custom:
-          content: 'Nessun commento disponibile.'
       use_more_text: altro
   page_published:
     display_title: 'Commenti pubblicati'
@@ -65,18 +65,6 @@ display:
   page_unapproved:
     display_title: 'Commenti non approvati'
     display_options:
-      menu:
-        title: 'Commenti non approvati'
-      filters:
-        subject:
-          expose:
-            label: Oggetto
-        combine:
-          expose:
-            label: 'Nome dell''autore'
-        langcode:
-          expose:
-            label: Language
       fields:
         comment_bulk_form:
           action_title: Azione
@@ -98,3 +86,15 @@ display:
           label: Operations
         name_1:
           separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Oggetto
+        combine:
+          expose:
+            label: 'Nome dell''autore'
+        langcode:
+          expose:
+            label: Language
+      menu:
+        title: 'Commenti non approvati'

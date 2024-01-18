@@ -4,6 +4,7 @@ display:
   default:
     display_title: Προεπιλεγμένο
     display_options:
+      title: 'Ποιοι γράφτηκαν τελευταία'
       exposed_form:
         options:
           submit_button: Εφαρμογή
@@ -11,7 +12,6 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      title: 'Ποιοι γράφτηκαν τελευταία'
   block_1:
     display_title: 'Ποιοι γράφτηκαν τελευταία'
     display_options:
