@@ -1,12 +1,13 @@
 display:
   default:
-    display_title: Privzeto
     display_options:
       exposed_form:
         options:
           reset_button_label: Reset
-      empty:
-        title:
-          title: 'Welcome to [site:name]'
   page_1:
-    display_title: Page
+    display_options:
+      menu:
+        title: Seznam
+      fields:
+        filename_1:
+          label: 'Ime datoteke'

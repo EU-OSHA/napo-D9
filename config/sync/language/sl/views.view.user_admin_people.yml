@@ -3,18 +3,15 @@ display:
   default:
     display_title: Privzeto
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
+      title: Uporabniki
       fields:
         name:
           label: 'Uporabniško ime'
         status:
           label: Status
           settings:
-            format_custom_true: Aktiven
             format_custom_false: Blokiran
+            format_custom_true: Aktiven
         roles_target_id:
           label: Vloge
         created:
@@ -23,6 +20,10 @@ display:
           label: 'Zadnji dostop'
         operations:
           label: Operations
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
       filters:
         status:
           group_info:
@@ -35,7 +36,6 @@ display:
         permission:
           expose:
             label: Dovoljenje
-      title: Uporabniki
       use_more_text: več
   page_1:
     display_title: Page
