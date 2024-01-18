@@ -2,6 +2,7 @@ display:
   default:
     display_title: 'Noklusētā vērtība'
     display_options:
+      title: 'Kurš ir klātienē'
       exposed_form:
         options:
           submit_button: Apstiprināt
@@ -13,7 +14,6 @@ display:
           expose:
             label: 'Piedējās piekļuves laiks'
             description: 'Lietotājs tiek uzskatīts kā tiešsaistē esošs šādu laiku pēc pēdējās lapas skatīšanas.'
-      title: 'Kurš ir klātienē'
   who_s_online_block:
     display_title: 'Kurš ir klātienē'
     display_options:

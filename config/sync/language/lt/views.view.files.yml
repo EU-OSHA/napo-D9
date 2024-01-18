@@ -3,16 +3,7 @@ display:
   default:
     display_title: Numatytasis
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Vienetų kiekis puslapyje'
-            items_per_page_options_all_label: '- Visos -'
+      title: Failai
       fields:
         filename:
           label: Pavadinimas
@@ -31,6 +22,19 @@ display:
           label: 'Keitimo data'
         count:
           label: Naudojama
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      empty:
+        area_text_custom:
+          content: 'Failų nėra.'
       filters:
         filename:
           expose:
@@ -41,21 +45,12 @@ display:
         status:
           expose:
             label: Status
-      title: Failai
-      empty:
-        area_text_custom:
-          content: 'Failų nėra.'
   page_1:
     display_options:
       menu:
         title: Failai
   page_2:
     display_options:
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Vienetų kiekis puslapyje'
-            items_per_page_options_all_label: '- Visos -'
       fields:
         type:
           label: 'Entity tipas'
@@ -64,6 +59,11 @@ display:
         count:
           label: 'Naudojimų kiekis'
           format_plural_string: !!binary QGNvdW50IANAY291bnQDQGNvdW50
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
       arguments:
         fid:
           exception:
