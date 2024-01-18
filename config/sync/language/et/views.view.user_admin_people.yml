@@ -4,24 +4,7 @@ display:
   default:
     display_title: Vaikimisi
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page_label: 'Kirjeid lehel'
-            items_per_page_options_all_label: '- Kõik -'
-            offset_label: Nihe
+      title: Kasutajad
       fields:
         user_bulk_form:
           label: Massuuendus
@@ -30,8 +13,8 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Aktiivne
             format_custom_false: Blokeeritud
+            format_custom_true: Aktiivne
         roles_target_id:
           label: Rollid
         created:
@@ -42,6 +25,27 @@ display:
           label: Operations
         mail:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Inimesed puuduvad.'
       filters:
         combine:
           expose:
@@ -60,10 +64,6 @@ display:
         permission:
           expose:
             label: Õigus
-      title: Kasutajad
-      empty:
-        area_text_custom:
-          content: 'Inimesed puuduvad.'
       use_more_text: veel
   page_1:
     display_title: Page

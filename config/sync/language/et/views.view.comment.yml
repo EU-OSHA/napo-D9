@@ -4,24 +4,7 @@ display:
   default:
     display_title: Vaikimisi
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ eelmine'
-            next: 'järgmine ›'
-            first: '« esimene'
-            last: 'viimane »'
-          expose:
-            items_per_page_label: 'Kirjeid lehel'
-            items_per_page_options_all_label: '- Kõik -'
-            offset_label: Nihe
+      title: Kommentaarid
       fields:
         comment_bulk_form:
           action_title: Tegevus
@@ -43,6 +26,27 @@ display:
           label: Operations
         name_1:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'järgmine ›'
+            previous: '‹ eelmine'
+            first: '« esimene'
+            last: 'viimane »'
+          expose:
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Kommentaarid puuduvad.'
       filters:
         subject:
           expose:
@@ -53,35 +57,17 @@ display:
         langcode:
           expose:
             label: Language
-      title: Kommentaarid
-      empty:
-        area_text_custom:
-          content: 'Kommentaarid puuduvad.'
       use_more_text: veel
   page_published:
     display_title: 'Avaldatud kommentaarid'
     display_options:
+      display_description: 'Heaks kiidetud kommentaaride nimekiri.'
       menu:
         title: Kommentaarid
         description: 'Avaldatud kommentaarid'
-      display_description: 'Heaks kiidetud kommentaaride nimekiri.'
   page_unapproved:
     display_title: 'Heakskiitmata kommentaarid'
     display_options:
-      menu:
-        title: 'Heakskiitmata kommentaarid'
-        description: 'Kinnitamata kommentaarid'
-      display_description: 'Kinnitamata kommentaaride nimekiri.'
-      filters:
-        subject:
-          expose:
-            label: Teema
-        combine:
-          expose:
-            label: 'Autori Nimi'
-        langcode:
-          expose:
-            label: Language
       fields:
         comment_bulk_form:
           action_title: Tegevus
@@ -103,3 +89,17 @@ display:
           label: Operations
         name_1:
           separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Teema
+        combine:
+          expose:
+            label: 'Autori Nimi'
+        langcode:
+          expose:
+            label: Language
+      display_description: 'Kinnitamata kommentaaride nimekiri.'
+      menu:
+        title: 'Heakskiitmata kommentaarid'
+        description: 'Kinnitamata kommentaarid'
