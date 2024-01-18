@@ -4,24 +4,7 @@ display:
   default:
     display_title: Predefinido
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page_label: 'Itens por página'
-            items_per_page_options_all_label: '- Todos -'
-            offset_label: Deslocamento
+      title: 'Conteúdo moderado'
       fields:
         title:
           label: Title
@@ -40,6 +23,24 @@ display:
           separator: ', '
         operations:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       filters:
         title:
           expose:
@@ -53,6 +54,5 @@ display:
         langcode:
           expose:
             label: Language
-      title: 'Conteúdo moderado'
   moderated_content:
     display_title: 'Conteúdo moderado'
