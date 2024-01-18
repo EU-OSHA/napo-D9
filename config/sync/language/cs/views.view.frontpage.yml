@@ -1,10 +1,19 @@
 label: 'Titulní strana'
 display:
   default:
+    display_title: Výchozí
     display_options:
-      empty:
-        area_text_custom:
-          content: 'Pro hlavní stranu zatím neexistuje žádný obsah. Instrukce pro přidání obsahu najdete v <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">uživatelské příručce</a>.'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
       exposed_form:
         options:
           submit_button: Použít
@@ -12,18 +21,11 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Položek na stránku'
-            items_per_page_options_all_label: '- Vše -'
-            offset_label: Posun
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-    display_title: Výchozí
+      empty:
+        area_text_custom:
+          content: 'Pro hlavní stranu zatím neexistuje žádný obsah. Instrukce pro přidání obsahu najdete v <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">uživatelské příručce</a>.'
+        title:
+          title: 'Welcome to [site:name]'
   feed_1:
     display_title: Zdroj
   page_1:

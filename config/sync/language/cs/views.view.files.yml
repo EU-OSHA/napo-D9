@@ -4,22 +4,7 @@ display:
   default:
     display_title: Výchozí
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Položek na stránku'
-            items_per_page_options_all_label: '- Vše -'
-            offset_label: Posun
+      title: Soubory
       fields:
         fid:
           label: Fid
@@ -41,6 +26,25 @@ display:
           label: 'Datum změny'
         count:
           label: 'Použito v'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Žádné soubory nejsou k dispozici.'
       filters:
         filename:
           expose:
@@ -51,10 +55,6 @@ display:
         status:
           expose:
             label: Status
-      title: Soubory
-      empty:
-        area_text_custom:
-          content: 'Žádné soubory nejsou k dispozici.'
   page_1:
     display_title: 'Přehled souborů'
     display_options:
@@ -62,15 +62,6 @@ display:
         title: Soubory
   page_2:
     display_options:
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Položek na stránku'
-            items_per_page_options_all_label: '- Vše -'
-            offset_label: Posun
       fields:
         entity_label:
           label: Entity
@@ -80,6 +71,15 @@ display:
           label: 'Probíhá registrace modulu'
         count:
           format_plural_string: !!binary MQNAY291bnQ=
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
       arguments:
         fid:
           exception:
