@@ -4,24 +4,7 @@ display:
   default:
     display_title: Standaard
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ vorige'
-            next: 'volgende ›'
-            first: '« eerste'
-            last: 'laatste »'
-          expose:
-            items_per_page_label: 'Items per pagina'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Startpunt
+      title: Reacties
       fields:
         comment_bulk_form:
           action_title: Actie
@@ -43,6 +26,27 @@ display:
           label: Operations
         name_1:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'volgende ›'
+            previous: '‹ vorige'
+            first: '« eerste'
+            last: 'laatste »'
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Geen reacties beschikbaar.'
       filters:
         subject:
           expose:
@@ -53,35 +57,17 @@ display:
         langcode:
           expose:
             label: Language
-      title: Reacties
-      empty:
-        area_text_custom:
-          content: 'Geen reacties beschikbaar.'
       use_more_text: meer
   page_published:
     display_title: 'Gepubliceerde reacties'
     display_options:
+      display_description: 'Lijst met goedgekeurde reacties.'
       menu:
         title: Reacties
         description: 'Reacties gepubliceerd.'
-      display_description: 'Lijst met goedgekeurde reacties.'
   page_unapproved:
     display_title: 'Niet-goedgekeurde reacties'
     display_options:
-      menu:
-        title: 'Niet-goedgekeurde reacties'
-        description: 'Reacties afgekeurd'
-      display_description: 'Lijst met afgekeurde reacties.'
-      filters:
-        subject:
-          expose:
-            label: Onderwerp
-        combine:
-          expose:
-            label: Auteursnaam
-        langcode:
-          expose:
-            label: Language
       fields:
         comment_bulk_form:
           action_title: Actie
@@ -103,3 +89,17 @@ display:
           label: Operations
         name_1:
           separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Onderwerp
+        combine:
+          expose:
+            label: Auteursnaam
+        langcode:
+          expose:
+            label: Language
+      display_description: 'Lijst met afgekeurde reacties.'
+      menu:
+        title: 'Niet-goedgekeurde reacties'
+        description: 'Reacties afgekeurd'

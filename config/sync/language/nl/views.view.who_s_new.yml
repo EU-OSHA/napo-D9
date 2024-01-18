@@ -4,6 +4,7 @@ display:
   default:
     display_title: Standaard
     display_options:
+      title: 'Wie is nieuw'
       exposed_form:
         options:
           submit_button: Toepassen
@@ -11,7 +12,6 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      title: 'Wie is nieuw'
   block_1:
     display_title: 'Wie is nieuw'
     display_options:
