@@ -4,6 +4,7 @@ status: true
 dependencies: {  }
 id: osha
 label: Osha
+description: null
 provider: ldap_provider
 provider_config:
   status:
@@ -70,4 +71,3 @@ synchronization_modes:
 synchronization_actions:
   create_consumers: create_consumers
   revoke_provider_provisioned: revoke_provider_provisioned
-description: null

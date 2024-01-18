@@ -3,18 +3,7 @@ display:
   default:
     display_title: Sjálfgefið
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-          expose:
-            items_per_page_label: 'Hlutir per síðu'
-            items_per_page_options_all_label: '- Allt -'
+      title: 'Ritstýrt efni'
       fields:
         title:
           label: Title
@@ -32,6 +21,18 @@ display:
           separator: ', '
         operations:
           label: Operations
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       filters:
         title:
           expose:
@@ -42,6 +43,5 @@ display:
         langcode:
           expose:
             label: Language
-      title: 'Ritstýrt efni'
   moderated_content:
     display_title: 'Ritstýrt efni'

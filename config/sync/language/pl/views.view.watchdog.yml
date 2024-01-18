@@ -4,22 +4,7 @@ display:
   default:
     display_title: Domyślny
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Elementów na stronę'
-            items_per_page_options_all_label: '- Wszystko -'
-            offset_label: Przesunięcie
-          tags:
-            previous: ‹‹
-            next: ››
+      title: 'Ostatnie wpisy dziennika'
       fields:
         nothing:
           admin_label: Ikona
@@ -40,6 +25,26 @@ display:
           separator: ', '
         link:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area:
+          admin_label: 'Brak wiadomości w dzienniku.'
+          content: 'Brak wiadomości w dzienniku.'
       filters:
         type:
           expose:
@@ -47,10 +52,5 @@ display:
         severity:
           expose:
             label: Priorytet
-      title: 'Ostatnie wpisy dziennika'
-      empty:
-        area:
-          admin_label: 'Brak wiadomości w dzienniku.'
-          content: 'Brak wiadomości w dzienniku.'
   page:
     display_title: Page

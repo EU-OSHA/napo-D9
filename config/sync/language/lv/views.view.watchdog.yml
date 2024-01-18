@@ -4,19 +4,7 @@ display:
   default:
     display_title: 'Noklusētā vērtība'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_options_all_label: '- Visi -'
-          tags:
-            previous: '"'
-            next: '"'
+      title: 'Jaunākās žurnāla ziņas'
       fields:
         nothing:
           admin_label: Ikona
@@ -32,6 +20,23 @@ display:
           label: Lietotājs
         link:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: '"'
+            previous: '"'
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
+      empty:
+        area:
+          admin_label: 'Žurnālā nav ziņojumu.'
+          content: 'Žurnālā nav ziņojumu.'
       filters:
         type:
           expose:
@@ -39,10 +44,5 @@ display:
         severity:
           expose:
             label: Smagums
-      title: 'Jaunākās žurnāla ziņas'
-      empty:
-        area:
-          admin_label: 'Žurnālā nav ziņojumu.'
-          content: 'Žurnālā nav ziņojumu.'
   page:
     display_title: Page

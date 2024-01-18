@@ -2,21 +2,29 @@ display:
   default:
     display_title: 'Noklusētā vērtība'
     display_options:
+      title: Multivide
+      fields:
+        media_bulk_form:
+          action_title: Darbība
+      pager:
+        options:
+          tags:
+            next: '"'
+            previous: '"'
+          expose:
+            items_per_page_options_all_label: '- Visi -'
       exposed_form:
         options:
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_desc_label: Desc
-      pager:
-        options:
+      empty:
+        area_text_custom:
+          content: 'Nav neviens medijs pieejami.'
+      sorts:
+        created:
           expose:
-            items_per_page_options_all_label: '- Visi -'
-          tags:
-            previous: '"'
-            next: '"'
-      fields:
-        media_bulk_form:
-          action_title: Darbība
+            label: 'Jaunākais vispirms'
       filters:
         status:
           group_info:
@@ -30,14 +38,6 @@ display:
         langcode:
           expose:
             label: Language
-      sorts:
-        created:
-          expose:
-            label: 'Jaunākais vispirms'
-      title: Multivide
-      empty:
-        area_text_custom:
-          content: 'Nav neviens medijs pieejami.'
   page:
     display_title: Page
     display_options:
@@ -50,14 +50,14 @@ display:
           text: Dzēst
   widget:
     display_options:
-      filters:
-        name:
-          expose:
-            label: Nosaukums
       arguments:
         bundle:
           exception:
             title: Visi
+      filters:
+        name:
+          expose:
+            label: Nosaukums
       header:
         display_link_grid:
           label: Grid
@@ -74,14 +74,14 @@ display:
           label: Author
         changed:
           label: Updated
-      filters:
-        name:
-          expose:
-            label: Nosaukums
       arguments:
         bundle:
           exception:
             title: Visi
+      filters:
+        name:
+          expose:
+            label: Nosaukums
       header:
         display_link_grid:
           label: Grid

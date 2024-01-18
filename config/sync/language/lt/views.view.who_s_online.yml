@@ -2,23 +2,23 @@ display:
   default:
     display_title: Numatytasis
     display_options:
+      title: 'Šiuo metu svetainėje yra'
       exposed_form:
         options:
           submit_button: Pritaikyti
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
+      empty:
+        area_text_custom:
+          content: 'Šiuo metu svetainėje 0 narių.'
       filters:
         access:
           expose:
             label: Naudojosi
             description: 'Prisijungusiais laikomi nariai, kurie atliko kokį nors veiksmą ne seniau nei nurodytas laiko tarpas.'
-      title: 'Šiuo metu svetainėje yra'
       header:
         result:
           content: 'Šiuo metu svetainėje @total narių.'
-      empty:
-        area_text_custom:
-          content: 'Šiuo metu svetainėje 0 narių.'
   who_s_online_block:
     display_title: 'Šiuo metu svetainėje yra'
     display_options:

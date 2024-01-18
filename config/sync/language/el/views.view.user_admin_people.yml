@@ -4,22 +4,7 @@ display:
   default:
     display_title: Προεπιλεγμένο
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Είδη ανά σελίδα'
-            items_per_page_options_all_label: '- Όλα -'
-            offset_label: Αντιστάθμιση
+      title: Χρήστες
       fields:
         user_bulk_form:
           label: 'Μαζική ενημέρωση'
@@ -28,8 +13,8 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Ενεργό
             format_custom_false: Αποκλεισμένος
+            format_custom_true: Ενεργό
         roles_target_id:
           label: Ρόλοι
         created:
@@ -40,6 +25,25 @@ display:
           label: Operations
         mail:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Κανένας διαθέσιμος χρήστης.'
       filters:
         combine:
           expose:
@@ -58,10 +62,6 @@ display:
         permission:
           expose:
             label: Άδεια
-      title: Χρήστες
-      empty:
-        area_text_custom:
-          content: 'Κανένας διαθέσιμος χρήστης.'
       use_more_text: περισσότερα
   page_1:
     display_title: Page

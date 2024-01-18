@@ -4,6 +4,7 @@ display:
   default:
     display_title: Προεπιλεγμένο
     display_options:
+      title: 'Ποιοι είναι εδώ'
       exposed_form:
         options:
           submit_button: Εφαρμογή
@@ -11,20 +12,19 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Αυτή τη στιγμή δεν υπάρχουν συνδεδεμένοι χρήστες'
       filters:
         access:
           expose:
             label: 'Τελευταία προσπέλαση'
             description: 'Ένας χρήστης θεωρείται παρών για τόσο χρόνο από την τελευταία φορά που άνοιξε μια σελίδα.'
-      title: 'Ποιοι είναι εδώ'
       header:
         result:
           content: 'Υπάρχουν συνολικά @total χρήστες συνδεδεμένοι.'
-      empty:
-        area_text_custom:
-          content: 'Αυτή τη στιγμή δεν υπάρχουν συνδεδεμένοι χρήστες'
   who_s_online_block:
     display_title: 'Ποιοι είναι εδώ'
     display_options:
-      block_description: 'Ποιοι είναι εδώ'
       display_description: 'Μια λίστα από χρήστες που είναι συνδεδεμένοι αυτή τη στιγμή.'
+      block_description: 'Ποιοι είναι εδώ'

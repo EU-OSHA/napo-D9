@@ -2,16 +2,6 @@ display:
   default:
     display_title: Numatytasis
     display_options:
-      exposed_form:
-        options:
-          submit_button: Pritaikyti
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Vienetų kiekis puslapyje'
-            items_per_page_options_all_label: '- Visos -'
       fields:
         title:
           label: Title
@@ -19,6 +9,16 @@ display:
           label: Author
         changed:
           label: 'Paskutinis atnaujinimas'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
   attachment_1:
     display_title: Prisegtukas
   page_1:

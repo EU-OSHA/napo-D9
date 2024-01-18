@@ -2,19 +2,6 @@ display:
   default:
     display_title: Sjálfgefið
     display_options:
-      exposed_form:
-        options:
-          submit_button: Virkja
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Hlutir per síðu'
-            items_per_page_options_all_label: '- Allt -'
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         title:
           label: Title
@@ -22,6 +9,19 @@ display:
           label: Author
         changed:
           label: 'Síðast uppfært'
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
   attachment_1:
     display_title: Viðhengi
   page_1:

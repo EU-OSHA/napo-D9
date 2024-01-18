@@ -1,11 +1,9 @@
 label: Content
 display:
   default:
+    display_title: 'По подразбиране'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
+      title: Content
       fields:
         title:
           label: Title
@@ -21,6 +19,10 @@ display:
           label: Updated
         operations:
           label: Operations
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
       filters:
         title:
           expose:
@@ -38,12 +40,10 @@ display:
         langcode:
           expose:
             label: Language
-      title: Content
-    display_title: 'По подразбиране'
   page_1:
+    display_title: Page
     display_options:
       menu:
         title: Content
       tab_options:
         title: Content
-    display_title: Page

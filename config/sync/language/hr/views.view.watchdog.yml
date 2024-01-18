@@ -3,18 +3,7 @@ display:
   default:
     display_title: Zadano
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: ‹‹
-            next: ››
+      title: 'Nedavne poruke zapisnika'
       fields:
         nothing:
           admin_label: Ikona
@@ -31,6 +20,22 @@ display:
           separator: ', '
         link:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area:
+          admin_label: 'Nema poruka u zapisniku.'
+          content: 'Nema poruka u zapisniku.'
       filters:
         type:
           expose:
@@ -38,10 +43,5 @@ display:
         severity:
           expose:
             label: Ozbiljnost
-      title: 'Nedavne poruke zapisnika'
-      empty:
-        area:
-          admin_label: 'Nema poruka u zapisniku.'
-          content: 'Nema poruka u zapisniku.'
   page:
     display_title: Page

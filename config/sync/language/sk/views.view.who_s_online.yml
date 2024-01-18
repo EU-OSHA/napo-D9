@@ -2,6 +2,7 @@ display:
   default:
     display_title: Predvolené
     display_options:
+      title: 'Kto je online'
       exposed_form:
         options:
           submit_button: Použiť
@@ -14,7 +15,6 @@ display:
           expose:
             label: 'Posledný prístup'
             description: 'Používateľ sa považuje za online v tomto čase od posledného zobrazenia stránky.'
-      title: 'Kto je online'
   who_s_online_block:
     display_title: 'Kto je online'
     display_options:

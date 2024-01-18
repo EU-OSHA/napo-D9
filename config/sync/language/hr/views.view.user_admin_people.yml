@@ -4,13 +4,7 @@ display:
   default:
     display_title: Zadano
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+      title: Korisnici
       fields:
         user_bulk_form:
           label: 'Skupno osvježenje'
@@ -19,8 +13,8 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Aktivno
             format_custom_false: Blokiran
+            format_custom_true: Aktivno
         roles_target_id:
           label: Uloge
         created:
@@ -31,6 +25,16 @@ display:
           label: Operations
         mail:
           separator: ', '
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nema dostupnih korisnika.'
       filters:
         status:
           group_info:
@@ -46,10 +50,6 @@ display:
         permission:
           expose:
             label: Dopuštenje
-      title: Korisnici
-      empty:
-        area_text_custom:
-          content: 'Nema dostupnih korisnika.'
       use_more_text: više
   page_1:
     display_title: Page

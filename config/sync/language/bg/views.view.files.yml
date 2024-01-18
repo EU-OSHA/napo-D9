@@ -2,10 +2,6 @@ display:
   default:
     display_title: 'По подразбиране'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
       fields:
         filename:
           label: Име
@@ -15,6 +11,10 @@ display:
           label: Status
         changed:
           label: 'Дата на промяна'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
       filters:
         filename:
           expose:

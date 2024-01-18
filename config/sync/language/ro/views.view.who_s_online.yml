@@ -4,6 +4,7 @@ display:
   default:
     display_title: Implicit
     display_options:
+      title: 'Cine e online'
       exposed_form:
         options:
           submit_button: Aplicare
@@ -11,20 +12,19 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'În acest moment sunt 0 utilizatori conectați.'
       filters:
         access:
           expose:
             label: 'Ultima accesare'
             description: 'Un utilizator este considerat online pe această durată de timp după ultima accesare a unei pagini din sit.'
-      title: 'Cine e online'
       header:
         result:
           content: 'În acest moment sunt @total utilizatori conectați.'
-      empty:
-        area_text_custom:
-          content: 'În acest moment sunt 0 utilizatori conectați.'
   who_s_online_block:
     display_title: 'Cine e online'
     display_options:
-      block_description: 'Cine e online'
       display_description: 'O listă de utilizatori care sunt, în prezent, autentificați.'
+      block_description: 'Cine e online'

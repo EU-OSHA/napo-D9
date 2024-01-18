@@ -3,13 +3,13 @@ display:
   default:
     display_title: 'Noklusētā vērtība'
     display_options:
+      title: 'Jauni lietotāji'
       exposed_form:
         options:
           submit_button: Apstiprināt
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_desc_label: Desc
-      title: 'Jauni lietotāji'
   block_1:
     display_title: 'Jauni lietotāji'
     display_options:

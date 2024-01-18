@@ -4,6 +4,7 @@ display:
   default:
     display_title: Alapértelmezés
     display_options:
+      title: 'Jelenlévő felhasználók'
       exposed_form:
         options:
           submit_button: Alkalmaz
@@ -11,20 +12,19 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Jelenleg 0 felhasználó van bejelentkezve.'
       filters:
         access:
           expose:
             label: 'Utolsó tevékenység'
             description: 'Meghatározza, hogy mennyi ideig kell egy felhasználót a webhelyen lévőnek tekinteni, miután egy oldalt megtekintett.'
-      title: 'Jelenlévő felhasználók'
       header:
         result:
           content: 'Jelenleg @total felhasználó van online.'
-      empty:
-        area_text_custom:
-          content: 'Jelenleg 0 felhasználó van bejelentkezve.'
   who_s_online_block:
     display_title: 'Jelenlévő felhasználók'
     display_options:
-      block_description: 'Jelenlévő felhasználók'
       display_description: 'Egy lista a jelenleg bejelentkezett felhasználókról.'
+      block_description: 'Jelenlévő felhasználók'

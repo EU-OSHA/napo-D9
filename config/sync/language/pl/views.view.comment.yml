@@ -4,24 +4,7 @@ display:
   default:
     display_title: Domyślny
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ poprzednia'
-            next: 'następna ›'
-            first: '« pierwsza'
-            last: 'ostatnia »'
-          expose:
-            items_per_page_label: 'Elementów na stronę'
-            items_per_page_options_all_label: '- Wszystko -'
-            offset_label: Przesunięcie
+      title: Komentarze
       fields:
         comment_bulk_form:
           action_title: Akcja
@@ -43,6 +26,27 @@ display:
           label: Operations
         name_1:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'następna ›'
+            previous: '‹ poprzednia'
+            first: '« pierwsza'
+            last: 'ostatnia »'
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Brak dostępnych komentarzy.'
       filters:
         subject:
           expose:
@@ -53,35 +57,17 @@ display:
         langcode:
           expose:
             label: Language
-      title: Komentarze
-      empty:
-        area_text_custom:
-          content: 'Brak dostępnych komentarzy.'
       use_more_text: więcej
   page_published:
     display_title: 'Opublikowane komentarze'
     display_options:
+      display_description: 'Lista zatwierdzonych komentarzy.'
       menu:
         title: Komentarze
         description: 'Komentarze, które zostały opublikowane'
-      display_description: 'Lista zatwierdzonych komentarzy.'
   page_unapproved:
     display_title: 'Niezatwierdzone komentarze'
     display_options:
-      menu:
-        title: 'Niezatwierdzone komentarze'
-        description: 'Komentarze, które nie zostały zatwierdzone'
-      display_description: 'Lista niezatwierdzonych komentarzy.'
-      filters:
-        subject:
-          expose:
-            label: Tytuł
-        combine:
-          expose:
-            label: 'Nazwa Autora'
-        langcode:
-          expose:
-            label: Language
       fields:
         comment_bulk_form:
           action_title: Akcja
@@ -103,3 +89,17 @@ display:
           label: Operations
         name_1:
           separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Tytuł
+        combine:
+          expose:
+            label: 'Nazwa Autora'
+        langcode:
+          expose:
+            label: Language
+      display_description: 'Lista niezatwierdzonych komentarzy.'
+      menu:
+        title: 'Niezatwierdzone komentarze'
+        description: 'Komentarze, które nie zostały zatwierdzone'

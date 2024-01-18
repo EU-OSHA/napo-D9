@@ -3,16 +3,7 @@ display:
   default:
     display_title: Numatytasis
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Vienetų kiekis puslapyje'
-            items_per_page_options_all_label: '- Visos -'
+      title: Media
       fields:
         media_bulk_form:
           action_title: Veiksmas
@@ -25,12 +16,25 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Published
             format_custom_false: Unpublished
+            format_custom_true: Published
         changed:
           label: Updated
         operations:
           label: Operations
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      empty:
+        area_text_custom:
+          content: 'Nėra galimos media.'
       filters:
         bundle:
           expose:
@@ -48,10 +52,6 @@ display:
         langcode:
           expose:
             label: Language
-      title: Media
-      empty:
-        area_text_custom:
-          content: 'Nėra galimos media.'
   media_page_list:
     display_title: Media
     display_options:

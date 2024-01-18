@@ -2,24 +2,29 @@ display:
   default:
     display_title: Varsayılan
     display_options:
+      title: Medya
+      fields:
+        media_bulk_form:
+          action_title: Eylem
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Sayfa başına öğe sayısı'
+            items_per_page_options_all_label: '- Tümü -'
+            offset_label: 'Başlangıç değeri'
       exposed_form:
         options:
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
+      sorts:
+        created:
           expose:
-            items_per_page_label: 'Sayfa başına öğe sayısı'
-            items_per_page_options_all_label: '- Tümü -'
-            offset_label: 'Başlangıç değeri'
-          tags:
-            previous: ‹‹
-            next: ››
-      fields:
-        media_bulk_form:
-          action_title: Eylem
+            label: 'Önce en yeniler'
       filters:
         status:
           expose:
@@ -42,11 +47,6 @@ display:
         langcode:
           expose:
             label: Language
-      sorts:
-        created:
-          expose:
-            label: 'Önce en yeniler'
-      title: Medya
   page:
     display_title: Page
     display_options:
@@ -62,14 +62,14 @@ display:
   widget:
     display_title: 'Arayüz kontrolu (widget)'
     display_options:
-      filters:
-        name:
-          expose:
-            label: İsim
       arguments:
         bundle:
           exception:
             title: Tümü
+      filters:
+        name:
+          expose:
+            label: İsim
       header:
         display_link_grid:
           label: Izgara
@@ -86,14 +86,14 @@ display:
           label: Author
         changed:
           label: Updated
-      filters:
-        name:
-          expose:
-            label: İsim
       arguments:
         bundle:
           exception:
             title: Tümü
+      filters:
+        name:
+          expose:
+            label: İsim
       header:
         display_link_grid:
           label: Izgara

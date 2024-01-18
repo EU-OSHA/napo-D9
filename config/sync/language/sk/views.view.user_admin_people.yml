@@ -4,24 +4,7 @@ display:
   default:
     display_title: Predvolené
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page_label: 'Položiek na stránku'
-            items_per_page_options_all_label: '- Všetko -'
-            offset_label: 'Zobraziť od'
+      title: Používatelia
       fields:
         user_bulk_form:
           label: 'Hromadná aktualizácia'
@@ -30,8 +13,8 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Aktívny
             format_custom_false: Blokovaný
+            format_custom_true: Aktívny
         roles_target_id:
           label: 'Kategórie používateľov'
         created:
@@ -42,6 +25,27 @@ display:
           label: Operations
         mail:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Položiek na stránku'
+            items_per_page_options_all_label: '- Všetko -'
+            offset_label: 'Zobraziť od'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nie sú dostupný žiadni používatelia.'
       filters:
         combine:
           expose:
@@ -60,10 +64,6 @@ display:
         permission:
           expose:
             label: Oprávnenie
-      title: Používatelia
-      empty:
-        area_text_custom:
-          content: 'Nie sú dostupný žiadni používatelia.'
       use_more_text: viac
   page_1:
     display_title: Page

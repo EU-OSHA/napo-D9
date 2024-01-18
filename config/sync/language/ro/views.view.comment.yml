@@ -3,24 +3,7 @@ display:
   default:
     display_title: Implicit
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ anterior'
-            next: 'următor ›'
-            first: '« primul'
-            last: 'ultima »'
-          expose:
-            items_per_page_label: 'Elemente pe pagină'
-            items_per_page_options_all_label: '- Toate -'
-            offset_label: Decalaj
+      title: Comentarii
       fields:
         comment_bulk_form:
           action_title: Acțiune
@@ -42,6 +25,27 @@ display:
           label: Operations
         name_1:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'următor ›'
+            previous: '‹ anterior'
+            first: '« primul'
+            last: 'ultima »'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nu sunt comentarii disponibile.'
       filters:
         subject:
           expose:
@@ -52,10 +56,6 @@ display:
         langcode:
           expose:
             label: Language
-      title: Comentarii
-      empty:
-        area_text_custom:
-          content: 'Nu sunt comentarii disponibile.'
       use_more_text: 'mai multe'
   page_published:
     display_title: 'Comentarii publicate'
@@ -65,15 +65,6 @@ display:
   page_unapproved:
     display_title: 'Comentarii neaprobate'
     display_options:
-      menu:
-        title: 'Comentarii neaprobate'
-      filters:
-        subject:
-          expose:
-            label: Subiect
-        langcode:
-          expose:
-            label: Language
       fields:
         comment_bulk_form:
           action_title: Acțiune
@@ -95,3 +86,12 @@ display:
           label: Operations
         name_1:
           separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Subiect
+        langcode:
+          expose:
+            label: Language
+      menu:
+        title: 'Comentarii neaprobate'
