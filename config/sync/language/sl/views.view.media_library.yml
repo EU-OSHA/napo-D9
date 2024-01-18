@@ -2,12 +2,12 @@ display:
   default:
     display_title: Privzeto
     display_options:
-      exposed_form:
-        options:
-          reset_button_label: Reset
       fields:
         media_bulk_form:
           action_title: Akcija
+      exposed_form:
+        options:
+          reset_button_label: Reset
       filters:
         status:
           group_info:
@@ -34,14 +34,14 @@ display:
   widget:
     display_title: Gradnik
     display_options:
-      filters:
-        name:
-          expose:
-            label: Ime
       arguments:
         bundle:
           exception:
             title: Vsi
+      filters:
+        name:
+          expose:
+            label: Ime
       header:
         display_link_table:
           label: Tabela
@@ -54,14 +54,14 @@ display:
           label: Author
         changed:
           label: Updated
-      filters:
-        name:
-          expose:
-            label: Ime
       arguments:
         bundle:
           exception:
             title: Vsi
+      filters:
+        name:
+          expose:
+            label: Ime
       header:
         display_link_table:
           label: Tabela

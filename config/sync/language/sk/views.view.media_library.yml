@@ -2,24 +2,28 @@ display:
   default:
     display_title: Predvolené
     display_options:
+      title: Médiá
+      fields:
+        media_bulk_form:
+          action_title: Akcia
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Položiek na stránku'
+            items_per_page_options_all_label: '- Všetko -'
+            offset_label: 'Zobraziť od'
       exposed_form:
         options:
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Položiek na stránku'
-            items_per_page_options_all_label: '- Všetko -'
-            offset_label: 'Zobraziť od'
-          tags:
-            previous: ‹‹
-            next: ››
-      fields:
-        media_bulk_form:
-          action_title: Akcia
+      empty:
+        area_text_custom:
+          content: 'Žiadne médiá nie sú k dispozícii.'
       filters:
         status:
           group_info:
@@ -35,10 +39,6 @@ display:
         langcode:
           expose:
             label: Language
-      title: Médiá
-      empty:
-        area_text_custom:
-          content: 'Žiadne médiá nie sú k dispozícii.'
   page:
     display_title: Page
     display_options:
@@ -54,14 +54,14 @@ display:
   widget:
     display_title: Widget
     display_options:
-      filters:
-        name:
-          expose:
-            label: Názov
       arguments:
         bundle:
           exception:
             title: Všetko
+      filters:
+        name:
+          expose:
+            label: Názov
       header:
         display_link_grid:
           label: Mriežka
@@ -78,14 +78,14 @@ display:
           label: Author
         changed:
           label: Updated
-      filters:
-        name:
-          expose:
-            label: Názov
       arguments:
         bundle:
           exception:
             title: Všetko
+      filters:
+        name:
+          expose:
+            label: Názov
       header:
         display_link_grid:
           label: Mriežka

@@ -2,6 +2,7 @@ display:
   default:
     display_title: Privzeto
     display_options:
+      title: 'Kdo je prijavljen'
       exposed_form:
         options:
           reset_button_label: Reset
@@ -10,7 +11,6 @@ display:
           expose:
             label: 'Zadnji dostop'
             description: 'Uporabnik se smatra prijavljen še toliko časa po zadnjem ogledu strani.'
-      title: 'Kdo je prijavljen'
   who_s_online_block:
     display_title: 'Kdo je prijavljen'
     display_options:

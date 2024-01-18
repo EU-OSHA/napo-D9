@@ -4,22 +4,7 @@ display:
   default:
     display_title: Predvolené
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Položiek na stránku'
-            items_per_page_options_all_label: '- Všetko -'
-            offset_label: 'Zobraziť od'
-          tags:
-            previous: ‹‹
-            next: ››
+      title: 'Nedávne záznamy logu'
       fields:
         nothing:
           admin_label: Ikona
@@ -36,6 +21,26 @@ display:
           separator: ', '
         link:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Položiek na stránku'
+            items_per_page_options_all_label: '- Všetko -'
+            offset_label: 'Zobraziť od'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area:
+          admin_label: 'Nie sú k dispozícii žiadne správy v zázname.'
+          content: 'Nie sú k dispozícii žiadne správy v zázname.'
       filters:
         type:
           expose:
@@ -43,10 +48,5 @@ display:
         severity:
           expose:
             label: Závažnosť
-      title: 'Nedávne záznamy logu'
-      empty:
-        area:
-          admin_label: 'Nie sú k dispozícii žiadne správy v zázname.'
-          content: 'Nie sú k dispozícii žiadne správy v zázname.'
   page:
     display_title: Page

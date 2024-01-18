@@ -2,10 +2,6 @@ display:
   default:
     display_title: Privzeto
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
       fields:
         media_bulk_form:
           action_title: Akcija
@@ -21,6 +17,10 @@ display:
           label: Updated
         operations:
           label: Operations
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
       filters:
         bundle:
           expose:

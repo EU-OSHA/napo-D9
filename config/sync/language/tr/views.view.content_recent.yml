@@ -4,6 +4,10 @@ display:
   default:
     display_title: Varsayılan
     display_options:
+      title: 'Güncel içerik'
+      fields:
+        changed:
+          separator: ', '
       exposed_form:
         options:
           submit_button: Uygula
@@ -11,10 +15,6 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      fields:
-        changed:
-          separator: ', '
-      title: 'Güncel içerik'
       empty:
         area_text_custom:
           content: 'No content available.'

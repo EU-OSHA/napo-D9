@@ -4,6 +4,7 @@ display:
   default:
     display_title: Varsayılan
     display_options:
+      title: 'Kimler çevrim içi'
       exposed_form:
         options:
           submit_button: Uygula
@@ -11,20 +12,19 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Şu anda 0 kullanıcı çevrimiçi.'
       filters:
         access:
           expose:
             label: 'Son erişim'
             description: 'Bir kullanıcı son sayfa ziyaretinden itibaren bu kadar süre boyunca çevrim içi olarak kabul edilir.'
-      title: 'Kimler çevrim içi'
       header:
         result:
           content: 'Şu anda @total kullanıcı çevrimiçi.'
-      empty:
-        area_text_custom:
-          content: 'Şu anda 0 kullanıcı çevrimiçi.'
   who_s_online_block:
     display_title: 'Kimler çevrim içi'
     display_options:
-      block_description: 'Kimler çevrim içi'
       display_description: 'Şu anda oturum açmış kullanıcıların listesi.'
+      block_description: 'Kimler çevrim içi'
