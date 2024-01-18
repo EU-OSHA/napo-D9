@@ -4,6 +4,39 @@ display:
   default:
     display_title: 'По умолчанию'
     display_options:
+      title: Комментарии
+      fields:
+        comment_bulk_form:
+          action_title: Действие
+        subject:
+          label: Тема
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          label: Author
+          separator: ', '
+        entity_id:
+          label: Опубликовано
+          separator: ', '
+        changed:
+          label: Updated
+          separator: ', '
+        operations:
+          label: Operations
+        name_1:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'следующая ›'
+            previous: '‹ предыдущая'
+            first: '« первая'
+            last: 'последняя »'
+          expose:
+            items_per_page_label: 'Элементов на страницу'
+            items_per_page_options_all_label: '- Все -'
+            offset_label: Пропустить
       exposed_form:
         options:
           submit_button: Filter
@@ -11,38 +44,9 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ предыдущая'
-            next: 'следующая ›'
-            first: '« первая'
-            last: 'последняя »'
-          expose:
-            items_per_page_label: 'Элементов на страницу'
-            items_per_page_options_all_label: '- Все -'
-            offset_label: Пропустить
-      fields:
-        comment_bulk_form:
-          action_title: Действие
-        subject:
-          label: Тема
-          separator: ', '
-        uid:
-          separator: ', '
-        name:
-          label: Author
-          separator: ', '
-        entity_id:
-          label: Опубликовано
-          separator: ', '
-        changed:
-          label: Updated
-          separator: ', '
-        operations:
-          label: Operations
-        name_1:
-          separator: ', '
+      empty:
+        area_text_custom:
+          content: 'Комментарии отсутствуют.'
       filters:
         subject:
           expose:
@@ -53,35 +57,17 @@ display:
         langcode:
           expose:
             label: Language
-      title: Комментарии
-      empty:
-        area_text_custom:
-          content: 'Комментарии отсутствуют.'
       use_more_text: ещё
   page_published:
     display_title: 'Опубликованные комментарии'
     display_options:
+      display_description: 'Список утверждённых комментариев.'
       menu:
         title: Комментарии
         description: 'Комментарии опубликованы'
-      display_description: 'Список утверждённых комментариев.'
   page_unapproved:
     display_title: 'Неодобренные комментарии'
     display_options:
-      menu:
-        title: 'Неодобренные комментарии'
-        description: 'Комментарии не одобрены'
-      display_description: 'Список неутверждённых комментариев.'
-      filters:
-        subject:
-          expose:
-            label: Тема
-        combine:
-          expose:
-            label: 'Имя автора'
-        langcode:
-          expose:
-            label: Language
       fields:
         comment_bulk_form:
           action_title: Действие
@@ -103,3 +89,17 @@ display:
           label: Operations
         name_1:
           separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Тема
+        combine:
+          expose:
+            label: 'Имя автора'
+        langcode:
+          expose:
+            label: Language
+      display_description: 'Список неутверждённых комментариев.'
+      menu:
+        title: 'Неодобренные комментарии'
+        description: 'Комментарии не одобрены'
