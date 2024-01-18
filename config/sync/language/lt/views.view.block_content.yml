@@ -3,16 +3,7 @@ display:
   default:
     display_title: Numatytasis
     display_options:
-      exposed_form:
-        options:
-          submit_button: Pritaikyti
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Vienetų kiekis puslapyje'
-            items_per_page_options_all_label: '- Visos -'
+      title: 'Saviti blokai'
       fields:
         info:
           label: 'Bloko aprašymas'
@@ -22,6 +13,16 @@ display:
           label: Updated
         operations:
           label: Operations
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       filters:
         info:
           expose:
@@ -29,7 +30,6 @@ display:
         type:
           expose:
             label: 'Bloko tipas'
-      title: 'Saviti blokai'
   page_1:
     display_title: Page
     display_options:

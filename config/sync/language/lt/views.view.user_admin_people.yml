@@ -4,24 +4,15 @@ display:
   default:
     display_title: Numatytasis
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Vienetų kiekis puslapyje'
-            items_per_page_options_all_label: '- Visos -'
+      title: Žmonės
       fields:
         name:
           label: 'Nario vardas'
         status:
           label: Status
           settings:
-            format_custom_true: Aktyvus
             format_custom_false: Užblokuotas
+            format_custom_true: Aktyvus
         roles_target_id:
           label: Rolės
         created:
@@ -30,6 +21,19 @@ display:
           label: Naudojosi
         operations:
           label: Operations
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      empty:
+        area_text_custom:
+          content: 'Nėra žmonių'
       filters:
         combine:
           expose:
@@ -48,10 +52,6 @@ display:
         permission:
           expose:
             label: Teisė
-      title: Žmonės
-      empty:
-        area_text_custom:
-          content: 'Nėra žmonių'
       use_more_text: daugiau
   page_1:
     display_title: Page
