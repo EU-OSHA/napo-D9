@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: UU4O0O7HBps8GkqpeZWeDF8nYdKkhMXJC7QScWXjVMA
 site_id: '11'
 url_http: 'http://piwik.osha.europa.eu/piwik/'
 url_https: 'https://piwik.osha.europa.eu/piwik/'
@@ -23,30 +25,30 @@ privacy:
 custom:
   variable:
     1:
-      name: ''
-      value: ''
-      scope: visit
       slot: 1
+      name: ''
+      value: ''
+      scope: visit
     2:
-      name: ''
-      value: ''
-      scope: visit
       slot: 2
+      name: ''
+      value: ''
+      scope: visit
     3:
-      name: ''
-      value: ''
-      scope: visit
       slot: 3
+      name: ''
+      value: ''
+      scope: visit
     4:
-      name: ''
-      value: ''
-      scope: visit
       slot: 4
-    5:
       name: ''
       value: ''
       scope: visit
+    5:
       slot: 5
+      name: ''
+      value: ''
+      scope: visit
 codesnippet:
   before: ''
   after: ''
@@ -54,5 +56,3 @@ translation_set: false
 cache: false
 page_title_hierarchy: false
 page_title_hierarchy_exclude_home: true
-_core:
-  default_config_hash: UU4O0O7HBps8GkqpeZWeDF8nYdKkhMXJC7QScWXjVMA
