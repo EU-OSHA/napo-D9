@@ -4,6 +4,7 @@ display:
   default:
     display_title: Výchozí
     display_options:
+      title: 'Kdo je online'
       exposed_form:
         options:
           submit_button: Použít
@@ -16,7 +17,6 @@ display:
           expose:
             label: 'Poslední přístup'
             description: 'Uživatel se považuje za online po tuto dobu od posledního zobrazení stránky.'
-      title: 'Kdo je online'
       header:
         result:
           content: 'Počet právě přihlášených uživatelů: @total'
