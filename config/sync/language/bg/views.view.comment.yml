@@ -3,17 +3,7 @@ display:
   default:
     display_title: 'По подразбиране'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-      pager:
-        options:
-          tags:
-            previous: '‹ предишна'
-            next: 'следваща ›'
-            first: '« първа'
-            last: 'последна »'
+      title: Коментари
       fields:
         comment_bulk_form:
           action_title: Действие
@@ -27,6 +17,20 @@ display:
           label: Updated
         operations:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: 'следваща ›'
+            previous: '‹ предишна'
+            first: '« първа'
+            last: 'последна »'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+      empty:
+        area_text_custom:
+          content: 'Няма достъпни коментари.'
       filters:
         subject:
           expose:
@@ -34,10 +38,6 @@ display:
         langcode:
           expose:
             label: Language
-      title: Коментари
-      empty:
-        area_text_custom:
-          content: 'Няма достъпни коментари.'
       use_more_text: още
   page_published:
     display_title: 'Публикувани коментари'
@@ -46,13 +46,6 @@ display:
         title: Коментари
   page_unapproved:
     display_options:
-      filters:
-        subject:
-          expose:
-            label: Тема
-        langcode:
-          expose:
-            label: Language
       fields:
         comment_bulk_form:
           action_title: Действие
@@ -66,3 +59,10 @@ display:
           label: Updated
         operations:
           label: Operations
+      filters:
+        subject:
+          expose:
+            label: Тема
+        langcode:
+          expose:
+            label: Language

@@ -3,18 +3,15 @@ display:
   default:
     display_title: 'По подразбиране'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
+      title: Потребители
       fields:
         name:
           label: 'Потребителско име'
         status:
           label: Status
           settings:
-            format_custom_true: Активен
             format_custom_false: Блокиран
+            format_custom_true: Активен
         roles_target_id:
           label: Роли
         created:
@@ -23,6 +20,10 @@ display:
           label: 'Последен достъп'
         operations:
           label: Operations
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
       filters:
         status:
           group_info:
@@ -38,7 +39,6 @@ display:
         permission:
           expose:
             label: Разрешение
-      title: Потребители
       use_more_text: още
   page_1:
     display_title: Page
