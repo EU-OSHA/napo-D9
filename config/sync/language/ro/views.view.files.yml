@@ -4,22 +4,7 @@ display:
   default:
     display_title: Implicit
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Elemente pe pagină'
-            items_per_page_options_all_label: '- Toate -'
-            offset_label: Decalaj
+      title: Fişiere
       fields:
         fid:
           label: Fid
@@ -41,6 +26,25 @@ display:
           label: 'Data modificării'
         count:
           label: 'Utilizat în'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nu sunt fișiere disponibile.'
       filters:
         filename:
           expose:
@@ -51,10 +55,6 @@ display:
         status:
           expose:
             label: Status
-      title: Fişiere
-      empty:
-        area_text_custom:
-          content: 'Nu sunt fișiere disponibile.'
   page_1:
     display_title: 'Privire de ansamblu asupra fișierelor'
     display_options:
@@ -63,15 +63,7 @@ display:
   page_2:
     display_title: 'Întrebuințarea fișierului'
     display_options:
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Elemente pe pagină'
-            items_per_page_options_all_label: '- Toate -'
-            offset_label: Decalaj
+      title: 'Întrebuințarea fișierului'
       fields:
         entity_label:
           label: Entitate
@@ -82,7 +74,15 @@ display:
         count:
           label: 'Număr de utilizări'
           format_plural_string: !!binary MQNAY291bnQ=
-      title: 'Întrebuințarea fișierului'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
       arguments:
         fid:
           exception:
