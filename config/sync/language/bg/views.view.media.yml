@@ -3,10 +3,7 @@ display:
   default:
     display_title: 'По подразбиране'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
+      title: Медия
       fields:
         media_bulk_form:
           action_title: Действие
@@ -24,6 +21,10 @@ display:
           label: Updated
         operations:
           label: Operations
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
       filters:
         bundle:
           expose:
@@ -36,7 +37,6 @@ display:
         langcode:
           expose:
             label: Language
-      title: Медия
   media_page_list:
     display_title: Медия
     display_options:

@@ -4,10 +4,7 @@ display:
   default:
     display_title: 'По подразбиране'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
+      title: 'Последни лог записи'
       fields:
         severity:
           label: Строгост
@@ -21,6 +18,14 @@ display:
           label: Потребител
         link:
           label: Operations
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+      empty:
+        area:
+          admin_label: 'Няма лог. съобщения'
+          content: 'Няма лог. съобщения'
       filters:
         type:
           expose:
@@ -28,10 +33,5 @@ display:
         severity:
           expose:
             label: Строгост
-      title: 'Последни лог записи'
-      empty:
-        area:
-          admin_label: 'Няма лог. съобщения'
-          content: 'Няма лог. съобщения'
   page:
     display_title: Page

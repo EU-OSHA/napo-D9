@@ -1,13 +1,14 @@
 display:
   default:
-    display_title: 'По подразбиране'
     display_options:
       exposed_form:
         options:
           submit_button: Търси
           reset_button_label: Reset
-      empty:
-        title:
-          title: 'Welcome to [site:name]'
   page_1:
-    display_title: Page
+    display_options:
+      menu:
+        title: Списък
+      fields:
+        filename_1:
+          label: 'Име на файла'

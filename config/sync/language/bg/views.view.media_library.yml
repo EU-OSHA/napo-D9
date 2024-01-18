@@ -2,12 +2,13 @@ display:
   default:
     display_title: 'По подразбиране'
     display_options:
-      exposed_form:
-        options:
-          reset_button_label: Reset
+      title: Медия
       fields:
         media_bulk_form:
           action_title: Действие
+      exposed_form:
+        options:
+          reset_button_label: Reset
       filters:
         status:
           group_info:
@@ -21,7 +22,6 @@ display:
         langcode:
           expose:
             label: Language
-      title: Медия
   page:
     display_title: Page
     display_options:
@@ -34,14 +34,14 @@ display:
           text: Изтриване
   widget:
     display_options:
-      filters:
-        name:
-          expose:
-            label: Име
       arguments:
         bundle:
           exception:
             title: Всички
+      filters:
+        name:
+          expose:
+            label: Име
       header:
         display_link_table:
           label: Таблица
@@ -56,14 +56,14 @@ display:
           label: Author
         changed:
           label: Updated
-      filters:
-        name:
-          expose:
-            label: Име
       arguments:
         bundle:
           exception:
             title: Всички
+      filters:
+        name:
+          expose:
+            label: Име
       header:
         display_link_table:
           label: Таблица
