@@ -4,22 +4,7 @@ display:
   default:
     display_title: Domyślny
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Elementów na stronę'
-            items_per_page_options_all_label: '- Wszystko -'
-            offset_label: Przesunięcie
+      title: Pliki
       fields:
         fid:
           label: Fid
@@ -41,6 +26,25 @@ display:
           label: 'Data modyfikacji'
         count:
           label: 'Użyte w'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Brak dostępnych plików.'
       filters:
         filename:
           expose:
@@ -51,10 +55,6 @@ display:
         status:
           expose:
             label: Status
-      title: Pliki
-      empty:
-        area_text_custom:
-          content: 'Brak dostępnych plików.'
   page_1:
     display_title: 'Przegląd plików'
     display_options:
@@ -63,15 +63,7 @@ display:
   page_2:
     display_title: 'Wykorzystanie plików'
     display_options:
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Elementów na stronę'
-            items_per_page_options_all_label: '- Wszystko -'
-            offset_label: Przesunięcie
+      title: 'Wykorzystanie plików'
       fields:
         entity_label:
           label: Encja
@@ -82,7 +74,15 @@ display:
         count:
           label: 'Ilość wystąpień'
           format_plural_string: !!binary MQNAY291bnQDQGNvdW50
-      title: 'Wykorzystanie plików'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
       arguments:
         fid:
           exception:

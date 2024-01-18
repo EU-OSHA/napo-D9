@@ -4,6 +4,19 @@ display:
   default:
     display_title: Standaard
     display_options:
+      title: Media
+      fields:
+        media_bulk_form:
+          action_title: Actie
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
       exposed_form:
         options:
           submit_button: 'Filters toepassen'
@@ -11,18 +24,19 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
+      empty:
+        area_text_custom:
+          content: 'Geen media beschikbaar.'
+      sorts:
+        created:
           expose:
-            items_per_page_label: 'Items per pagina'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Startpunt
-          tags:
-            previous: ‹‹
-            next: ››
-      fields:
-        media_bulk_form:
-          action_title: Actie
+            label: 'Nieuwste eerst'
+        name:
+          expose:
+            label: 'Naam (A-Z)'
+        name_1:
+          expose:
+            label: 'Naam (Z-A)'
       filters:
         status:
           expose:
@@ -45,20 +59,6 @@ display:
         langcode:
           expose:
             label: Language
-      sorts:
-        created:
-          expose:
-            label: 'Nieuwste eerst'
-        name:
-          expose:
-            label: 'Naam (A-Z)'
-        name_1:
-          expose:
-            label: 'Naam (Z-A)'
-      title: Media
-      empty:
-        area_text_custom:
-          content: 'Geen media beschikbaar.'
   page:
     display_title: Page
     display_options:
@@ -80,14 +80,14 @@ display:
   widget:
     display_title: Widget
     display_options:
-      filters:
-        name:
-          expose:
-            label: Naam
       arguments:
         bundle:
           exception:
             title: Alle
+      filters:
+        name:
+          expose:
+            label: Naam
       header:
         display_link_grid:
           label: Raster
@@ -105,14 +105,14 @@ display:
           label: Author
         changed:
           label: Updated
-      filters:
-        name:
-          expose:
-            label: Naam
       arguments:
         bundle:
           exception:
             title: Alle
+      filters:
+        name:
+          expose:
+            label: Naam
       header:
         display_link_grid:
           label: Raster
