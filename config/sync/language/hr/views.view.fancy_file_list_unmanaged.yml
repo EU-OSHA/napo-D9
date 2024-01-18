@@ -1,13 +1,7 @@
-label: 'Pojam taksonomije'
 display:
   default:
-    display_title: Zadano
+    display_title: Master
     display_options:
-      pager:
-        options:
-          tags:
-            next: ››
-            previous: ‹‹
       exposed_form:
         options:
           submit_button: Primjeni
@@ -15,11 +9,17 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      arguments:
-        tid:
-          exception:
-            title: Svi
-  feed_1:
-    display_title: Feed
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        unfid:
+          label: ID
+          separator: ', '
+        path:
+          label: Path
+          separator: ', '
   page_1:
     display_title: Page

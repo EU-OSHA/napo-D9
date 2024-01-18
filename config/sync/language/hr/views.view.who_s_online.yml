@@ -2,6 +2,7 @@ display:
   default:
     display_title: Zadano
     display_options:
+      title: 'Tko je umrežen'
       exposed_form:
         options:
           submit_button: Primjeni
@@ -14,7 +15,6 @@ display:
           expose:
             label: 'Zadnji pristup'
             description: 'Vrijeme u kojem se korisnik smatra prijavljenim i nakon što je napustio lokaciju.'
-      title: 'Tko je umrežen'
   who_s_online_block:
     display_title: 'Tko je umrežen'
     display_options:

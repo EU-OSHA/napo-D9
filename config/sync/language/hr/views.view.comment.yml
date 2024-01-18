@@ -3,20 +3,7 @@ display:
   default:
     display_title: Zadano
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ prethodna'
-            next: 'sljedeća ›'
-            first: '« prva'
-            last: 'posljednja »'
+      title: Komentari
       fields:
         comment_bulk_form:
           action_title: Akcija
@@ -38,6 +25,23 @@ display:
           label: Operations
         name_1:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'sljedeća ›'
+            previous: '‹ prethodna'
+            first: '« prva'
+            last: 'posljednja »'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nema dostupnih komentara.'
       filters:
         subject:
           expose:
@@ -45,10 +49,6 @@ display:
         langcode:
           expose:
             label: Language
-      title: Komentari
-      empty:
-        area_text_custom:
-          content: 'Nema dostupnih komentara.'
       use_more_text: više
   page_published:
     display_title: 'Objavljeni komentari'
@@ -58,15 +58,6 @@ display:
   page_unapproved:
     display_title: 'Neodobreni komentari'
     display_options:
-      menu:
-        title: 'Neodobreni komentari'
-      filters:
-        subject:
-          expose:
-            label: Naziv
-        langcode:
-          expose:
-            label: Language
       fields:
         comment_bulk_form:
           action_title: Akcija
@@ -88,3 +79,12 @@ display:
           label: Operations
         name_1:
           separator: ', '
+      filters:
+        subject:
+          expose:
+            label: Naziv
+        langcode:
+          expose:
+            label: Language
+      menu:
+        title: 'Neodobreni komentari'
