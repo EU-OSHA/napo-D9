@@ -1,11 +1,11 @@
-uuid: ec8ad84f-4746-4eb7-9cf3-7dda2a8c1f95
+uuid: 713e4a4d-2359-4a71-9dab-43a4714c468e
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_napo_film
-field_name: field_napo_film
+id: node.field_thumbnails
+field_name: field_thumbnails
 entity_type: node
 type: entity_reference
 settings:

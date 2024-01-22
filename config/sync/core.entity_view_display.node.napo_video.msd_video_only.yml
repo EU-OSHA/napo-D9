@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.napo_video.field_parent_title
     - field.field.node.napo_video.field_publication_date
     - field.field.node.napo_video.field_tags
+    - field.field.node.napo_video.field_thumbnails
     - field.field.node.napo_video.field_video
     - field.field.node.napo_video.field_video_type
     - field.field.node.napo_video.field_youtube
@@ -56,6 +57,7 @@ hidden:
   field_parent_title: true
   field_publication_date: true
   field_tags: true
+  field_thumbnails: true
   field_video_type: true
   field_youtube: true
   langcode: true

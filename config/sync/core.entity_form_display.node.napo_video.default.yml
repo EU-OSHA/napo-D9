@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.napo_video.field_parent_title
     - field.field.node.napo_video.field_publication_date
     - field.field.node.napo_video.field_tags
+    - field.field.node.napo_video.field_thumbnails
     - field.field.node.napo_video.field_video
     - field.field.node.napo_video.field_video_type
     - field.field.node.napo_video.field_youtube
@@ -156,6 +157,16 @@ content:
             effect: show
             effect_options: {  }
             selector: ''
+  field_thumbnails:
+    type: entity_reference_autocomplete
+    weight: 15
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 0
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_video:
     type: media_library_widget
     weight: 6

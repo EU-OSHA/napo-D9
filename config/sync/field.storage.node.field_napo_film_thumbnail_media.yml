@@ -1,18 +1,19 @@
-uuid: ec8ad84f-4746-4eb7-9cf3-7dda2a8c1f95
+uuid: dd8bdb01-07fb-4dfa-b2a8-f3a191a8ba98
 langcode: en
 status: true
 dependencies:
   module:
+    - media
     - node
-id: node.field_napo_film
-field_name: field_napo_film
+id: node.field_napo_film_thumbnail_media
+field_name: field_napo_film_thumbnail_media
 entity_type: node
 type: entity_reference
 settings:
-  target_type: node
+  target_type: media
 module: core
 locked: false
-cardinality: -1
+cardinality: 10
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

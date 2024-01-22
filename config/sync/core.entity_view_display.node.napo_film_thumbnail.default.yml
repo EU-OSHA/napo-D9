@@ -1,0 +1,51 @@
+uuid: d4ec1d7a-4238-4f4b-8dbe-3b8cda6a3f47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.napo_film_thumbnail.body
+    - field.field.node.napo_film_thumbnail.field_napo_film
+    - field.field.node.napo_film_thumbnail.field_napo_film_thumbnail_media
+    - node.type.napo_film_thumbnail
+  module:
+    - text
+    - user
+id: node.napo_film_thumbnail.default
+targetEntityType: node
+bundle: napo_film_thumbnail
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_napo_film:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_napo_film_thumbnail_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  breadcrumbs: true
+  langcode: true
+  search_api_excerpt: true

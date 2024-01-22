@@ -122,6 +122,12 @@
   }
 }
 
+@media screen and (max-width: 576px) {
+  .breadcrumb-container > .breadcrumb{
+    margin-bottom: 1rem;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .breadcrumb-container {
     padding-right: 5px;
