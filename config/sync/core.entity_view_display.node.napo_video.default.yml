@@ -63,19 +63,12 @@ content:
     settings:
       image_link: ''
       image_style: thumbnail
+      image_loading:
+        attribute: lazy
     third_party_settings:
       ds:
         ds_limit: ''
     weight: 1
-    region: content
-  field_thumbnail:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 6
     region: content
   search_api_excerpt:
     settings: {  }
@@ -92,6 +85,7 @@ hidden:
   field_parent_title: true
   field_publication_date: true
   field_tags: true
+  field_thumbnail: true
   field_video: true
   field_video_type: true
   field_youtube: true
