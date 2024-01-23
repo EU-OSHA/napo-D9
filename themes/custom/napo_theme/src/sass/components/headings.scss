@@ -60,3 +60,21 @@ h3{
     width:100%;
   }
 }
+
+/**Titles of the NAPO films**/
+.node--type-napo-video, body[class*="napos-films-coming-soon-"]  {
+  .block-page-title-block h1{
+    border-bottom: unset;
+    background: unset;
+    padding: 0.25rem 0;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node--type-napo-video, body[class*="napos-films-coming-soon-"]  {
+    .block-page-title-block h1{
+      padding: 0.25rem 150px 0.25rem 15px;
+    }
+  }
+}
+/**End comment - titles of the NAPO films**/

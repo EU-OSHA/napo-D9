@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_image
     - field.storage.node.field_napo_film
     - image.style.medium2
+    - image.style.napo_film_episodes_size_
     - node.type.napo_video
     - taxonomy.vocabulary.video_type
   content:
@@ -1488,7 +1489,9 @@ display:
           type: media_thumbnail
           settings:
             image_link: ''
-            image_style: medium2
+            image_style: napo_film_episodes_size_
+            image_loading:
+              attribute: lazy
           group_column: target_id
           group_columns: {  }
           group_rows: true
