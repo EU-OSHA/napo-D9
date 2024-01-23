@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.napo_video.field_parent_title
     - field.field.node.napo_video.field_publication_date
     - field.field.node.napo_video.field_tags
+    - field.field.node.napo_video.field_thumbnail
     - field.field.node.napo_video.field_video
     - field.field.node.napo_video.field_video_type
     - field.field.node.napo_video.field_youtube
@@ -66,6 +67,15 @@ content:
       ds:
         ds_limit: ''
     weight: 1
+    region: content
+  field_thumbnail:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 6
     region: content
   search_api_excerpt:
     settings: {  }
