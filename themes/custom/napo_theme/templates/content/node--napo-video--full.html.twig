@@ -72,8 +72,12 @@
   'clearfix',
 ]
 %}
-
-
+{#
+<div class="share-links-node">
+  <div class="napo-share-widget"></div>
+  {{ content.addtoany }}
+</div>
+#}
 
 {% if '&' in default_youtube %}
   {%  set video_url = default_youtube |split('&') %}
@@ -209,13 +213,22 @@
     {% endif %}
   {% endif %}
 
-  {% if node.field_video_type[0].entity.label == "Film video" %}
-    {% if (node._referringItem.target_id != node.id) %}
-      <div class="recommended-films">
-        <div>{{ 'Other films recommended for you' | trans }}</div>
-        {{ drupal_view('recommended_films', 'recommended_films_block', node.id) }}
+  {% if drupal_view_result('thumbnails_list', 'thumbnails', node.label )[0]._relationship_entities.field_thumbnail is not empty %}
+    {% if drupal_view_result('thumbnails_list', 'thumbnails', node.label ) is not empty %}
+      <div class="view-thumbnails-custom">
+        <h2>{{ 'Thumbnails' | trans }}</h2>
+        {{ drupal_view('thumbnails_list', 'thumbnails', node.label ) }}
       </div>
     {% endif %}
   {% endif %}
-
+{#
+{% if node.field_video_type[0].entity.label == "Film video" %}
+  {% if (node._referringItem.target_id != node.id) %}
+    <div class="recommended-films">
+      <div>{{ 'Other films recommended for you' | trans }}</div>
+      {{ drupal_view('recommended_films', 'recommended_films_block', node.id) }}
+    </div>
+  {% endif %}
+{% endif %}
+#}
 </article>
