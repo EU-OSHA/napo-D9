@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.napo_video.field_image
     - field.field.node.napo_video.field_main_tag
     - field.field.node.napo_video.field_napo_film
+    - field.field.node.napo_video.field_parent_title
     - field.field.node.napo_video.field_publication_date
     - field.field.node.napo_video.field_tags
     - field.field.node.napo_video.field_video
