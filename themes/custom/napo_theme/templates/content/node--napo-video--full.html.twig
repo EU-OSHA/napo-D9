@@ -167,11 +167,27 @@
     <div class="conten-video-info">
       <div class="napo-film-video-download-form">
         <div class="download">
+          <div class="content-download-custom">
+            {{ drupal_block('napo_films_download_block') }}
+          </div>
+        </div>
+{#
+        <div class="download">
           {% if field_video_list == "yes" %}
             {% for item in node.field_video  %}
-              <div class="content-download-custom">
-                {{ drupal_block('napo_films_download_block') }}
-              </div>
+              {% if language == "en" %}
+                <a href="/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
+                  {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
+                </a>
+              {% elseif  language == "pt-pt" %}
+                <a href="{{ path }}/pt/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
+                  {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
+                </a>
+              {% else %}
+                <a href="{{ path }}/{{ language }}/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
+                  {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
+                </a>
+              {% endif %}
             {% endfor %}
           {% endif %}
           {% if field_video_list == "no" %}
@@ -179,7 +195,8 @@
               <a href="/napos-films/{{ node.id }}/video/download?number={{ i }}">{{ videoNames[i] | split('.')[1] }}</a>
             {% endfor %}
           {% endif %}
-
+        </div>
+ #}
         </div>
         {#      <div class="share-links-node">#}
         {#        <div class="napo-share-widget"></div>#}
