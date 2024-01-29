@@ -93,11 +93,11 @@
 {% set categories = categories.appendItem(main_category) %}
 
 <div class="back-button-custom">
-{% if language == "pt-pt"  %}
-  <a href="{{ path }}/pt/napos-films/films?films=all">{{ 'Back to Films' | trans }}</a>
-{% else %}
-  <a href="{{ path }}/{{ language }}/napos-films/films">{{ 'Back to Films' | trans }}</a>
-{% endif %}
+  {% if language == "pt-pt"  %}
+    <a href="{{ path }}/pt/napos-films/films?films=all">{{ 'Back to Films' | trans }}</a>
+  {% else %}
+    <a href="{{ path }}/{{ language }}/napos-films/films">{{ 'Back to Films' | trans }}</a>
+  {% endif %}
 </div>
 
 <article{{ attributes.addClass(classes) }}>
@@ -169,19 +169,9 @@
         <div class="download">
           {% if field_video_list == "yes" %}
             {% for item in node.field_video  %}
-              {% if language == "en" %}
-                <a href="/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
-                  {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
-                </a>
-              {% elseif  language == "pt-pt" %}
-                <a href="{{ path }}/pt/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
-                  {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
-                </a>
-              {% else %}
-                <a href="{{ path }}/{{ language }}/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
-                  {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
-                </a>
-              {% endif %}
+              <div class="content-download-custom">
+                {{ drupal_block('napo_films_download_block') }}
+              </div>
             {% endfor %}
           {% endif %}
           {% if field_video_list == "no" %}
@@ -215,14 +205,14 @@
       </div>
     {% endif %}
   {% endif %}
-{#
-{% if node.field_video_type[0].entity.label == "Film video" %}
-  {% if (node._referringItem.target_id != node.id) %}
-    <div class="recommended-films">
-      <div>{{ 'Other films recommended for you' | trans }}</div>
-      {{ drupal_view('recommended_films', 'recommended_films_block', node.id) }}
-    </div>
+  {#
+  {% if node.field_video_type[0].entity.label == "Film video" %}
+    {% if (node._referringItem.target_id != node.id) %}
+      <div class="recommended-films">
+        <div>{{ 'Other films recommended for you' | trans }}</div>
+        {{ drupal_view('recommended_films', 'recommended_films_block', node.id) }}
+      </div>
+    {% endif %}
   {% endif %}
-{% endif %}
-#}
+  #}
 </article>
