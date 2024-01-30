@@ -93,11 +93,11 @@
 {% set categories = categories.appendItem(main_category) %}
 
 <div class="back-button-custom">
-{% if language == "pt-pt"  %}
-  <a href="{{ path }}/pt/napos-films/films?films=all">{{ 'Back to Films' | trans }}</a>
-{% else %}
-  <a href="{{ path }}/{{ language }}/napos-films/films">{{ 'Back to Films' | trans }}</a>
-{% endif %}
+  {% if language == "pt-pt"  %}
+    <a href="{{ path }}/pt/napos-films/films?films=all">{{ 'Back to Films' | trans }}</a>
+  {% else %}
+    <a href="{{ path }}/{{ language }}/napos-films/films">{{ 'Back to Films' | trans }}</a>
+  {% endif %}
 </div>
 
 <article{{ attributes.addClass(classes) }}>
@@ -167,6 +167,12 @@
     <div class="conten-video-info">
       <div class="napo-film-video-download-form">
         <div class="download">
+          <div class="content-download-custom">
+            {{ drupal_block('napo_films_download_block') }}
+          </div>
+        </div>
+{#
+        <div class="download">
           {% if field_video_list == "yes" %}
             {% for item in node.field_video  %}
               {% if language == "en" %}
@@ -189,7 +195,8 @@
               <a href="/napos-films/{{ node.id }}/video/download?number={{ i }}">{{ videoNames[i] | split('.')[1] }}</a>
             {% endfor %}
           {% endif %}
-
+        </div>
+ #}
         </div>
         {#      <div class="share-links-node">#}
         {#        <div class="napo-share-widget"></div>#}
@@ -215,14 +222,14 @@
       </div>
     {% endif %}
   {% endif %}
-{#
-{% if node.field_video_type[0].entity.label == "Film video" %}
-  {% if (node._referringItem.target_id != node.id) %}
-    <div class="recommended-films">
-      <div>{{ 'Other films recommended for you' | trans }}</div>
-      {{ drupal_view('recommended_films', 'recommended_films_block', node.id) }}
-    </div>
+  {#
+  {% if node.field_video_type[0].entity.label == "Film video" %}
+    {% if (node._referringItem.target_id != node.id) %}
+      <div class="recommended-films">
+        <div>{{ 'Other films recommended for you' | trans }}</div>
+        {{ drupal_view('recommended_films', 'recommended_films_block', node.id) }}
+      </div>
+    {% endif %}
   {% endif %}
-{% endif %}
-#}
+  #}
 </article>
