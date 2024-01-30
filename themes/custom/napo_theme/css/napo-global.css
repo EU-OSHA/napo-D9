@@ -1,11 +1,34 @@
 @charset "UTF-8";
-/* D9 - Variables NCW */
 /*Font Family*/
 @font-face {
   font-family: 'Ubuntu', sans-serif; }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/Ubuntu-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu-Medium';
+  src: url("../fonts/ubuntu/Ubuntu-Medium.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url("../fonts/ubuntu/Ubuntu-Bold.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu-Light';
+  src: url("../fonts/ubuntu/Ubuntu-Light.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu-Italic';
+  src: url("../fonts/ubuntu/Ubuntu-Italic.ttf");
+  font-weight: normal;
+  font-style: normal; }
 /* Font colours */
-/* background colours */
-/* END - D9 - Variables NCW */
+/* Background colours */
 * {
   margin: 0px;
   padding: 0px; }
@@ -19,14 +42,10 @@ a:focus {
   clear: both;
   float: none; }
 
-html,
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px; }
-
 body {
   font-family: "Ubuntu", cursive !important;
-  color: #1f3695; }
+  color: #1f3695;
+  font-size: 16px; }
 
 .site-footer .block {
   margin: 0;
@@ -159,9 +178,9 @@ div.pagerer-container {
   .breadcrumb-container .breadcrumb ol {
     padding: 1rem 0.625rem 1rem 0rem; }
 
-#block-socialshare .ecl-social-media-share {
+.ecl-social-media-share {
   display: flex; }
-  #block-socialshare .ecl-social-media-share > h2 {
+  .ecl-social-media-share > h2 {
     float: left;
     color: #000;
     font-size: 0.9rem;
@@ -169,40 +188,40 @@ div.pagerer-container {
     margin-bottom: unset;
     padding-right: 10px;
     align-self: center; }
-  #block-socialshare .ecl-social-media-share .wtShareList {
+  .ecl-social-media-share .wtShareList {
     display: flex;
     align-items: center;
     float: left;
     margin: 0; }
-    #block-socialshare .ecl-social-media-share .wtShareList ul {
+    .ecl-social-media-share .wtShareList ul {
       display: flex;
       gap: 10px; }
-      #block-socialshare .ecl-social-media-share .wtShareList ul li {
+      .ecl-social-media-share .wtShareList ul li {
         float: left;
         display: block;
         width: 20px;
         height: 25px;
         min-width: auto; }
-        #block-socialshare .ecl-social-media-share .wtShareList ul li a {
+        .ecl-social-media-share .wtShareList ul li a {
           width: 22px !important;
           min-width: auto;
           border: 0;
           padding: 0;
           text-indent: -9999px; }
-    #block-socialshare .ecl-social-media-share .wtShareList ul > li:nth-child(1) {
+    .ecl-social-media-share .wtShareList ul > li:nth-child(1) {
       order: 2; }
-      #block-socialshare .ecl-social-media-share .wtShareList ul > li:nth-child(1) .wt_twitter {
+      .ecl-social-media-share .wtShareList ul > li:nth-child(1) .wt_twitter {
         background: url(../images/ico-twitter.png) no-repeat;
         background-position-y: 1px; }
-    #block-socialshare .ecl-social-media-share .wtShareList ul > li:nth-child(2) {
+    .ecl-social-media-share .wtShareList ul > li:nth-child(2) {
       order: 1; }
-      #block-socialshare .ecl-social-media-share .wtShareList ul > li:nth-child(2) .wt_facebook {
+      .ecl-social-media-share .wtShareList ul > li:nth-child(2) .wt_facebook {
         background: url(../images/ico-facebook.png) no-repeat; }
-    #block-socialshare .ecl-social-media-share .wtShareList ul > li:nth-child(3) {
+    .ecl-social-media-share .wtShareList ul > li:nth-child(3) {
       order: 3; }
-      #block-socialshare .ecl-social-media-share .wtShareList ul > li:nth-child(3) .wt_linkedin {
+      .ecl-social-media-share .wtShareList ul > li:nth-child(3) .wt_linkedin {
         background: url(../images/ico-linkedin.png) no-repeat; }
-    #block-socialshare .ecl-social-media-share .wtShareList ul > li:nth-child(4), #block-socialshare .ecl-social-media-share .wtShareList ul > li:nth-child(5) {
+    .ecl-social-media-share .wtShareList ul > li:nth-child(4), .ecl-social-media-share .wtShareList ul > li:nth-child(5) {
       display: none; }
 
 @media screen and (max-width: 576px) {
@@ -671,11 +690,12 @@ h3 {
 .block-page-title-block {
   width: 100%; }
   .block-page-title-block h1 {
+    font-family: 'Ubuntu-Medium';
     padding: 0;
     margin-bottom: 20px;
     color: #1f3695;
     font-size: 1.85rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.1;
     width: 100%; }
 
@@ -4139,7 +4159,10 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
 
 @media screen and (min-width: 991px) {
   .node--type-napo-video .video-custom {
-    height: 625px; } }
+    height: 625px; }
+
+  .node--type-napo-video .napo-films-modal .video-custom {
+    height: auto; } }
 @media screen and (min-width: 992px) {
   .node--type-napo-video .view-scenes-custom .slick__slide,
   .node--type-napo-video .view-thumbnails-custom .slick__slide {

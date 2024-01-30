@@ -277,6 +277,18 @@
   .node--type-napo-video .video-custom{
     height: 625px;
   }
+
+
+  .node--type-napo-video{
+    .napo-films-modal{
+      .video-custom{
+        height: auto;
+      }
+    }
+  }
+
+
+
 }
 
 @media screen and (min-width: 992px){
