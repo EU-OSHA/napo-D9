@@ -9,7 +9,8 @@
       margin:0;
     }
   }
-  .view-scenes-custom{
+  .view-scenes-custom,
+  .view-thumbnails-custom{
     margin-top: 0.5rem;
     h2{
       font-size: 1.625rem;
@@ -33,7 +34,10 @@
       row-gap: 0.5rem;
       a{
         padding-top: 0.5rem;
-        font-weight: 600;
+        font-weight: 300;
+        span{
+          font-weight: 600;
+        }
       }
 
       &:hover{
@@ -45,10 +49,55 @@
   }
   .description-and-download{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    .napofilms-download-box{
+      border: 1px solid $text-color-blue;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-top:0;
+      .napofilms-download-title{
+        font-size: 1.3rem;
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+        font-weight: 600;
+      }
+      ul.download-list-items{
+        list-style: none;
+        margin: 0 0.5rem;
+        li{
+          border-bottom: 1px solid $text-color-blue;
+          padding-left: 1rem;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          background: url(/sites/napo/themes/custom/napo_theme/images/btn-download.png) no-repeat calc(100% - 10px) 50% ;
+        }
+        li:last-child{
+          border-bottom: 0;
+        }
+      }
+      ul.download-general {
+        list-style: none;
+        margin-bottom: 0;
+        li{
+          background: $bg-color-blue;
+          border-bottom-right-radius: 12px;
+          border-bottom-left-radius: 12px;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+
+          a{
+            display: block;
+            color: #FFFFFF;
+            padding-left: 1rem;
+            background: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png) no-repeat calc(100% - 19px) 50%;
+          }
+        }
+      }
+    }
   }
   .conten-video-info{
     position:relative;
+    min-width: 260px;
     .napo-film-title-2{
       .field--name-title{
         padding: 10px 14% 10px 54px;
@@ -64,58 +113,6 @@
         display: block;
       }
     }
-    //.napo-film-video-download-form{
-    //  position:absolute;
-    //  top:0;
-    //  right:0;
-    //  z-index:20;
-    //  display:flex;
-    //  flex-direction: row;
-    //}
-    //.download{
-    //  position:relative;
-    //  &:before{
-    //    content:"";
-    //    color: transparent;
-    //    background: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png) ;
-    //    background-repeat: no-repeat;
-    //    background-position: right;
-    //    padding: 10px;
-    //    display: block;
-    //    width: 100px;
-    //    height: 45px;
-    //  }
-    //  a{
-    //    display: none;
-    //    width: 60px;
-    //    height: auto;
-    //    background: $bg-color-blue-light;
-    //    color: $text-color-blue;
-    //    text-decoration: none;
-    //    font-weight: bold;
-    //    font-size:1.125rem;
-    //    padding: 5px 0px;
-    //    text-align: center;
-    //    text-transform: uppercase;
-    //    top:100%;
-    //    left:0;
-    //    width:100px;
-    //    z-index:20;
-    //    &:after{
-    //      display:none;
-    //    }
-    //    &:hover{
-    //      background: $bg-color-yellow;
-    //      color: $text-color-blue;
-    //      text-decoration: none;
-    //    }
-    //  }
-    //  &:hover{
-    //    a{
-    //      display:block;
-    //    }
-    //  }
-    //}
     .napo-share-widget{
       position: relative;
       color: transparent;
@@ -148,20 +145,21 @@
     }
   }
   .categories{
-    padding: 1.125rem 0;
+    padding: 0;
     .field__label{
       color: $text-color-grey-dark;
       font-weight:bold;
-      font-size:1.125rem;
+      font-size:1rem;
       &:after{
         content:':';
       }
     }
     .field--type-entity-reference{
       display:flex;
-      flex-direction: column;
+      flex-direction: row;
       row-gap: 0.5rem;
       align-items: baseline;
+      font-size: 1rem;
       & > .field__items{
         line-height: normal;
         & > .field__items > .field--type-entity-reference{
@@ -200,28 +198,16 @@
       strong,
       span,
       p{
-        color: $text-color-black !important;
+        color: $text-color-grey-dark !important;
         background-color: transparent!important;
         font-size: 1rem!important;
         line-height:1.625rem!important;
         font-family: 'Ubuntu',cursive!important;
+        padding-left: 1rem;
+        padding-right: 2rem;
       }
     }
   }
-  /**Back to films btn in Napo films**/
-  .back-button-custom{
-    top: 0;
-    right: 0px;
-    a{
-      font-size: 0.8rem;
-      padding: 0.5rem 2.5rem 0.5rem 0.5rem;
-      background:{
-        position: 93% 50%;
-        size: 22px;
-      }
-    }
-  }
-  /**End comment - back to films btn in Napo films**/
 
   .video-custom{
     position: relative;
@@ -277,31 +263,10 @@
 
 .node--type-napo-video {
   .napo-films-modal {
-    .view-scenes-custom {
+    .view-scenes-custom, .view-thumbnails-custom {
       .slick__slide {
         img{
           width:145px;
-        }
-      }
-    }
-  }
-}
-
-/**Titles of the NAPO films**/
-@media screen and (min-width: 576px) {
-  .node--type-napo-video{
-    .back-button-custom{
-      width: fit-content;
-      position: absolute;
-      top: -42px;
-      margin-right: 15px;
-    }
-    .categories {
-      padding: 1.125rem 0 0 0;
-      .field--type-entity-reference {
-        flex-direction: row;
-        & > .field__items > .field__items > .field--type-entity-reference {
-          display: block;
         }
       }
     }
@@ -315,8 +280,13 @@
 }
 
 @media screen and (min-width: 992px){
-  .node--type-napo-video .view-scenes-custom .slick__slide{
-    max-width: 31vw;
+  .node--type-napo-video {
+    .view-scenes-custom,
+    .view-thumbnails-custom{
+      .slick__slide {
+        max-width: 31vw;
+      }
+    }
   }
 }
 
@@ -324,6 +294,9 @@
 @media screen and (min-width: 1200px){
   .node--type-napo-video{
     .view-scenes-custom .slick__slide{
+      max-width: 360px;
+    }
+    .view-thumbnails-custom .slick__slide{
       max-width: 360px;
     }
   }
