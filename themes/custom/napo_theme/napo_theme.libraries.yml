@@ -31,6 +31,3 @@ global-styling:
     component:
       css/napo-global.css: {}
       css/napo-print-version.css: {}
-    theme:
-      https://fonts.googleapis.com/css?family=Ubuntu: { type: external, minified: true  }
-
