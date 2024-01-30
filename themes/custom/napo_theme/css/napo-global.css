@@ -4154,6 +4154,9 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
     max-height: 50vw; }
     .node--type-napo-video .video-custom iframe {
       height: inherit; } }
+@media screen and (max-width: 767px) {
+  .node--type-napo-video .description-and-download {
+    flex-direction: column; } }
 .node--type-napo-album .field--name-field-media-image img {
   margin: 0 auto; }
 .node--type-napo-album .field--type-text-with-summary {
@@ -4514,8 +4517,7 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
     background-repeat: no-repeat;
     background-position: center; }
     .block-simple-blocksearch-api .btn-search-custom-mobile {
-      background-image: url(/sites/napo/themes/custom/napo_theme/images/search.png);
-      background-size: 1.875rem; }
+      background-image: url(/sites/napo/themes/custom/napo_theme/images/search.png); }
 
   #block-languagedropdownswitcher .content {
     display: flex;

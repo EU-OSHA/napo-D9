@@ -310,3 +310,10 @@
     }
   }
 }
+
+@media screen and (max-width: 767px){
+  .node--type-napo-video .description-and-download {
+    flex-direction: column;
+  }
+}
+
