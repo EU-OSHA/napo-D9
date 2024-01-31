@@ -4148,6 +4148,50 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
 .node--type-napo-video .playingVideoCustom .video-custom__image, .node--type-napo-video .playingVideoCustom .video-custom__playButton {
   display: none; }
 
+.napo-films-modal .napo-film-video-download-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: row; }
+.napo-films-modal .download {
+  position: relative; }
+  .napo-films-modal .download:before {
+    content: "";
+    color: transparent;
+    background: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 10px;
+    display: block;
+    width: 100px;
+    height: 45px; }
+  .napo-films-modal .download a {
+    display: none;
+    width: 60px;
+    height: auto;
+    background: #bbc2df;
+    color: #1f3695;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.125rem;
+    padding: 5px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    top: 100%;
+    left: 0;
+    width: 100px;
+    z-index: 20; }
+    .napo-films-modal .download a:after {
+      display: none; }
+    .napo-films-modal .download a:hover {
+      background: #f7e235;
+      color: #1f3695;
+      text-decoration: none; }
+  .napo-films-modal .download:hover a {
+    display: block; }
+
 .node--type-napo-video .napo-films-modal .view-scenes-custom .slick__slide img, .node--type-napo-video .napo-films-modal .view-thumbnails-custom .slick__slide img {
   width: 145px; }
 

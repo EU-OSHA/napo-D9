@@ -1,10 +1,10 @@
 bootstrap:
   js:
-    /libraries/popper.js/dist/umd/popper.min.js: {}
-    /libraries/bootstrap/dist/js/bootstrap.min.js: {}
+    /libraries_override/bootstrap/dist/js/popper.min.js: {}
+    /libraries_override/bootstrap/dist/js/bootstrap.min.js: {}
   css:
     component:
-      /libraries/bootstrap/dist/css/bootstrap.min.css: {}
+      /libraries_override/bootstrap/dist/css/bootstrap.min.css: {}
 bootstrap_cdn:
   js:
     //cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js: { type: external, minified: true }
