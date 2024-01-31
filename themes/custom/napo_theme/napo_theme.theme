@@ -68,9 +68,9 @@ function napo_theme_preprocess_node(&$variables) {
   $variables['language'] = $language;
 
   $default_youtube = NULL;
-  $field_video_list = "yes";
+  /*$field_video_list = "yes";
   $numberItemOriginal = 0;
-  $videoNames = [];
+  $videoNames = [];*/
 
   if ($variables['node']->bundle() == "napo_video") {
     if (count($variables['node']->get('field_youtube')->getValue()) > 0) {
@@ -85,7 +85,7 @@ function napo_theme_preprocess_node(&$variables) {
           ->getValue()[0]['value'];
       }
     }
-    if (count($variables['node']->get('field_video')->getValue()) == 0) {
+    /*if (count($variables['node']->get('field_video')->getValue()) == 0) {
       $field_video_list = "no";
       $numberItemOriginal = count($variables['node']->getUntranslated()
         ->get('field_video')
@@ -99,12 +99,12 @@ function napo_theme_preprocess_node(&$variables) {
           ->getValue()[0]['value']);
       }
 
-    }
+    }*/
 
     $variables['default_youtube'] = $default_youtube;
-    $variables['field_video_list'] = $field_video_list;
+    /*$variables['field_video_list'] = $field_video_list;
     $variables['numberItemOriginal'] = $numberItemOriginal;
-    $variables['videoNames'] = $videoNames;
+    $variables['videoNames'] = $videoNames;*/
 
     if(isset($variables['parent_title']) ){
       if($variables['node']->get('field_video_type')[0]->getValue()['target_id'] == 2726 ) {

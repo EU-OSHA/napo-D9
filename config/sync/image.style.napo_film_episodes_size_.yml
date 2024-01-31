@@ -1,0 +1,15 @@
+uuid: 1ce0b423-cf63-4381-8174-75b1a87c434a
+langcode: en
+status: true
+dependencies: {  }
+name: napo_film_episodes_size_
+label: 'Napo film - episodes size '
+effects:
+  13ae4708-0b9b-4b31-9f90-e70eec27541d:
+    uuid: 13ae4708-0b9b-4b31-9f90-e70eec27541d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 352
+      height: 210
+      anchor: center-top

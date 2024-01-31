@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.napo_video.field_parent_title
     - field.field.node.napo_video.field_publication_date
     - field.field.node.napo_video.field_tags
+    - field.field.node.napo_video.field_thumbnail
     - field.field.node.napo_video.field_video
     - field.field.node.napo_video.field_video_type
     - field.field.node.napo_video.field_youtube
@@ -67,7 +68,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 8
+    weight: 7
     region: content
   field_image:
     type: media_thumbnail
@@ -75,6 +76,8 @@ content:
     settings:
       image_link: ''
       image_style: thumbnail
+      image_loading:
+        attribute: lazy
     third_party_settings:
       ds:
         ds_limit: ''
@@ -87,6 +90,14 @@ content:
       link: false
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_thumbnail:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
     region: content
   search_api_excerpt:
     settings: {  }

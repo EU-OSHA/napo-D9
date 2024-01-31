@@ -1,5 +1,6 @@
 .node--type-napo-video{
   .video-custom{
+
     video{
       width:100%!important;
       height:auto!important;
@@ -8,21 +9,18 @@
       margin:0;
     }
   }
-  .view-scenes-custom{
-    background-color: $bg-color-grey-light-2;
-    margin-top:-5px;
+  .view-scenes-custom,
+  .view-thumbnails-custom{
+    margin-top: 0.5rem;
     h2{
       font-size: 1.625rem;
-      color: $bg-color-grey;
-      background-image: url(/sites/napo/themes/custom/napo_theme/images/ico-view-episodes.png)  ;
-      background-repeat: no-repeat;
-      background-position: 23px 15px;
-      padding: 1.5rem 1.5rem 0rem 4.875rem;
+      color: $text-color-blue;
+      padding: 0 0 1rem 0;
       font-weight: bold;
       margin-top:0;
     }
     .views-element-container{
-      padding:0 58px;
+      padding:0 15px;
       padding-bottom:20px;
     }
     .slide__caption{
@@ -31,38 +29,17 @@
     .slick__slide{
       position:relative;
       padding: 0 0.25rem;
-      .views-field-title-1{
-        position: absolute;
-        width:calc(100% - 0.5rem);
-        top:0;
-        left:50%;
-        transform:translate(-50% , 0%);
-        display: none;
-        background-image: url(/sites/napo/themes/custom/napo_theme/images/background-blue.png);
-        background-repeat: repeat-x;
-        height: auto;
-        color: $text-color-white;
-        font-weight: bold;
-        text-align: left;
-        .field-content{
-          padding:0 10px;
-          display:block;
-        }
-        a{
-          color: $text-color-white;
-          background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-button-yellow.png) ;
-          background-repeat: no-repeat;
-          background-position: 95% 5px;
-          background-color: transparent;
-          font-weight: bold;
-          display: block;
-          //margin-top: -11px;
-          padding: 3px 44px 12px 0px;
+      display: flex;
+      flex-direction: column-reverse;
+      row-gap: 0.5rem;
+      a{
+        padding-top: 0.5rem;
+        font-weight: 300;
+        span{
+          font-weight: 600;
         }
       }
-      img{
-        width:100%;
-      }
+
       &:hover{
         .views-field-title-1{
           display:block;
@@ -70,8 +47,57 @@
       }
     }
   }
+  .description-and-download{
+    display: flex;
+    flex-direction: row;
+    .napofilms-download-box{
+      border: 1px solid $text-color-blue;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-top:0;
+      .napofilms-download-title{
+        font-size: 1.3rem;
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+        font-weight: 600;
+      }
+      ul.download-list-items{
+        list-style: none;
+        margin: 0 0.5rem;
+        li{
+          border-bottom: 1px solid $text-color-blue;
+          padding-left: 1rem;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          background: url(/sites/napo/themes/custom/napo_theme/images/btn-download.png) no-repeat calc(100% - 10px) 50% ;
+        }
+        li:last-child{
+          border-bottom: 0;
+        }
+      }
+      ul.download-general {
+        list-style: none;
+        margin-bottom: 0;
+        li{
+          background: $bg-color-blue;
+          border-bottom-right-radius: 12px;
+          border-bottom-left-radius: 12px;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+
+          a{
+            display: block;
+            color: #FFFFFF;
+            padding-left: 1rem;
+            background: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png) no-repeat calc(100% - 19px) 50%;
+          }
+        }
+      }
+    }
+  }
   .conten-video-info{
     position:relative;
+    min-width: 260px;
     .napo-film-title-2{
       .field--name-title{
         padding: 10px 14% 10px 54px;
@@ -85,58 +111,6 @@
         margin-top: 1.5rem;
         height: auto;
         display: block;
-      }
-    }
-    .napo-film-video-download-form{
-      position:absolute;
-      top:0;
-      right:0;
-      z-index:20;
-      display:flex;
-      flex-direction: row;
-    }
-    .download{
-      position:relative;
-      &:before{
-        content:"";
-        color: transparent;
-        background: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png) ;
-        background-repeat: no-repeat;
-        background-position: right;
-        padding: 10px;
-        display: block;
-        width: 100px;
-        height: 45px;
-      }
-      a{
-        display: none;
-        width: 60px;
-        height: auto;
-        background: $bg-color-blue-light;
-        color: $text-color-blue;
-        text-decoration: none;
-        font-weight: bold;
-        font-size:1.125rem;
-        padding: 5px 0px;
-        text-align: center;
-        text-transform: uppercase;
-        top:100%;
-        left:0;
-        width:100px;
-        z-index:20;
-        &:after{
-          display:none;
-        }
-        &:hover{
-          background: $bg-color-yellow;
-          color: $text-color-blue;
-          text-decoration: none;
-        }
-      }
-      &:hover{
-        a{
-          display:block;
-        }
       }
     }
     .napo-share-widget{
@@ -170,73 +144,75 @@
       padding:0;
     }
   }
-  .conten-video-info-tags{
-    background-color: $bg-color-grey-light;
-    margin-bottom: 0px;
-    padding: 1.125rem 1.5rem;
-    .categories{
-      padding-bottom:1.125rem;
-      .field__label{
-        color: $text-color-grey-dark;
-        font-weight:bold;
-        font-size:1.125rem;
-        &:after{
-          content:':';
-        }
+  .categories{
+    padding: 0;
+    .field__label{
+      color: $text-color-grey-dark;
+      font-weight:bold;
+      font-size:1rem;
+      &:after{
+        content:':';
       }
-      .field--type-entity-reference{
-        display:flex;
-        flex-direction: row;
-        align-items: baseline;
-        margin-bottom:1.125rem;
-      }
-      .field__items{
-        font-weight:bold;
-        font-size:1.125rem;
-        .field__item{
-          & + .field__item{
-            &:before{
-              content:"|";
-              display:inline-block;
-              margin:0.25rem;
-            }
-          }
-          h2{
-            font-size:1.125rem;
-            margin:0;
-            a{
-              color: $text-color-blue;
-              font-weight:bold;
-              font-size:1.125rem;
-            }
-          }
+    }
+    .field--type-entity-reference{
+      display:flex;
+      flex-direction: row;
+      row-gap: 0.5rem;
+      align-items: baseline;
+      font-size: 1rem;
+      & > .field__items{
+        line-height: normal;
+        & > .field__items > .field--type-entity-reference{
+          margin-bottom: unset;
+          row-gap: 0.5rem;
         }
       }
     }
-    .body{
-      strong,
-      span{
-        color:$text-color-blue!important;
-        background-color: transparent!important;
-        font-size:1.125rem!important;
-        line-height:1.625rem!important;
-        font-family: 'Ubuntu',cursive!important;
+    .field__items{
+      font-weight:bold;
+      font-size:1.125rem;
+      .field__item{
+        & + .field__item{
+          &:before{
+            content:"|";
+            display:inline-block;
+            margin:0.25rem;
+          }
+        }
+        h2{
+          font-size:1.125rem;
+          margin:0;
+          a{
+            color: $text-color-blue;
+            font-weight:bold;
+            font-size:1.125rem;
+          }
+        }
       }
     }
   }
-  .back-button-custom{
-    text-align: right;
-    margin-top: -53px;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    right: 0px
+  .conten-video-info-description{
+    margin-bottom: 0px;
+    padding: 1rem 0 1.125rem 0;
+    .body, .field--type-text-with-summary{
+      strong,
+      span,
+      p{
+        color: $text-color-grey-dark !important;
+        background-color: transparent!important;
+        font-size: 1rem!important;
+        line-height:1.625rem!important;
+        font-family: 'Ubuntu',cursive!important;
+        padding-left: 1rem;
+        padding-right: 2rem;
+      }
+    }
   }
 
   .video-custom{
     position: relative;
     width: 100%;
-    height: 625px;
+    height: 400px;
     overflow: hidden;
     &__image{
       position:absolute;
@@ -285,9 +261,65 @@
   }
 }
 
+.napo-films-modal{
+  .napo-film-video-download-form{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:20;
+    display:flex;
+    flex-direction: row;
+  }
+  .download{
+    position:relative;
+    &:before{
+      content:"";
+      color: transparent;
+      background: url(/sites/napo/themes/custom/napo_theme/images/video-download-v2.png) ;
+      background-repeat: no-repeat;
+      background-position: right;
+      padding: 10px;
+      display: block;
+      width: 100px;
+      height: 45px;
+    }
+    a{
+      display: none;
+      width: 60px;
+      height: auto;
+      background: $bg-color-blue-light;
+      color: $text-color-blue;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:1.125rem;
+      padding: 5px 0px;
+      text-align: center;
+      text-transform: uppercase;
+      top:100%;
+      left:0;
+      width:100px;
+      z-index:20;
+      &:after{
+        display:none;
+      }
+      &:hover{
+        background: $bg-color-yellow;
+        color: $text-color-blue;
+        text-decoration: none;
+      }
+    }
+    &:hover{
+      a{
+        display:block;
+      }
+    }
+  }
+}
+
+
 .node--type-napo-video {
   .napo-films-modal {
-    .view-scenes-custom {
+    .view-scenes-custom, .view-thumbnails-custom {
       .slick__slide {
         img{
           width:145px;
@@ -296,3 +328,60 @@
     }
   }
 }
+
+@media screen and (min-width: 991px){
+  .node--type-napo-video .video-custom{
+    height: 625px;
+  }
+
+
+  .node--type-napo-video{
+    .napo-films-modal{
+      .video-custom{
+        height: auto;
+      }
+    }
+  }
+
+
+
+}
+
+@media screen and (min-width: 992px){
+  .node--type-napo-video {
+    .view-scenes-custom,
+    .view-thumbnails-custom{
+      .slick__slide {
+        max-width: 31vw;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1200px){
+  .node--type-napo-video{
+    .view-scenes-custom .slick__slide{
+      max-width: 360px;
+    }
+    .view-thumbnails-custom .slick__slide{
+      max-width: 360px;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px){
+  .node--type-napo-video .video-custom{
+    max-height: 50vw;
+    iframe{
+      height: inherit;
+    }
+  }
+}
+
+@media screen and (max-width: 767px){
+  .node--type-napo-video .description-and-download {
+    flex-direction: column;
+  }
+}
+

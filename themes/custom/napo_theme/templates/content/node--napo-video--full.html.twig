@@ -73,8 +73,6 @@
 ]
 %}
 
-
-
 {% if '&' in default_youtube %}
   {%  set video_url = default_youtube |split('&') %}
   {%  set video_url = video_url[0] |split('=')  %}
@@ -95,15 +93,58 @@
 {% set categories = categories.appendItem(main_category) %}
 
 <div class="back-button-custom">
-{% if language == "pt-pt"  %}
-  <a href="{{ path }}/pt/napos-films/films?films=all">{{ 'Back to Films' | trans }}</a>
-{% else %}
-  <a href="{{ path }}/{{ language }}/napos-films/films">{{ 'Back to Films' | trans }}</a>
-{% endif %}
+  {% if language == "pt-pt"  %}
+    <a href="{{ path }}/pt/napos-films/films?films=all">{{ 'Back to Films' | trans }}</a>
+  {% else %}
+    <a href="{{ path }}/{{ language }}/napos-films/films">{{ 'Back to Films' | trans }}</a>
+  {% endif %}
 </div>
 
-
 <article{{ attributes.addClass(classes) }}>
+  <div class="categories">
+    {% if node.field_video_type[0].entity.label == "Film video" %}
+      {% set combined_categories = content.field_main_tag|merge(content.field_combined_tags) %}
+      <div class="field field--type-entity-reference field--label-inline">
+        <div class="field__label">{{ "Categories"|t }}</div>
+        <div class="field__items">
+          <div class="field__items">
+            {{ combined_categories }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if node.field_video_type[0].entity.label == "Episode video"%}
+      {% set main_tag_tid = node.field_napo_film.entity.field_main_tag.getValue()[0]['target_id']  %}
+      {% if main_tag_tid %}
+        {% set main_name = drupal_field('name', 'taxonomy_term', main_tag_tid)  %}
+        {% if main_name %}
+          {% set combined_categories = main_name|merge(content.field_combined_tags) %}
+          {% if combined_categories %}
+            <div class="field field--type-entity-reference field--label-inline">
+              <div class="field__label">{{ "Categories"|t }}</div>
+              <div class="field__items">
+                <div class="field__items">
+                  {{ combined_categories }}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endif %}
+      {% else %}
+        {% if content.field_combined_tags %}
+          <div class="field field--type-entity-reference field--label-inline">
+            <div class="field__label">{{ "Categories"|t }}</div>
+            <div class="field__items">
+              <div class="field__items">
+                {{ content.field_combined_tags }}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  </div>
   <div class="video-custom">
     {% if not node.field_video_type[0].entity.label == "Episode video"  %}
       {% for item in node.field_video  %}
@@ -119,6 +160,51 @@
       <iframe width="1110" height="641" src="https://www.youtube-nocookie.com/embed/{{ video_url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     {% endif %}
   </div>
+  <div class="description-and-download">
+    <div class="conten-video-info-description">
+      <div class="body">{{ content.body }}</div>
+    </div>
+    <div class="conten-video-info">
+      <div class="napo-film-video-download-form">
+        <div class="download">
+          <div class="content-download-custom">
+            {{ drupal_block('napo_films_download_block') }}
+          </div>
+        </div>
+{#
+        <div class="download">
+          {% if field_video_list == "yes" %}
+            {% for item in node.field_video  %}
+              {% if language == "en" %}
+                <a href="/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
+                  {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
+                </a>
+              {% elseif  language == "pt-pt" %}
+                <a href="{{ path }}/pt/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
+                  {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
+                </a>
+              {% else %}
+                <a href="{{ path }}/{{ language }}/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
+                  {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
+                </a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          {% if field_video_list == "no" %}
+            {% for i in 0..numberItemOriginal-1 %}
+              <a href="/napos-films/{{ node.id }}/video/download?number={{ i }}">{{ videoNames[i] | split('.')[1] }}</a>
+            {% endfor %}
+          {% endif %}
+        </div>
+ #}
+        </div>
+        {#      <div class="share-links-node">#}
+        {#        <div class="napo-share-widget"></div>#}
+        {#        {{ content.addtoany }}#}
+        {#      </div>#}
+      </div>
+    </div>
+  </div>
   {% if drupal_view_result('episode_list', 'scenes', node.label )[0]._relationship_entities.field_field_episodes is not empty %}
     {% if drupal_view_result('episode_list', 'scenes', node.label ) is not empty %}
       <div class="view-scenes-custom">
@@ -127,91 +213,16 @@
       </div>
     {% endif %}
   {% endif %}
-  <div class="conten-video-info">
-    <div class="napo-film-title-2">{{ label }}</div>
-    <div class="napo-film-video-download-form">
-      <div class="download">
-        {% if field_video_list == "yes" %}
-          {% for item in node.field_video  %}
-            {% if language == "en" %}
-            <a href="/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
-              {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
-            </a>
-            {% elseif  language == "pt-pt" %}
-              <a href="{{ path }}/pt/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
-                {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
-              </a>
-            {% else %}
-              <a href="{{ path }}/{{ language }}/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">
-                {{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}
-              </a>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-        {% if field_video_list == "no" %}
-          {% for i in 0..numberItemOriginal-1 %}
-            <a href="/napos-films/{{ node.id }}/video/download?number={{ i }}">{{ videoNames[i] | split('.')[1] }}</a>
-          {% endfor %}
-        {% endif %}
 
+  {% if drupal_view_result('thumbnails_list', 'thumbnails', node.label )[0]._relationship_entities.field_thumbnail is not empty %}
+    {% if drupal_view_result('thumbnails_list', 'thumbnails', node.label ) is not empty %}
+      <div class="view-thumbnails-custom">
+        <h2>{{ 'Thumbnails' | trans }}</h2>
+        {{ drupal_view('thumbnails_list', 'thumbnails', node.label ) }}
       </div>
-      <div class="share-links-node">
-        <div class="napo-share-widget"></div>
-        {{ content.addtoany }}
-      </div>
-    </div>
-  </div>
-  <div class="conten-video-info-tags">
-
-    <div class="categories">
-      {% if node.field_video_type[0].entity.label == "Film video" %}
-        {% set combined_categories = content.field_main_tag|merge(content.field_combined_tags) %}
-        <div class="field field--type-entity-reference field--label-inline">
-          <div class="field__label">{{ "Categories"|t }}</div>
-          <div class="field__items">
-            <div class="field__items">
-              {{ combined_categories }}
-            </div>
-          </div>
-        </div>
-      {% endif %}
-
-      {% if node.field_video_type[0].entity.label == "Episode video"%}
-        {% set main_tag_tid = node.field_napo_film.entity.field_main_tag.getValue()[0]['target_id']  %}
-        {% if main_tag_tid %}
-          {% set main_name = drupal_field('name', 'taxonomy_term', main_tag_tid)  %}
-          {% if main_name %}
-            {% set combined_categories = main_name|merge(content.field_combined_tags) %}
-              {% if combined_categories %}
-                <div class="field field--type-entity-reference field--label-inline">
-                  <div class="field__label">{{ "Categories"|t }}</div>
-                  <div class="field__items">
-                    <div class="field__items">
-                        {{ combined_categories }}
-                    </div>
-                  </div>
-                </div>
-            {% endif %}
-          {% endif %}
-        {% else %}
-          {% if content.field_combined_tags %}
-              <div class="field field--type-entity-reference field--label-inline">
-              <div class="field__label">{{ "Categories"|t }}</div>
-              <div class="field__items">
-                <div class="field__items">
-                    {{ content.field_combined_tags }}
-                </div>
-              </div>
-            </div>
-          {% endif %}
-        {% endif %}
-      {% endif %}
-    </div>
-
-    <div class="body">{{ content.body }}</div>
-
-  </div>
-
+    {% endif %}
+  {% endif %}
+  {#
   {% if node.field_video_type[0].entity.label == "Film video" %}
     {% if (node._referringItem.target_id != node.id) %}
       <div class="recommended-films">
@@ -220,5 +231,5 @@
       </div>
     {% endif %}
   {% endif %}
-
+  #}
 </article>

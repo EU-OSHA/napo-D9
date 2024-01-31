@@ -3,16 +3,15 @@
     background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-button-back.png) ;
     background-color: $bg-color-blue;
     background-repeat: no-repeat;
-    background-position: 96% 8px;
+    background-position: calc(100% - 5px) 2px;
     color: $text-color-white;
-    height: 45px;
-    padding-top: 0.75rem;
-    padding-left: 1.125rem;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    padding-left: 0.8rem;
     padding-right: 2.75rem;
-    padding-bottom:0.625rem;
+    padding-bottom:0.5rem;
     font-weight: bold;
-  }
-  .user-logged-in &{
+    margin-right: 15px;
     position: absolute;
     z-index: 200;
     top: -52px;

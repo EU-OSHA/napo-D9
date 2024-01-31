@@ -12,7 +12,6 @@ dependencies:
     - node.type.panel
   module:
     - action
-    - addtoany
     - block
     - comment
     - contact
@@ -97,7 +96,6 @@ permissions:
   - 'administer EU Cookie Compliance popup'
   - 'administer Search Autocomplete'
   - 'administer actions'
-  - 'administer addtoany'
   - 'administer advanced pane settings'
   - 'administer block groups'
   - 'administer blocks'

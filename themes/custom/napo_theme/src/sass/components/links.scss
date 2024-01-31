@@ -10,9 +10,11 @@ a{
 }
 
 a[target="_blank"]:after{
-  content: "\f08e";
-  font-family: "FontAwesome";
   display: inline-block;
-  margin-left: 5px;
-  font-weight: bold;
+  vertical-align: baseline;
+  content: '';
+  background: url(/sites/napo/themes/custom/napo_theme/images/external_link_napo.png) no-repeat center rgba(0, 0, 0, 0);
+  margin-left: 0.5rem;
+  width: 0.875rem;
+  height: 0.875rem;
 }

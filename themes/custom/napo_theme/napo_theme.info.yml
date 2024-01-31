@@ -6,7 +6,7 @@ core_version_requirement: ^8 || ^9
 base theme: bootstrap_barrio
 
 libraries:
-  - napo_theme/bootstrap_cdn
+  - napo_theme/bootstrap
   - napo_theme/global-styling
 
 regions:

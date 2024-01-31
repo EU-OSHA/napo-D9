@@ -76,7 +76,6 @@
 {% set video_url = node.field_youtube.value |split('=') %}
 {% set parent_title = node.field_parent_title[0].value %}
 
-
 <article{{ attributes.addClass(classes) }}>
   <div class="video-custom">
     <iframe src="https://www.youtube-nocookie.com/embed/{{ video_url[1] }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -88,10 +87,6 @@
         {% for item in node.field_video  %}
           <a href="/napos-films/{{ node.id }}/video/download?number={{loop.index-1}}">{{ item.entity.field_media_video_file.entity.filename.0.value | split('.')[item.entity.field_media_video_file.entity.filename.0.value | split('.') | length -1] }}</a>
         {% endfor %}
-      </div>
-      <div class="share-links-node">
-        <div class="napo-share-widget"></div>
-        {{ content.addtoany }}
       </div>
     </div>
   </div>
