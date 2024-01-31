@@ -708,11 +708,13 @@ a {
     outline: none; }
 
 a[target="_blank"]:after {
-  content: "\f08e";
-  font-family: "FontAwesome";
   display: inline-block;
-  margin-left: 5px;
-  font-weight: bold; }
+  vertical-align: baseline;
+  content: '';
+  background: url(/sites/napo/themes/custom/napo_theme/images/external_link_napo.png) no-repeat center rgba(0, 0, 0, 0);
+  margin-left: 0.5rem;
+  width: 0.875rem;
+  height: 0.875rem; }
 
 .sliding-popup-top#sliding-popup {
   background-image: url(/sites/napo/themes/custom/napo_theme/images/background-cookies.png);
@@ -3398,14 +3400,6 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
     outline: none; }
   .view-napo-and-friends .tabledrag-toggle-weight-wrapper {
     text-align: left; }
-.view-napo-and-friends #tmgmt-9 a:after {
-  display: inline-block;
-  vertical-align: baseline;
-  content: '';
-  background: url(/sites/napo/themes/custom/napo_theme/images/external_link_napo.png) no-repeat center rgba(0, 0, 0, 0);
-  margin-left: 0.5rem;
-  width: 0.875rem;
-  height: 0.875rem; }
 
 .napos-films-films .block-views-exposed-filter-blocknapo-films-index-page-1 {
   position: absolute;

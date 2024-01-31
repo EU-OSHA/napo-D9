@@ -78,7 +78,6 @@ module:
   language_neutral_aliases: 0
   layout_builder: 0
   layout_discovery: 0
-  layoutcomponents: 0
   ldap_customize: 0
   link: 0
   locale: 0
@@ -134,7 +133,6 @@ module:
   slick_views: 0
   sliderwidget: 0
   smart_trim: 0
-  social_media_links: 0
   spamspan: 0
   system: 0
   taxonomy: 0
