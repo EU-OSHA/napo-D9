@@ -42,6 +42,7 @@ module:
   date_popup: 0
   datetime: 0
   dblog: 0
+  devel: 0
   draggableviews: 0
   dynamic_entity_reference: 0
   editor: 0
