@@ -50,6 +50,7 @@
   .description-and-download{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     .napofilms-download-box{
       border: 1px solid $text-color-blue;
       border-bottom-right-radius: 15px;
@@ -149,7 +150,7 @@
     .field__label{
       color: $text-color-grey-dark;
       font-weight:bold;
-      font-size:1rem;
+      font-size: 1rem;
       &:after{
         content:':';
       }
@@ -170,7 +171,7 @@
     }
     .field__items{
       font-weight:bold;
-      font-size:1.125rem;
+      font-size: 1rem;
       .field__item{
         & + .field__item{
           &:before{
