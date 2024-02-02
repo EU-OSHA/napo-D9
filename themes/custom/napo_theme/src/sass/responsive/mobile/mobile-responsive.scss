@@ -675,7 +675,9 @@
       }
     }
   }
+
 }
+
 
 @media only screen and (max-width: 525px){
 
@@ -882,5 +884,9 @@
     }
   }
 /**End comment - Napo films**/
+
+  .breadcrumb-container .breadcrumb {
+    justify-content: flex-start;
+  }
 
 }
