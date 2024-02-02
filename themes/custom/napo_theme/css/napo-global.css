@@ -4393,6 +4393,9 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
   .header-logo {
     padding: 0; } }
 @media only screen and (max-width: 767px) {
+  .block-page-title-block {
+    width: 100%; }
+
   .content-node-view {
     margin: 0; }
 
@@ -4915,19 +4918,19 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
     width: 100%; }
 
   /******  Napo In The Workplace And For Teachers - Detail  ******/
-  .node--type-napo-video .conten-video-info-tags {
-    padding-right: 1.5rem; }
-    .node--type-napo-video .conten-video-info-tags .categories .field--type-entity-reference {
-      flex-direction: column; }
-  .node--type-napo-video .conten-video-info .napo-film-video-download-form {
+  .node--type-napo-video .categories .field--type-entity-reference {
+    flex-direction: column; }
+  .node--type-napo-video .napo-film-video-download-form {
     position: relative;
     background-color: #f2f1f2; }
-    .node--type-napo-video .conten-video-info .napo-film-video-download-form .download {
+    .node--type-napo-video .napo-film-video-download-form .download {
       margin-left: auto; }
-  .node--type-napo-video.user-logged-in .back-button-custom {
-    top: -152px;
-    width: 100%; }
-    .node--type-napo-video.user-logged-in .back-button-custom a {
+  .node--type-napo-video .back-button-custom {
+    top: auto;
+    width: 100%;
+    position: relative;
+    margin-top: 4rem; }
+    .node--type-napo-video .back-button-custom a {
       display: block; }
 
   .node--type-lesson .content-accordions-download-custom .download-box ul,

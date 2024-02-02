@@ -1,4 +1,9 @@
 @media only screen and (max-width: 767px){
+
+  .block-page-title-block {
+    width: 100%;
+  }
+
   .content-node-view{
     margin:0;
   }
@@ -757,15 +762,14 @@
   /******  Napo In The Workplace And For Teachers - Detail  ******/
 
   .node--type-napo-video {
-    .conten-video-info {
-      &-tags {
-        padding-right:1.5rem;
+
+
         .categories {
           .field--type-entity-reference{
             flex-direction: column;
           }
         }
-      }
+
       .napo-film-video-download-form{
         position:relative;
         background-color:$bg-color-grey-light;
@@ -773,16 +777,18 @@
           margin-left:auto;
         }
       }
-    }
-    &.user-logged-in {
+
+
       .back-button-custom{
-        top:-152px;
+        top: auto;
         width:100%;
+        position: relative;
+        margin-top: 4rem;
         a{
           display:block;
         }
       }
-    }
+
   }
   .node--type-lesson,
   .node--type-msds-activities{
