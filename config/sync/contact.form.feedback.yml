@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - information@osha.europa.eu
+  - info@napofilm.net
 reply: ''
 weight: 0
 message: 'Your message has been sent.'
