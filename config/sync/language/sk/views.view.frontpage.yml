@@ -1,12 +1,19 @@
 label: 'Titulná strana'
 display:
   default:
+    display_title: Predvolené
     display_options:
-      empty:
-        area_text_custom:
-          content: 'Na titulnú stránku zatiaľ nebol pridaný žiadny obsah. Postupujte podľa <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">Používateľskej príručky</a> a začnite budovať váš web.'
-        title:
-          title: 'Vitajte na [site:name]'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Položiek na stránku'
+            items_per_page_options_all_label: '- Všetko -'
+            offset_label: 'Zobraziť od'
       exposed_form:
         options:
           submit_button: Použiť
@@ -14,18 +21,11 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Položiek na stránku'
-            items_per_page_options_all_label: '- Všetko -'
-            offset_label: 'Zobraziť od'
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-    display_title: Predvolené
+      empty:
+        area_text_custom:
+          content: 'Na titulnú stránku zatiaľ nebol pridaný žiadny obsah. Postupujte podľa <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">Používateľskej príručky</a> a začnite budovať váš web.'
+        title:
+          title: 'Vitajte na [site:name]'
   feed_1:
     display_title: 'Kanál správ'
   page_1:

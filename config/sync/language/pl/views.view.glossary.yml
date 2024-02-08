@@ -4,22 +4,6 @@ display:
   default:
     display_title: Domyślny
     display_options:
-      exposed_form:
-        options:
-          submit_button: Zastosuj
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Elementów na stronę'
-            items_per_page_options_all_label: '- Wszystko -'
-            offset_label: Przesunięcie
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         title:
           label: Title
@@ -27,6 +11,22 @@ display:
           label: Author
         changed:
           label: 'Ostatnia aktualizacja'
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+      exposed_form:
+        options:
+          submit_button: Zastosuj
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
   attachment_1:
     display_title: Załącznik
   page_1:

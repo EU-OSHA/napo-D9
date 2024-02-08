@@ -52,12 +52,15 @@
 {% endblock %}
 
 {% block content %}
-  <main class="container">
+  <main>
     {% if page.breadcrumb %}
-      <div class="breadcrumb">
-        {{ page.breadcrumb }}
+      <div class="breadcrumb-container container">
+        <div class="breadcrumb">
+          {{ page.breadcrumb }}
+        </div>
       </div>
     {% endif %}
+  <div class="container">
     <div class="row content-node-view">
       <div class="col-12">
         {{ page.node_view }}
@@ -68,6 +71,7 @@
         {{ page.content }}
       </div>
     </div>
+  </div>
   </main>
 {% endblock %}
 

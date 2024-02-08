@@ -4,22 +4,7 @@ display:
   default:
     display_title: Alapértelmezés
     display_options:
-      exposed_form:
-        options:
-          submit_button: Alkalmaz
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Elemek száma oldalanként'
-            items_per_page_options_all_label: '– Mind –'
-            offset_label: Eltolás
+      title: 'Egyéni blokkok könyvtára'
       fields:
         info:
           label: 'Blokk leírása'
@@ -31,6 +16,25 @@ display:
           label: Updated
         operations:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '– Mind –'
+            offset_label: Eltolás
+      exposed_form:
+        options:
+          submit_button: Alkalmaz
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nem érhetőek el egyéni blokkok.'
       filters:
         info:
           expose:
@@ -38,10 +42,6 @@ display:
         type:
           expose:
             label: Blokktípus
-      title: 'Egyéni blokkok könyvtára'
-      empty:
-        area_text_custom:
-          content: 'Nem érhetőek el egyéni blokkok.'
   page_1:
     display_title: Page
     display_options:

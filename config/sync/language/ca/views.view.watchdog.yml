@@ -4,22 +4,7 @@ display:
   default:
     display_title: 'Per defecte'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Elements per pàgina'
-            items_per_page_options_all_label: '- Tot -'
-            offset_label: Desplaçament
-          tags:
-            previous: ‹‹
-            next: ››
+      title: 'Missatges recents del registre'
       fields:
         nothing:
           admin_label: Icona
@@ -40,6 +25,26 @@ display:
           separator: ', '
         link:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area:
+          admin_label: 'No hi ha missatges de registre disponibles.'
+          content: 'No hi ha missatges de registre disponibles.'
       filters:
         type:
           expose:
@@ -47,10 +52,5 @@ display:
         severity:
           expose:
             label: Severitat
-      title: 'Missatges recents del registre'
-      empty:
-        area:
-          admin_label: 'No hi ha missatges de registre disponibles.'
-          content: 'No hi ha missatges de registre disponibles.'
   page:
     display_title: Page

@@ -2,10 +2,6 @@ display:
   default:
     display_title: Privzeto
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
       fields:
         filename:
           label: Ime
@@ -17,6 +13,10 @@ display:
           label: Status
         count:
           label: 'Uporabljen v'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
       filters:
         filename:
           expose:

@@ -3,21 +3,7 @@ display:
   default:
     display_title: Numatytasis
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          tags:
-            previous: '‹ ankstesnis'
-            next: 'kitas  ›'
-            first: '« pirmas'
-            last: 'paskutinis  »'
-          expose:
-            items_per_page_label: 'Vienetų kiekis puslapyje'
-            items_per_page_options_all_label: '- Visos -'
+      title: Komentarai
       fields:
         comment_bulk_form:
           action_title: Veiksmas
@@ -31,6 +17,24 @@ display:
           label: Updated
         operations:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: 'kitas  ›'
+            previous: '‹ ankstesnis'
+            first: '« pirmas'
+            last: 'paskutinis  »'
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      empty:
+        area_text_custom:
+          content: 'Nėra komentarų.'
       filters:
         subject:
           expose:
@@ -38,10 +42,6 @@ display:
         langcode:
           expose:
             label: Language
-      title: Komentarai
-      empty:
-        area_text_custom:
-          content: 'Nėra komentarų.'
       use_more_text: daugiau
   page_published:
     display_title: 'Publikuoti komentarai'
@@ -51,15 +51,6 @@ display:
   page_unapproved:
     display_title: 'Nepatvirtinti komentarai'
     display_options:
-      menu:
-        title: 'Nepatvirtinti komentarai'
-      filters:
-        subject:
-          expose:
-            label: Tema
-        langcode:
-          expose:
-            label: Language
       fields:
         comment_bulk_form:
           action_title: Veiksmas
@@ -73,3 +64,12 @@ display:
           label: Updated
         operations:
           label: Operations
+      filters:
+        subject:
+          expose:
+            label: Tema
+        langcode:
+          expose:
+            label: Language
+      menu:
+        title: 'Nepatvirtinti komentarai'

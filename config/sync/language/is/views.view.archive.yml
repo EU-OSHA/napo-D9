@@ -3,19 +3,19 @@ display:
   default:
     display_title: Sjálfgefið
     display_options:
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
       exposed_form:
         options:
           submit_button: Virkja
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Hlutir per síðu'
-            items_per_page_options_all_label: '- Allt -'
-          tags:
-            previous: ‹‹
-            next: ››
   block_1:
     display_title: Blokk
   page_1:

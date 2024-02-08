@@ -4,22 +4,7 @@ display:
   default:
     display_title: Predvolené
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Položiek na stránku'
-            items_per_page_options_all_label: '- Všetko -'
-            offset_label: 'Zobraziť od'
+      title: Súbory
       fields:
         filename:
           label: Názov
@@ -39,6 +24,25 @@ display:
           label: 'Dátum zmeny'
         count:
           label: 'Použité v'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Položiek na stránku'
+            items_per_page_options_all_label: '- Všetko -'
+            offset_label: 'Zobraziť od'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Žiadne súbory nie sú dostupné.'
       filters:
         filename:
           expose:
@@ -49,10 +53,6 @@ display:
         status:
           expose:
             label: Status
-      title: Súbory
-      empty:
-        area_text_custom:
-          content: 'Žiadne súbory nie sú dostupné.'
   page_1:
     display_title: 'Files overview'
     display_options:
@@ -60,20 +60,20 @@ display:
         title: Súbory
   page_2:
     display_options:
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Položiek na stránku'
-            items_per_page_options_all_label: '- Všetko -'
-            offset_label: 'Zobraziť od'
       fields:
         entity_label:
           label: Entita
         type:
           label: 'Typ entity'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Položiek na stránku'
+            items_per_page_options_all_label: '- Všetko -'
+            offset_label: 'Zobraziť od'
       arguments:
         fid:
           exception:

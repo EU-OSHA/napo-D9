@@ -4,22 +4,7 @@ display:
   default:
     display_title: Standaard
     display_options:
-      exposed_form:
-        options:
-          submit_button: Toepassen
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Items per pagina'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Startpunt
+      title: 'Aangepaste blokken-bibliotheek'
       fields:
         info:
           label: Blokbeschrijving
@@ -31,6 +16,25 @@ display:
           label: Updated
         operations:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+      exposed_form:
+        options:
+          submit_button: Toepassen
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Er zijn geen aangepaste blokken beschikbaar.'
       filters:
         info:
           expose:
@@ -38,10 +42,6 @@ display:
         type:
           expose:
             label: 'Blok type'
-      title: 'Aangepaste blokken-bibliotheek'
-      empty:
-        area_text_custom:
-          content: 'Er zijn geen aangepaste blokken beschikbaar.'
   page_1:
     display_title: Page
     display_options:

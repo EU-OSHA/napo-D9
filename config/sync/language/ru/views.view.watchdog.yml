@@ -4,22 +4,7 @@ display:
   default:
     display_title: 'По умолчанию'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Элементов на страницу'
-            items_per_page_options_all_label: '- Все -'
-            offset_label: Пропустить
-          tags:
-            previous: ‹‹
-            next: ››
+      title: 'Последние записи журнала'
       fields:
         nothing:
           admin_label: Иконка
@@ -40,6 +25,26 @@ display:
           separator: ', '
         link:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Элементов на страницу'
+            items_per_page_options_all_label: '- Все -'
+            offset_label: Пропустить
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area:
+          admin_label: 'В системном журнале нет сообщений.'
+          content: 'В системном журнале нет сообщений.'
       filters:
         type:
           expose:
@@ -47,10 +52,5 @@ display:
         severity:
           expose:
             label: Важность
-      title: 'Последние записи журнала'
-      empty:
-        area:
-          admin_label: 'В системном журнале нет сообщений.'
-          content: 'В системном журнале нет сообщений.'
   page:
     display_title: Page

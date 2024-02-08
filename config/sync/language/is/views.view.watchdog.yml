@@ -3,19 +3,6 @@ display:
   default:
     display_title: Sjálfgefið
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Hlutir per síðu'
-            items_per_page_options_all_label: '- Allt -'
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         nothing:
           admin_label: Táknmynd
@@ -32,6 +19,23 @@ display:
           separator: ', '
         link:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      empty:
+        area:
+          admin_label: 'Engin kerfisskilaboð fáanleg.'
+          content: 'Engin kerfisskilaboð fáanleg.'
       filters:
         type:
           expose:
@@ -39,9 +43,5 @@ display:
         severity:
           expose:
             label: Alvarleiki
-      empty:
-        area:
-          admin_label: 'Engin kerfisskilaboð fáanleg.'
-          content: 'Engin kerfisskilaboð fáanleg.'
   page:
     display_title: Page

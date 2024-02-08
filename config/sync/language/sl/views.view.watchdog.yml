@@ -3,10 +3,6 @@ display:
   default:
     display_title: Privzeto
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
       fields:
         severity:
           label: Resnost
@@ -20,6 +16,14 @@ display:
           label: Uporabnik
         link:
           label: Operations
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+      empty:
+        area:
+          admin_label: 'V zapisniku ni sporočil.'
+          content: 'V zapisniku ni sporočil.'
       filters:
         type:
           expose:
@@ -27,9 +31,5 @@ display:
         severity:
           expose:
             label: Resnost
-      empty:
-        area:
-          admin_label: 'V zapisniku ni sporočil.'
-          content: 'V zapisniku ni sporočil.'
   page:
     display_title: Page

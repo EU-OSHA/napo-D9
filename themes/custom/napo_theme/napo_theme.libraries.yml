@@ -1,17 +1,10 @@
 bootstrap:
   js:
-    /libraries/popper.js/dist/umd/popper.min.js: {}
-    /libraries/bootstrap/dist/js/bootstrap.min.js: {}
+    /libraries_override/bootstrap/dist/js/popper.min.js: {}
+    /libraries_override/bootstrap/dist/js/bootstrap.min.js: {}
   css:
     component:
-      /libraries/bootstrap/dist/css/bootstrap.min.css: {}
-bootstrap_cdn:
-  js:
-    //cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js: { type: external, minified: true }
-    //stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js: { type: external, minified: true }
-  css:
-    component:
-      //stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css: { type: external, minified: true }
+      /libraries_override/bootstrap/dist/css/bootstrap.min.css: {}
 color.preview:
   version: VERSION
   css:
@@ -31,6 +24,3 @@ global-styling:
     component:
       css/napo-global.css: {}
       css/napo-print-version.css: {}
-    theme:
-      https://fonts.googleapis.com/css?family=Ubuntu: { type: external, minified: true  }
-

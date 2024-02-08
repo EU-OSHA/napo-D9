@@ -3,22 +3,7 @@ display:
   default:
     display_title: Προεπιλεγμένο
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Είδη ανά σελίδα'
-            items_per_page_options_all_label: '- Όλα -'
-            offset_label: Αντιστάθμιση
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+      title: Μέσα
       fields:
         media_bulk_form:
           action_title: Ενέργεια
@@ -36,14 +21,30 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Published
             format_custom_false: Unpublished
+            format_custom_true: Published
           separator: ', '
         changed:
           label: Updated
           separator: ', '
         operations:
           label: Operations
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       filters:
         bundle:
           expose:
@@ -61,7 +62,6 @@ display:
         langcode:
           expose:
             label: Language
-      title: Μέσα
   media_page_list:
     display_title: Μέσα
     display_options:

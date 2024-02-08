@@ -4,24 +4,15 @@ display:
   default:
     display_title: 'Noklusētā vērtība'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_options_all_label: '- Visi -'
+      title: Cilvēki
       fields:
         name:
           label: Lietotājvārds
         status:
           label: Status
           settings:
-            format_custom_true: Aktīvs
             format_custom_false: Bloķēts
+            format_custom_true: Aktīvs
         roles_target_id:
           label: Lomas
         created:
@@ -30,6 +21,19 @@ display:
           label: 'Piedējās piekļuves laiks'
         operations:
           label: Operations
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nav pieejams neviens cilvēks.'
       filters:
         status:
           group_info:
@@ -45,10 +49,6 @@ display:
         permission:
           expose:
             label: Atļauja
-      title: Cilvēki
-      empty:
-        area_text_custom:
-          content: 'Nav pieejams neviens cilvēks.'
       use_more_text: vairāk
   page_1:
     display_title: Page

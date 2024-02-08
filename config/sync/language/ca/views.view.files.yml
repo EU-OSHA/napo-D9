@@ -4,22 +4,7 @@ display:
   default:
     display_title: 'Per defecte'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Elements per pàgina'
-            items_per_page_options_all_label: '- Tot -'
-            offset_label: Desplaçament
+      title: Fitxers
       fields:
         fid:
           label: Fid
@@ -41,6 +26,25 @@ display:
           label: 'Data de modificació'
         count:
           label: 'Usat a'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'No hi ha fitxers disponibles.'
       filters:
         filename:
           expose:
@@ -51,10 +55,6 @@ display:
         status:
           expose:
             label: Status
-      title: Fitxers
-      empty:
-        area_text_custom:
-          content: 'No hi ha fitxers disponibles.'
   page_1:
     display_title: 'Visió generalt dels fitxers'
     display_options:
@@ -63,15 +63,7 @@ display:
   page_2:
     display_title: 'Utilització de fitxer'
     display_options:
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Elements per pàgina'
-            items_per_page_options_all_label: '- Tot -'
-            offset_label: Desplaçament
+      title: 'Utilització de fitxer'
       fields:
         entity_label:
           label: Entitat
@@ -82,7 +74,15 @@ display:
         count:
           label: 'Comptador d''ús'
           format_plural_string: !!binary MQNAY291bnQ=
-      title: 'Utilització de fitxer'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Elements per pàgina'
+            items_per_page_options_all_label: '- Tot -'
+            offset_label: Desplaçament
       arguments:
         fid:
           exception:

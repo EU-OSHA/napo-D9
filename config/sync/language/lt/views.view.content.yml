@@ -2,12 +2,9 @@ label: Content
 description: 'Find and manage content.'
 display:
   default:
+    display_title: Numatytasis
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+      title: Content
       fields:
         title:
           label: Title
@@ -18,12 +15,20 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Published
             format_custom_false: Unpublished
+            format_custom_true: Published
         changed:
           label: Updated
         operations:
           label: Operations
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      empty:
+        area_text_custom:
+          content: 'No content available.'
       filters:
         title:
           expose:
@@ -44,15 +49,10 @@ display:
         langcode:
           expose:
             label: Language
-      title: Content
-      empty:
-        area_text_custom:
-          content: 'No content available.'
-    display_title: Numatytasis
   page_1:
+    display_title: Page
     display_options:
       menu:
         title: Content
       tab_options:
         title: Content
-    display_title: Page

@@ -3,16 +3,7 @@ display:
   default:
     display_title: 'Noklusētā vērtība'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_options_all_label: '- Visi -'
+      title: Datnes
       fields:
         filename:
           label: Nosaukums
@@ -29,6 +20,19 @@ display:
           label: 'Augšupielādes datums'
         count:
           label: 'Izmantots iekš'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nav pieejama neviena datne.'
       filters:
         filename:
           expose:
@@ -39,25 +43,21 @@ display:
         status:
           expose:
             label: Status
-      title: Datnes
-      empty:
-        area_text_custom:
-          content: 'Nav pieejama neviena datne.'
   page_1:
     display_options:
       menu:
         title: Datnes
   page_2:
     display_options:
-      pager:
-        options:
-          expose:
-            items_per_page_options_all_label: '- Visi -'
       fields:
         type:
           label: 'Entītijas veids'
         count:
           label: 'Lietojumu skaits'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
       arguments:
         fid:
           exception:

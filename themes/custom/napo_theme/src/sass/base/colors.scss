@@ -1,16 +1,43 @@
 
-/* D9 - Variables NCW */
-
-
 /*Font Family*/
-
 @font-face {
   font-family: 'Ubuntu', sans-serif;
 }
 
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubuntu/Ubuntu-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu-Medium';
+  src: url('../fonts/ubuntu/Ubuntu-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url('../fonts/ubuntu/Ubuntu-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Light';
+  src: url('../fonts/ubuntu/Ubuntu-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu-Italic';
+  src: url('../fonts/ubuntu/Ubuntu-Italic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /* Font colours */
-
 $text-color-blue: #1f3695;
 $text-color-blue-light:#bbc2df;
 $text-color-white: #FFF;
@@ -23,8 +50,7 @@ $text-color-black: #000;
 $text-color-grey-blue: #9FA8D1;
 
 
-/* background colours */
-
+/* Background colours */
 $bg-color-blue: #1f3695;
 $bg-color-blue-light-hover: #506B9E;
 $bg-color-blue-2: #337ab7;
@@ -46,6 +72,3 @@ $bg-color-grey-2: #777777;
 $bg-color-grey-3:#666;
 $bg-color-black: #000;
 $bg-color-green: #5cb85c;
-
-
-/* END - D9 - Variables NCW */

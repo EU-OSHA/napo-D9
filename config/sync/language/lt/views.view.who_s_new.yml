@@ -3,12 +3,12 @@ display:
   default:
     display_title: Numatytasis
     display_options:
+      title: 'Nauji nariai'
       exposed_form:
         options:
           submit_button: Pritaikyti
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-      title: 'Nauji nariai'
   block_1:
     display_title: 'Nauji nariai'
     display_options:

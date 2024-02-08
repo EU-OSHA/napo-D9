@@ -2,7 +2,6 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   action: 0
-  addtoany: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
   anchor_link: 0
@@ -80,7 +79,6 @@ module:
   language_neutral_aliases: 0
   layout_builder: 0
   layout_discovery: 0
-  layoutcomponents: 0
   ldap_customize: 0
   link: 0
   locale: 0
@@ -101,9 +99,12 @@ module:
   mysql: 0
   napo_content_cart: 0
   napo_film: 0
+  napo_films_download: 0
   napo_msds_activities: 0
   node: 0
   notification: 0
+  oe_webtools: 0
+  oe_webtools_social_share: 0
   options: 0
   osha_matomo: 0
   page_cache: 0
@@ -133,7 +134,6 @@ module:
   slick_views: 0
   sliderwidget: 0
   smart_trim: 0
-  social_media_links: 0
   spamspan: 0
   system: 0
   taxonomy: 0

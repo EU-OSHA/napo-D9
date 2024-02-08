@@ -2,9 +2,6 @@ display:
   default:
     display_title: Privzeto
     display_options:
-      exposed_form:
-        options:
-          reset_button_label: Reset
       fields:
         title:
           label: Title
@@ -12,6 +9,9 @@ display:
           label: Author
         changed:
           label: 'Zadnja posodobitev'
+      exposed_form:
+        options:
+          reset_button_label: Reset
   attachment_1:
     display_title: Priponka
   page_1:

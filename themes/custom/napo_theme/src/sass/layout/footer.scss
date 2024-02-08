@@ -169,3 +169,10 @@
     }
   }
 }
+
+/**For napo film pages**/
+.node--type-napo-video, body[class*="napos-films-coming-soon-"]{
+  .site-footer .block-views-blockconsortium-partners-block{
+    padding: 1.25rem 15px 0 15px;
+  }
+}

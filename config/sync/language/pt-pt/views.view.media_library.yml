@@ -2,6 +2,19 @@ display:
   default:
     display_title: Predefinido
     display_options:
+      title: Media
+      fields:
+        media_bulk_form:
+          action_title: Ação
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
       exposed_form:
         options:
           submit_button: 'Aplicar filtros'
@@ -9,18 +22,19 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
+      empty:
+        area_text_custom:
+          content: 'Sem media disponível.'
+      sorts:
+        created:
           expose:
-            items_per_page_label: 'Itens por página'
-            items_per_page_options_all_label: '- Todos -'
-            offset_label: Deslocamento
-          tags:
-            previous: ‹‹
-            next: ››
-      fields:
-        media_bulk_form:
-          action_title: Ação
+            label: 'Mais recentes primeiro'
+        name:
+          expose:
+            label: 'Nome (A-Z)'
+        name_1:
+          expose:
+            label: 'Nome (Z-A)'
       filters:
         status:
           expose:
@@ -43,20 +57,6 @@ display:
         langcode:
           expose:
             label: Language
-      sorts:
-        created:
-          expose:
-            label: 'Mais recentes primeiro'
-        name:
-          expose:
-            label: 'Nome (A-Z)'
-        name_1:
-          expose:
-            label: 'Nome (Z-A)'
-      title: Media
-      empty:
-        area_text_custom:
-          content: 'Sem media disponível.'
   page:
     display_title: Page
     display_options:
@@ -72,14 +72,14 @@ display:
   widget:
     display_title: Widget
     display_options:
-      filters:
-        name:
-          expose:
-            label: Nome
       arguments:
         bundle:
           exception:
             title: Todos
+      filters:
+        name:
+          expose:
+            label: Nome
       header:
         display_link_grid:
           label: Grelha
@@ -96,14 +96,14 @@ display:
           label: Author
         changed:
           label: Updated
-      filters:
-        name:
-          expose:
-            label: Nome
       arguments:
         bundle:
           exception:
             title: Todos
+      filters:
+        name:
+          expose:
+            label: Nome
       header:
         display_link_grid:
           label: Grelha

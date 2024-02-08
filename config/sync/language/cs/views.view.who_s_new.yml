@@ -4,6 +4,7 @@ display:
   default:
     display_title: Výchozí
     display_options:
+      title: 'Kdo je nový'
       exposed_form:
         options:
           submit_button: Použít
@@ -11,7 +12,6 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      title: 'Kdo je nový'
   block_1:
     display_title: 'Kdo je nový'
     display_options:

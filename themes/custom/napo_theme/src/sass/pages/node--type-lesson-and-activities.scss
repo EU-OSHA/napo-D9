@@ -1,8 +1,5 @@
 .node--type-lesson,
 .node--type-msds-activities{
-  .block-page-title-block{
-    margin-top:3rem;
-  }
   .page-banner-custom{
     padding: 0 0 2.5rem;
     position: relative;
@@ -84,12 +81,15 @@
     padding-bottom:2.5rem;
     min-height: 175px;
     .introductory-text{
-      background: $bg-color-grey-light-3;
-      padding: 1.25rem 1.875rem 0.625rem 5rem;
+      padding: 1.25rem 1.875rem 0.625rem 1rem;
       min-height: 175px;
       width: 76%;
       float:left;
-      font-size:1.125rem;
+      font-size: 1rem;
+      color: $text-color-grey-dark;
+      p{
+        font-size: 1rem;
+      }
     }
     .facilitator-guidance{
       width: 24%;
@@ -164,7 +164,6 @@
                 background-image: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png) ;
                 background-position: 96% 50%;
                 background-repeat: no-repeat;
-                text-transform: uppercase;
               }
             }
             a{
@@ -312,7 +311,7 @@
     flex-direction: row;
     padding: 2.5rem 3%;
     margin: 0rem 0rem 1.125rem 0rem;
-    background-image: url(/sites/napo/themes/custom/napo_theme/images/background-story.png) ;
+    /**    background-image: url(/sites/napo/themes/custom/napo_theme/images/background-story.png) ;**/
     background-repeat: repeat-x;
     background-position: bottom left;
     h2{
@@ -331,26 +330,6 @@
           position:static;
         }
       }
-    }
-  }
-  .back-button-custom {
-    position: absolute;
-    z-index: 1;
-    top:3rem;
-    right:auto;
-    left: 15px;
-    margin-bottom:0.625rem;
-    a{
-      color: $text-color-blue;
-      height: auto;
-      font-size: 0.875rem;
-      font-weight: bold;
-      background-image: url(/sites/napo/themes/custom/napo_theme/images/arrow-back.png) ;
-      background-repeat: no-repeat;
-      background-position: left 50%;
-      background-color:transparent;
-      padding: 0.5rem 1rem;
-      background-size: auto 10px;
     }
   }
 }

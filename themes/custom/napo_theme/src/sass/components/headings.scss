@@ -46,16 +46,15 @@ h3{
 }
 
 
-.block-page-title-block{
-  width:100%;
+.block-page-title-block {
+  width: 86%;
   h1{
-    padding: 0.25rem 0.5rem;
+    font-family: 'Ubuntu-Medium';
+    padding: 0;
     margin-bottom:20px;
-    border-bottom: 1px solid $bg-color-grey-light-3;
     color: $text-color-blue;
-    background: $bg-color-grey-light;
-    font-size: 30px;
-    font-weight:600;
+    font-size: 1.85rem;
+    font-weight: 400;
     line-height: 1.1;
     width:100%;
   }

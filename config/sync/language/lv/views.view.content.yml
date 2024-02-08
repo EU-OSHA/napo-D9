@@ -2,13 +2,9 @@ label: Content
 description: 'Find and manage content.'
 display:
   default:
+    display_title: 'Noklusētā vērtība'
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_desc_label: Desc
+      title: Content
       fields:
         title:
           label: Title
@@ -24,6 +20,15 @@ display:
           label: Updated
         operations:
           label: Operations
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'No content available.'
       filters:
         title:
           expose:
@@ -41,15 +46,10 @@ display:
         langcode:
           expose:
             label: Language
-      title: Content
-      empty:
-        area_text_custom:
-          content: 'No content available.'
-    display_title: 'Noklusētā vērtība'
   page_1:
+    display_title: Page
     display_options:
       menu:
         title: Content
       tab_options:
         title: Content
-    display_title: Page

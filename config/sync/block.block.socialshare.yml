@@ -1,0 +1,25 @@
+uuid: d49bc1ec-ca2f-436b-b16b-a56707261eeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_webtools_social_share
+    - system
+  theme:
+    - napo_theme
+id: socialshare
+theme: napo_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: social_share
+settings:
+  id: social_share
+  label: 'Social Share'
+  label_display: '0'
+  provider: oe_webtools_social_share
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

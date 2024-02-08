@@ -3,11 +3,11 @@ display:
   default:
     display_title: 'По подразбиране'
     display_options:
+      title: 'Последно съдържание'
       exposed_form:
         options:
           submit_button: Търси
           reset_button_label: Reset
-      title: 'Последно съдържание'
       use_more_text: още...
   block_1:
     display_title: Блокирай

@@ -3,22 +3,7 @@ display:
   default:
     display_title: Προεπιλεγμένο
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Είδη ανά σελίδα'
-            items_per_page_options_all_label: '- Όλα -'
-            offset_label: Αντιστάθμιση
+      title: Αρχεία
       fields:
         fid:
           label: Fid
@@ -40,6 +25,25 @@ display:
           label: 'Αλλαγμένη ημερομηνία'
         count:
           label: 'Χρησιμοποιείται σε'
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Δεν υπάρχουν αρχεία.'
       filters:
         filename:
           expose:
@@ -50,25 +54,12 @@ display:
         status:
           expose:
             label: Status
-      title: Αρχεία
-      empty:
-        area_text_custom:
-          content: 'Δεν υπάρχουν αρχεία.'
   page_1:
     display_options:
       menu:
         title: Αρχεία
   page_2:
     display_options:
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-          expose:
-            items_per_page_label: 'Είδη ανά σελίδα'
-            items_per_page_options_all_label: '- Όλα -'
-            offset_label: Αντιστάθμιση
       fields:
         entity_label:
           label: Οντότητα
@@ -78,6 +69,15 @@ display:
           label: 'Καταχώρηση μονάδας'
         count:
           format_plural_string: !!binary MQNAY291bnQ=
+      pager:
+        options:
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+          expose:
+            items_per_page_label: 'Είδη ανά σελίδα'
+            items_per_page_options_all_label: '- Όλα -'
+            offset_label: Αντιστάθμιση
       arguments:
         fid:
           exception:
