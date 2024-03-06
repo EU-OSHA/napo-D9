@@ -151,7 +151,7 @@
         {% if item.entity.field_media_video_file.entity.getMimeType() == "video/mp4" %}
           <div id="videoCustom" class="video-custom">
             {{ drupal_entity("media", item.target_id) }}
-            <img src="/sites/napo/files/images/napo_video/{{ video_img }}.jpg" class="video-custom__image" />
+            <img src="/sites/napo/files/images/napo_video/{{ video_img }}.jpg" class="video-custom__image" alt="{{ video_img }}" />
             <button type="button" class="video-custom__playButton playButton-1" id="videoPlayCustomButton"></button>
           </div>
         {% endif %}
