@@ -45,9 +45,9 @@
 <div{{ attributes }}>
   {{ title_suffix.contextual_links }}
   {% if fieldlink and external_link %}
-    <a target ="_blank" title="{{ fieldlink['#title']}}" href="{{ fieldlink['#title'] }}">{{ content.field_media_image_1 }}</a>
+    <a rel="noopener" target ="_blank" title="{{ fieldlink['#title']}}" href="{{ fieldlink['#title'] }}">{{ content.field_media_image_1 }}</a>
   {% elseif fieldlink %}
-    <a title="{{ fieldlink['#title']}}" href="{{ fieldlink['#title'] }}">{{ content.field_media_image_1 }}</a>
+    <a rel title="{{ fieldlink['#title']}}" href="{{ fieldlink['#title'] }}">{{ content.field_media_image_1 }}</a>
   {% else %}
     {{ content.field_media_image_1 }}
   {% endif %}
