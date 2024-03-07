@@ -4147,8 +4147,13 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
       border: none;
       box-shadow: none;
       outline: none; }
+.node--type-napo-video iframe {
+  border: 0; }
 .node--type-napo-video .playingVideoCustom .video-custom__image, .node--type-napo-video .playingVideoCustom .video-custom__playButton {
   display: none; }
+
+iframe {
+  border: 0; }
 
 .napo-films-modal .napo-film-video-download-form {
   position: absolute;
