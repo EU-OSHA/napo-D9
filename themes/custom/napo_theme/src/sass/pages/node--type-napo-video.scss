@@ -252,6 +252,9 @@
       }
     }
   }
+  iframe{
+    border: 0;
+  }
   .playingVideoCustom{
     .video-custom{
       &__image,
@@ -261,8 +264,12 @@
     }
   }
 }
-
+iframe{
+  border: 0;
+}
 .napo-films-modal{
+
+
   .napo-film-video-download-form{
     position:absolute;
     top:0;

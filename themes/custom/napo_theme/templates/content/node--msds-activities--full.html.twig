@@ -86,7 +86,7 @@
   <div class="page-banner-custom">
   <div class="video-custom" id="videoCustom">
     {{ content.field_msds_video }}
-    <img src="/sites/napo/files/images/napo_video/{{ imageEntity['#media'].field_media_image.alt }}" class="video-custom__image" />
+    <img src="/sites/napo/files/images/napo_video/{{ imageEntity['#media'].field_media_image.alt }}" class="video-custom__image" alt="{{ imageEntity['#media'].field_media_image.alt }}" />
 
     <button type="button" class="video-custom__playButton playButton-1" id="videoPlayCustomButton"></button>
   </div>
