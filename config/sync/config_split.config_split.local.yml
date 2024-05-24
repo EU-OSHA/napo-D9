@@ -10,7 +10,6 @@ folder: sites/napo/config/local
 module:
   custom_migrations: 0
   devel: 0
-  easy_install: 0
   migrate: 0
   migrate_drupal: 0
   migrate_drupal_ui: 0

@@ -8,6 +8,7 @@ module:
   automated_cron: 0
   big_pipe: 0
   blazy: 0
+  blazy_ui: 0
   block: 0
   block_content: 0
   block_form_alter: 0
@@ -42,7 +43,6 @@ module:
   date_popup: 0
   datetime: 0
   dblog: 0
-  devel: 0
   draggableviews: 0
   dynamic_entity_reference: 0
   editor: 0
@@ -112,7 +112,6 @@ module:
   path: 0
   path_alias: 0
   pathologic: 0
-  quickedit: 0
   quicktabs: 0
   rdf: 0
   redirect: 0
@@ -144,10 +143,10 @@ module:
   toolbar: 0
   tour: 0
   translation_views: 0
-  twig_extensions: 0
   twig_tweak: 0
   ultimate_cron: 0
   update: 0
+  upgrade_status: 0
   url_redirect: 0
   user: 0
   video_embed_field: 0
