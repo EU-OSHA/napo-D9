@@ -1351,7 +1351,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<a href="{{path}}/{{ langcode }}/napos-films/films?f[0]=categories:{{ field_main_tag__target_id }}" >{{ field_main_tag }}</a>'
+            text: "{% if langcode != 'pt-pt' %}\r\n<a href=\"{{path}}/{{ langcode }}/napos-films/films?f[0]=categories:{{ field_main_tag__target_id }}\" >{{ field_main_tag }}</a>\r\n{% else %}\r\n<a href=\"/{{path}}pt/napos-films/films?f[0]=categories:{{ field_main_tag__target_id }}\" >{{ field_main_tag }}</a>\r\n{% endif %}"
             make_link: false
             path: ''
             absolute: false
@@ -1414,7 +1414,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<a href=\"{{path}}/{{ langcode }}/napos-films/films?f[0]=categories:{{ field_combined_tags__target_id }}\" >{{ field_combined_tags }}</a>\r\n"
+            text: "{% if langcode != 'pt-pt' %}\r\n<a href=\"{{path}}/{{ langcode }}/napos-films/films?f[0]=categories:{{ field_combined_tags__target_id }}\" >{{ field_combined_tags }}</a>\r\n{% else %}\r\n<a href=\"/{{path}}pt/napos-films/films?f[0]=categories:{{ field_combined_tags__target_id }}\" >{{ field_combined_tags }}</a>\r\n{% endif %}"
             make_link: false
             path: ''
             absolute: false
