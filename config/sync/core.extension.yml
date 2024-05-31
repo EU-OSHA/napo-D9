@@ -22,7 +22,6 @@ module:
   ckeditor_font: 0
   ckeditor_resize: 0
   ckwordcount: 0
-  color: 0
   color_field: 0
   colorbox: 0
   comment: 0
@@ -63,7 +62,6 @@ module:
   filter: 0
   help: 0
   history: 0
-  htmlmail: 0
   image: 0
   image_widget_crop: 0
   inline_entity_form: 0
@@ -146,7 +144,6 @@ module:
   twig_tweak: 0
   ultimate_cron: 0
   update: 0
-  upgrade_status: 0
   url_redirect: 0
   user: 0
   video_embed_field: 0

@@ -6,3 +6,4 @@ current_page: false
 current_page_link: false
 trim_title: 0
 admin_pages_disable: true
+site_wide: true
