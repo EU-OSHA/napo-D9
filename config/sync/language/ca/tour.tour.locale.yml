@@ -1,7 +1,7 @@
 label: Traducció
 tips:
   locale-overview:
-    label: 'Traducció de la interfície d''usuari'
+    label: "Traducció de la interfície d'usuari"
   locale-language:
     label: 'Llengua de la traducció'
     body: 'Escolliu la llengua que voleu traduir.'

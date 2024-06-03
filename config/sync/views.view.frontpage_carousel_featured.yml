@@ -422,7 +422,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      title: 'Napo''s films'
+      title: "Napo's films"
       fields:
         view_node:
           id: view_node
@@ -760,7 +760,6 @@ display:
             title: '0'
           optionset: default_frontpage
           class: ''
-          id: ''
           image: ''
           link: ''
           overlay: ''
@@ -768,11 +767,12 @@ display:
           vanilla: true
           layout: ''
           cache: 0
-          skin: classic
           grid: null
           grid_medium: null
           grid_small: null
           current_view_mode: block
+          id: ''
+          skin: classic
           overridables:
             arrows: arrows
             autoplay: '0'
@@ -834,7 +834,7 @@ display:
       rendering_language: '***LANGUAGE_language_interface***'
       display_extenders:
         metatag_display_extender: {  }
-      block_description: 'Napo''s films'
+      block_description: "Napo's films"
     cache_metadata:
       max-age: -1
       contexts:
@@ -853,7 +853,7 @@ display:
     display_plugin: block
     position: 2
     display_options:
-      title: 'Napo''s films latest videos'
+      title: "Napo's films latest videos"
       fields:
         field_image:
           id: field_image
@@ -1007,7 +1007,6 @@ display:
             title: '0'
           optionset: default_frontpage
           class: ''
-          id: ''
           image: ''
           link: title
           overlay: ''
@@ -1015,11 +1014,12 @@ display:
           vanilla: true
           layout: ''
           cache: 0
-          skin: classic
           grid: null
           grid_medium: null
           grid_small: null
           current_view_mode: block_1
+          id: ''
+          skin: classic
           overridables:
             autoplay: autoplay
             arrows: '0'
@@ -1061,7 +1061,7 @@ display:
       rendering_language: '***LANGUAGE_language_interface***'
       display_extenders:
         metatag_display_extender: {  }
-      block_description: 'Napo''s films latest videos'
+      block_description: "Napo's films latest videos"
     cache_metadata:
       max-age: -1
       contexts:

@@ -6,5 +6,6 @@ dependencies:
     - node
 id: node.msd_video_only
 label: 'MSD video only'
+description: ''
 targetEntityType: node
 cache: true

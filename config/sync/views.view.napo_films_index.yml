@@ -204,7 +204,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ url_2 | split(''/'') [5]}}'
+            text: "{{ url_2 | split('/') [5]}}"
             make_link: false
             path: ''
             absolute: false
@@ -552,7 +552,7 @@ display:
       css_class: napo-film-list-view
       header:
         entity_node:
-          id: entity_node
+          id: 'entity_bundle:node'
           table: views
           field: entity_node
           relationship: none
@@ -585,7 +585,7 @@ display:
     position: 1
     display_options:
       enabled: true
-      title: 'Napo''s films'
+      title: "Napo's films"
       fields:
         nothing:
           id: nothing
@@ -862,7 +862,7 @@ display:
         header: false
       header:
         entity_node:
-          id: entity_node
+          id: 'entity_bundle:node'
           table: views
           field: entity_node
           relationship: none
@@ -1768,7 +1768,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '{{ url_2 | split(''/'') [5]}}'
+            text: "{{ url_2 | split('/') [5]}}"
             make_link: false
             path: ''
             absolute: false
@@ -3608,7 +3608,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '{{ url_2 | split(''/'') [5]}}'
+            text: "{{ url_2 | split('/') [5]}}"
             make_link: false
             path: ''
             absolute: false
@@ -5240,7 +5240,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '{{ url_2 | split(''/'') [5]}}'
+            text: "{{ url_2 | split('/') [5]}}"
             make_link: false
             path: ''
             absolute: false
@@ -6805,7 +6805,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '{{ url_2 | split(''/'') [5]}}'
+            text: "{{ url_2 | split('/') [5]}}"
             make_link: false
             path: ''
             absolute: false

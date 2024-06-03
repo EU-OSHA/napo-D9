@@ -5,7 +5,7 @@ dependencies:
   module:
     - node
 id: napo_s_gallery
-label: 'Napo''s Gallery'
+label: "Napo's Gallery"
 handler: simple
 handler_configuration: {  }
 entity_settings:

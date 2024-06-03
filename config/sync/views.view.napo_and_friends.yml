@@ -403,11 +403,11 @@ display:
         - 'config:field.storage.node.body'
   page_1:
     id: page_1
-    display_title: 'Reorder Napo''s friends'
+    display_title: "Reorder Napo's friends"
     display_plugin: page
     position: 3
     display_options:
-      title: 'Reorder Napo''s friends'
+      title: "Reorder Napo's friends"
       fields:
         title:
           id: title

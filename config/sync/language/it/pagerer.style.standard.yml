@@ -12,7 +12,7 @@ default_config:
       first_title: 'Vai alla prima pagina'
       previous_title: 'Vai alla pagina precedente'
       next_title: 'Vai alla pagina successiva'
-      last_title: 'Vai all''ultima pagina'
+      last_title: "Vai all'ultima pagina"
       page_current_reader: 'Pagina attuale'
       page_reader: Page
       first_reader: 'Prima pagina'

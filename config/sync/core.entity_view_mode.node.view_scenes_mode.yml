@@ -6,5 +6,6 @@ dependencies:
     - node
 id: node.view_scenes_mode
 label: 'View scenes mode'
+description: ''
 targetEntityType: node
 cache: true

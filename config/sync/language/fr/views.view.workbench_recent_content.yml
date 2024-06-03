@@ -52,7 +52,7 @@ display:
       empty:
         area:
           content:
-            value: 'Aucun contenu n''est disponible à l''édition pour vous.'
+            value: "Aucun contenu n'est disponible à l'édition pour vous."
       use_more_text: 'voir tout'
   block_1:
     display_options:

@@ -37,9 +37,9 @@ display:
             label: Per
         status_code:
           expose:
-            label: 'Codi d''estat'
+            label: "Codi d'estat"
           group_info:
-            label: 'Codi d''estat'
+            label: "Codi d'estat"
             group_items:
               1:
                 title: '300 Múltiples Opcions'
@@ -48,7 +48,7 @@ display:
               3:
                 title: '302 Trobat'
               4:
-                title: '303 Veieu d''Altres'
+                title: "303 Veieu d'Altres"
               5:
                 title: '304 Sense Modificació'
               6:

@@ -1325,7 +1325,7 @@ display:
       display_description: ''
       header:
         entity_node:
-          id: entity_node
+          id: 'entity_bundle:node'
           table: views
           field: entity_node
           relationship: none

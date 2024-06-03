@@ -281,7 +281,6 @@ display:
           title: '{{ arguments.title }}'
           default_argument_type: node
           default_argument_options: {  }
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -442,7 +441,6 @@ display:
             nothing: '0'
           optionset: default_frontpage
           class: ''
-          id: ''
           image: ''
           link: ''
           overlay: ''
@@ -450,11 +448,12 @@ display:
           vanilla: true
           layout: ''
           cache: 0
-          skin: ''
           grid: null
           grid_medium: null
           grid_small: null
           current_view_mode: scenes
+          id: ''
+          skin: ''
           overridables:
             arrows: arrows
             variableWidth: variableWidth
@@ -669,7 +668,7 @@ display:
           exposed: false
           draggable_views_reference: 'episode_list:page_1'
           draggable_views_null_order: before
-          draggable_views_pass_arguments: false
+          draggable_views_pass_arguments: 0
       arguments:
         title:
           id: title
@@ -690,7 +689,6 @@ display:
           title: ''
           default_argument_type: node
           default_argument_options: {  }
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true

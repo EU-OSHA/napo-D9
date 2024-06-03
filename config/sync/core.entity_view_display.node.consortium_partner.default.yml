@@ -16,6 +16,7 @@ mode: default
 content: {  }
 hidden:
   body: true
+  breadcrumbs: true
   field_image: true
   field_url: true
   langcode: true

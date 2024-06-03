@@ -6,11 +6,11 @@ id: develop
 label: Develop
 description: ''
 weight: 0
+stackable: false
+no_patching: false
+storage: null
 folder: sites/napo/config/develop
 module: {  }
 theme: {  }
-blacklist: {  }
-graylist:
-  - search_api.server.apache_solr
-graylist_dependents: false
-graylist_skip_equal: true
+complete_list: {  }
+partial_list: {  }

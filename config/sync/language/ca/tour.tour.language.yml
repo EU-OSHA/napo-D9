@@ -9,6 +9,6 @@ tips:
   language-reorder:
     label: 'Reordenament de les llengües'
   language-default:
-    label: 'Estableix l''idioma per defecte'
+    label: "Estableix l'idioma per defecte"
   language-operations:
     label: 'Modificant les llengües'

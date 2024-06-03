@@ -55,7 +55,7 @@ display:
       empty:
         area:
           content:
-            value: 'Vous n''avez créé ou édité aucun contenu.'
+            value: "Vous n'avez créé ou édité aucun contenu."
       arguments:
         uid_revision:
           exception:

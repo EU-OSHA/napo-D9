@@ -17,7 +17,7 @@ dependencies:
     - text
     - user
 id: napos_gallery
-label: 'Napo''s Gallery'
+label: "Napo's Gallery"
 module: views
 description: ''
 tag: ''

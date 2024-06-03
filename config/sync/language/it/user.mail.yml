@@ -11,10 +11,10 @@ register_no_approval_required:
   subject: 'Dettagli profilo per [user:display-name] su [site:name]'
   body: "[user:display-name],\r\n\r\nThank you for registering at [site:name]. You may now log in by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nThis link can only be used once to log in and will lead you to a page where you can set your password.\r\n\r\nAfter setting your password, you will be able to log in at [site:login-url] in the future using:\r\n\r\nusername: [user:name]\r\npassword: Your password\r\n\r\n--  [site:name] team"
 register_pending_approval:
-  subject: 'Dettagli del profilo per [user:display-name] su [site:name] (in attesa dell''approvazione dell''amministratore)'
+  subject: "Dettagli del profilo per [user:display-name] su [site:name] (in attesa dell'approvazione dell'amministratore)"
   body: "[user:display-name],\r\n\r\nThank you for registering at [site:name]. Your application for an account is currently pending approval. Once it has been approved, you will receive another email containing information about how to log in, set your password, and other details.\r\n\r\n--  [site:name] team"
 register_pending_approval_admin:
-  subject: 'Dettagli del profilo per [user:display-name] su [site:name] (in attesa dell''approvazione dell''amministratore)'
+  subject: "Dettagli del profilo per [user:display-name] su [site:name] (in attesa dell'approvazione dell'amministratore)"
   body: "[user:display-name] has applied for an account.\r\n\r\n[user:edit-url]"
 status_activated:
   subject: 'Dettagli profilo per [user:display-name] su [site:name] (approvato)'

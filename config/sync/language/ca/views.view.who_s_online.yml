@@ -1,5 +1,5 @@
 label: 'Bloc de qui està en línia'
-description: 'Mostra els noms d''usuari dels usuaris actius més recentment i el nombre total d''usuaris actius.'
+description: "Mostra els noms d'usuari dels usuaris actius més recentment i el nombre total d'usuaris actius."
 display:
   default:
     display_title: 'Per defecte'
@@ -26,5 +26,5 @@ display:
   who_s_online_block:
     display_title: 'Qui està connectat'
     display_options:
-      display_description: 'Una llista d''usuaris que tenen actualment una sessió oberta.'
+      display_description: "Una llista d'usuaris que tenen actualment una sessió oberta."
       block_description: 'Qui està connectat'

@@ -13,39 +13,6 @@ name: 'Basic HTML'
 format: basic_html
 weight: -7
 filters:
-  filter_html:
-    id: filter_html
-    provider: filter
-    status: true
-    weight: -10
-    settings:
-      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <span> <a hreflang href title class id target="_blank"> <blockquote cite> <ul type> <ol type start> <strong> <em> <li> <img src alt height width data-entity-uuid data-entity-type data-caption data-align>'
-      filter_html_help: false
-      filter_html_nofollow: false
-  filter_align:
-    id: filter_align
-    provider: filter
-    status: true
-    weight: 7
-    settings: {  }
-  filter_caption:
-    id: filter_caption
-    provider: filter
-    status: true
-    weight: 8
-    settings: {  }
-  filter_html_image_secure:
-    id: filter_html_image_secure
-    provider: filter
-    status: true
-    weight: 9
-    settings: {  }
-  editor_file_reference:
-    id: editor_file_reference
-    provider: editor
-    status: true
-    weight: 11
-    settings: {  }
   blazy_filter:
     id: blazy_filter
     provider: blazy
@@ -60,6 +27,53 @@ filters:
         img: img
         iframe: iframe
       use_data_uri: '0'
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 11
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 7
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 8
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <span> <a hreflang href title class id target="_blank"> <blockquote cite> <ul type> <ol type start> <strong> <em> <li> <img src alt height width data-entity-uuid data-entity-type data-caption data-align>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: true
+    weight: 9
+    settings: {  }
+  filter_spamspan:
+    id: filter_spamspan
+    provider: spamspan
+    status: false
+    weight: 0
+    settings:
+      spamspan_at: ' [at] '
+      spamspan_use_graphic: false
+      spamspan_dot_enable: false
+      spamspan_dot: ' [dot] '
+      spamspan_use_form: false
+      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
+      spamspan_form_default_url: contact
+      spamspan_form_default_displaytext: 'contact form'
   slick_filter:
     id: slick_filter
     provider: slick
@@ -68,7 +82,6 @@ filters:
     settings:
       optionset: default
       layout: ''
-      skin: ''
       background: false
       box_media_style: ''
       loading: ''
@@ -78,6 +91,7 @@ filters:
       media_switch: ''
       ratio: ''
       thumbnail_style: ''
+      skin: ''
       overridables:
         arrows: '0'
         autoplay: '0'
@@ -93,17 +107,3 @@ filters:
       thumbnail_effect: ''
       thumbnail_position: ''
       override: false
-  filter_spamspan:
-    id: filter_spamspan
-    provider: spamspan
-    status: false
-    weight: 0
-    settings:
-      spamspan_at: ' [at] '
-      spamspan_use_graphic: '0'
-      spamspan_dot_enable: '0'
-      spamspan_dot: ' [dot] '
-      spamspan_use_form: '0'
-      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
-      spamspan_form_default_url: contact
-      spamspan_form_default_displaytext: 'contact form'

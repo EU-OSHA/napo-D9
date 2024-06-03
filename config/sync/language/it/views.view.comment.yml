@@ -52,7 +52,7 @@ display:
             label: Oggetto
         combine:
           expose:
-            label: 'Nome dell''autore'
+            label: "Nome dell'autore"
         langcode:
           expose:
             label: Language
@@ -92,7 +92,7 @@ display:
             label: Oggetto
         combine:
           expose:
-            label: 'Nome dell''autore'
+            label: "Nome dell'autore"
         langcode:
           expose:
             label: Language

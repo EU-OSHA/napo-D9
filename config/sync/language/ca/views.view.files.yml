@@ -68,11 +68,11 @@ display:
         entity_label:
           label: Entitat
         type:
-          label: 'Tipus d''entitat'
+          label: "Tipus d'entitat"
         module:
           label: 'Mòdul de registre'
         count:
-          label: 'Comptador d''ús'
+          label: "Comptador d'ús"
           format_plural_string: !!binary MQNAY291bnQ=
       pager:
         options:
@@ -87,4 +87,4 @@ display:
         fid:
           exception:
             title: Tot
-          title: 'Informació d''ús del fitxer per {{ arguments.fid }}'
+          title: "Informació d'ús del fitxer per {{ arguments.fid }}"

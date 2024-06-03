@@ -11,7 +11,7 @@ type: 'canonical_entities:node'
 pattern: '/learning-with-napo/napo-for-teachers/[node:title]'
 selection_criteria:
   4209c95a-2fbb-4a29-95d5-4b13c9d2586b:
-    id: node_type
+    id: entity_bundle:node
     negate: false
     uuid: 4209c95a-2fbb-4a29-95d5-4b13c9d2586b
     context_mapping:

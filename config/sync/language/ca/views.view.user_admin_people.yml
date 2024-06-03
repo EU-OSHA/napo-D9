@@ -9,7 +9,7 @@ display:
         user_bulk_form:
           label: 'Actualització massiva'
         name:
-          label: 'Nom d''usuari'
+          label: "Nom d'usuari"
         status:
           label: Status
           settings:
@@ -73,4 +73,4 @@ display:
         description: 'Trobeu i gestioneu la gent que interacciona amb el vostre lloc.'
       tab_options:
         title: Gent
-        description: 'Gestiona comptes d''usuari, rols i permisos.'
+        description: "Gestiona comptes d'usuari, rols i permisos."

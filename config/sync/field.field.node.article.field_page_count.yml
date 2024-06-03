@@ -15,10 +15,10 @@ required: false
 translatable: false
 default_value:
   -
-    value: !!float 0
+    value: 0.0
 default_value_callback: ''
 settings:
-  min: !!float 0
+  min: 0.0
   max: null
   prefix: ''
   suffix: ''

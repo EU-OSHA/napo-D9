@@ -1,4 +1,4 @@
 title: Contacte
 settings:
-  confirmation_message: 'El vostre missatge s''ha enviat.'
+  confirmation_message: "El vostre missatge s'ha enviat."
   confirmation_url: /using-napo/rights-and-permissions

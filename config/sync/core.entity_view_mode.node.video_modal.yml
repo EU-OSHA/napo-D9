@@ -6,5 +6,6 @@ dependencies:
     - node
 id: node.video_modal
 label: 'Video Modal'
+description: ''
 targetEntityType: node
 cache: true

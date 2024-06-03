@@ -21,7 +21,7 @@ dependencies:
     - taxonomy
     - user
 id: napo_s_film_episodes
-label: 'Napo''s film episodes'
+label: "Napo's film episodes"
 module: views
 description: ''
 tag: ''
@@ -34,7 +34,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Napo''s film episodes'
+      title: "Napo's film episodes"
       fields:
         title:
           id: title
@@ -1652,7 +1652,6 @@ display:
           default_argument_options:
             index: 2
             use_alias: false
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -1848,7 +1847,7 @@ display:
           required: false
       header:
         entity_node:
-          id: entity_node
+          id: 'entity_bundle:node'
           table: views
           field: entity_node
           relationship: none

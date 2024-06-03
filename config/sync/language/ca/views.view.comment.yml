@@ -53,7 +53,7 @@ display:
             label: Assumpte
         combine:
           expose:
-            label: 'Nom de l''autor'
+            label: "Nom de l'autor"
         langcode:
           expose:
             label: Language
@@ -95,11 +95,11 @@ display:
             label: Assumpte
         combine:
           expose:
-            label: 'Nom de l''autor'
+            label: "Nom de l'autor"
         langcode:
           expose:
             label: Language
-      display_description: 'El llistat de comentaris pendents d''aprovació.'
+      display_description: "El llistat de comentaris pendents d'aprovació."
       menu:
         title: 'Comentaris sense aprovar'
-        description: 'Comentaris pendents d''aprovació'
+        description: "Comentaris pendents d'aprovació"

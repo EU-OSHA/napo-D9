@@ -32,40 +32,6 @@ filters:
     status: false
     weight: -47
     settings: {  }
-  filter_html:
-    id: filter_html
-    provider: filter
-    status: true
-    weight: -49
-    settings:
-      allowed_html: '<br> <p> <cite> <span> <a name href title class id target="_blank"> <img data-entity-type data-entity-uuid src alt height width> <drupal-media data-align data-caption title data-entity-type data-entity-uuid alt> <strong> <em> <u> <code> <s> <blockquote> <ul> <ol> <li> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
-      filter_html_help: false
-      filter_html_nofollow: false
-  filter_url:
-    id: filter_url
-    provider: filter
-    status: true
-    weight: -50
-    settings:
-      filter_url_length: 72
-  filter_html_escape:
-    id: filter_html_escape
-    provider: filter
-    status: false
-    weight: -48
-    settings: {  }
-  filter_html_image_secure:
-    id: filter_html_image_secure
-    provider: filter
-    status: false
-    weight: -42
-    settings: {  }
-  filter_caption:
-    id: filter_caption
-    provider: filter
-    status: false
-    weight: -44
-    settings: {  }
   filter_align:
     id: filter_align
     provider: filter
@@ -78,12 +44,60 @@ filters:
     status: true
     weight: -45
     settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: false
+    weight: -44
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -49
+    settings:
+      allowed_html: '<br> <p> <cite> <span> <a name href title class id target="_blank"> <img data-entity-type data-entity-uuid src alt height width> <drupal-media data-align data-caption title data-entity-type data-entity-uuid alt> <strong> <em> <u> <code> <s> <blockquote> <ul> <ol> <li> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: false
+    weight: -48
+    settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: false
+    weight: -42
+    settings: {  }
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
     status: true
     weight: -41
     settings: {  }
+  filter_spamspan:
+    id: filter_spamspan
+    provider: spamspan
+    status: false
+    weight: 0
+    settings:
+      spamspan_at: ' [at] '
+      spamspan_use_graphic: false
+      spamspan_dot_enable: false
+      spamspan_dot: ' [dot] '
+      spamspan_use_form: false
+      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
+      spamspan_form_default_url: contact
+      spamspan_form_default_displaytext: 'contact form'
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: -50
+    settings:
+      filter_url_length: 72
   media_embed:
     id: media_embed
     provider: media
@@ -101,7 +115,6 @@ filters:
     settings:
       optionset: default
       layout: ''
-      skin: ''
       background: false
       box_media_style: ''
       loading: ''
@@ -111,6 +124,7 @@ filters:
       media_switch: ''
       ratio: ''
       thumbnail_style: ''
+      skin: ''
       overridables:
         arrows: '0'
         autoplay: '0'
@@ -126,17 +140,3 @@ filters:
       thumbnail_effect: ''
       thumbnail_position: ''
       override: false
-  filter_spamspan:
-    id: filter_spamspan
-    provider: spamspan
-    status: false
-    weight: 0
-    settings:
-      spamspan_at: ' [at] '
-      spamspan_use_graphic: '0'
-      spamspan_dot_enable: '0'
-      spamspan_dot: ' [dot] '
-      spamspan_use_form: '0'
-      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
-      spamspan_form_default_url: contact
-      spamspan_form_default_displaytext: 'contact form'
