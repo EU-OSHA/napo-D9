@@ -14,7 +14,6 @@ module:
   custom_migrations: 0
   devel: 0
   migrate: 0
-  migrate_file_to_media_example: 0
   migrate_plus: 0
   migrate_tools: 0
 theme: {  }
