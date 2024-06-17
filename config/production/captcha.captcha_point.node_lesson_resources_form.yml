@@ -1,0 +1,7 @@
+uuid: 462a8740-df41-41ce-8131-be25908872ab
+langcode: en
+status: false
+dependencies: {  }
+formId: node_lesson_resources_form
+captchaType: default
+label: node_lesson_resources_form

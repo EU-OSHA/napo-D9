@@ -1,0 +1,7 @@
+uuid: 29085eb0-e85f-4c54-a776-b2c79dc4e831
+langcode: en
+status: true
+dependencies: {  }
+formId: ncc_download_centre_form
+captchaType: recaptcha_v3/captcha_action
+label: ncc_download_centre_form
