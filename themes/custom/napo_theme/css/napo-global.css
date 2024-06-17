@@ -104,6 +104,10 @@ div.pagerer-container {
 .wtPopSelect {
   display: none !important; }
 
+/**captcha**/
+.grecaptcha-badge {
+  display: none !important; }
+
 .ui-accordion .ui-accordion-header {
   display: block;
   cursor: pointer;
