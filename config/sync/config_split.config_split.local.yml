@@ -6,9 +6,6 @@ id: local
 label: Local
 description: ''
 weight: 0
-stackable: false
-no_patching: false
-storage: null
 folder: sites/napo/config/local
 module:
   custom_migrations: 0
@@ -17,5 +14,7 @@ module:
   migrate_plus: 0
   migrate_tools: 0
 theme: {  }
-complete_list: {  }
-partial_list: {  }
+blacklist: { }
+graylist: { }
+graylist_dependents: true
+graylist_skip_equal: true
