@@ -1,0 +1,7 @@
+uuid: a2455af0-8617-44f6-9b11-fc25ac2f69af
+langcode: en
+status: false
+dependencies: {  }
+formId: node_msds_resources_form
+captchaType: default
+label: node_msds_resources_form

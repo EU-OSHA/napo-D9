@@ -1,0 +1,7 @@
+uuid: 9f5f88a2-958f-453f-9207-472cea9c74be
+langcode: en
+status: false
+dependencies: {  }
+formId: node_napo_image_form
+captchaType: default
+label: node_napo_image_form

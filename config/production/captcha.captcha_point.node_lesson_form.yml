@@ -1,0 +1,7 @@
+uuid: 936becfb-6b28-44c1-b917-5fbda630c6b9
+langcode: en
+status: false
+dependencies: {  }
+formId: node_lesson_form
+captchaType: default
+label: node_lesson_form

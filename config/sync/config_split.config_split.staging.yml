@@ -11,7 +11,9 @@ module:
   adv_varnish: 0
   authorization: 0
   authorization_drupal_roles: 0
+  captcha: 0
   custom_migrations: 0
+  image_captcha: 0
   ldap_authentication: 0
   ldap_authorization: 0
   ldap_query: 0
@@ -23,6 +25,7 @@ module:
   migrate_file_to_media: 0
   migrate_plus: 0
   migrate_tools: 0
+  recaptcha_v3: 0
   smtp: 0
   externalauth: 10
 theme: {  }
