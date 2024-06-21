@@ -223,6 +223,11 @@ div.pagerer-container {
         background: url(../images/ico-linkedin.png) no-repeat; }
     .ecl-social-media-share .wt-ecl-social-media-share ul > li:nth-child(4), .ecl-social-media-share .wt-ecl-social-media-share ul > li:nth-child(5) {
       display: none; }
+    .ecl-social-media-share .wt-ecl-social-media-share ul a {
+      overflow: unset !important;
+      height: 32px; }
+    .ecl-social-media-share .wt-ecl-social-media-share ul svg {
+      display: none; }
 
 @media screen and (max-width: 576px) {
   .breadcrumb-container > .breadcrumb {

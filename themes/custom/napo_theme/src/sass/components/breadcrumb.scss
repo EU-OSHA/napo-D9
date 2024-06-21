@@ -117,6 +117,13 @@
         > li:nth-child(4), > li:nth-child(5){
           display: none;
         }
+        a{
+          overflow: unset !important;
+          height: 32px;
+        }
+        svg{
+          display: none;
+        }
       }
     }
   }
