@@ -80,6 +80,7 @@
         display: flex;
         gap: 10px;
         overflow: hidden;
+        flex-direction: row;
         li{
           float: left;
           display: block;
