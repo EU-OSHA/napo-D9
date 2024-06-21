@@ -230,6 +230,10 @@ div.pagerer-container {
     .ecl-social-media-share .wt-ecl-social-media-share ul svg {
       display: none; }
 
+@media only screen and (max-width: 320px) {
+  #custom-ncw-social-media-share {
+    display: flex;
+    flex-wrap: wrap; } }
 @media screen and (max-width: 576px) {
   .breadcrumb-container > .breadcrumb {
     margin-bottom: 1rem; } }

@@ -129,6 +129,12 @@
     }
   }
 
+@media only screen and (max-width: 320px){
+  #custom-ncw-social-media-share{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 @media screen and (max-width: 576px) {
   .breadcrumb-container > .breadcrumb{
