@@ -195,7 +195,8 @@ div.pagerer-container {
     margin: 0; }
     .ecl-social-media-share .wt-ecl-social-media-share ul {
       display: flex;
-      gap: 10px; }
+      gap: 10px;
+      overflow: hidden; }
       .ecl-social-media-share .wt-ecl-social-media-share ul li {
         float: left;
         display: block;
