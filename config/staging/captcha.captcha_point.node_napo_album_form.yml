@@ -1,0 +1,7 @@
+uuid: 8cd471c8-6983-4765-83c1-a9619f7935ef
+langcode: en
+status: false
+dependencies: {  }
+formId: node_napo_album_form
+captchaType: default
+label: node_napo_album_form
