@@ -6,14 +6,13 @@ id: production
 label: Production
 description: ''
 weight: 0
-stackable: false
-no_patching: false
-storage: null
 folder: sites/napo/config/production
 module:
   adv_varnish: 0
   authorization: 0
   authorization_drupal_roles: 0
+  captcha: 0
+  image_captcha: 0
   ldap_authentication: 0
   ldap_authorization: 0
   ldap_query: 0
@@ -23,8 +22,25 @@ module:
   migrate: 0
   migrate_plus: 0
   migrate_tools: 0
+  recaptcha_v3: 0
   smtp: 0
   externalauth: 10
 theme: {  }
-complete_list: {  }
-partial_list: {  }
+blacklist: {  }
+graylist:
+  - authorization.authorization_profile.osha
+  - authorization.settings
+  - ldap_authentication.settings
+  - ldap_servers.server.osha
+  - ldap_servers.server.osha_write
+  - ldap_servers.settings
+  - ldap_user.settings
+  - matomo.settings
+  - reroute_email.settings
+  - robotstxt.settings
+  - ultimate_cron.job.ldap_user_cron
+  - ultimate_cron.job.matomo_cron
+  - xmlsitemap.settings
+  - xmlsitemap.xmlsitemap.g3XYqcXbSKPVBDODwnT6pq7oqhCFkPryj4vVqrl_Kfc
+graylist_dependents: false
+graylist_skip_equal: true

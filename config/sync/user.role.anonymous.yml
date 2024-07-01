@@ -4,12 +4,6 @@ status: true
 dependencies:
   config:
     - filter.format.filtered_html
-    - taxonomy.vocabulary.main_category
-    - taxonomy.vocabulary.nace_codes
-    - taxonomy.vocabulary.tags
-    - taxonomy.vocabulary.target_ages
-    - taxonomy.vocabulary.thesaurus
-    - taxonomy.vocabulary.video_type
   module:
     - comment
     - conditional_fields
@@ -29,18 +23,27 @@ label: 'anonymous user'
 weight: 0
 is_admin: false
 permissions:
+  - 'access PDF version'
   - 'access comments'
   - 'access content'
+  - 'access news feeds'
+  - 'access site map'
   - 'access site-wide contact form'
   - 'access sitemap'
+  - 'display EU Cookie Compliance popup'
   - 'display eu cookie compliance popup'
+  - 'download any document files'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'use Search Autocomplete'
   - 'use advanced search'
+  - 'use exclude node title'
+  - 'use manualcrop'
   - 'use search autocomplete'
   - 'use text format filtered_html'
   - 'view conditional fields'
+  - 'view files'
   - 'view media'
   - 'view terms in main_category'
   - 'view terms in nace_codes'

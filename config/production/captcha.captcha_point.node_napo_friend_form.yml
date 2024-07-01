@@ -1,0 +1,7 @@
+uuid: 73e17394-63f3-4c6c-8201-7bdb5ae07db2
+langcode: en
+status: false
+dependencies: {  }
+formId: node_napo_friend_form
+captchaType: default
+label: node_napo_friend_form

@@ -11,7 +11,7 @@ type: 'canonical_entities:node'
 pattern: '/meet-napo/napos-friends/[node:title]'
 selection_criteria:
   0cac97ff-d9cc-469f-8bf1-6e4fc0d628b9:
-    id: entity_bundle:node
+    id: 'entity_bundle:node'
     negate: false
     uuid: 0cac97ff-d9cc-469f-8bf1-6e4fc0d628b9
     context_mapping:
