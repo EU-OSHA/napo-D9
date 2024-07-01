@@ -28,3 +28,8 @@
 .wtPopSelect{
   display: none !important;
 }
+
+.napo-films-list-download * {
+  height: 0;
+  display: contents;
+}

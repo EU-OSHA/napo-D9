@@ -104,6 +104,10 @@ div.pagerer-container {
 .wtPopSelect {
   display: none !important; }
 
+.napo-films-list-download * {
+  height: 0;
+  display: contents; }
+
 .ui-accordion .ui-accordion-header {
   display: block;
   cursor: pointer;
