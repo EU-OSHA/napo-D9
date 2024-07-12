@@ -1,0 +1,7 @@
+uuid: 409d20a1-9c29-4390-8e20-b9e24744e66a
+langcode: en
+status: true
+dependencies: {  }
+formId: napo_films_list_download
+captchaType: recaptcha_v3/captcha_action
+label: napo_films_list_download
