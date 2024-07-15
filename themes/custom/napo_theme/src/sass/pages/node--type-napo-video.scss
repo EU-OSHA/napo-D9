@@ -51,75 +51,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    .content-download-custom{
-      border: 1px solid $text-color-blue;
-      border-bottom-right-radius: 15px;
-      border-bottom-left-radius: 15px;
-      border-top:0;
-      & > p{
-        margin: 0;
-        padding: {
-          top: 0.5rem;
-          left: 1rem;
-        }
-        font: {
-          size: 1.3rem;
-          weight: 600;
-        }
-      }
-      form & > input{
-        display: none;
-      }
-      form .form-actions {
-        display: flex;
-        flex-direction: column;
-        margin: 0 !important;
-        input{
-          width: unset;
-          border: 0;
-          border-radius: 0;
-          padding: {
-            left: 1rem;
-            top: 0.5rem;
-            bottom: 0.5rem;
-          }
-          color: $text-color-blue;
-          font: {
-            size: 1rem;
-            weight: 400;
-          }
-          text-align: start;
-          background: url(/sites/napo/themes/custom/napo_theme/images/btn-download.png) no-repeat calc(100% - 10px) 50% ;
-          &:first-of-type{
-            border-bottom: 1px solid $text-color-blue;
-          }
-          &:nth-of-type(1), &:nth-of-type(2){
-            margin: 0 0.5rem;
-          }
-          &:last-child{
-            display: block;
-            border:{
-              bottom: 0;
-              bottom-right-radius: 12px;
-              bottom-left-radius: 12px;
-            }
-            margin: 0;
-            padding: {
-              top: 0.5rem;
-              bottom: 0.5rem;
-              left: 1rem;
-            }
-            color: #FFFFFF;
-            background:{
-              color: $bg-color-blue;
-              image: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png);
-              repeat: no-repeat;
-              position: calc(100% - 19px) 50%;
-            }
-          }
-        }
-      }
-    }
+    @include download($text-color-blue);
   }
   .conten-video-info{
     position:relative;

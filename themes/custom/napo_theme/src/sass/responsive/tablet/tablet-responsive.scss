@@ -71,3 +71,9 @@
     }
   }
 }
+
+@media (min-width: 992px){
+  .node--type-lesson .content-custom, .node--type-msds-activities .content-custom{
+    grid-template-columns: 76% 1fr;
+  }
+}
