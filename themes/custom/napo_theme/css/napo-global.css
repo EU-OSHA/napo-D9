@@ -3994,41 +3994,53 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  .node--type-napo-video .description-and-download .napofilms-download-box {
+  .node--type-napo-video .description-and-download .content-download-custom {
     border: 1px solid #1f3695;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top: 0; }
-    .node--type-napo-video .description-and-download .napofilms-download-box .napofilms-download-title {
-      font-size: 1.3rem;
+    .node--type-napo-video .description-and-download .content-download-custom > p {
+      margin: 0;
       padding-top: 0.5rem;
       padding-left: 1rem;
+      font-size: 1.3rem;
       font-weight: 600; }
-    .node--type-napo-video .description-and-download .napofilms-download-box ul.download-list-items {
-      list-style: none;
-      margin: 0 0.5rem; }
-      .node--type-napo-video .description-and-download .napofilms-download-box ul.download-list-items li {
-        border-bottom: 1px solid #1f3695;
+    form .node--type-napo-video .description-and-download .content-download-custom > input {
+      display: none; }
+    .node--type-napo-video .description-and-download .content-download-custom form .form-actions {
+      display: flex;
+      flex-direction: column;
+      margin: 0 !important; }
+      .node--type-napo-video .description-and-download .content-download-custom form .form-actions input {
+        width: unset;
+        border: 0;
+        border-radius: 0;
         padding-left: 1rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        color: #1f3695;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: start;
         background: url(/sites/napo/themes/custom/napo_theme/images/btn-download.png) no-repeat calc(100% - 10px) 50%; }
-      .node--type-napo-video .description-and-download .napofilms-download-box ul.download-list-items li:last-child {
-        border-bottom: 0; }
-    .node--type-napo-video .description-and-download .napofilms-download-box ul.download-general {
-      list-style: none;
-      margin-bottom: 0; }
-      .node--type-napo-video .description-and-download .napofilms-download-box ul.download-general li {
-        background: #1f3695;
-        border-bottom-right-radius: 12px;
-        border-bottom-left-radius: 12px;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem; }
-        .node--type-napo-video .description-and-download .napofilms-download-box ul.download-general li a {
+        .node--type-napo-video .description-and-download .content-download-custom form .form-actions input:first-of-type {
+          border-bottom: 1px solid #1f3695; }
+        .node--type-napo-video .description-and-download .content-download-custom form .form-actions input:nth-of-type(1), .node--type-napo-video .description-and-download .content-download-custom form .form-actions input:nth-of-type(2) {
+          margin: 0 0.5rem; }
+        .node--type-napo-video .description-and-download .content-download-custom form .form-actions input:last-child {
           display: block;
-          color: #FFFFFF;
+          border-bottom: 0;
+          border-bottom-right-radius: 12px;
+          border-bottom-left-radius: 12px;
+          margin: 0;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
           padding-left: 1rem;
-          background: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png) no-repeat calc(100% - 19px) 50%; }
+          color: #FFFFFF;
+          background-color: #1f3695;
+          background-image: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png);
+          background-repeat: no-repeat;
+          background-position: calc(100% - 19px) 50%; }
 .node--type-napo-video .conten-video-info {
   position: relative;
   min-width: 260px; }
@@ -4076,10 +4088,7 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
     .node--type-napo-video .categories .field__label:after {
       content: ':'; }
   .node--type-napo-video .categories .field--type-entity-reference {
-    display: flex;
-    flex-direction: row;
-    row-gap: 0.5rem;
-    align-items: baseline;
+    display: contents;
     font-size: 1rem; }
     .node--type-napo-video .categories .field--type-entity-reference > .field__items {
       line-height: normal; }
