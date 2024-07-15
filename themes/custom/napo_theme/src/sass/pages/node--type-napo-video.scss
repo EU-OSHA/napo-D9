@@ -52,6 +52,11 @@
     flex-direction: row;
     justify-content: space-between;
     @include download($text-color-blue);
+    input:not(&:last-of-type){
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
   .conten-video-info{
     position:relative;
