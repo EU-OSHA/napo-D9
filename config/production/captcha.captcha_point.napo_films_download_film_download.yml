@@ -1,0 +1,7 @@
+uuid: 5c2a7c67-3a56-4fe3-a13f-a3ade8a06a30
+langcode: en
+status: true
+dependencies: {  }
+formId: napo_films_download_film_download
+captchaType: recaptcha_v3/captcha_action
+label: napo_films_download_film_download
