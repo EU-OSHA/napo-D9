@@ -66,7 +66,7 @@
             color: $bg-color-blue;
             image: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png);
             repeat: no-repeat;
-            position: calc(100% - 19px) 50%;
+            position: calc(100% - 19px) 50% !important;
           }
         }
       }
