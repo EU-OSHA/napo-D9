@@ -29,6 +29,11 @@
   display: none !important;
 }
 
+.napo-films-list-download * {
+  height: 0;
+  display: contents;
+}
+
 /**captcha**/
 .grecaptcha-badge {
   display: none !important;
