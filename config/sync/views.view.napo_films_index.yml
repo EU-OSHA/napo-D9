@@ -578,6 +578,7 @@ display:
         - user.permissions
       tags:
         - 'config:search_api.index.default_multilingual_node_index'
+        - 'search_api_list:default_multilingual_node_index'
   page_1:
     id: page_1
     display_title: Page
@@ -883,10 +884,13 @@ display:
       contexts:
         - 'languages:language_interface'
         - url
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:facets.facet.categories'
         - 'config:search_api.index.default_multilingual_node_index'
+        - 'search_api_list:default_multilingual_node_index'
   page_2:
     id: page_2
     display_title: Grid
@@ -2153,7 +2157,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"item\">\r\n    <div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\">\r\n<div class=\"download-items\">\r\n{% for link in uri|split(',') %}\r\n <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n{% endfor %}\r\n\r\n</div>\r\n</div>\r\n         <div class=\"cart\">{{ ncc_download }}</div>\r\n    </div>\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{field_main_tag}} | {{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n        {% if field_field_episodes != null  %}\r\n            <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n        {% endif%}\r\n    </div>\r\n</div>\r\n"
+            text: "<div class=\"item\">\r\n    <div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\">\r\n<div class=\"download-items\">\r\n{% for link in uri|split(',') %}\r\n <a href=\"#\" class=\"film-download-listitem\" data-lang=\"{{ langcode }}\" data-id=\"edit-download-video-button-{{ nid }}-{{loop.index-1}}\">{{ link }}</a>\r\n{% endfor %}\r\n\r\n</div>\r\n</div>\r\n         <div class=\"cart\">{{ ncc_download }}</div>\r\n    </div>\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{field_main_tag}} | {{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n        {% if field_field_episodes != null  %}\r\n            <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n        {% endif%}\r\n    </div>\r\n</div>\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -2510,6 +2514,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:facets.facet.duplicate_of_duplicate_of_categories'
         - 'config:field.storage.node.field_combined_tags'
         - 'config:field.storage.node.field_field_episodes'
         - 'config:field.storage.node.field_image'
@@ -2518,6 +2523,7 @@ display:
         - 'config:field.storage.node.field_tags'
         - 'config:field.storage.node.field_video_type'
         - 'config:search_api.index.default_multilingual_node_index'
+        - 'search_api_list:default_multilingual_node_index'
   page_3:
     id: page_3
     display_title: Grid-result
@@ -3784,7 +3790,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"item\">\r\n<div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\">\r\n            <div class=\"download-items\">\r\n             {% for link in uri|split(',') %}\r\n             <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n            {% endfor %}\r\n         </div>\r\n</div>\r\n         \r\n<div class=\"cart\">{{ ncc_download }}</div>\r\n</div>\r\n\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{field_main_tag}} | {{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n       {% if field_video_type  == 'Film video' %}\r\n        {% if field_field_episodes != null  %}\r\n            <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n        {% endif%}\r\n{% endif %}\r\n    </div>\r\n\r\n</div>"
+            text: "<div class=\"item\">\r\n<div class=\"napo-film-title-container\">\r\n         <h3>{{title}}</h3>\r\n         <div class=\"download-video\">\r\n            <div class=\"download-items\">\r\n             {% for link in uri|split(',') %}\r\n             <a href=\"#\" class=\"film-download-listitem\" data-lang=\"{{ langcode }}\" data-id=\"edit-download-video-button-{{ nid }}-{{loop.index-1}}\">{{ link }}</a>\r\n            {% endfor %}\r\n         </div>\r\n</div>\r\n         \r\n<div class=\"cart\">{{ ncc_download }}</div>\r\n</div>\r\n\r\n    <div class=\"napo-film-list-image\">\r\n        {{field_image}}\r\n    </div>\r\n    <div class=\"napo-film-content-container\">\r\n        <div class=\"grid date\">{{field_publication_date}}</div>\r\n        <p class=\"grid text\">{{processed}}</p>\r\n        <div class=\"grid tags\">{{field_main_tag}} | {{ field_combined_tags }}</div>\r\n        <div class=\"view-video\">{{ url_1 }}</div>\r\n       {% if field_video_type  == 'Film video' %}\r\n        {% if field_field_episodes != null  %}\r\n            <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n        {% endif%}\r\n{% endif %}\r\n    </div>\r\n\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -4150,6 +4156,7 @@ display:
         - 'config:field.storage.node.field_tags'
         - 'config:field.storage.node.field_video_type'
         - 'config:search_api.index.default_multilingual_node_index'
+        - 'search_api_list:default_multilingual_node_index'
   page_4:
     id: page_4
     display_title: List-results
@@ -5416,7 +5423,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"item {{ field_video_type }}\">\r\n  <div class=\"cart\">{{ ncc_download }}</div>\r\n  <div class=\"napo-film-list-image\">{{field_image}}</div>\r\n  <div class=\"group-right\">\r\n    <h3>{{title}}</h3>\r\n    <div>{{field_publication_date}}</div>\r\n    <p>{{processed}}</p>\r\n    <div class=\"napo-film-list-details-container\">\r\n      <div class=\"\">{{field_main_tag}} | {{ field_combined_tags }}</div>\r\n       {% if field_video_type  == 'Film video' %}\r\n        {% if field_field_episodes != null  %}\r\n            <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n        {% endif%}\r\n\r\n{% endif %}\r\n      <div class=\"view-video\">{{ url_1 }}</div>\r\n      <div class=\"download-video\">\r\n        <div class=\"download-items\">\r\n        {% for link in uri|split(',') %}\r\n          <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n        {% endfor %}\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>\r\n</div>"
+            text: "<div class=\"item {{ field_video_type }}\">\r\n  <div class=\"cart\">{{ ncc_download }}</div>\r\n  <div class=\"napo-film-list-image\">{{field_image}}</div>\r\n  <div class=\"group-right\">\r\n    <h3>{{title}}</h3>\r\n    <div>{{field_publication_date}}</div>\r\n    <p>{{processed}}</p>\r\n    <div class=\"napo-film-list-details-container\">\r\n      <div class=\"\">{{field_main_tag}} | {{ field_combined_tags }}</div>\r\n       {% if field_video_type  == 'Film video' %}\r\n        {% if field_field_episodes != null  %}\r\n            <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n        {% endif%}\r\n\r\n{% endif %}\r\n      <div class=\"view-video\">{{ url_1 }}</div>\r\n      <div class=\"download-video\">\r\n        <div class=\"download-items\">\r\n        {% for link in uri|split(',') %}\r\n          <a href=\"#\" class=\"film-download-listitem\" data-lang=\"{{ langcode }}\" data-id=\"edit-download-video-button-{{ nid }}-{{loop.index-1}}\">{{ link }}</a>\r\n        {% endfor %}\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -5804,6 +5811,7 @@ display:
         - 'config:field.storage.node.field_tags'
         - 'config:field.storage.node.field_video_type'
         - 'config:search_api.index.default_multilingual_node_index'
+        - 'search_api_list:default_multilingual_node_index'
   page_list:
     id: page_list
     display_title: List
@@ -7070,7 +7078,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"item\">\r\n<div class=\"cart\">{{ ncc_download }}</div>\r\n<div class=\"napo-film-list-image\">{{field_image}}</div>\r\n<div class=\"group-right\">\r\n<h3>{{title}}</h3>\r\n<div>{{field_publication_date}}</div>\r\n<p>{{processed}}</p>\r\n<div class=\"napo-film-list-details-container\">\r\n<div class=\"\">{{field_main_tag}} | {{ field_combined_tags }} </div>\r\n       {% if field_video_type  == 'Film video' %}\r\n              {% if field_field_episodes != null  %}\r\n                     <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2}}/view-scenes\">View scenes</a></div>\r\n              {% endif%}\r\n       {% endif %}\r\n<div class=\"view-video\">{{ url_1 }}</div>\r\n<div class=\"download-video\">\r\n<div class=\"download-items\">\r\n{% for link in uri|split(',') %}\r\n <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n{% endfor %}\r\n</div>\r\n</div>\r\n\r\n</div>\r\n</div>\r\n</div>"
+            text: "<div class=\"item\">\r\n<div class=\"cart\">{{ ncc_download }}</div>\r\n<div class=\"napo-film-list-image\">{{field_image}}</div>\r\n<div class=\"group-right\">\r\n<h3>{{title}}</h3>\r\n<div>{{field_publication_date}}</div>\r\n<p>{{processed}}</p>\r\n<div class=\"napo-film-list-details-container\">\r\n<div class=\"\">{{field_main_tag}} | {{ field_combined_tags }} </div>\r\n       {% if field_video_type  == 'Film video' %}\r\n              {% if field_field_episodes != null  %}\r\n                     <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2}}/view-scenes\">View scenes</a></div>\r\n              {% endif%}\r\n       {% endif %}\r\n<div class=\"view-video\">{{ url_1 }}</div>\r\n<div class=\"download-video\">\r\n<div class=\"download-items\">\r\n{% for link in uri|split(',') %}\r\n <a href=\"#\" class=\"film-download-listitem\" data-lang=\"{{ langcode }}\" data-id=\"edit-download-video-button-{{ nid }}-{{loop.index-1}}\">{{ link }}</a>\r\n{% endfor %}\r\n</div>\r\n</div>\r\n\r\n</div>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -7449,6 +7457,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:facets.facet.duplicate_of_categories'
         - 'config:field.storage.node.field_combined_tags'
         - 'config:field.storage.node.field_field_episodes'
         - 'config:field.storage.node.field_image'
@@ -7457,3 +7466,4 @@ display:
         - 'config:field.storage.node.field_tags'
         - 'config:field.storage.node.field_video_type'
         - 'config:search_api.index.default_multilingual_node_index'
+        - 'search_api_list:default_multilingual_node_index'
