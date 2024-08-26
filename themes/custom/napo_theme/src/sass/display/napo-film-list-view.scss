@@ -1,4 +1,125 @@
+@media only screen{
+  .page-view-napo-films-index{
+    .node--view-mode-teaser{
+      border-bottom: unset;
+    }
 
+    .block-facet-blocknapo-film-content-categories{
+      h2{
+        font-size: 1rem;
+      }
+    }
+
+    .js-form-item-tags, .js-form-item{
+      label{
+        font-weight: bold;
+      }
+      input, select{
+        border: 2px solid $bg-color-blue;
+        border-radius: 5px;
+        height: calc(1.5em + .75rem + 2px);
+        padding: .375rem .75rem;
+        background-color: $bg-color-white;
+        color: $text-color-blue;
+      }
+      select{
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding-right: 27px;
+
+        background: {
+          image: url('/sites/napo/themes/custom/napo_theme/images/sort-arrow-icon-blue.svg');
+          repeat: no-repeat;
+          position: calc(100% - 5px) 50%;
+          size: 16px;
+        }
+
+        &::-ms-expand {
+          display: none;
+        }
+        cursor: pointer;
+
+        &:focus {
+          border-color: $bg-color-blue;
+          outline: none;
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+      }
+    }
+
+    /**Hide in main form. It must only be visible with the facets**/
+    .views-exposed-form .form-item-tags{
+      display: none;
+    }
+
+    .napo-film-list-view{
+      .d-flex{
+        gap: 2rem;
+      }
+      .form-item-sort-by{
+        display: flex;
+        flex-direction: column;
+      }
+      button{
+        background-color: $bg-color-blue;
+        color: $text-color-white;
+        font-weight: bold;
+      }
+    }
+
+    .facets-widget-checkbox > ul > li > label{
+      font-weight: bold;
+    }
+
+    .facet-item {
+      .facets-checkbox {
+        width: 18px;
+        height: 18px;
+        margin: 0 0.5rem 0 0;
+        border: 2px solid $bg-color-blue;
+        background-color: white;
+        border-radius: 5px;
+        appearance: none;
+        -webkit-appearance: none;
+
+        &:checked {
+          background: {
+            image: url('/sites/napo/themes/custom/napo_theme/images/checkbox-selected-icon.svg');
+            size: 80% 80%;
+            position: center;
+            repeat: no-repeat;
+          }
+          border-color: $bg-color-blue;
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+        }
+      }
+    }
+
+    .facets-soft-limit-link{
+      display: block;
+      width: 100%;
+      text-align: end;
+      font: {
+        weight: bold;
+        size: 0.938rem;
+      }
+    }
+
+    @media (min-width: 992px){
+      .films-view{
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        gap: 1rem;
+      }
+    }
+  }
+}
 
 
 .napo-film-list-view{

@@ -80,6 +80,8 @@
             $(this).text(linkText);
           });
         }
+
+        moveCategoriesSeachField();
       });
     }
   };
@@ -202,7 +204,15 @@
       let videoSourceFormat = videoSource.split('.');
       $(this).closest('.field--name-field-media-video-file').closest('.field__item').addClass('video-custom-'+videoSourceFormat[1]);
     });
+
+    if($('body').hasClass('page-view-napo-films-index')){
+      let $tagsInput = $('div.js-form-item-tags input[name="tags"]');
+      $tagsInput.on('input change keyup', function() {
+        selectFilmCatFacet($tagsInput);
+      });
+    }
   });
+
 
   // Show results in Napo Films
   if($('body').find('#edit-search-api-fulltext--2').length>0){
@@ -220,8 +230,6 @@
       $('body').addClass('showResults');
     }
   }
-
-
 
   // Play "Napo for teachers" and "Napo in the workplace" videos
   $('.video-custom').each(function(){
@@ -254,6 +262,52 @@
       }
     });
   });
+
+  /**Napo films - select the facet accordingly to the value inserted in text field**/
+  function selectFilmCatFacet(p_value){
+    let $tagsInput = p_value;
+    let tagValue = $tagsInput.val().trim();
+    if (tagValue) {
+      $('.facets-widget-checkbox .facet-item input[type="checkbox"]').prop('checked', false);
+
+      $('.facets-widget-checkbox .facet-item').each(function() {
+        let $facetItem = $(this);
+        let $labelSpan = $facetItem.find('label span.facet-item__value');
+        let facetText = $labelSpan.text().trim();
+
+        if (facetText === tagValue) {
+          $facetItem.find('input[type="checkbox"]').prop('checked', true).trigger('click');
+        }
+      });
+    }
+  }
+
+  /**Napo films - Relocate the categories search field**/
+  function moveCategoriesSeachField() {
+    let $autocompleteDiv = $('.js-form-item.js-form-type-entity-autocomplete');
+    let $targetContainer = $('[id*="block-napo-theme-napofilmcontentcategories"]');
+
+    if ($autocompleteDiv.length) {
+      if ($targetContainer.length) {
+        if ($autocompleteDiv.parent().attr('id') !== $targetContainer.attr('id')) {
+          $autocompleteDiv.detach().insertAfter($targetContainer.find('h2'));
+        }
+      }
+    }
+  }
+
+
+  $(document).ajaxSuccess(function() {
+    if($('body').hasClass('page-view-napo-films-index')){
+      moveCategoriesSeachField();
+      let $tagsInput = $('div.js-form-item-tags input[name="tags"]');
+      $tagsInput.on('input change keyup', function() {
+        selectFilmCatFacet($tagsInput);
+      });
+    }
+  });
+
+
 
 
 })(jQuery, Drupal);
