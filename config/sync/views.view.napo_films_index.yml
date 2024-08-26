@@ -303,9 +303,9 @@ display:
           plugin_id: search_api
           order: DESC
           expose:
-            label: ''
+            label: 'Publication date'
             field_identifier: field_publication_date
-          exposed: false
+          exposed: true
       arguments: {  }
       filters:
         field_video_type:
@@ -575,6 +575,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -888,6 +889,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -2514,6 +2516,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -4148,6 +4151,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -5803,6 +5807,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -7129,6 +7134,33 @@ display:
       cache:
         type: search_api_tag
         options: {  }
+      sorts:
+        field_publication_date:
+          id: field_publication_date
+          table: search_api_index_default_multilingual_node_index
+          field: field_publication_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: 'Publication date'
+            field_identifier: field_publication_date
+          exposed: true
+        title:
+          id: title
+          table: search_api_index_default_multilingual_node_index
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: Alphabetically
+            field_identifier: title
+          exposed: true
       arguments: {  }
       filters:
         field_combined_tags:
@@ -7221,7 +7253,7 @@ display:
               review_manager: '0'
               internal_translator: '0'
             expose_fields: false
-            placeholder: ''
+            placeholder: Search
             searched_fields_id: search_api_fulltext_searched_fields
             value_maxlength: 128
           is_grouped: false
@@ -7487,6 +7519,7 @@ display:
         row: false
         relationships: false
         fields: false
+        sorts: false
         arguments: false
         filters: false
         filter_groups: false
@@ -7521,6 +7554,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -9176,6 +9210,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
         - 'user.node_grants:view'
         - user.permissions
       tags:
