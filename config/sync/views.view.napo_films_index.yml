@@ -6277,8 +6277,8 @@ display:
           label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<p class="main-category">{{ field_main_tag }}<p>'
             make_link: false
             path: ''
             absolute: false
@@ -7078,7 +7078,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"item {{ field_video_type }}\">\r\n  <div class=\"cart\">{{ ncc_download }}</div>\r\n  <div class=\"napo-film-list-image\">{{field_image}}</div>\r\n  <div class=\"group-right\">\r\n    <h3>{{title}}</h3>\r\n    <div>{{field_publication_date}}</div>\r\n    <p>{{processed}}</p>\r\n    <div class=\"napo-film-list-details-container\">\r\n      <div class=\"\">{#{{ field_main_tag }} |#} {{ field_combined_tags }}</div>\r\n      {#<div class=\"\">{{ field_combined_tags_2 }}</div>#}\r\n       {% if field_video_type  == 'Film video' %}\r\n        {% if field_field_episodes != null  %}\r\n            <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n        {% endif%}\r\n\r\n{% endif %}\r\n      <div class=\"view-video\">{{ url_1 }}</div>\r\n      <div class=\"download-video\">\r\n        <div class=\"download-items\">\r\n        {% for link in uri|split(',') %}\r\n          <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n        {% endfor %}\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>\r\n</div>"
+            text: "<div class=\"item {{ field_video_type }}\">\r\n  <div class=\"napo-film-list-image\">{{field_image}}</div>\r\n  <div class=\"group-right\">\r\n    <h3>{{title}}</h3>\r\n    {{ field_main_tag }}\r\n    <p>{{processed}}</p>\r\n</div>\r\n    <div class=\"napo-film-list-details-container\">\r\n      <div class=\"categories\">{{ field_combined_tags }}</div>\r\n      <div class=\"download-info\"> \r\n     {#<div class=\"\">{{ field_combined_tags_2 }}</div>#}\r\n       {% if field_video_type  == 'Film video' %}\r\n        {% if field_field_episodes != null  %}\r\n            <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n        {% endif%}\r\n\r\n{% endif %}\r\n      <div class=\"view-video\">{{ url_1 }}</div>\r\n      <div class=\"download-video\">\r\n        <div class=\"download-items\">\r\n        {% for link in uri|split(',') %}\r\n          <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n        {% endfor %}\r\n        </div>\r\n      </div>\r\n       <div class=\"cart\">{{ ncc_download }}</div>\r\n     </div>\r\n  </div>\r\n</div>\r\n"
             make_link: false
             path: ''
             absolute: false
