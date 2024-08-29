@@ -25,7 +25,7 @@ hierarchy:
   type: taxonomy
   config: {  }
 expand_hierarchy: true
-enable_parent_when_child_gets_disabled: true
+enable_parent_when_child_gets_disabled: false
 widget:
   type: checkbox
   config:

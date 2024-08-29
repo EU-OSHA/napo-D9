@@ -81,7 +81,6 @@
           });
         }
 
-        moveCategoriesSeachField();
       });
     }
   };
@@ -153,10 +152,6 @@
     $('#header').on('click', '.btn-search-custom-mobile', function () {
       $('#block-searchapi').toggleClass('in');
     });
-
-    if($('body').hasClass('page-view-napo-films-index')){
-      setupFilmCatAccordion();
-    }
 
   });
 
@@ -259,114 +254,6 @@
       }
     });
   });
-
-  /**Napo films - select the facet accordingly to the value inserted in text field**/
-  function selectFilmCatFacet(p_value){
-    let $tagsInput = p_value;
-    let tagValue = $tagsInput.val().trim();
-    if (tagValue) {
-      $('.facets-widget-checkbox .facet-item').each(function() {
-        let $facetItem = $(this);
-        let $labelSpan = $facetItem.find('label span.facet-item__value');
-        let facetText = $labelSpan.text().trim();
-
-        if (facetText === tagValue) {
-          $facetItem.find('input[type="checkbox"]').trigger('click');
-        }
-      });
-    }
-  }
-
-  /**Napo films - select the facet accordingly to the value inserted in text field
-   * This function is created thinking about when the user clicks an option from
-   * the suggestion list.**/
-  function checkAndSelectFacet(p_value) {
-    let $tagsInput = p_value;
-    if($tagsInput){
-      let $tagValue = $tagsInput.val().trim();
-      if ($tagValue.includes('(') && $tagValue.includes(')')) {
-        let extractedText = $tagValue.split(' (')[0];
-        $('.facets-widget-checkbox .facet-item').each(function() {
-          let $facetItem = $(this);
-          let $labelSpan = $facetItem.find('label span.facet-item__value');
-          let facetText = $labelSpan.text().trim();
-
-          if (facetText === extractedText) {
-            $facetItem.find('input[type="checkbox"]').trigger('click');
-          }
-        });
-      }
-    }
-  }
-
-  /**Napo films - Relocate the categories search field
-   * Move from form to the categories list**/
-  function moveCategoriesSeachField() {
-    let $autocompleteDiv = $('.js-form-item.js-form-type-entity-autocomplete');
-    let $targetContainer = $('[id*="block-napo-theme-napofilmcontentcategories"]');
-
-    if ($autocompleteDiv.length) {
-      if ($targetContainer.length) {
-        if ($autocompleteDiv.parent().attr('id') !== $targetContainer.attr('id')) {
-          $autocompleteDiv.detach().insertAfter($targetContainer.find('h2'));
-        }
-      }
-    }
-  }
-
-  /**Film categories filters - add accordion functionality
-   * Also, if child category is selected, display parent category visible**/
-  function setupFilmCatAccordion() {
-    $('.facets-widget-checkbox > ul > li').each(function() {
-      let $li = $(this);
-      let $facetsWidget = $li.find('.facets-widget-');
-
-      if ($facetsWidget.length) {
-        if (!$li.find('.accordion').length) {
-          let hasCheckedInput = $facetsWidget.find('li > input:checked').length > 0;
-          let spanClass = hasCheckedInput ? 'accordion visible custom' : 'accordion hidden-facets custom';
-          $facetsWidget.before(`<span class="${spanClass}"></span>`);
-          if (hasCheckedInput) {
-            $facetsWidget.toggle();
-          }
-        }
-      }
-    });
-
-
-
-    $(document).on('click', 'span.accordion', function() {
-      let $span = $(this);
-      let $li = $span.closest('li');
-      let $facetsWidget = $li.find('.facets-widget-');
-
-      $facetsWidget.toggle();
-
-      $span.toggleClass('hidden-facets visible');
-    });
-  }
-
-$(document).ajaxSend(function() {
-    if($('body').hasClass('page-view-napo-films-index')){
-      moveCategoriesSeachField();
-      let $tagsInput = $('input[name="tags"]');
-
-      /**Call the function when enter is inserted**/
-      $tagsInput.on('keydown', function(event) {
-        if (event.key === 'Enter') {
-          selectFilmCatFacet($tagsInput);
-        }
-      });
-
-      $tagsInput.on('input change', function() {
-        checkAndSelectFacet($tagsInput);
-      });
-    }
-  });
-
-$(document).ajaxComplete(function(){
-  setupFilmCatAccordion();
-});
 
 })(jQuery, Drupal);
 
