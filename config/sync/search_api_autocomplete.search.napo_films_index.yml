@@ -1,0 +1,29 @@
+uuid: 703f97a4-5023-40ee-8f86-2fdb86a98e3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.default_multilingual_node_index
+    - views.view.napo_films_index
+  module:
+    - views
+    - search_api_autocomplete
+id: napo_films_index
+label: 'Napo films index'
+index_id: default_multilingual_node_index
+suggester_settings:
+  live_results:
+    fields: {  }
+    highlight:
+      enabled: false
+      field: ''
+    suggest_keys: false
+    view_modes: {  }
+suggester_weights: {  }
+suggester_limits: {  }
+search_settings:
+  'views:napo_films_index':
+    displays:
+      default: true
+      selected: {  }
+options: {  }

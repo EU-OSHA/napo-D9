@@ -1,6 +1,6 @@
 uuid: b46e8239-a80f-4eaa-9d09-6b30efad117b
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.napo_films_index
@@ -12,7 +12,7 @@ dependencies:
 id: exposedformnapo_films_indexpage_1
 theme: napo_theme
 region: content
-weight: -17
+weight: -11
 provider: null
 plugin: 'views_exposed_filter_block:napo_films_index-page_1'
 settings:
