@@ -4,6 +4,12 @@ status: true
 dependencies:
   config:
     - filter.format.filtered_html
+    - taxonomy.vocabulary.main_category
+    - taxonomy.vocabulary.nace_codes
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.target_ages
+    - taxonomy.vocabulary.thesaurus
+    - taxonomy.vocabulary.video_type
   module:
     - comment
     - conditional_fields
@@ -35,6 +41,12 @@ permissions:
   - 'download any document files'
   - 'post comments'
   - 'search content'
+  - 'select terms in main_category'
+  - 'select terms in nace_codes'
+  - 'select terms in tags'
+  - 'select terms in target_ages'
+  - 'select terms in thesaurus'
+  - 'select terms in video_type'
   - 'skip comment approval'
   - 'use Search Autocomplete'
   - 'use advanced search'
@@ -45,9 +57,21 @@ permissions:
   - 'view conditional fields'
   - 'view files'
   - 'view media'
+  - 'view term names in main_category'
+  - 'view term names in nace_codes'
+  - 'view term names in tags'
+  - 'view term names in target_ages'
+  - 'view term names in thesaurus'
+  - 'view term names in video_type'
   - 'view terms in main_category'
   - 'view terms in nace_codes'
   - 'view terms in tags'
   - 'view terms in target_ages'
   - 'view terms in thesaurus'
   - 'view terms in video_type'
+  - 'view vocabulary name of main_category'
+  - 'view vocabulary name of nace_codes'
+  - 'view vocabulary name of tags'
+  - 'view vocabulary name of target_ages'
+  - 'view vocabulary name of thesaurus'
+  - 'view vocabulary name of video_type'
