@@ -10,11 +10,16 @@ dependencies:
     - node.type.faq
     - node.type.home_video
     - node.type.lesson
+    - node.type.lesson_resources
     - node.type.lesson_toolkit
+    - node.type.lesson_video
+    - node.type.msds_activities
+    - node.type.msds_resources
     - node.type.napo_album
     - node.type.napo_friend
     - node.type.napo_image
     - node.type.napo_video
+    - node.type.page
     - workflows.workflow.napo
   module:
     - content_moderation
@@ -58,19 +63,55 @@ permissions:
   - 'bypass workbench access'
   - 'bypass workbench moderation'
   - 'create article content'
+  - 'create consortium_partner content'
   - 'create faq content'
   - 'create home_video content'
   - 'create lesson content'
+  - 'create lesson_resources content'
   - 'create lesson_toolkit content'
+  - 'create lesson_video content'
+  - 'create msds_activities content'
+  - 'create msds_resources content'
   - 'create napo_album content'
   - 'create napo_friend content'
   - 'create napo_image content'
   - 'create napo_video content'
+  - 'create page content'
   - 'create translation jobs'
   - 'create url aliases'
+  - 'delete any article content'
+  - 'delete any consortium_partner content'
+  - 'delete any faq content'
+  - 'delete any home_video content'
+  - 'delete any lesson content'
+  - 'delete any lesson_resources content'
+  - 'delete any lesson_toolkit content'
+  - 'delete any lesson_video content'
+  - 'delete any msds_activities content'
+  - 'delete any msds_resources content'
+  - 'delete any napo_album content'
+  - 'delete any napo_friend content'
+  - 'delete any napo_image content'
+  - 'delete any napo_video content'
+  - 'delete any page content'
+  - 'delete own article content'
   - 'delete own audio files'
+  - 'delete own consortium_partner content'
   - 'delete own document files'
+  - 'delete own faq content'
+  - 'delete own home_video content'
   - 'delete own image files'
+  - 'delete own lesson content'
+  - 'delete own lesson_resources content'
+  - 'delete own lesson_toolkit content'
+  - 'delete own lesson_video content'
+  - 'delete own msds_activities content'
+  - 'delete own msds_resources content'
+  - 'delete own napo_album content'
+  - 'delete own napo_friend content'
+  - 'delete own napo_image content'
+  - 'delete own napo_video content'
+  - 'delete own page content'
   - 'delete own video files'
   - 'download any audio files'
   - 'download any document files'
@@ -91,7 +132,11 @@ permissions:
   - 'edit any home_video content'
   - 'edit any image files'
   - 'edit any lesson content'
+  - 'edit any lesson_resources content'
   - 'edit any lesson_toolkit content'
+  - 'edit any lesson_video content'
+  - 'edit any msds_activities content'
+  - 'edit any msds_resources content'
   - 'edit any napo_album content'
   - 'edit any napo_friend content'
   - 'edit any napo_image content'
@@ -106,11 +151,16 @@ permissions:
   - 'edit own home_video content'
   - 'edit own image files'
   - 'edit own lesson content'
+  - 'edit own lesson_resources content'
   - 'edit own lesson_toolkit content'
+  - 'edit own lesson_video content'
+  - 'edit own msds_activities content'
+  - 'edit own msds_resources content'
   - 'edit own napo_album content'
   - 'edit own napo_friend content'
   - 'edit own napo_image content'
   - 'edit own napo_video content'
+  - 'edit own page content'
   - 'edit own video files'
   - 'moderate content from draft to published'
   - 'moderate content from draft to ready_to_publish'
