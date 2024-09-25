@@ -1,0 +1,7 @@
+uuid: 14877150-024f-4f28-9ef0-17b4cc8a6d96
+langcode: en
+status: true
+dependencies: {  }
+formId: napo_msds_activities_download
+captchaType: recaptcha_v3/captcha_action
+label: napo_msds_activities_download
