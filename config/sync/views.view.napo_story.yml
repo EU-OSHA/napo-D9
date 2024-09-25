@@ -395,7 +395,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<iframe width="560" height="315" src="https://www.youtube.com/embed/QCQowf79bfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+            value: '<iframe width="560" height="315" src="https://www.youtube.com/embed/QCQowf79bfU" title="YouTube video player" frameborder="0" sandbox="allow-scripts allow-same-origin allow-presentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
             format: full_html
           tokenize: false
       rendering_language: '***LANGUAGE_site_default***'
