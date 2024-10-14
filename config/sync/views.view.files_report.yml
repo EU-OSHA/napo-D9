@@ -5996,7 +5996,7 @@ display:
         - 'config:field.storage.node.field_tags'
   data_export_1:
     id: data_export_1
-    display_title: 'Data export'
+    display_title: 'Data export - Excel'
     display_plugin: data_export
     position: 2
     display_options:
@@ -10414,6 +10414,7 @@ display:
             use_serializer_encode_only: false
       defaults:
         fields: false
+      display_description: ''
       display_extenders:
         metatag_display_extender:
           metatags: {  }
@@ -10444,7 +10445,7 @@ display:
         - 'config:field.storage.node.field_tags'
   data_export_2:
     id: data_export_2
-    display_title: 'Data export'
+    display_title: 'Data export - CSV'
     display_plugin: data_export
     position: 2
     display_options:
@@ -14862,6 +14863,7 @@ display:
             use_serializer_encode_only: false
       defaults:
         fields: false
+      display_description: ''
       display_extenders:
         metatag_display_extender:
           metatags: {  }
