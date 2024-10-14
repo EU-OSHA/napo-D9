@@ -159,6 +159,7 @@ module:
   workbench: 0
   workbench_access: 0
   workflows: 0
+  xls_serialization: 0
   ds: 1
   path_redirect_import: 1
   pathauto: 1
