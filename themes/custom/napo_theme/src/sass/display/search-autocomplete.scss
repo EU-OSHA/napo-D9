@@ -1,4 +1,64 @@
-
+#views-exposed-form-search-api-search-api-block{
+  position: relative;
+  .ui-autocomplete.ui-front{
+    position: absolute;
+    top: 1.8rem !important;
+    left: unset !important;
+    right: 0 !important;
+    .ui-autocomplete-content .ui-autocomplete-container{
+      text-align: start;
+      .ui-autocomplete-field-group{
+        opacity: 1;
+        font: {
+          weight: bold;
+          size: 0.8em;
+        }
+        text: {
+          align: center;
+          transform: uppercase;
+        }
+        background-color: #ccc;
+        padding: 1px 5px;
+        margin: 0;
+        display: block;
+      }
+      li.ui-menu-item-first{
+        margin-top: 10px;
+      }
+      li.ui-menu-item{
+        padding: 1px 5px;
+        background: $bg-color-white;
+        & > a{
+          display: block;
+          background: none;
+          border: none;
+          position: relative;
+          padding: 3px 1em 3px .4em;
+          .ui-autocomplete-field-title{
+            display: block;
+            color: $text-color-blue;
+            font-weight: bold;
+            font-size: 0.75rem;
+            line-height: 1.125rem;
+            &:hover{
+              background: {
+                image: url(/sites/napo/themes/custom/napo_theme/images/view-episodes-yellow.png);
+                repeat: no-repeat;
+                position: 99% center;
+                color: $bg-color-yellow ;
+              };
+              border: 0px!important;
+              border-radius: 0px;
+              padding-right: 30px!important;
+              color:$text-color-blue;
+              transition: background 0.4s ease-in;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
 ul[data-sa-theme="basic-blue"]{
@@ -25,22 +85,6 @@ ul[data-sa-theme="basic-blue"]{
     &:hover{
       background-color: $bg-color-white;
     }
-
-    &:not(:last-of-type){
-      >.ui-menu-item-wrapper{
-        &:hover{
-          background-image: url(/sites/napo/themes/custom/napo_theme/images/view-episodes-yellow.png);
-          background-repeat: no-repeat;
-          background-position: 99% center;
-          background-color: $bg-color-yellow ;
-          border: 0px!important;
-          border-radius: 0px;
-          padding-right: 30px!important;
-          color:$text-color-blue;
-          transition: background 0.4s ease-in;
-        }
-      }
-    }
     >.ui-menu-item-wrapper{
       >.ui-autocomplete-fields{
         padding:5px 0;
@@ -56,6 +100,7 @@ ul[data-sa-theme="basic-blue"]{
         font-weight:bold;
         font-size:0.75rem;
         line-height:1.125rem;
+        padding: 5px 10px;
       }
     }
   }
@@ -109,5 +154,11 @@ ul[data-sa-theme="basic-blue"] {
         }
       }
     }
+  }
+}
+
+@media (min-width: 1400px){
+  #views-exposed-form-search-api-search-api-block .ui-autocomplete.ui-front{
+    min-width: 400px;
   }
 }
