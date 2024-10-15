@@ -3747,70 +3747,79 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
 .node--type-lesson .napo-msds-activities-download input:hover,
 .node--type-msds-activities .napo-msds-activities-download input:hover {
   text-decoration: none;
-  color: rgba(31, 54, 149, 0.6) !important;
-  text-decoration: none; }
+  color: rgba(31, 54, 149, 0.6) !important; }
 .node--type-lesson .content-custom,
 .node--type-msds-activities .content-custom {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: baseline; }
+  display: grid;
+  grid-template-columns: 65% 1fr;
+  align-items: baseline;
+  width: 100%; }
   .node--type-lesson .content-custom .content-download-custom,
   .node--type-msds-activities .content-custom .content-download-custom {
-    margin-top: 3.75rem;
-    flex: 24%;
-    width: 24%; }
-    .node--type-lesson .content-custom .content-download-custom .download-box,
-    .node--type-msds-activities .content-custom .content-download-custom .download-box {
-      position: relative; }
-      .node--type-lesson .content-custom .content-download-custom .download-box .download-title,
-      .node--type-msds-activities .content-custom .content-download-custom .download-box .download-title {
-        font-size: 1.125rem;
-        font-weight: bold; }
-      .node--type-lesson .content-custom .content-download-custom .download-box ul,
-      .node--type-msds-activities .content-custom .content-download-custom .download-box ul {
-        margin: 1.25rem 0rem 0rem 0rem;
-        padding: 0rem;
-        list-style-type: none; }
-        .node--type-lesson .content-custom .content-download-custom .download-box ul li,
-        .node--type-msds-activities .content-custom .content-download-custom .download-box ul li {
-          border-bottom: 1px solid #1f3695; }
-          .node--type-lesson .content-custom .content-download-custom .download-box ul li:last-child,
-          .node--type-msds-activities .content-custom .content-download-custom .download-box ul li:last-child {
-            border: none;
-            background: #1f3695;
-            color: #FFF;
-            border-radius: 0rem 0rem 1.25rem 1.25rem; }
-            .node--type-lesson .content-custom .content-download-custom .download-box ul li:last-child a,
-            .node--type-msds-activities .content-custom .content-download-custom .download-box ul li:last-child a {
-              display: block;
-              color: #FFF;
-              padding: 0.625rem 1.25rem;
-              background-image: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png);
-              background-position: 96% 50%;
-              background-repeat: no-repeat; }
-          .node--type-lesson .content-custom .content-download-custom .download-box ul li a,
-          .node--type-msds-activities .content-custom .content-download-custom .download-box ul li a {
-            padding: 0.625rem 2.5rem 0.625rem 1.25rem;
-            display: block;
-            background-image: url(/sites/napo/themes/custom/napo_theme/images/btn-download.png);
-            background-position: 96% 50%;
-            background-repeat: no-repeat;
-            font-size: 1.125rem; }
-            .node--type-lesson .content-custom .content-download-custom .download-box ul li a:hover,
-            .node--type-msds-activities .content-custom .content-download-custom .download-box ul li a:hover {
-              text-decoration: none;
-              opacity: 0.6;
-              transition: all 0.6s; }
-            .node--type-lesson .content-custom .content-download-custom .download-box ul li a[target=_blank]:after,
-            .node--type-msds-activities .content-custom .content-download-custom .download-box ul li a[target=_blank]:after {
-              display: none; }
+    border: 1px solid transparent;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top: 0; }
+    .node--type-lesson .content-custom .content-download-custom > p,
+    .node--type-msds-activities .content-custom .content-download-custom > p {
+      margin: 0;
+      padding-top: 0.5rem;
+      padding-left: 1rem;
+      font-size: 1.3rem;
+      font-weight: 600; }
+    form .node--type-lesson .content-custom .content-download-custom > input, form
+    .node--type-msds-activities .content-custom .content-download-custom > input {
+      display: none; }
+    .node--type-lesson .content-custom .content-download-custom form .form-actions,
+    .node--type-msds-activities .content-custom .content-download-custom form .form-actions {
+      display: flex;
+      flex-direction: column;
+      margin: 0 !important; }
+      .node--type-lesson .content-custom .content-download-custom form .form-actions input,
+      .node--type-msds-activities .content-custom .content-download-custom form .form-actions input {
+        width: unset;
+        height: unset;
+        border: 0;
+        border-radius: 0;
+        padding: 0.5rem 2.5rem 0.5rem 1rem;
+        color: #1f3695;
+        font-size: 1rem;
+        font-weight: 400;
+        text-wrap: balance;
+        text-align: start;
+        background: url(/sites/napo/themes/custom/napo_theme/images/btn-download.png) no-repeat calc(100% - 10px) 50%; }
+        .node--type-lesson .content-custom .content-download-custom form .form-actions input:focus,
+        .node--type-msds-activities .content-custom .content-download-custom form .form-actions input:focus {
+          box-shadow: none; }
+        .node--type-lesson .content-custom .content-download-custom form .form-actions input:not(.node--type-lesson .content-custom .content-download-custom form .form-actions input:first-of-type, .node--type-lesson .content-custom .content-download-custom form .form-actions input:last-of-type,
+        .node--type-msds-activities .content-custom .content-download-custom form .form-actions input:first-of-type,
+        .node--type-msds-activities .content-custom .content-download-custom form .form-actions input:last-of-type),
+        .node--type-msds-activities .content-custom .content-download-custom form .form-actions input:not(.node--type-lesson .content-custom .content-download-custom form .form-actions input:first-of-type, .node--type-lesson .content-custom .content-download-custom form .form-actions input:last-of-type,
+        .node--type-msds-activities .content-custom .content-download-custom form .form-actions input:first-of-type,
+        .node--type-msds-activities .content-custom .content-download-custom form .form-actions input:last-of-type) {
+          border-top: 1px solid #1f3695; }
+        .node--type-lesson .content-custom .content-download-custom form .form-actions input:not(.node--type-lesson .content-custom .content-download-custom form .form-actions input:last-of-type):not(
+        .node--type-msds-activities .content-custom .content-download-custom form .form-actions input:last-of-type),
+        .node--type-msds-activities .content-custom .content-download-custom form .form-actions input:not(.node--type-lesson .content-custom .content-download-custom form .form-actions input:last-of-type):not(
+        .node--type-msds-activities .content-custom .content-download-custom form .form-actions input:last-of-type) {
+          margin: 0 0.5rem; }
+        .node--type-lesson .content-custom .content-download-custom form .form-actions input:last-child,
+        .node--type-msds-activities .content-custom .content-download-custom form .form-actions input:last-child {
+          display: block;
+          border-bottom: 0;
+          border-bottom-right-radius: 12px;
+          border-bottom-left-radius: 12px;
+          margin: 0;
+          padding: 0.5rem 2.5rem 0.5rem 1rem;
+          color: #FFF !important;
+          background-color: #1f3695;
+          background-image: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png);
+          background-repeat: no-repeat;
+          background-position: calc(100% - 19px) 50% !important; }
   .node--type-lesson .content-custom .content-accordions-custom,
   .node--type-msds-activities .content-custom .content-accordions-custom {
     margin-top: 3.75rem;
-    padding: 0rem 3% 1.25rem 3%;
-    width: 76%;
-    flex: 0 0 76%; }
+    padding: 0rem 3% 1.25rem 3%; }
     .node--type-lesson .content-custom .content-accordions-custom h2,
     .node--type-msds-activities .content-custom .content-accordions-custom h2 {
       font-size: 1.875rem;
@@ -4056,41 +4065,53 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  .node--type-napo-video .description-and-download .napofilms-download-box {
+  .node--type-napo-video .description-and-download .content-download-custom {
     border: 1px solid #1f3695;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top: 0; }
-    .node--type-napo-video .description-and-download .napofilms-download-box .napofilms-download-title {
-      font-size: 1.3rem;
+    .node--type-napo-video .description-and-download .content-download-custom > p {
+      margin: 0;
       padding-top: 0.5rem;
       padding-left: 1rem;
+      font-size: 1.3rem;
       font-weight: 600; }
-    .node--type-napo-video .description-and-download .napofilms-download-box ul.download-list-items {
-      list-style: none;
-      margin: 0 0.5rem; }
-      .node--type-napo-video .description-and-download .napofilms-download-box ul.download-list-items li {
-        border-bottom: 1px solid #1f3695;
-        padding-left: 1rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+    form .node--type-napo-video .description-and-download .content-download-custom > input {
+      display: none; }
+    .node--type-napo-video .description-and-download .content-download-custom form .form-actions {
+      display: flex;
+      flex-direction: column;
+      margin: 0 !important; }
+      .node--type-napo-video .description-and-download .content-download-custom form .form-actions input {
+        width: unset;
+        height: unset;
+        border: 0;
+        border-radius: 0;
+        padding: 0.5rem 2.5rem 0.5rem 1rem;
+        color: #1f3695;
+        font-size: 1rem;
+        font-weight: 400;
+        text-wrap: balance;
+        text-align: start;
         background: url(/sites/napo/themes/custom/napo_theme/images/btn-download.png) no-repeat calc(100% - 10px) 50%; }
-      .node--type-napo-video .description-and-download .napofilms-download-box ul.download-list-items li:last-child {
-        border-bottom: 0; }
-    .node--type-napo-video .description-and-download .napofilms-download-box ul.download-general {
-      list-style: none;
-      margin-bottom: 0; }
-      .node--type-napo-video .description-and-download .napofilms-download-box ul.download-general li {
-        background: #1f3695;
-        border-bottom-right-radius: 12px;
-        border-bottom-left-radius: 12px;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem; }
-        .node--type-napo-video .description-and-download .napofilms-download-box ul.download-general li a {
+        .node--type-napo-video .description-and-download .content-download-custom form .form-actions input:focus {
+          box-shadow: none; }
+        .node--type-napo-video .description-and-download .content-download-custom form .form-actions input:not(.node--type-napo-video .description-and-download .content-download-custom form .form-actions input:first-of-type, .node--type-napo-video .description-and-download .content-download-custom form .form-actions input:last-of-type) {
+          border-top: 1px solid #1f3695; }
+        .node--type-napo-video .description-and-download .content-download-custom form .form-actions input:not(.node--type-napo-video .description-and-download .content-download-custom form .form-actions input:last-of-type) {
+          margin: 0 0.5rem; }
+        .node--type-napo-video .description-and-download .content-download-custom form .form-actions input:last-child {
           display: block;
-          color: #FFFFFF;
-          padding-left: 1rem;
-          background: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png) no-repeat calc(100% - 19px) 50%; }
+          border-bottom: 0;
+          border-bottom-right-radius: 12px;
+          border-bottom-left-radius: 12px;
+          margin: 0;
+          padding: 0.5rem 2.5rem 0.5rem 1rem;
+          color: #FFF !important;
+          background-color: #1f3695;
+          background-image: url(/sites/napo/themes/custom/napo_theme/images/btn-download-all.png);
+          background-repeat: no-repeat;
+          background-position: calc(100% - 19px) 50% !important; }
 .node--type-napo-video .conten-video-info {
   position: relative;
   min-width: 260px; }
