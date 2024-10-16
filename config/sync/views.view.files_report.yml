@@ -4465,7 +4465,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'view media'
+          perm: 'view own unpublished content'
       cache:
         type: tag
         options: {  }
@@ -5903,7 +5903,7 @@ display:
         options:
           query_comment: ''
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_tags: {  }
       relationships:
