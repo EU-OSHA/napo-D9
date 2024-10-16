@@ -10415,6 +10415,7 @@ display:
       defaults:
         fields: false
       display_description: ''
+      rendering_language: '***LANGUAGE_entity_default***'
       display_extenders:
         metatag_display_extender:
           metatags: {  }
@@ -10432,7 +10433,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
         - url
@@ -14864,6 +14864,7 @@ display:
       defaults:
         fields: false
       display_description: ''
+      rendering_language: '***LANGUAGE_entity_default***'
       display_extenders:
         metatag_display_extender:
           metatags: {  }
@@ -14881,7 +14882,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
         - url
@@ -14898,6 +14898,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      rendering_language: '***LANGUAGE_entity_default***'
       display_extenders:
         metatag_display_extender:
           metatags: {  }
@@ -14915,7 +14916,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
