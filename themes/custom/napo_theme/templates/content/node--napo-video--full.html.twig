@@ -157,7 +157,7 @@
         {% endif %}
       {% endfor %}
     {% else %}
-      <iframe width="1110" height="641" src="https://www.youtube-nocookie.com/embed/{{ video_url }}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="1110" height="641" src="https://www.youtube-nocookie.com/embed/{{ video_url }}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen></iframe>
     {% endif %}
   </div>
   <div class="description-and-download">
@@ -168,6 +168,7 @@
       <div class="napo-film-video-download-form">
         <div class="download">
           <div class="content-download-custom">
+            <p>{{ 'Download' | trans }}</p>
             {{ drupal_block('napo_films_download_block') }}
           </div>
         </div>

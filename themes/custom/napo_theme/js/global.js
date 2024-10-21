@@ -80,7 +80,6 @@
             $(this).text(linkText);
           });
         }
-
       });
     }
   };
@@ -205,7 +204,6 @@
     });
   });
 
-
   // Show results in Napo Films
   if($('body').find('#edit-search-api-fulltext--2').length>0){
     let napoFilmsInputValue=$('#edit-search-api-fulltext--2').val();
@@ -222,6 +220,8 @@
       $('body').addClass('showResults');
     }
   }
+
+
 
   // Play "Napo for teachers" and "Napo in the workplace" videos
   $('.video-custom').each(function(){
@@ -252,6 +252,15 @@
         $video.get()[0].play();
         $(this).closest('.video-custom').stop().removeClass('pauseVideoCustom');
       }
+    });
+  });
+
+  //@ Film button
+  jQuery(document).ready(function () {
+    $(document).on('click', '.film-download-listitem', function (ev) {
+      let btId = $(this).data('id');
+      $('#'+btId).click();
+      return false;
     });
   });
 

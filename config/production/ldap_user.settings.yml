@@ -7,16 +7,18 @@ drupalAcctProvisionTriggers:
   - drupal_on_update_create
 ldapEntryProvisionTriggers:
   - ldap_on_update_create
+orphanedIncludeDisabledUsers: false
 orphanedDrupalAcctBehavior: ldap_user_orphan_do_not_check
 orphanedDrupalAcctReportingInbox: ''
 orphanedCheckQty: 100
 orphanedAccountCheckInterval: weekly
 userConflictResolve: resolve
 manualAccountConflict: conflict_associate
-acctCreation: ldap_behaviour
+acctCreation: user_settings_for_ldap
 disableAdminPasswordField: false
 userUpdateCronQuery: none
 userUpdateCronInterval: always
+userUpdateOnly: false
 ldapUserSyncMappings:
   drupal:
     field-ldap_user_current_dn:
