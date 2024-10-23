@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.field_body_revamp
     - node.type.lesson_video
   module:
+    - linkchecker
     - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
 id: node.lesson_video.field_body_revamp
 field_name: field_body_revamp
 entity_type: node
@@ -17,5 +22,6 @@ required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats: {  }
 field_type: text_long
