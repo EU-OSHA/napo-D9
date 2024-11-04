@@ -25,6 +25,7 @@ dependencies:
     - content_moderation
     - contextual
     - filter
+    - linkchecker
     - media
     - node
     - path
@@ -48,6 +49,7 @@ permissions:
   - 'access dashboard'
   - 'access media browser'
   - 'access media overview'
+  - 'access own broken links report'
   - 'access pm review tab'
   - 'access site in maintenance mode'
   - 'access taxonomy manager list'
