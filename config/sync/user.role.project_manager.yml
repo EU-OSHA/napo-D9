@@ -19,6 +19,7 @@ dependencies:
     - content_moderation
     - contextual
     - filter
+    - linkchecker
     - node
     - path
     - search
@@ -33,9 +34,11 @@ is_admin: null
 permissions:
   - 'accept job item translation'
   - 'access administration pages'
+  - 'access broken links report'
   - 'access content'
   - 'access content overview'
   - 'access contextual links'
+  - 'access own broken links report'
   - 'access dashboard'
   - 'access media browser'
   - 'access toolbar'
