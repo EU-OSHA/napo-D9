@@ -472,7 +472,7 @@ display:
           prefix: ''
           suffix: ''
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           items_per_page: 50
@@ -481,6 +481,8 @@ display:
           tags:
             next: 'Next ›'
             previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -489,6 +491,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -744,7 +747,17 @@ display:
           required: true
       group_by: true
       show_admin_links: true
-      header: {  }
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: 'Displaying @start - @end of @total'
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -865,7 +878,10 @@ display:
           admin_label: 'File usage'
           required: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: admin/content/files
       menu:
         type: tab
