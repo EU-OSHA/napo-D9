@@ -3,8 +3,13 @@ langcode: en
 status: true
 dependencies:
   module:
+    - csv_serialization
     - file
+    - rest
+    - serialization
     - user
+    - views_data_export
+    - xls_serialization
 _core:
   default_config_hash: gLmoA0yjvlXfMRp9ihOhRKSSQQlbdLdvpDkbVwkYPrg
 id: files
@@ -467,7 +472,7 @@ display:
           prefix: ''
           suffix: ''
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           items_per_page: 50
@@ -476,6 +481,8 @@ display:
           tags:
             next: 'Next ›'
             previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -484,6 +491,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -739,7 +747,17 @@ display:
           required: true
       group_by: true
       show_admin_links: true
-      header: {  }
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: 'Displaying @start - @end of @total'
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -749,6 +767,96 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user.permissions
+      tags: {  }
+  data_export_1:
+    id: data_export_1
+    display_title: 'Data export - Excel'
+    display_plugin: data_export
+    position: 3
+    display_options:
+      style:
+        type: data_export
+        options:
+          formats:
+            xlsx: xlsx
+          csv_settings:
+            delimiter: ','
+            enclosure: '"'
+            escape_char: \
+            strip_tags: true
+            trim: true
+            encoding: utf8
+            utf8_bom: '0'
+            use_serializer_encode_only: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: admin/content/files
+      displays:
+        page_1: page_1
+        default: '0'
+        page_2: '0'
+      filename: file_report.xlsx
+      automatic_download: false
+      store_in_public_file_directory: null
+      custom_redirect_path: false
+      redirect_to_display: none
+      include_query_params: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - url
+        - user.permissions
+      tags: {  }
+  data_export_2:
+    id: data_export_2
+    display_title: 'Data export - CSV'
+    display_plugin: data_export
+    position: 3
+    display_options:
+      style:
+        type: data_export
+        options:
+          formats:
+            csv: csv
+          csv_settings:
+            delimiter: ;
+            enclosure: '"'
+            escape_char: \
+            strip_tags: true
+            trim: true
+            encoding: utf8
+            utf8_bom: '0'
+            use_serializer_encode_only: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: admin/content/files
+      displays:
+        page_1: page_1
+        default: '0'
+        page_2: '0'
+      filename: file_report.csv
+      automatic_download: false
+      store_in_public_file_directory: null
+      custom_redirect_path: false
+      redirect_to_display: none
+      include_query_params: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - url
         - user.permissions
       tags: {  }
   page_1:
@@ -770,7 +878,10 @@ display:
           admin_label: 'File usage'
           required: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: admin/content/files
       menu:
         type: tab

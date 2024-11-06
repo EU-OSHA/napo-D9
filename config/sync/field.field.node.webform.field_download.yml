@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.field_download
     - node.type.webform
   module:
+    - linkchecker
     - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
 id: node.webform.field_download
 field_name: field_download
 entity_type: node
@@ -17,5 +22,6 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats: {  }
 field_type: text
