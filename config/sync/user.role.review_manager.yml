@@ -43,6 +43,7 @@ is_admin: null
 permissions:
   - 'accept translation jobs'
   - 'access administration pages'
+  - 'access broken links report'
   - 'access content'
   - 'access content overview'
   - 'access contextual links'
