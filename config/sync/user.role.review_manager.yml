@@ -53,6 +53,7 @@ permissions:
   - 'access own broken links report'
   - 'access pm review tab'
   - 'access site in maintenance mode'
+  - 'access site reports'
   - 'access taxonomy manager list'
   - 'access toolbar'
   - 'access workbench'
