@@ -79,6 +79,7 @@ module:
   layout_discovery: 0
   ldap_customize: 0
   link: 0
+  linkchecker: 0
   locale: 0
   mailsystem: 0
   media: 0

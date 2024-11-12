@@ -6,6 +6,7 @@ dependencies:
     - filter.format.full_html
   module:
     - filter
+    - linkchecker
     - system
     - toolbar
 id: translation_liaison
@@ -13,6 +14,7 @@ label: 'Translation Liaison'
 weight: 4
 is_admin: null
 permissions:
+  - 'access own broken links report'
   - 'access dashboard'
   - 'access toolbar'
   - 'use manualcrop'
