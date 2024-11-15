@@ -14,8 +14,8 @@ label: 'Translation Liaison'
 weight: 4
 is_admin: null
 permissions:
-  - 'access own broken links report'
   - 'access dashboard'
+  - 'access own broken links report'
   - 'access toolbar'
   - 'use manualcrop'
   - 'use text format full_html'
