@@ -1,0 +1,25 @@
+uuid: 3996a756-e277-4323-bf93-11fcec960ec1
+langcode: en
+status: true
+dependencies:
+  module:
+    - addtoany
+  theme:
+    - napo_theme
+id: napo_theme_addtoanysharebuttons
+theme: napo_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'AddToAny share buttons'
+  label_display: '0'
+  provider: addtoany
+  context_mapping: {  }
+  buttons_size: null
+  addtoany_html: ''
+  link_url: ''
+  link_title: ''
+visibility: {  }
