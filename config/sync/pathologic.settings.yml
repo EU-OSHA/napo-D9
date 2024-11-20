@@ -1,9 +1,9 @@
 _core:
   default_config_hash: EKYCulG-Y3pcObfUpVbl-D9T5DDX6d4hpQ-BVlSBAmw
+protocol_style: full
+local_paths: "http://napo.ddev.site\r\nhttps://testd9.napofilm.net/"
 scheme_whitelist:
   - http
   - https
   - files
   - internal
-protocol_style: full
-local_paths: "http://napo.ddev.site\r\nhttps://testd9.napofilm.net/"

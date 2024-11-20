@@ -17,10 +17,10 @@ label: 'Translation Manager'
 weight: 3
 is_admin: null
 permissions:
-  - 'access own broken links report'
   - 'abort job item'
   - 'accept translation jobs'
   - 'access dashboard'
+  - 'access own broken links report'
   - 'access toolbar'
   - 'access user profiles'
   - 'access workbench access by role'
