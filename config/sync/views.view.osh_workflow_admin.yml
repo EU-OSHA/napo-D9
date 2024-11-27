@@ -20,7 +20,6 @@ dependencies:
     - node.type.panel
     - node.type.webform
     - user.role.administrator
-    - user.role.project_manager
     - user.role.review_manager
     - workbench_access.access_scheme.section
     - workflows.workflow.napo
@@ -1092,7 +1091,6 @@ display:
               translation_liaison: '0'
               layout_validator: '0'
               content_validator: '0'
-              project_manager: '0'
               review_manager: '0'
               internal_translator: '0'
             placeholder: ''
@@ -1143,7 +1141,6 @@ display:
               translation_liaison: '0'
               layout_validator: '0'
               content_validator: '0'
-              project_manager: '0'
               review_manager: '0'
               internal_translator: '0'
             reduce: true
@@ -1814,7 +1811,6 @@ display:
               translation_liaison: '0'
               layout_validator: '0'
               content_validator: '0'
-              project_manager: '0'
               review_manager: '0'
               internal_translator: '0'
             placeholder: ''
@@ -1865,7 +1861,6 @@ display:
               translation_liaison: '0'
               layout_validator: '0'
               content_validator: '0'
-              project_manager: '0'
               review_manager: '0'
               internal_translator: '0'
             reduce: true
@@ -2490,7 +2485,6 @@ display:
               translation_liaison: '0'
               layout_validator: '0'
               content_validator: '0'
-              project_manager: '0'
               review_manager: '0'
               internal_translator: '0'
             placeholder: ''
@@ -2559,11 +2553,11 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: 'Project Manager NR'
+    display_title: 'Review Manager NR'
     display_plugin: page
     position: 5
     display_options:
-      title: 'Needs Project Manager Review'
+      title: 'Needs Review Manager Review'
       fields:
         title:
           id: title
@@ -3036,7 +3030,6 @@ display:
         options:
           role:
             administrator: administrator
-            project_manager: project_manager
       arguments: {  }
       filters:
         latest_translation_affected_revision:
