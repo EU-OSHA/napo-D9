@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Napo friend'
 type: napo_friend
-description: ''
+description: 'Napo friends info under about Napo / Napo and friends section.'
 help: ''
 new_revision: true
 preview_mode: 1
