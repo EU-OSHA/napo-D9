@@ -470,7 +470,7 @@ display:
           fallback_handler: search_api
           fallback_options:
             link_to_item: false
-            use_highlighting: true
+            use_highlighting: false
             multi_type: separator
             multi_separator: ', '
         search_api_url:
