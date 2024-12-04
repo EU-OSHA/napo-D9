@@ -17,31 +17,22 @@ provider_mappings:
     query: 'cn=ADMIN,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
     is_regex: false
   -
-    query: 'cn=APPROVER,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
-    is_regex: false
-  -
-    query: 'cn=EDIT,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
-    is_regex: false
-  -
-    query: 'cn=PM,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
-    is_regex: false
-  -
     query: 'cn=RVMN,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
     is_regex: false
   -
-    query: 'cn=EVENTCOOR,ou=MainSite,ou=Sites,dc=osha,dc=europa,dc=eu'
+    query: 'cn=LAYVAL,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
     is_regex: false
   -
-    query: 'cn=EVENTEDT,ou=MainSite,ou=Sites,dc=osha,dc=europa,dc=eu'
+    query: 'cn=TRLIAS,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
     is_regex: false
   -
-    query: 'cn=LAYVAL,ou=MainSite,ou=Sites,dc=osha,dc=europa,dc=eu'
+    query: 'cn=TRLMN,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
     is_regex: false
   -
-    query: 'cn=TRLIAS,ou=MainSite,ou=Sites,dc=osha,dc=europa,dc=eu'
+    query: 'cn=CATALAN_CV,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
     is_regex: false
   -
-    query: 'cn=TRLMN,ou=MainSite,ou=Sites,dc=osha,dc=europa,dc=eu'
+    query: 'cn=CATALAN_CV,ou=NAPO,ou=Sites,dc=osha,dc=europa,dc=eu'
     is_regex: false
 consumer: authorization_drupal_roles
 consumer_config: {  }
@@ -49,23 +40,17 @@ consumer_mappings:
   -
     role: administrator
   -
-    role: none
-  -
-    role: none
-  -
-    role: project_manager
-  -
     role: review_manager
-  -
-    role: none
-  -
-    role: none
   -
     role: layout_validator
   -
     role: translation_liaison
   -
     role: translation_manager
+  -
+    role: internal_translator
+  -
+    role: content_validator
 synchronization_modes:
   user_logon: user_logon
 synchronization_actions:
