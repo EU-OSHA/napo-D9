@@ -30,13 +30,13 @@ widget:
   type: checkbox
   config:
     show_numbers: false
-    soft_limit: 10
+    soft_limit: 20
     show_reset_link: true
     reset_text: 'Clear all'
     hide_reset_when_no_selection: true
     soft_limit_settings:
-      show_less_label: 'Show less'
-      show_more_label: 'Show more'
+      show_less_label: 'See less'
+      show_more_label: 'See all'
     disable_autosubmit: 0
 empty_behavior:
   behavior: none

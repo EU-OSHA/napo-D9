@@ -10,9 +10,18 @@
     }
 
     .block-facet-blocknapo-film-content-categories{
-      h2{
-        font-size: 1rem;
+      border: 2px solid $bg-color-blue;
+      padding: 1rem;
+      border-radius: 5px;
+      height: fit-content;
+      .js-form-type-entity-autocomplete{
         display: none;
+      }
+      h2{
+        font:{
+          size: 1rem;
+          weight: bold;
+        }
       }
     }
 
@@ -30,6 +39,7 @@
       }
       input::placeholder{
         color: $text-color-blue;
+        font-style: italic;
       }
       select{
         appearance: none;
@@ -75,8 +85,29 @@
           right: 0 !important;
         }
       }
+      .item.video{
+        h3{
+          display: flex;
+          align-items: center;
+          padding-left: 45px;
+          margin-bottom: 1rem;
+          min-height: 35px;
+          background: {
+            size: 35px !important;
+            repeat: no-repeat !important;
+            position: 0% 50%;
+          };
+        }
+        &.Episode h3{
+          background-image: url(/sites/napo/themes/custom/napo_theme/images/chapter-icon-blue.svg);
+        }
+        &.Film h3{
+          background-image: url(/sites/napo/themes/custom/napo_theme/images/film-icon-blue.svg);
+        }
+      }
       p{
         font-size: 1rem;
+        margin-bottom: 0.8rem;
       }
       .d-flex{
         gap: 1rem;
@@ -99,15 +130,19 @@
       .pager__items{
         background-color: unset;
       }
-      .main-category{
+      .main-category, .list-group-item .taxonomy-level-item span{
         width: fit-content;
         border-radius: 4px;
         border: 2px solid $bg-color-blue;
         padding: 5px 10px;
         font-size: 15px;
       }
-      .categories, .categories a{
-        font-size: 1rem;
+      .list-group-item{
+        border: unset;
+      }
+      .type-tags:not(.type-tags:first-child),
+      .group-right > .item-list > .list-group > .list-group-item:not(.group-right > .item-list > .list-group > .list-group-item:first-child){
+        display: none;
       }
       &:focus{
         outline:none;
@@ -301,6 +336,18 @@
       h3 a{
         font-size: 1.125rem;
       }
+      .see-more-napo{
+        font: {
+          size: 0.94rem;
+          weight: bold;
+        };
+        padding-right: 1.5rem;
+        background: {
+          repeat: no-repeat;
+          position: 100% 50%;
+          image: url(/sites/napo/themes/custom/napo_theme/images/arrow-right-blue.svg);
+        };
+      }
     }
 
     .facets-widget-checkbox > ul > li {
@@ -343,7 +390,7 @@
       }
       & > label{
         grid-area: text;
-        font-weight: bold;
+        font-size: 0.9rem;
       }
       & > span{
         grid-area: icon;
@@ -358,20 +405,21 @@
         width: 18px;
         height: 18px;
         margin: 0 0.5rem 0 0;
-        border: 2px solid $bg-color-blue;
+        border: 1px solid $bg-color-blue;
         background-color: white;
         border-radius: 5px;
         appearance: none;
         -webkit-appearance: none;
+        cursor: pointer;
 
         &:checked {
           background: {
             image: url('/sites/napo/themes/custom/napo_theme/images/checkbox-selected-icon.svg');
-            size: 80% 80%;
+            size: 70% 70%;
             position: center;
             repeat: no-repeat;
           }
-          border-color: $bg-color-blue;
+          border: 2px solid $bg-color-blue;
         }
 
         &:focus {
@@ -400,12 +448,12 @@
 
     .facets-soft-limit-link{
       display: block;
-      width: 100%;
-      text-align: end;
-      font: {
-        weight: bold;
-        size: 0.938rem;
-      }
+      width: fit-content;
+      border-radius: 3px;
+      font-weight: 400;
+      padding: 10px 25px;
+      background: $bg-color-blue;
+      color: $text-color-white;
     }
 
     @media (min-width: 768px){
@@ -416,6 +464,9 @@
       }
       .form-item-search-api-fulltext{
         order: 1;
+      }
+      div[data-drupal-selector="edit-actions"]{
+        order: 2;
       }
       .form-item-sort-by{
         order: 3;
@@ -435,7 +486,7 @@
           grid-template-columns: 233px 1fr;
           grid-template-areas: "img videoinfo"
                                 "catanddownload catanddownload";
-          gap: 0 1rem;
+          gap: 0 0.8rem;
           .napo-film-list-image{
             grid-area: img;
           }
