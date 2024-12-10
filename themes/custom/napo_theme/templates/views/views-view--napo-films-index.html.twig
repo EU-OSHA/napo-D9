@@ -71,6 +71,8 @@
       <input type="checkbox" id="custom-napofilms-hide-scenes" class="hide-scenes-checkbox" checked="checked">
     {% elseif exposed.field_video_type['#value'] is not empty and '2726' in exposed.field_video_type['#value'] and '2727' in exposed.field_video_type['#value'] %}
        <input type="checkbox" id="custom-napofilms-hide-scenes" class="hide-scenes-checkbox">
+    {% elseif exposed.field_video_type['#value'] is not empty and '2726' not in exposed.field_video_type['#value'] and '2727' not in exposed.field_video_type['#value'] %}
+      <input type="checkbox" id="custom-napofilms-hide-scenes" class="hide-scenes-checkbox">
     {% endif %}
   <label for="custom-napofilms-hide-scenes">Hide scenes</label>
 
