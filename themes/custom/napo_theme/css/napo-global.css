@@ -2282,14 +2282,15 @@ tr {
     .page-view-napo-films-index .napo-film-list-view .item.video.Film h3 {
       background-image: url(/sites/napo/themes/custom/napo_theme/images/film-icon-blue.svg); }
     .page-view-napo-films-index .napo-film-list-view p {
-      font-size: 1rem;
-      margin-bottom: 0.8rem; }
+      font-size: 1rem; }
     .page-view-napo-films-index .napo-film-list-view .d-flex {
       gap: 1rem; }
     .page-view-napo-films-index .napo-film-list-view .form-item-sort-by {
       display: flex;
       flex-direction: column;
       width: 100%; }
+    .page-view-napo-films-index .napo-film-list-view label[for="custom-napofilms-hide-scenes"] {
+      padding-left: 0.5rem; }
     .page-view-napo-films-index .napo-film-list-view button {
       background-color: #1f3695;
       color: #FFF;
@@ -2300,10 +2301,12 @@ tr {
     .page-view-napo-films-index .napo-film-list-view .pager__items {
       background-color: unset; }
     .page-view-napo-films-index .napo-film-list-view .main-category, .page-view-napo-films-index .napo-film-list-view .list-group-item .taxonomy-level-item span {
+      display: block;
       width: fit-content;
       border-radius: 4px;
       border: 2px solid #1f3695;
       padding: 5px 10px;
+      margin-bottom: 0.5rem;
       font-size: 15px; }
     .page-view-napo-films-index .napo-film-list-view .list-group-item {
       border: unset; }
@@ -2474,8 +2477,8 @@ tr {
       .page-view-napo-films-index .facets-widget-checkbox > ul > li.facet-item.active-custom {
         display: grid; }
       .page-view-napo-films-index .facets-widget-checkbox > ul > li.facets-reset {
-        /**Clear all btn**/
-        display: flex;
+        /**Hide clear all btn**/
+        display: none;
         align-items: center;
         cursor: pointer;
         width: fit-content;
@@ -2547,6 +2550,9 @@ tr {
       order: 1; }
     .page-view-napo-films-index div[data-drupal-selector="edit-actions"] {
       order: 2; }
+    .page-view-napo-films-index .js-form-item-field-video-type {
+      /**Hide video type select**/
+      display: none; }
     .page-view-napo-films-index .form-item-sort-by {
       order: 3; }
     .page-view-napo-films-index #edit-actions--2 {

@@ -107,7 +107,6 @@
       }
       p{
         font-size: 1rem;
-        margin-bottom: 0.8rem;
       }
       .d-flex{
         gap: 1rem;
@@ -116,6 +115,9 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+      }
+      label[for="custom-napofilms-hide-scenes"]{
+        padding-left: 0.5rem;
       }
       button{
         background-color: $bg-color-blue;
@@ -131,10 +133,12 @@
         background-color: unset;
       }
       .main-category, .list-group-item .taxonomy-level-item span{
+        display: block;
         width: fit-content;
         border-radius: 4px;
         border: 2px solid $bg-color-blue;
         padding: 5px 10px;
+        margin-bottom: 0.5rem;
         font-size: 15px;
       }
       .list-group-item{
@@ -360,8 +364,8 @@
         display: grid;
       }
       &.facets-reset{
-        /**Clear all btn**/
-        display: flex;
+        /**Hide clear all btn**/
+        display: none;
         align-items: center;
         cursor: pointer;
         width: fit-content;
@@ -467,6 +471,10 @@
       }
       div[data-drupal-selector="edit-actions"]{
         order: 2;
+      }
+      .js-form-item-field-video-type{
+        /**Hide video type select**/
+        display: none;
       }
       .form-item-sort-by{
         order: 3;
