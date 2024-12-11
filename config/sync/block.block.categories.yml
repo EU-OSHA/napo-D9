@@ -1,6 +1,6 @@
 uuid: a73e7afc-62b0-4f52-9334-383b4d29470f
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - facets.facet.categories
@@ -12,7 +12,7 @@ dependencies:
 id: categories
 theme: napo_theme
 region: content
-weight: -18
+weight: -12
 provider: null
 plugin: 'facet_block:categories'
 settings:

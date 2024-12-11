@@ -1,0 +1,33 @@
+uuid: ba95de70-14f5-4325-b98f-7701e48d9016
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.napo_film_content_categories
+  module:
+    - facets
+    - system
+  theme:
+    - napo_theme
+id: napo_theme_napofilmcontentcategories
+theme: napo_theme
+region: content
+weight: -17
+provider: null
+plugin: 'facet_block:napo_film_content_categories'
+settings:
+  id: 'facet_block:napo_film_content_categories'
+  label: Topics
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: napo_theme_napofilmcontentcategories
+  cache:
+    esi: 0
+    ttl: '0'
+    cachemode: '2'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/napos-films/search\r\n/napos-films/films"

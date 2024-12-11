@@ -1,0 +1,100 @@
+{% extends "@bootstrap_barrio/layout/page.html.twig" %}
+{% block head %}
+  <div id="navbar" role="banner" class="{{ navbar_classes }}">
+    <div class="header_top_bar">
+      <div class="header_top_bar_content container">
+        <section class="row region region-top-header">
+          {{ page.top_header.headercontact }}
+          {{ page.top_header.socialmedialinks_2 }}
+          <div><a href="#" onclick="if(window.print)window.print();" class="print-friendly" title="{{ 'Print friendly' | trans }}">{{ 'Print friendly:' | trans }}</a></div>
+          <div class="font-size-print">
+            <span class="set-font">{{ 'Set font size'  | trans }}</span>
+            <span id="_biggify" class="a_big"><a title="Bigger text"><sup>+</sup>A</a></a></span>
+            <span id="_smallify" class="a_small"><a title="Smaller text"><sup>-</sup>A</a></span>
+          </div>
+          {{ page.top_header.ncclinkblock }}
+        </section>
+      </div>
+    </div>
+    <div class="header_navbar_container container">
+      <div class="header_navbar_content row">
+        <div class="header-logo col-md-4">
+          {{ page.header_logo }}
+        </div>
+        <div class="header_nav col-md-8">
+          <nav{{ navbar_attributes }}>
+            {% if page.primary_menu %}
+              <div class="container-toogle">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="CollapsingNavbar">
+                <div class="container">
+                  {{ page.primary_menu }}
+                </div>
+              </div>
+            {% endif %}
+            {% if sidebar_collapse %}
+              <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
+            {% endif %}
+          </nav>
+            <div class="header-blocks">
+              {{ page.header_form }}
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <main>
+    {% if page.breadcrumb %}
+      <div class="breadcrumb-container container">
+        <div class="breadcrumb">
+          {{ page.breadcrumb }}
+        </div>
+      </div>
+    {% endif %}
+  <div class="container">
+    <div class="row content-node-view">
+      <div class="col-12">
+        {{ page.node_view }}
+      </div>
+    </div>
+    <div class="row content-page-content">
+      <div class="col-12">
+        <div class="row node-content">
+          {{ drupal_entity('node', 23, 'teaser') }}
+        </div>
+        <div class="row films-view">
+          {{ page.content.napo_theme_napofilmcontentcategories }}
+          {{ drupal_view('napo_films_index', 'page_5') }}
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+{% endblock %}
+
+{% block footer %}
+  <div class="footer">
+      <div class="footer_top clearfix container">
+        {{ page.footer_first }}
+      </div>
+    <div class="footer_bottom">
+      <div class="footer_bottom_content clearfix container">
+        {{ page.footer_second }}
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+
+
+
