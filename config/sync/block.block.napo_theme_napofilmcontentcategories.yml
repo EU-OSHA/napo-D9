@@ -17,7 +17,7 @@ provider: null
 plugin: 'facet_block:napo_film_content_categories'
 settings:
   id: 'facet_block:napo_film_content_categories'
-  label: Categories
+  label: Topics
   label_display: visible
   provider: facets
   context_mapping: {  }

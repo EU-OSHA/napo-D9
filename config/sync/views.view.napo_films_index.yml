@@ -5828,6 +5828,59 @@ display:
     display_options:
       title: "Napo's films"
       fields:
+        url_3:
+          id: url_3
+          table: search_api_index_default_multilingual_node_index
+          field: url
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: '<a class="napo-title" href="{{ url_3 }}">{{ title }}</a>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          link_to_item: false
+          use_highlighting: false
+          multi_type: separator
+          multi_separator: ', '
         nid:
           id: nid
           table: search_api_index_default_multilingual_node_index
@@ -5922,9 +5975,9 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<a href="{{url}}"> <span class="napo-film-video-type napo-film-video-type-film"></span>{{ title__value }} </a>'
-            make_link: false
-            path: ''
+            text: ''
+            make_link: true
+            path: '{{url}}'
             absolute: false
             external: false
             replace_spaces: false
@@ -7066,6 +7119,59 @@ display:
               webform:
                 display_method: label
                 view_mode: default
+        url:
+          id: url
+          table: search_api_index_default_multilingual_node_index
+          field: url
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '<a class="see-more-napo" href="{{ url }}">See more</a>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          link_to_item: true
+          use_highlighting: false
+          multi_type: separator
+          multi_separator: ', '
         nothing:
           id: nothing
           table: views
@@ -7078,7 +7184,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"item {{ field_video_type }}\">\r\n  <div class=\"napo-film-list-image\">{{field_image}}</div>\r\n  <div class=\"group-right\">\r\n    <h3>{{title}}</h3>\r\n    {{ field_main_tag }}\r\n    <p>{{processed}}</p>\r\n</div>\r\n    <div class=\"napo-film-list-details-container\">\r\n      <div class=\"categories\">{{ field_combined_tags }}</div>\r\n      <div class=\"download-info\"> \r\n     {#<div class=\"\">{{ field_combined_tags_2 }}</div>#}\r\n       {% if field_video_type  == 'Film video' %}\r\n        {% if field_field_episodes != null  %}\r\n            <div class=\"view-scenes\"><a href=\"{{path}}/{{langcode}}/napos-films/{{url_2 }}/view-scenes\">View scenes</a></div>\r\n        {% endif%}\r\n\r\n{% endif %}\r\n      <div class=\"view-video\">{{ url_1 }}</div>\r\n      <div class=\"download-video\">\r\n        <div class=\"download-items\">\r\n        {% for link in uri|split(',') %}\r\n          <a target=\"_blank\" href=\"{{path}}/{{ langcode }}/napos-films/{{ nid }}/video/download?number={{loop.index-1}}\">{{ link }}</a>\r\n        {% endfor %}\r\n        </div>\r\n      </div>\r\n       <div class=\"cart\">{{ ncc_download }}</div>\r\n     </div>\r\n  </div>\r\n</div>\r\n"
+            text: "<div class=\"item {{ field_video_type }}\">\r\n  <div class=\"napo-film-list-image\">{{field_image}}</div>\r\n  <div class=\"group-right\">\r\n    <h3>{{title}}</h3>\r\n      {% if field_video_type == 'Episode video' %}\r\n\t{{ field_combined_tags_2 }}\r\n      {% else %}\r\n        {{ field_main_tag }}\r\n      {% endif %}\r\n    <p>{{processed}}</p>\r\n    <p>{{ url }}</p>\r\n  </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -7416,21 +7522,30 @@ display:
             2726: 2726
             2727: 2727
           group: 1
-          exposed: false
+          exposed: true
           expose:
-            operator_id: ''
+            operator_id: field_video_type_op
             label: ''
             description: ''
             use_operator: false
-            operator: ''
+            operator: field_video_type_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: ''
+            identifier: field_video_type
             required: false
             remember: false
-            multiple: false
+            multiple: true
             remember_roles:
               authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              review_manager: '0'
+              internal_translator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -7525,7 +7640,7 @@ display:
         filter_groups: false
         header: false
       relationships: {  }
-      use_ajax: true
+      use_ajax: false
       display_description: ''
       header:
         entity_node:
