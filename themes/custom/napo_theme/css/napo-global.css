@@ -273,6 +273,10 @@ div.pagerer-container {
   top: -52px;
   right: 0rem; }
 
+.node--type-napo-album .back-button-custom a {
+  top: 0px;
+  right: -8px; }
+
 /* SLICK */
 .slick__slide .slider-item {
   position: relative;
@@ -2914,19 +2918,23 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
       background-color: #f7e235; }
     #share-this-on a span {
       display: none !important; }
-
   #share-this-on .a2a_button_facebook {
-    background: url(/sites/default/themes/custom/ncwtheme/images/ico-facebook.png) no-repeat; background-position: center; width: 30px !important}
+    background: url(/sites/default/themes/custom/ncwtheme/images/ico-facebook.png) no-repeat;
+    background-position: center;
+    width: 30px !important; }
   #share-this-on .a2a_button_twitter {
-    background: url(/sites/default/themes/custom/ncwtheme/images/ico-twitter.jpg) no-repeat; background-position: center; width: 30px !important}
+    background: url(/sites/default/themes/custom/ncwtheme/images/ico-twitter.jpg) no-repeat;
+    background-position: center;
+    width: 30px !important; }
   #share-this-on .a2a_button_linkedin_share {
-    background: url(/sites/default/themes/custom/ncwtheme/images/ico-linkedin.png) no-repeat; background-position: center; width: 30px !important}
-  #share-this-on .a2a_button_facebook:after, #share-this-on .a2a_button_twitter:after, #share-this-on .a2a_button_linkedin_share:after  {
-    display:none!important;
-  }
-  #share-this-on .a2a_button_facebook:hover, #share-this-on .a2a_button_twitter:hover, #share-this-on .a2a_button_linkedin_share:hover  {
-    background-color: transparent;
-  }
+    background: url(/sites/default/themes/custom/ncwtheme/images/ico-linkedin.png) no-repeat;
+    background-position: center;
+    width: 30px !important; }
+  #share-this-on .a2a_button_facebook:after, #share-this-on .a2a_button_twitter:after, #share-this-on .a2a_button_linkedin_share:after {
+    display: none !important; }
+  #share-this-on .a2a_button_facebook:hover, #share-this-on .a2a_button_twitter:hover, #share-this-on .a2a_button_linkedin_share:hover {
+    background-color: transparent; }
+
 .sitemap .sitemap-item {
   padding-left: 27px; }
   .sitemap .sitemap-item h2 {
@@ -3619,7 +3627,8 @@ ul[data-sa-theme="basic-blue"] > li.ui-menu-item.ui-state-focus .ui-autocomplete
 .about-napo-napo-story iframe {
   float: left;
   padding-right: 1.125rem;
-  margin-bottom: 1.125rem; }
+  margin-bottom: 1.125rem;
+  max-width: 100%; }
 .about-napo-the-napo-story h3,
 .about-napo-napo-story h3 {
   font-size: 1.375rem;
@@ -4358,6 +4367,21 @@ iframe {
 .node--type-napo-album .views-view-grid > .views-row + .views-row {
   margin-top: 1.5rem; }
 
+@media (max-width: 600px) {
+  .node--type-napo-album .block-page-title-block h1 {
+    margin-top: 2rem; }
+  .node--type-napo-album .back-button-custom a {
+    top: -135px;
+    left: 1rem;
+    right: unset; } }
+@media (min-width: 600px) {
+  .node--type-napo-album .back-button-custom a {
+    top: -95px;
+    left: unset;
+    right: 0; } }
+@media (min-width: 768px) {
+  .node--type-napo-album .back-button-custom a {
+    top: 0px; } }
 .view-resource-library {
   padding: 0 3% 2rem; }
   .view-resource-library > .view-content {
