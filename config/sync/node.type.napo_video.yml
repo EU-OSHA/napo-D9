@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Napo video'
+name: 'Napo films'
 type: napo_video
-description: ''
+description: 'Napo films.'
 help: ''
 new_revision: true
 preview_mode: 1
