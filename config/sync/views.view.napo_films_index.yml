@@ -268,7 +268,7 @@ display:
         options:
           submit_button: Search
           reset_button: true
-          reset_button_label: 'Clear all'
+          reset_button_label: 'Clear filters'
           exposed_sorts_label: 'Sort by'
           expose_sort_order: false
           sort_asc_label: Asc
@@ -7241,6 +7241,19 @@ display:
         type: search_api_tag
         options: {  }
       sorts:
+        search_api_relevance:
+          id: search_api_relevance
+          table: search_api_index_default_multilingual_node_index
+          field: search_api_relevance
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: Relevance
+            field_identifier: search_api_relevance
+          exposed: true
         field_publication_date:
           id: field_publication_date
           table: search_api_index_default_multilingual_node_index
@@ -7519,7 +7532,6 @@ display:
           plugin_id: search_api_term
           operator: or
           value:
-            2726: 2726
             2727: 2727
           group: 1
           exposed: true
@@ -7543,7 +7555,6 @@ display:
               translation_liaison: '0'
               layout_validator: '0'
               content_validator: '0'
-              project_manager: '0'
               review_manager: '0'
               internal_translator: '0'
             reduce: false
