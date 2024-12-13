@@ -10,10 +10,7 @@
     }
 
     .block-facet-blocknapo-film-content-categories{
-      border: 2px solid $bg-color-blue;
-      padding: 1rem;
-      border-radius: 5px;
-      height: fit-content;
+      padding-top: 0.35rem;
       .js-form-type-entity-autocomplete{
         display: none;
       }
@@ -132,19 +129,33 @@
       .pager__items{
         background-color: unset;
       }
-      .main-category, .list-group-item .taxonomy-level-item span{
-        display: block;
-        width: fit-content;
-        border-radius: 4px;
-        border: 2px solid $bg-color-blue;
-        padding: 5px 10px;
-        margin-bottom: 0.5rem;
-        font-size: 15px;
+      .main-category, .list-group-item{
+        .type-tags:not(.type-tags:last-of-type){
+          &:after{
+            display: inline;
+            content: ",";
+          }
+        }
+        .taxonomy-level-item.type-tags{
+          width: fit-content;
+          span{
+            color: $text-color-black;
+            font-size: 0.85rem;
+          }
+        }
       }
+      .item .item-list .list-group .taxonomy-level-list{
+        display: flex;
+        gap: 0.35rem;
+        flex: {
+          direction: row;
+          wrap: wrap;
+        }
+      }
+
       .list-group-item{
         border: unset;
       }
-      .type-tags:not(.type-tags:first-child),
       .group-right > .item-list > .list-group > .list-group-item:not(.group-right > .item-list > .list-group > .list-group-item:first-child){
         display: none;
       }
@@ -202,7 +213,6 @@
           h3{
             background: transparent;
             color: $text-color-blue;
-            margin-top: 1rem;
             font: {
               size: 1.25rem;
               weight:bold;
@@ -210,6 +220,9 @@
           }
           .datetime{
             font-size:1.125rem;
+          }
+          & > p:last-of-type{
+            margin-bottom: 0;
           }
         }
         .napo-film-list-details-container{

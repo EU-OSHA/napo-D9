@@ -2227,10 +2227,7 @@ tr {
     .page-view-napo-films-index .node--view-mode-teaser {
       border-bottom: unset; }
     .page-view-napo-films-index .block-facet-blocknapo-film-content-categories {
-      border: 2px solid #1f3695;
-      padding: 1rem;
-      border-radius: 5px;
-      height: fit-content; }
+      padding-top: 0.35rem; }
       .page-view-napo-films-index .block-facet-blocknapo-film-content-categories .js-form-type-entity-autocomplete {
         display: none; }
       .page-view-napo-films-index .block-facet-blocknapo-film-content-categories h2 {
@@ -2304,17 +2301,21 @@ tr {
       padding-right: 1.2rem; }
     .page-view-napo-films-index .napo-film-list-view .pager__items {
       background-color: unset; }
-    .page-view-napo-films-index .napo-film-list-view .main-category, .page-view-napo-films-index .napo-film-list-view .list-group-item .taxonomy-level-item span {
-      display: block;
-      width: fit-content;
-      border-radius: 4px;
-      border: 2px solid #1f3695;
-      padding: 5px 10px;
-      margin-bottom: 0.5rem;
-      font-size: 15px; }
+    .page-view-napo-films-index .napo-film-list-view .main-category .type-tags:not(.type-tags:last-of-type):after, .page-view-napo-films-index .napo-film-list-view .list-group-item .type-tags:not(.type-tags:last-of-type):after {
+      display: inline;
+      content: ","; }
+    .page-view-napo-films-index .napo-film-list-view .main-category .taxonomy-level-item.type-tags, .page-view-napo-films-index .napo-film-list-view .list-group-item .taxonomy-level-item.type-tags {
+      width: fit-content; }
+      .page-view-napo-films-index .napo-film-list-view .main-category .taxonomy-level-item.type-tags span, .page-view-napo-films-index .napo-film-list-view .list-group-item .taxonomy-level-item.type-tags span {
+        color: #000;
+        font-size: 0.85rem; }
+    .page-view-napo-films-index .napo-film-list-view .item .item-list .list-group .taxonomy-level-list {
+      display: flex;
+      gap: 0.35rem;
+      flex-direction: row;
+      flex-wrap: wrap; }
     .page-view-napo-films-index .napo-film-list-view .list-group-item {
       border: unset; }
-    .page-view-napo-films-index .napo-film-list-view .type-tags:not(.type-tags:first-child),
     .page-view-napo-films-index .napo-film-list-view .group-right > .item-list > .list-group > .list-group-item:not(.group-right > .item-list > .list-group > .list-group-item:first-child) {
       display: none; }
     .page-view-napo-films-index .napo-film-list-view:focus {
@@ -2357,11 +2358,12 @@ tr {
     .page-view-napo-films-index .napo-film-list-view .item-list .group-right h3 {
       background: transparent;
       color: #1f3695;
-      margin-top: 1rem;
       font-size: 1.25rem;
       font-weight: bold; }
     .page-view-napo-films-index .napo-film-list-view .item-list .group-right .datetime {
       font-size: 1.125rem; }
+    .page-view-napo-films-index .napo-film-list-view .item-list .group-right > p:last-of-type {
+      margin-bottom: 0; }
     .page-view-napo-films-index .napo-film-list-view .item-list .napo-film-list-details-container {
       background: #f2f1f2;
       display: flex;
