@@ -104,6 +104,9 @@
       }
       p{
         font-size: 1rem;
+        &.main-category{
+          font-size: 0.8rem;
+        }
       }
       .d-flex{
         gap: 1rem;

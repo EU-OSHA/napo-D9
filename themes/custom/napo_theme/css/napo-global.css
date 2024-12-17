@@ -2284,6 +2284,8 @@ tr {
       background-image: url(/sites/napo/themes/custom/napo_theme/images/film-icon-blue.svg); }
     .page-view-napo-films-index .napo-film-list-view p {
       font-size: 1rem; }
+      .page-view-napo-films-index .napo-film-list-view p.main-category {
+        font-size: 0.8rem; }
     .page-view-napo-films-index .napo-film-list-view .d-flex {
       gap: 1rem; }
     .page-view-napo-films-index .napo-film-list-view .form-item-sort-by {
