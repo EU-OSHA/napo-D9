@@ -18,13 +18,24 @@
     }
   }
   .a2a_button_facebook{
-
-    background: url(/sites/napo/themes/custom/napo_theme/images/facebook.png);
+    background: url(/sites/default/themes/custom/ncwtheme/images/ico-facebook.png) no-repeat;
+    background-position: center;
+    width: 30px !important;
   }
   .a2a_button_twitter{
-    background: url(/sites/napo/themes/custom/napo_theme/images/twitter.png);
+    background: url(/sites/default/themes/custom/ncwtheme/images/ico-twitter.jpg) no-repeat;
+    background-position: center;
+    width: 30px !important;
   }
   .a2a_button_linkedin_share{
-    background: url(/sites/napo/themes/custom/napo_theme/images/link.png);
+      background: url(/sites/default/themes/custom/ncwtheme/images/ico-linkedin.png) no-repeat;
+      background-position: center;
+      width: 30px !important;
+  }
+  .a2a_button_facebook:after, .a2a_button_twitter:after, .a2a_button_linkedin_share:after  {
+    display:none !important;
+  }
+  .a2a_button_facebook:hover, .a2a_button_twitter:hover, .a2a_button_linkedin_share:hover  {
+    background-color: transparent;
   }
 }

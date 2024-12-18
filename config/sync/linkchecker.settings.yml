@@ -1,26 +1,34 @@
 _core:
   default_config_hash: FzFKuqOuk667AkDorrqvXkc_-M4D-Ac1XeGGusxS1JU
-check_links_types: 1
-default_url_scheme: 'http://'
+scan_blocks: null
+check_links_types: 0
+default_url_scheme: 'https://'
 base_path: ''
+search_published_contents_only: true
 extract:
   from_a: true
   from_audio: false
-  from_embed: false
-  from_iframe: false
-  from_img: false
+  from_embed: true
+  from_iframe: true
+  from_img: true
   from_object: false
-  from_video: false
+  from_video: true
   filter_blacklist:
     filter_align: filter_align
     filter_autop: filter_autop
     filter_caption: filter_caption
-    insert_block: insert_block
-    insert_view: insert_view
-    smiley: smiley
-    smileys: smileys
-    weblinks_embed: weblinks_embed
-    weblinks_filter: weblinks_filter
+    blazy_filter: '0'
+    editor_file_reference: '0'
+    filter_url: '0'
+    filter_html: '0'
+    filter_html_escape: '0'
+    filter_htmlcorrector: '0'
+    filter_image_lazy_load: '0'
+    filter_html_image_secure: '0'
+    media_embed: '0'
+    filter_pathologic: '0'
+    slick_filter: '0'
+    filter_spamspan: '0'
 check:
   connections_max: 8
   connections_max_per_domain: 2
@@ -29,18 +37,12 @@ check:
     example.net
     example.org
   library: core
-  interval: 2419200
-  useragent: 'Drupal (+http://drupal.org/)'
+  interval: 604800
+  useragent: 'Drupal (+https://drupal.org/)'
 error:
   action_status_code_301: 0
   action_status_code_404: 0
-  ignore_response_codes: |-
-    200
-    206
-    302
-    304
-    401
-    403
+  ignore_response_codes: "200\r\n206\r\n302\r\n304\r\n401\r\n403"
   impersonate_account: napo_admin
 logging:
-  level: 6
+  level: 3

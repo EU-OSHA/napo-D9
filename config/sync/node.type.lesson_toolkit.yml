@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Lesson toolkit'
+name: 'Learning with Napo toolkit'
 type: lesson_toolkit
-description: ''
+description: 'The toolkit of the lessons (an index file).'
 help: ''
 new_revision: false
 preview_mode: 1
