@@ -14,7 +14,7 @@ orphanedCheckQty: 100
 orphanedAccountCheckInterval: weekly
 userConflictResolve: resolve
 manualAccountConflict: conflict_associate
-acctCreation: user_settings_for_ldap
+acctCreation: ldap_behavior
 disableAdminPasswordField: false
 userUpdateCronQuery: none
 userUpdateCronInterval: always
