@@ -58,6 +58,7 @@ permissions:
   - 'access workbench access by role'
   - 'administer files'
   - 'administer nodes'
+  - 'administer site configuration'
   - 'administer taxonomy'
   - 'assign pm to node'
   - 'assign selected workbench access'
