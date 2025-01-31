@@ -12,7 +12,6 @@ dependencies:
     - field.storage.node.field_video_type
     - image.style.film_list
     - search_api.index.default_multilingual_node_index
-    - taxonomy.vocabulary.tags
     - taxonomy.vocabulary.video_type
   content:
     - 'node:article:bca68f1e-98e1-4d98-acfc-c6e64b1c2800'
@@ -7184,7 +7183,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"item {{ field_video_type }}\">\r\n  <div class=\"napo-film-list-image\">{{field_image}}</div>\r\n  <div class=\"group-right\">\r\n    <h3>{{title}}</h3>\r\n      {% if field_video_type == 'Episode video' %}\r\n\t{{ field_combined_tags_2 }}\r\n      {% else %}\r\n        {{ field_main_tag }}\r\n      {% endif %}\r\n    <p>{{processed}}</p>\r\n    <p>{{ url }}</p>\r\n  </div>\r\n</div>"
+            text: "<div class=\"item {{ field_video_type }}\">\r\n  <div class=\"cart\">{{ ncc_download }}</div>\r\n  <div class=\"download-video\">\r\n    <div class=\"download-items\">\r\n      {% for link in uri|split(',') %}\r\n        <a href=\"#\" class=\"film-download-listitem\" data-lang=\"{{ langcode }}\" data-id=\"edit-download-video-button-{{ nid }}-{{loop.index-1}}\">{{ link }}</a>\r\n      {% endfor %}\r\n   </div>\r\n  </div>\r\n  <div class=\"napo-film-list-image\">{{field_image}}</div>\r\n  <div class=\"group-right\">\r\n    <h3>{{title}}</h3>\r\n      {% if field_video_type == 'Episode video' %}\r\n\t{{ field_combined_tags_2 }}\r\n      {% else %}\r\n        {{ field_main_tag }}\r\n      {% endif %}\r\n    <p>{{processed}}</p>\r\n    <p>{{ url }}</p>\r\n  </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -7282,60 +7281,6 @@ display:
           exposed: true
       arguments: {  }
       filters:
-        field_combined_tags:
-          id: field_combined_tags
-          table: search_api_index_default_multilingual_node_index
-          field: field_combined_tags
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: search_api_term
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_combined_tags_op
-            label: 'Search for topics'
-            description: ''
-            use_operator: false
-            operator: field_combined_tags_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: tags
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              translation_manager: '0'
-              translation_liaison: '0'
-              layout_validator: '0'
-              content_validator: '0'
-              project_manager: '0'
-              review_manager: '0'
-              internal_translator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: tags
-          type: textfield
-          hierarchy: false
-          limit: true
-          error_message: true
         search_api_fulltext:
           id: search_api_fulltext
           table: search_api_index_default_multilingual_node_index
