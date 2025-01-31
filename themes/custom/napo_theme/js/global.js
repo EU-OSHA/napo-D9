@@ -259,38 +259,10 @@
   jQuery(document).ready(function () {
     $(document).on('click', '.film-download-listitem', function (ev) {
       let btId = $(this).data('id');
-      $('#'+btId).click();
+      $(`input[data-drupal-selector="${btId}"]`).click();
       return false;
     });
   });
-
-  // MDR-7562: Napo films view
-  if($('body').find('#views-exposed-form-napo-films-index-page-5').length>0) {
-    jQuery(document).ready(function () {
-      // To save automatically when selecting (Sort by filter)
-      $('#edit-sort-by--2').on('change', function () {
-        $('#views-exposed-form-napo-films-index-page-5').submit();
-      });
-
-      /**
-       *  2727 - Film video
-       *  2726 - Episode video
-       */
-      // To save automatically when selecting checking or unchecking "Hide scenes" checkbox
-      $('#custom-napofilms-hide-scenes').on('change', function () {
-        if ($(this).is(':checked')) {
-          // When the checkbox is checked: 2727 (Film video)
-          $('#edit-field-video-type--2').val(['2727']).trigger('change');
-          $('#views-exposed-form-napo-films-index-page-5').submit();
-
-        } else {
-          // When the checkbox is unchecked: 2726 (Episode video) and 2727 (Film video)
-          $('#edit-field-video-type--2').val(['2726', '2727']).trigger('change');
-          $('#views-exposed-form-napo-films-index-page-5').submit();
-        }
-      });
-    });
-  }
 
 })(jQuery, Drupal);
 
