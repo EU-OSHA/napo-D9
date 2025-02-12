@@ -25,7 +25,7 @@
 }
 
 /**Hide the "share this on" layer which appears when selecting text**/
-.wtPopSelect{
+.wtPopSelect, .wt-share--selection{
   display: none !important;
 }
 

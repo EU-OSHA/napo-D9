@@ -259,10 +259,11 @@
   jQuery(document).ready(function () {
     $(document).on('click', '.film-download-listitem', function (ev) {
       let btId = $(this).data('id');
-      $('#'+btId).click();
+      $(`input[data-drupal-selector="${btId}"]`).click();
       return false;
     });
   });
 
 })(jQuery, Drupal);
+
 
