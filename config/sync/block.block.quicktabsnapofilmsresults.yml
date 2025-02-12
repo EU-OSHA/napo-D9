@@ -1,6 +1,6 @@
 uuid: 0b2b1f56-53a1-47bd-9de6-d7c04398b013
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - quicktabs
@@ -10,7 +10,7 @@ dependencies:
 id: quicktabsnapofilmsresults
 theme: napo_theme
 region: content
-weight: -14
+weight: -9
 provider: null
 plugin: 'quicktabs_block:napo_films_results'
 settings:

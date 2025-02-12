@@ -45,55 +45,72 @@
     {{ title }}
   {% endif %}
   {{ title_suffix }}
-  {% if header %}
-    <div class="view-header">
-      {{ header }}
-    </div>
-  {% endif %}
-  {% if exposed %}
-    <div class="view-filters">
-      {{ exposed }}
-    </div>
-  {% endif %}
-  {% if attachment_before %}
-    <div class="attachment attachment-before">
-      {{ attachment_before }}
-    </div>
-  {% endif %}
 
-  {% if pager %}
-    {{ pager }}
-  {% endif %}
+  {#
+  /** Header removed from twig */
+  #}
 
-  {% if rows %}
-    <div class="view-content row">
-      {{ rows }}
-    </div>
-  {% elseif empty %}
-    <div class="view-empty">
-      {{ empty }}
-    </div>
-  {% endif %}
+    {% if exposed %}
+      <div class="view-filters">
+        {{ exposed }}
+      </div>
+    {% endif %}
+    {% if attachment_before %}
+      <div class="attachment attachment-before">
+        {{ attachment_before }}
+      </div>
+    {% endif %}
 
-  {% if pager %}
-    {{ pager }}
-  {% endif %}
-  {% if attachment_after %}
-    <div class="attachment attachment-after">
-      {{ attachment_after }}
-    </div>
-  {% endif %}
-  {% if more %}
-    {{ more }}
-  {% endif %}
-  {% if footer %}
-    <div class="view-footer">
-      {{ footer }}
-    </div>
-  {% endif %}
-  {% if feed_icons %}
-    <div class="feed-icons">
-      {{ feed_icons }}
-    </div>
-  {% endif %}
-</div>
+  {#
+  /**
+  2727 - Film video
+  2726 - Episode video
+  */
+  #}
+    {% if exposed.field_video_type['#value'] is not empty and '2727' in exposed.field_video_type['#value'] and '2726' not in exposed.field_video_type['#value']%}
+      <input type="checkbox" id="custom-napofilms-hide-scenes" class="hide-scenes-checkbox" checked="checked">
+    {% elseif exposed.field_video_type['#value'] is not empty and '2726' in exposed.field_video_type['#value'] and '2727' in exposed.field_video_type['#value'] %}
+       <input type="checkbox" id="custom-napofilms-hide-scenes" class="hide-scenes-checkbox">
+    {% endif %}
+  <label for="custom-napofilms-hide-scenes">Hide scenes</label>
+
+    {% if rows %}
+      <div class="view-content row">
+        {{ rows }}
+      </div>
+    {% elseif empty %}
+      <div class="view-empty">
+        {{ empty }}
+      </div>
+    {% endif %}
+
+    {% if pager %}
+      {{ pager }}
+    {% endif %}
+    {% if attachment_after %}
+      <div class="attachment attachment-after">
+        {{ attachment_after }}
+      </div>
+    {% endif %}
+    {% if more %}
+      {{ more }}
+    {% endif %}
+    {% if footer %}
+      <div class="view-footer">
+        {{ footer }}
+      </div>
+    {% endif %}
+    {% if feed_icons %}
+      <div class="feed-icons">
+        {{ feed_icons }}
+      </div>
+    {% endif %}
+  </div>
+
+
+  <style>
+    {# Temporary Styles #}
+  .facets-widget-checkbox ul .facet-item {
+    display: block;
+  }
+</style>
