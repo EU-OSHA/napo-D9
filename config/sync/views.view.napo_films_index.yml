@@ -7240,19 +7240,6 @@ display:
         type: search_api_tag
         options: {  }
       sorts:
-        search_api_relevance:
-          id: search_api_relevance
-          table: search_api_index_default_multilingual_node_index
-          field: search_api_relevance
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: search_api
-          order: ASC
-          expose:
-            label: Relevance
-            field_identifier: search_api_relevance
-          exposed: true
         field_publication_date:
           id: field_publication_date
           table: search_api_index_default_multilingual_node_index
@@ -7265,6 +7252,19 @@ display:
           expose:
             label: 'Publication date'
             field_identifier: field_publication_date
+          exposed: true
+        search_api_relevance:
+          id: search_api_relevance
+          table: search_api_index_default_multilingual_node_index
+          field: search_api_relevance
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: Relevance
+            field_identifier: search_api_relevance
           exposed: true
         title:
           id: title
