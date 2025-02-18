@@ -7261,7 +7261,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: search_api
-          order: ASC
+          order: DESC
           expose:
             label: Relevance
             field_identifier: search_api_relevance
