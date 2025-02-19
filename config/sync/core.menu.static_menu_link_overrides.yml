@@ -43,3 +43,45 @@ definitions:
     weight: -40
     expanded: false
     enabled: false
+  'admin_toolbar_tools__extra_links:node__add__panel':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:node.add'
+    expanded: false
+    weight: 0
+  'admin_toolbar_tools__extra_links:entity__node_type__edit_form__panel':
+    enabled: false
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__node__field_ui_fieldspanel':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.node_type.edit_form.panel'
+    weight: 1
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__entity_form_display__node__defaultpanel':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.node_type.edit_form.panel'
+    weight: 2
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__entity_view_display__node__default__panel':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.node_type.edit_form.panel'
+    weight: 3
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__entity_permissions_form__node__default__panel':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.node_type.edit_form.panel'
+    weight: 3
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__node_type__delete_form__panel':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.node_type.edit_form.panel'
+    weight: 5
+    expanded: false
