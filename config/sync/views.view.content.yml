@@ -19,7 +19,6 @@ dependencies:
     - node.type.napo_image
     - node.type.napo_video
     - node.type.page
-    - node.type.panel
     - taxonomy.vocabulary.video_type
   module:
     - node
@@ -866,12 +865,11 @@ display:
             lesson_resources: lesson_resources
             lesson_toolkit: lesson_toolkit
             lesson_video: lesson_video
+            napo_album: napo_album
+            napo_video: napo_video
+            napo_friend: napo_friend
             msds_activities: msds_activities
             msds_resources: msds_resources
-            napo_album: napo_album
-            napo_friend: napo_friend
-            napo_video: napo_video
-            panel: panel
           group: 1
           exposed: true
           expose:
@@ -894,7 +892,6 @@ display:
               translation_liaison: '0'
               layout_validator: '0'
               content_validator: '0'
-              project_manager: '0'
               review_manager: '0'
               internal_translator: '0'
             reduce: true
